@@ -28,3 +28,21 @@ npm-debug.log
 # Temporary files
 *.tmp
 *.log
+
+# Project-specific
+dist/
+build/
+*.egg
+.eggs/
+
+# Output files
+*_counterarguments.docx
+
+# Test files
+tests/fixtures/*.docx
+!tests/fixtures/sample_*.docx
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
