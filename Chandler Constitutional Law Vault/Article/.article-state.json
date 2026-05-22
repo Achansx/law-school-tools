@@ -13,11 +13,11 @@
     "stitch",
     "verify"
   ],
-  "current_phase": "harvest",
-  "phase_index": 0,
-  "last_run_at": "2026-05-23T01:00:00Z",
-  "last_completed_phase": "verify",
-  "run_count": 63,
+  "current_phase": "outline",
+  "phase_index": 1,
+  "last_run_at": "2026-05-23T03:00:00Z",
+  "last_completed_phase": "harvest",
+  "run_count": 64,
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -237,12 +237,14 @@
     "12": {
       "title": "Risks and Limits",
       "target_words": 800,
-      "evidence_status": "none",
+      "evidence_status": "populated",
       "outline_status": "none",
       "draft_status": "none",
       "cite_status": "none",
       "polish_status": "none",
-      "current_words": 0
+      "current_words": 0,
+      "evidence_cards": 11,
+      "evidence_populated_at": "2026-05-23T03:00:00Z"
     },
     "13": {
       "title": "Institutional Implications",
@@ -1010,6 +1012,16 @@
       "claim": "Section II positions the article within an established Journal of Legal Education line of pedagogical-reform pieces and anchors that positioning on Abrams 2015 alone; II.D's graph-architectural framing and II.E's venue-fit move are both architectural choices whose pedagogical-effectiveness premises ride on the AI-in-higher-education literature, but Section II does not engage Bond et al. 2024, Kuhail et al. 2023, or the broader chatbot-tutor and knowledge-graph-RAG literature anchored in Sections V.D, VIII.E, and IV.A; fifth section in which the AI-in-Ed literature engagement is one-citation-removed or absent after PI-025 / PI-032 / PI-040 / PI-048.",
       "status": "open",
       "note": "Persona 3 P1 finding. Routes Section 02 cite_status from needs_polish to needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move). The future multi-section Cite pass that resolves PI-025 / PI-032 / PI-040 / PI-048 should consider whether Bond et al. 2024 (meta-review of AI in higher education) and Kuhail et al. 2023 (chatbot-tutor survey) propagate into Section II's footnote chain at either `[^7]` (where the architectural-contrast wiki-link claim sits and the chatbot-tutor alternative is the natural AI-in-Ed parallel) or `[^8]` (where the venue-fit and pedagogical-reform-line positioning sits), with the L-024 transfer-of-inference clause naming what transfers and what does not."
+    },
+    {
+      "id": "PI-073",
+      "section": "12",
+      "opened_at": "2026-05-23T03:00:00Z",
+      "phase": "harvest",
+      "type": "open-decision-backward-audit",
+      "claim": "Workplan §6 line 170 names copyrighted casebook material as the first of six open decisions and specifically asks the professor to confirm whether any of the existing 198 pages on the deployed site currently include casebook quotation that would need to be removed before the site is held up as a model in JLE. The backward audit is distinct from PI-001 (whether casebook excerpts were used as input to the vault) because PI-001 tracks the input-side ingestion question and PI-073 tracks the output-side audit of currently-published pages. Section XII's risk-catalogue prose must hedge PI-073's status until the professor confirms the audit result.",
+      "status": "open",
+      "note": "Substantive open decision the Section XII Outline and Draft ticks cannot resolve unilaterally. Workplan §6.1 line 170 states the directive verbatim: 'Confirm we are working only from the professor's own slides and notes, public judicial opinions, public constitutional text, statutes, and original hypotheticals. Confirm whether any of the existing 198 pages currently include casebook quotation that would need to be removed before the site is held up as a model in JLE.' Section XII's Outline tick should structure the copyrighted-casebook-material risk-catalogue entry so the audit-status paragraph can be either pending-form (the audit has not been completed at the manuscript-drafting altitude and the prose hedges accordingly) or completed-form (the audit returned a clean result, or returned specific pages that needed removal and the corresponding pages were removed or revised), mirroring the Section IV.E snapshot-disclosure-paragraph pattern from the 2026-05-22T07:00 Polish tick and the Section XI plan-versus-results structural pattern from the 2026-05-22T17:00 Draft tick. The PI closes when the professor and the author have confirmed in writing the audit result and the Section XII prose reflects the actual status. PI-073 is distinct from PI-001 (input-side ingestion question, open since 2026-05-15) and from PI-007 (Section IV.A casebook-acknowledgment surface gap, resolved 2026-05-22T07:00 by the Polish tick) and from PI-063 (Section IV.A architectural-implication of the casebook gap, open since 2026-05-22T11:00 and routed to Section XII's curriculum-grounding risk-catalogue entry per `evidence-12-curriculum-grounding-corpus-incompleteness.md`)."
     }
   ],
   "verify": {
