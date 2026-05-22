@@ -1,0 +1,17 @@
+---
+section: "09"
+fact_type: example
+source_path: "Chandler Constitutional Law Vault/LESSONS.md"
+verified: true
+notes: "The honest hedge against the zero-marginal-hosting-cost framing. Vault LESSONS.md Deployment item 5 documents the HTTP 403 'Account credit usage exceeded' pattern that fires when Netlify's account credits exhaust; the vault CHANGELOG records three credit-block events on 2026-05-07 (T18:41Z, T19:11Z, T19:42Z) and the LESSONS.md guard requires the dispatcher to skip the fast_deploy POST after three consecutive credit-block failures to avoid burning wall clock on a foreseeably-failing call. Section IX's deploy-phase line uses this as the integrity hedge: hosting is free-tier-bounded under normal operation per evidence-09-netlify-cli-zero-build-minutes, AND the free-tier ceiling reasserts itself when account credits run out, with a known three-strike pattern that maps to roughly three failed deploys per credit-exhaustion event. The article's prose should carry the qualitative two-state architectural property (free under normal operation; blocked when credits exhaust) without a fabricated dollar figure for either state, with the credit-restoration step explicitly named as human action rather than a phase the system can take itself."
+---
+
+The Netlify free-tier hosting is bounded by account credit, not by build minutes alone, and the boundary asserts itself as an HTTP 403 with the body `Account credit usage exceeded` when credits exhaust. Vault `LESSONS.md` records the pattern as Deployment item 5; vault `CHANGELOG.md` records three credit-block events in sequence on 2026-05-07 at 18:41Z, 19:11Z, and 19:42Z, against build counts of 131 cases, 53 topics, and 97 lectures (a 281-page corpus). The system's RUNBOOK guard fires after three consecutive same-type failures and skips the fast_deploy POST until credits are restored, to avoid burning wall clock on a foreseeably-failing call. Section IX's deploy-phase cost line uses this as the honest hedge against the zero-marginal-hosting-cost framing: the Netlify hosting bill is free-tier-bounded under normal operation but reasserts itself when account credits exhaust, with a known three-strike pattern that maps to roughly three failed deploys per credit-exhaustion event before the guard fires. The article's prose carries the qualitative two-state architectural property — free under normal operation, blocked when credits exhaust — without a fabricated dollar figure for either state.
+
+Exact source quote, `Chandler Constitutional Law Vault/LESSONS.md` Deployment item 5 (line 120):
+
+> 5. HTTP 403 "Account credit usage exceeded" on POST /sites/{id}/deploys is an external block, not a code defect. Build still succeeds; upload aborts before any deploy record is created (no zombie cleanup). Live `manifest.json` returns 503 with `usage_exceeded` until human adds credits or upgrades. RUNBOOK guard: when `consecutive_same_type_failures>=3` AND `type=deploy-credit-blocked`, log a one-line CHANGELOG note and SKIP the fast_deploy POST until credits are restored, to avoid burning wall clock on a foreseeably-failing call.
+
+And `LESSONS.md` line 121 (Seen-record):
+
+> _Seen: zombie deploys (IDs 69e808…, 69e808…, 69e809…); 2026-05-01T03:41Z and T10:14Z (fast_deploy.py path used after CLI cold-cache 45s timeout); 2026-05-01T10:14Z (3.5a SPA semantics surfaced); 2026-05-07T18:41Z, T19:11Z, T19:42Z (credit-block 3-strike threshold, build 131/53/97/281 each, upload blocked)._

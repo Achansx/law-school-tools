@@ -1,0 +1,15 @@
+---
+section: "02"
+fact_type: example
+source_path: "Chandler Constitutional Law Vault/archive/vault-blog-post-draft.md"
+verified: true
+notes: "Concrete starting state of the vault before any synthesis: a flat folder with 260-plus files from a law-school course management system, organized only by filename. This is the operational image Section II uses for 'ordinary course infrastructure': not a critique of any single tool, but a description of what the professor actually inherited from the LMS export. The blog draft is internal vault prose; the Section II Cite tick should either rewrite the figure against a public-source anchor (the email-to-chandler-progress.md 198-pages snapshot plus 154 unprocessed source materials gives the post-Ingest counterpart) or move the figure to an appendix per the no-internal-log-cites rule. This card's verified flag is true because the source file exists in the vault, not because the count is independently cross-checked; that cross-check is the Cite tick's job."
+---
+
+The starting state of the Constitutional Law I vault, before any of the pipeline ran, was a flat folder with two hundred sixty-plus files exported from a law-school course management system: sixty-one PowerPoint lecture decks, sixty-six PDFs of case readings, merged reading packets, practice exams, teaching guides. The organization was filenames. There was no structural index, no doctrinal map, no cross-reference between a lecture and the cases it covered, and no synthesis layer above the case-and-reading inventory. Section II uses this concrete starting state as the operational image of "ordinary course infrastructure": the professor's actual export from the systems the course already uses, which is exactly what the LMS, the casebook, and the syllabus together produce. The point is not that any one of those tools is wrong; the point is that the inventory they produce together is a starting point, not a course knowledge system. The article's contribution is the pipeline that turns the inventory into the system, with the professor in the loop the whole way.
+
+Source-record excerpt, `Chandler Constitutional Law Vault/archive/vault-blog-post-draft.md` line 3 (opening paragraph):
+
+> The starting point was a flat folder with 260+ files from a law school course management system: sixty-one PowerPoint lecture decks, sixty-six PDFs of case readings, merged reading packets, practice exams, teaching guides. No organization beyond filenames.
+
+Per the article's no-internal-log-cite rule (RUNBOOK Cite step 4), the Section 02 Cite tick should either (a) reframe the file-count claim against the publicly anchored post-Ingest snapshot from `email-to-chandler-progress.md` (198 pages plus 154 unprocessed source materials, the same source the workplan §2 highlights use), or (b) move the raw inventory description to an appendix excerpt and have Section II's published prose carry only the qualitative observation that the starting export is an inventory rather than a structure. PI added for this Cite-time decision so the call is logged rather than left to the Cite tick to surface independently.

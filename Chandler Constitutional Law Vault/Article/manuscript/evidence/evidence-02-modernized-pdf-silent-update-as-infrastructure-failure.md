@@ -1,0 +1,17 @@
+---
+section: "02"
+fact_type: example
+source_path: "Chandler Constitutional Law Vault/archive/vault-blog-post-draft.md"
+verified: true
+notes: "The Prize Cases / Justice Grier silent-modernization failure is the article's anchor failure story, lead-deployed in Section VII per the workplan §2 highlights. Section II's use is different and shorter: the failure mode (a modernized PDF silently updated archaic phrasing, and the error survived multiple automated passes) illustrates what ordinary course infrastructure does not catch and cannot catch. The casebook holds the case the publisher prints; the syllabus assigns the reading; the LMS posts the link. None of those compares the prose the student reads to the indexed opinion that controls. Section II uses this in a single sentence to ground the affordance-gap claim in a concrete failure, then forward-references Section VII for the full story. This avoids duplicating Section VII's full Prize Cases narrative while letting Section II carry a non-abstract grounding point. The card itself is evidence-07-prize-cases-grier-quote.md's Section II sibling; the two should not duplicate prose."
+---
+
+The Prize Cases failure story is the article's anchor illustration of what automated pipelines and ordinary course infrastructure both fail to catch when working alone. The professor's modernized PDF of Justice Grier's Civil War-era majority opinion silently updated archaic phrasing: the source PDF read "never formally declared … by its character," while Grier's actual language was "never solemnly declared … by its accidents." The vault reproduced the modernization faithfully through Ingest, Lint, two Enrich passes, and Expand before an adversarial Verify persona ran an AI analysis of the indexed opinion (rather than keyword search) and surfaced the gap. Section VII is the section that tells the full story; Section II's use is shorter and structural. The casebook holds the case the publisher prints; the syllabus assigns the reading; the LMS posts the link; the slide deck quotes the holding. None of those infrastructure pieces is built to compare the prose the student reads to the indexed opinion that controls, and none of them would have caught the modernization. The affordance gap is not a deficiency in any single artifact; it is the absence of a verification surface that the inherited inventory was never designed to produce.
+
+Source-record excerpt, `Chandler Constitutional Law Vault/archive/vault-blog-post-draft.md` lines 19 through 21 (the quote-problem narrative):
+
+> The vault said "never formally declared...by its character." Grier wrote "never solemnly declared...by its accidents."
+>
+> The error came from the professor's modernized PDF silently updating archaic phrasing. The vault reproduced it faithfully. Keyword search could not catch it because the text it searched for did not match the indexed opinion. The error went through Ingest, Lint, two Enrich passes, and Expand before Verify caught it.
+
+Per L-038 the Section II prose should describe the failure mode in one or two sentences and forward-reference Section VII for the full narrative rather than re-telling the Prize Cases story; the full story is Section VII's anchor and re-telling it in Section II would weaken Section VII's load-bearing function. The Cite tick should pair this with the indexed Prize Cases opinion citation (67 U.S. 635 (1863)) and the Midpage / CourtListener verification trail that the Section VII Cite tick already produced; per L-034 the verification can be reused rather than re-run.

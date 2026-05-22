@@ -1,0 +1,13 @@
+---
+section: "07"
+fact_type: argument
+source_path: "Chandler Constitutional Law Vault/PERSONAS.md"
+verified: true
+notes: "The forced-finding Verify protocol is the loop's adversarial reading mechanism. PERSONAS.md defines three personas (Staleness Auditor, Contradiction Hunter, Template Enforcer) each of whom must return at least one concrete finding per run; if a persona genuinely finds nothing the file requires it to record `persona-produced-nothing` as its own finding, which makes the absence of findings auditable rather than invisible. Per the rotation rules each Verify pass selects a lead persona via `verify_run_count % 3` and a per-persona focus subarea via `verify_run_count % 4`, so the lead-and-focus pairing changes every run rather than locking into a fixed playbook. The Verify rubric's `adversarial_findings` criterion (weight 0.28) is the largest single weight on the rubric, and zero findings is its red-flag threshold. The article's central point is that this protocol catches the Prize Cases-type error that ran through Ingest, Lint, two Enrich passes, and Expand without being caught (see evidence-07-prize-cases-grier-quote) and that the forced-finding requirement is what converts Verify from a phase that confirms things look fine into a phase that actually catches what other phases missed. Per L-031 the personas are typed prompts the rotation runs at Verify time, not autonomous agents; per L-039 in the article's own LESSONS file the article must not frame templated personas as architecturally equivalent to live moot-court or law-review review, the analogy is structural-commitment-to-multiple-reading-commitments only."
+---
+
+The Verify phase runs three hostile personas — Staleness Auditor, Contradiction Hunter, Template Enforcer — each required to return at least one concrete finding per run; a persona that genuinely finds nothing records `persona-produced-nothing` as its own finding, so the absence of findings is auditable rather than invisible. The lead persona and each persona's focus subarea rotate per a counter so the same persona on two consecutive runs does not default to its safest playbook. The forced-finding requirement is what converts Verify from a phase that confirms things look fine into a phase that actually catches what other phases missed.
+
+Exact source quote, `Chandler Constitutional Law Vault/PERSONAS.md` line 3:
+
+> Three hostile personas for the Verify phase of the Con Law wiki. Each must return at least one concrete finding per run. If a persona genuinely finds nothing, it records `persona-produced-nothing` as its own finding.
