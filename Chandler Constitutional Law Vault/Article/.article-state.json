@@ -15,15 +15,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-23T09:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-23T13:00:00Z",
   "manuscript": {
     "full_draft_exists": true,
     "last_stitched_at": "2026-05-22T23:00:00Z",
@@ -76,7 +76,7 @@
     {
       "claim": "URL https://constitutionallaw.netlify.app cited in Section 04 footnote 12 was not verified live during this Cite run.",
       "id": "PI-005",
-      "note": "WebFetch refused the URL by provenance in this scheduled-task run (URL appears in vault file MISSING_SOURCE_MATERIALS.md but not in a user message). Verify on next Cite or Verify pass when the URL is reachable. If dead, replace with an archive.org capture and update the footnote. Rubric criterion 3 scored at 2 this run because of this single unverified URL. Verify 2026-05-16T13:20 surfaced this same footnote as a P1 (mixed last-visited + deferred-liveness disclaimer); next Cite tick on Section 04 must resolve. L-022 names WebSearch as the resolution path to try before falling back to archive.org. 2026-05-17T11:00 Cite tick attempted resolution per L-022: WebSearch on the verbatim URL returned ten Netlify-hosted law sites but no verbatim https://constitutionallaw.netlify.app match in the first ten results, and a follow-up WebSearch for an archive.org Wayback Machine capture of the URL returned only generic Wayback Machine documentation rather than a capture. Per L-022's tail clause ('For URLs that WebSearch cannot confirm either, the L-019 deferral path still applies'), PI-005 stays open and the URL-liveness verification remains deferred. Same-run surgical resolution to the prose-side P1: Section 04 footnote [^12] was restructured to drop the mixed last-visited + deferred-liveness disclaimer entirely, with the wiki-brief inventory cite routed through App. A and a cross-reference to Section VIII.A note 1 (where the deployed-site URL is the primary anchor fact and is footnoted under Section VIII's own Cite-phase work) carrying the URL forward. The Polish-phase P1s on Section 04 (PI-006 through PI-010) remain open for the next Polish tick. Future Cite or Verify ticks should retry WebSearch periodically and try archive.org's direct lookup endpoint (https://web.archive.org/web/<timestamp>/https://constitutionallaw.netlify.app) once a user message or prior fetch result carries that endpoint into provenance.",
+      "note": "WebFetch refused the URL by provenance in this scheduled-task run (URL appears in vault file MISSING_SOURCE_MATERIALS.md but not in a user message). Verify on next Cite or Verify pass when the URL is reachable. If dead, replace with an archive.org capture and update the footnote. Rubric criterion 3 scored at 2 this run because of this single unverified URL. Verify 2026-05-16T13:20 surfaced this same footnote as a P1 (mixed last-visited + deferred-liveness disclaimer); next Cite tick on Section 04 must resolve. L-022 names WebSearch as the resolution path to try before falling back to archive.org. 2026-05-17T11:00 Cite tick attempted resolution per L-022: WebSearch on the verbatim URL returned ten Netlify-hosted law sites but no verbatim https://constitutionallaw.netlify.app match in the first ten results, and a follow-up WebSearch for an archive.org Wayback Machine capture of the URL returned only generic Wayback Machine documentation rather than a capture. Per L-022's tail clause ('For URLs that WebSearch cannot confirm either, the L-019 deferral path still applies'), PI-005 stays open and the URL-liveness verification remains deferred. Same-run surgical resolution to the prose-side P1: Section 04 footnote [^12] was restructured to drop the mixed last-visited + deferred-liveness disclaimer entirely, with the wiki-brief inventory cite routed through App. A and a cross-reference to Section VIII.A note 1 (where the deployed-site URL is the primary anchor fact and is footnoted under Section VIII's own Cite-phase work) carrying the URL forward. The Polish-phase P1s on Section 04 (PI-006 through PI-010) remain open for the next Polish tick. Future Cite or Verify ticks should retry WebSearch periodically and try archive.org's direct lookup endpoint (https://web.archive.org/web/<timestamp>/https://constitutionallaw.netlify.app) once a user message or prior fetch result carries that endpoint into provenance. 2026-05-23T13:00 RESOLUTION (Section 01 Cite tick): WebFetch on https://constitutionallaw.netlify.app SUCCEEDED on the first call this run, returning the live Constitutional Law I Wiki (Dashboard/Cases/Topics/Lectures/Recent/About navigation, Prof. Chandler Spring 2026 identification, 'rebuilt nightly by a rotating LLM cycle' footer). The L-022 premise that WebFetch always refuses this vault-file URL by provenance no longer holds: the provenance gate opened once the URL was read from local evidence cards (evidence-08-live-deployed-site.md and siblings) in-session, per new lesson L-047. The URL-liveness substance of PI-005 is therefore resolved; Section 01 footnote [^5] cites it with last-visited May 23, 2026 and a verified-live parenthetical. This PI stays OPEN only so the next Section 04 Cite or Polish tick refreshes footnote [^12] (currently 'last visited May 16, 2026; URL liveness verification deferred ... see PI-005') to a current last-visited date and removes the deferral disclaimer, at which point PI-005 closes and archives.",
       "opened_at": "2026-05-16T07:14:54Z",
       "phase": "cite",
       "section": "04",
@@ -604,7 +604,7 @@
       "note": "Sequencing artifact, not an evidence gap in the drafted prose. The next Harvest tick that scaffold-first routes to Section 01 (after 01's evidence_status remains none) should build section-01-specific evidence cards (evidence-01-*) for the hidden-archive framing and the current-conversation anchor, and a later Outline tick should produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. The Cite tick that scaffold-first will route to Section 01 next can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source (Choi & Schwarcz 73 J. Legal Educ. 384 (2025), URL-liveness shared with Section XI per L-034 cross-section reuse). PI-074 closes when Harvest has written section-01 evidence cards and Outline has produced outline-01, or when a later Verify tick confirms the Introduction's grounding is complete without them."
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -614,14 +614,16 @@
     "stitch",
     "verify"
   ],
-  "run_count": 66,
+  "run_count": 67,
   "schema_version": 1,
   "sections": {
     "01": {
-      "cite_status": "none",
+      "cite_completed_at": "2026-05-23T13:00:00Z",
+      "cite_status": "needs_polish",
       "current_words": 854,
-      "draft_status": "needs_cite",
+      "draft_status": "needs_polish",
       "evidence_status": "none",
+      "footnotes_count": 8,
       "outline_status": "none",
       "polish_status": "none",
       "target_words": 900,
