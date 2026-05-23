@@ -13,7 +13,10 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 6. Append any new lessons to `Article/LESSONS.md` (cap at 50; if at cap, drop the lowest-impact entry first).
 7. Advance `current_phase` to the next in rotation; if last phase reached, wrap to first.
 8. Append a 2 to 4 sentence entry to `BUILD_NARRATIVE_YYYY-MM.md` describing what changed.
-9. If the cumulative state suggests the article is submission-ready, set `gates.submission_ready.awaiting_human = true` (see Stitch and Verify exit conditions).
+9. **Cost-log append (every run).** Append one JSON line to `Article/manuscript/cost-log.jsonl`:
+   `{"timestamp": "<ISO 8601>", "run_count": <int>, "phase": "<phase>", "model": "<model id>", "files_read": <int>, "files_written": <int>, "words_generated": <approx int — count words in new/edited prose excluding state files and JSONL appends>, "notes": "<one short sentence>"}`
+   This data is the source for Section IX (Cost and Labor). Honesty here is the article's argument; do not estimate when you can count.
+10. If the cumulative state suggests the article is submission-ready, set `gates.submission_ready.awaiting_human = true` (see Stitch and Verify exit conditions).
 
 ## Phase: Harvest
 
@@ -36,7 +39,18 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 
 **Goal:** For one section, produce or refresh `manuscript/outlines/outline-NN-slug.md`. The outline is the spine of subsequent Draft runs.
 
-**Procedure:**
+**Abstract sub-task (highest priority within Outline).** Before applying the procedure below, check `.article-state.json` `abstract.status`. If it is `none` or `needs_work`:
+
+1. Load `rubric/abstract.md`.
+2. Read the workplan's thesis (§1 of `Article-Workplan.md`), PROJECT_PRIMER's thesis sentence, and any existing `manuscript/abstract.md`.
+3. Draft or revise `manuscript/abstract.md` toward 240–260 words. Score against `rubric/abstract.md`.
+4. Update state: `abstract.status` (to `needs_work` if scores <4 anywhere; `ready_for_review` if all >=4 and word count in [225,275]; `ready_for_human_review` after three consecutive runs at avg >=4.5 with no substantive edits), `abstract.words`, `abstract.last_score`.
+5. Append the abstract score to `.article-scores.jsonl` with `phase: "outline-abstract"`.
+6. THIS COUNTS AS THE OUTLINE RUN. Advance the phase to Draft as normal. Do not also do a section outline in the same run.
+
+If `abstract.status` is `ready_for_review` or `ready_for_human_review`, skip the sub-task and proceed to the section-outline procedure below.
+
+**Procedure (section outline):**
 
 1. Pick the section with `outline_status: needs_work` whose `evidence_status` is `populated`.
 2. Read all evidence cards for that section.
@@ -144,8 +158,9 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 ## State machine rules
 
 - `current_phase` advances strictly through the rotation; no skipping.
-- A no-op run (nothing to harvest, no outlines to refresh, etc.) still advances the phase and logs `noop: true` to the scorecard; it does not score against the rubric.
+- A no-op run (nothing to harvest, no outlines to refresh, etc.) still advances the phase and logs `noop: true` to the scorecard; it does not score against the rubric. **Note:** Stitch noop is restricted by the adaptive-mode rule in the Stitch section — interim assembly counts as a real run.
 - The state file's `pending_issues` is append-only within a run; entries clear only when the phase that fixes them sets `resolved_at`.
+- **Pending-issue archival.** When a pending_issue's `status` flips to `resolved` or `outline-addressed`, the resolving phase MOVES the entry from `.article-state.json` `pending_issues` into `.article-state.archive.json` `archived_pending_issues` in the same run. The live state file should not accumulate closed work. If `.article-state.json` ever exceeds 150 KB, the next dispatcher run audits `pending_issues` and migrates any non-open entries it finds.
 - If LESSONS.md grows past 50 entries, the oldest low-impact entry (lowest `impact_score` field) is dropped.
 
 ## Stop conditions
