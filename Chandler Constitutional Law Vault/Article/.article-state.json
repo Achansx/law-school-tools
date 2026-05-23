@@ -1,9 +1,12 @@
 {
  "_archive_pointer": ".article-state.archive.json holds resolved and outline-addressed pending_issues; do not load every run.",
  "abstract": {
-  "status": "none",
+  "status": "ready_for_review",
   "target_words": 250,
-  "words": 0
+  "words": 243,
+  "last_score": 4.8,
+  "last_run_at": "2026-05-24T03:00:00Z",
+  "consecutive_ready_runs": 1
  },
  "article_title": "From Casebook to Course Knowledge System: AI-Assisted Synthesis, Obsidian, and the Future of Legal Pedagogy",
  "consecutive_low_scores": {
@@ -15,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "outline",
+ "current_phase": "draft",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "harvest",
- "last_run_at": "2026-05-24T01:00:00Z",
+ "last_completed_phase": "outline",
+ "last_run_at": "2026-05-24T03:00:00Z",
  "manuscript": {
   "full_draft_exists": true,
   "last_stitched_at": "2026-05-23T21:00:00Z",
@@ -694,7 +697,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 71,
+ "run_count": 72,
  "schema_version": 1,
  "sections": {
   "01": {
