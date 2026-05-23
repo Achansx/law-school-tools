@@ -15,15 +15,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-23T13:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-23T17:00:00Z",
   "manuscript": {
     "full_draft_exists": true,
     "last_stitched_at": "2026-05-22T23:00:00Z",
@@ -614,18 +614,19 @@
     "stitch",
     "verify"
   ],
-  "run_count": 67,
+  "run_count": 68,
   "schema_version": 1,
   "sections": {
     "01": {
       "cite_completed_at": "2026-05-23T13:00:00Z",
       "cite_status": "needs_polish",
-      "current_words": 854,
+      "current_words": 849,
       "draft_status": "needs_polish",
       "evidence_status": "none",
       "footnotes_count": 8,
       "outline_status": "none",
-      "polish_status": "none",
+      "polish_completed_at": "2026-05-23T17:00:00Z",
+      "polish_status": "ready_for_stitch",
       "target_words": 900,
       "title": "Introduction: The Hidden Archive of the Law Professor",
       "draft_at": "2026-05-23T09:00:00Z"
