@@ -15,15 +15,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "outline",
-  "last_run_at": "2026-05-23T05:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-23T09:00:00Z",
   "manuscript": {
     "full_draft_exists": true,
     "last_stitched_at": "2026-05-22T23:00:00Z",
@@ -592,9 +592,19 @@
       "section": "12",
       "status": "open",
       "type": "open-decision-backward-audit"
+    },
+    {
+      "id": "PI-074",
+      "section": "01",
+      "phase": "draft",
+      "type": "scaffold-first-sequence-gap",
+      "status": "open",
+      "opened_at": "2026-05-23T09:00:00Z",
+      "claim": "Section 01 (Introduction) was drafted under the RUNBOOK step-3a scaffold-first priority, which forced the Draft phase onto the lowest-numbered evidence_status:none scaffold section (01) ahead of any Harvest or Outline pass. No section-01-specific evidence cards and no outline-01 file exist. The draft is grounded honestly: framing and thesis are the article's own argument (Article-Workplan.md \u00a71, \u00a710; PROJECT_PRIMER thesis and house-voice recurring sentence), and every concrete factual claim carries a [CITE:] placeholder pointing to an EXISTING verified sibling evidence card (evidence-04-filename-heterogeneity, evidence-04-course-scope, evidence-08-live-deployed-site, evidence-03-midpage-verified-quotations, evidence-07-professorial-control-mechanism, evidence-11-not-a-claim-students-learned-more, evidence-11-choi-schwarcz-jle-empirical-precedent, evidence-12-static-vs-chatbot-risk-architecture). No fabricated fact, quotation, statistic, or citation was introduced.",
+      "note": "Sequencing artifact, not an evidence gap in the drafted prose. The next Harvest tick that scaffold-first routes to Section 01 (after 01's evidence_status remains none) should build section-01-specific evidence cards (evidence-01-*) for the hidden-archive framing and the current-conversation anchor, and a later Outline tick should produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. The Cite tick that scaffold-first will route to Section 01 next can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source (Choi & Schwarcz 73 J. Legal Educ. 384 (2025), URL-liveness shared with Section XI per L-034 cross-section reuse). PI-074 closes when Harvest has written section-01 evidence cards and Outline has produced outline-01, or when a later Verify tick confirms the Introduction's grounding is complete without them."
     }
   ],
-  "phase_index": 2,
+  "phase_index": 3,
   "phases": [
     "harvest",
     "outline",
@@ -604,18 +614,19 @@
     "stitch",
     "verify"
   ],
-  "run_count": 65,
+  "run_count": 66,
   "schema_version": 1,
   "sections": {
     "01": {
       "cite_status": "none",
-      "current_words": 0,
-      "draft_status": "none",
+      "current_words": 854,
+      "draft_status": "needs_cite",
       "evidence_status": "none",
       "outline_status": "none",
       "polish_status": "none",
       "target_words": 900,
-      "title": "Introduction: The Hidden Archive of the Law Professor"
+      "title": "Introduction: The Hidden Archive of the Law Professor",
+      "draft_at": "2026-05-23T09:00:00Z"
     },
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
