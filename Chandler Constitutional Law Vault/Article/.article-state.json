@@ -15,15 +15,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-23T21:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-23T23:00:00Z",
   "manuscript": {
     "full_draft_exists": true,
     "last_stitched_at": "2026-05-23T21:00:00Z",
@@ -612,9 +612,69 @@
       "section": "09",
       "status": "open",
       "type": "cross-reference-validation"
+    },
+    {
+      "claim": "Section I.C states the 198-page count as a present fact ('became a live knowledge system of 198 pages'), but Sections II.B and IV.E establish 198 as a fixed progress-report snapshot against a 281-page May 15, 2026 filesystem audit.",
+      "id": "PI-076",
+      "note": "Persona 1 (Skeptical JLE Editor) P1. P1-deferral active this run, so logged without resetting Section 01 status; Section 01 stays polish_status: stitched. Next Polish tick on Section 01 (after deferral lifts) should insert the snapshot qualifier inline ('a knowledge system that, as of the progress-report snapshot this article anchors to, comprised 198 pages...') or add a forward-reference to the Section IV.E snapshot disclosure so the intro figure reads as a snapshot, not a live count. Footnote [^5] already carries the snapshot framing; this is a body-prose alignment.",
+      "opened_at": "2026-05-23T23:00:00Z",
+      "phase": "verify",
+      "section": "01",
+      "status": "open",
+      "type": "snapshot-consistency"
+    },
+    {
+      "claim": "Section I.D sentence 'That study sets both the stakes and the standard' elevates a single empirical study (Choi & Schwarcz, [^8]) to the field's standard, an overreach the introduction does not hedge.",
+      "id": "PI-077",
+      "note": "Persona 1 (Skeptical JLE Editor) P1. P1-deferral active; logged without status reset. Next Polish tick on Section 01 should soften to 'That study is one recent demonstration that serious inquiry into AI and legal learning is possible at proportional rigor' and let Section XI carry the methodological-posture argument rather than the introduction.",
+      "opened_at": "2026-05-23T23:00:00Z",
+      "phase": "verify",
+      "section": "01",
+      "status": "open",
+      "type": "single-study-overreach"
+    },
+    {
+      "claim": "Section I.A 'The judgment lives in the professor and in the live classroom, where it is performed once and then gone' frames live Socratic teaching as a loss to be recovered into an archive.",
+      "id": "PI-078",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1, recurring the live-pedagogy-as-static-artifact pattern (PI-031/PI-039/PI-046/PI-054/PI-061). P1-deferral active; logged without status reset. Next Polish tick on Section 01 should add a clause conceding the live performance carries pedagogical value the system does not attempt to reproduce ('...performed once and not recoverable in full; the method captures the reusable residue of that judgment, not the live act itself'). L-040 voice-unity sweep should have caught this at Polish; the Polish narrative noted Section 01 was 'clean on L-040', so the slip is in the sweep's coverage of framing prose, not just personifying verbs.",
+      "opened_at": "2026-05-23T23:00:00Z",
+      "phase": "verify",
+      "section": "01",
+      "status": "open",
+      "type": "live-pedagogy"
+    },
+    {
+      "claim": "Section I.B ('other doctrinal courses with similar archives can follow') and I.E ('the result the article asks other faculty to reuse') assert generalizability before Section X (PENDING) argues it; the method assumes a course organized around tagged doctrines and landmark cases, which may not map onto a rules-and-procedure course like Civil Procedure.",
+      "id": "PI-079",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1. P1-deferral active; logged without status reset. Next Polish tick on Section 01 should hedge the I.B/I.E generalization to a claim the article will argue ('a method this article argues other doctrinal courses with comparable case-and-doctrine structure can adapt, see Section X') rather than stating transfer as settled. Substantive resolution depends on Section X (drafting order 12, still at evidence_status: none); the intro hedge can land independently at Polish.",
+      "opened_at": "2026-05-23T23:00:00Z",
+      "phase": "verify",
+      "section": "01",
+      "status": "open",
+      "type": "generalization-hedge"
+    },
+    {
+      "claim": "Section I.C 'published ... and readable by anyone' elides the digital-divide and accessibility caveat; 'anyone' assumes a device, connectivity, and the digital literacy to navigate a wiki.",
+      "id": "PI-080",
+      "note": "Persona 3 (AI-in-Education Researcher) P1, FIFTH section recurrence of the equity-and-accessibility-silence pattern (PI-026/PI-033/PI-064/PI-071 across Sections III, IV, II, VIII; now I). The 2026-05-23T01 Verify tick flagged that a fifth recurrence would confirm the pattern as structural; it now has, grounding new lesson L-050. P1-deferral active; logged without status reset. Next Polish tick on Section 01 should qualify to 'readable by anyone with web access' and add a forward-reference to Section XII's equity-and-accessibility discussion.",
+      "opened_at": "2026-05-23T23:00:00Z",
+      "phase": "verify",
+      "section": "01",
+      "status": "open",
+      "type": "accessibility-silence"
+    },
+    {
+      "claim": "Section I.D's only engagement with the field is one JLE empirical study (Choi & Schwarcz, [^8]); the AI-in-higher-education research literature the article cites elsewhere (Bond et al. meta-review) is absent from 'the conversation this enters'.",
+      "id": "PI-081",
+      "note": "Persona 3 (AI-in-Education Researcher) P1, recurring the missing-prior-literature/citation-density pattern (PI-025/PI-032/PI-040/PI-048/PI-072). P1-deferral active; logged without status reset. Routes to the future multi-section Cite pass that resolves PI-025/PI-032/PI-040/PI-048/PI-072: add one clause in I.D situating the work against the broader AI-in-higher-education literature with a forward-reference.",
+      "opened_at": "2026-05-23T23:00:00Z",
+      "phase": "verify",
+      "section": "01",
+      "status": "open",
+      "type": "citation-density"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -624,7 +684,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 69,
+  "run_count": 70,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -872,11 +932,12 @@
   "target_words_min": 10000,
   "verify": {
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-23T01:00:00Z",
-    "new_findings_count": 11,
+    "last_run_at": "2026-05-23T23:00:00Z",
+    "new_findings_count": 8,
     "p0_open": 0,
-    "p1_open": 46,
-    "p2_open": 31,
-    "personas_read": 3
+    "p1_open": 52,
+    "p2_open": 33,
+    "personas_read": 3,
+    "deferred_p1_count": 6
   }
 }
