@@ -7,6 +7,7 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 1. Read `Article/.article-state.json`. Identify `current_phase` and `gates`.
 2. If any gate has `awaiting_human: true`, log one line to `BUILD_NARRATIVE` and stop. Do not advance.
 3. Otherwise, load `Article/rubric/<current_phase>.md` and `Article/LESSONS.md`.
+3a. **Scaffold-first priority (active until first-pass completion).** Before applying any in-phase section-selection heuristic, check whether any of sections 01, 10, 12, 13, 14 still have `evidence_status: none`. If yes, **the active phase MUST work on the lowest-numbered such untouched section first**, overriding any "lowest ratio" or "needs_work" rule below. This applies to Harvest, Outline, Draft, Cite, and Polish. It lifts automatically when every section has reached at least `cite_status: needs_polish` once. The rotation should not loop over already-developed sections while any of these five are at `none`.
 4. Execute the phase per the section below.
 5. Score the run against the rubric (1 to 5 per criterion). Append one JSON line to `Article/.article-scores.jsonl` with: `{timestamp, phase, scores, notes}`.
 6. Append any new lessons to `Article/LESSONS.md` (cap at 50; if at cap, drop the lowest-impact entry first).
@@ -103,7 +104,12 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 
 **Goal:** Cross-section consistency. The seam-fixer.
 
-**Procedure:**
+**Adaptive mode (interim vs. final).** Before procedure: read `.article-state.json` and count sections where `polish_status` is either `ready_for_stitch` or `stitched`.
+
+- **Interim stitch (count < 14):** Skip the word-count, recurring-sentence, and submission-readiness checks. Assemble the sections that exist into `manuscript/full-draft.md` in section order, with a top-of-file note: `*Interim assembly: <N> of 14 sections. Not submission-ready.*` Still run terminology, cross-reference, and seam-transition checks on the sections that exist. Update `manuscript.total_words` and `manuscript.last_stitched_at`. Score the run normally — **do NOT noop just because some sections are missing**. The Verify phase needs something to read.
+- **Final stitch (count == 14):** Run the full procedure below.
+
+**Procedure (final stitch only):**
 
 1. Read all `manuscript/polished/section-*.md` files plus the abstract.
 2. Run consistency checks:
@@ -128,9 +134,12 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 1. Read `Article/PERSONAS.md`.
 2. For each of the three personas, read the full draft and return at least one finding. P0 (must fix before submission), P1 (should fix), P2 (nice to fix). Each persona MUST return at least one finding; "looks fine" is not acceptable.
 3. Append findings to `manuscript/verify-findings.md` with persona, severity, location (section, paragraph), description, suggested fix.
-4. For P0 and P1 findings, set the relevant section's status back to `needs_polish` (if style) or `needs_draft` (if substantive) so the next rotation through Draft/Polish picks them up.
-5. Update `.article-state.json` `verify.last_run` and `verify.new_findings_count`.
-6. If zero P0 and zero P1 findings AND Stitch's previous-run report was clean, the system is ready for the submission gate.
+4. **Status-reset rules (P1 deferral until first-pass completion):**
+   - P0 findings ALWAYS reset the affected section's status: to `needs_draft` if substantive, `needs_polish` if cosmetic.
+   - P1 findings: check `.article-state.json` — have all 14 sections reached at least `cite_status: needs_polish` once? If **NO**, P1 findings are LOGGED to `pending_issues` but do NOT reset section status. The first-pass scaffold of missing sections takes priority over polishing existing sections to mirror finish. If **YES**, P1 findings reset section status as before (`needs_polish` for style, `needs_draft` for substantive).
+   - P2 findings always log only; never reset status.
+5. Update `.article-state.json` `verify.last_run` and `verify.new_findings_count`. Record the count of *deferred* P1s separately in `verify.deferred_p1_count` so the system can re-enforce them once the deferral lifts.
+6. If zero P0 and zero P1 findings AND Stitch's previous-run report was clean AND all 14 sections are `polish_status: stitched`, the system is ready for the submission gate.
 
 ## State machine rules
 
