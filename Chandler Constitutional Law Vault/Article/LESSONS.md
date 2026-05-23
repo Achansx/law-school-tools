@@ -89,14 +89,6 @@ date: 2026-05-15
 rule: If Draft encounters a `[TODO: evidence needed]` marker, it logs to `pending_issues` and stops on that section. The next Harvest run picks it up. Draft does not invent evidence to fill gaps.
 context: Inventing evidence is the failure mode the entire project is meant to demonstrate the cure for. The system must not commit it.
 
-## L-010: Mata v. Avianca is one sentence, not a paragraph
-
-phase: draft
-impact_score: 2
-date: 2026-05-15
-rule: In Section XII, cite Mata as a one-sentence reminder of hallucination consequences. Do not retell the story; it has been retold enough.
-context: Originality on the risks topic comes from the Prize Cases story and the Magesh study, not from rehashing Mata.
-
 ## L-011: Pick a corpus snapshot date and footnote drift
 
 phase: harvest
@@ -443,3 +435,11 @@ impact_score: 4
 date: 2026-05-23
 rule: During Polish, any section that makes a "readable/usable by [students/anyone]" claim or otherwise asserts open access to the deployed site must carry at least one sentence acknowledging the access assumption (device, connectivity, digital literacy) with a forward-reference to Section XII's equity-and-accessibility treatment. Do not let an unqualified access claim ("readable by anyone") reach Verify; qualify it ("readable by anyone with web access") and point forward for the substantive discussion.
 context: The equity-and-accessibility-silence pattern recurred a fifth time at Section I.C ("published ... and readable by anyone", PI-080) after PI-026, PI-033, PI-064, and PI-071 across Sections III, IV, II, and VIII. The 2026-05-23T01 Verify run logged a meta-observation that a fifth section recurrence would confirm the pattern as structural rather than incidental; the 2026-05-23T23:00 Verify run is that fifth recurrence, so the pattern is now confirmed and the cumulative silence will read to an AI-in-education reviewer as a literature-engagement gap regardless of which section the next Polish tick lands first. Encoding the access-assumption sentence as a per-section Polish requirement (rather than waiting for Verify to catch each section in turn) stops the pattern from recurring into Sections X-XIV as they scaffold. Companion to L-040's live-pedagogy-slip check and distinct from it: L-040 guards the professor's role, L-050 guards the student's access conditions.
+
+## L-051: Scaffold-first's evidence_status:none trigger is literal, even for an already-stitched section
+
+phase: harvest
+impact_score: 4
+date: 2026-05-24
+rule: RUNBOOK step-3a keys on evidence_status:none and selects the lowest-numbered such section among 01/10/12/13/14, full stop. A section that has been drafted, cited, polished, and stitched but still reads evidence_status:none is STILL the mandated target until its evidence_status is actually advanced to populated; building the back-fill evidence-NN-* cards is the mechanism that clears the artifact. Do not let a forward-looking narrative aside or a prior Verify-note prediction ("01 is just a sequencing artifact, skip to 10") override the literal trigger.
+context: At run 71 the run-70 Verify note predicted Harvest would skip Section 01 (already stitched) and select Section 10. But PI-074 (the dedicated record for this exact case) said the next scaffold-first Harvest tick routed to Section 01 should build the evidence-01-* cards, and the literal 3a rule selects the lowest-numbered evidence_status:none section, which is 01. The conflict resolves in favor of the rule plus the dedicated PI, not the narrative prediction: following the prediction would have left 01 permanently at none (nothing else would ever advance it) while the rotation churned, and would have left PI-074 open indefinitely. Harvesting 01 wrote eight cards, flipped 01 to populated, and satisfied PI-074's Harvest half. Rule of thumb: when a build-narrative or Verify-note aside conflicts with a dedicated pending-issue plan and the literal RUNBOOK trigger, obey the rule and the PI.
