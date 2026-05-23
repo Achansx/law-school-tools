@@ -13,11 +13,11 @@
     "stitch",
     "verify"
   ],
-  "current_phase": "draft",
-  "phase_index": 2,
-  "last_run_at": "2026-05-23T05:00:00Z",
-  "last_completed_phase": "outline",
-  "run_count": 65,
+  "current_phase": "cite",
+  "phase_index": 3,
+  "last_run_at": "2026-05-23T07:00:00Z",
+  "last_completed_phase": "draft",
+  "run_count": 66,
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -239,13 +239,15 @@
       "target_words": 800,
       "evidence_status": "populated",
       "outline_status": "ready_for_draft",
-      "draft_status": "none",
+      "draft_status": "needs_cite",
       "cite_status": "none",
       "polish_status": "none",
-      "current_words": 0,
+      "current_words": 978,
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-23T03:00:00Z",
-      "outline_ready_at": "2026-05-23T05:00:00Z"
+      "outline_ready_at": "2026-05-23T05:00:00Z",
+      "draft_completed_at": "2026-05-23T07:00:00Z",
+      "flag_for_stitch_trim": true
     },
     "13": {
       "title": "Institutional Implications",
