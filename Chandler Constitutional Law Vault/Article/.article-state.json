@@ -15,22 +15,22 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-05-23T17:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-05-23T21:00:00Z",
   "manuscript": {
     "full_draft_exists": true,
-    "last_stitched_at": "2026-05-22T23:00:00Z",
+    "last_stitched_at": "2026-05-23T21:00:00Z",
     "partial_assembly": true,
-    "sections_stitched": 8,
+    "sections_stitched": 9,
     "sections_total": 14,
-    "total_words": 7744
+    "total_words": 8588
   },
   "pending_issues": [
     {
@@ -602,9 +602,19 @@
       "opened_at": "2026-05-23T09:00:00Z",
       "claim": "Section 01 (Introduction) was drafted under the RUNBOOK step-3a scaffold-first priority, which forced the Draft phase onto the lowest-numbered evidence_status:none scaffold section (01) ahead of any Harvest or Outline pass. No section-01-specific evidence cards and no outline-01 file exist. The draft is grounded honestly: framing and thesis are the article's own argument (Article-Workplan.md \u00a71, \u00a710; PROJECT_PRIMER thesis and house-voice recurring sentence), and every concrete factual claim carries a [CITE:] placeholder pointing to an EXISTING verified sibling evidence card (evidence-04-filename-heterogeneity, evidence-04-course-scope, evidence-08-live-deployed-site, evidence-03-midpage-verified-quotations, evidence-07-professorial-control-mechanism, evidence-11-not-a-claim-students-learned-more, evidence-11-choi-schwarcz-jle-empirical-precedent, evidence-12-static-vs-chatbot-risk-architecture). No fabricated fact, quotation, statistic, or citation was introduced.",
       "note": "Sequencing artifact, not an evidence gap in the drafted prose. The next Harvest tick that scaffold-first routes to Section 01 (after 01's evidence_status remains none) should build section-01-specific evidence cards (evidence-01-*) for the hidden-archive framing and the current-conversation anchor, and a later Outline tick should produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. The Cite tick that scaffold-first will route to Section 01 next can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source (Choi & Schwarcz 73 J. Legal Educ. 384 (2025), URL-liveness shared with Section XI per L-034 cross-section reuse). PI-074 closes when Harvest has written section-01 evidence cards and Outline has produced outline-01, or when a later Verify tick confirms the Introduction's grounding is complete without them."
+    },
+    {
+      "claim": "The assembled full-draft.md carries cross-section note pointers in footnote prose that may point to the wrong target note. The Stitch tick that landed Section I (run 69) softened six pointers that pointed beyond the footnote count to section-name form per L-041, but it did not run a full L-041 validation pass against target-note content for the in-range (<=125) cross-section pointers, which a uniform +8 shift preserved at whatever value the prior assembly had. At least one in-range pointer is known-suspect: footnote [^123] (Section IX, the master-cost-table note) carries 'Section IV (The Input Corpus) note 56' for the ingest-line forward reference, but Section IV occupies [^35]-[^54] in the new numbering, so note 56 falls in Section V's range; the Section IV ingest-line forward reference is at [^53] (the '*See also infra* Section IX ... ingest-phase line item closes through that table' note), not [^56].",
+      "id": "PI-075",
+      "note": "Opened by the run-69 Stitch tick as the honest scope boundary of an interim assembly. A future Stitch tick (when it next lands a previously-PENDING section and re-runs the L-035 cross-section reconciliation) or a future Cite tick should run a full L-041 validation pass: for every 'Section NAME ... note N' pointer in the footnote block, read the target note's actual content from the polished source and confirm N lands inside the target section's global footnote range and matches the described content; soften to section-name form when wrong rather than guessing a number. The known-suspect [^123] 'Section IV note 56' should resolve to the Section IV ingest-line note (currently [^53]) or soften to 'Section IV (The Input Corpus)'. This PI does not reset any section status; the source polished files are correct and unchanged (L-035), and the defect lives only in the assembled draft's cross-section pointer prose. Closes when a Stitch or Cite tick confirms every in-range cross-section pointer validates against target content.",
+      "opened_at": "2026-05-23T21:00:00Z",
+      "phase": "stitch",
+      "section": "09",
+      "status": "open",
+      "type": "cross-reference-validation"
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -614,7 +624,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 68,
+  "run_count": 69,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -626,7 +636,8 @@
       "footnotes_count": 8,
       "outline_status": "none",
       "polish_completed_at": "2026-05-23T17:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "stitched",
+      "stitched_at": "2026-05-23T21:00:00Z",
       "target_words": 900,
       "title": "Introduction: The Hidden Archive of the Law Professor",
       "draft_at": "2026-05-23T09:00:00Z"
