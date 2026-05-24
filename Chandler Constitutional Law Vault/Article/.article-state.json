@@ -18,22 +18,23 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "stitch",
+ "current_phase": "verify",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "polish",
- "last_run_at": "2026-05-24T09:00:00Z",
+ "last_completed_phase": "stitch",
+ "last_run_at": "2026-05-24T11:00:00Z",
  "manuscript": {
   "full_draft_exists": true,
-  "last_stitched_at": "2026-05-23T21:00:00Z",
+  "last_stitched_at": "2026-05-24T11:00:00Z",
   "partial_assembly": true,
-  "sections_stitched": 9,
+  "sections_stitched": 10,
   "sections_total": 14,
-  "total_words": 8588
+  "total_words": 9496,
+  "abstract_assembled": true
  },
  "pending_issues": [
   {
@@ -613,7 +614,9 @@
    "opened_at": "2026-05-23T21:00:00Z",
    "phase": "stitch",
    "section": "09",
-   "status": "open",
+   "status": "resolved",
+   "resolved_at": "2026-05-24T11:00:00Z",
+   "resolution": "Run-76 Stitch tick (landing Section X) completed the owed L-041 in-range validation pass. Ten 'Section NAME note N' cross-section pointers were validated against target-note content: seven matched (Section VII note 88 = Prize Cases/Grier anchor; Section VIII note 95 = deployed-site URL, three references; Section VIII note 109 = Sajja et al.; Section VI note 80 = Midpage-verification prompt framing; Section VI note 84 = LESSONS prompt-iteration memory) and three were in-range but pointed at the wrong note and were corrected in the assembled draft: [^11] 'Section IV note 48' -> note 51 and [^111] 'Section IV note 67' -> note 51 (both target the 198-page progress-report snapshot anchor at note 51; note 48 is the casebook open-question note and note 67 is in Section V's range), and the known-suspect [^123] 'Section IV note 56' -> note 53 (the ingest-line forward reference; note 56 is in Section V's range). Subject matter matched each correct target unambiguously, so the L-041 fix-the-number path was taken rather than softening. Every in-range cross-section pointer now validates against target content, PI-075's closing condition. Source polished files unchanged per L-035; corrections live in the assembled draft only. Entry migrates to .article-state.archive.json on the next dispatcher >150KB audit.",
    "type": "cross-reference-validation"
   },
   {
@@ -707,7 +710,7 @@
    "type": "push-race-conflict"
   }
  ],
- "phase_index": 5,
+ "phase_index": 6,
  "phases": [
   "harvest",
   "outline",
@@ -717,7 +720,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 75,
+ "run_count": 76,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -910,8 +913,9 @@
    "evidence_status": "none",
    "footnotes_count": 14,
    "outline_status": "none",
-   "polish_status": "ready_for_stitch",
+   "polish_status": "stitched",
    "polish_completed_at": "2026-05-24T09:00:00Z",
+   "stitched_at": "2026-05-24T11:00:00Z",
    "target_words": 900,
    "title": "Generalization Beyond Constitutional Law"
   },
