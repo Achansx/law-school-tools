@@ -1,14 +1,23 @@
 ---
 id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
-status: ready_for_stitch
+status: needs_polish
 target_words: 700
 word_count: 770
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 9
+provenance_audited: true
+provenance_score: 4.0
+claims_total: 10
+claims_mapped: 10
+unsupported_claims:
+  - claim_text: "the May 2026 snapshot's 154 still-unprocessed source materials figure"
+    paragraph: 2
+    reason: requires-primary-source
+provenance_note: "Verify-provenance audit, run 128 (second audit of the burst; lowest-numbered polished section with no provenance frontmatter). Ten factual claims, all map to footnotes [^1]-[^9]. Criterion scores 5/4/4/4/3 (avg 4.0): claim coverage full; primary-source ratio 4 (Rubin, Mertz, Abrams, Bond, and the Prize Cases forward-reference are clean primaries, but the corpus-count and Topic-page/wiki-link claims route through App. A appendix material); attribution 4 (footnotes [^1]/[^4]/[^8]/[^9] carry scheduled-task process language 'verified live via WebSearch with allowed_domains scoping ... per L-022', PI-119); numerical precision 4 (198 = 92+27+79 and consistent across I.C/IV/VIII, but the 154 figure's only primary source is the progress email, absent from the repo, PI-082); gap honesty 3 (footnotes [^2]/[^3]/[^6] cite 'App. D (Correspondence Excerpts)', an appendix that does not exist - App. D is the Karpathy-Loop Per-Phase Rubric - and the broken pointer is not flagged inline, PI-122). 4.0 < 4.5, so the section returns to polish_status: needs_polish; cite_status set to needs_cite for the Cite-owned footnote-form fixes (PI-119, PI-122). Frontmatter status/cite_status/polish_status reconciled from the stale ready_for_stitch mirror."
 ---
 
 # II. Why Ordinary Course Infrastructure Is Not Enough
