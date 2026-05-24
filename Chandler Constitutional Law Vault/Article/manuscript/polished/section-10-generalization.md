@@ -1,14 +1,24 @@
 ---
 id: "10"
 title: "Generalization Beyond Constitutional Law"
-status: ready_for_stitch
+status: needs_polish
 target_words: 900
 word_count: 908
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 14
+provenance_audited: true
+provenance_audited_at: 2026-05-29T21:00:00Z
+provenance_score: 3.8
+claims_total: 18
+claims_mapped: 17
+unsupported_claims:
+  - claim_text: "Those three page-type units 'recur in nearly every doctrinal course' and 'a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape' (X.B), cited to [^3]/[^4] = supra Section V, which describes only the single constitutional-law vault; the empirical generalization to other courses has no source that establishes it."
+    paragraph: 2
+    reason: requires-primary-source
+provenance_note: "Verify-provenance audit, run 136 (tenth audit of the burst; lowest-numbered polished section with no provenance frontmatter; sections_audited 9->10). 18 factual claims, 17 mapped, 1 unsupported (the X.B generalization reach to other courses, PI-156, reason requires-primary-source). Criterion scores 4/3/4/4/4 (avg 3.8): claim coverage 4 (17/18 = 94.4%, the one unmapped claim listed); primary-source ratio 3 (13 of 14 footnotes are internal supra/infra cross-references to other article sections, only [^12] Usman 2018 is external and it carries the open reach gap PI-090, so the section's load-bearing transfer claims rest on cross-references to the single con-law vault); attribution 4 (Usman named with year, no anonymized attribution; the deduction is [^12]'s scheduled-task process language 'URL verified live this run via WebFetch', the PI-115/PI-119 footnote-process-leak family); numerical precision 4 (the structural counts -- three page types, nine-section brief, four doctrinal families, six-phase rotation, one instance not two -- are cross-section consistent, six-phase matching Sections VI and XIV with no drift, and route through the sections that define them; no time-varying snapshot numbers); gap honesty 4 (candid about the largest limits -- n=1, no learning-outcomes claim, 'a question this section raises rather than settles' -- but does not flag inline that the schema-transfer claims rest on the one con-law vault, the reach now in unsupported_claims). 3.8 < 4.5, so Section 10 returns to polish_status: needs_polish; cite_status set to needs_cite for the Cite-owned PI-155 (chatbot-tutor alternative-architecture literature anchor at X.C) and PI-156 (external case-brief-form source for X.B). Frontmatter status/cite_status/polish_status reconciled from the stale ready_for_stitch mirror to the state file."
 ---
 
 # X. Generalization Beyond Constitutional Law
