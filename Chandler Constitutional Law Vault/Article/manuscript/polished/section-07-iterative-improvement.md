@@ -1,14 +1,22 @@
 ---
 id: "07"
 title: "Iterative Improvement Under Professorial Control"
-status: ready_for_stitch
+status: needs_polish
 target_words: 1100
 word_count: 1193
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 10
+provenance_audited: true
+provenance_score: 4.0
+claims_total: 22
+claims_mapped: 21
+unsupported_claims:
+  - claim_text: "VII.D paragraph 2 final sentence asserts 'The per-phase-rubric-only principle is the article's own L-007', citing an internal vault LESSONS entry by its catalog identifier as standalone inline authority for a general design principle. L-007 is not reproduced in the prose and is unresolvable by a reader; footnote [^7] routes the underlying tiered-loading principle to App. A, so the inline 'L-007' label carries no external or appendix-anchored authority on its own."
+    paragraph: 2
+    reason: requires-primary-source
 ---
 
 # VII. Iterative Improvement Under Professorial Control
