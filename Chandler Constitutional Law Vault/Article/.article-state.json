@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "draft",
+ "current_phase": "cite",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "outline",
- "last_run_at": "2026-05-25T07:00:00Z",
+ "last_completed_phase": "draft",
+ "last_run_at": "2026-05-25T09:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -818,7 +818,7 @@
    "type": "scaffold-first-sequence-gap"
   }
  ],
- "phase_index": 2,
+ "phase_index": 3,
  "phases": [
   "harvest",
   "outline",
@@ -828,7 +828,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 86,
+ "run_count": 87,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1059,27 +1059,27 @@
    "title": "Risks and Limits"
   },
   "13": {
+   "cite_at": "2026-05-24T21:00:00Z",
+   "cite_note": "Seven [CITE:] placeholders resolved to footnotes [^1]-[^7]. [^1] external OER sources (opencasebook.org via WebSearch after 403 per L-022; cali.org eLangdell via WebFetch; MIT News series via WebSearch); [^2]-[^7] sibling supra/infra cross-references. Dedicated evidence-13-* cards still owed under PI-091.",
    "cite_status": "needs_polish",
    "current_words": 478,
+   "draft_at": "2026-05-24T19:00:00Z",
    "draft_status": "needs_cite",
    "evidence_cards": 6,
    "evidence_populated_at": "2026-05-25T05:00:00Z",
    "evidence_status": "populated",
+   "outline_completed_at": "2026-05-24T17:00:00Z",
    "outline_status": "ready_for_draft",
+   "polish_at": "2026-05-24T23:00:00Z",
+   "polish_note": "Polished from drafts/section-13. Split four over-length argumentative sentences in 13.A and 13.C (L-029 procedural-enumeration exemption does not reach this non-infrastructure argument section); converted the 13.B institutional-role list-after-colon into a parallel active-verb sentence with the library, instructional design, and IT each carrying its own verb (L-031 named-human-actor verbs); removed two self-flagging meta-rhetoric constructions per L-036/L-048 (\"naming that split is the institutional implication\" -> \"that split is the institutional implication\"; \"The article names that question without resolving it\" -> direct assertion). No em dashes or straight quotes in body or footnotes (L-023). Footnote URL-verification annotations preserved per the article-wide convention (cf. polished Section 10 [^12]). 478 words, within +-10% of the 500 target. polish_status none -> ready_for_stitch.",
    "polish_status": "ready_for_stitch",
    "target_words": 500,
-   "title": "Institutional Implications",
-   "outline_completed_at": "2026-05-24T17:00:00Z",
-   "draft_at": "2026-05-24T19:00:00Z",
-   "cite_at": "2026-05-24T21:00:00Z",
-   "cite_note": "Seven [CITE:] placeholders resolved to footnotes [^1]-[^7]. [^1] external OER sources (opencasebook.org via WebSearch after 403 per L-022; cali.org eLangdell via WebFetch; MIT News series via WebSearch); [^2]-[^7] sibling supra/infra cross-references. Dedicated evidence-13-* cards still owed under PI-091.",
-   "polish_at": "2026-05-24T23:00:00Z",
-   "polish_note": "Polished from drafts/section-13. Split four over-length argumentative sentences in 13.A and 13.C (L-029 procedural-enumeration exemption does not reach this non-infrastructure argument section); converted the 13.B institutional-role list-after-colon into a parallel active-verb sentence with the library, instructional design, and IT each carrying its own verb (L-031 named-human-actor verbs); removed two self-flagging meta-rhetoric constructions per L-036/L-048 (\"naming that split is the institutional implication\" -> \"that split is the institutional implication\"; \"The article names that question without resolving it\" -> direct assertion). No em dashes or straight quotes in body or footnotes (L-023). Footnote URL-verification annotations preserved per the article-wide convention (cf. polished Section 10 [^12]). 478 words, within +-10% of the 500 target. polish_status none -> ready_for_stitch."
+   "title": "Institutional Implications"
   },
   "14": {
    "cite_status": "none",
-   "current_words": 0,
-   "draft_status": "none",
+   "current_words": 385,
+   "draft_status": "needs_cite",
    "evidence_status": "none",
    "outline_status": "ready_for_draft",
    "polish_status": "none",
