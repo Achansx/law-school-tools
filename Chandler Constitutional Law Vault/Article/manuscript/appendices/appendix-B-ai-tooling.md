@@ -2,11 +2,11 @@
 id: appendix-B
 title: "AI Tooling — Prompts, Skills, and Plugins"
 status: drafted
-words: 1273
+words: 1272
 target_min: 1200
 target_max: 1800
 last_phase: harvest-appendix
-last_run_at: 2026-05-28T07:00:00Z
+last_run_at: 2026-05-28T17:00:00Z
 subsections:
   - B.1: "Prompts (vault and article)"
   - B.2: "Claude Code skills"

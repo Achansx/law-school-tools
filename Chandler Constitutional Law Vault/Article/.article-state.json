@@ -22,8 +22,8 @@
     "B": {
       "id": "B",
       "last_phase": "harvest-appendix",
-      "last_run_at": "2026-05-28T07:00:00Z",
-      "status": "needs_work",
+      "last_run_at": "2026-05-28T17:00:00Z",
+      "status": "drafted",
       "subsections": [
         "B.1 Prompts (vault and article)",
         "B.2 Claude Code skills",
@@ -32,7 +32,7 @@
       "target_max": 1800,
       "target_min": 1200,
       "title": "AI Tooling \u2014 Prompts, Skills, and Plugins",
-      "words": 1273
+      "words": 1272
     },
     "C": {
       "id": "C",
@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "harvest",
-  "last_run_at": "2026-05-28T15:00:00Z",
+  "last_run_at": "2026-05-28T17:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -975,7 +975,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 121,
+  "run_count": 122,
   "schema_version": 1,
   "sections": {
     "01": {
