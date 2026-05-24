@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "verify",
+ "current_phase": "harvest",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "stitch",
- "last_run_at": "2026-05-25T01:00:00Z",
+ "last_completed_phase": "verify",
+ "last_run_at": "2026-05-25T03:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -767,9 +767,59 @@
    "owner_phase": "harvest",
    "summary": "Section 13 (Institutional Implications) was outlined under the run-73 Section 10 scaffold precedent while evidence_status:none. outline-13 rides the workplan SXIII OER bibliography plus sibling cards (09 labor, 08 pipeline/site, 07 professorial control, 12 static-vs-chatbot, 10 method-not-artifact). The next scaffold-first Harvest tick on Section 13 owes three dedicated cards: evidence-13-oer-positioning (H2O opencasebook.org + CALI eLangdell cali.org/the-elangdell-bookstore, complementary-infrastructure framing), evidence-13-institutional-roles (library/instructional-design/IT stewardship grounded in Section IX labor categories), and evidence-13-governance-and-recognition (named-professor accountability surface + versioned-artifact-as-scholarship question). After Harvest, Draft/Cite re-bind from sibling pointers to dedicated Section 13 cards. Analogue of PI-083 (Section 10).",
    "closing_condition": "Harvest writes the three evidence-13-* cards and section 13 evidence_status advances none->populated."
+  },
+  {
+   "claim": "Published footnotes throughout the assembled draft embed internal maintenance-system lesson identifiers and fetch-process narration that are not Bluebook 21st form: 'per L-022' appears 5 times, 'per L-001' twice, 'per L-027' twice, and 'per L-011'/'per L-015'/'per L-034'/'per L-038'/'per L-039' once each, alongside process annotations such as '(URL verified live via WebSearch after WebFetch returned HTTP 403, per L-022)' at Section XIII footnote [^140]. A JLE editor reads the internal lesson tags and the verbatim fetch-process narration as build scaffolding leaking into the citation apparatus.",
+   "id": "PI-092",
+   "note": "Persona 1 (Skeptical JLE Editor) P1 finding, anchored on the newest instance (Section XIII [^140]) but article-wide in scope (footnotes across Sections I-X and XIII). Extends L-042 (Polish body-prose scan for internal task-tracking identifiers) from body prose to the footnote apparatus: 'per L-NNN' lesson cross-references and the verbatim fetch-process narration ('via WebFetch returning N characters', 'after WebFetch returned HTTP 403') are internal nomenclature with no place in a published Bluebook footnote, distinct from the legitimate '(last visited <date>)' / 'URL verified live <date>' annotation the article-wide convention is meant to preserve. Routed to the next Cite tick (Cite owns Bluebook form end-to-end per L-015) for a footnote-form sweep of the whole footnote tail, not only Section 13's [^140]-[^146]: strip every 'per L-NNN' tag and the fetch-process narration, keeping the substantive descriptive parenthetical and the last-visited / verified-live anchor. P1-deferral active; logged without status reset. Candidate L-042 refinement (extend scope from body prose to footnotes) deferred because LESSONS is at the 50-entry cap and the pattern is captured operationally here.",
+   "opened_at": "2026-05-25T03:00:00Z",
+   "phase": "verify",
+   "section": "13",
+   "status": "open",
+   "type": "internal-artifact-leak"
+  },
+  {
+   "claim": "Section XIII.C sentence 4 ('The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not.' [^144]) overclaims that a runtime system's generated responses are not auditable; runtime systems can and do log their generations, so the responses are auditable as text. The distinction the article actually wants is accountability to a named pre-publication human reviewer, not auditability as such. The supporting footnote [^144] is a supra to Section XII, which is still PENDING.",
+   "id": "PI-093",
+   "note": "Persona 1 (Skeptical JLE Editor) P1 finding on Section XIII.C. The static-vs-chatbot distinction is load-bearing for the article (cf. PI-021/PI-022 at Section VIII), so a categorical 'not auditable' overclaim against runtime systems is exactly the overstatement a skeptical reviewer flags. Next Polish tick on Section 13 should narrow the sentence to name the real distinction, e.g. 'The chain of responsibility runs to a named professor who reviewed the page before publication, an accountability a runtime system's generated responses do not carry.' P1-deferral active; logged without status reset. The [^144] supra-to-PENDING-Section-XII reference is a known interim artifact (flagged at the run-83 Stitch) that resolves when XII lands; it is not a directional error.",
+   "opened_at": "2026-05-25T03:00:00Z",
+   "phase": "verify",
+   "section": "13",
+   "status": "open",
+   "type": "chatbot-architecture-overclaim"
+  },
+  {
+   "claim": "Section XIII.C sentence 5 ('A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion') asserts as settled that the artifact IS a scholarly output, then frames the open question as merely how to classify it. Whether a reviewed course website counts as scholarship at all, as opposed to teaching material, is itself contested in promotion-and-tenure practice; the flat 'is a scholarly output' pre-decides the recognition question the sentence claims to leave open.",
+   "id": "PI-094",
+   "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding on Section XIII.C. The article's thesis turns on honest scoping of what it claims; asserting scholarly status as a premise rather than as the contested recognition question is an overclaim a traditionalist promotion-committee reader will catch. Next Polish tick on Section 13 should recast so scholarly status is the open question, e.g. 'Whether a versioned, citable, publicly served course artifact counts as a scholarly output, as teaching infrastructure, or as both is the recognition question an institution must decide.' P1-deferral active; logged without status reset.",
+   "opened_at": "2026-05-25T03:00:00Z",
+   "phase": "verify",
+   "section": "13",
+   "status": "open",
+   "type": "recognition-overclaim"
+  },
+  {
+   "claim": "Section XIII frames institutional adoption as 'a modest, replicable infrastructure investment' (XIII.D) supported by library, instructional-design, and information-technology stewardship (XIII.B), but is silent on the institutional digital divide: that stewardship is itself unevenly distributed across institutions, so 'modest' and 'replicable' overstate for under-resourced schools. The equity-and-accessibility-silence pattern (PI-026/PI-033/PI-064/PI-071/PI-080) recurs at the institution-resource level rather than the student-access level.",
+   "id": "PI-095",
+   "note": "Persona 3 (AI-in-Education Researcher) P1 finding on Section XIII. The run-82 Polish tick declined L-050's access-assumption sentence on the ground that Section XIII 'makes no open-access claim', but XIII.A's OER complementary-positioning ('open-resource commitment to reusable, openly licensed teaching materials') and XIII.D's 'modest, replicable infrastructure investment' framing do make an institutional-resource-equity assumption that L-050's spirit reaches. Next Polish tick on Section 13 should add one sentence to XIII.B or XIII.D conceding the institutional-resource asymmetry with a Section XII forward-reference, e.g. 'The library, instructional-design, and information-technology stewardship the method assumes is itself unevenly distributed across institutions, a resource-equity limit Section XII takes up.' Refines the L-050 boundary: an open-resource POSITIONING claim, not only an open-ACCESS claim, triggers the access-assumption sentence. P1-deferral active; logged without status reset.",
+   "opened_at": "2026-05-25T03:00:00Z",
+   "phase": "verify",
+   "section": "13",
+   "status": "open",
+   "type": "equity-and-accessibility-gap"
+  },
+  {
+   "claim": "Section XIII engages no external scholarship on open-educational-resource adoption, the scholarship of teaching and learning (SoTL), or the recognition of teaching artifacts in promotion review; footnote [^140] cites only the two OER project home pages plus an MIT News press release, and [^141]-[^146] are internal supra/infra cross-references. The complementary-positioning (XIII.A) and recognition (XIII.C) claims therefore rest on zero scholarly literature, recurring the citation-density pattern (PI-025/PI-032/PI-040/PI-048/PI-072/PI-088).",
+   "id": "PI-096",
+   "note": "Persona 3 (AI-in-Education Researcher) P1 finding on Section XIII. Per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move), routed to the multi-section Cite literature pass that already owns PI-025/PI-032/PI-040/PI-048/PI-072/PI-088. Next Cite pass should add at least one OER-adoption anchor in XIII.A and one teaching-as-scholarship / SoTL recognition anchor in XIII.C, each carrying the L-024 transfer clause naming what generalizes (the open-resource commitment; teaching-as-scholarship recognition norms) and what does not (the constitutional-law content). Foldable into the same pass under L-028/L-034 cross-section reuse. P1-deferral active; logged without status reset.",
+   "opened_at": "2026-05-25T03:00:00Z",
+   "phase": "verify",
+   "section": "13",
+   "status": "open",
+   "type": "literature-gap"
   }
  ],
- "phase_index": 6,
+ "phase_index": 0,
  "phases": [
   "harvest",
   "outline",
@@ -779,7 +829,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 83,
+ "run_count": 84,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1040,13 +1090,13 @@
  "target_words_max": 12000,
  "target_words_min": 10000,
  "verify": {
-  "deferred_p1_count": 11,
+  "deferred_p1_count": 16,
   "forced_findings_satisfied": true,
-  "last_run_at": "2026-05-24T13:00:00Z",
-  "new_findings_count": 6,
+  "last_run_at": "2026-05-25T03:00:00Z",
+  "new_findings_count": 7,
   "p0_open": 0,
-  "p1_open": 57,
-  "p2_open": 34,
+  "p1_open": 62,
+  "p2_open": 36,
   "personas_read": 3
  }
 }
