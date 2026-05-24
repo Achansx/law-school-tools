@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-27T13:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-27T15:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -276,16 +276,6 @@
       "section": "03",
       "status": "open",
       "type": "live-classroom-substitution"
-    },
-    {
-      "claim": "Section III.E's footnote [^18] (Sajja et al. 2023) anchors the load-bearing static-versus-chatbot user-experience contrast on a single platform paper, the same paper Section VIII.E already cites at footnote [^65] for the same load-bearing distinction at the architectural level. The article now anchors the same architectural distinction in two sections on the same single citation; the AI-in-higher-education literature includes Kuhail et al.'s 2023 chatbot-tutor survey (named in the workplan's annotated bibliography) and Bond et al.'s meta-review as the survey-level engagement the field expects when a static-vs-chatbot distinction is the architectural framing of an article.",
-      "id": "PI-032",
-      "note": "Persona 3 (AI-in-Education Researcher) P1 finding, recurring the PI-025 pattern from Section VIII.E. Per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move), this is routed to Section 03 cite_status: needs_cite rather than polish_status: needs_polish, mirroring PI-025's routing for Section 08. Next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] or to a new III.E footnote; the workplan-bibliography Kuhail et al. survey is the obvious candidate (URL liveness verifiable via WebSearch per L-022). The same survey citation can resolve PI-025 for Section 08 in the same tick via L-034 cross-section verification-reuse, so the addition costs one WebSearch retrieval and closes the citation-density problem in both sections at once. The body prose at III.E need not change; the citation density is the missing piece.",
-      "opened_at": "2026-05-18T07:00:00Z",
-      "phase": "verify",
-      "section": "03",
-      "status": "open",
-      "type": "literature-gap"
     },
     {
       "claim": "Section III as a whole is silent on accessibility (WCAG conformance, alt-text discipline for the holding bar or four-family grid, screen-reader behavior of the hash-route navigation, keyboard accessibility of the ⌘K palette), silent on device and bandwidth assumptions (a JSON-loaded SPA shell with 198 to 281 pages' worth of search index loaded client-side is not trivially low-bandwidth), and silent on the digital divide between students with reliable broadband and those without. The hypothetical student the tour follows is implicitly a sighted, mouse-and-keyboard-equipped, broadband-connected reader; the article does not name this assumption or its limits.",
@@ -898,7 +888,7 @@
       "type": "instrument-specification-gap"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -908,7 +898,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 108,
+  "run_count": 109,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -952,7 +942,7 @@
     },
     "03": {
       "cite_completed_at": "2026-05-18T01:00:00Z",
-      "cite_status": "needs_cite",
+      "cite_status": "needs_polish",
       "current_words": 1278,
       "draft_completed_at": "2026-05-17T23:00:00Z",
       "draft_status": "needs_polish",
@@ -969,7 +959,9 @@
       "target_words": 1200,
       "title": "Case Study: A Constitutional-Law Knowledge System",
       "verify_routed_at": "2026-05-18T07:00:00Z",
-      "verify_routing_reason": "Persona 3 P1 (PI-032 thin chatbot-tutor literature anchoring on Sajja-only in footnote [^18], recurring the PI-025 pattern from Section VIII.E and now anchoring the same architectural distinction in two sections on the same single platform paper) routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the obvious candidate, the same citation that will also resolve PI-025 for Section 08 via L-034 cross-section verification-reuse). Persona 1 P1 (PI-028 III.E final sentence 'Section III walks the user-experience side first so the reader sees what the case study is before the article argues why the choice was made' as self-flagging meta-rhetoric recurring the PI-022 pattern at VIII.E) plus Persona 1 P1 (PI-029 III.C false cross-reference to Section IV inventing a 'case-doctrine-classroom triangle Section IV named as the casebook's blind spot' framing that Section IV does not have anywhere in its prose) plus Persona 2 P1 (PI-030 III.B second sentence overclaiming that 'the casebook table of contents does not give' doctrine-first entry when most Con Law I casebooks organize their TOCs doctrinally; the article's actual architectural contrast is flat-folder-export-vs-typed-schema, with the casebook on the structured side) plus Persona 2 P1 (PI-031 III.C closing two sentences framing the Lecture summary as a 'recovery' of a missed session, implying structured prose substitutes for live Socratic dialogue) plus Persona 3 P1 (PI-033 III silent on accessibility, device, and equity considerations across the flagship student-eye walkthrough, recurring the PI-026 pattern from Section VIII as the more central place for the article to first acknowledge the silently assumed sighted/broadband/mouse-and-keyboard reader) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Section 03 polish_status flipped from stitched to needs_polish for all five Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the citation-density P1. New lesson L-036 added on the Polish voice-unity sweep including a self-flagging meta-rhetoric check (the recurring pattern across PI-022 at VIII.E and PI-028 at III.E)."
+      "verify_routing_reason": "Persona 3 P1 (PI-032 thin chatbot-tutor literature anchoring on Sajja-only in footnote [^18], recurring the PI-025 pattern from Section VIII.E and now anchoring the same architectural distinction in two sections on the same single platform paper) routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the obvious candidate, the same citation that will also resolve PI-025 for Section 08 via L-034 cross-section verification-reuse). Persona 1 P1 (PI-028 III.E final sentence 'Section III walks the user-experience side first so the reader sees what the case study is before the article argues why the choice was made' as self-flagging meta-rhetoric recurring the PI-022 pattern at VIII.E) plus Persona 1 P1 (PI-029 III.C false cross-reference to Section IV inventing a 'case-doctrine-classroom triangle Section IV named as the casebook's blind spot' framing that Section IV does not have anywhere in its prose) plus Persona 2 P1 (PI-030 III.B second sentence overclaiming that 'the casebook table of contents does not give' doctrine-first entry when most Con Law I casebooks organize their TOCs doctrinally; the article's actual architectural contrast is flat-folder-export-vs-typed-schema, with the casebook on the structured side) plus Persona 2 P1 (PI-031 III.C closing two sentences framing the Lecture summary as a 'recovery' of a missed session, implying structured prose substitutes for live Socratic dialogue) plus Persona 3 P1 (PI-033 III silent on accessibility, device, and equity considerations across the flagship student-eye walkthrough, recurring the PI-026 pattern from Section VIII as the more central place for the article to first acknowledge the silently assumed sighted/broadband/mouse-and-keyboard reader) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Section 03 polish_status flipped from stitched to needs_polish for all five Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the citation-density P1. New lesson L-036 added on the Polish voice-unity sweep including a self-flagging meta-rhetoric check (the recurring pattern across PI-022 at VIII.E and PI-028 at III.E).",
+      "cite_at": "2026-05-27T15:00:00Z",
+      "cite_note": "Citation-density Verify P1 (PI-032) resolved. Added survey-level Bond et al. 2024 meta-review to footnote [^18] alongside the existing Sajja et al. 2023 platform-paper anchor, with an L-024 transfer clause naming what carries over from the meta-review (its field-level evidentiary standard and AI-in-education design-space mapping) and what does not (the chatbot-tutor and adaptive-system intervention settings it surveys). Per L-049 the Kuhail et al. 2023 survey named in the routing note was NOT added: a grep of Article-Workplan.md returns zero hits, so the source is unverified; the footnote documents the omission. Bond URL liveness verified live this run via WebSearch with allowed_domains scoping per L-022 (verbatim title-and-URL match, vol. 21 art. 4, 2024), consistent with the Section 02 note [^9] verification of the same URL on 2026-05-27. WebFetch on the Springer URL 303-redirected to an idp.springer.com authorize endpoint (provenance refusal), the canonical L-022 case. Body prose at III.E unchanged per PI-032. cite_status needs_cite -> needs_polish; the next Polish tick regenerates polished/section-03 from this cited draft and can pick up the five open Polish-level P1s (PI-028/029/030/031/033). Sections 06/07/08 (PI-040/048/025) remain at cite_status:needs_cite for subsequent Cite ticks; this tick resolved the lowest-numbered needs_cite section per the runbook per-section Cite procedure rather than running the multi-section pass."
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
@@ -1188,7 +1180,7 @@
     "last_run_at": "2026-05-27T07:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 71,
+    "p1_open": 70,
     "p2_open": 39,
     "personas_read": 3
   }

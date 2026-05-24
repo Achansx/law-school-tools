@@ -264,6 +264,19 @@
       "status": "resolved",
       "type": "literature-engagement-gap",
       "resolved_at": "2026-05-27T01:00:00Z"
+    },
+    {
+      "claim": "Section III.E's footnote [^18] (Sajja et al. 2023) anchors the load-bearing static-versus-chatbot user-experience contrast on a single platform paper, the same paper Section VIII.E already cites at footnote [^65] for the same load-bearing distinction at the architectural level. The article now anchors the same architectural distinction in two sections on the same single citation; the AI-in-higher-education literature includes Kuhail et al.'s 2023 chatbot-tutor survey (named in the workplan's annotated bibliography) and Bond et al.'s meta-review as the survey-level engagement the field expects when a static-vs-chatbot distinction is the architectural framing of an article.",
+      "id": "PI-032",
+      "note": "Persona 3 (AI-in-Education Researcher) P1 finding, recurring the PI-025 pattern from Section VIII.E. Per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move), this is routed to Section 03 cite_status: needs_cite rather than polish_status: needs_polish, mirroring PI-025's routing for Section 08. Next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] or to a new III.E footnote; the workplan-bibliography Kuhail et al. survey is the obvious candidate (URL liveness verifiable via WebSearch per L-022). The same survey citation can resolve PI-025 for Section 08 in the same tick via L-034 cross-section verification-reuse, so the addition costs one WebSearch retrieval and closes the citation-density problem in both sections at once. The body prose at III.E need not change; the citation density is the missing piece.",
+      "opened_at": "2026-05-18T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "resolved",
+      "type": "literature-gap",
+      "resolved_at": "2026-05-27T15:00:00Z",
+      "resolved_by": "cite run 109",
+      "resolution_note": "Cite tick on Section 03 added Bond et al. 2024 meta-review to footnote [^18] as the survey-level citation that resolves the single-platform-paper citation-density gap, with the L-024 transfer clause in the footnote. Kuhail et al. 2023 NOT added per L-049 (absent from Article-Workplan.md annotated bibliography; unverified). Bond URL re-verified live via WebSearch per L-022. The four Polish-level Section 03 P1s (PI-028/029/030/031/033) are tracked separately and remain open for the next Polish tick. The parallel PI-025 (Section 08), PI-040 (Section 06), and PI-048 (Section 07) citation-density findings remain open; each must apply the same L-049 discipline (Bond/Qian/independently-verified sources, never Kuhail) on its own future Cite tick."
     }
   ]
 }
