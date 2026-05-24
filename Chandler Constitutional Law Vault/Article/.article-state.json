@@ -18,23 +18,23 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-05-26T13:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-05-26T15:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-05-26T01:00:00Z",
+    "last_stitched_at": "2026-05-26T15:00:00Z",
     "partial_assembly": true,
-    "sections_stitched": 12,
+    "sections_stitched": 13,
     "sections_total": 14,
-    "total_words": 10355
+    "total_words": 11336
   },
   "pending_issues": [
     {
@@ -838,7 +838,7 @@
       "type": "cite-form-confirmation"
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -848,7 +848,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 96,
+  "run_count": 97,
   "schema_version": 1,
   "sections": {
     "01": {
