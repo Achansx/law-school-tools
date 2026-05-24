@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "verify",
-  "last_run_at": "2026-05-29T15:00:00Z",
+  "last_run_at": "2026-05-29T17:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1253,6 +1253,46 @@
       "section": "07",
       "status": "open",
       "type": "internal-artifact-as-inline-authority"
+    },
+    {
+      "claim": "Section VIII.A's final sentence ('Section VIII opens by naming the URL and the snapshot, then walks the pipeline that produces what the CDN serves, so the IV-V-VIII trio triangulates on a single fact rather than restating page counts at every pass') narrates the section's own construction and announces the article's internal cross-referencing strategy rather than asserting a scholarly proposition.",
+      "id": "PI-145",
+      "note": "Verify run 134, Persona 1 (Skeptical JLE Editor) P1. Fifth recurrence of the self-flagging meta-rhetoric family (PI-022 VIII.E opening, PI-028 III.E, PI-036 VI.B, PI-141 VII.C) at a distinct VIII.A site L-036 as written ('section openings and closes') does not name. Next Polish tick on Section 08 should delete the 'Section VIII opens by naming...' clause and let the two preceding sentences (the URL/snapshot statement and the deployed-site-versus-disk distinction) carry the opening; if a forward pointer is wanted, state it as content ('The pipeline that produces what the CDN serves is described below') rather than as a description of the section's rhetorical plan. Candidate L-036 refinement (deferred at the 51-entry cap): extend the sweep target to any sentence describing the section's own cross-referencing or assembly plan.",
+      "opened_at": "2026-05-29T17:00:00Z",
+      "phase": "verify",
+      "section": "08",
+      "status": "open",
+      "type": "voice-slip"
+    },
+    {
+      "claim": "Section VIII.E's label 'a reviewed static site' and the sentence 'The published page is a stable HTML and JSON artifact, written and verified by the rotation phases at publish time' let the automated Verify rotation perform the 'reviewed'/'verified' work, but a senior teacher reading 'reviewed static site' will assume a human professor reviewed each published page; Section VIII never establishes per-page professorial sign-off, so 'reviewed' silently upgrades automated verification into professorial endorsement.",
+      "id": "PI-146",
+      "note": "Verify run 134, Persona 2 (Legal Pedagogy Traditionalist) P1. Editor-versus-teacher conflation PERSONAS Persona 2 is charged to spot; distinct from PI-023 (silence on whether students use the site in instruction) and PI-024 (the 'commitment' actor-erasure in VIII.D). Next Polish tick on Section 08 should name the reviewer where 'reviewed' first lands ('written and verified by the rotation's automated Verify phase at publish time, with the professor reviewing through the page-feedback loop rather than signing off on each page') and reserve 'reviewed' for the human professorial reading the page-feedback loop supplies, with a forward pointer to Section VII for the professorial-control mechanisms.",
+      "opened_at": "2026-05-29T17:00:00Z",
+      "phase": "verify",
+      "section": "08",
+      "status": "open",
+      "type": "editor-vs-teacher-conflation"
+    },
+    {
+      "claim": "Section VIII.E's sentence 'risk lives in the build pipeline where Verify can catch it and the Deploy entry guard can hold it back, not in the response a student gets when opening a page' presents the static-site-versus-chatbot architectural choice as a one-sided risk win and never acknowledges the pedagogical affordance the static architecture forgoes (runtime question-answering, interactivity, and personalization documented in the chatbot-tutor and adaptive-systems literature).",
+      "id": "PI-147",
+      "note": "Verify run 134, Persona 3 (AI-in-Education Researcher) P1. Distinct from PI-025 (citation-density/single-Sajja-anchor) and PI-026 (accessibility/equity silence). Even with the Section XII forward reference, VIII.E asserts the architectural advantage without naming the trade-off, which reads as advocacy. Next Polish tick on Section 08 should add one clause to VIII.E acknowledging the trade-off ('the static architecture forgoes the runtime question-answering a chatbot tutor offers; the choice trades adaptivity for an inspectable, model-free request path') and carry the substantive comparison to Section XII; the paired Cite tick can anchor the chatbot-affordance side on Du et al. 2023 or the workplan-bibliography chatbot-tutor survey under the PI-025 multi-section literature pass.",
+      "opened_at": "2026-05-29T17:00:00Z",
+      "phase": "verify",
+      "section": "08",
+      "status": "open",
+      "type": "one-sided-architectural-framing"
+    },
+    {
+      "claim": "Section VIII.A's 'fixed-date corpus snapshot of 198 pages (92 case briefs, 27 doctrinal topic pages, 79 lecture summaries)' is asserted as captured in the same progress report that anchors Section IV, but neither the body prose nor footnote [^1] states the progress-report date; [^1] says only 'as of the progress-report date' without naming it, so a reader cannot fix the snapshot in time.",
+      "id": "PI-148",
+      "note": "Verify run 134, Persona 4 (Provenance Auditor) P1 and Section 08's one unsupported_claim (reason evidence-gap). The 198 figure is sourced (evidence-08-live-deployed-site.md, the progress-report email), internally consistent (92+27+79=198), and cross-consistent with Section IV's 198; the missing piece is the explicit as-of date, a number sourced but missing a snapshot date. Coupled to PI-004 (the snapshot-date decision) and not resolvable until PI-004 closes with professorial sign-off. Once PI-004 resolves, the next Polish or Cite tick on Section 08 should add the explicit as-of date to VIII.A and footnote [^1], matching the Section IV.E snapshot discipline. Distinct from PI-018 (the Section IX deploy cost line).",
+      "opened_at": "2026-05-29T17:00:00Z",
+      "phase": "verify",
+      "section": "08",
+      "status": "open",
+      "type": "missing-snapshot-date"
     }
   ],
   "phase_index": 0,
@@ -1266,12 +1306,12 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 6,
+    "global_unsupported_open": 7,
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "sections_audited": 7,
+    "sections_audited": 8,
     "sections_total": 14
   },
-  "run_count": 133,
+  "run_count": 134,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1499,8 +1539,8 @@
     "08": {
       "cite_completed_at": "2026-05-17T11:00:00Z",
       "cite_status": "needs_cite",
-      "claims_mapped": 0,
-      "claims_total": 0,
+      "claims_mapped": 22,
+      "claims_total": 23,
       "current_words": 736,
       "draft_completed_at": "2026-05-17T09:00:00Z",
       "draft_status": "needs_polish",
@@ -1512,14 +1552,22 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-17T13:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": null,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T17:00:00Z",
+      "provenance_score": 4.4,
       "stitched_at": "2026-05-17T15:00:00Z",
       "target_words": 700,
       "title": "From Vault to Website",
-      "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-05-17T17:00:00Z",
-      "verify_routing_reason": "Persona 3 P1 (PI-025 thin chatbot-tutor literature anchoring on Sajja-only citation in footnote [^47]/locally [^15]) re-triggers Cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick should add at least one survey-level citation (Kuhail et al. 2023 from workplan bibliography is the obvious candidate, optionally Bond et al. meta-review). Persona 1 P1 (PI-021 VIII.D 'talks back / talk-back' personification slipping into chatbot framing in the same section that asserts the static-not-chatbot distinction at VIII.E) plus Persona 1 P1 (PI-022 VIII.E self-flagging 'Section VIII's most load-bearing claim is the architectural one' meta-rhetoric) plus Persona 2 P1 (PI-023 VIII silence on the pedagogical role of the deployed site) plus Persona 2 P1 (PI-024 VIII.D auditable-input/output commitment actor erasure mirroring the V.C and V.B actor-erasure pattern) plus Persona 3 P1 (PI-026 VIII silence on accessibility, equity, device and bandwidth assumptions for the publicly deployed SPA) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Section 08 polish_status set to needs_polish for all five Polish-level P1s and cite_status set to needs_cite for the citation-density P1. Sections 04 and 05's prior twelve P1s (PI-005, PI-006 through PI-010, PI-013 through PI-017) remain routed from prior Verify ticks and unaddressed; no new findings against Section 04 or Section 05 in this run because their prose is unchanged."
+      "unsupported_claims": [
+        {
+          "claim_text": "VIII.A states a fixed-date corpus snapshot of 198 pages (92 case briefs, 27 doctrinal topic pages, 79 lecture summaries) captured in the same progress report that anchors Section IV, but neither the prose nor footnote [^1] states the progress-report date; the snapshot's as-of date is undetermined pending PI-004.",
+          "paragraph": 1,
+          "reason": "evidence-gap"
+        }
+      ],
+      "unsupported_claims_count": 1,
+      "verify_routed_at": "2026-05-29T17:00:00Z",
+      "verify_routing_reason": "Run-134 eighth Verify tick of the provenance-audit burst audited Section 08 (lowest-numbered polished section with provenance_audited:false; sections_audited was 7). All four personas read independently and each returned one new P1, all on Section 08 and all checked against the eight open Section 08 PIs (PI-018, PI-019, PI-021 through PI-026) to avoid duplication. PI-145 (Persona 1: VIII.A self-flagging 'Section VIII opens by naming the URL and the snapshot ... so the IV-V-VIII trio triangulates on a single fact' meta-rhetoric, fifth recurrence of the PI-022/PI-028/PI-036/PI-141 family at a distinct VIII.A site) and PI-146 (Persona 2: VIII.E 'reviewed static site' / 'written and verified by the rotation phases' lets the automated Verify rotation perform 'reviewed', which a traditionalist reads as professorial per-page sign-off the section never establishes; editor-versus-teacher conflation distinct from PI-023/PI-024) and PI-147 (Persona 3: VIII.E presents the static-versus-chatbot choice as a one-sided risk win without naming the runtime-question-answering affordance the static architecture forgoes; distinct from PI-025 citation-density and PI-026 accessibility) are Polish-owned and route polish_status -> needs_polish (already set). PI-148 (Persona 4 / Provenance Auditor: VIII.A's 198-page snapshot lacks an explicit as-of date in prose and footnote [^1]; number sourced but missing a snapshot date) is Section 08's one unsupported_claim, reason evidence-gap, coupled to PI-004 and not resolvable until PI-004 fixes the snapshot date. Provenance audit score 4.4 < 4.5 (criteria 5/4/5/4/4) independently holds Section 08 at polish_status: needs_polish. claims_total 23, claims_mapped 22, unsupported 1. Twenty-three claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch, cite_status: needs_polish) reconciled to the state file."
     },
     "09": {
       "cite_completed_at": "2026-05-19T21:00:00Z",
@@ -1672,10 +1720,10 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-29T15:00:00Z",
+    "last_run_at": "2026-05-29T17:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 99,
+    "p1_open": 103,
     "p2_open": 41,
     "personas_read": 4
   }

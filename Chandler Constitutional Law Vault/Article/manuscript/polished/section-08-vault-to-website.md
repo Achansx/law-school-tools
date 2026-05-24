@@ -1,13 +1,21 @@
 ---
 id: "08"
 title: "From Vault to Website"
-status: ready_for_stitch
+status: needs_polish
 target_words: 700
 word_count: 736
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
+provenance_audited: true
+provenance_score: 4.4
+claims_total: 23
+claims_mapped: 22
+unsupported_claims:
+  - claim_text: "VIII.A states a fixed-date corpus snapshot of 198 pages (92 case briefs, 27 doctrinal topic pages, 79 lecture summaries) captured in the same progress report that anchors Section IV, but neither the prose nor footnote [^1] states the progress-report date; the snapshot's as-of date is undetermined pending PI-004."
+    paragraph: 1
+    reason: evidence-gap
 ---
 
 # VIII. From Vault to Website
