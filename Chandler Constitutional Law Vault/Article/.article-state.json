@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "harvest",
+ "current_phase": "outline",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "verify",
- "last_run_at": "2026-05-25T03:00:00Z",
+ "last_completed_phase": "harvest",
+ "last_run_at": "2026-05-25T05:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -758,17 +758,6 @@
    "type": "citation-reach-gap"
   },
   {
-   "id": "PI-091",
-   "type": "evidence-debt",
-   "status": "open",
-   "opened_at": "2026-05-24T17:00:00Z",
-   "opened_by_phase": "outline",
-   "section": "13",
-   "owner_phase": "harvest",
-   "summary": "Section 13 (Institutional Implications) was outlined under the run-73 Section 10 scaffold precedent while evidence_status:none. outline-13 rides the workplan SXIII OER bibliography plus sibling cards (09 labor, 08 pipeline/site, 07 professorial control, 12 static-vs-chatbot, 10 method-not-artifact). The next scaffold-first Harvest tick on Section 13 owes three dedicated cards: evidence-13-oer-positioning (H2O opencasebook.org + CALI eLangdell cali.org/the-elangdell-bookstore, complementary-infrastructure framing), evidence-13-institutional-roles (library/instructional-design/IT stewardship grounded in Section IX labor categories), and evidence-13-governance-and-recognition (named-professor accountability surface + versioned-artifact-as-scholarship question). After Harvest, Draft/Cite re-bind from sibling pointers to dedicated Section 13 cards. Analogue of PI-083 (Section 10).",
-   "closing_condition": "Harvest writes the three evidence-13-* cards and section 13 evidence_status advances none->populated."
-  },
-  {
    "claim": "Published footnotes throughout the assembled draft embed internal maintenance-system lesson identifiers and fetch-process narration that are not Bluebook 21st form: 'per L-022' appears 5 times, 'per L-001' twice, 'per L-027' twice, and 'per L-011'/'per L-015'/'per L-034'/'per L-038'/'per L-039' once each, alongside process annotations such as '(URL verified live via WebSearch after WebFetch returned HTTP 403, per L-022)' at Section XIII footnote [^140]. A JLE editor reads the internal lesson tags and the verbatim fetch-process narration as build scaffolding leaking into the citation apparatus.",
    "id": "PI-092",
    "note": "Persona 1 (Skeptical JLE Editor) P1 finding, anchored on the newest instance (Section XIII [^140]) but article-wide in scope (footnotes across Sections I-X and XIII). Extends L-042 (Polish body-prose scan for internal task-tracking identifiers) from body prose to the footnote apparatus: 'per L-NNN' lesson cross-references and the verbatim fetch-process narration ('via WebFetch returning N characters', 'after WebFetch returned HTTP 403') are internal nomenclature with no place in a published Bluebook footnote, distinct from the legitimate '(last visited <date>)' / 'URL verified live <date>' annotation the article-wide convention is meant to preserve. Routed to the next Cite tick (Cite owns Bluebook form end-to-end per L-015) for a footnote-form sweep of the whole footnote tail, not only Section 13's [^140]-[^146]: strip every 'per L-NNN' tag and the fetch-process narration, keeping the substantive descriptive parenthetical and the last-visited / verified-live anchor. P1-deferral active; logged without status reset. Candidate L-042 refinement (extend scope from body prose to footnotes) deferred because LESSONS is at the 50-entry cap and the pattern is captured operationally here.",
@@ -819,7 +808,7 @@
    "type": "literature-gap"
   }
  ],
- "phase_index": 0,
+ "phase_index": 1,
  "phases": [
   "harvest",
   "outline",
@@ -829,7 +818,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 84,
+ "run_count": 85,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1063,7 +1052,9 @@
    "cite_status": "needs_polish",
    "current_words": 478,
    "draft_status": "needs_cite",
-   "evidence_status": "none",
+   "evidence_cards": 6,
+   "evidence_populated_at": "2026-05-25T05:00:00Z",
+   "evidence_status": "populated",
    "outline_status": "ready_for_draft",
    "polish_status": "ready_for_stitch",
    "target_words": 500,

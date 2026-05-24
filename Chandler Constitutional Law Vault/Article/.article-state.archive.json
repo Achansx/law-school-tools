@@ -205,6 +205,21 @@
    "resolved_at": "2026-05-24T11:00:00Z",
    "resolution": "Run-76 Stitch tick (landing Section X) completed the owed L-041 in-range validation pass. Ten 'Section NAME note N' cross-section pointers were validated against target-note content: seven matched (Section VII note 88 = Prize Cases/Grier anchor; Section VIII note 95 = deployed-site URL, three references; Section VIII note 109 = Sajja et al.; Section VI note 80 = Midpage-verification prompt framing; Section VI note 84 = LESSONS prompt-iteration memory) and three were in-range but pointed at the wrong note and were corrected in the assembled draft: [^11] 'Section IV note 48' -> note 51 and [^111] 'Section IV note 67' -> note 51 (both target the 198-page progress-report snapshot anchor at note 51; note 48 is the casebook open-question note and note 67 is in Section V's range), and the known-suspect [^123] 'Section IV note 56' -> note 53 (the ingest-line forward reference; note 56 is in Section V's range). Subject matter matched each correct target unambiguously, so the L-041 fix-the-number path was taken rather than softening. Every in-range cross-section pointer now validates against target content, PI-075's closing condition. Source polished files unchanged per L-035; corrections live in the assembled draft only. Entry migrates to .article-state.archive.json on the next dispatcher >150KB audit.",
    "type": "cross-reference-validation"
+  },
+  {
+   "id": "PI-091",
+   "section": "13",
+   "opened_at": "2026-05-24T17:00:00Z",
+   "opened_by_phase": "outline",
+   "owner_phase": "harvest",
+   "phase": "harvest",
+   "type": "evidence-debt",
+   "summary": "Section 13 (Institutional Implications) was outlined under the run-73 Section 10 scaffold precedent while evidence_status:none. outline-13 rides the workplan SXIII OER bibliography plus sibling cards. The next scaffold-first Harvest tick on Section 13 owes three dedicated cards: evidence-13-oer-positioning, evidence-13-institutional-roles, and evidence-13-governance-and-recognition. After Harvest, Draft/Cite re-bind from sibling pointers to dedicated Section 13 cards. Analogue of PI-083 (Section 10).",
+   "closing_condition": "Harvest writes the three evidence-13-* cards and section 13 evidence_status advances none->populated.",
+   "status": "resolved",
+   "resolved_at": "2026-05-25T05:00:00Z",
+   "resolution": "Run-85 scaffold-first Harvest tick on Section 13 wrote six dedicated evidence-13-* cards: the three PI-091 named cards (evidence-13-oer-positioning, with the H2O opencasebook.org and CALI eLangdell URLs re-verified live this run -- eLangdell via WebFetch, opencasebook.org via WebSearch per L-022 after a WebFetch HTTP 403; evidence-13-institutional-roles; evidence-13-governance-and-recognition) plus evidence-13-method-first-adoption, evidence-13-institutional-resource-asymmetry (Harvest support for the open PI-095), and evidence-13-recurring-sentence-not-here (L-002/L-026 discipline). Section 13 evidence_status advanced none -> populated (six cards, clearing both the closing_condition's three-card target and the RUNBOOK >=6-card populated threshold). The Draft/Cite re-bind named in the summary is moot in practice: Section 13 is already drafted, cited, and polished (polish_status ready_for_stitch) with footnotes already citing the correct sources, so no re-draft is owed unless a later Verify P1 resets the section. PI-095 (institutional-resource equity) and PI-096 (OER/SoTL external literature) remain open as their own Polish/Cite work.",
+   "type_note": "evidence-debt closed by Harvest"
   }
  ]
 }
