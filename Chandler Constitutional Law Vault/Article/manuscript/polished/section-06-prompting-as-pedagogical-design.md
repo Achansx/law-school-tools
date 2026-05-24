@@ -1,14 +1,22 @@
 ---
 id: "06"
 title: "Prompting as Pedagogical Design"
-status: ready_for_stitch
+status: needs_polish
 target_words: 800
 word_count: 868
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 13
+provenance_audited: true
+provenance_score: 4.2
+claims_total: 20
+claims_mapped: 19
+unsupported_claims:
+  - claim_text: "VI.B paragraph 2 asserts 'The nine-section sequence is the canonical law-school case-brief format'; the structure traces to the vault's own Templates/Case Brief.md and the PROJECT_PRIMER '9-section case-briefer standard' (evidence-05-case-brief-nine-section-standard.md), but the canonical-national-convention characterization carries no external legal-education authority. Footnotes [^2] and [^3] source only the template's loading and its own field/section schema, not the convention claim."
+    paragraph: 2
+    reason: requires-primary-source
 ---
 
 # VI. Prompting as Pedagogical Design

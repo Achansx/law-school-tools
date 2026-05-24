@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "verify",
-  "last_run_at": "2026-05-29T11:00:00Z",
+  "last_run_at": "2026-05-29T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1173,6 +1173,46 @@
       "section": "05",
       "status": "open",
       "type": "numerical-inconsistency"
+    },
+    {
+      "claim": "Section VI.C recites internal rubric mechanics and prompt parameters in the body prose: criterion names (scope_discipline, exam_readiness), the exam_readiness 0.22 weight, scoring rules ('a fact-pattern-only hypo scores zero'; 'scoring 3 for one missing and 1 for both missing'), and exact prompt constants ('roughly 150 words'; 'five hypos in a fixed distribution (two same-side, two opposite-side, one fence-sitter)'). To a JLE editor the cumulative effect reads as internal system documentation rather than legal scholarship, and the constants are unverifiable from the text (they live in vault rubric files routed to App. A, with the prompt-text appendix App. B not yet assembled, PI-035).",
+      "id": "PI-137",
+      "note": "Verify run 132, Persona 1 (Skeptical JLE Editor) P1. Distinct from PI-036 (VI.B self-announcing meta-rhetoric) and PI-040 (single-survey citation-density anchor): this is a register/tone finding that VI.C argues by reciting the scoring sheet rather than the pedagogy. Polish-owned; routes polish_status -> needs_polish (already set by the prior persona pass on Section 06). Next Polish tick on Section 06 should move the bare numeric weight (exam_readiness 0.22) and the scoring-rule clauses into footnotes [^5]-[^8] (which already carry them) and keep in the body only the design claim each constant encodes (for example 'the rubric penalizes a brief finished in a single pass' without the criterion name and weight), so VI.C argues the pedagogical commitment rather than transcribing the rubric. Candidate lesson (a body paragraph should state the design rule, not the rubric weight that enforces it; numeric weights and criterion names belong in footnotes) deferred at the LESSONS over-cap of 51.",
+      "opened_at": "2026-05-29T13:00:00Z",
+      "phase": "verify",
+      "section": "06",
+      "status": "open",
+      "type": "system-documentation-register"
+    },
+    {
+      "claim": "Section VI.C claims the fixed five-hypothetical distribution (two same-side, two opposite-side, one fence-sitter) 'encodes the law-school exam pedagogy of testing a rule against varying fact patterns at the prompt level' (paragraph 4) and that the two-angle critique requirement 'encodes the field's interpretive pluralism at the structural level' (paragraph 5). A twenty-five-year exam-writer reads this as flattening exam-design judgment into a fixed quota: the number, type, and difficulty of hypotheticals a professor sets vary with the doctrine and with what students are getting wrong, and a rigid 2/2/1 quota plus a mandatory one-progressive-one-originalist split can produce formulaic, doctrine-insensitive hypos and a false symmetry where the live doctrine has no balanced interpretive divide.",
+      "id": "PI-138",
+      "note": "Verify run 132, Persona 2 (Legal Pedagogy Traditionalist) P1. Distinct from PI-038 (VI.B form-vs-substance analytical-work equivalence) and PI-039 (VI.D personas-as-moot-court live-substitution): this is the rigidity of the fixed quota itself as a stand-in for exam-design judgment, at VI.C paragraphs 4-5. Polish-owned; routes polish_status -> needs_polish. Next Polish tick on Section 06 should qualify the two 'encodes ... at the [prompt/structural] level' sentences so the fixed distribution operationalizes one exam-pedagogy heuristic (vary fact patterns against the rule) rather than the whole of exam pedagogy, and acknowledge that a professor still tunes count, emphasis, and interpretive frame per doctrine, so the quota is a floor the prompt guarantees, not the exam-design judgment. Same live-pedagogy-versus-fixed-structure family as PI-031/PI-039/PI-046; worth surfacing at the Stitch tick that lands Section XII.",
+      "opened_at": "2026-05-29T13:00:00Z",
+      "phase": "verify",
+      "section": "06",
+      "status": "open",
+      "type": "exam-pedagogy-flattening"
+    },
+    {
+      "claim": "Section VI.D presents the three-persona adversarial-reading architecture as effective ('The Verify prompt implements adversarial reading at the prompt level rather than as an external review process', paragraph 8) and offers the Prize Cases catch (paragraph 7, 'only the adversarial Verify pass returned the actual language') as the demonstration, but that is a single anecdote (n=1) standing in for evidence that the multi-persona architecture systematically improves output over single-pass review, and the section engages none of the contested NLP / learning-sciences literature on whether LLM self-critique and multi-agent debate actually improve accuracy (mixed results absent external feedback).",
+      "id": "PI-139",
+      "note": "Verify run 132, Persona 3 (AI-in-Education Researcher) P1. Distinct from PI-040, which is a citation-density gap (anchor the typology / structured-output / multiagent framings on more than the single Qian survey): this finding is that the EFFICACY of the adversarial architecture is asserted from one anecdote, not that a citation is missing. Routes polish_status -> needs_polish for the reframe; the literature add coordinates with PI-040's next Cite tick. Next Polish/Cite tick on Section 06 should reframe the Prize Cases passage as one illustrative instance rather than evidence of systematic benefit (for example 'one documented instance in which the adversarial pass caught what five prior passes missed; the article does not claim a measured catch-rate'), add a one-clause acknowledgment that the LLM self-critique / multi-agent-debate efficacy literature is mixed, and add a forward pointer to Section XI's evaluation discussion. Du et al. 2023 multiagent-debate (already named in PI-040) is the natural cite.",
+      "opened_at": "2026-05-29T13:00:00Z",
+      "phase": "verify",
+      "section": "06",
+      "status": "open",
+      "type": "anecdote-as-efficacy-evidence"
+    },
+    {
+      "claim": "Section VI.B paragraph 2's assertion 'The nine-section sequence is the canonical law-school case-brief format' is a general claim about US legal-education convention carried with no citation: footnote [^2] sources only that the template is loaded into the Ingest and Enrich prompt, and footnote [^3] sources only the template's own field/section schema (vault Templates/Case Brief.md) plus a cross-reference to Section V; neither establishes that the nine-section format is the canonical national convention. The structure traces to evidence-05-case-brief-nine-section-standard.md and the vault PROJECT_PRIMER '9-section case-briefer standard', i.e. the vault's self-description, not an external legal-writing authority.",
+      "id": "PI-140",
+      "note": "Verify run 132, Persona 4 (Provenance Auditor) P1 and Section 06's one unsupported_claim (reason requires-primary-source). Distinct from PI-038, which flags the SAME VI.B sentences for a different defect (the form-vs-substance analytical-work equivalence in the following sentence); this is the missing external source for the 'canonical [national] convention' characterization itself. Cite-owned; Section 06 already at cite_status: needs_cite. Next Cite tick on Section 06 should either add a footnote to a legal-writing or 1L study-skills authority documenting the standard case-brief components, or soften 'the canonical law-school case-brief format' to 'a standard law-school case-brief format' and attribute it to the vault's own Case Brief template (evidence-05-case-brief-nine-section-standard.md / evidence-06-typed-schema-as-prompt.md), so the convention claim is sourced rather than asserted. Provenance audit of Section 06: claims_total 20, claims_mapped 19, provenance_score 4.2 (criteria 5/4/4/4/4); 4.2 < 4.5 independently holds Section 06 at polish_status: needs_polish.",
+      "opened_at": "2026-05-29T13:00:00Z",
+      "phase": "verify",
+      "section": "06",
+      "status": "open",
+      "type": "requires-primary-source"
     }
   ],
   "phase_index": 0,
@@ -1186,12 +1226,12 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 4,
+    "global_unsupported_open": 5,
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "sections_audited": 5,
+    "sections_audited": 6,
     "sections_total": 14
   },
-  "run_count": 131,
+  "run_count": 132,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1354,8 +1394,8 @@
     "06": {
       "cite_completed_at": "2026-05-18T15:00:00Z",
       "cite_status": "needs_cite",
-      "claims_mapped": 0,
-      "claims_total": 0,
+      "claims_mapped": 19,
+      "claims_total": 20,
       "current_words": 868,
       "draft_completed_at": "2026-05-18T13:00:00Z",
       "draft_status": "needs_polish",
@@ -1367,14 +1407,22 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-18T17:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": null,
+      "provenance_audited": true,
+      "provenance_score": 4.2,
       "stitched_at": "2026-05-18T19:00:00Z",
       "target_words": 800,
       "title": "Prompting as Pedagogical Design",
-      "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-05-18T21:00:00Z",
-      "verify_routing_reason": "Persona 3 P1 (PI-040 thin Qian-only citation density anchoring both the typed-schema-as-prompt frame in VI.B and the three-persona adversarial-reading architecture in VI.D, recurring the PI-025 pattern from Section 08.E and the PI-032 pattern from Section 03.E and now triply-flagged across three sections on the same single-survey-anchor pattern) routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick on Section 06 should add at least one survey-level citation each for the typed-schema-as-prompt frame and for the three-persona-adversarial-reading architecture (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey and Bond et al. 2024 meta-review for AI-in-higher-ed mapping; Du et al. 2023 multiagent-debate for the persona architecture; a structured-output or JSON-schema-prompting survey for the typed-schema frame), with the L-024 transfer-clause requirement applying to each citation; the same Cite tick can resolve PI-025 (Section 08) and PI-032 (Section 03) under L-034 cross-section verification-reuse and L-028 multi-section precedent for one citation-density pass closing all three gaps. Persona 1 P1 (PI-036 VI.B mid-section self-flagging meta-rhetoric pattern 'Section V described X. Section VI reframes it as Y' recurring the PI-022 pattern at VIII.E and the PI-028 pattern at III.E, now extending the L-036 voice-unity sweep concern from section openings and closes to mid-section self-pointer constructions) plus Persona 1 P1 (PI-037 VI.D 'The architecture mirrors moot-court and law-review pedagogy' pedagogical-tradition claim without citation or hedge) plus Persona 2 P1 (PI-038 VI.B 'forces every generated brief to do the same analytical work a student is expected to do when briefing a case by hand' form-versus-substance conflation between the case-brief template's nine-section schema and the cognitive work of a student briefing by hand) plus Persona 2 P1 (PI-039 VI.D persona-as-moot-court architectural-analogy framing erasing the live-human dimension that makes moot-court and law-review review pedagogical events, paralleling the PI-031 structured-prose-as-recovery substitution pattern from Section III.C) all collapse to four Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite; PI-037 and PI-039 attack the same VI.D closing pair of sentences from different angles and the Polish tick should land both in one rewrite. Section 06 polish_status flipped from stitched to needs_polish for the four Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the citation-density P1. No new lesson this run because the citation-density recurrence across three sections (PI-025, PI-032, PI-040) already has its resolution path named under L-024, L-028, and L-034."
+      "unsupported_claims_count": 1,
+      "verify_routed_at": "2026-05-29T13:00:00Z",
+      "verify_routing_reason": "Run-132 sixth Verify tick of the provenance-audit burst audited Section 06 (lowest-numbered polished section with provenance_audited: false; sections_audited was 5). All four personas read independently and each returned one new P1, all on Section 06 and all checked against the open Section 06 PIs (PI-035 through PI-040) to avoid duplication. PI-137 (Persona 1: VI.C recites rubric criterion names, the exam_readiness 0.22 weight, scoring rules, and exact prompt constants in body prose, reading as system documentation; distinct from PI-036/PI-040) and PI-138 (Persona 2: VI.C's fixed 2/2/1 hypothetical quota and one-progressive-one-originalist critique rule flatten exam-design judgment; distinct from PI-038/PI-039) and PI-139 (Persona 3: VI.D asserts the adversarial-architecture's efficacy from the single Prize Cases anecdote with no methodology and no engagement with the mixed self-critique / multi-agent-debate literature; distinct from PI-040's citation-density gap) are Polish-owned and route polish_status -> needs_polish. PI-140 (Persona 4 / Provenance Auditor: VI.B's 'canonical law-school case-brief format' convention claim is uncited; structure traces only to the vault's own template, not an external authority) is Cite-owned and is Section 06's one unsupported_claim (reason requires-primary-source); Section 06 is already at cite_status: needs_cite from PI-040. Provenance audit score 4.2 < 4.5 (criteria 5/4/4/4/4) independently holds Section 06 at polish_status: needs_polish. claims_total 20, claims_mapped 19, unsupported 1. Twenty claim-manifest lines appended. Stale polished-file frontmatter (polish_status: ready_for_stitch) reconciled to the state file.",
+      "provenance_audited_at": "2026-05-29T13:00:00Z",
+      "unsupported_claims": [
+        {
+          "claim_text": "VI.B paragraph 2 asserts 'The nine-section sequence is the canonical law-school case-brief format'; the nine-section structure traces to the vault's own Templates/Case Brief.md and the PROJECT_PRIMER '9-section case-briefer standard' (evidence-05-case-brief-nine-section-standard.md), but the characterization of it as the canonical national law-school convention carries no external legal-education authority. Footnotes [^2] and [^3] source only the template's loading and its own field/section schema, not the convention claim.",
+          "paragraph": 2,
+          "reason": "requires-primary-source"
+        }
+      ]
     },
     "07": {
       "cite_completed_at": "2026-05-19T05:00:00Z",
@@ -1577,10 +1625,10 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-29T11:00:00Z",
+    "last_run_at": "2026-05-29T13:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 91,
+    "p1_open": 95,
     "p2_open": 41,
     "personas_read": 4
   }
