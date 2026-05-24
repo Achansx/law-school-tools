@@ -49,14 +49,6 @@ date: 2026-05-15
 rule: When the article quotes a judicial opinion, verify against Midpage's `analyzeOpinion` (AI analysis), not just keyword search. The Prize Cases / Grier story is the canonical example; same protocol applies to any case quote in this article.
 context: In the vault, a quotation was off by two words because the modernized PDF differed from the indexed opinion. Verify caught it. We must not reproduce the same error in the article that describes the lesson.
 
-## L-005: No em dashes, no straight quotes in any prose phase
-
-phase: draft
-impact_score: 3
-date: 2026-05-15
-rule: Draft phase avoids em dashes and straight ASCII quotes from the start. Polish does a final sweep, but earlier prevention reduces Polish rework.
-context: Alan's style preference and standard JLE typography.
-
 ## L-006: Word budgets are floors and ceilings, not targets
 
 phase: draft
@@ -441,3 +433,11 @@ impact_score: 3
 date: 2026-05-27
 rule: When Cite adds a citation to a journal that numbers articles rather than paginating (e.g., Int'l J. Educ. Tech. Higher Educ.), match the target section's existing article-number format for intra-section consistency, then flag any cross-section format drift to Stitch instead of silently diverging. Two live forms now coexist for the same Bond et al. 2024 meta-review: Section 03 footnote [^18] uses the capitalized comma form ("21 Int'l J. Educ. Tech. Higher Educ., Art. 4 (2024)") matching its Sajja entry, while Section 02 footnote [^9] uses the lowercase no-comma Bluebook form ("21 Int'l J. ... art. 4 (2024)"). Stitch's consistency pass must unify them to one form; Bluebook 21st favors lowercase "art." with no preceding comma.
 context: Run-109 Cite resolved Section 03's PI-032 by adding Bond et al. 2024 to footnote [^18], the same meta-review Section 02 cited at [^9] in run 102. To keep Section 03 internally consistent the new entry mirrored that section's existing Sajja article-number style ("Art. 42" / "Art. 4", capitalized and comma-led), which diverges from Section 02's lowercase Bluebook form for the identical source. Per L-034 the cross-section verification was reused, but verification-reuse does not carry citation-FORM unification: one source can be verified once yet still be formatted two ways across sections. Recording the divergence here gives Stitch's terminology-and-facts consistency check an explicit target rather than relying on it to notice the drift unaided; the unification cost is one find-and-replace at assembly time.
+
+## L-055: Appendix source files may be absent from the checkout; rebuild from evidence cards
+
+phase: harvest
+impact_score: 4
+date: 2026-05-28
+rule: When a Harvest-appendix tick finds the appendix scaffold's frontmatter source_files (e.g., Source Materials/, Templates/, MISSING_SOURCE_MATERIALS.md, .site/build.py, DEPLOY.md) absent from the repo checkout, do NOT noop and do NOT fabricate counts. Populate the appendix from the verified Section evidence cards that already captured those files, and mark each entry's provenance (the filesystem-audit date the card records). Only log to pending_issues and stop if no evidence card covers the needed figure.
+context: Run 116 (Appendix A, Input Inventory) ran in a remote checkout that contained only Article/ and Article-Workplan.md; the vault's Source Materials/, Templates/, and MISSING_SOURCE_MATERIALS.md were never pushed. The 2026-05-15 filesystem-audit figures (61 .pptx, 66 .pdf, 388 total, 135 Uploaded Media case PDFs, 12 merged packets, 37 modernized, the 10 casebook-only opinions, the ~30-field Case Brief schema) all live verified in the Section 04/05 evidence cards, so the appendix was reconstructable without inventing anything. One fidelity trap: the cards report 127 top-level files yet name categories summing to 132, but 61 .pptx + 66 .pdf = 127 exactly, so label those two as the slide-and-reading files rather than asserting a contradictory grand total. The upcoming B (configs/Templates), C (Templates/), and F (.site/build.py, DEPLOY.md, Netlify) appendix ticks will hit the same absent-source wall and must apply this rule instead of stalling.
