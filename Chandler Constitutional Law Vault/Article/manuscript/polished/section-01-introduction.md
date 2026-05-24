@@ -4,11 +4,17 @@ title: "Introduction: The Hidden Archive of the Law Professor"
 status: ready_for_stitch
 target_words: 900
 word_count: 842
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 8
+provenance_audited: true
+provenance_score: 4.4
+claims_total: 9
+claims_mapped: 9
+unsupported_claims: []
+provenance_note: "Verify-provenance audit, run 127 (first provenance audit of the burst; lowest-numbered section with no provenance frontmatter). All 9 factual claims map to footnotes [^1]-[^8]. Criterion scores 5/4/4/5/4 (avg 4.4): claim coverage full; primary-source ratio 4 (four procedural claims route through infra cross-references rather than a direct in-repo primary, and the 92/27/79 breakdown's primary App. D excerpt is absent from the repo per PI-082); attribution 4 (footnotes [^5]/[^8] carry scheduled-task process language 'verified live this run via WebFetch', PI-115); numerical precision 5 (198/92/27/79 dated to the progress-report snapshot and consistent with IV.E and VIII.A); gap honesty 4 (the I.C-vs-IV.A scope-characterization inconsistency, PI-118, and the PI-082 primary-anchor gap are not flagged inline). 4.4 < 4.5, so the section is held at polish_status: needs_polish. Frontmatter cite_status/polish_status also reconciled here from the stale ready_for_stitch mirror to the state file's needs_cite/needs_polish (run-107 re-enforcement)."
 ---
 
 # I. Introduction: The Hidden Archive of the Law Professor
