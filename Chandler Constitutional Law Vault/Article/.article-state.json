@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "verify",
+ "current_phase": "harvest",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "stitch",
- "last_run_at": "2026-05-26T01:00:00Z",
+ "last_completed_phase": "verify",
+ "last_run_at": "2026-05-26T03:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -816,9 +816,39 @@
    "section": "14",
    "status": "open",
    "type": "scaffold-first-sequence-gap"
+  },
+  {
+   "claim": "Section XIV.A's final sentence (\u201cthe transferable result is the replicable process that other doctrinal courses with similar archives can follow\u201d) and XIV.C's closing sentence (\u201cThe invitation is offered as a modest, replicable infrastructure choice rather than a mandate\u201d) present replicability as an established property of the method, but Section X.E concedes the article \u201creports one instance rather than two\u201d and frames the generalization claim as \u201can invitation as much as a result.\u201d The conclusion asserts as settled what the body marks as untested.",
+   "id": "PI-098",
+   "note": "Persona 1 (Skeptical JLE Editor) P1 finding on the newly stitched Section XIV. A JLE peer reviewer who read X.E's n=1 invitation framing will read the conclusion's flat \u201creplicable process \u2026 can follow\u201d and \u201cmodest, replicable infrastructure choice\u201d as the case study (one vault, run once) overclaimed into the contribution (a demonstrated-replicable method); this is the case-study-vs-contribution and failure-to-disclaim concern at the article's closing pitch. Next Polish tick on Section 14 should soften the XIV.A clause to match X.E's invitation posture, e.g., \u201cthe transferable result is a process described in enough detail that other doctrinal courses with similar archives can attempt it,\u201d and keep \u201creplicable\u201d in XIV.C only where it sits beside the \u201cinvitation rather than a mandate\u201d hedge already in the same sentence. The fix preserves the method-is-the-contribution thesis without asserting demonstrated replication the article did not run. P1-deferral ACTIVE this run, so logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
+   "opened_at": "2026-05-26T03:00:00Z",
+   "phase": "verify",
+   "section": "14",
+   "status": "open",
+   "type": "replicability-overclaim"
+  },
+  {
+   "claim": "Section XIV is silent on the live classroom and the assigned casebook. XIV.A frames the contribution as converting the archive into a \u201cnavigable, cross-linked, student-facing course knowledge system\u201d and XIV.C closes on the adoption invitation, but no sentence in XIV reaffirms (as Section II.E does, \u201cextends the casebook, the syllabus, and the live classroom rather than displacing any of them,\u201d and as III.C does after PI-031) that the system supplements rather than substitutes for live Socratic teaching and the assigned casebook.",
+   "id": "PI-099",
+   "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding, recurring the live-pedagogy / supplement-not-substitute line (PI-031/PI-039/PI-046/PI-054/PI-061/PI-078) now at the conclusion. A traditionalist who reads only the conclusion sees the dialogic teaching and the casebook the article elsewhere protects drop out exactly where the article makes its closing claim, leaving \u201cstudent-facing course knowledge system\u201d to read as a stand-in for the teaching. Next Polish tick on Section 14 should add one clause to XIV.B or XIV.C positioning the system as a supplement to the live classroom and the assigned casebook rather than a substitute for either, e.g., append to XIV.B \u201cand it supplements the live classroom and the assigned casebook rather than standing in for either,\u201d consistent with Sections II.E and III.C. P1-deferral ACTIVE, logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14 (pairs with the PI-100 access clause as one calibrated closing passage).",
+   "opened_at": "2026-05-26T03:00:00Z",
+   "phase": "verify",
+   "section": "14",
+   "status": "open",
+   "type": "live-classroom-substitution"
+  },
+  {
+   "claim": "Section XIV is silent on access, equity, and the digital divide. XIV.C frames the close as \u201ca modest, replicable infrastructure choice rather than a mandate\u201d and XIV.A describes a \u201cstudent-facing\u201d system, but neither carries the access precondition Section X.A states explicitly (\u201creaches only students who have web access, a usable device, and the digital fluency to navigate it, a precondition Section XII takes up\u201d). The equity caveat present in the body drops out at the conclusion.",
+   "id": "PI-100",
+   "note": "Persona 3 (AI-in-Education Researcher) P1 finding, recurring the equity-and-accessibility-silence pattern (PI-026/PI-033/PI-064/PI-071/PI-080/PI-095) at the conclusion. A learning-sciences reviewer reading the close sees \u201cmodest infrastructure choice\u201d offered without the access/equity precondition the article was careful to state at X.A, so the final pitch reads as access-blind. Next Polish tick on Section 14 should add a half-clause to XIV.C conceding the access/equity precondition with a Section XII forward-reference, e.g., \u201coffered as a modest infrastructure choice, subject to the access and equity preconditions Section XII takes up, rather than a mandate\u201d; pairs naturally with the PI-099 live-classroom clause as a single calibrated closing passage. P1-deferral ACTIVE, logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
+   "opened_at": "2026-05-26T03:00:00Z",
+   "phase": "verify",
+   "section": "14",
+   "status": "open",
+   "type": "equity-and-accessibility-gap"
   }
  ],
- "phase_index": 6,
+ "phase_index": 0,
  "phases": [
   "harvest",
   "outline",
@@ -828,7 +858,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 90,
+ "run_count": 91,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1084,23 +1114,23 @@
    "evidence_status": "none",
    "footnotes_count": 8,
    "outline_status": "ready_for_draft",
+   "polish_completed_at": "2026-05-25T13:00:00Z",
    "polish_status": "ready_for_stitch",
    "target_words": 400,
-   "title": "Conclusion",
-   "polish_completed_at": "2026-05-25T13:00:00Z"
+   "title": "Conclusion"
   }
  },
  "target_venue": "Journal of Legal Education",
  "target_words_max": 12000,
  "target_words_min": 10000,
  "verify": {
-  "deferred_p1_count": 16,
+  "deferred_p1_count": 19,
   "forced_findings_satisfied": true,
-  "last_run_at": "2026-05-25T03:00:00Z",
-  "new_findings_count": 7,
+  "last_run_at": "2026-05-26T03:00:00Z",
+  "new_findings_count": 4,
   "p0_open": 0,
-  "p1_open": 62,
-  "p2_open": 36,
+  "p1_open": 65,
+  "p2_open": 37,
   "personas_read": 3
  }
 }
