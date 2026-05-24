@@ -1,14 +1,23 @@
 ---
 id: "03"
 title: "Case Study: A Constitutional-Law Knowledge System"
-status: ready_for_stitch
+status: needs_polish
 target_words: 1200
 word_count: 1281
-last_phase: polish
+last_phase: verify
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 18
+provenance_audited: true
+provenance_score: 3.4
+claims_total: 17
+claims_mapped: 16
+unsupported_claims:
+  - claim_text: "Section III.C paragraph 3 attributes to Section IV a 'case-doctrine-classroom triangle' framing and calls the lecture layer 'the casebook's blind spot'; Section IV uses none of these phrases."
+    paragraph: 6
+    reason: evidence-gap
+verify_routing_reason: "Run 129 Verify/provenance (3.4 < 4.5): cite_status needs_cite for PI-125 (restore Bond et al. 2024), PI-126 (fifteen-link breakdown seven->eight Cases), PI-127 (NFIB [^17] pin cite 552 vs 550), PI-122 App. D drop in [^3]; polish_status needs_polish for PI-123 (proof overclaim III.D) and PI-124 (actor-erasure III.B)."
 ---
 
 # III. Case Study: A Constitutional-Law Knowledge System

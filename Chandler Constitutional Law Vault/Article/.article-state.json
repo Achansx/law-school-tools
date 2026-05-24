@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "verify",
-  "last_run_at": "2026-05-29T05:00:00Z",
+  "last_run_at": "2026-05-29T07:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1027,12 +1027,62 @@
     {
       "claim": "Section II footnotes [^2], [^3], and [^6] (recurring at full-draft [^10], [^11], [^14], [^19], [^51], [^95], [^111] across Sections IV/VIII/IX, eight occurrences total) cite '*see also infra* App. D (Correspondence Excerpts)' as the verbatim-excerpt home for the starting-state inventory, the 198/154 snapshot, the Topic-page description, and the Recent-tab description, but no 'Correspondence Excerpts' appendix exists: App. D is 'Karpathy-Loop Per-Phase Rubric.' The six appendices are A Input Inventory, B AI Tooling, C Obsidian Templates, D Rubrics, E Cost and Labor, F Technical Setup.",
       "id": "PI-122",
-      "note": "Persona 4 (Provenance Auditor) P1, surfaced during the Section 02 provenance audit (provenance_score 4.0, gap-honesty criterion). The App. A pointer in the same footnotes resolves, so the underlying claims are supported, but the App. D cross-reference is broken article-wide. Related to but distinct from PI-082 (the progress email absent from the repo); the broken pointer exists regardless of whether the email is added. Cite-owned: next Cite tick on Sections 02/04/08/09 drops every 'App. D (Correspondence Excerpts)' sub-reference and lets the App. A pointer carry the support; if a correspondence appendix is intended, create it under an unused letter and populate it once the progress email is in the repo (PI-082), then re-point the footnotes. Routes Section 02 cite_status -> needs_cite. Lesson candidate (deferred at the LESSONS cap): every '*see infra* App. X' footnote cross-reference must resolve to an actual appendix whose title and content match the parenthetical; verify against the assembled appendix set.",
+      "note": "Persona 4 (Provenance Auditor) P1, surfaced during the Section 02 provenance audit (provenance_score 4.0, gap-honesty criterion). The App. A pointer in the same footnotes resolves, so the underlying claims are supported, but the App. D cross-reference is broken article-wide. Related to but distinct from PI-082 (the progress email absent from the repo); the broken pointer exists regardless of whether the email is added. Cite-owned: next Cite tick on Sections 02/04/08/09 drops every 'App. D (Correspondence Excerpts)' sub-reference and lets the App. A pointer carry the support; if a correspondence appendix is intended, create it under an unused letter and populate it once the progress email is in the repo (PI-082), then re-point the footnotes. Routes Section 02 cite_status -> needs_cite. Lesson candidate (deferred at the LESSONS cap): every '*see infra* App. X' footnote cross-reference must resolve to an actual appendix whose title and content match the parenthetical; verify against the assembled appendix set. 2026-05-29T07:00 (Section 03 audit): footnote [^3] in Section 03 also carries the broken 'App. D (Correspondence Excerpts)' sub-reference; Section 03 is one of the article-wide instances and is routed cite_status -> needs_cite this tick, so the App. D drop applies to Section 03 [^3] as well.",
       "opened_at": "2026-05-29T05:00:00Z",
       "phase": "verify",
       "section": "02",
       "status": "open",
       "type": "false-cross-reference"
+    },
+    {
+      "claim": "Section III.D's final sentence calls the three-bucket Hypothetical Applications form 'the surface-level proof that the prompting design Section VI describes produces pedagogically structured material rather than free-form exam noise'; 'proof' overclaims, since a fixed template shows the output is structured but does not establish that it is pedagogically sound rather than noise, a quality judgment the article presents no evaluation data to support.",
+      "id": "PI-123",
+      "note": "Persona 1 (Skeptical JLE Editor) P1. The three-bucket structure is the visible artifact; calling it 'proof' that the design 'produces pedagogically structured material rather than free-form exam noise' is a quality claim the article does not back with evaluation. Next Polish tick on Section 03 should soften 'proof' to 'illustration' or 'evidence' and drop or qualify the 'rather than free-form exam noise' contrast, e.g. 'the three-bucket form is the surface-level illustration of the prompting design Section VI describes, scoping hypotheticals to the page's doctrine.' Distinct from PI-108 (live-hypothetical substitution, Persona 2) and PI-030 (casebook overclaim). Routes Section 03 polish_status -> needs_polish.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "open",
+      "type": "overclaim"
+    },
+    {
+      "claim": "Section III narrates the doctrinal synthesis as the work of the system rather than the professor: III.B 'The Commerce Clause Topic page renders the doctrine as a single synthesis', III.A the four-family grid plus Cases filter rail 'give the student' entry, and III.D 'the prompting design ... produces' material; Professor Chandler's curatorial and analytical judgment is largely invisible across III.A through III.D.",
+      "id": "PI-124",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1. The article's thesis is that professorial judgment is made reusable, inspectable, and publishable, not absorbed into the system; Section III lets 'the page'/'the site'/'the prompting design' carry the verbs the professor should carry. Next Polish tick on Section 03 should add a professor-as-author clause to III.B's opening, e.g. 'The Commerce Clause Topic page renders Professor Chandler's synthesis, recorded through the vault's reviewed pipeline, as a single doctrine page', and consider mirroring the actor-naming at III.A. Same cross-section actor-erasure family as PI-015 (V.C) and PI-024 (VIII.D); distinct from PI-031/PI-108 (live-event substitution). Routes Section 03 polish_status -> needs_polish.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "open",
+      "type": "actor-erasure"
+    },
+    {
+      "claim": "Section III.E rests the user-experience contrast on a single chatbot-architecture source (Sajja et al. 2023, footnote [^18]); the polished and assembled Section III carries no Bond et al. 2024 meta-review, although the draft (manuscript/drafts/section-03-case-study.md) cites Bond, so the survey-level AI-in-higher-education engagement was present at the draft layer but dropped from the polished file.",
+      "id": "PI-125",
+      "note": "Persona 3 (AI-in-Education Researcher) P1, same single-platform-paper thinness PI-025 flagged for Section VIII.E. Per L-053 do NOT add Kuhail (not in the workplan); Bond et al. 2024 is in the draft and the workplan and is verified live at Section 02 [^9]. Next Cite tick on Section 03 should restore the Bond et al. 2024 meta-review citation to a III.E footnote (the draft already carries it) and unify its article-number form per L-054. Also surfaces a draft->polished sync gap on this footnote. Cite-owned per L-024 (literature anchoring); routes Section 03 cite_status -> needs_cite.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "open",
+      "type": "literature-gap"
+    },
+    {
+      "claim": "Section III.C paragraph 3 and footnote [^11] state the Marbury Connections block carries 'fifteen outbound links across four Topics, seven other Cases, and three Lectures', but four + seven + three = fourteen, not fifteen; evidence-03-wikilink-graph-navigation enumerates eight Cases (Martin v Hunter's Lessee, McCulloch, Youngstown, The Prize Cases, Rahimi, Cohens v Virginia, City of Boerne, Trump v United States), so the breakdown should read 'eight other Cases' to sum to fifteen.",
+      "id": "PI-126",
+      "note": "Persona 4 (Provenance Auditor) P1, numerical-precision criterion. The total (fifteen) is correct and matches the evidence card; the component 'seven other Cases' is an undercount that propagated from evidence-03-case-brief-walkthrough's prose, even though that card's own enumeration and evidence-03-wikilink-graph-navigation both list eight. Next Cite or Polish tick on Section 03 should change 'seven other Cases' to 'eight other Cases' in III.C paragraph 3 and footnote [^11]. Cite-owned (footnote fix); routes Section 03 cite_status -> needs_cite.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "open",
+      "type": "numerical-inconsistency"
+    },
+    {
+      "claim": "Section III.D footnote [^17] pin-cites the Roberts formulation 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' to Nat'l Fed'n of Indep. Bus. v. Sebelius, 567 U.S. 519, 552 (2012); Midpage findInOpinion on 567 U.S. 519 (opinionId 809122) confirms the quotation is verbatim-accurate but places the sentence between the *550 and *551 star-pagination markers (U.S. Reports page 550), not page 552.",
+      "id": "PI-127",
+      "note": "Persona 4 (Provenance Auditor) P1, numerical-precision criterion; the canonical Prize Cases / Grier near-miss class (quote correct, locator off). The verbatim text is VERIFIED via Midpage, so this is a pin-cite correction, not a fabrication. Next Cite tick on Section 03 should re-confirm the exact U.S. Reports page via Midpage analyzeOpinion or the bound reporter and correct [^17] from 552 to 550 (or 550-51) if confirmed. Cite-owned; routes Section 03 cite_status -> needs_cite.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "open",
+      "type": "pin-cite"
     }
   ],
   "phase_index": 0,
@@ -1046,12 +1096,12 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 1,
+    "global_unsupported_open": 2,
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "sections_audited": 2,
+    "sections_audited": 3,
     "sections_total": 14
   },
-  "run_count": 128,
+  "run_count": 129,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1111,9 +1161,9 @@
       "cite_at": "2026-05-27T15:00:00Z",
       "cite_completed_at": "2026-05-18T01:00:00Z",
       "cite_note": "Citation-density Verify P1 (PI-032) resolved. Added survey-level Bond et al. 2024 meta-review to footnote [^18] alongside the existing Sajja et al. 2023 platform-paper anchor, with an L-024 transfer clause naming what carries over from the meta-review (its field-level evidentiary standard and AI-in-education design-space mapping) and what does not (the chatbot-tutor and adaptive-system intervention settings it surveys). Per L-049 the Kuhail et al. 2023 survey named in the routing note was NOT added: a grep of Article-Workplan.md returns zero hits, so the source is unverified; the footnote documents the omission. Bond URL liveness verified live this run via WebSearch with allowed_domains scoping per L-022 (verbatim title-and-URL match, vol. 21 art. 4, 2024), consistent with the Section 02 note [^9] verification of the same URL on 2026-05-27. WebFetch on the Springer URL 303-redirected to an idp.springer.com authorize endpoint (provenance refusal), the canonical L-022 case. Body prose at III.E unchanged per PI-032. cite_status needs_cite -> needs_polish; the next Polish tick regenerates polished/section-03 from this cited draft and can pick up the five open Polish-level P1s (PI-028/029/030/031/033). Sections 06/07/08 (PI-040/048/025) remain at cite_status:needs_cite for subsequent Cite ticks; this tick resolved the lowest-numbered needs_cite section per the runbook per-section Cite procedure rather than running the multi-section pass.",
-      "cite_status": "needs_polish",
-      "claims_mapped": 0,
-      "claims_total": 0,
+      "cite_status": "needs_cite",
+      "claims_mapped": 16,
+      "claims_total": 17,
       "current_words": 1278,
       "draft_completed_at": "2026-05-17T23:00:00Z",
       "draft_status": "needs_polish",
@@ -1126,14 +1176,21 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-18T03:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": null,
+      "provenance_audited": true,
+      "provenance_score": 3.4,
       "stitched_at": "2026-05-18T05:00:00Z",
       "target_words": 1200,
       "title": "Case Study: A Constitutional-Law Knowledge System",
+      "unsupported_claims": [
+        {
+          "claim_text": "Section III.C paragraph 3 attributes to Section IV a 'case-doctrine-classroom triangle' framing and a characterization of the lecture layer as 'the casebook's blind spot'; Section IV uses none of these phrases.",
+          "paragraph": 6,
+          "reason": "evidence-gap"
+        }
+      ],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-18T07:00:00Z",
-      "verify_routing_reason": "Persona 3 P1 (PI-032 thin chatbot-tutor literature anchoring on Sajja-only in footnote [^18], recurring the PI-025 pattern from Section VIII.E and now anchoring the same architectural distinction in two sections on the same single platform paper) routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the obvious candidate, the same citation that will also resolve PI-025 for Section 08 via L-034 cross-section verification-reuse). Persona 1 P1 (PI-028 III.E final sentence 'Section III walks the user-experience side first so the reader sees what the case study is before the article argues why the choice was made' as self-flagging meta-rhetoric recurring the PI-022 pattern at VIII.E) plus Persona 1 P1 (PI-029 III.C false cross-reference to Section IV inventing a 'case-doctrine-classroom triangle Section IV named as the casebook's blind spot' framing that Section IV does not have anywhere in its prose) plus Persona 2 P1 (PI-030 III.B second sentence overclaiming that 'the casebook table of contents does not give' doctrine-first entry when most Con Law I casebooks organize their TOCs doctrinally; the article's actual architectural contrast is flat-folder-export-vs-typed-schema, with the casebook on the structured side) plus Persona 2 P1 (PI-031 III.C closing two sentences framing the Lecture summary as a 'recovery' of a missed session, implying structured prose substitutes for live Socratic dialogue) plus Persona 3 P1 (PI-033 III silent on accessibility, device, and equity considerations across the flagship student-eye walkthrough, recurring the PI-026 pattern from Section VIII as the more central place for the article to first acknowledge the silently assumed sighted/broadband/mouse-and-keyboard reader) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Section 03 polish_status flipped from stitched to needs_polish for all five Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the citation-density P1. New lesson L-036 added on the Polish voice-unity sweep including a self-flagging meta-rhetoric check (the recurring pattern across PI-022 at VIII.E and PI-028 at III.E)."
+      "verify_routing_reason": "Run 129 Verify/provenance audit (score 3.4 < 4.5): cite_status -> needs_cite for PI-125 (restore Bond et al. 2024), PI-126 (fifteen-link breakdown 'seven'->'eight other Cases'), PI-127 (NFIB [^17] pin cite 552 vs star-pagination 550), and the PI-122 App. D drop in [^3]; polish_status -> needs_polish for PI-123 ('proof' overclaim, III.D) and PI-124 (actor-erasure, III.B)."
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
@@ -1414,10 +1471,10 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-29T05:00:00Z",
-    "new_findings_count": 4,
+    "last_run_at": "2026-05-29T07:00:00Z",
+    "new_findings_count": 5,
     "p0_open": 0,
-    "p1_open": 77,
+    "p1_open": 82,
     "p2_open": 41,
     "personas_read": 4
   }
