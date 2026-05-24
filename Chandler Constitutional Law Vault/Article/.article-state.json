@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "outline",
-  "last_run_at": "2026-05-26T07:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-26T09:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -828,7 +828,7 @@
       "type": "equity-and-accessibility-gap"
     }
   ],
-  "phase_index": 2,
+  "phase_index": 3,
   "phases": [
     "harvest",
     "outline",
@@ -838,7 +838,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 93,
+  "run_count": 94,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -850,13 +850,13 @@
       "evidence_completed_at": "2026-05-24T01:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 8,
+      "outline_completed_at": "2026-05-26T07:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-23T17:00:00Z",
       "polish_status": "stitched",
       "stitched_at": "2026-05-23T21:00:00Z",
       "target_words": 900,
-      "title": "Introduction: The Hidden Archive of the Law Professor",
-      "outline_completed_at": "2026-05-26T07:00:00Z"
+      "title": "Introduction: The Hidden Archive of the Law Professor"
     },
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
@@ -1058,8 +1058,9 @@
     },
     "12": {
       "cite_status": "none",
-      "current_words": 0,
-      "draft_status": "none",
+      "current_words": 871,
+      "draft_at": "2026-05-26T09:00:00Z",
+      "draft_status": "needs_cite",
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-23T03:00:00Z",
       "evidence_status": "populated",
@@ -1092,14 +1093,14 @@
       "cite_status": "needs_polish",
       "current_words": 381,
       "draft_status": "needs_cite",
+      "evidence_completed_at": "2026-05-26T05:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 8,
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-25T13:00:00Z",
       "polish_status": "ready_for_stitch",
       "target_words": 400,
-      "title": "Conclusion",
-      "evidence_completed_at": "2026-05-26T05:00:00Z"
+      "title": "Conclusion"
     }
   },
   "target_venue": "Journal of Legal Education",
