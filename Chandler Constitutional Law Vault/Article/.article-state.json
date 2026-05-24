@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-26T15:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-26T17:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -836,9 +836,49 @@
       "section": "12",
       "status": "open",
       "type": "cite-form-confirmation"
+    },
+    {
+      "claim": "Section XI.D, paragraph 1, sentence 1 calls Choi & Schwarcz 'the strongest recent demonstration in this Journal's own pages' that meaningful empirical work on AI and law-school learning does not require a full RCT; the unhedged superlative asserts a field-survey judgment the article does not perform or cite.",
+      "id": "PI-102",
+      "note": "Verify 2026-05-26T17:00 Persona 1 (Skeptical JLE Editor) P1, anchored at assembled-draft [^148]. A naked superlative is the overclaim the rest of Section XI avoids. Next Polish tick on Section 11 should drop 'the strongest recent demonstration' to a sufficient existence claim, e.g., 'is a recent demonstration in this Journal's own pages that meaningful empirical work ... does not require a full randomized controlled trial.' P1-deferral ACTIVE this run, so logged without resetting Section 11 status; re-enforced once every section reaches cite_status: needs_polish once.",
+      "opened_at": "2026-05-26T17:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "overclaim"
+    },
+    {
+      "claim": "Section XI's newly stitched footnotes (assembled-draft [^146]-[^149], plus XI source [^12]/[^13] at [^151]/[^152]) carry internal maintenance-system lesson identifiers and fetch-process narration into the published Bluebook apparatus: [^146] 'the article's own L-003 ... L-031'; [^147]/[^148] 'URL verified live this run via WebSearch with allowed_domains scoping ... per the article's own L-024 transfer-of-inference clause'; [^149] 'per the article's own L-034 ... L-024'.",
+      "id": "PI-103",
+      "note": "Verify 2026-05-26T17:00 Persona 1 (Skeptical JLE Editor) P1. This is the Section XI instance of the article-wide PI-092 leak; XI's footnotes postdate PI-092, which was anchored at Section XIII and already directs an article-wide sweep. Fold Section XI into PI-092's footnote-form sweep at the next Cite tick (Cite owns Bluebook form per L-015): strip every 'per L-NNN' tag and the verbatim fetch-process narration, keep the substantive descriptive parenthetical, the transfer-of-inference content stated in plain terms, and the '(last visited <date>)' / 'URL verified live <date>' anchor. Extends L-042 from body prose to the XI footnote apparatus. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+      "opened_at": "2026-05-26T17:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "footnote-form-leak"
+    },
+    {
+      "claim": "Section XI operationalizes 'what would count as success' entirely as site-use and self-report metrics (page views, navigation, time on page, perceived usefulness/trust/overreliance, click sequences, verbalized use strategies) and contains no instrument and no sentence asking whether the system affects students' preparation for live Socratic class, in-class engagement, or whether reliance on the static site displaces close casebook reading.",
+      "id": "PI-104",
+      "note": "Verify 2026-05-26T17:00 Persona 2 (Legal Pedagogy Traditionalist) P1, anchored at XI.A ('what would count as success') and XI.B (four-instrument plan). The plan measures use of the artifact in isolation from the live classroom the article elsewhere (II.E, III.C) insists the system extends rather than replaces. Next Polish tick on Section 11 should add one sentence to XI.B or XI.E conceding the plan deliberately measures use of the artifact and not classroom/Socratic effects, with the live-teaching relationship out of evaluation scope, consistent with II.E/III.C; e.g., 'These instruments measure how students use the site, not whether it changes what happens in the Socratic classroom, a separate question this evaluation does not reach.' P1-deferral ACTIVE; logged without resetting Section 11 status.",
+      "opened_at": "2026-05-26T17:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "pedagogy-scope-silence"
+    },
+    {
+      "claim": "Section XI's four-instrument plan instruments perceived usefulness, navigation, trust, and overreliance but includes no item or design choice capturing access, equity, or non-use (who in the cohort cannot or does not use the site and why), so the evaluation as designed cannot surface the digital-divide limit Section X.A states and Section XII takes up; XI.C invokes Bond's 'ethics, collaboration, and rigor' call while operationalizing only the rigor half.",
+      "id": "PI-105",
+      "note": "Verify 2026-05-26T17:00 Persona 3 (AI-in-Education Researcher) P1, anchored at XI.B (four-instrument plan) and XI.C (Bond frame). Recurs the equity-and-accessibility-silence pattern (PI-026/033/064/071/080/095/100) at the evaluation-design level. Next Polish tick on Section 11 should add a survey/open item or analytics caveat capturing access and non-use (e.g., a Likert item on device/connectivity barriers, or one sentence conceding the instruments do not sample non-users) and route the access/equity precondition to Section XII, so the evaluation design carries the access precondition the body already states. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+      "opened_at": "2026-05-26T17:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "equity-and-accessibility-gap"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -848,7 +888,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 97,
+  "run_count": 98,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1119,13 +1159,13 @@
   "target_words_max": 12000,
   "target_words_min": 10000,
   "verify": {
-    "deferred_p1_count": 19,
+    "deferred_p1_count": 23,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-26T03:00:00Z",
-    "new_findings_count": 4,
+    "last_run_at": "2026-05-26T17:00:00Z",
+    "new_findings_count": 5,
     "p0_open": 0,
-    "p1_open": 65,
-    "p2_open": 37,
+    "p1_open": 69,
+    "p2_open": 38,
     "personas_read": 3
   }
 }
