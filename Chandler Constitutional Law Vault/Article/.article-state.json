@@ -48,7 +48,7 @@
       "id": "D",
       "last_phase": "harvest-appendix",
       "last_run_at": "2026-05-28T11:00:00Z",
-      "status": "needs_work",
+      "status": "drafted",
       "target_max": 1000,
       "target_min": 600,
       "title": "Karpathy-Loop Per-Phase Rubric",
@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "outline",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
