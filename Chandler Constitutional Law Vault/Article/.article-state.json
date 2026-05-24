@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-27T07:00:00Z",
+  "last_completed_phase": "harvest",
+  "last_run_at": "2026-05-27T09:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -898,7 +898,7 @@
       "type": "instrument-specification-gap"
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "harvest",
     "outline",
@@ -908,7 +908,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 105,
+  "run_count": 106,
   "schema_version": 1,
   "sections": {
     "01": {
