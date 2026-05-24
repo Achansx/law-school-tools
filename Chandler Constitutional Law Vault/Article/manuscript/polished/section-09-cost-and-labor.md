@@ -1,14 +1,29 @@
 ---
 id: "09"
 title: "Cost and Labor: The Honest Accounting"
-status: ready_for_stitch
+status: needs_polish
 target_words: 700
 word_count: 761
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: needs_polish
 footnotes_count: 16
+provenance_audited: true
+provenance_score: 4.2
+claims_total: 27
+claims_mapped: 24
+unsupported_claims:
+  - claim_text: "IX.E frames PI-049 (master cost-and-labor table reconstruction) as still outstanding and footnote [^15] pins it to the .article-state.json pending_issues registry, but PI-049 is archived to .article-state.archive.json (status outline-addressed) and is not in the live registry a reader would check."
+    paragraph: 5
+    reason: evidence-gap
+  - claim_text: "IX.E names PI-050 (external pricing lookups deferred to Cite) with no dedicated footnote, and PI-050 is archived to .article-state.archive.json (status outline-addressed) rather than present in the live pending_issues registry."
+    paragraph: 5
+    reason: evidence-gap
+  - claim_text: "IX.E frames PI-051 (person-hours backfill) as still outstanding and footnote [^16] pins it to the registry, but PI-051 is archived to .article-state.archive.json (status outline-addressed)."
+    paragraph: 5
+    reason: evidence-gap
+unsupported_claims_count: 3
 ---
 
 # IX. Cost and Labor: The Honest Accounting
