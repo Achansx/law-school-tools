@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "outline",
+ "current_phase": "draft",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "harvest",
- "last_run_at": "2026-05-25T05:00:00Z",
+ "last_completed_phase": "outline",
+ "last_run_at": "2026-05-25T07:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -806,9 +806,19 @@
    "section": "13",
    "status": "open",
    "type": "literature-gap"
+  },
+  {
+   "claim": "Section 14 (Conclusion) was outlined under the RUNBOOK step-3a scaffold-first priority, which forced the Outline phase onto the lowest-numbered evidence_status:none scaffold section (14, the only one of 01/10/12/13/14 still at none after Section 13 flipped to populated at run 85) ahead of any Harvest pass on Section 14. No section-14-specific evidence cards exist. Per L-046 the framing-section outline is grounded honestly: the spine and thesis are the article's own argument (Article-Workplan.md \u00a71 and \u00a710; PROJECT_PRIMER thesis and house-voice recurring sentence), and every bullet's evidence pointer names an EXISTING verified sibling evidence card (evidence-01-thesis-method-not-automation, evidence-01-hidden-archive-flat-lms, evidence-01-corpus-snapshot-and-live-url, evidence-01-recurring-sentence-present, evidence-01-no-learning-outcomes-claim, evidence-10-method-not-artifact-contribution, evidence-10-method-not-learning-outcomes-limit, evidence-10-loop-and-discipline-transfer, evidence-11-not-a-claim-students-learned-more, evidence-12-static-vs-chatbot-risk-architecture, evidence-07-six-phase-rotation, evidence-07-professorial-control-mechanism, evidence-13-method-first-adoption). The Conclusion introduces no new fact; it recapitulates and lands the recurring sentence as its third canonical placement. No fabricated fact, quotation, statistic, or citation was introduced.",
+   "id": "PI-097",
+   "note": "Sequencing artifact, not an evidence gap in the outlined spine; the Section 14 analogue of PI-074 (Section 01), PI-083 (Section 10), and the resolved PI-091 (Section 13). The next Harvest tick that scaffold-first routes to Section 14 (Section 14 remains evidence_status:none until a Harvest pass advances it, per L-051's literal-trigger rule) should build section-14-specific evidence cards (evidence-14-*): evidence-14-method-as-contribution-recap (the Section I hidden-archive bookend plus the method-not-artifact thesis), evidence-14-disclaimers-recap (the no-learning-outcomes disclaimer cross-referenced to Section XI, the bounded-base-case generalization limit cross-referenced to Section X, and the static-not-chatbot architectural disclaimer cross-referenced to Section XII), evidence-14-invitation-to-second-instance (the method-first opt-in handed forward from Section XIII and the loop-and-discipline transfer from Section X), and evidence-14-recurring-sentence-third-placement (the L-002/L-026 marker that the Conclusion is the third and final canonical placement of the recurring sentence). The scaffold-first lift condition (every section at cite_status:needs_polish once) cannot be met until Section 14 has been harvested, drafted, cited, and polished in turn, so scaffold-first will continue to route Draft, Cite, and Polish onto Section 14 next. PI-097 closes when Harvest has written the section-14 evidence cards (Outline is already satisfied by manuscript/outlines/outline-14-conclusion.md, produced this run), or when a later Verify tick confirms the Conclusion's grounding is complete without them. The next Draft tick that scaffold-first routes to Section 14 can proceed now from outline-14: each H2 bullet states claim, sibling-card evidence pointer, and an inferential move that closes an earlier arc, and the recurring sentence is reserved for one placement in 14.C per L-002/L-026.",
+   "opened_at": "2026-05-25T07:00:00Z",
+   "phase": "outline",
+   "section": "14",
+   "status": "open",
+   "type": "scaffold-first-sequence-gap"
   }
  ],
- "phase_index": 1,
+ "phase_index": 2,
  "phases": [
   "harvest",
   "outline",
@@ -818,7 +828,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 85,
+ "run_count": 86,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1071,7 +1081,7 @@
    "current_words": 0,
    "draft_status": "none",
    "evidence_status": "none",
-   "outline_status": "none",
+   "outline_status": "ready_for_draft",
    "polish_status": "none",
    "target_words": 400,
    "title": "Conclusion"
