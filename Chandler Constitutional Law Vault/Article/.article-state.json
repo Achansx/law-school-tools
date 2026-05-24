@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-27T05:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-27T07:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -866,9 +866,39 @@
       "section": "12",
       "status": "open",
       "type": "open-decision-numbering-consistency"
+    },
+    {
+      "claim": "Section XI.D footnote [^149] names the Sajja first author 'Maurice Sajja et al.', but the identical source (same title, Platform-Independent and Curriculum-Oriented Intelligent Assistant for Higher Education, 20 Int'l J. Educ. Tech. Higher Educ. art. 42 (2023)) is cited at [^34], [^109], and [^155] as 'Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir.' The same work is attributed to two different first authors across the footnote apparatus.",
+      "id": "PI-107",
+      "note": "Verify 2026-05-27T07:00 Persona 1 (Skeptical JLE Editor) P1. A Bluebook author-name accuracy error and an internal inconsistency a reviewer cross-checking the four Sajja cites will catch. Next Cite tick on Section 11 (Cite owns Bluebook form per L-015) should correct [^149]'s author string to 'Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir' to match [^34]/[^109]/[^155], and while there normalize the journal designation form (', Art.' at [^34]/[^109] vs ' art.' at [^149]/[^155]/[^147]) flagged as this run's P2. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+      "opened_at": "2026-05-27T07:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "citation-accuracy-error"
+    },
+    {
+      "claim": "Sections III.D ('the exam-prep payoff') and VI.C present the three-bucket hypotheticals (two same-side, two opposite-side, one fence-sitter, each closing with 'a one-sentence Why naming the controlling doctrinal move') as the exam-prep payoff and as encoding 'the law-school exam pedagogy of testing a rule against varying fact patterns,' but never acknowledge that a hypothetical shipped with its own answer attached trains issue-recognition rather than the generative answer-withheld struggle that gives the live classroom hypothetical its pedagogical force; even the 'genuinely contested' fence-sitter ships with a resolution.",
+      "id": "PI-108",
+      "note": "Verify 2026-05-27T07:00 Persona 2 (Legal Pedagogy Traditionalist) P1, anchored at III.D paragraph 1 with the parallel framing at VI.C. Distinct from PI-031 (lecture-summary 'recover the professor's framing') and PI-016 (review-pipeline omission for hypothetical generation): this is the answered-versus-withheld hypothetical distinction. A traditionalist reads the static answer-key as conflated with the live hypothetical practice the method claims only to extend. Next Polish tick on Section 3 (with a parallel touch at VI.C) should add one clause conceding the page's pre-resolved hypotheticals support exam self-testing and issue-spotting rather than reproducing the live, answer-withheld classroom hypothetical, consistent with the supplement-not-substitute posture at II.E and III.C. P1-deferral ACTIVE; logged without resetting Section 3 status.",
+      "opened_at": "2026-05-27T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "open",
+      "type": "live-hypothetical-substitution"
+    },
+    {
+      "claim": "Section XI.B specifies the first instrument as 'a short anonymous end-of-semester survey ... with five Likert items on perceived usefulness, navigation, perceived trust, and perceived overreliance, plus two open-ended items' - five Likert items mapped to four named constructs, leaving the fifth item's construct unstated, so the survey instrument's construct coverage cannot be assessed as described.",
+      "id": "PI-109",
+      "note": "Verify 2026-05-27T07:00 Persona 3 (AI-in-Education Researcher) P1, anchored at XI.B paragraph 1 first instrument. Distinct from PI-104 (classroom-effects scope) and PI-105 (access/equity item gap): this is an item-count/construct-specification gap. A learning-sciences reviewer reads either an off-by-one miscount or an unspecified fifth construct. Next Polish tick on Section 11 should reconcile the count (name the fifth construct, e.g. a perceived-accuracy or static-versus-chatbot comparison item, or correct 'five' to 'four') and, if two items load on one construct, say which, so construct coverage is legible. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+      "opened_at": "2026-05-27T07:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "instrument-specification-gap"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -878,7 +908,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 104,
+  "run_count": 105,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1153,13 +1183,13 @@
   "target_words_max": 12000,
   "target_words_min": 10000,
   "verify": {
-    "deferred_p1_count": 23,
+    "deferred_p1_count": 26,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-26T17:00:00Z",
-    "new_findings_count": 5,
+    "last_run_at": "2026-05-27T07:00:00Z",
+    "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 68,
-    "p2_open": 38,
+    "p1_open": 71,
+    "p2_open": 39,
     "personas_read": 3
   }
 }
