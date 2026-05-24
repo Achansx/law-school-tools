@@ -156,8 +156,12 @@ If `abstract.status` is `ready_for_review` or `ready_for_human_review`, skip the
 2. All 14 sections have `polish_status: stitched`.
 3. All 6 appendices (`appendices.A` through `appendices.F`) have `status: drafted` or `polished`.
 4. Most recent Verify run reported zero P0 and zero P1 findings against the main draft.
+5. **Provenance audit complete and clean.** Every polished section has `provenance_audited: true` AND `provenance_score >= 4.5`. Across all 14 sections, total open `unsupported_claims` is zero (entries flagged `reason: intentional-conjecture` with explicit human acceptance do not count against the gate).
+6. **Appendix provenance fields present.** Every appendix in `manuscript/appendices/` has a `provenance_note` field in its frontmatter, OR its source files are all present in this repo and the appendix consequently doesn't need a provenance note (Appendix A, post-rerun, is the model).
 
 Appendices ship as separate online supplements per JLE practice. They are NOT assembled into `manuscript/full-draft.md`. They live as individual files in `manuscript/appendices/` and are submitted alongside the main manuscript via Scholastica's supplement upload.
+
+**The verifiability principle.** The article's central thesis is that AI systems can be made verifiable and inspectable. The article itself must meet that standard. Criterion 5 is the operational test: every factual claim in the prose traces to an evidence card, a primary source footnote, or an explicit acceptance of conjecture. No factual sentence escapes scrutiny.
 
 ## Phase: Verify
 
@@ -166,7 +170,23 @@ Appendices ship as separate online supplements per JLE practice. They are NOT as
 **Procedure:**
 
 1. Read `Article/PERSONAS.md`.
-2. For each of the three personas, read the full draft and return at least one finding. P0 (must fix before submission), P1 (should fix), P2 (nice to fix). Each persona MUST return at least one finding; "looks fine" is not acceptable.
+2. For each of the four personas (JLE Editor, Pedagogy Traditionalist, AI-in-Education Researcher, Provenance Auditor), read the full draft and return at least one finding. P0 (must fix before submission), P1 (should fix), P2 (nice to fix). Each persona MUST return at least one finding; "looks fine" is not acceptable.
+
+**Provenance audit sub-task (Provenance Auditor's primary work product).** The Provenance Auditor does not just produce findings — it produces a per-section provenance audit. On each Verify run:
+
+1. Load `rubric/provenance-audit.md`.
+2. Pick the lowest-numbered polished section with `provenance_audited: false` (or absent) in its frontmatter. If all 14 are audited, re-audit the section with the lowest `provenance_score`.
+3. For that section, scan the polished prose for factual claims per the criteria in `rubric/provenance-audit.md`. For each claim:
+   - Search `manuscript/evidence/` for a card supporting it. If found, link to the card by filename.
+   - Else, search the polished section's footnotes for a primary-source citation supporting it. If found, link to the footnote number.
+   - Else, log to `unsupported_claims` with a `reason` field.
+4. Append one JSONL line per claim to `manuscript/claim-manifest.jsonl`:
+   `{"timestamp": "<ISO 8601>", "section": "<NN>", "paragraph": <int>, "claim_text": "<text>", "support_type": "<evidence-card | footnote | unmapped>", "support_ref": "<path or footnote-N>", "reason": "<if unmapped>"}`
+5. Update the section's polished-file frontmatter: `provenance_audited: true`, `provenance_score: <0-5>`, `claims_total`, `claims_mapped`, `unsupported_claims`.
+6. Score the provenance audit run against `rubric/provenance-audit.md` and append to `.article-scores.jsonl` with `phase: "verify-provenance"`.
+7. If `provenance_score < 4.5` or any `unsupported_claims` has reason other than `intentional-conjecture`, set the section's `polish_status: needs_polish` so the next Polish/Cite cycle picks up the gaps.
+
+The provenance audit is the Provenance Auditor's role; the other three personas still produce their own findings as before. A Verify tick that does both general findings AND the provenance audit is one tick (do not split into two).
 3. Append findings to `manuscript/verify-findings.md` with persona, severity, location (section, paragraph), description, suggested fix.
 4. **Status-reset rules (P1 deferral until first-pass completion):**
    - P0 findings ALWAYS reset the affected section's status: to `needs_draft` if substantive, `needs_polish` if cosmetic.
