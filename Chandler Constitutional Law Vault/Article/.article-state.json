@@ -56,13 +56,13 @@
     },
     "E": {
       "id": "E",
-      "last_phase": null,
-      "last_run_at": null,
-      "status": "none",
+      "last_phase": "harvest-appendix",
+      "last_run_at": "2026-05-28T13:00:00Z",
+      "status": "drafted",
       "target_max": 800,
       "target_min": 400,
       "title": "Cost and Time Log",
-      "words": 0
+      "words": 624
     },
     "F": {
       "id": "F",
@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "harvest",
-  "last_run_at": "2026-05-28T11:00:00Z",
+  "last_run_at": "2026-05-28T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -975,7 +975,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 119,
+  "run_count": 120,
   "schema_version": 1,
   "sections": {
     "01": {

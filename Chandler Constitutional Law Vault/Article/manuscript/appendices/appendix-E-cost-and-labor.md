@@ -1,62 +1,84 @@
 ---
 id: appendix-E
 title: "Cost and Time Log"
-status: none
-words: 0
+status: drafted
+words: 624
 target_min: 400
 target_max: 800
-last_phase: none
+last_phase: harvest-appendix
 source_files:
   - "<vault>/Article/manuscript/cost-log.jsonl (this paper's per-tick log)"
-  - "<vault>/.run-scores.jsonl (vault's per-tick scores)"
+  - "<vault>/.run-scores.jsonl (vault's per-tick scores; absent from this repo snapshot)"
   - "Git history of the vault repo (proxy for human time on commits)"
   - "Claude usage dashboard exports (if available)"
 ---
 
 # Appendix E: Cost and Time Log
 
-<!-- TODO (Harvest appendix tick): Aggregate the cost-log.jsonl into reader-friendly tables. The cost-log already contains the raw data; this appendix wraps it in prose and totals.
+## E.1 Method note
 
-Structure:
+The scheduled task logs one machine-generated line per run to `manuscript/cost-log.jsonl`, recording the run number, phase, model, files read, files written, and an approximate count of words generated in new or changed prose. The tables below aggregate that log. They count the system’s own runs only; they are not a metered token bill (see E.5).
 
-## E.1 Method note (1 paragraph)
+## E.2 Article-writing cost (this paper)
 
-Explain that the system logged every tick (run, phase, files read/written, words generated, model used) into manuscript/cost-log.jsonl. The data shown here is aggregated from that machine-generated log.
-
-## E.2 Article writing cost (this paper)
-
-Table from cost-log.jsonl aggregations:
+The log instruments runs 66 through 119. The 65 earlier runs predate the cost-log and are not captured here.
 
 | Metric | Value |
 |--------|------:|
-| Total ticks (runs) | (computed) |
-| Calendar days | (computed) |
-| Total words generated (new + edited) | (sum of words_generated) |
-| Total files read | (sum) |
-| Total files written | (sum) |
-| Models used | claude-opus-4-7 (and any others) |
-| Hand-fired vs cron-fired | (split) |
-| Push-race conflicts (lost ticks) | (count from build narrative) |
+| Logged ticks (runs 66 to 119) | 54 |
+| Calendar window | May 23 to May 28, 2026 (6 days) |
+| Words generated (new and edited) | 49,994 |
+| Files read (cumulative) | 635 |
+| Files written (cumulative) | 240 |
+| Model | `claude-opus-4-7` (all 54 ticks) |
+| Noop ticks (no prose produced) | 8 |
+| Push-race losses in the logged window | 0 (run numbers 66 to 119 are contiguous) |
 
-## E.3 Vault construction cost (the case study)
+Per-phase breakdown of the same 54 ticks:
 
-For the Constitutional Law vault:
-- Roughly 60% of weekly Claude usage over the build period (per email-to-chandler-progress.md)
-- Hand-categorized by build phase (Ingest, Enrich, Verify, Deploy) from git log and run-scores.jsonl
-- Hours of human review by category (best estimate from email trail + LESSONS dates)
+| Phase | Ticks | Words generated |
+|-------|------:|----------------:|
+| harvest | 7 | 11,969 |
+| harvest-appendix | 4 | 4,300 |
+| outline | 7 | 10,710 |
+| draft | 8 | 4,934 |
+| cite | 7 | 4,291 |
+| polish | 7 | 2,188 |
+| stitch | 7 | 3,264 |
+| verify | 7 | 8,338 |
+| **Total** | **54** | **49,994** |
+
+The word figure exceeds the manuscript’s 10,000-to-12,000-word target because it counts every draft, evidence card, footnote block, appendix, lesson, and verify-findings run block produced across the window, not the surviving main-text prose.
+
+## E.3 Vault-construction cost (the case study)
+
+The case-study figures come from `email-to-chandler-progress.md` as restated in `Article-Workplan.md`; that file is not present in this repository snapshot, so the numbers below are reproduced from the workplan rather than recomputed.
+
+| Item | Value | Provenance |
+|------|------|-----------|
+| Claude usage to reach 198 pages | ~60% of weekly usage over the build period | Workplan §3.1 (self-described as a hand-wave estimate, not metered) |
+| Deployed pages | 198 (92 case briefs, 27 topic pages, 79 lecture summaries) | Workplan §1 |
+| Input corpus | 61 PowerPoint decks, 66 reading PDFs (388 files counting all subfolders) | Appendix A |
+| Build phases | Ingest, Enrich, Verify, Deploy | Workplan §3.1 |
+| Human review hours by phase | Not captured in any in-repo log | email trail (absent) |
 
 ## E.4 Hosting and infrastructure
 
-- Netlify free tier (zero hosting cost to date)
-- Domain (or netlify.app subdomain): N/A or cost
-- Storage: vault size in MB
+| Item | Value |
+|------|------|
+| Host | Netlify free tier (zero hosting cost to date) |
+| Domain | `constitutionallaw.netlify.app` subdomain (no custom-domain cost) |
+| Vault size on disk | Not captured in this repository snapshot |
 
 ## E.5 Honest caveats
 
-What the cost log does NOT capture:
-- Token-level API spend (we have run counts, not per-tick token counts)
-- Cognitive time spent thinking about prompts (the system can only log its own runs)
-- Stranded work on session branches (early-period before the push-to-master fix)
+What the cost log does not capture:
 
-Footnote anchors: Section IX (Cost and Labor) is the primary consumer of this appendix.
--->
+- Token-level API spend. The log records run counts and word counts, not per-tick token counts, so no dollar figure for model usage can be derived from it.
+- The 60% case-study figure is an estimate from the email trail, not a metered measurement, and the workplan flags it as such.
+- Runs 1 through 65 predate the cost-log; only runs 66 through 119 are instrumented.
+- The vault-construction source files (`email-to-chandler-progress.md`, `.run-scores.jsonl`) are absent from this repository snapshot; E.3 reproduces the workplan’s restatement rather than the primary log.
+- Cognitive time spent designing prompts is not loggable by a system that can only record its own runs.
+- Stranded work on early session branches, before the push-to-master fix, is not represented in the contiguous run sequence.
+
+Cross-reference: Section IX (Cost and Labor) is the primary consumer of this appendix.
