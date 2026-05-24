@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-27T19:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-27T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -848,17 +848,47 @@
       "type": "instrument-specification-gap"
     },
     {
-      "id": "PI-110",
-      "type": "stitch-deferred-renumber",
-      "section": "02",
-      "phase": "stitch",
-      "status": "open",
-      "opened_at": "2026-05-27T19:00:00Z",
       "claim": "Section II's run-110 Bond et al. 2024 meta-review paragraph (polished section-02 local footnote 9) is not yet landed in the assembled full-draft.",
-      "note": "Run-111 interim Stitch landed Section II's footnote-count-neutral prose (PI-067/068/069/071) but DEFERRED the Bond paragraph because adding it forces a global +1 footnote renumber from [^17] onward (162 footnote tokens plus roughly 26 cross-reference note numbers, including a compound 'notes 51, 52, and 54' list) AND introduces a duplicate full Bond citation against the existing Section XI [^147] anchor. Bluebook requires first-full-then-supra: the final stitch should make Section II the first full Bond cite, convert Section XI's full cite to 'supra note 17', redirect the Bond supra references (currently to note 147) accordingly, then perform the +1 renumber. Resolve at the FINAL stitch (all 14 sections at polish_status ready_for_stitch/stitched), not at an interim tick, to avoid renumbering against a still-shifting section set. The polished section-02 source already carries the Bond paragraph and footnote, so no content is lost."
+      "id": "PI-110",
+      "note": "Run-111 interim Stitch landed Section II's footnote-count-neutral prose (PI-067/068/069/071) but DEFERRED the Bond paragraph because adding it forces a global +1 footnote renumber from [^17] onward (162 footnote tokens plus roughly 26 cross-reference note numbers, including a compound 'notes 51, 52, and 54' list) AND introduces a duplicate full Bond citation against the existing Section XI [^147] anchor. Bluebook requires first-full-then-supra: the final stitch should make Section II the first full Bond cite, convert Section XI's full cite to 'supra note 17', redirect the Bond supra references (currently to note 147) accordingly, then perform the +1 renumber. Resolve at the FINAL stitch (all 14 sections at polish_status ready_for_stitch/stitched), not at an interim tick, to avoid renumbering against a still-shifting section set. The polished section-02 source already carries the Bond paragraph and footnote, so no content is lost.",
+      "opened_at": "2026-05-27T19:00:00Z",
+      "phase": "stitch",
+      "section": "02",
+      "status": "open",
+      "type": "stitch-deferred-renumber"
+    },
+    {
+      "claim": "Section IX.C body prose anchors a wall-clock figure to a 205-page corpus (footnote [^117]: May 1 deploy log, 100 cases / 28 topics / 77 lectures) and footnote [^115] anchors the credit-block events to a 281-page corpus (131/53/97), two further page counts beyond the article's fixed 198-page snapshot (92/27/79) carried by I.C, II.B, IV.E, and VIII.A.",
+      "id": "PI-111",
+      "note": "Persona 1 (Skeptical JLE Editor) P1; deferral lifted so it resets status. Section IV.E sells the snapshot discipline as the reason 'peer reviewers will not catch the article citing different numbers from different audits,' so a reviewer who reaches Section IX and meets 205 in body prose and 281 in a footnote reads a self-consistency violation against the article's own advertised discipline. Next Polish tick on Section 9 (with a possible Cite touch on [^117]/[^115]) should either reconcile the wall-clock anchors to the 198-page snapshot or, if the deploy logs genuinely predate the snapshot, add a half-clause naming each figure as a dated deploy-log measurement distinct from the fixed snapshot (e.g. 'on the 205-page corpus as of the May 1 deploy log'). Section 9 is already polish_status: needs_polish; this PI routes to it. Related to L-054 (cross-section number-format drift) but distinct: this is a page-count drift in body prose and footnotes that contradicts an advertised discipline, not a citation-format drift. Candidate lesson deferred at the LESSONS 50-entry cap.",
+      "opened_at": "2026-05-27T21:00:00Z",
+      "phase": "verify",
+      "section": "09",
+      "status": "open",
+      "type": "snapshot-consistency-violation"
+    },
+    {
+      "claim": "Section XI.B's second evaluation instrument is named 'Netlify analytics' (page-view counts by page type, search-term distribution, time on page), but Section VIII.B, footnote [^99], and Section XII.D footnote [^159] state the deployed site embeds PostHog analytics (session recording disabled, Do Not Track respected). Two different analytics providers are named for the same data source.",
+      "id": "PI-112",
+      "note": "Persona 3 (AI-in-Education Researcher) P1; deferral lifted so it resets status. Beyond the provider mismatch, the capabilities XI.B attributes to 'Netlify analytics' (search-term distribution and per-page time-on-page) are client-side event-analytics measures PostHog supplies and Netlify's server-log Analytics product does not provide in that form, so the instrument specification is also likely a capability error. Next Polish tick on Section 11 should change XI.B's second instrument from 'Netlify analytics' to 'PostHog analytics' to match VIII.B and XII.D (confirming footnote [^143] names the same provider), keeping the page-view, search-term, and time-on-page measures PostHog supports. Routes Section 11 polish_status ready_for_stitch -> needs_polish.",
+      "opened_at": "2026-05-27T21:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "analytics-provider-inconsistency"
+    },
+    {
+      "claim": "Section XII.A's closing two sentences ('a student who internalizes a no-verify habit through AI tools will repeat it in practice. A course knowledge system that habituates verification at the case-brief level is one answer') use 'habituates' to assert the system instills a durable verification habit in students, a behavioral/learning-outcome claim that conflicts with Section XI.A's disclaimer that the article makes no claim students learned more or that any measurable change can be attributed to the deployed vault.",
+      "id": "PI-113",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1; deferral lifted so it resets status. The static artifact is credited with the kind of habit-formation that supervised practice and the live classroom do, with no evidence and against the article's own XI.A disclaimer; this is the editor-versus-teacher conflation PERSONAS.md names and compounds the live-pedagogy-versus-static-artifact substitution pattern of PI-031/PI-039/PI-046/PI-108. Next Polish tick on Section 12 should soften 'habituates' to a design-intent or untested-hypothesis framing, e.g. 'A course knowledge system that models verification at the case-brief level is one design response, though whether it changes student habits is the learning-outcomes question Section XI declines to answer.' Routes Section 12 polish_status ready_for_stitch -> needs_polish.",
+      "opened_at": "2026-05-27T21:00:00Z",
+      "phase": "verify",
+      "section": "12",
+      "status": "open",
+      "type": "unsupported-learning-claim"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -868,12 +898,12 @@
     "stitch",
     "verify"
   ],
-  "run_count": 111,
+  "run_count": 112,
   "schema_version": 1,
   "sections": {
     "01": {
       "cite_completed_at": "2026-05-23T13:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "current_words": 842,
       "draft_at": "2026-05-23T09:00:00Z",
       "draft_status": "needs_polish",
@@ -883,10 +913,12 @@
       "outline_completed_at": "2026-05-26T07:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-23T17:00:00Z",
-      "polish_status": "stitched",
+      "polish_status": "needs_polish",
       "stitched_at": "2026-05-23T21:00:00Z",
       "target_words": 900,
-      "title": "Introduction: The Hidden Archive of the Law Professor"
+      "title": "Introduction: The Hidden Archive of the Law Professor",
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify): re-enforcing deferred P1s. PI-081 (citation-density, AI-in-HE literature engagement in I.D) -> cite_status needs_cite for the multi-section literature pass; PI-076 (snapshot-consistency in I.C), PI-077 (single-study-overreach), PI-078 (live-pedagogy), PI-079 (generalization-hedge), PI-080 (accessibility-silence) -> polish_status needs_polish."
     },
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
@@ -903,17 +935,19 @@
       "outline_ready_at": "2026-05-21T03:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-22T21:00:00Z",
+      "polish_note": "Polish run 110 (re-polish after eighth-Verify routing) resolved four of five routed P1s: PI-067 (II.B numeric colon-list plus Uploaded Media subfolder), PI-068 (II.E self-flagging meta-rhetoric, L-036), PI-069 (II.D casebook doctrinal-organization acknowledgment), and PI-071 (II.B accessibility assumption with Section XII forward-reference, L-050). PI-070 (II.E-to-III.A seam) deferred to the preferred Section 03 III.A transition-first fix and remains open. The prior polished file was stale relative to the 2026-05-27 Cite redo and lacked the Bond et al. 2024 [^9] footnote and its L-024 transfer clause (PI-072 resolution); this tick carried that cited content forward into the polished file (footnotes_count 8->9 in the file frontmatter; state already at 9) with curly-quote hygiene. Body is 857 words (target 700, +22%) and is flagged for Stitch trim; the +10% band is unreachable without dropping required Verify/Cite content. Hygiene clean (zero em dashes, zero straight quotes). Cross-section Bond title-spelling drift (Section II 'Rigour' vs full-draft Section XI/XII 'Rigor') logged for Stitch's L-054 pass. polish_status -> ready_for_stitch.",
+      "polish_redone_at": "2026-05-27T17:00:00Z",
       "polish_status": "ready_for_stitch",
       "stitched_at": "2026-05-22T23:00:00Z",
       "target_words": 700,
       "title": "Why Ordinary Course Infrastructure Is Not Enough",
       "verify_routed_at": "2026-05-23T01:00:00Z",
-      "verify_routing_reason": "Eighth Verify tick reading the eight-section partial assembly (7,744 words; Section II as the new attack surface). Six new P1s opened against Section 02 routing polish_status from stitched back to needs_polish and cite_status from needs_polish to needs_cite: Persona 1 PI-067 (II.B 'more than two hundred sixty files' colon-list enumeration sums to roughly 140 buckets without the Uploaded Media subfolder of 135 case-opinion PDFs Section IV.B itemizes; the credibility-puncturing apparent numerical inconsistency sits in the article's first quantitative claim) routes to next Polish tick on Section 02 (rewrite II.B's first sentence so the colon-list names top-level categories and the Uploaded Media subfolder is acknowledged inline). Persona 1 PI-068 (II.E first and second sentences carry two consecutive self-flagging meta-rhetoric constructions 'the article sits within an established Journal of Legal Education line' and 'the rhetorical posture this article adopts toward ordinary course infrastructure parallels the posture Abrams adopts toward Socratic teaching', fifth recurrence of the PI-022 / PI-028 / PI-036 / PI-060 pattern L-036 named; the Section 02 Polish tick at 2026-05-22T21:00 ran with L-036 in declared scope per the Polish narrative's stated lesson list and the constructions still landed in published prose, confirming PI-060's observation that the L-036 voice-unity sweep is not catching the category at Polish time across multiple ticks) routes to next Polish tick on Section 02 (rewrite II.E's opening two sentences so the venue-placement and posture-parallel moves are made rather than announced). Persona 2 PI-069 (II.D casebook-as-reading-order and casebook-is-not-a-graph framing reduces the casebook's analytical-doctrinal organization to a sequence, recurring the PI-030 Section III.B casebook table-of-contents pattern and extending the same overclaim to Section II's positioning argument) routes to next Polish tick on Section 02 (acknowledge the casebook's chapter-and-case-method doctrinal organization before claiming what the casebook does not produce; preserve the architectural contrast at the graph-affordance level rather than at the doctrinal-organization level). Persona 2 PI-070 (II.E-to-III.A seam reads as positional-and-walkthrough pair without substantive bridge; II.E closes on the venue-positional Abrams-parallel close and III.A opens with the student-eye walkthrough of the deployed shell, second recurrence of the PI-062 IV.E-to-V.A seam pattern and a Stitch-consistency-check gap) routes Section 02 polish_status (already flipped this run) under the lighter-touch II.E close option, or Section 03 polish_status (already needs_polish from prior Verify rotation) under the III.A transition-first option; the III.A version is preferred because Section 03's polish queue already carries five open P1s and a transition-first sentence at III.A folds cleanly into the existing routing. Persona 3 PI-071 (Section II silent on equity, accessibility, device assumptions, and the digital divide across the section's positioning argument; fourth consecutive flagship section silent on accessibility, after PI-026 / PI-033 / PI-064 at Sections VIII, III, IV) routes to next Polish tick on Section 02 (add one sentence to II.B or to the II.E positioning paragraph acknowledging the access assumptions with a Section XII forward-reference). Persona 3 PI-072 (Section II citation density: positioning move and graph-architectural framing anchored on legal-pedagogy reform alone with no AI-in-Ed literature engagement, fifth section in which AI-in-Ed literature engagement is one-citation-removed or absent after PI-025 / PI-032 / PI-040 / PI-048) routes Section 02 cite_status to needs_cite per L-024; the future multi-section Cite pass that resolves PI-025 / PI-032 / PI-040 / PI-048 can fold Section 02 into the same pass under L-028 and L-034 cross-section verification reuse, with Bond et al. 2024 meta-review and Kuhail et al. 2023 chatbot-tutor survey as the candidate citations serving the positioning and graph-architectural framing at II.D `[^7]` and II.E `[^8]`. Section 02's two prior P2 findings (the II.D 'deployed vault' conflation between Obsidian-vault source and deployed-site rendering; the II.E `[^8]` Abrams-'recent' qualifier eleven years post-publication) plus the II.E-to-II.A near-repeat 'layer the inherited form was never designed to carry' framing P2 and the II.D graph-versus-knowledge-graph framing P2 are logged without routing per rubric, available to the next Polish tick on Section 02 as mechanical cleanups when convenient. New lesson L-045 added on the Stitch seam-bridging substantive-idea-across check (two seams across two Verify ticks confirms the pattern as structural; the Stitch consistency check's per-side-clean criterion is necessary but not sufficient).",
-      "polish_redone_at": "2026-05-27T17:00:00Z",
-      "polish_note": "Polish run 110 (re-polish after eighth-Verify routing) resolved four of five routed P1s: PI-067 (II.B numeric colon-list plus Uploaded Media subfolder), PI-068 (II.E self-flagging meta-rhetoric, L-036), PI-069 (II.D casebook doctrinal-organization acknowledgment), and PI-071 (II.B accessibility assumption with Section XII forward-reference, L-050). PI-070 (II.E-to-III.A seam) deferred to the preferred Section 03 III.A transition-first fix and remains open. The prior polished file was stale relative to the 2026-05-27 Cite redo and lacked the Bond et al. 2024 [^9] footnote and its L-024 transfer clause (PI-072 resolution); this tick carried that cited content forward into the polished file (footnotes_count 8->9 in the file frontmatter; state already at 9) with curly-quote hygiene. Body is 857 words (target 700, +22%) and is flagged for Stitch trim; the +10% band is unreachable without dropping required Verify/Cite content. Hygiene clean (zero em dashes, zero straight quotes). Cross-section Bond title-spelling drift (Section II 'Rigour' vs full-draft Section XI/XII 'Rigor') logged for Stitch's L-054 pass. polish_status -> ready_for_stitch."
+      "verify_routing_reason": "Eighth Verify tick reading the eight-section partial assembly (7,744 words; Section II as the new attack surface). Six new P1s opened against Section 02 routing polish_status from stitched back to needs_polish and cite_status from needs_polish to needs_cite: Persona 1 PI-067 (II.B 'more than two hundred sixty files' colon-list enumeration sums to roughly 140 buckets without the Uploaded Media subfolder of 135 case-opinion PDFs Section IV.B itemizes; the credibility-puncturing apparent numerical inconsistency sits in the article's first quantitative claim) routes to next Polish tick on Section 02 (rewrite II.B's first sentence so the colon-list names top-level categories and the Uploaded Media subfolder is acknowledged inline). Persona 1 PI-068 (II.E first and second sentences carry two consecutive self-flagging meta-rhetoric constructions 'the article sits within an established Journal of Legal Education line' and 'the rhetorical posture this article adopts toward ordinary course infrastructure parallels the posture Abrams adopts toward Socratic teaching', fifth recurrence of the PI-022 / PI-028 / PI-036 / PI-060 pattern L-036 named; the Section 02 Polish tick at 2026-05-22T21:00 ran with L-036 in declared scope per the Polish narrative's stated lesson list and the constructions still landed in published prose, confirming PI-060's observation that the L-036 voice-unity sweep is not catching the category at Polish time across multiple ticks) routes to next Polish tick on Section 02 (rewrite II.E's opening two sentences so the venue-placement and posture-parallel moves are made rather than announced). Persona 2 PI-069 (II.D casebook-as-reading-order and casebook-is-not-a-graph framing reduces the casebook's analytical-doctrinal organization to a sequence, recurring the PI-030 Section III.B casebook table-of-contents pattern and extending the same overclaim to Section II's positioning argument) routes to next Polish tick on Section 02 (acknowledge the casebook's chapter-and-case-method doctrinal organization before claiming what the casebook does not produce; preserve the architectural contrast at the graph-affordance level rather than at the doctrinal-organization level). Persona 2 PI-070 (II.E-to-III.A seam reads as positional-and-walkthrough pair without substantive bridge; II.E closes on the venue-positional Abrams-parallel close and III.A opens with the student-eye walkthrough of the deployed shell, second recurrence of the PI-062 IV.E-to-V.A seam pattern and a Stitch-consistency-check gap) routes Section 02 polish_status (already flipped this run) under the lighter-touch II.E close option, or Section 03 polish_status (already needs_polish from prior Verify rotation) under the III.A transition-first option; the III.A version is preferred because Section 03's polish queue already carries five open P1s and a transition-first sentence at III.A folds cleanly into the existing routing. Persona 3 PI-071 (Section II silent on equity, accessibility, device assumptions, and the digital divide across the section's positioning argument; fourth consecutive flagship section silent on accessibility, after PI-026 / PI-033 / PI-064 at Sections VIII, III, IV) routes to next Polish tick on Section 02 (add one sentence to II.B or to the II.E positioning paragraph acknowledging the access assumptions with a Section XII forward-reference). Persona 3 PI-072 (Section II citation density: positioning move and graph-architectural framing anchored on legal-pedagogy reform alone with no AI-in-Ed literature engagement, fifth section in which AI-in-Ed literature engagement is one-citation-removed or absent after PI-025 / PI-032 / PI-040 / PI-048) routes Section 02 cite_status to needs_cite per L-024; the future multi-section Cite pass that resolves PI-025 / PI-032 / PI-040 / PI-048 can fold Section 02 into the same pass under L-028 and L-034 cross-section verification reuse, with Bond et al. 2024 meta-review and Kuhail et al. 2023 chatbot-tutor survey as the candidate citations serving the positioning and graph-architectural framing at II.D `[^7]` and II.E `[^8]`. Section 02's two prior P2 findings (the II.D 'deployed vault' conflation between Obsidian-vault source and deployed-site rendering; the II.E `[^8]` Abrams-'recent' qualifier eleven years post-publication) plus the II.E-to-II.A near-repeat 'layer the inherited form was never designed to carry' framing P2 and the II.D graph-versus-knowledge-graph framing P2 are logged without routing per rubric, available to the next Polish tick on Section 02 as mechanical cleanups when convenient. New lesson L-045 added on the Stitch seam-bridging substantive-idea-across check (two seams across two Verify ticks confirms the pattern as structural; the Stitch consistency check's per-side-clean criterion is necessary but not sufficient)."
     },
     "03": {
+      "cite_at": "2026-05-27T15:00:00Z",
       "cite_completed_at": "2026-05-18T01:00:00Z",
+      "cite_note": "Citation-density Verify P1 (PI-032) resolved. Added survey-level Bond et al. 2024 meta-review to footnote [^18] alongside the existing Sajja et al. 2023 platform-paper anchor, with an L-024 transfer clause naming what carries over from the meta-review (its field-level evidentiary standard and AI-in-education design-space mapping) and what does not (the chatbot-tutor and adaptive-system intervention settings it surveys). Per L-049 the Kuhail et al. 2023 survey named in the routing note was NOT added: a grep of Article-Workplan.md returns zero hits, so the source is unverified; the footnote documents the omission. Bond URL liveness verified live this run via WebSearch with allowed_domains scoping per L-022 (verbatim title-and-URL match, vol. 21 art. 4, 2024), consistent with the Section 02 note [^9] verification of the same URL on 2026-05-27. WebFetch on the Springer URL 303-redirected to an idp.springer.com authorize endpoint (provenance refusal), the canonical L-022 case. Body prose at III.E unchanged per PI-032. cite_status needs_cite -> needs_polish; the next Polish tick regenerates polished/section-03 from this cited draft and can pick up the five open Polish-level P1s (PI-028/029/030/031/033). Sections 06/07/08 (PI-040/048/025) remain at cite_status:needs_cite for subsequent Cite ticks; this tick resolved the lowest-numbered needs_cite section per the runbook per-section Cite procedure rather than running the multi-section pass.",
       "cite_status": "needs_polish",
       "current_words": 1278,
       "draft_completed_at": "2026-05-17T23:00:00Z",
@@ -931,9 +965,7 @@
       "target_words": 1200,
       "title": "Case Study: A Constitutional-Law Knowledge System",
       "verify_routed_at": "2026-05-18T07:00:00Z",
-      "verify_routing_reason": "Persona 3 P1 (PI-032 thin chatbot-tutor literature anchoring on Sajja-only in footnote [^18], recurring the PI-025 pattern from Section VIII.E and now anchoring the same architectural distinction in two sections on the same single platform paper) routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the obvious candidate, the same citation that will also resolve PI-025 for Section 08 via L-034 cross-section verification-reuse). Persona 1 P1 (PI-028 III.E final sentence 'Section III walks the user-experience side first so the reader sees what the case study is before the article argues why the choice was made' as self-flagging meta-rhetoric recurring the PI-022 pattern at VIII.E) plus Persona 1 P1 (PI-029 III.C false cross-reference to Section IV inventing a 'case-doctrine-classroom triangle Section IV named as the casebook's blind spot' framing that Section IV does not have anywhere in its prose) plus Persona 2 P1 (PI-030 III.B second sentence overclaiming that 'the casebook table of contents does not give' doctrine-first entry when most Con Law I casebooks organize their TOCs doctrinally; the article's actual architectural contrast is flat-folder-export-vs-typed-schema, with the casebook on the structured side) plus Persona 2 P1 (PI-031 III.C closing two sentences framing the Lecture summary as a 'recovery' of a missed session, implying structured prose substitutes for live Socratic dialogue) plus Persona 3 P1 (PI-033 III silent on accessibility, device, and equity considerations across the flagship student-eye walkthrough, recurring the PI-026 pattern from Section VIII as the more central place for the article to first acknowledge the silently assumed sighted/broadband/mouse-and-keyboard reader) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Section 03 polish_status flipped from stitched to needs_polish for all five Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the citation-density P1. New lesson L-036 added on the Polish voice-unity sweep including a self-flagging meta-rhetoric check (the recurring pattern across PI-022 at VIII.E and PI-028 at III.E).",
-      "cite_at": "2026-05-27T15:00:00Z",
-      "cite_note": "Citation-density Verify P1 (PI-032) resolved. Added survey-level Bond et al. 2024 meta-review to footnote [^18] alongside the existing Sajja et al. 2023 platform-paper anchor, with an L-024 transfer clause naming what carries over from the meta-review (its field-level evidentiary standard and AI-in-education design-space mapping) and what does not (the chatbot-tutor and adaptive-system intervention settings it surveys). Per L-049 the Kuhail et al. 2023 survey named in the routing note was NOT added: a grep of Article-Workplan.md returns zero hits, so the source is unverified; the footnote documents the omission. Bond URL liveness verified live this run via WebSearch with allowed_domains scoping per L-022 (verbatim title-and-URL match, vol. 21 art. 4, 2024), consistent with the Section 02 note [^9] verification of the same URL on 2026-05-27. WebFetch on the Springer URL 303-redirected to an idp.springer.com authorize endpoint (provenance refusal), the canonical L-022 case. Body prose at III.E unchanged per PI-032. cite_status needs_cite -> needs_polish; the next Polish tick regenerates polished/section-03 from this cited draft and can pick up the five open Polish-level P1s (PI-028/029/030/031/033). Sections 06/07/08 (PI-040/048/025) remain at cite_status:needs_cite for subsequent Cite ticks; this tick resolved the lowest-numbered needs_cite section per the runbook per-section Cite procedure rather than running the multi-section pass."
+      "verify_routing_reason": "Persona 3 P1 (PI-032 thin chatbot-tutor literature anchoring on Sajja-only in footnote [^18], recurring the PI-025 pattern from Section VIII.E and now anchoring the same architectural distinction in two sections on the same single platform paper) routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); next Cite tick on Section 03 should add at least one survey-level citation to footnote [^18] (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the obvious candidate, the same citation that will also resolve PI-025 for Section 08 via L-034 cross-section verification-reuse). Persona 1 P1 (PI-028 III.E final sentence 'Section III walks the user-experience side first so the reader sees what the case study is before the article argues why the choice was made' as self-flagging meta-rhetoric recurring the PI-022 pattern at VIII.E) plus Persona 1 P1 (PI-029 III.C false cross-reference to Section IV inventing a 'case-doctrine-classroom triangle Section IV named as the casebook's blind spot' framing that Section IV does not have anywhere in its prose) plus Persona 2 P1 (PI-030 III.B second sentence overclaiming that 'the casebook table of contents does not give' doctrine-first entry when most Con Law I casebooks organize their TOCs doctrinally; the article's actual architectural contrast is flat-folder-export-vs-typed-schema, with the casebook on the structured side) plus Persona 2 P1 (PI-031 III.C closing two sentences framing the Lecture summary as a 'recovery' of a missed session, implying structured prose substitutes for live Socratic dialogue) plus Persona 3 P1 (PI-033 III silent on accessibility, device, and equity considerations across the flagship student-eye walkthrough, recurring the PI-026 pattern from Section VIII as the more central place for the article to first acknowledge the silently assumed sighted/broadband/mouse-and-keyboard reader) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Section 03 polish_status flipped from stitched to needs_polish for all five Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the citation-density P1. New lesson L-036 added on the Polish voice-unity sweep including a self-flagging meta-rhetoric check (the recurring pattern across PI-022 at VIII.E and PI-028 at III.E)."
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
@@ -1056,12 +1088,12 @@
       "stitched_at": "2026-05-20T01:00:00Z",
       "target_words": 700,
       "title": "Cost and Labor: The Honest Accounting",
-      "verify_routed_at": "2026-05-20T03:00:00Z",
-      "verify_routing_reason": "Persona 1 P1 (PI-052 IX.E surfacing six internal PI-NNN task-tracking identifiers in body prose across the downstream-consumer sentence and the open-pending-issue sentence, recurring the PI-006 build-system-artifact pattern in pending-issue-tag surface form) plus Persona 2 P1 (PI-054 IX.E Review-row mapping reducing review labor to per-tick scorecard reads, periodic LESSONS Consolidate sweep, and Verify-phase forced-finding adversarial pass while erasing Professor Chandler's actual review labor of reading drafts, flagging errors, and approving content, recurring the PI-031 / PI-039 / PI-046 live-pedagogy substitution pattern at the cost-accounting level) plus Persona 2 P1 (PI-055 IX.E four-labor-category mapping ingest/prompt-tuning/review/debugging excluding substantive pedagogical labor of case selection, doctrinal framing, hypothetical drafting, and live student feedback) plus Persona 3 P1 (PI-056 IX.A 'about sixty percent of weekly Claude usage' metric undefined in body prose, leaving the load-bearing replicator-anchor figure structurally unfalsifiable for an AI-in-higher-ed reader who cannot tell whether the metric is subscription quota, API tokens, message count, or session hours) plus Persona 3 P1 (PI-057 IX.E 'the table reads as instrumentation of the loop rather than a separate accounting exercise' asserting a property of an absent artifact since the master cost-and-labor table is deferred under PI-049, PI-050, and PI-051) all collapse to five Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite. Persona 1 P1 (PI-053 IX [^102] cross-section forward-reference overclaim against Section IV note 22 III/XII static-vs-chatbot reference, Section VII note 68 Youngstown six-opinion-structure annotation, and Section VIII note 82 RUNBOOK Phase: Deploy section) validates the L-041 Stitch-tick candidate finding and routes under Route A to Sections 04, 07, and 08's already-set polish_status: needs_polish for concrete forward-reference additions in IV.E (in lieu of the PI-006-flagged TODO marker), VII.D (at the loop-memory architecture anchor point), and VIII.B or VIII.D (at the build pipeline and deploy phase anchor point), or under Route B to Section 09 polish_status (already flipped by the other five P1s) for an interim hedge of the [^102] body assertion if Section 09's Polish lands first. Section 09 polish_status flipped from stitched to needs_polish for the five Polish-level P1s; cite_status remains needs_polish because no Cite-level P1 surfaced this run (Section 09's prior Cite tick scored 5/5/5/5/5 and the citation-density pattern PI-025 / PI-032 / PI-040 / PI-048 did not extend to Section 09 because Section 09's body prose anchored only on vault-internal infrastructure rather than AI-in-education external literature). New lesson L-042 added on the Polish mechanical-hygiene sweep including a body-prose scan for internal task-tracking identifiers (PI-NNN pending-issue tags, bare evidence-NN-slug strings, lingering TODO/CITE markers), distinct from L-005 / L-023 / L-039 and complementary to the L-014 / L-021 conventions for routing PI-NNN tags into footnote parentheticals where they belong; the explicit-self-naming construction the article uses for lessons ('the article's own L-007' at VII.D and IX.D) remains acceptable because it tells the reader the identifier is the article's internal nomenclature, but bare PI-NNN body-prose tokens are not."
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify): new PI-111 (205/281 page-count drift vs the 198 snapshot, violating the IV.E snapshot discipline) routes to the already-open Section 9 polish_status needs_polish, with a noted Cite touch on footnotes [^117]/[^115]."
     },
     "10": {
       "cite_completed_at": "2026-05-24T07:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "current_words": 908,
       "draft_at": "2026-05-24T05:00:00Z",
       "draft_status": "needs_polish",
@@ -1072,14 +1104,16 @@
       "outline_at": "2026-05-26T21:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-24T09:00:00Z",
-      "polish_status": "stitched",
+      "polish_status": "needs_polish",
       "stitched_at": "2026-05-24T11:00:00Z",
       "target_words": 900,
-      "title": "Generalization Beyond Constitutional Law"
+      "title": "Generalization Beyond Constitutional Law",
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify): re-enforcing deferred P1s. PI-088 (literature-gap on cross-disciplinary transfer) -> cite_status needs_cite for the multi-section literature pass; PI-085 (generalization-overclaim X.B), PI-086 (generalization-overreach), PI-089 (verification-tooling-gap) -> polish_status needs_polish."
     },
     "11": {
       "cite_completed_at": "2026-05-22T19:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "current_words": 981,
       "draft_completed_at": "2026-05-22T17:00:00Z",
       "draft_status": "needs_polish",
@@ -1090,13 +1124,15 @@
       "outline_ready_at": "2026-05-22T15:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-26T13:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "target_words": 900,
-      "title": "Evaluation: What Would Count as Success"
+      "title": "Evaluation: What Would Count as Success",
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-103 (footnote-form-leak, folds into PI-092 article-wide sweep) and PI-107 (Sajja first-author citation-accuracy) -> cite_status needs_cite. Polish-owned: PI-102 (Choi&Schwarcz superlative overclaim XI.D), PI-104 (pedagogy-scope-silence), PI-105 (equity-and-accessibility), PI-109 (Likert instrument-spec), and new PI-112 (Netlify-vs-PostHog analytics-provider) -> polish_status needs_polish."
     },
     "12": {
       "cite_at": "2026-05-26T11:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "current_words": 870,
       "draft_at": "2026-05-26T09:00:00Z",
       "draft_status": "needs_cite",
@@ -1106,14 +1142,16 @@
       "outline_ready_at": "2026-05-23T05:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_at": "2026-05-27T03:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "target_words": 800,
-      "title": "Risks and Limits"
+      "title": "Risks and Limits",
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
       "cite_note": "Seven [CITE:] placeholders resolved to footnotes [^1]-[^7]. [^1] external OER sources (opencasebook.org via WebSearch after 403 per L-022; cali.org eLangdell via WebFetch; MIT News series via WebSearch); [^2]-[^7] sibling supra/infra cross-references. Dedicated evidence-13-* cards still owed under PI-091.",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "current_words": 478,
       "draft_at": "2026-05-24T19:00:00Z",
       "draft_status": "needs_cite",
@@ -1124,9 +1162,11 @@
       "outline_status": "ready_for_draft",
       "polish_at": "2026-05-24T23:00:00Z",
       "polish_note": "Polished from drafts/section-13. Split four over-length argumentative sentences in 13.A and 13.C (L-029 procedural-enumeration exemption does not reach this non-infrastructure argument section); converted the 13.B institutional-role list-after-colon into a parallel active-verb sentence with the library, instructional design, and IT each carrying its own verb (L-031 named-human-actor verbs); removed two self-flagging meta-rhetoric constructions per L-036/L-048 (\"naming that split is the institutional implication\" -> \"that split is the institutional implication\"; \"The article names that question without resolving it\" -> direct assertion). No em dashes or straight quotes in body or footnotes (L-023). Footnote URL-verification annotations preserved per the article-wide convention (cf. polished Section 10 [^12]). 478 words, within +-10% of the 500 target. polish_status none -> ready_for_stitch.",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "target_words": 500,
-      "title": "Institutional Implications"
+      "title": "Institutional Implications",
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish."
     },
     "14": {
       "cite_completed_at": "2026-05-25T11:00:00Z",
@@ -1138,22 +1178,24 @@
       "footnotes_count": 8,
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-25T13:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "target_words": 400,
-      "title": "Conclusion"
+      "title": "Conclusion",
+      "verify_routed_at": "2026-05-27T21:00:00Z",
+      "verify_routing_reason": "Deferral lifted (run 112 Verify): re-enforcing deferred P1s. PI-098 (replicability-overclaim XIV.A/C), PI-099 (live-classroom-substitution), PI-100 (equity-and-accessibility) -> polish_status needs_polish. No Cite-owned P1; cite_status unchanged."
     }
   },
   "target_venue": "Journal of Legal Education",
   "target_words_max": 12000,
   "target_words_min": 10000,
   "verify": {
-    "deferred_p1_count": 26,
+    "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-27T07:00:00Z",
+    "last_run_at": "2026-05-27T21:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 66,
-    "p2_open": 39,
+    "p1_open": 69,
+    "p2_open": 40,
     "personas_read": 3
   }
 }
