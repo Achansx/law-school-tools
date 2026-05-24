@@ -253,6 +253,17 @@
       "status": "resolved",
       "type": "scaffold-first-sequence-gap",
       "resolved_at": "2026-05-26T21:00:00Z"
+    },
+    {
+      "claim": "Section II positions the article within an established Journal of Legal Education line of pedagogical-reform pieces and anchors that positioning on Abrams 2015 alone; II.D's graph-architectural framing and II.E's venue-fit move are both architectural choices whose pedagogical-effectiveness premises ride on the AI-in-higher-education literature, but Section II does not engage Bond et al. 2024, Kuhail et al. 2023, or the broader chatbot-tutor and knowledge-graph-RAG literature anchored in Sections V.D, VIII.E, and IV.A; fifth section in which the AI-in-Ed literature engagement is one-citation-removed or absent after PI-025 / PI-032 / PI-040 / PI-048.",
+      "id": "PI-072",
+      "note": "Persona 3 P1 finding. Routed Section 02 cite_status from needs_polish to needs_cite per L-024. [RESOLVED 2026-05-27 run 102, Cite tick]: Section 02 re-cite added footnote [^9] citing Bond et al. 2024 (A Meta Systematic Review of Artificial Intelligence in Higher Education: A Call for Increased Ethics, Collaboration, and Rigour, 21 Int'l J. Educ. Tech. Higher Educ. art. 4 (2024)), URL https://link.springer.com/article/10.1186/s41239-023-00436-z verified live via WebSearch per L-022 (verbatim title-and-URL match; allowed_domains scoped to link.springer.com, educationaltechnologyjournal.springeropen.com, doi.org). The required L-024 transfer-of-inference clause was placed in II.E body prose (not a footnote parenthetical): what carries over is the meta-review's evidentiary standard, which the article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII; what does not carry over is the chatbot-tutor and adaptive-system intervention setting the review surveys, versus the reviewed static publication of the case study. DECISION ON KUHAIL: Kuhail et al. 2023 (chatbot-tutor survey), named in this PI and across the PI-025/032/040/048 routing notes as a companion candidate said to be 'in the workplan annotated bibliography,' does NOT in fact appear in Article-Workplan.md (a grep for 'kuhail' returns zero hits; the workplan's AI-in-Ed sources are Qian 2025, Bond et al. 2024, Sajja et al. 2023, and Magesh et al. 2025). It was therefore deliberately NOT added, to avoid an unverified/fabricated citation, and the decision is documented inside footnote [^9] itself. Bond et al. alone closes Section II's field-engagement gap. Section 02 cite_status flipped needs_cite -> needs_polish; the five remaining Section 02 P1s (PI-067/068/069/070/071) are Polish-level and stay for the next Polish tick. Migrated to .article-state.archive.json. PATTERN NOTE for the future Cite ticks resolving PI-025/032/040/048 (Sections 08/03/06/07): use Bond et al. 2024 as the verified AI-in-higher-ed candidate (and Qian 2025 / a Du et al.-style multi-agent-debate source where the design move is prompt-engineering or multi-persona), and do NOT rely on Kuhail, which is not in the bibliography and must not be cited until a primary source surfaces into provenance.",
+      "opened_at": "2026-05-23T01:00:00Z",
+      "phase": "verify",
+      "section": "02",
+      "status": "resolved",
+      "type": "literature-engagement-gap",
+      "resolved_at": "2026-05-27T01:00:00Z"
     }
   ]
 }

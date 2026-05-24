@@ -3,12 +3,12 @@ id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
 status: needs_polish
 target_words: 700
-word_count: 775
+word_count: 840
 last_phase: cite
 draft_status: needs_polish
 cite_status: needs_polish
 polish_status: none
-footnotes_count: 8
+footnotes_count: 9
 ---
 
 # II. Why Ordinary Course Infrastructure Is Not Enough
@@ -31,7 +31,7 @@ A third affordance the inherited inventory does not produce is the doctrinal-syn
 
 ## E. Positioning within the JLE pedagogical-reform line
 
-The course knowledge system extends the casebook, the syllabus, and the live classroom rather than displacing any of them, and the article sits within an established Journal of Legal Education line of pedagogical-reform pieces that adapt inherited teaching forms instead of rejecting them. Jamie R. Abrams's reframing of the Socratic method is a recent representative of that line, and the rhetorical posture this article adopts toward ordinary course infrastructure parallels the posture Abrams adopts toward Socratic teaching: the inherited form is not the deficiency the proposal is built to remedy, and the contribution is the layer the inherited form was never designed to carry.[^8]
+The course knowledge system extends the casebook, the syllabus, and the live classroom rather than displacing any of them, and the article sits within an established Journal of Legal Education line of pedagogical-reform pieces that adapt inherited teaching forms instead of rejecting them. Jamie R. Abrams's reframing of the Socratic method is a recent representative of that line, and the rhetorical posture this article adopts toward ordinary course infrastructure parallels the posture Abrams adopts toward Socratic teaching: the inherited form is not the deficiency the proposal is built to remedy, and the contribution is the layer the inherited form was never designed to carry.[^8] The article also engages the AI-in-higher-education research literature, whose most recent meta-review of that field calls for greater ethics, collaboration, and rigour in how such research is conducted and reported.[^9] What carries over from that meta-review is its evidentiary standard, which this article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII; what does not carry over is the chatbot-tutor and adaptive-system intervention setting it surveys, because the case study here is a reviewed static publication that places no model in front of the student.
 
 ## Footnotes
 
@@ -50,3 +50,5 @@ The course knowledge system extends the casebook, the syllabus, and the live cla
 [^7]: *See infra* App. A (Vault Architecture and File Layout) (Wiki-Link Grammar subsection: explicit wiki-link conventions documented in the project's vault primer connecting Topic pages to their case briefs and lecture summaries, case briefs back to their topics and forward to citing cases, and lecture summaries to the cases and topics each lecture covered; the navigation surface those conventions produce is the doctrinal-map graph the inherited inventory does not produce); *see also infra* Section VIII (From Vault to Website) note 1 (cross-reference to the deployed-site URL where the wiki-link graph is the published navigation surface a reader exercises directly); *see also infra* Section III (Case Study: A Constitutional-Law Knowledge System) (cross-reference to the user-experience walkthrough of the wiki-link graph at the screenshot-grounded altitude); *see also infra* Section V (Building the Obsidian Vault) (cross-reference to the wiki-link conventions framed at the schema altitude). Deployed-site URL liveness remains deferred under PI-005 per L-022 and L-028 surgical-fix routing; Section II carries no inline deployed-site URL and routes the architectural anchor through Section VIII note 1 where the URL is the primary anchor fact.
 
 [^8]: Jamie R. Abrams, *Reframing the Socratic Method*, 64 J. Legal Educ. 562 (2015), https://jle.aals.org/home/vol64/iss4/2/ (last visited May 22, 2026) (URL liveness verified live via WebSearch with allowed_domains scoping to jle.aals.org, heinonline.org, and ssrn.com per L-022, returning a verbatim repository match at vol64/iss4/2/ rather than the workplan annotated-bibliography's transcribed vol64/iss4/4/ path; the workplan path was a transcription error and the live repository path is the operative URL; the SSRN preprint at papers.ssrn.com/sol3/papers.cfm?abstract_id=2566996 is the alternate stable anchor if the JLE repository path shifts). Section II uses Abrams as a positional citation signaling Journal of Legal Education venue fit and re-anchoring the article's rhetorical posture (extends, does not displace) rather than as a substantive Socratic-method claim.
+
+[^9]: Melissa Bond et al., *A Meta Systematic Review of Artificial Intelligence in Higher Education: A Call for Increased Ethics, Collaboration, and Rigour*, 21 Int'l J. Educ. Tech. Higher Educ. art. 4 (2024), https://link.springer.com/article/10.1186/s41239-023-00436-z (last visited May 27, 2026) (URL liveness verified live via WebSearch with allowed_domains scoping to link.springer.com, educationaltechnologyjournal.springeropen.com, and doi.org per L-022, returning a verbatim title-and-URL match in the first page of results; deployed here as the field-level AI-in-higher-education frame named in the workplan annotated bibliography, with the body-prose transfer clause naming what carries over from the meta-review (its evidentiary standard) and what does not (the chatbot-tutor and adaptive-system intervention settings it surveys) per L-024). The companion Kuhail et al. 2023 chatbot-tutor survey named in prior Verify routing notes does not appear in the workplan annotated bibliography; it was not added at this Cite tick to avoid an unverified citation, and Bond et al. alone resolves Section II's AI-in-higher-education field-engagement gap.
