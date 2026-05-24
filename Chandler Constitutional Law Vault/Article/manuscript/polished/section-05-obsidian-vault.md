@@ -1,14 +1,23 @@
 ---
 id: "05"
 title: "Building the Obsidian Vault"
-status: stitched
+status: needs_polish
 target_words: 1100
 word_count: 1191
-last_phase: stitch
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: stitched
+cite_status: needs_cite
+polish_status: needs_polish
 stitched_at: 2026-05-17T01:30:00Z
+provenance_audited: true
+provenance_audited_at: 2026-05-29T11:00:00Z
+provenance_score: 3.8
+claims_total: 25
+claims_mapped: 24
+unsupported_claims:
+  - claim_text: "V.A paragraph 1 asserts 'a flat export of one hundred twenty-seven top-level files'; this propagates Section IV.A's 127 figure, which conflicts with its own 61+66+3=130 component breakdown and does not reconcile to evidence-04-top-level-counts.md (PI-131). The figure is stated flatly in V.A with no hedge."
+    paragraph: 1
+    reason: evidence-gap
 ---
 
 # V. Building the Obsidian Vault
