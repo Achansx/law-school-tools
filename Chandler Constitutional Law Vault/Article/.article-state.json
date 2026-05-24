@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-26T09:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-26T11:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -826,9 +826,19 @@
       "section": "14",
       "status": "open",
       "type": "equity-and-accessibility-gap"
+    },
+    {
+      "claim": "Section XII footnote [^1] (Magesh et al.) cites the published version as 22 J. Empirical Legal Stud. 216 (2025); the volume and starting-page were taken from a WebSearch result synthesis because WebFetch on the Wiley page returned HTTP 403 (publisher bot-block, not provenance refusal) so the article's first page could not be read directly this run.",
+      "id": "PI-101",
+      "note": "Cite-rubric criterion 2 (Bluebook form) scored 4 rather than 5 this run because of the search-derived pagination. The URL liveness itself is verified (WebSearch returned the verbatim title and the Wiley /doi/abs/ path live, the L-043 live-repository path preferred over the workplan-transcribed /doi/full/ path). A future Cite or Verify tick should confirm the exact starting page (and the 216-242 range) directly once the Wiley page is fetchable in-session (the L-047 provenance gate may open once the URL is read from this section's footnote, or WebFetch may succeed on a later run), or via an arXiv/Stanford-Law landing page that lists the JELS pagination. PI closes when the starting page is confirmed by a direct source read; if the direct read contradicts 216, correct footnote [^1] and re-score.",
+      "opened_at": "2026-05-26T11:00:00Z",
+      "phase": "cite",
+      "section": "12",
+      "status": "open",
+      "type": "cite-form-confirmation"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -838,7 +848,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 94,
+  "run_count": 95,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1057,7 +1067,8 @@
       "title": "Evaluation: What Would Count as Success"
     },
     "12": {
-      "cite_status": "none",
+      "cite_at": "2026-05-26T11:00:00Z",
+      "cite_status": "needs_polish",
       "current_words": 871,
       "draft_at": "2026-05-26T09:00:00Z",
       "draft_status": "needs_cite",
