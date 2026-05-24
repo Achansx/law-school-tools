@@ -22,7 +22,20 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
 
 **Goal:** Build or refresh evidence cards in `manuscript/evidence/`. One card per atomic fact / quotation / statistic the article needs.
 
-**Per-run scope:** Pull evidence for one section that the state file lists as `evidence_status: needs_work` or `none`. Update `.article-state.json` per-section `evidence_status` to `populated` when the section has at least 6 cards.
+**Appendix sub-task (active when all main sections are populated).** Before the main procedure, check section evidence status. If EVERY one of sections 01–14 has `evidence_status: populated` AND at least one entry in `.article-state.json` `appendices` has `status` of `none` or `needs_work`:
+
+1. Load `rubric/appendix.md`.
+2. Pick the lowest-letter appendix entry from `appendices` with `status: none` or `needs_work` (alphabetical: A, then B, then C…).
+3. Read the appendix scaffold (`manuscript/appendices/appendix-<X>-<slug>.md`) including its frontmatter `source_files` list.
+4. Read each source file listed. For aggregation appendices (A, B, D, E), the contents are the appendix material — reproduce them with structure, captions, and the labels described in the scaffold TODO comment. For writing appendices (C, F), use the scaffold's TODO comment as the outline and write the prose.
+5. Replace the TODO comment with finished content. Update the appendix frontmatter: `status` (`drafted` if all rubric criteria score >=4 and word count is within `target_min`/`target_max`; `needs_work` otherwise), `words` (actual count), `last_phase: harvest-appendix`.
+6. Update `.article-state.json` `appendices.<X>` to mirror frontmatter.
+7. Append the appendix score to `.article-scores.jsonl` with `phase: "harvest-appendix"`.
+8. THIS COUNTS AS THE HARVEST RUN. Advance the phase to Outline as normal. Do not also do section evidence in the same run.
+
+The appendix sub-task takes precedence over scaffold-first ONLY when scaffold-first has nothing left to do (all 14 sections at evidence_status: populated). Until then, scaffold-first wins.
+
+**Per-run scope (main section Harvest):** Pull evidence for one section that the state file lists as `evidence_status: needs_work` or `none`. Update `.article-state.json` per-section `evidence_status` to `populated` when the section has at least 6 cards.
 
 **Procedure:**
 
@@ -137,7 +150,14 @@ If `abstract.status` is `ready_for_review` or `ready_for_human_review`, skip the
 4. Update `.article-state.json` `manuscript.total_words`, `manuscript.last_stitched_at`.
 5. Set `stitch_status: ready_for_verify` and per-section `polish_status: stitched`.
 
-**Submission-readiness exit:** If word count is in range AND all sections have `polish_status: stitched` AND prior Verify run reported zero P0/P1 findings, set `gates.submission_ready.awaiting_human = true` and stop the rotation.
+**Submission-readiness exit:** Set `gates.submission_ready.awaiting_human = true` and stop the rotation **only if all of**:
+
+1. Main-text word count in `manuscript/full-draft.md` is within 10,000 to 12,000 (appendices NOT counted).
+2. All 14 sections have `polish_status: stitched`.
+3. All 6 appendices (`appendices.A` through `appendices.F`) have `status: drafted` or `polished`.
+4. Most recent Verify run reported zero P0 and zero P1 findings against the main draft.
+
+Appendices ship as separate online supplements per JLE practice. They are NOT assembled into `manuscript/full-draft.md`. They live as individual files in `manuscript/appendices/` and are submitted alongside the main manuscript via Scholastica's supplement upload.
 
 ## Phase: Verify
 
