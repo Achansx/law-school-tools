@@ -47,12 +47,12 @@
     "D": {
       "id": "D",
       "last_phase": "harvest-appendix",
-      "last_run_at": "2026-05-28T11:00:00Z",
-      "status": "needs_work",
+      "last_run_at": "2026-05-28T21:00:00Z",
+      "status": "drafted",
       "target_max": 1000,
       "target_min": 600,
       "title": "Karpathy-Loop Per-Phase Rubric",
-      "words": 964
+      "words": 999
     },
     "E": {
       "id": "E",
@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "harvest",
-  "last_run_at": "2026-05-28T19:00:00Z",
+  "last_run_at": "2026-05-28T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -953,16 +953,6 @@
       "section": "12",
       "status": "open",
       "type": "unsupported-learning-claim"
-    },
-    {
-      "claim": "Appendix D.2 (vault rubrics) cannot be completed: the <vault>/rubric/ folder (the six vault-side rubric files) was not pushed to this repository checkout, which holds only Article/ and Article-Workplan.md. Recoverable verbatim from evidence cards are only the verify.md criteria header plus the adversarial_findings row, the ingest scope_discipline row, and the synthesize exam_readiness row; the full per-criterion bodies and weights for Lint, Enrich, and Expand, and the phase goal of Expand, are not captured by any evidence card.",
-      "id": "PI-114",
-      "note": "Appendix D set to needs_work (not drafted) because completeness scores 3: five of six vault-rubric bodies are absent, reconstructed only as phase goals and the three verbatim criterion rows the evidence cards carry, per L-055, with a provenance_note. D.3 (article rubrics) and D.4 are complete from the in-repo Article/rubric/*.md files. To finish D.2 a future Harvest-appendix tick needs either <vault>/rubric/*.md pushed to the repo or new evidence cards reproducing the Lint/Enrich/Expand rubric tables; until then D stays needs_work and is not eligible for the submission-readiness appendix check.",
-      "opened_at": "2026-05-28T11:00:00Z",
-      "phase": "harvest",
-      "section": "appendix-D",
-      "status": "open",
-      "type": "missing-source-file"
     }
   ],
   "phase_index": 1,
@@ -975,7 +965,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 123,
+  "run_count": 124,
   "schema_version": 1,
   "sections": {
     "01": {

@@ -329,6 +329,19 @@
       "resolved_at": "2026-05-27T17:00:00Z",
       "resolved_by": "polish-run-110",
       "resolution": "Section 02 Polish run 110 added one access-assumption sentence to II.B (Canvas-enrolled students, broadband, devices rendering the modernized PDFs and the deployed wiki) with a Section XII forward-reference, breaking the four-section accessibility-silence pattern per L-050 and matching Section XII note 9's Cf. supra cross-reference to Section II."
+    },
+    {
+      "claim": "Appendix D.2 (vault rubrics) cannot be completed: the <vault>/rubric/ folder (the six vault-side rubric files) was not pushed to this repository checkout, which holds only Article/ and Article-Workplan.md. Recoverable verbatim from evidence cards are only the verify.md criteria header plus the adversarial_findings row, the ingest scope_discipline row, and the synthesize exam_readiness row; the full per-criterion bodies and weights for Lint, Enrich, and Expand, and the phase goal of Expand, are not captured by any evidence card.",
+      "id": "PI-114",
+      "note": "Appendix D set to needs_work (not drafted) because completeness scores 3: five of six vault-rubric bodies are absent, reconstructed only as phase goals and the three verbatim criterion rows the evidence cards carry, per L-055, with a provenance_note. D.3 (article rubrics) and D.4 are complete from the in-repo Article/rubric/*.md files. To finish D.2 a future Harvest-appendix tick needs either <vault>/rubric/*.md pushed to the repo or new evidence cards reproducing the Lint/Enrich/Expand rubric tables; until then D stays needs_work and is not eligible for the submission-readiness appendix check.",
+      "opened_at": "2026-05-28T11:00:00Z",
+      "phase": "harvest",
+      "section": "appendix-D",
+      "status": "resolved",
+      "type": "missing-source-file",
+      "resolved_at": "2026-05-28T21:00:00Z",
+      "resolved_by": "harvest-appendix-run-124",
+      "resolution": "The <vault>/rubric/ folder is now present in the checkout (alongside Templates/, surfaced the same way C's source was in run 123). Appendix D.2 was refiled directly from the six vault content-phase rubric files: Expand's previously-unavailable goal is filled, and every criterion name and weight for Ingest, Lint, Enrich, Expand, Synthesize, and Verify is reproduced verbatim in a complete weighted-criteria table, replacing the run-119 three-row reconstruction. Deploy and the out-of-rotation Consolidate rubrics are noted as intentionally excluded. D set to drafted, 999 words in the 600-1000 band, all five rubric criteria >=4."
     }
   ]
 }
