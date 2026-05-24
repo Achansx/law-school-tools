@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -1295,44 +1295,44 @@
       "type": "missing-snapshot-date"
     },
     {
-      "id": "PI-149",
-      "section": "09",
-      "phase": "verify",
-      "status": "open",
-      "type": "selective-concreteness",
-      "opened_at": "2026-05-29T19:00:00Z",
       "claim": "Section IX.B's one concrete cost figure is the most favorable line item: 'Under normal operation, the deploy phase lands at zero marginal hosting cost on the free tier.' A section titled 'The Honest Accounting' quantifies only hosting (=$0) while every material cost (token spend, the ~60% weekly-Claude anchor, person-hours, Anthropic API pricing) is deferred to the not-yet-built master table (IX.E, 'capture pending under PI-049').",
-      "note": "Verify run 135, Persona 1 (Skeptical JLE Editor) P1. The selective concreteness leaves a reader with a net cheaper-than-it-is impression and reads as a low-cost pitch rather than an accounting. Distinct from PI-057 (the IX.E instrumentation-framing closing sentence), PI-052 (internal PI tokens in prose), and PI-053 (cross-section forward-reference overclaim). Routing: Section 09 polish_status -> needs_polish (already set from PI-111). The next Polish tick on Section 09 adds one sentence after the zero-marginal-hosting claim acknowledging hosting is the smallest line item and that token spend and person-hours remain unquantified pending the PI-049 master table. Closes when Polish lands the balancing sentence and the next Verify pass confirms the section does not bank its honesty credential on its cheapest number."
+      "id": "PI-149",
+      "note": "Verify run 135, Persona 1 (Skeptical JLE Editor) P1. The selective concreteness leaves a reader with a net cheaper-than-it-is impression and reads as a low-cost pitch rather than an accounting. Distinct from PI-057 (the IX.E instrumentation-framing closing sentence), PI-052 (internal PI tokens in prose), and PI-053 (cross-section forward-reference overclaim). Routing: Section 09 polish_status -> needs_polish (already set from PI-111). The next Polish tick on Section 09 adds one sentence after the zero-marginal-hosting claim acknowledging hosting is the smallest line item and that token spend and person-hours remain unquantified pending the PI-049 master table. Closes when Polish lands the balancing sentence and the next Verify pass confirms the section does not bank its honesty credential on its cheapest number.",
+      "opened_at": "2026-05-29T19:00:00Z",
+      "phase": "verify",
+      "section": "09",
+      "status": "open",
+      "type": "selective-concreteness"
     },
     {
-      "id": "PI-150",
-      "section": "09",
-      "phase": "verify",
-      "status": "open",
-      "type": "labor-vocabulary-mischaracterization",
-      "opened_at": "2026-05-29T19:00:00Z",
       "claim": "Section IX.E's four-category labor mapping imports software-engineering vocabulary onto a law professor's work: 'Debugging maps to the per-tick pending-issue resolution work ... Prompt tuning maps to the per-tick rubric-and-LESSONS work.' Describing teaching labor as 'debugging' and 'prompt tuning' reframes pedagogical authorship as software maintenance.",
-      "note": "Verify run 135, Persona 2 (Legal Pedagogy Traditionalist) P1. A senior teacher reads 'debugging' applied to a professor's intellectual work as a category error that quietly seats the tech-replaces-pedagogy frame the article elsewhere disclaims. Distinct from PI-055, which flags that the table omits the professor's teaching labor; this flags that the category vocabulary itself mischaracterizes the labor it does name. Routing: Section 09 polish_status -> needs_polish (already set). The next Polish tick on Section 09 adds one sentence to IX.E noting the four-category taxonomy is the workplan's system-operation instrumentation vocabulary and does not describe the pedagogical-authorship labor of teaching, cross-referencing the professorial-judgment thesis; or relabels the body mapping as operation categories distinct from teaching labor. Closes when Polish lands the clarification and the next Verify pass confirms the vocabulary no longer reads as reducing teaching to software maintenance."
+      "id": "PI-150",
+      "note": "Verify run 135, Persona 2 (Legal Pedagogy Traditionalist) P1. A senior teacher reads 'debugging' applied to a professor's intellectual work as a category error that quietly seats the tech-replaces-pedagogy frame the article elsewhere disclaims. Distinct from PI-055, which flags that the table omits the professor's teaching labor; this flags that the category vocabulary itself mischaracterizes the labor it does name. Routing: Section 09 polish_status -> needs_polish (already set). The next Polish tick on Section 09 adds one sentence to IX.E noting the four-category taxonomy is the workplan's system-operation instrumentation vocabulary and does not describe the pedagogical-authorship labor of teaching, cross-referencing the professorial-judgment thesis; or relabels the body mapping as operation categories distinct from teaching labor. Closes when Polish lands the clarification and the next Verify pass confirms the vocabulary no longer reads as reducing teaching to software maintenance.",
+      "opened_at": "2026-05-29T19:00:00Z",
+      "phase": "verify",
+      "section": "09",
+      "status": "open",
+      "type": "labor-vocabulary-mischaracterization"
     },
     {
-      "id": "PI-151",
-      "section": "09",
-      "phase": "verify",
-      "status": "open",
-      "type": "methodology-instrument-undefined",
-      "opened_at": "2026-05-29T19:00:00Z",
       "claim": "Section IX.D asserts a quantitative token-spend reconstruction -- 'The load policy makes one tick of one phase a predictable token unit, the precondition for the cadence-times-per-tick-spend back-computation the master cost-table row depends on' -- but the system's actual per-tick instrument (manuscript/cost-log.jsonl) records words_generated, not tokens, and no per-tick token figure appears in the section or the logs.",
-      "note": "Verify run 135, Persona 3 (AI-in-Education Researcher) P1. The back-computation the master row 'depends on' has no defined token-measurement instrument, leaving the token-economy claim structurally unverifiable for an AI-in-higher-ed reviewer. Distinct from PI-056 (the undefined units of the sixty-percent anchor) and PI-057 (the instrumentation-as-promise framing). Routing: Section 09 polish_status -> needs_polish (already set). The IX.D footnote or the PI-050 Cite tick should name the per-tick token-measurement instrument, or state explicitly that per-tick token counts are estimated from cost-log.jsonl word counts via a stated conversion, so the cadence-times-per-tick-spend back-computation is replicable. Shares a partial resolution surface with PI-050 and PI-056. Closes when the token-measurement method is named and the next Verify pass confirms the back-computation is replicable rather than asserted."
+      "id": "PI-151",
+      "note": "Verify run 135, Persona 3 (AI-in-Education Researcher) P1. The back-computation the master row 'depends on' has no defined token-measurement instrument, leaving the token-economy claim structurally unverifiable for an AI-in-higher-ed reviewer. Distinct from PI-056 (the undefined units of the sixty-percent anchor) and PI-057 (the instrumentation-as-promise framing). Routing: Section 09 polish_status -> needs_polish (already set). The IX.D footnote or the PI-050 Cite tick should name the per-tick token-measurement instrument, or state explicitly that per-tick token counts are estimated from cost-log.jsonl word counts via a stated conversion, so the cadence-times-per-tick-spend back-computation is replicable. Shares a partial resolution surface with PI-050 and PI-056. Closes when the token-measurement method is named and the next Verify pass confirms the back-computation is replicable rather than asserted.",
+      "opened_at": "2026-05-29T19:00:00Z",
+      "phase": "verify",
+      "section": "09",
+      "status": "open",
+      "type": "methodology-instrument-undefined"
     },
     {
-      "id": "PI-152",
-      "section": "09",
-      "phase": "verify",
-      "status": "open",
-      "type": "stale-registry-pin",
-      "opened_at": "2026-05-29T19:00:00Z",
       "claim": "Section IX.E footnotes [^14], [^15], and [^16] anchor PI-042, PI-049, PI-050, and PI-051 to the 'Article .article-state.json pending_issues registry,' but all four entries are archived to .article-state.archive.json (archived_pending_issues, status outline-addressed) and are no longer in the live pending_issues registry a reader would check; PI-050 is additionally named in prose with no dedicated footnote.",
-      "note": "Verify run 135, Persona 4 (Provenance Auditor) P1 and the source of Section 09's three unsupported_claims (PI-049, PI-050, PI-051; reason evidence-gap). The underlying facts are supportable (the entries exist in the archive), but the cited registry no longer contains them, so three of the four PI references do not resolve where the footnotes say; PI-042's stale pin is flagged inside the mapped downstream-consumers claim. Distinct from PI-052 (removing internal PI-token strings from body prose). Routing: Section 09 polish_status -> needs_polish (already set) plus a Cite touch on [^14]/[^15]/[^16]. The next Polish/Cite tick repoints [^14]/[^15]/[^16] to .article-state.archive.json archived_pending_issues (status outline-addressed) for PI-042/049/050/051 and adds a footnote pin for PI-050; or re-states the four claims against the live registry's successor IDs. Candidate lesson (deferred at the LESSONS over-cap): footnotes that pin an internal task-tracking ID to the live pending_issues registry go stale the moment that ID is archived as outline-addressed; provenance audits must check the archive, and Cite/Polish should pin archived PIs to the archive file or a successor ID. Closes when the footnotes resolve against the artifact they name and the next Verify pass confirms the three unsupported_claims clear."
+      "id": "PI-152",
+      "note": "Verify run 135, Persona 4 (Provenance Auditor) P1 and the source of Section 09's three unsupported_claims (PI-049, PI-050, PI-051; reason evidence-gap). The underlying facts are supportable (the entries exist in the archive), but the cited registry no longer contains them, so three of the four PI references do not resolve where the footnotes say; PI-042's stale pin is flagged inside the mapped downstream-consumers claim. Distinct from PI-052 (removing internal PI-token strings from body prose). Routing: Section 09 polish_status -> needs_polish (already set) plus a Cite touch on [^14]/[^15]/[^16]. The next Polish/Cite tick repoints [^14]/[^15]/[^16] to .article-state.archive.json archived_pending_issues (status outline-addressed) for PI-042/049/050/051 and adds a footnote pin for PI-050; or re-states the four claims against the live registry's successor IDs. Candidate lesson (deferred at the LESSONS over-cap): footnotes that pin an internal task-tracking ID to the live pending_issues registry go stale the moment that ID is archived as outline-addressed; provenance audits must check the archive, and Cite/Polish should pin archived PIs to the archive file or a successor ID. Closes when the footnotes resolve against the artifact they name and the next Verify pass confirms the three unsupported_claims clear.",
+      "opened_at": "2026-05-29T19:00:00Z",
+      "phase": "verify",
+      "section": "09",
+      "status": "open",
+      "type": "stale-registry-pin"
     }
   ],
   "phase_index": 0,
@@ -1627,14 +1627,11 @@
       "polish_completed_at": "2026-05-19T23:00:00Z",
       "polish_status": "needs_polish",
       "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T19:00:00Z",
       "provenance_score": 4.2,
       "stitched_at": "2026-05-20T01:00:00Z",
       "target_words": 700,
       "title": "Cost and Labor: The Honest Accounting",
-      "unsupported_claims_count": 3,
-      "verify_routed_at": "2026-05-29T19:00:00Z",
-      "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file.",
-      "provenance_audited_at": "2026-05-29T19:00:00Z",
       "unsupported_claims": [
         {
           "claim_text": "IX.E frames PI-049 (master cost-and-labor table reconstruction) as still outstanding and footnote [^15] pins it to the .article-state.json pending_issues registry, but PI-049 is archived to .article-state.archive.json (status outline-addressed) and is not in the live registry.",
@@ -1651,7 +1648,10 @@
           "paragraph": 5,
           "reason": "evidence-gap"
         }
-      ]
+      ],
+      "unsupported_claims_count": 3,
+      "verify_routed_at": "2026-05-29T19:00:00Z",
+      "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file."
     },
     "10": {
       "cite_completed_at": "2026-05-24T07:00:00Z",
