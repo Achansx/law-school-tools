@@ -18,29 +18,29 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-05-27T17:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-05-27T19:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-05-27T05:00:00Z",
+    "last_stitched_at": "2026-05-27T19:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 12224
+    "total_words": 12249
   },
   "pending_issues": [
     {
       "claim": "Casebook excerpts were not used as input to the vault.",
       "id": "PI-001",
-      "note": "Workplan \u00a76.1 lists this as an open decision for the professor. Section 04 cannot make this claim until the professor confirms. Until then, draft must hedge or omit. Outline now references this issue in 4.1 and 4.3.",
+      "note": "Workplan §6.1 lists this as an open decision for the professor. Section 04 cannot make this claim until the professor confirms. Until then, draft must hedge or omit. Outline now references this issue in 4.1 and 4.3.",
       "opened_at": "2026-05-15T20:05:00Z",
       "phase": "harvest",
       "section": "04",
@@ -50,7 +50,7 @@
     {
       "claim": "Student work (prior exam answers, office-hours notes, LMS posts) was not used as training input.",
       "id": "PI-002",
-      "note": "Workplan \u00a76.2 lists this as an open decision. Privacy framing in Section IV and Section XII depends on the answer. Outline section 4.3 hedges pending confirmation.",
+      "note": "Workplan §6.2 lists this as an open decision. Privacy framing in Section IV and Section XII depends on the answer. Outline section 4.3 hedges pending confirmation.",
       "opened_at": "2026-05-15T20:05:00Z",
       "phase": "harvest",
       "section": "04",
@@ -60,7 +60,7 @@
     {
       "claim": "Exact token spend and Claude-API cost attributable to ingest-phase work on the input corpus.",
       "id": "PI-003",
-      "note": "Workplan \u00a73.1 calls for a real cost table. Section IX owns the full table; Section 04 needs at least the ingest-phase line. Backfill from memory plus git log per workplan \u00a78. Outline 4.5 names this as the gap to close.",
+      "note": "Workplan §3.1 calls for a real cost table. Section IX owns the full table; Section 04 needs at least the ingest-phase line. Backfill from memory plus git log per workplan §8. Outline 4.5 names this as the gap to close.",
       "opened_at": "2026-05-15T20:05:00Z",
       "phase": "harvest",
       "section": "04",
@@ -90,7 +90,7 @@
     {
       "claim": "Section V will reference the deployed site's Graph View, family-grid index, and holding-bar rendering as visible artifacts of the vault schema. None of the visual evidence is yet captured.",
       "id": "PI-012",
-      "note": "Workplan \u00a73.2 lists screenshots as an open item for Sections III and V (six to eight images at 300 dpi from constitutionallaw.netlify.app: a case page, a topic page, the graph view, a wiki-link cluster, the Recent tab, and the search UI). Section V's claim that schema produces visible structure on the deployed site (doctrine_family colors driving the four-family grid; holding-bar block driving the structured banner above case prose) needs at least one of these images as evidence. The Cite phase resolved this gap by issuing three forward references to Section III ([^21], [^25], [^27]) per L-021; the underlying PI stays open until Section III's image set lands.",
+      "note": "Workplan §3.2 lists screenshots as an open item for Sections III and V (six to eight images at 300 dpi from constitutionallaw.netlify.app: a case page, a topic page, the graph view, a wiki-link cluster, the Recent tab, and the search UI). Section V's claim that schema produces visible structure on the deployed site (doctrine_family colors driving the four-family grid; holding-bar block driving the structured banner above case prose) needs at least one of these images as evidence. The Cite phase resolved this gap by issuing three forward references to Section III ([^21], [^25], [^27]) per L-021; the underlying PI stays open until Section III's image set lands.",
       "opened_at": "2026-05-16T15:30:00Z",
       "phase": "harvest",
       "section": "05",
@@ -110,7 +110,7 @@
     {
       "claim": "Section V.B's closing sentence 'the payoff Section VIII later realizes as a site students browse' presents student browsing as a present fact without supporting evidence in the present prose; Sections III, XI, and XIII (which would carry any adoption or learning-outcomes evidence) remain PENDING.",
       "id": "PI-014",
-      "note": "Persona 1 P1 finding. Next Polish tick on Section 05 should rewrite the closing phrase to remove the implicit-adoption framing \u2014 either 'the payoff Section VIII later realizes as a navigable site' or 'a site designed for students to browse' preserves the architectural payoff without claiming a usage fact the article has not yet established.",
+      "note": "Persona 1 P1 finding. Next Polish tick on Section 05 should rewrite the closing phrase to remove the implicit-adoption framing — either 'the payoff Section VIII later realizes as a navigable site' or 'a site designed for students to browse' preserves the architectural payoff without claiming a usage fact the article has not yet established.",
       "opened_at": "2026-05-17T03:00:00Z",
       "phase": "verify",
       "section": "05",
@@ -140,7 +140,7 @@
     {
       "claim": "Section V.C's relevance-determination construction phrase 'every Case brief and Lecture summary touching a doctrine into one page' leaves the methodology undefined (manual curation, AI-suggested with human review, automated keyword or embedding similarity).",
       "id": "PI-017",
-      "note": "Persona 3 P1 finding. Section X's generalization claim and any future learning-outcomes claim require the construction methodology to be explicit. The source_files frontmatter convention mentioned later in the same paragraph implies manual curation but does not state it. Next Polish tick on Section 05 should add a clause to V.C paragraph 1 \u2014 'Topic-membership is a professor curation choice recorded in the page's source_files frontmatter list rather than an automated similarity computation' \u2014 and add a forward cross-reference to Section VI for the prompting design that supports that curation.",
+      "note": "Persona 3 P1 finding. Section X's generalization claim and any future learning-outcomes claim require the construction methodology to be explicit. The source_files frontmatter convention mentioned later in the same paragraph implies manual curation but does not state it. Next Polish tick on Section 05 should add a clause to V.C paragraph 1 — 'Topic-membership is a professor curation choice recorded in the page's source_files frontmatter list rather than an automated similarity computation' — and add a forward cross-reference to Section VI for the prompting design that supports that curation.",
       "opened_at": "2026-05-17T03:00:00Z",
       "phase": "verify",
       "section": "05",
@@ -150,7 +150,7 @@
     {
       "claim": "Section VIII's framing of the Deploy phase as zero-build-minutes via the CLI direct-upload path needs at least one numeric line in the Section IX cost-and-labor table: per-deploy wall-clock, per-month Netlify bandwidth tier, and per-month token spend on the Deploy phase's verification probes.",
       "id": "PI-018",
-      "note": "Workplan \u00a73.1 calls for a real cost table; Section IX owns the full table; Section VIII needs at least the deploy-phase line so the static-versus-chatbot architectural argument in XII can land with an honest deployment-cost anchor. DEPLOY.md Step 4 already logs an 'incremental hit rate' per deploy in CHANGELOG.md, which gives the per-deploy upload-bytes number for free. Outline 8.x should name this gap and route it to Section IX rather than Section VIII; Draft can hedge if the line still has not landed by the time Section VIII drafts.",
+      "note": "Workplan §3.1 calls for a real cost table; Section IX owns the full table; Section VIII needs at least the deploy-phase line so the static-versus-chatbot architectural argument in XII can land with an honest deployment-cost anchor. DEPLOY.md Step 4 already logs an 'incremental hit rate' per deploy in CHANGELOG.md, which gives the per-deploy upload-bytes number for free. Outline 8.x should name this gap and route it to Section IX rather than Section VIII; Draft can hedge if the line still has not landed by the time Section VIII drafts.",
       "opened_at": "2026-05-17T05:00:00Z",
       "phase": "harvest",
       "section": "08",
@@ -158,9 +158,9 @@
       "type": "evidence-gap"
     },
     {
-      "claim": "Section VIII will reference the deployed shell's surfaces (Dashboard, the \u2318K search palette open, the Recent tab, the page-feedback form, an example case page with the holding bar visible) as visible artifacts of the build pipeline. None of those images is yet captured.",
+      "claim": "Section VIII will reference the deployed shell's surfaces (Dashboard, the ⌘K search palette open, the Recent tab, the page-feedback form, an example case page with the holding bar visible) as visible artifacts of the build pipeline. None of those images is yet captured.",
       "id": "PI-019",
-      "note": "Shares the underlying workplan \u00a73.2 screenshot gap with Section III (case-page, topic-page, graph view, wiki-link cluster, Recent tab, search UI) and with Section V (PI-012 holding-bar, graph-view, four-family grid). Section VIII's specific image needs that are not already in Section III's list: the page-feedback form in its open state (the closed-loop framing from evidence-08-feedback-form-loopback), the search palette open with a 'Marbury' query active (the search-sanity probe from evidence-08-post-deploy-verification), and the About page (which carries the deployed shell's self-description). Outline 8.x should follow L-021 and use [CITE: forward reference to Section III X figure; see PI-019] for shared images and the same convention for the three Section-VIII-specific images, then let Cite resolve them as forward references when Section III's image set lands. 2026-05-17T11:00 Cite tick resolved the three Section VIII placeholders ([^2] About page, [^6] search palette, [^13] feedback form) as Bluebook *See infra* Section III forward references per L-021; PI-019 stays open until Section III's image set lands.",
+      "note": "Shares the underlying workplan §3.2 screenshot gap with Section III (case-page, topic-page, graph view, wiki-link cluster, Recent tab, search UI) and with Section V (PI-012 holding-bar, graph-view, four-family grid). Section VIII's specific image needs that are not already in Section III's list: the page-feedback form in its open state (the closed-loop framing from evidence-08-feedback-form-loopback), the search palette open with a 'Marbury' query active (the search-sanity probe from evidence-08-post-deploy-verification), and the About page (which carries the deployed shell's self-description). Outline 8.x should follow L-021 and use [CITE: forward reference to Section III X figure; see PI-019] for shared images and the same convention for the three Section-VIII-specific images, then let Cite resolve them as forward references when Section III's image set lands. 2026-05-17T11:00 Cite tick resolved the three Section VIII placeholders ([^2] About page, [^6] search palette, [^13] feedback form) as Bluebook *See infra* Section III forward references per L-021; PI-019 stays open until Section III's image set lands.",
       "opened_at": "2026-05-17T05:00:00Z",
       "phase": "harvest",
       "section": "08",
@@ -218,7 +218,7 @@
       "type": "literature-gap"
     },
     {
-      "claim": "Section VIII as a whole is silent on accessibility (WCAG conformance, alt-text discipline for the holding-bar banner or the four-family grid, screen-reader behavior of the hash-route navigation, keyboard accessibility of the \u2318K search palette), silent on device and bandwidth assumptions (a JSON-loaded SPA shell is not trivially low-bandwidth), and silent on the digital divide between students with reliable broadband and those without. PostHog analytics with DNT-respected and session-recording-disabled is mentioned only in footnote [^37]/locally [^5]; the data-collection practice is silent in body prose.",
+      "claim": "Section VIII as a whole is silent on accessibility (WCAG conformance, alt-text discipline for the holding-bar banner or the four-family grid, screen-reader behavior of the hash-route navigation, keyboard accessibility of the ⌘K search palette), silent on device and bandwidth assumptions (a JSON-loaded SPA shell is not trivially low-bandwidth), and silent on the digital divide between students with reliable broadband and those without. PostHog analytics with DNT-respected and session-recording-disabled is mentioned only in footnote [^37]/locally [^5]; the data-collection practice is silent in body prose.",
       "id": "PI-026",
       "note": "Persona 3 P1 finding. For an AI-in-higher-education reviewer, accessibility silence in a publicly deployed educational artifact is a first-class concern, and Section XII's risks-and-limits coverage cannot yet bear the load because Section XII is PENDING. Next Polish tick on Section 08 should add one sentence to VIII.A (or VIII.D) acknowledging accessibility, device and bandwidth assumptions, and the equity implications of a publicly hosted SPA, with a cross-reference to PENDING Section XII for the fuller risks discussion; for example, 'Accessibility, device and bandwidth assumptions, and the equity implications of a publicly hosted SPA are first-class concerns the article addresses in Section XII.' The cross-reference pattern matches IV.A's chatbot-architecture forward reference and does not require Section XII to land before the Polish fix can run. Optional: tie the sentence into the Persona 3 P2 PostHog-analytics-in-body-prose observation so the two additions read as one ethics-aware passage.",
       "opened_at": "2026-05-17T17:00:00Z",
@@ -228,9 +228,9 @@
       "type": "equity-and-accessibility-gap"
     },
     {
-      "claim": "Section III owns the full workplan \u00a73.2 screenshot set (case page, topic page, graph view, wiki-link cluster, Recent tab, search UI, plus the three Section-VIII-specific additions PI-019 names: About page, \u2318K search palette open with a Marbury query active, page-feedback form open state) and none of those images is yet captured.",
+      "claim": "Section III owns the full workplan §3.2 screenshot set (case page, topic page, graph view, wiki-link cluster, Recent tab, search UI, plus the three Section-VIII-specific additions PI-019 names: About page, ⌘K search palette open with a Marbury query active, page-feedback form open state) and none of those images is yet captured.",
       "id": "PI-027",
-      "note": "Workplan \u00a73.2 (and \u00a78 item 1) names Section III as the screenshot-owning section: 'Section III (case study) needs four to six images: a case page, a topic page, the graph view, a wiki-link cluster, the Recent tab, and the search UI. Capture these from constitutionallaw.netlify.app in a single session.' PI-012 (Section V holding-bar / graph view / four-family grid) and PI-019 (Section VIII About page / \u2318K palette with Marbury query / page-feedback form open state) are downstream consumers whose forward references resolve when PI-027 closes. The full master list to capture in one session is therefore: (1) a populated Topic page (Commerce Clause as the canonical example per evidence-03-topic-page-walkthrough), (2) a populated Case page with the holding bar visible (Marbury per evidence-03-case-brief-walkthrough), (3) the Obsidian graph view of the Marbury wiki-link cluster (evidence-03-wikilink-graph-navigation), (4) the four-family Topics grid (evidence-03-cases-and-topics-indexes plus Section V's evidence-05-doctrine-family-enum), (5) the Recent tab (evidence-03-recent-tab-and-search-palette), (6) the \u2318K search palette open with a Marbury query active (PI-019 specific need), (7) the page-feedback form in its open state (PI-019 specific need), and (8) the About page (PI-019 specific need). The Outline tick on Section 03 should follow L-021 and use [CITE: forward reference to Section III X figure; see PI-027] placeholders for each downstream consumer; Cite resolves them as Bluebook *See infra* Section III forward references once Section III's image set lands. The capture itself is a one-session task at https://constitutionallaw.netlify.app once provenance allows; logged here so the Outline phase tracks the gap rather than trying to invent screenshots.",
+      "note": "Workplan §3.2 (and §8 item 1) names Section III as the screenshot-owning section: 'Section III (case study) needs four to six images: a case page, a topic page, the graph view, a wiki-link cluster, the Recent tab, and the search UI. Capture these from constitutionallaw.netlify.app in a single session.' PI-012 (Section V holding-bar / graph view / four-family grid) and PI-019 (Section VIII About page / ⌘K palette with Marbury query / page-feedback form open state) are downstream consumers whose forward references resolve when PI-027 closes. The full master list to capture in one session is therefore: (1) a populated Topic page (Commerce Clause as the canonical example per evidence-03-topic-page-walkthrough), (2) a populated Case page with the holding bar visible (Marbury per evidence-03-case-brief-walkthrough), (3) the Obsidian graph view of the Marbury wiki-link cluster (evidence-03-wikilink-graph-navigation), (4) the four-family Topics grid (evidence-03-cases-and-topics-indexes plus Section V's evidence-05-doctrine-family-enum), (5) the Recent tab (evidence-03-recent-tab-and-search-palette), (6) the ⌘K search palette open with a Marbury query active (PI-019 specific need), (7) the page-feedback form in its open state (PI-019 specific need), and (8) the About page (PI-019 specific need). The Outline tick on Section 03 should follow L-021 and use [CITE: forward reference to Section III X figure; see PI-027] placeholders for each downstream consumer; Cite resolves them as Bluebook *See infra* Section III forward references once Section III's image set lands. The capture itself is a one-session task at https://constitutionallaw.netlify.app once provenance allows; logged here so the Outline phase tracks the gap rather than trying to invent screenshots.",
       "opened_at": "2026-05-17T19:00:00Z",
       "phase": "harvest",
       "section": "03",
@@ -278,7 +278,7 @@
       "type": "live-classroom-substitution"
     },
     {
-      "claim": "Section III as a whole is silent on accessibility (WCAG conformance, alt-text discipline for the holding bar or four-family grid, screen-reader behavior of the hash-route navigation, keyboard accessibility of the \u2318K palette), silent on device and bandwidth assumptions (a JSON-loaded SPA shell with 198 to 281 pages' worth of search index loaded client-side is not trivially low-bandwidth), and silent on the digital divide between students with reliable broadband and those without. The hypothetical student the tour follows is implicitly a sighted, mouse-and-keyboard-equipped, broadband-connected reader; the article does not name this assumption or its limits.",
+      "claim": "Section III as a whole is silent on accessibility (WCAG conformance, alt-text discipline for the holding bar or four-family grid, screen-reader behavior of the hash-route navigation, keyboard accessibility of the ⌘K palette), silent on device and bandwidth assumptions (a JSON-loaded SPA shell with 198 to 281 pages' worth of search index loaded client-side is not trivially low-bandwidth), and silent on the digital divide between students with reliable broadband and those without. The hypothetical student the tour follows is implicitly a sighted, mouse-and-keyboard-equipped, broadband-connected reader; the article does not name this assumption or its limits.",
       "id": "PI-033",
       "note": "Persona 3 (AI-in-Education Researcher) P1 finding, recurring the PI-026 pattern from Section VIII as the more central place for the article to first acknowledge the silently assumed sighted/broadband/mouse-and-keyboard reader. Next Polish tick on Section 03 should add one sentence to III.A acknowledging the accessibility, device, and equity considerations and cross-referencing PENDING Section XII for the fuller risks discussion; for example, 'The walkthrough that follows assumes a sighted reader on a broadband-connected device with a mouse and keyboard; accessibility, device and bandwidth assumptions, and the equity implications of a publicly hosted SPA are first-class concerns the article addresses in Section XII.' The cross-reference pattern matches IV.A's static-vs-chatbot forward reference and does not require Section XII to land before the Polish fix can run; pairing the III.A addition with the parallel PI-026 fix at VIII.A would produce a consistent ethics-aware passage at the two sections that most need it.",
       "opened_at": "2026-05-18T07:00:00Z",
@@ -288,9 +288,9 @@
       "type": "equity-and-accessibility-gap"
     },
     {
-      "claim": "Section VI's prompt-by-prompt mapping leans on a structured prompt library (Appendix B per workplan \u00a79: 'Prompt library (extraction, case note, doctrine, hypothetical, linking, review, publication)') that does not yet exist in the manuscript. Section VI's body can name prompt categories and cite their host files (rubric/*.md, RUNBOOK.md per-phase sections, LESSONS.md), but the appendix that would let a reader inspect the actual prompt text is not yet assembled.",
+      "claim": "Section VI's prompt-by-prompt mapping leans on a structured prompt library (Appendix B per workplan §9: 'Prompt library (extraction, case note, doctrine, hypothetical, linking, review, publication)') that does not yet exist in the manuscript. Section VI's body can name prompt categories and cite their host files (rubric/*.md, RUNBOOK.md per-phase sections, LESSONS.md), but the appendix that would let a reader inspect the actual prompt text is not yet assembled.",
       "id": "PI-035",
-      "note": "Per L-014 / L-032's shared-asset owner-section convention, Appendix B is the owning artifact and Section VI is the load-bearing downstream consumer. Outline phase on Section 06 should follow L-021 and use [CITE: forward reference to App. B prompt library; see PI-035] placeholders for the prompt-text references the body would otherwise have to quote at length; Cite resolves them as forward references to App. B (Prompt Library) until the appendix lands. Workplan \u00a74 Phase A lists 'Extract the live prompt library from configs, rubrics, and LESSONS.md into Appendix-Prompts.md' as the canonical build path; the same extraction will also serve Section VII's iteration narrative (the Karpathy-loop framing of the rotation) and Section IX's cost table (per-phase prompt size informs token cost per phase). PI-035 is the Section VI portion of the broader appendix gap and should be cross-referenced from any future PI opened for Sections VII or IX when those sections enter Harvest.",
+      "note": "Per L-014 / L-032's shared-asset owner-section convention, Appendix B is the owning artifact and Section VI is the load-bearing downstream consumer. Outline phase on Section 06 should follow L-021 and use [CITE: forward reference to App. B prompt library; see PI-035] placeholders for the prompt-text references the body would otherwise have to quote at length; Cite resolves them as forward references to App. B (Prompt Library) until the appendix lands. Workplan §4 Phase A lists 'Extract the live prompt library from configs, rubrics, and LESSONS.md into Appendix-Prompts.md' as the canonical build path; the same extraction will also serve Section VII's iteration narrative (the Karpathy-loop framing of the rotation) and Section IX's cost table (per-phase prompt size informs token cost per phase). PI-035 is the Section VI portion of the broader appendix gap and should be cross-referenced from any future PI opened for Sections VII or IX when those sections enter Harvest.",
       "opened_at": "2026-05-18T09:00:00Z",
       "phase": "harvest",
       "section": "06",
@@ -528,9 +528,9 @@
       "type": "seam-non-bridging"
     },
     {
-      "claim": "Workplan \u00a76 line 170 names copyrighted casebook material as the first of six open decisions and specifically asks the professor to confirm whether any of the existing 198 pages on the deployed site currently include casebook quotation that would need to be removed before the site is held up as a model in JLE. The backward audit is distinct from PI-001 (whether casebook excerpts were used as input to the vault) because PI-001 tracks the input-side ingestion question and PI-073 tracks the output-side audit of currently-published pages. Section XII's risk-catalogue prose must hedge PI-073's status until the professor confirms the audit result.",
+      "claim": "Workplan §6 line 170 names copyrighted casebook material as the first of six open decisions and specifically asks the professor to confirm whether any of the existing 198 pages on the deployed site currently include casebook quotation that would need to be removed before the site is held up as a model in JLE. The backward audit is distinct from PI-001 (whether casebook excerpts were used as input to the vault) because PI-001 tracks the input-side ingestion question and PI-073 tracks the output-side audit of currently-published pages. Section XII's risk-catalogue prose must hedge PI-073's status until the professor confirms the audit result.",
       "id": "PI-073",
-      "note": "Substantive open decision the Section XII Outline and Draft ticks cannot resolve unilaterally. Workplan \u00a76.1 line 170 states the directive verbatim: 'Confirm we are working only from the professor's own slides and notes, public judicial opinions, public constitutional text, statutes, and original hypotheticals. Confirm whether any of the existing 198 pages currently include casebook quotation that would need to be removed before the site is held up as a model in JLE.' Section XII's Outline tick should structure the copyrighted-casebook-material risk-catalogue entry so the audit-status paragraph can be either pending-form (the audit has not been completed at the manuscript-drafting altitude and the prose hedges accordingly) or completed-form (the audit returned a clean result, or returned specific pages that needed removal and the corresponding pages were removed or revised), mirroring the Section IV.E snapshot-disclosure-paragraph pattern from the 2026-05-22T07:00 Polish tick and the Section XI plan-versus-results structural pattern from the 2026-05-22T17:00 Draft tick. The PI closes when the professor and the author have confirmed in writing the audit result and the Section XII prose reflects the actual status. PI-073 is distinct from PI-001 (input-side ingestion question, open since 2026-05-15) and from PI-007 (Section IV.A casebook-acknowledgment surface gap, resolved 2026-05-22T07:00 by the Polish tick) and from PI-063 (Section IV.A architectural-implication of the casebook gap, open since 2026-05-22T11:00 and routed to Section XII's curriculum-grounding risk-catalogue entry per `evidence-12-curriculum-grounding-corpus-incompleteness.md`).",
+      "note": "Substantive open decision the Section XII Outline and Draft ticks cannot resolve unilaterally. Workplan §6.1 line 170 states the directive verbatim: 'Confirm we are working only from the professor's own slides and notes, public judicial opinions, public constitutional text, statutes, and original hypotheticals. Confirm whether any of the existing 198 pages currently include casebook quotation that would need to be removed before the site is held up as a model in JLE.' Section XII's Outline tick should structure the copyrighted-casebook-material risk-catalogue entry so the audit-status paragraph can be either pending-form (the audit has not been completed at the manuscript-drafting altitude and the prose hedges accordingly) or completed-form (the audit returned a clean result, or returned specific pages that needed removal and the corresponding pages were removed or revised), mirroring the Section IV.E snapshot-disclosure-paragraph pattern from the 2026-05-22T07:00 Polish tick and the Section XI plan-versus-results structural pattern from the 2026-05-22T17:00 Draft tick. The PI closes when the professor and the author have confirmed in writing the audit result and the Section XII prose reflects the actual status. PI-073 is distinct from PI-001 (input-side ingestion question, open since 2026-05-15) and from PI-007 (Section IV.A casebook-acknowledgment surface gap, resolved 2026-05-22T07:00 by the Polish tick) and from PI-063 (Section IV.A architectural-implication of the casebook gap, open since 2026-05-22T11:00 and routed to Section XII's curriculum-grounding risk-catalogue entry per `evidence-12-curriculum-grounding-corpus-incompleteness.md`).",
       "opened_at": "2026-05-23T03:00:00Z",
       "phase": "harvest",
       "section": "12",
@@ -728,9 +728,9 @@
       "type": "literature-gap"
     },
     {
-      "claim": "Section XIV.A's final sentence (\u201cthe transferable result is the replicable process that other doctrinal courses with similar archives can follow\u201d) and XIV.C's closing sentence (\u201cThe invitation is offered as a modest, replicable infrastructure choice rather than a mandate\u201d) present replicability as an established property of the method, but Section X.E concedes the article \u201creports one instance rather than two\u201d and frames the generalization claim as \u201can invitation as much as a result.\u201d The conclusion asserts as settled what the body marks as untested.",
+      "claim": "Section XIV.A's final sentence (“the transferable result is the replicable process that other doctrinal courses with similar archives can follow”) and XIV.C's closing sentence (“The invitation is offered as a modest, replicable infrastructure choice rather than a mandate”) present replicability as an established property of the method, but Section X.E concedes the article “reports one instance rather than two” and frames the generalization claim as “an invitation as much as a result.” The conclusion asserts as settled what the body marks as untested.",
       "id": "PI-098",
-      "note": "Persona 1 (Skeptical JLE Editor) P1 finding on the newly stitched Section XIV. A JLE peer reviewer who read X.E's n=1 invitation framing will read the conclusion's flat \u201creplicable process \u2026 can follow\u201d and \u201cmodest, replicable infrastructure choice\u201d as the case study (one vault, run once) overclaimed into the contribution (a demonstrated-replicable method); this is the case-study-vs-contribution and failure-to-disclaim concern at the article's closing pitch. Next Polish tick on Section 14 should soften the XIV.A clause to match X.E's invitation posture, e.g., \u201cthe transferable result is a process described in enough detail that other doctrinal courses with similar archives can attempt it,\u201d and keep \u201creplicable\u201d in XIV.C only where it sits beside the \u201cinvitation rather than a mandate\u201d hedge already in the same sentence. The fix preserves the method-is-the-contribution thesis without asserting demonstrated replication the article did not run. P1-deferral ACTIVE this run, so logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding on the newly stitched Section XIV. A JLE peer reviewer who read X.E's n=1 invitation framing will read the conclusion's flat “replicable process … can follow” and “modest, replicable infrastructure choice” as the case study (one vault, run once) overclaimed into the contribution (a demonstrated-replicable method); this is the case-study-vs-contribution and failure-to-disclaim concern at the article's closing pitch. Next Polish tick on Section 14 should soften the XIV.A clause to match X.E's invitation posture, e.g., “the transferable result is a process described in enough detail that other doctrinal courses with similar archives can attempt it,” and keep “replicable” in XIV.C only where it sits beside the “invitation rather than a mandate” hedge already in the same sentence. The fix preserves the method-is-the-contribution thesis without asserting demonstrated replication the article did not run. P1-deferral ACTIVE this run, so logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
       "opened_at": "2026-05-26T03:00:00Z",
       "phase": "verify",
       "section": "14",
@@ -738,9 +738,9 @@
       "type": "replicability-overclaim"
     },
     {
-      "claim": "Section XIV is silent on the live classroom and the assigned casebook. XIV.A frames the contribution as converting the archive into a \u201cnavigable, cross-linked, student-facing course knowledge system\u201d and XIV.C closes on the adoption invitation, but no sentence in XIV reaffirms (as Section II.E does, \u201cextends the casebook, the syllabus, and the live classroom rather than displacing any of them,\u201d and as III.C does after PI-031) that the system supplements rather than substitutes for live Socratic teaching and the assigned casebook.",
+      "claim": "Section XIV is silent on the live classroom and the assigned casebook. XIV.A frames the contribution as converting the archive into a “navigable, cross-linked, student-facing course knowledge system” and XIV.C closes on the adoption invitation, but no sentence in XIV reaffirms (as Section II.E does, “extends the casebook, the syllabus, and the live classroom rather than displacing any of them,” and as III.C does after PI-031) that the system supplements rather than substitutes for live Socratic teaching and the assigned casebook.",
       "id": "PI-099",
-      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding, recurring the live-pedagogy / supplement-not-substitute line (PI-031/PI-039/PI-046/PI-054/PI-061/PI-078) now at the conclusion. A traditionalist who reads only the conclusion sees the dialogic teaching and the casebook the article elsewhere protects drop out exactly where the article makes its closing claim, leaving \u201cstudent-facing course knowledge system\u201d to read as a stand-in for the teaching. Next Polish tick on Section 14 should add one clause to XIV.B or XIV.C positioning the system as a supplement to the live classroom and the assigned casebook rather than a substitute for either, e.g., append to XIV.B \u201cand it supplements the live classroom and the assigned casebook rather than standing in for either,\u201d consistent with Sections II.E and III.C. P1-deferral ACTIVE, logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14 (pairs with the PI-100 access clause as one calibrated closing passage).",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding, recurring the live-pedagogy / supplement-not-substitute line (PI-031/PI-039/PI-046/PI-054/PI-061/PI-078) now at the conclusion. A traditionalist who reads only the conclusion sees the dialogic teaching and the casebook the article elsewhere protects drop out exactly where the article makes its closing claim, leaving “student-facing course knowledge system” to read as a stand-in for the teaching. Next Polish tick on Section 14 should add one clause to XIV.B or XIV.C positioning the system as a supplement to the live classroom and the assigned casebook rather than a substitute for either, e.g., append to XIV.B “and it supplements the live classroom and the assigned casebook rather than standing in for either,” consistent with Sections II.E and III.C. P1-deferral ACTIVE, logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14 (pairs with the PI-100 access clause as one calibrated closing passage).",
       "opened_at": "2026-05-26T03:00:00Z",
       "phase": "verify",
       "section": "14",
@@ -748,9 +748,9 @@
       "type": "live-classroom-substitution"
     },
     {
-      "claim": "Section XIV is silent on access, equity, and the digital divide. XIV.C frames the close as \u201ca modest, replicable infrastructure choice rather than a mandate\u201d and XIV.A describes a \u201cstudent-facing\u201d system, but neither carries the access precondition Section X.A states explicitly (\u201creaches only students who have web access, a usable device, and the digital fluency to navigate it, a precondition Section XII takes up\u201d). The equity caveat present in the body drops out at the conclusion.",
+      "claim": "Section XIV is silent on access, equity, and the digital divide. XIV.C frames the close as “a modest, replicable infrastructure choice rather than a mandate” and XIV.A describes a “student-facing” system, but neither carries the access precondition Section X.A states explicitly (“reaches only students who have web access, a usable device, and the digital fluency to navigate it, a precondition Section XII takes up”). The equity caveat present in the body drops out at the conclusion.",
       "id": "PI-100",
-      "note": "Persona 3 (AI-in-Education Researcher) P1 finding, recurring the equity-and-accessibility-silence pattern (PI-026/PI-033/PI-064/PI-071/PI-080/PI-095) at the conclusion. A learning-sciences reviewer reading the close sees \u201cmodest infrastructure choice\u201d offered without the access/equity precondition the article was careful to state at X.A, so the final pitch reads as access-blind. Next Polish tick on Section 14 should add a half-clause to XIV.C conceding the access/equity precondition with a Section XII forward-reference, e.g., \u201coffered as a modest infrastructure choice, subject to the access and equity preconditions Section XII takes up, rather than a mandate\u201d; pairs naturally with the PI-099 live-classroom clause as a single calibrated closing passage. P1-deferral ACTIVE, logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
+      "note": "Persona 3 (AI-in-Education Researcher) P1 finding, recurring the equity-and-accessibility-silence pattern (PI-026/PI-033/PI-064/PI-071/PI-080/PI-095) at the conclusion. A learning-sciences reviewer reading the close sees “modest infrastructure choice” offered without the access/equity precondition the article was careful to state at X.A, so the final pitch reads as access-blind. Next Polish tick on Section 14 should add a half-clause to XIV.C conceding the access/equity precondition with a Section XII forward-reference, e.g., “offered as a modest infrastructure choice, subject to the access and equity preconditions Section XII takes up, rather than a mandate”; pairs naturally with the PI-099 live-classroom clause as a single calibrated closing passage. P1-deferral ACTIVE, logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
       "opened_at": "2026-05-26T03:00:00Z",
       "phase": "verify",
       "section": "14",
@@ -808,9 +808,9 @@
       "type": "equity-and-accessibility-gap"
     },
     {
-      "claim": "Section XII enumerates its open decisions as \u201cthe first open decision\u201d (copyrighted casebook material) and \u201cthe second open decision\u201d (student work as input), and originally as \u201ca fourth open decision\u201d for the fixed-evidence-versus-continuing-experiment snapshot gap, while framing curriculum grounding as \u201ca related implication\u201d rather than a numbered decision; the ordinal sequence therefore had no in-prose third antecedent. Workplan \u00a76 names six open decisions (per PI-073 casebook is the first of six), so the article's ordinals may have been tracking the workplan's own numbering, which a JLE reader cannot see.",
+      "claim": "Section XII enumerates its open decisions as “the first open decision” (copyrighted casebook material) and “the second open decision” (student work as input), and originally as “a fourth open decision” for the fixed-evidence-versus-continuing-experiment snapshot gap, while framing curriculum grounding as “a related implication” rather than a numbered decision; the ordinal sequence therefore had no in-prose third antecedent. Workplan §6 names six open decisions (per PI-073 casebook is the first of six), so the article's ordinals may have been tracking the workplan's own numbering, which a JLE reader cannot see.",
       "id": "PI-106",
-      "note": "Logged by the run-103 Polish tick during the criterion-5 (section coherence) pass. The reader-facing fix is already in place: the tick neutralized \u201ca fourth open decision\u201d to \u201ca further open decision,\u201d so no dangling ordinal remains in prose. The deeper reconciliation is whether Section XII should (a) drop the ordinals entirely and rely on subsection structure, or (b) preserve the Workplan \u00a76 numbering and then explicitly enumerate every referenced decision in-prose so the count is legible to a reader who cannot see the workplan. Distinct from PI-073 (the substantive casebook backward audit) and PI-101 (Magesh pagination confirmation). P1-deferral ACTIVE (Sections 03/06/07/08 still at cite_status:needs_cite), so logged without resetting Section 12 status. A future Verify or Stitch tick, or human review against Article-Workplan.md \u00a76, should pick the (a)/(b) resolution.",
+      "note": "Logged by the run-103 Polish tick during the criterion-5 (section coherence) pass. The reader-facing fix is already in place: the tick neutralized “a fourth open decision” to “a further open decision,” so no dangling ordinal remains in prose. The deeper reconciliation is whether Section XII should (a) drop the ordinals entirely and rely on subsection structure, or (b) preserve the Workplan §6 numbering and then explicitly enumerate every referenced decision in-prose so the count is legible to a reader who cannot see the workplan. Distinct from PI-073 (the substantive casebook backward audit) and PI-101 (Magesh pagination confirmation). P1-deferral ACTIVE (Sections 03/06/07/08 still at cite_status:needs_cite), so logged without resetting Section 12 status. A future Verify or Stitch tick, or human review against Article-Workplan.md §6, should pick the (a)/(b) resolution.",
       "opened_at": "2026-05-27T03:00:00Z",
       "phase": "polish",
       "section": "12",
@@ -846,9 +846,19 @@
       "section": "11",
       "status": "open",
       "type": "instrument-specification-gap"
+    },
+    {
+      "id": "PI-110",
+      "type": "stitch-deferred-renumber",
+      "section": "02",
+      "phase": "stitch",
+      "status": "open",
+      "opened_at": "2026-05-27T19:00:00Z",
+      "claim": "Section II's run-110 Bond et al. 2024 meta-review paragraph (polished section-02 local footnote 9) is not yet landed in the assembled full-draft.",
+      "note": "Run-111 interim Stitch landed Section II's footnote-count-neutral prose (PI-067/068/069/071) but DEFERRED the Bond paragraph because adding it forces a global +1 footnote renumber from [^17] onward (162 footnote tokens plus roughly 26 cross-reference note numbers, including a compound 'notes 51, 52, and 54' list) AND introduces a duplicate full Bond citation against the existing Section XI [^147] anchor. Bluebook requires first-full-then-supra: the final stitch should make Section II the first full Bond cite, convert Section XI's full cite to 'supra note 17', redirect the Bond supra references (currently to note 147) accordingly, then perform the +1 renumber. Resolve at the FINAL stitch (all 14 sections at polish_status ready_for_stitch/stitched), not at an interim tick, to avoid renumbering against a still-shifting section set. The polished section-02 source already carries the Bond paragraph and footnote, so no content is lost."
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -858,7 +868,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 110,
+  "run_count": 111,
   "schema_version": 1,
   "sections": {
     "01": {
