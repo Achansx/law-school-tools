@@ -1,16 +1,19 @@
 ---
 id: appendix-E
 title: "Cost and Time Log"
-status: drafted
+status: needs_work
 words: 624
 target_min: 400
 target_max: 800
 last_phase: harvest-appendix
+methodology_change: "Vault cost is now derived from the vault's own machine-generated logs (.run-scores.jsonl: 255 ticks; .ingested-files.jsonl: 469 ingestion records; git commit history: 69 commits on the vault path; CHANGELOG.md: milestone timeline) rather than from the 60% weekly-Claude-usage email estimate, which is a hand-wave and not metered. Replace the workplan-restated 60% figure entirely; do not include it. Do not cite email-to-chandler-progress.md as a cost source."
 source_files:
-  - "<vault>/Article/manuscript/cost-log.jsonl (this paper's per-tick log)"
-  - "<vault>/.run-scores.jsonl (vault's per-tick scores; absent from this repo snapshot)"
-  - "Git history of the vault repo (proxy for human time on commits)"
-  - "Claude usage dashboard exports (if available)"
+  - "<vault>/Article/manuscript/cost-log.jsonl (this paper's per-tick log, 54+ ticks)"
+  - "<vault>/.run-scores.jsonl (vault's per-tick scorecard, 255 ticks)"
+  - "<vault>/.ingested-files.jsonl (vault ingestion log, 469 records)"
+  - "<vault>/CHANGELOG.md (vault milestone timeline)"
+  - "Git history: git log --oneline -- 'Chandler Constitutional Law Vault' (~69 vault commits)"
+  - "<vault>/.vault-maintenance-state.json (current run_count and phase)"
 ---
 
 # Appendix E: Cost and Time Log

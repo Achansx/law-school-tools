@@ -23,7 +23,7 @@
       "id": "B",
       "last_phase": "harvest-appendix",
       "last_run_at": "2026-05-28T07:00:00Z",
-      "status": "drafted",
+      "status": "needs_work",
       "subsections": [
         "B.1 Prompts (vault and article)",
         "B.2 Claude Code skills",
@@ -38,7 +38,7 @@
       "id": "C",
       "last_phase": "harvest-appendix",
       "last_run_at": "2026-05-28T09:00:00Z",
-      "status": "drafted",
+      "status": "needs_work",
       "target_max": 900,
       "target_min": 500,
       "title": "Obsidian Note Templates",
@@ -48,7 +48,7 @@
       "id": "D",
       "last_phase": "harvest-appendix",
       "last_run_at": "2026-05-28T11:00:00Z",
-      "status": "drafted",
+      "status": "needs_work",
       "target_max": 1000,
       "target_min": 600,
       "title": "Karpathy-Loop Per-Phase Rubric",
@@ -58,7 +58,7 @@
       "id": "E",
       "last_phase": "harvest-appendix",
       "last_run_at": "2026-05-28T13:00:00Z",
-      "status": "drafted",
+      "status": "needs_work",
       "target_max": 800,
       "target_min": 400,
       "title": "Cost and Time Log",
@@ -68,7 +68,7 @@
       "id": "F",
       "last_phase": "harvest-appendix",
       "last_run_at": "2026-05-28T15:00:00Z",
-      "status": "drafted",
+      "status": "needs_work",
       "target_max": 800,
       "target_min": 500,
       "title": "Technical Setup",
@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "outline",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
