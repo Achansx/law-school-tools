@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "outline",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
