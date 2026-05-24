@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-26T11:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-26T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -838,7 +838,7 @@
       "type": "cite-form-confirmation"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -848,7 +848,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 95,
+  "run_count": 96,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1053,7 +1053,7 @@
     "11": {
       "cite_completed_at": "2026-05-22T19:00:00Z",
       "cite_status": "needs_polish",
-      "current_words": 979,
+      "current_words": 981,
       "draft_completed_at": "2026-05-22T17:00:00Z",
       "draft_status": "needs_polish",
       "evidence_cards": 10,
@@ -1062,7 +1062,8 @@
       "footnotes_count": 13,
       "outline_ready_at": "2026-05-22T15:00:00Z",
       "outline_status": "ready_for_draft",
-      "polish_status": "none",
+      "polish_completed_at": "2026-05-26T13:00:00Z",
+      "polish_status": "ready_for_stitch",
       "target_words": 900,
       "title": "Evaluation: What Would Count as Success"
     },
