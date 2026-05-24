@@ -1,12 +1,12 @@
 {
  "_archive_pointer": ".article-state.archive.json holds resolved and outline-addressed pending_issues; do not load every run.",
  "abstract": {
+  "consecutive_ready_runs": 1,
+  "last_run_at": "2026-05-24T03:00:00Z",
+  "last_score": 4.8,
   "status": "ready_for_review",
   "target_words": 250,
-  "words": 243,
-  "last_score": 4.8,
-  "last_run_at": "2026-05-24T03:00:00Z",
-  "consecutive_ready_runs": 1
+  "words": 243
  },
  "article_title": "From Casebook to Course Knowledge System: AI-Assisted Synthesis, Obsidian, and the Future of Legal Pedagogy",
  "consecutive_low_scores": {
@@ -18,23 +18,23 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "harvest",
+ "current_phase": "outline",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "verify",
- "last_run_at": "2026-05-24T13:00:00Z",
+ "last_completed_phase": "harvest",
+ "last_run_at": "2026-05-24T15:00:00Z",
  "manuscript": {
+  "abstract_assembled": true,
   "full_draft_exists": true,
   "last_stitched_at": "2026-05-24T11:00:00Z",
   "partial_assembly": true,
   "sections_stitched": 10,
   "sections_total": 14,
-  "total_words": 9496,
-  "abstract_assembled": true
+  "total_words": 9496
  },
  "pending_issues": [
   {
@@ -598,14 +598,14 @@
    "type": "open-decision-backward-audit"
   },
   {
-   "id": "PI-074",
-   "section": "01",
-   "phase": "draft",
-   "type": "scaffold-first-sequence-gap",
-   "status": "open",
-   "opened_at": "2026-05-23T09:00:00Z",
    "claim": "Section 01 (Introduction) was drafted under the RUNBOOK step-3a scaffold-first priority, which forced the Draft phase onto the lowest-numbered evidence_status:none scaffold section (01) ahead of any Harvest or Outline pass. No section-01-specific evidence cards and no outline-01 file exist. The draft is grounded honestly: framing and thesis are the article's own argument (Article-Workplan.md §1, §10; PROJECT_PRIMER thesis and house-voice recurring sentence), and every concrete factual claim carries a [CITE:] placeholder pointing to an EXISTING verified sibling evidence card (evidence-04-filename-heterogeneity, evidence-04-course-scope, evidence-08-live-deployed-site, evidence-03-midpage-verified-quotations, evidence-07-professorial-control-mechanism, evidence-11-not-a-claim-students-learned-more, evidence-11-choi-schwarcz-jle-empirical-precedent, evidence-12-static-vs-chatbot-risk-architecture). No fabricated fact, quotation, statistic, or citation was introduced.",
-   "note": "Sequencing artifact, not an evidence gap in the drafted prose. The next Harvest tick that scaffold-first routes to Section 01 (after 01's evidence_status remains none) should build section-01-specific evidence cards (evidence-01-*) for the hidden-archive framing and the current-conversation anchor, and a later Outline tick should produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. The Cite tick that scaffold-first will route to Section 01 next can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source (Choi & Schwarcz 73 J. Legal Educ. 384 (2025), URL-liveness shared with Section XI per L-034 cross-section reuse). PI-074 closes when Harvest has written section-01 evidence cards and Outline has produced outline-01, or when a later Verify tick confirms the Introduction's grounding is complete without them. [PROGRESS 2026-05-24 run 71]: Harvest half SATISFIED. The scaffold-first Harvest tick routed to Section 01 (lowest-numbered evidence_status:none among 01/10/12/13/14) and wrote eight section-01 evidence cards: evidence-01-hidden-archive-flat-lms, evidence-01-thesis-method-not-automation, evidence-01-professor-in-the-loop-checkpoints, evidence-01-not-chatbot-reviewed-static-site, evidence-01-no-learning-outcomes-claim, evidence-01-corpus-snapshot-and-live-url (URL re-verified live via WebFetch), evidence-01-choi-schwarcz-current-conversation (URL re-verified live via WebFetch), and evidence-01-recurring-sentence-present. Section 01 evidence_status flipped none -> populated. This deliberately followed PI-074's documented plan and the literal RUNBOOK 3a trigger over the run-70 Verify note's 'skip 01, harvest 10' prediction (see L-051). PI-074 remains OPEN pending the second condition: a future Outline tick must still produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. Closes when outline-01 exists or a Verify tick confirms the Introduction's grounding is complete without it."
+   "id": "PI-074",
+   "note": "Sequencing artifact, not an evidence gap in the drafted prose. The next Harvest tick that scaffold-first routes to Section 01 (after 01's evidence_status remains none) should build section-01-specific evidence cards (evidence-01-*) for the hidden-archive framing and the current-conversation anchor, and a later Outline tick should produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. The Cite tick that scaffold-first will route to Section 01 next can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source (Choi & Schwarcz 73 J. Legal Educ. 384 (2025), URL-liveness shared with Section XI per L-034 cross-section reuse). PI-074 closes when Harvest has written section-01 evidence cards and Outline has produced outline-01, or when a later Verify tick confirms the Introduction's grounding is complete without them. [PROGRESS 2026-05-24 run 71]: Harvest half SATISFIED. The scaffold-first Harvest tick routed to Section 01 (lowest-numbered evidence_status:none among 01/10/12/13/14) and wrote eight section-01 evidence cards: evidence-01-hidden-archive-flat-lms, evidence-01-thesis-method-not-automation, evidence-01-professor-in-the-loop-checkpoints, evidence-01-not-chatbot-reviewed-static-site, evidence-01-no-learning-outcomes-claim, evidence-01-corpus-snapshot-and-live-url (URL re-verified live via WebFetch), evidence-01-choi-schwarcz-current-conversation (URL re-verified live via WebFetch), and evidence-01-recurring-sentence-present. Section 01 evidence_status flipped none -> populated. This deliberately followed PI-074's documented plan and the literal RUNBOOK 3a trigger over the run-70 Verify note's 'skip 01, harvest 10' prediction (see L-051). PI-074 remains OPEN pending the second condition: a future Outline tick must still produce manuscript/outlines/outline-01-introduction.md to formalize the spine the draft already realizes. Closes when outline-01 exists or a Verify tick confirms the Introduction's grounding is complete without it.",
+   "opened_at": "2026-05-23T09:00:00Z",
+   "phase": "draft",
+   "section": "01",
+   "status": "open",
+   "type": "scaffold-first-sequence-gap"
   },
   {
    "claim": "Section I.C states the 198-page count as a present fact ('became a live knowledge system of 198 pages'), but Sections II.B and IV.E establish 198 as a fixed progress-report snapshot against a 281-page May 15, 2026 filesystem audit.",
@@ -668,24 +668,24 @@
    "type": "citation-density"
   },
   {
-   "id": "PI-082",
-   "type": "evidence-provenance-gap",
-   "section": "01",
-   "phase": "harvest",
-   "status": "open",
-   "opened_at": "2026-05-24T01:00:00Z",
    "claim": "Section I.C's corpus-count breakdown (198 pages: 92 case briefs, 27 doctrinal topic pages, 79 lecture summaries) rests on the progress report (email-to-chandler-progress.md, App. D), which is not present in the pushed repo; WebFetch of the live site this run (2026-05-23) confirmed liveness, the 'Constitutional Law I Wiki' heading, Professor Chandler / Spring 2026, and the Dashboard/Cases/Topics/Lectures/Recent/About navigation, but the site does not surface the page-count breakdown. The figures are otherwise transcribed in workplan section 2 (a secondary attribution) and reused by evidence-08 for Section VIII.",
-   "note": "Opened during the back-fill of Section 01 evidence cards (evidence-01-corpus-snapshot-and-live-url). The 92/27/79 split needs a primary anchor that survives in the repo: either an archive.org capture of the deployed site at the snapshot date, or the App. D correspondence excerpt the footnote [^5] already promises. Cite/Verify owner: whichever tick can either count the live site's Cases/Topics/Lectures indexes directly or attach the App. D excerpt should do so and flip this to resolved. Shared anchor with Section IV and Section VIII (same snapshot), so a single resolution discharges all three."
+   "id": "PI-082",
+   "note": "Opened during the back-fill of Section 01 evidence cards (evidence-01-corpus-snapshot-and-live-url). The 92/27/79 split needs a primary anchor that survives in the repo: either an archive.org capture of the deployed site at the snapshot date, or the App. D correspondence excerpt the footnote [^5] already promises. Cite/Verify owner: whichever tick can either count the live site's Cases/Topics/Lectures indexes directly or attach the App. D excerpt should do so and flip this to resolved. Shared anchor with Section IV and Section VIII (same snapshot), so a single resolution discharges all three.",
+   "opened_at": "2026-05-24T01:00:00Z",
+   "phase": "harvest",
+   "section": "01",
+   "status": "open",
+   "type": "evidence-provenance-gap"
   },
   {
-   "id": "PI-083",
-   "section": "10",
-   "phase": "draft",
-   "type": "scaffold-first-sequence-gap",
-   "status": "open",
-   "opened_at": "2026-05-24T05:00:00Z",
    "claim": "Section 10 (Generalization Beyond Constitutional Law) was drafted under the RUNBOOK step-3a scaffold-first priority, which forced the Draft phase onto the lowest-numbered evidence_status:none scaffold section (10, after 01 flipped to populated at run 71) ahead of any Harvest or Outline pass on Section 10. No section-10-specific evidence cards and no outline-10 file exist. The draft is grounded honestly: framing and thesis are the article's own argument (Article-Workplan.md s1, s10, Phase B line 86; PROJECT_PRIMER thesis and section map), and every concrete factual claim carries a [CITE:] placeholder pointing to an EXISTING verified sibling evidence card (evidence-01-thesis-method-not-automation, evidence-04-course-scope, evidence-05-vault-folder-structure, evidence-05-case-brief-nine-section-standard, evidence-05-frontmatter-schemas, evidence-05-doctrine-family-enum, evidence-05-topic-synthesis-form, evidence-07-six-phase-rotation, evidence-07-professorial-control-mechanism, evidence-03-midpage-verified-quotations, evidence-12-static-vs-chatbot-risk-architecture, evidence-11-not-a-claim-students-learned-more) or a verifiable external source (Usman, Making Legal Education Stick, Legal Writing Inst. 2018, the workplan s7 Section X cognitive-science citation; plus a forward reference to Section XI). No fabricated fact, quotation, statistic, case holding, or citation was introduced.",
-   "note": "Sequencing artifact, not an evidence gap in the drafted prose; mirrors PI-074 for Section 01. The next Harvest tick that scaffold-first routes to Section 10 (Section 10 remains evidence_status:none until a Harvest back-fill advances it, per L-051's literal-trigger rule) should build section-10-specific evidence cards (evidence-10-*) for the generalization argument: the method-not-artifact thesis, the structure-transfers-but-values-are-particular claim, the loop-and-discipline transfer, the professorial-control-as-gating-actor claim, the limits of the claim (the case-and-doctrine assumption; Civil Procedure and Tax as harder fits whose load-bearing unit is a rule or code section rather than a leading case), the Usman cognitive-science ground (rule/exception/application structure mapping onto note types), and the no-learning-outcomes-transfer disclaimer. A later Outline tick should produce manuscript/outlines/outline-10-generalization.md to formalize the spine the draft already realizes. The next Cite tick that scaffold-first routes to Section 10 can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source, with the Usman URL-liveness check owned by that Cite tick per L-019/L-022, and the L-024 transfer-of-inference discipline already satisfied in body prose (the abstract structural insight generalizes; the constitutional-law value set and any learning-outcome gain do not). The L-003 static-not-chatbot framing is held in C and the L-040 live-pedagogy slip is avoided in C by naming the professor as the gating actor rather than reducing professorial control to an artifact. PI-083 closes when Harvest has written section-10 evidence cards and Outline has produced outline-10, or when a later Verify tick confirms the section's grounding is complete without them. [PROGRESS 2026-05-24 run 74]: Cite half SATISFIED. The scaffold-first Cite tick routed to Section 10 (lowest-numbered evidence_status:none among 10/13/14; 12 has evidence populated but cite_status was none, and 10 is lower) and resolved all fourteen [CITE:] placeholders into Bluebook 21st footnotes: eleven render as *See supra* / *See infra* cross-references to the owning sections (I, IV, V x5, VII x2, III, XII, XI) per L-034 cross-section reuse, keeping vault paths out of published prose and routing the underlying primary sources through the sections that own them; one is the external Usman cognitive-science citation (Legal Writing Inst. 2018), whose URL was re-verified live this run via WebFetch (returned the published 2.68MB PDF); and two are *See infra* Section XI forward references for the no-learning-outcomes disclaimer and the evaluation hand-off. No fabricated citation introduced; the L-024 transfer-of-inference discipline is satisfied in existing body prose (the abstract rule-exception-application structure transfers; whether it maps onto a procedure course is hedged as open). Section 10 cite_status flipped none -> needs_polish, lifting the article one section closer to the scaffold-first lift condition (sections 12, 13, 14 still at cite_status none). PI-083 remains OPEN pending the Harvest (evidence-10-* cards) and Outline (outline-10) halves; closes when those land or a Verify tick confirms grounding is complete without them."
+   "id": "PI-083",
+   "note": "Sequencing artifact, not an evidence gap in the drafted prose; mirrors PI-074 for Section 01. The next Harvest tick that scaffold-first routes to Section 10 (Section 10 remains evidence_status:none until a Harvest back-fill advances it, per L-051's literal-trigger rule) should build section-10-specific evidence cards (evidence-10-*) for the generalization argument: the method-not-artifact thesis, the structure-transfers-but-values-are-particular claim, the loop-and-discipline transfer, the professorial-control-as-gating-actor claim, the limits of the claim (the case-and-doctrine assumption; Civil Procedure and Tax as harder fits whose load-bearing unit is a rule or code section rather than a leading case), the Usman cognitive-science ground (rule/exception/application structure mapping onto note types), and the no-learning-outcomes-transfer disclaimer. A later Outline tick should produce manuscript/outlines/outline-10-generalization.md to formalize the spine the draft already realizes. The next Cite tick that scaffold-first routes to Section 10 can proceed now: every [CITE:] placeholder resolves to an existing evidence card or a verifiable external source, with the Usman URL-liveness check owned by that Cite tick per L-019/L-022, and the L-024 transfer-of-inference discipline already satisfied in body prose (the abstract structural insight generalizes; the constitutional-law value set and any learning-outcome gain do not). The L-003 static-not-chatbot framing is held in C and the L-040 live-pedagogy slip is avoided in C by naming the professor as the gating actor rather than reducing professorial control to an artifact. PI-083 closes when Harvest has written section-10 evidence cards and Outline has produced outline-10, or when a later Verify tick confirms the section's grounding is complete without them. [PROGRESS 2026-05-24 run 74]: Cite half SATISFIED. The scaffold-first Cite tick routed to Section 10 (lowest-numbered evidence_status:none among 10/13/14; 12 has evidence populated but cite_status was none, and 10 is lower) and resolved all fourteen [CITE:] placeholders into Bluebook 21st footnotes: eleven render as *See supra* / *See infra* cross-references to the owning sections (I, IV, V x5, VII x2, III, XII, XI) per L-034 cross-section reuse, keeping vault paths out of published prose and routing the underlying primary sources through the sections that own them; one is the external Usman cognitive-science citation (Legal Writing Inst. 2018), whose URL was re-verified live this run via WebFetch (returned the published 2.68MB PDF); and two are *See infra* Section XI forward references for the no-learning-outcomes disclaimer and the evaluation hand-off. No fabricated citation introduced; the L-024 transfer-of-inference discipline is satisfied in existing body prose (the abstract rule-exception-application structure transfers; whether it maps onto a procedure course is hedged as open). Section 10 cite_status flipped none -> needs_polish, lifting the article one section closer to the scaffold-first lift condition (sections 12, 13, 14 still at cite_status none). PI-083 remains OPEN pending the Harvest (evidence-10-* cards) and Outline (outline-10) halves; closes when those land or a Verify tick confirms grounding is complete without them.",
+   "opened_at": "2026-05-24T05:00:00Z",
+   "phase": "draft",
+   "section": "10",
+   "status": "open",
+   "type": "scaffold-first-sequence-gap"
   },
   {
    "claim": "Two concurrent cite ticks raced on run 74; both selected Section 10 (Generalization) under scaffold-first and produced equivalent fourteen-footnote Bluebook output. This local tick's commit lost the push and the rebase produced content conflicts on all five tick files.",
@@ -746,9 +746,19 @@
    "section": "10",
    "status": "open",
    "type": "verification-tooling-gap"
+  },
+  {
+   "claim": "Section X.D's claim that doctrinal courses 'share a learnable structure of rule, exception, and application that maps onto a small set of note types' rests on a single external citation (Usman 2018, footnote [^12]), but Usman supports only the 'learnable rule/exception/application structure' half; the bridge to 'maps onto a small set of note types' is the article's own design inference with no source. The workplan bibliography's 'maps cleanly onto note types in a vault' phrasing (line 219) is the workplan's editorial gloss on how to USE the source, not a finding attributable to Usman.",
+   "id": "PI-090",
+   "note": "Opened by the Section 10 Harvest tick (run 78) while building evidence-10-usman-cognitive-structure.md. Distinct from PI-088 (the broad absence of cross-disciplinary method-transfer / replicability literature behind X.A-X.B): this is a narrower citation-reach gap on the one external cite Section X already has. Resolution options for a future Cite or Polish tick on Section 10: (a) reframe X.D's clause so the note-type mapping reads as the author's structural inference rather than a cited finding (e.g. 'a structure that, this article argues, maps onto a small set of note types'); or (b) add a second citation that actually supports the cognition-to-note-type-schema bridge (a cognitive-science-of-categorization or worked-example-schema source). Option (a) is the cleaner allocation because the mapping is the article's own design argument and over-citing it to Usman risks the framing-discipline failure L-003 names. URL liveness for [^12] is independently confirmed this run (WebFetch returned the published 2.6 MB PDF) and is not part of this gap.",
+   "opened_at": "2026-05-24T15:00:00Z",
+   "phase": "harvest",
+   "section": "10",
+   "status": "open",
+   "type": "citation-reach-gap"
   }
  ],
- "phase_index": 0,
+ "phase_index": 1,
  "phases": [
   "harvest",
   "outline",
@@ -758,14 +768,16 @@
   "stitch",
   "verify"
  ],
- "run_count": 77,
+ "run_count": 78,
  "schema_version": 1,
  "sections": {
   "01": {
    "cite_completed_at": "2026-05-23T13:00:00Z",
    "cite_status": "needs_polish",
    "current_words": 842,
+   "draft_at": "2026-05-23T09:00:00Z",
    "draft_status": "needs_polish",
+   "evidence_completed_at": "2026-05-24T01:00:00Z",
    "evidence_status": "populated",
    "footnotes_count": 8,
    "outline_status": "none",
@@ -773,9 +785,7 @@
    "polish_status": "stitched",
    "stitched_at": "2026-05-23T21:00:00Z",
    "target_words": 900,
-   "title": "Introduction: The Hidden Archive of the Law Professor",
-   "draft_at": "2026-05-23T09:00:00Z",
-   "evidence_completed_at": "2026-05-24T01:00:00Z"
+   "title": "Introduction: The Hidden Archive of the Law Professor"
   },
   "02": {
    "cite_completed_at": "2026-05-22T05:00:00Z",
@@ -946,13 +956,15 @@
    "cite_completed_at": "2026-05-24T07:00:00Z",
    "cite_status": "needs_polish",
    "current_words": 908,
-   "draft_status": "needs_polish",
    "draft_at": "2026-05-24T05:00:00Z",
-   "evidence_status": "none",
+   "draft_status": "needs_polish",
+   "evidence_cards": 7,
+   "evidence_populated_at": "2026-05-24T15:00:00Z",
+   "evidence_status": "populated",
    "footnotes_count": 14,
    "outline_status": "none",
-   "polish_status": "stitched",
    "polish_completed_at": "2026-05-24T09:00:00Z",
+   "polish_status": "stitched",
    "stitched_at": "2026-05-24T11:00:00Z",
    "target_words": 900,
    "title": "Generalization Beyond Constitutional Law"
@@ -1011,13 +1023,13 @@
  "target_words_max": 12000,
  "target_words_min": 10000,
  "verify": {
+  "deferred_p1_count": 11,
   "forced_findings_satisfied": true,
   "last_run_at": "2026-05-24T13:00:00Z",
   "new_findings_count": 6,
   "p0_open": 0,
   "p1_open": 57,
   "p2_open": 34,
-  "personas_read": 3,
-  "deferred_p1_count": 11
+  "personas_read": 3
  }
 }

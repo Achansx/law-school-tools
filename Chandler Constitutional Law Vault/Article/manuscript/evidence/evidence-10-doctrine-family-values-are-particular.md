@@ -1,0 +1,11 @@
+---
+section: "10"
+fact_type: example
+source_path: "Chandler Constitutional Law Vault/Article/manuscript/evidence/evidence-05-doctrine-family-enum.md"
+verified: true
+notes: "Grounds X.B's clean form-versus-values distinction: the typed schema is course-agnostic in form, but the doctrine_family enum is filled with constitutional-law-particular values. The verified fact (evidence-05-doctrine-family-enum, source-verified against Templates/Case Brief.md line 65 and the RUNBOOK realignment policy) is that doctrine_family carries exactly one of four values, Federalism, Separation of Powers, Individual Rights, or Justiciability, and that the build script reads the field to render the four-family grid. The card supports the claim that another course (X.B names a torts vault: negligence, intentional torts, strict liability) would swap the enum VALUES while keeping the typed-field FORM. This is the strongest concrete instance of 'structure transfers, content does not' and is well-anchored, unlike the broader recurrence claim PI-085 flags."
+---
+
+Section X.B's sharpest example of structure transferring while content does not is the doctrine_family field. The Case Brief template's doctrine_family field carries exactly one of four values, Federalism, Separation of Powers, Individual Rights, or Justiciability, and the build script reads that typed field directly to drive the four-family color grid on the deployed index and the holding-bar accent on each case page (see evidence-05-doctrine-family-enum, source-verified against the Case Brief template population guide and the RUNBOOK enum-realignment policy). The field is structural and course-agnostic in form; the four values are particular to constitutional law. A torts vault would keep the typed enum and replace the values with negligence, intentional torts, and strict liability. The single typed field that promotes to a visible color column is the smallest unit of the schema doing navigation work flat prose could not, and it is exactly the unit whose form generalizes and whose values do not.
+
+Cross-reference: `evidence-05-doctrine-family-enum.md` (verified against `Templates/Case Brief.md` line 65 and the `RUNBOOK.md` enum-realignment policy) for the locked four-value enum and its build-time role.
