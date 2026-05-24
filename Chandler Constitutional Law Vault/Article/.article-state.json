@@ -18,15 +18,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-27T01:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-27T03:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -856,9 +856,19 @@
       "section": "11",
       "status": "open",
       "type": "equity-and-accessibility-gap"
+    },
+    {
+      "claim": "Section XII enumerates its open decisions as “the first open decision” (copyrighted casebook material) and “the second open decision” (student work as input), and originally as “a fourth open decision” for the fixed-evidence-versus-continuing-experiment snapshot gap, while framing curriculum grounding as “a related implication” rather than a numbered decision; the ordinal sequence therefore had no in-prose third antecedent. Workplan §6 names six open decisions (per PI-073 casebook is the first of six), so the article's ordinals may have been tracking the workplan's own numbering, which a JLE reader cannot see.",
+      "id": "PI-106",
+      "note": "Logged by the run-103 Polish tick during the criterion-5 (section coherence) pass. The reader-facing fix is already in place: the tick neutralized “a fourth open decision” to “a further open decision,” so no dangling ordinal remains in prose. The deeper reconciliation is whether Section XII should (a) drop the ordinals entirely and rely on subsection structure, or (b) preserve the Workplan §6 numbering and then explicitly enumerate every referenced decision in-prose so the count is legible to a reader who cannot see the workplan. Distinct from PI-073 (the substantive casebook backward audit) and PI-101 (Magesh pagination confirmation). P1-deferral ACTIVE (Sections 03/06/07/08 still at cite_status:needs_cite), so logged without resetting Section 12 status. A future Verify or Stitch tick, or human review against Article-Workplan.md §6, should pick the (a)/(b) resolution.",
+      "opened_at": "2026-05-27T03:00:00Z",
+      "phase": "polish",
+      "section": "12",
+      "status": "open",
+      "type": "open-decision-numbering-consistency"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -868,7 +878,7 @@
     "stitch",
     "verify"
   ],
-  "run_count": 102,
+  "run_count": 103,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -890,8 +900,8 @@
     },
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
-      "cite_redone_at": "2026-05-27T01:00:00Z",
       "cite_note": "Cite tick resolved PI-072 (Section II AI-in-higher-education literature-engagement gap). Added footnote [^9] citing Bond et al. 2024 meta-review (21 Int'l J. Educ. Tech. Higher Educ. art. 4), URL https://link.springer.com/article/10.1186/s41239-023-00436-z verified live via WebSearch per L-022 (verbatim title-and-URL match), with an L-024 transfer clause in II.E body prose naming what carries over (the meta-review's evidentiary standard, which the article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII) and what does not (the chatbot-tutor and adaptive-system intervention setting it surveys, versus the reviewed static publication of the case study). Kuhail et al. 2023 (named in prior Verify routing notes and in PI-072) is NOT in the workplan annotated bibliography; it was deliberately not added to avoid an unverified/fabricated citation, and Bond et al. alone closes the field-engagement gap. The five remaining Section 02 P1s (PI-067 II.B numeric colon-list, PI-068 II.E self-flagging meta-rhetoric, PI-069 II.D casebook-as-sequence overclaim, PI-070 II.E-to-III.A seam, PI-071 II accessibility silence) are Polish-level and remain for the next Polish tick. Body grew to 840 words (target 700, +20%); flagged for Stitch trim.",
+      "cite_redone_at": "2026-05-27T01:00:00Z",
       "cite_status": "needs_polish",
       "current_words": 840,
       "draft_completed_at": "2026-05-22T03:00:00Z",
@@ -1065,13 +1075,13 @@
       "evidence_populated_at": "2026-05-24T15:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 14,
+      "outline_at": "2026-05-26T21:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-24T09:00:00Z",
       "polish_status": "stitched",
       "stitched_at": "2026-05-24T11:00:00Z",
       "target_words": 900,
-      "title": "Generalization Beyond Constitutional Law",
-      "outline_at": "2026-05-26T21:00:00Z"
+      "title": "Generalization Beyond Constitutional Law"
     },
     "11": {
       "cite_completed_at": "2026-05-22T19:00:00Z",
@@ -1093,7 +1103,7 @@
     "12": {
       "cite_at": "2026-05-26T11:00:00Z",
       "cite_status": "needs_polish",
-      "current_words": 871,
+      "current_words": 870,
       "draft_at": "2026-05-26T09:00:00Z",
       "draft_status": "needs_cite",
       "evidence_cards": 11,
@@ -1101,7 +1111,8 @@
       "evidence_status": "populated",
       "outline_ready_at": "2026-05-23T05:00:00Z",
       "outline_status": "ready_for_draft",
-      "polish_status": "none",
+      "polish_at": "2026-05-27T03:00:00Z",
+      "polish_status": "ready_for_stitch",
       "target_words": 800,
       "title": "Risks and Limits"
     },
