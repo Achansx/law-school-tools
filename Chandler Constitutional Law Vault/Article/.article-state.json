@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "verify",
-  "last_run_at": "2026-05-29T07:00:00Z",
+  "last_run_at": "2026-05-29T09:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1083,6 +1083,56 @@
       "section": "03",
       "status": "open",
       "type": "pin-cite"
+    },
+    {
+      "claim": "Section IV.B paragraph 2 ('Modernized PDFs are among the most pedagogically useful inputs the export contained, and among the most epistemically dangerous to ingest without verification against an indexed opinion') asserts twin superlatives ('most pedagogically useful', 'most epistemically dangerous') as established fact with no comparative basis, ranking, or data; the article presents no evaluation of input usefulness and no measured error rate for unverified modernized PDFs.",
+      "id": "PI-128",
+      "note": "Persona 1 (Skeptical JLE Editor) P1, run 130, surfaced during the Section 04 provenance-audit Verify tick. Distinct from the existing IV.B P2s (the 65-word doctrinal-scope enumeration; the [^5] directional-particle divergence). Deferral LIFTED; Polish-owned, routes Section 04 polish_status (already needs_polish). Next Polish tick drops the superlatives and states the claim descriptively (e.g. 'Modernized PDFs ease archaic phrasing for student readers, and they are the input type most in need of verification against an indexed opinion before ingestion'), keeping the Section VII forward-reference. Contributed to the gap-honesty reasoning for the Section 04 audit.",
+      "opened_at": "2026-05-29T09:00:00Z",
+      "phase": "verify",
+      "section": "04",
+      "status": "open",
+      "type": "unsupported-evaluative-claim"
+    },
+    {
+      "claim": "Section IV.B paragraph 3 final sentence ('They are what later allow the vault to generate hypotheticals and exam-tip blocks within its Topic pages') frames prior exam artifacts as the seed from which the vault 'generate[s] hypotheticals', treating the hypothetical as static generated content and eliding that the in-class hypothetical is a live, dialogic Socratic instrument whose pedagogical work happens in the exchange, not in a block on a page.",
+      "id": "PI-129",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1, run 130. Same live-classroom-substitution family as PI-031 (III.C 'recover the professor's framing without a recording') and PI-099 (XIV silent on the live classroom), now extended to IV.B. Deferral LIFTED; Polish-owned, routes Section 04 polish_status (already needs_polish). Next Polish tick positions the generated block as a study scaffold derived from past exam artifacts rather than a substitute for the live hypothetical (e.g. 'a static study scaffold that complements rather than replaces the in-class hypothetical').",
+      "opened_at": "2026-05-29T09:00:00Z",
+      "phase": "verify",
+      "section": "04",
+      "status": "open",
+      "type": "live-classroom-substitution"
+    },
+    {
+      "claim": "Section IV footnote [^5] ('The transfer-of-inference framing is the architectural insight that structure-aware retrieval beats flat semantic similarity') uses the verb 'beats' to assert a measured comparative-performance result, but cites no benchmark, effect size, or retrieval-quality metric, conflating an architectural design rationale with demonstrated superiority.",
+      "id": "PI-130",
+      "note": "Persona 3 (AI-in-Education Researcher) P1, run 130. Recurrence of PI-013's concern (Section V.D [^29] Dong et al. KG-RAG over-loaded as the architectural anchor) at the IV [^5] altitude; distinct location and distinct defect (the unmeasured comparative verb, not the chatbot-vs-static mismatch). Deferral LIFTED; Cite-owned (the transfer-of-inference clause is Cite-owned per L-024), routes Section 04 cite_status -> needs_cite. Next Cite tick replaces 'beats' with the cited source's actual reported result and a pin cite, or softens to design-rationale language ('is designed to outperform flat semantic similarity for structured corpora'); per L-053 do not add sources outside the workplan.",
+      "opened_at": "2026-05-29T09:00:00Z",
+      "phase": "verify",
+      "section": "04",
+      "status": "open",
+      "type": "unmeasured-comparison"
+    },
+    {
+      "claim": "Section IV.A paragraph 1 third sentence and footnote [^3] state 'three hundred eighty-eight files, one hundred twenty-seven of them at the top level, with sixty-one PowerPoint lecture decks, sixty-six PDFs of case readings and slide handouts, and three DOCX files among the top-level set'; the named top-level components sum to one hundred thirty (61+66+3), which exceeds the stated one hundred twenty-seven top-level files, so the three counts cannot all sit 'among' a 127-file set. evidence-04-top-level-counts.md records .pptx 61, .pdf 66, .docx 3 plus a .txt and a .potx, none of which reconciles to 127.",
+      "id": "PI-131",
+      "note": "Persona 4 (Provenance Auditor) P1, run 130, surfaced during the Section 04 provenance audit (provenance_score 3.6, numerical-precision criterion 2). Canonical numerical-precision class, cf. PI-126's 'fifteen = four + seven + three' sum at III.C. The 388 total and the individual type counts are individually sourced, but the 127 top-level figure conflicts with its own component breakdown; tracked as the section's one unsupported_claim (reason evidence-gap). Deferral LIFTED; Cite-owned (number fix), routes Section 04 cite_status -> needs_cite. Next Cite tick re-derives the top-level count from a fresh directory listing against the checkout and reconciles it to the type breakdown (either correct the 127 figure or recast the sentence so the type counts are not a subset of a smaller number), updating [^3] and App. A.",
+      "opened_at": "2026-05-29T09:00:00Z",
+      "phase": "verify",
+      "section": "04",
+      "status": "open",
+      "type": "numerical-inconsistency"
+    },
+    {
+      "claim": "Section IV cites the input inventory as 'App. A (Input Corpus Inventory)' (footnotes [^1], [^2], [^3], [^6]-[^9], [^11]-[^13], [^16]-[^18]) while Sections VIII [^1] and IX [^2] cite the same appendix as 'App. A (Vault Architecture and File Layout)'; the appendix is actually titled 'Input Inventory' (frontmatter title 'Input Inventory', H1 'Appendix A: Input Inventory'). Neither parenthetical matches the real title, and the two title strings disagree with each other.",
+      "id": "PI-132",
+      "note": "Persona 4 (Provenance Auditor) P1, run 130. Distinct from PI-122 (the App. D pointer to a nonexistent 'Correspondence Excerpts' appendix): this is the App. A appendix that exists but is mis-named article-wide (three names for one file). Deferral LIFTED; Cite-owned, routes Section 04 cite_status -> needs_cite. Next Cite tick on Sections 04/08/09 normalizes every App. A parenthetical to the real title 'Input Inventory' (or renames the appendix once and re-points all footnotes). Lesson candidate (deferred at the LESSONS cap): every 'App. X (Title)' cross-reference must match the assembled appendix's actual frontmatter title, not a remembered or paraphrased one; extends the PI-122 appendix-resolution lesson candidate from existence to title.",
+      "opened_at": "2026-05-29T09:00:00Z",
+      "phase": "verify",
+      "section": "04",
+      "status": "open",
+      "type": "false-cross-reference"
     }
   ],
   "phase_index": 0,
@@ -1096,12 +1146,12 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 2,
+    "global_unsupported_open": 3,
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "sections_audited": 3,
+    "sections_audited": 4,
     "sections_total": 14
   },
-  "run_count": 129,
+  "run_count": 130,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1195,9 +1245,9 @@
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
       "cite_redone_at": "2026-05-17T11:00:00Z",
-      "cite_status": "needs_polish",
-      "claims_mapped": 0,
-      "claims_total": 0,
+      "cite_status": "needs_cite",
+      "claims_mapped": 18,
+      "claims_total": 19,
       "current_words": 971,
       "draft_completed_at": "2026-05-16T03:13:24Z",
       "draft_status": "needs_polish",
@@ -1210,14 +1260,22 @@
       "polish_completed_at": "2026-05-16T09:30:00Z",
       "polish_redone_at": "2026-05-22T07:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": null,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T09:00:00Z",
+      "provenance_score": 3.6,
       "re_stitched_at": "2026-05-22T09:00:00Z",
       "stitched_at": "2026-05-16T11:20:00Z",
       "target_words": 900,
       "title": "The Input Corpus",
-      "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-05-22T11:00:00Z",
+      "unsupported_claims": [
+        {
+          "claim_text": "IV.A states one hundred twenty-seven top-level files comprising sixty-one PowerPoint decks, sixty-six PDFs, and three DOCX files; the named components sum to one hundred thirty, exceeding the stated one hundred twenty-seven and not reconciling to evidence-04-top-level-counts.md's type counts.",
+          "paragraph": 1,
+          "reason": "evidence-gap"
+        }
+      ],
+      "unsupported_claims_count": 1,
+      "verify_routed_at": "2026-05-29T09:00:00Z",
       "verify_routing_reason": "Eighth-rotation Verify tick on the re-polished Section 04 second-pass prose (971 words; the 2026-05-22T07:00 Polish tick closed PI-006 through PI-010 and added the PI-053 Route A IV.E forward-reference to Section IX's master cost table). Six new P1s opened against Section 04, routing polish_status from stitched back to needs_polish: Persona 1 PI-059 (IV.E third sentence 'lives at the master cost table in Section IX' asserts present existence of an artifact deferred under PI-049 / PI-050 / PI-051, mirroring the PI-057 cost-table-as-promise pattern now at the upstream forward-reference site; the trailing 'once it lands' clause modifies the closing action not the table's existence) routes to next Polish tick on Section 04 (rewrite IV.E third sentence so the master-table reference is forward-pointed rather than present-asserted). Persona 1 PI-060 (IV.E fifth sentence 'is the kind of self-consistency the thesis requires' self-flagging meta-rhetoric, fourth recurrence of the PI-022 / PI-028 / PI-036 pattern L-036 named at three prior sites; the Polish 2026-05-22T07:00 tick ran with L-036 in scope per the Polish narrative's explicit lesson-application list and the construction still landed in published prose, meaning the L-036 sweep is not catching the category at Polish time across multiple ticks) routes to next Polish tick on Section 04 plus a candidate L-036 refinement expanding the sweep target from 'section openings and closes' to 'section openings, closes, and any sentence that frames its own structural significance rather than executing it.' Persona 2 PI-061 (IV.A erases the professorial-curation moment between assigned casebook and course-issued PDFs; the PI-007 Polish fix closed the casebook-silence surface gap but the corpus description still names nothing about who selected which materials to upload, who decided which opinions to merge into reading packets, who chose to issue modernized PDFs for some cases but not others; sixth recurrence of the PI-015 / PI-031 / PI-039 / PI-046 / PI-054 actor-erasure pattern now extending the actor-erasure line to the article's most upstream section) routes to next Polish tick on Section 04 (add one sentence to IV.A naming the curation-choice actor and the curation moment, preserving the corpus description while making the upstream curation actor visible). Persona 2 PI-062 (IV.E-to-V.A seam reads as procedural-and-architectural pair without substantive bridge; IV.E closes on snapshot-date awaiting professorial review and V.A opens on three-folder declaration, with no substantive bridge across the seam) routes Section 04 polish_status (already flipped this run) under the lighter-touch IV.E close option (add one new closing sentence such as 'The structured note layer Section V describes is what translates that snapshot into a navigable form, and the next section takes up the schema that does the translating'), or Section 05 polish_status (already needs_polish from prior Verify rotation) under the V.A transition-first option; the V.A version is preferred because Section 05's Polish queue already carries six open P1s and a seam-bridge insertion folds into the existing routing. Persona 3 PI-063 (IV.A casebook-acknowledgment-without-engagement hedge defers the curriculum-grounding architectural-consequence question; the PI-007 Polish fix added the hedge clause but does not engage with what the open question means for the curriculum-grounding transfer-of-inference claim Section IV.A footnote [^23] and Section XII develop) routes to next Polish tick on Section 04 (add one sentence to IV.A naming the architectural consequence of the casebook gap with a Section XII forward-reference) and grounds the new lesson L-044 on the hedge-acknowledgment-without-engagement pattern. Persona 3 PI-064 (Section IV silent on equity, accessibility, device assumptions, and the digital divide; the corpus is described as course-issued materials uploaded to Canvas, but nothing in IV names that Canvas access presupposes broadband, a device capable of rendering modernized PDFs at 300 dpi, and the institutional enrollment that gates the LMS itself; third recurrence of the PI-026 / PI-033 pattern across the article's three flagship walkthrough sections) routes to next Polish tick on Section 04 (add one sentence to IV.A or to the IV.E disclosure paragraph acknowledging the access assumptions with a Section XII forward-reference). Section 04's two prior P2 findings (the IV.A 65-word doctrinal-scope enumeration already honestly Polish-scored at 4; the IV [^5] directional-particle source-file divergence Stitch-flagged candidate) plus the IV.C 'presumably read' informal-hedge P2 are logged without routing per rubric, available to the next Polish tick on Section 04 as mechanical cleanups when convenient. New lesson L-044 added on the Polish closure of hedge-naming P1s requiring an architectural-implication sentence not only a hedge clause, distinct from L-024 (Cite-time transfer-of-inference clause) and from L-040 (live-pedagogy-versus-static-artifact slip check) because L-044 names a silent-omission pattern at the architectural-implication level rather than a slip-into-substitution pattern at the prose-verb level."
     },
     "05": {
@@ -1471,10 +1529,10 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-29T07:00:00Z",
+    "last_run_at": "2026-05-29T09:00:00Z",
     "new_findings_count": 5,
     "p0_open": 0,
-    "p1_open": 82,
+    "p1_open": 87,
     "p2_open": 41,
     "personas_read": 4
   }

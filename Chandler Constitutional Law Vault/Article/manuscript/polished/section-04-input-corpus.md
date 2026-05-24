@@ -1,13 +1,21 @@
 ---
 id: "04"
 title: "The Input Corpus"
-status: ready_for_stitch
+status: needs_polish
 target_words: 900
 word_count: 944
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
+provenance_audited: true
+provenance_score: 3.6
+claims_total: 19
+claims_mapped: 18
+unsupported_claims:
+  - claim_text: "IV.A states one hundred twenty-seven top-level files comprising sixty-one PowerPoint decks, sixty-six PDFs, and three DOCX files; the named components sum to one hundred thirty, which exceeds the stated one hundred twenty-seven and does not reconcile to evidence-04-top-level-counts.md's type counts."
+    paragraph: 1
+    reason: "evidence-gap"
 ---
 
 # IV. The Input Corpus
