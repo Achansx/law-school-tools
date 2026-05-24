@@ -1,8 +1,8 @@
 ---
 id: appendix-E
 title: "Cost and Time Log"
-status: needs_work
-words: 624
+status: drafted
+words: 773
 target_min: 400
 target_max: 800
 last_phase: harvest-appendix
@@ -55,15 +55,32 @@ The word figure exceeds the manuscript’s 10,000-to-12,000-word target because 
 
 ## E.3 Vault-construction cost (the case study)
 
-The case-study figures come from `email-to-chandler-progress.md` as restated in `Article-Workplan.md`; that file is not present in this repository snapshot, so the numbers below are reproduced from the workplan rather than recomputed.
+The vault was built by a separate scheduled task whose own machine-generated logs are the cost record. There is no token bill and no human-hour ledger; what exists is a count of automated runs and the files they touched. Earlier drafts restated an “about 60% of weekly Claude usage” figure from an email trail. That number was unmetered and is omitted here in favor of counted runs.
 
-| Item | Value | Provenance |
-|------|------|-----------|
-| Claude usage to reach 198 pages | ~60% of weekly usage over the build period | Workplan §3.1 (self-described as a hand-wave estimate, not metered) |
-| Deployed pages | 198 (92 case briefs, 27 topic pages, 79 lecture summaries) | Workplan §1 |
-| Input corpus | 61 PowerPoint decks, 66 reading PDFs (388 files counting all subfolders) | Appendix A |
-| Build phases | Ingest, Enrich, Verify, Deploy | Workplan §3.1 |
-| Human review hours by phase | Not captured in any in-repo log | email trail (absent) |
+| Metric | Value | Source |
+|--------|------:|--------|
+| Build window | 2026-04-16 to 2026-05-11 (~26 days) | `CHANGELOG.md` (Initial Setup to last deploy) |
+| Scored maintenance ticks | 255 | `.run-scores.jsonl` |
+| Average weighted run score | 4.3 (across the 155 ticks carrying a weighted score) | `.run-scores.jsonl` |
+| Ingestion-log records | 469 (1 metadata, 468 operations) | `.ingested-files.jsonl` |
+| Distinct source files processed | 456 | `.ingested-files.jsonl` |
+| Deployed pages (deliverable size, not cost) | 198 | Appendix A |
+
+Ticks by phase (the vault runs an eight-phase rotation, distinct from this paper’s seven-phase loop):
+
+| Phase | Ticks |
+|-------|------:|
+| ingest | 35 |
+| lint | 34 |
+| enrich | 24 |
+| expand | 29 |
+| synthesize | 30 |
+| verify | 34 |
+| consolidate | 10 |
+| deploy | 59 |
+| **Total** | **255** |
+
+The deploy row is the honest outlier. Of 59 deploy ticks, 43 were blocked by a Netlify “Account credit usage exceeded” response and published nothing. The construction cost therefore includes dozens of runs that advanced no deliverable, a real expense the run log records and an email estimate would have hidden.
 
 ## E.4 Hosting and infrastructure
 
@@ -75,13 +92,13 @@ The case-study figures come from `email-to-chandler-progress.md` as restated in 
 
 ## E.5 Honest caveats
 
-What the cost log does not capture:
+What the logs do not capture:
 
-- Token-level API spend. The log records run counts and word counts, not per-tick token counts, so no dollar figure for model usage can be derived from it.
-- The 60% case-study figure is an estimate from the email trail, not a metered measurement, and the workplan flags it as such.
-- Runs 1 through 65 predate the cost-log; only runs 66 through 119 are instrumented.
-- The vault-construction source files (`email-to-chandler-progress.md`, `.run-scores.jsonl`) are absent from this repository snapshot; E.3 reproduces the workplan’s restatement rather than the primary log.
-- Cognitive time spent designing prompts is not loggable by a system that can only record its own runs.
-- Stranded work on early session branches, before the push-to-master fix, is not represented in the contiguous run sequence.
+- Token-level API spend. Neither this paper’s cost-log nor the vault’s run-scores records per-tick token counts, so no dollar figure for model usage can be derived from either.
+- Human review hours. The scheduled tasks log only their own runs; professorial review time is not loggable.
+- Git history is not used as a vault-cost source here. The git log in this repository snapshot is the article-maintenance repository, with commits dated at clone time, not the vault’s construction history, so commit counts would mislead.
+- The 198-page figure is deliverable size from Appendix A, not an effort measurement.
+- Runs 1 through 65 of this paper’s loop predate its cost-log (see E.2); only runs 66 onward are instrumented.
+- Cognitive time spent designing prompts and rubrics is not loggable by a system that can only record its own runs.
 
 Cross-reference: Section IX (Cost and Labor) is the primary consumer of this appendix.
