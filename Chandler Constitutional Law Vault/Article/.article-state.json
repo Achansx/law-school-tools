@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -1408,21 +1408,21 @@
       "polish_completed_at": "2026-05-18T17:00:00Z",
       "polish_status": "needs_polish",
       "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T13:00:00Z",
       "provenance_score": 4.2,
       "stitched_at": "2026-05-18T19:00:00Z",
       "target_words": 800,
       "title": "Prompting as Pedagogical Design",
-      "unsupported_claims_count": 1,
-      "verify_routed_at": "2026-05-29T13:00:00Z",
-      "verify_routing_reason": "Run-132 sixth Verify tick of the provenance-audit burst audited Section 06 (lowest-numbered polished section with provenance_audited: false; sections_audited was 5). All four personas read independently and each returned one new P1, all on Section 06 and all checked against the open Section 06 PIs (PI-035 through PI-040) to avoid duplication. PI-137 (Persona 1: VI.C recites rubric criterion names, the exam_readiness 0.22 weight, scoring rules, and exact prompt constants in body prose, reading as system documentation; distinct from PI-036/PI-040) and PI-138 (Persona 2: VI.C's fixed 2/2/1 hypothetical quota and one-progressive-one-originalist critique rule flatten exam-design judgment; distinct from PI-038/PI-039) and PI-139 (Persona 3: VI.D asserts the adversarial-architecture's efficacy from the single Prize Cases anecdote with no methodology and no engagement with the mixed self-critique / multi-agent-debate literature; distinct from PI-040's citation-density gap) are Polish-owned and route polish_status -> needs_polish. PI-140 (Persona 4 / Provenance Auditor: VI.B's 'canonical law-school case-brief format' convention claim is uncited; structure traces only to the vault's own template, not an external authority) is Cite-owned and is Section 06's one unsupported_claim (reason requires-primary-source); Section 06 is already at cite_status: needs_cite from PI-040. Provenance audit score 4.2 < 4.5 (criteria 5/4/4/4/4) independently holds Section 06 at polish_status: needs_polish. claims_total 20, claims_mapped 19, unsupported 1. Twenty claim-manifest lines appended. Stale polished-file frontmatter (polish_status: ready_for_stitch) reconciled to the state file.",
-      "provenance_audited_at": "2026-05-29T13:00:00Z",
       "unsupported_claims": [
         {
           "claim_text": "VI.B paragraph 2 asserts 'The nine-section sequence is the canonical law-school case-brief format'; the nine-section structure traces to the vault's own Templates/Case Brief.md and the PROJECT_PRIMER '9-section case-briefer standard' (evidence-05-case-brief-nine-section-standard.md), but the characterization of it as the canonical national law-school convention carries no external legal-education authority. Footnotes [^2] and [^3] source only the template's loading and its own field/section schema, not the convention claim.",
           "paragraph": 2,
           "reason": "requires-primary-source"
         }
-      ]
+      ],
+      "unsupported_claims_count": 1,
+      "verify_routed_at": "2026-05-29T13:00:00Z",
+      "verify_routing_reason": "Run-132 sixth Verify tick of the provenance-audit burst audited Section 06 (lowest-numbered polished section with provenance_audited: false; sections_audited was 5). All four personas read independently and each returned one new P1, all on Section 06 and all checked against the open Section 06 PIs (PI-035 through PI-040) to avoid duplication. PI-137 (Persona 1: VI.C recites rubric criterion names, the exam_readiness 0.22 weight, scoring rules, and exact prompt constants in body prose, reading as system documentation; distinct from PI-036/PI-040) and PI-138 (Persona 2: VI.C's fixed 2/2/1 hypothetical quota and one-progressive-one-originalist critique rule flatten exam-design judgment; distinct from PI-038/PI-039) and PI-139 (Persona 3: VI.D asserts the adversarial-architecture's efficacy from the single Prize Cases anecdote with no methodology and no engagement with the mixed self-critique / multi-agent-debate literature; distinct from PI-040's citation-density gap) are Polish-owned and route polish_status -> needs_polish. PI-140 (Persona 4 / Provenance Auditor: VI.B's 'canonical law-school case-brief format' convention claim is uncited; structure traces only to the vault's own template, not an external authority) is Cite-owned and is Section 06's one unsupported_claim (reason requires-primary-source); Section 06 is already at cite_status: needs_cite from PI-040. Provenance audit score 4.2 < 4.5 (criteria 5/4/4/4/4) independently holds Section 06 at polish_status: needs_polish. claims_total 20, claims_mapped 19, unsupported 1. Twenty claim-manifest lines appended. Stale polished-file frontmatter (polish_status: ready_for_stitch) reconciled to the state file."
     },
     "07": {
       "cite_completed_at": "2026-05-19T05:00:00Z",
