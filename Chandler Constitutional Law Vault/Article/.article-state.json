@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "polish",
+ "current_phase": "stitch",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "cite",
- "last_run_at": "2026-05-24T07:00:00Z",
+ "last_completed_phase": "polish",
+ "last_run_at": "2026-05-24T09:00:00Z",
  "manuscript": {
   "full_draft_exists": true,
   "last_stitched_at": "2026-05-23T21:00:00Z",
@@ -707,7 +707,7 @@
    "type": "push-race-conflict"
   }
  ],
- "phase_index": 4,
+ "phase_index": 5,
  "phases": [
   "harvest",
   "outline",
@@ -717,7 +717,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 74,
+ "run_count": 75,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -904,13 +904,14 @@
   "10": {
    "cite_completed_at": "2026-05-24T07:00:00Z",
    "cite_status": "needs_polish",
-   "current_words": 882,
+   "current_words": 908,
    "draft_status": "needs_polish",
    "draft_at": "2026-05-24T05:00:00Z",
    "evidence_status": "none",
    "footnotes_count": 14,
    "outline_status": "none",
-   "polish_status": "none",
+   "polish_status": "ready_for_stitch",
+   "polish_completed_at": "2026-05-24T09:00:00Z",
    "target_words": 900,
    "title": "Generalization Beyond Constitutional Law"
   },
