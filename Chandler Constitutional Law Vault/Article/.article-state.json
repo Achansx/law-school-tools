@@ -18,15 +18,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "harvest",
+ "current_phase": "outline",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "verify",
- "last_run_at": "2026-05-26T03:00:00Z",
+ "last_completed_phase": "harvest",
+ "last_run_at": "2026-05-26T05:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -808,16 +808,6 @@
    "type": "literature-gap"
   },
   {
-   "claim": "Section 14 (Conclusion) was outlined under the RUNBOOK step-3a scaffold-first priority, which forced the Outline phase onto the lowest-numbered evidence_status:none scaffold section (14, the only one of 01/10/12/13/14 still at none after Section 13 flipped to populated at run 85) ahead of any Harvest pass on Section 14. No section-14-specific evidence cards exist. Per L-046 the framing-section outline is grounded honestly: the spine and thesis are the article's own argument (Article-Workplan.md \u00a71 and \u00a710; PROJECT_PRIMER thesis and house-voice recurring sentence), and every bullet's evidence pointer names an EXISTING verified sibling evidence card (evidence-01-thesis-method-not-automation, evidence-01-hidden-archive-flat-lms, evidence-01-corpus-snapshot-and-live-url, evidence-01-recurring-sentence-present, evidence-01-no-learning-outcomes-claim, evidence-10-method-not-artifact-contribution, evidence-10-method-not-learning-outcomes-limit, evidence-10-loop-and-discipline-transfer, evidence-11-not-a-claim-students-learned-more, evidence-12-static-vs-chatbot-risk-architecture, evidence-07-six-phase-rotation, evidence-07-professorial-control-mechanism, evidence-13-method-first-adoption). The Conclusion introduces no new fact; it recapitulates and lands the recurring sentence as its third canonical placement. No fabricated fact, quotation, statistic, or citation was introduced.",
-   "id": "PI-097",
-   "note": "Sequencing artifact, not an evidence gap in the outlined spine; the Section 14 analogue of PI-074 (Section 01), PI-083 (Section 10), and the resolved PI-091 (Section 13). The next Harvest tick that scaffold-first routes to Section 14 (Section 14 remains evidence_status:none until a Harvest pass advances it, per L-051's literal-trigger rule) should build section-14-specific evidence cards (evidence-14-*): evidence-14-method-as-contribution-recap (the Section I hidden-archive bookend plus the method-not-artifact thesis), evidence-14-disclaimers-recap (the no-learning-outcomes disclaimer cross-referenced to Section XI, the bounded-base-case generalization limit cross-referenced to Section X, and the static-not-chatbot architectural disclaimer cross-referenced to Section XII), evidence-14-invitation-to-second-instance (the method-first opt-in handed forward from Section XIII and the loop-and-discipline transfer from Section X), and evidence-14-recurring-sentence-third-placement (the L-002/L-026 marker that the Conclusion is the third and final canonical placement of the recurring sentence). The scaffold-first lift condition (every section at cite_status:needs_polish once) cannot be met until Section 14 has been harvested, drafted, cited, and polished in turn, so scaffold-first will continue to route Draft, Cite, and Polish onto Section 14 next. PI-097 closes when Harvest has written the section-14 evidence cards (Outline is already satisfied by manuscript/outlines/outline-14-conclusion.md, produced this run), or when a later Verify tick confirms the Conclusion's grounding is complete without them. The next Draft tick that scaffold-first routes to Section 14 can proceed now from outline-14: each H2 bullet states claim, sibling-card evidence pointer, and an inferential move that closes an earlier arc, and the recurring sentence is reserved for one placement in 14.C per L-002/L-026. [PROGRESS 2026-05-25 run 88]: Cite half SATISFIED. The scaffold-first Cite tick routed to Section 14 (last evidence_status:none scaffold section) and resolved all nine [CITE:] placeholders: eight became Bluebook 21st See supra cross-references [^1]-[^8] to owning Sections I/X(x3)/VII/XI/XII/XIII per L-034, and the one internal vault-path thesis placeholder (Article-Workplan.md \u00a71 / PROJECT_PRIMER thesis sentence) was dropped because the conclusion's thesis recap is the article's own argument, not an attributed source (cite-rubric criterion 5 + L-046). Section 14 cite_status none -> needs_polish, footnotes_count 8. PI-097 remains OPEN pending the Harvest evidence-14-* cards (Outline half already satisfied by outline-14-conclusion.md at run 86); closes when those cards land or a Verify tick confirms the Conclusion's grounding is complete without them. [PROGRESS 2026-05-25 run 89]: Polish half SATISFIED. Scaffold-first routed Polish to Section 14 (still the lowest-numbered evidence_status:none scaffold section); wrote polished/section-14-conclusion.md from drafts/section-14-conclusion.md. Mechanical hygiene clean (zero em dashes, zero straight quotes, all curly), recurring-sentence trigram exactly once in 14.C (L-002/L-026), zero first-person singular. Tightened the 14.A opener and the 14.B pipeline-recap sentence (both narrative, not procedural, so the L-024 infrastructure-section exemption does not apply) and converted the 14.C opener 'The through-line of the whole article is that the expert never left the loop' to the direct assertion 'Across every layer, the expert never left the loop' per L-036's meta-rhetoric check, pre-empting the VIII.E/III.E-style Verify P1. Body 381 words vs 400 target (4.75% under, inside +/-10%). Section 14 polish_status none -> ready_for_stitch. PI-097 remains OPEN: the dedicated evidence-14-* Harvest cards are still owed; closes when those cards land or a Verify tick confirms the Conclusion's grounding is complete without them. Outline/Cite/Polish halves now all satisfied; only the Harvest half remains.",
-   "opened_at": "2026-05-25T07:00:00Z",
-   "phase": "outline",
-   "section": "14",
-   "status": "open",
-   "type": "scaffold-first-sequence-gap"
-  },
-  {
    "claim": "Section XIV.A's final sentence (\u201cthe transferable result is the replicable process that other doctrinal courses with similar archives can follow\u201d) and XIV.C's closing sentence (\u201cThe invitation is offered as a modest, replicable infrastructure choice rather than a mandate\u201d) present replicability as an established property of the method, but Section X.E concedes the article \u201creports one instance rather than two\u201d and frames the generalization claim as \u201can invitation as much as a result.\u201d The conclusion asserts as settled what the body marks as untested.",
    "id": "PI-098",
    "note": "Persona 1 (Skeptical JLE Editor) P1 finding on the newly stitched Section XIV. A JLE peer reviewer who read X.E's n=1 invitation framing will read the conclusion's flat \u201creplicable process \u2026 can follow\u201d and \u201cmodest, replicable infrastructure choice\u201d as the case study (one vault, run once) overclaimed into the contribution (a demonstrated-replicable method); this is the case-study-vs-contribution and failure-to-disclaim concern at the article's closing pitch. Next Polish tick on Section 14 should soften the XIV.A clause to match X.E's invitation posture, e.g., \u201cthe transferable result is a process described in enough detail that other doctrinal courses with similar archives can attempt it,\u201d and keep \u201creplicable\u201d in XIV.C only where it sits beside the \u201cinvitation rather than a mandate\u201d hedge already in the same sentence. The fix preserves the method-is-the-contribution thesis without asserting demonstrated replication the article did not run. P1-deferral ACTIVE this run, so logged without resetting Section 14 status; owning phase is the next Polish tick on Section 14.",
@@ -848,7 +838,7 @@
    "type": "equity-and-accessibility-gap"
   }
  ],
- "phase_index": 0,
+ "phase_index": 1,
  "phases": [
   "harvest",
   "outline",
@@ -858,7 +848,7 @@
   "stitch",
   "verify"
  ],
- "run_count": 91,
+ "run_count": 92,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1111,13 +1101,14 @@
    "cite_status": "needs_polish",
    "current_words": 381,
    "draft_status": "needs_cite",
-   "evidence_status": "none",
+   "evidence_status": "populated",
    "footnotes_count": 8,
    "outline_status": "ready_for_draft",
    "polish_completed_at": "2026-05-25T13:00:00Z",
    "polish_status": "ready_for_stitch",
    "target_words": 400,
-   "title": "Conclusion"
+   "title": "Conclusion",
+   "evidence_completed_at": "2026-05-26T05:00:00Z"
   }
  },
  "target_venue": "Journal of Legal Education",

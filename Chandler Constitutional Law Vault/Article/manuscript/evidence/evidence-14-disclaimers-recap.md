@@ -1,0 +1,21 @@
+---
+section: "14"
+fact_type: argument
+source_path: "Chandler Constitutional Law Vault/Article/manuscript/evidence/evidence-11-not-a-claim-students-learned-more.md"
+verified: true
+notes: "PI-097 dedicated card (4 of 6). Grounds Section XIV.B's three disclaimers: (1) the article does not claim students learned more, because it did not run the study that would license the claim (cross-referenced to Section XI; evidence-11-not-a-claim-students-learned-more); (2) it does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof every doctrinal course transfers cleanly (cross-referenced to Section X; evidence-10-method-not-learning-outcomes-limit); (3) it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than runtime generation (cross-referenced to Section XII; evidence-12-static-vs-chatbot-risk-architecture). The 'article earns trust by bounding itself' move is the article's own rhetorical claim. Per L-003 the static-not-chatbot framing holds; per L-024 the generalization limit cross-references Section X rather than re-arguing it. PI-100 (open Verify finding, Persona 3) flags that the access/equity precondition Section X.A states explicitly drops out of XIV's pitch; the disclaimers paragraph is where a Polish tick could carry the access caveat forward, so this card notes that the access/equity precondition belongs with the bounded-claims recap. fact_type argument: a recap of the article's self-imposed limits, not new empirical figures."
+---
+
+Section XIV.B's second move is the article's discipline about what it declined to claim. The Conclusion recapitulates three disclaimers, each routed to its owning section. First, the article does not claim that students learned more, because it did not run the controlled study that would license that claim (Section XI). Second, it does not claim universal transfer; it treats constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly (Section X). Third, it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation (Section XII). The rhetorical payoff, that the article earns a reader's trust precisely by bounding what it will and will not assert, is the article's own claim, not an attributed source.
+
+A fourth limit belongs in this neighborhood. PI-100 (open Verify finding) flags that the access and equity precondition Section X.A states explicitly (the system reaches only students with web access, a usable device, and the digital fluency to navigate it) drops out of the Conclusion's pitch. The bounded-claims paragraph is the natural place to carry that caveat forward; the next Polish tick on Section 14 should add a clause or sentence acknowledging the access precondition with a Section XII cross-reference, so the equity limit present in the body does not disappear at the close.
+
+Source-record excerpt, `Chandler Constitutional Law Vault/Article-Workplan.md` line 24 (the no-learning-gain disclaimer the article commits to from the outset):
+
+> Not a claim that students learned more (unless we run the study in Section XI).
+
+Source-record excerpt, `Chandler Constitutional Law Vault/Article/manuscript/polished/section-14-conclusion.md` line 21 (XIV.B, the three disclaimers as published):
+
+> It does not claim that students learned more, because it did not run the study that would license that claim. It does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly. And it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation.
+
+Cross-reference: `evidence-11-not-a-claim-students-learned-more.md` (Section XI) grounds disclaimer one; `evidence-10-method-not-learning-outcomes-limit.md` (Section X) grounds disclaimer two; `evidence-12-static-vs-chatbot-risk-architecture.md` (Section XII) grounds disclaimer three. PI-100 (open) is the Verify finding this card flags for the access-precondition carry-forward at the next Polish tick on Section 14.
