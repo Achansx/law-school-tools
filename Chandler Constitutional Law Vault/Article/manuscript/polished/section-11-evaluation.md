@@ -1,16 +1,26 @@
 ---
 id: "11"
 title: "Evaluation: What Would Count as Success"
-status: ready_for_stitch
+status: needs_polish
 target_words: 900
 word_count: 981
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 13
 cite_completed_at: 2026-05-22T19:00:00Z
 polish_completed_at: 2026-05-26T13:00:00Z
+provenance_audited: true
+provenance_audited_at: 2026-05-29T23:00:00Z
+provenance_score: 3.6
+claims_total: 15
+claims_mapped: 14
+unsupported_claims:
+  - claim_text: "Bond's sixty-six-publication corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions' (XI.C), a characterization traced only to the article's internal L-024 transfer-of-inference clause in [^8] rather than to any pin-cited finding in Bond et al. (2024); the corpus composition has no primary-source anchor a reader could check."
+    paragraph: 3
+    reason: requires-primary-source
+provenance_note: "Verify-provenance audit, run 137 (eleventh audit of the burst; lowest-numbered polished section with no provenance frontmatter; sections_audited 10->11). 15 factual claims, 14 mapped, 1 unsupported (the XI.C Bond corpus-composition characterization, PI-160, reason requires-primary-source). Criterion scores 4/3/4/3/4 (avg 3.6): claim coverage 4 (14/15 = 93.3%, the one unmapped claim listed); primary-source ratio 3 (three external scholarly anchors -- Bond [^8], Choi&Schwarcz [^9], Sajja [^10] -- carry the field-positioning, but the ten plan/method footnotes [^1]-[^7], [^11]-[^13] route to App. A / App. D internal project records, so the bulk of the section rests on internal records reproduced in appendices rather than external authority); attribution 4 (Bond, Choi&Schwarcz, Sajja all named with author and year; deductions are the known Sajja first-author error PI-107 and the Bond corpus-composition claim attributed to an internal lesson ID); numerical precision 3 (citation numbers -- 66 publications, vol 21 art 4, vol 73 p 384, vol 20 art 42, three-to-five sessions -- are cross-section consistent, sixty-six matching Section XII.E; deductions are the 'five Likert items' against four named dimensions PI-109 and the Bond title spelling 'Rigor' here versus 'Rigour' reconciled into the assembled draft at run 111); gap honesty 4 (candid about the two open forks and the no-learning-outcomes disclaimer, but did not flag inline that the Bond corpus-composition characterization is the article's own inference, now in unsupported_claims). 3.6 < 4.5, so Section 11 returns to polish_status: needs_polish; cite_status set to needs_cite for the Cite-owned PI-159 (methods-rigor anchor for the four instruments) and PI-160 (Bond corpus-composition pin cite). Frontmatter status/cite_status/polish_status reconciled from the stale ready_for_stitch mirror to the state file."
 evidence_cards:
   - evidence-11-not-a-claim-students-learned-more
   - evidence-11-workplan-recommendation-method-plus-light-data

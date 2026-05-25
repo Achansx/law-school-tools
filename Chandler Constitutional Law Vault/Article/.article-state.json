@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "verify",
-  "last_run_at": "2026-05-29T21:00:00Z",
+  "last_run_at": "2026-05-29T23:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1373,6 +1373,46 @@
       "section": "10",
       "status": "open",
       "type": "unsupported-generalization"
+    },
+    {
+      "claim": "Section XI.A (paragraph 1) carries the self-narrating sentence 'The thesis is a method contribution, and the section states the disclaimer at the opening as the load-bearing claim the rest of the section builds on', which describes the section's own rhetorical structure rather than advancing the argument; a recurrence of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153) now at an XI.A site.",
+      "id": "PI-157",
+      "note": "Verify run 137, Persona 1 (Skeptical JLE Editor) P1. Polish-owned voice-slip; routes polish_status -> needs_polish (already set). Distinct from the existing Section 11 PIs (PI-102 Choi&Schwarcz superlative, PI-104 pedagogy-scope-silence). Closes when XI.A drops the structure-announcing clause and the next Verify pass confirms the meta-rhetoric is gone.",
+      "opened_at": "2026-05-29T23:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "voice-slip-meta-rhetoric"
+    },
+    {
+      "claim": "Section XI (the section as a whole, esp. XI.B and XI.D) defines 'what would count as success' only through use-pattern and self-report instruments on the static artifact and proposes no comparator or baseline against the casebook-plus-Socratic instruction the method supplements, so the plan cannot speak to whether the system helps relative to the established teaching tradition.",
+      "id": "PI-158",
+      "note": "Verify run 137, Persona 2 (Legal Pedagogy Traditionalist) P1. Distinct from PI-104 (pedagogy-scope-silence: success operationalized as site metrics) -- this is the absence of any comparison condition against traditional instruction, not the choice of metrics. Polish-owned (a plan-framing addition, not a new citation); routes polish_status -> needs_polish (already set). Closes when XI either adds a comparator/baseline element or explicitly disclaims comparative inference as out of scope, confirmed by the next Verify pass.",
+      "opened_at": "2026-05-29T23:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "pedagogy-baseline-gap"
+    },
+    {
+      "claim": "Section XI.B specifies four instruments (Likert survey, Netlify analytics, three-to-five think-aloud sessions, disciplinary framing) but states no validity or reliability treatment for the Likert scale, no sampling frame or saturation logic for the think-aloud sessions, and no analysis plan, while XI.C invokes Bond et al.'s call for increased methodological rigor as the field-level frame the article 'anticipates'; the instruments are named without the rigor the section claims alignment with.",
+      "id": "PI-159",
+      "note": "Verify run 137, Persona 3 (AI-in-Education Researcher) P1; the methodology-without-rigor concern PERSONAS.md names for this persona. Distinct from PI-104 (scope of what is measured) and PI-109 (Likert item-count spec). Cite-owned per L-024 (load-bearing methodological grounding): routes cite_status -> needs_cite (already set); the next Cite tick on Section 11 adds a usability/think-aloud methods source (e.g., a think-aloud-protocol or survey-validity reference) and a one-line validity/sampling note, or hedges the Bond-rigor-alignment claim. Closes when the instruments carry a methods anchor and the next Verify pass confirms.",
+      "opened_at": "2026-05-29T23:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "methodology-rigor-gap"
+    },
+    {
+      "claim": "Section XI.C states that Bond's sixty-six-publication corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions', but that characterization of the corpus composition is attributed to the article's own L-024 transfer-of-inference clause in [^8]/[^147] rather than to any pin-cited finding in Bond et al. (2024); the empirical composition of the meta-review's corpus has no primary-source anchor a reader could check.",
+      "id": "PI-160",
+      "note": "Verify run 137, Persona 4 (Provenance Auditor) P1 and Section 11's one unsupported_claim (reason requires-primary-source). The empirical composition of Bond's sixty-six-publication corpus is asserted in prose (XI.C) and in footnote [^8]/[^147] but traced only to the article's internal L-024 transfer-of-inference clause, not to any pin-cited Bond finding; a reader cannot check the 'predominantly chatbot-tutor and LMS' characterization against the source. Distinct from PI-103 (footnote-form-leak) and PI-104. Cite-owned; routes cite_status -> needs_cite (already set). Also flagged for Stitch: the Section 11 source footnote spells the Bond title 'Rigor' while the assembled draft's [^147]/[^162] were reconciled to British 'Rigour' at run 111, so a re-stitch must not regress the section-source spelling (P2, folds into the PI-110 final-stitch Bond reconciliation). Closes when the corpus-composition characterization gets a Bond pin cite or is hedged to what the source supports, confirmed by the next Verify pass.",
+      "opened_at": "2026-05-29T23:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "open",
+      "type": "unsupported-characterization"
     }
   ],
   "phase_index": 0,
@@ -1386,12 +1426,12 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 11,
+    "global_unsupported_open": 12,
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "sections_audited": 10,
+    "sections_audited": 11,
     "sections_total": 14
   },
-  "run_count": 136,
+  "run_count": 137,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1722,8 +1762,8 @@
     "11": {
       "cite_completed_at": "2026-05-22T19:00:00Z",
       "cite_status": "needs_cite",
-      "claims_mapped": 0,
-      "claims_total": 0,
+      "claims_mapped": 14,
+      "claims_total": 15,
       "current_words": 981,
       "draft_completed_at": "2026-05-22T17:00:00Z",
       "draft_status": "needs_polish",
@@ -1735,13 +1775,21 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-26T13:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": null,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T23:00:00Z",
+      "provenance_score": 3.6,
       "target_words": 900,
       "title": "Evaluation: What Would Count as Success",
-      "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-103 (footnote-form-leak, folds into PI-092 article-wide sweep) and PI-107 (Sajja first-author citation-accuracy) -> cite_status needs_cite. Polish-owned: PI-102 (Choi&Schwarcz superlative overclaim XI.D), PI-104 (pedagogy-scope-silence), PI-105 (equity-and-accessibility), PI-109 (Likert instrument-spec), and new PI-112 (Netlify-vs-PostHog analytics-provider) -> polish_status needs_polish."
+      "unsupported_claims": [
+        {
+          "claim_text": "Section XI.C states that Bond's sixty-six-publication corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions', but that characterization of the corpus composition is attributed to the article's own L-024 transfer-of-inference clause in [^8]/[^147] rather than to any pin-cited finding in Bond et al. (2024); the empirical composition of the meta-review's corpus has no primary-source anchor a reader could check.",
+          "paragraph": 3,
+          "reason": "requires-primary-source"
+        }
+      ],
+      "unsupported_claims_count": 1,
+      "verify_routed_at": "2026-05-29T23:00:00Z",
+      "verify_routing_reason": "Run 137 Verify/provenance (3.6 < 4.5): four substantive P1s on Section XI, all checked against the seven open Section 11 PIs (PI-102, PI-103, PI-104, PI-105, PI-107, PI-109, PI-112) to avoid duplication. Polish-owned -> polish_status needs_polish for PI-157 (XI.A self-narrating meta-rhetoric 'the section states the disclaimer at the opening as the load-bearing claim the rest of the section builds on') and PI-158 (XI evaluation plan proposes no comparator or baseline against the casebook-plus-Socratic tradition it supplements). Cite-owned -> cite_status needs_cite for PI-159 (XI.B four instruments specify no validity/reliability/sampling/analysis treatment despite XI.C invoking Bond's rigor call) and PI-160 (XI.C Bond corpus-composition claim 'predominantly chatbot-tutor and LMS' unmapped to a primary source, attributed to internal L-024; Section 11's one unsupported_claim, reason requires-primary-source). provenance_score 3.6 (criteria 4/3/4/3/4) independently holds polish_status needs_polish. claims_total 15, claims_mapped 14, unsupported 1. Fifteen claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status ready_for_stitch, cite_status needs_polish) reconciled to the state file."
     },
     "12": {
       "cite_at": "2026-05-26T11:00:00Z",
@@ -1819,10 +1867,10 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-29T21:00:00Z",
+    "last_run_at": "2026-05-29T23:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 111,
+    "p1_open": 115,
     "p2_open": 41,
     "personas_read": 4
   }
