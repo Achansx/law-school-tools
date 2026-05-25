@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -93,7 +93,7 @@
     }
   },
   "last_completed_phase": "verify",
-  "last_run_at": "2026-05-30T03:00:00Z",
+  "last_run_at": "2026-05-30T05:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1493,6 +1493,46 @@
       "section": "13",
       "status": "open",
       "type": "evidence-gap"
+    },
+    {
+      "claim": "Section XIV.B (paragraph 2, final sentence) states 'The article earns a reader's trust precisely by bounding what it will and will not assert.' The sentence narrates the rhetorical effect of the preceding disclaimers instead of letting them do the work.",
+      "id": "PI-169",
+      "note": "Persona 1 (Skeptical JLE Editor), Verify run 140. P1; fresh Section 14 site of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161/165); distinct from PI-098 (replicability overclaim, same section). Routes Section 14 polish_status:needs_polish (already set). Suggested fix: in the next Polish tick, delete the sentence or recast it as a plain transition, so the disclaimers stand without the prose announcing their effect.",
+      "opened_at": "2026-05-30T05:00:00Z",
+      "phase": "verify",
+      "section": "14",
+      "status": "open",
+      "type": "voice-slip-meta-rhetoric"
+    },
+    {
+      "claim": "Section XIV.C (paragraph 3) enumerates the adopted contribution as 'the typed schema, the verified-source discipline, the professorial gating, and the iterative loop' -- authoring/curatorial competencies -- and frames mastery of these as the faculty contribution, never distinguishing artifact-building/stewardship labor from teaching with the artifact in a live classroom.",
+      "id": "PI-170",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist), Verify run 140. P1; fresh Section 14 site of the editor-vs-teacher conflation family (PI-166 at Section 13); distinct from PI-099 (which flags the conclusion implying substitution for the live classroom). Routes Section 14 polish_status:needs_polish (already set). Suggested fix: in the next Polish tick, add a clause to XIV.C stating the adopted method equips the artifact that supports the professor's live teaching rather than constituting that teaching.",
+      "opened_at": "2026-05-30T05:00:00Z",
+      "phase": "verify",
+      "section": "14",
+      "status": "open",
+      "type": "editor-vs-teacher-conflation"
+    },
+    {
+      "claim": "Section XIV.B (paragraph 2) frames the static-versus-chatbot choice ('it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation') solely as a risk-surface decision and closes it as settled, without acknowledging the learning affordances (adaptivity, interactive feedback, personalization) the intelligent-tutoring-system/chatbot-tutor literature documents that the static choice forgoes.",
+      "id": "PI-171",
+      "note": "Persona 3 (AI-in-Education Researcher), Verify run 140. P1; fresh Section 14 site, distinct from PI-100 (equity/accessibility, same section) and PI-167 (Section 13 institutional-comparator instance). Routes Section 14 polish_status:needs_polish (already set). Suggested fix: in the next Polish/Draft tick, add a clause to XIV.B noting the static architecture trades adaptivity/interactive feedback for build-time auditability, cross-referencing Section XII, so the conclusion frames a deliberate tradeoff rather than a one-way risk reduction.",
+      "opened_at": "2026-05-30T05:00:00Z",
+      "phase": "verify",
+      "section": "14",
+      "status": "open",
+      "type": "chatbot-architecture-engagement-gap"
+    },
+    {
+      "claim": "Section XIV.B (paragraph 2) states 'A six-phase rotation, a running lessons memory, and a forced-finding verification pass governed it, and a professor reviewed each layer before it advanced,' but footnote [^3] supports this three-part procedural claim with a bare See supra to the whole of Section VII rather than a pin to where each named governance mechanism is documented. All eight conclusion footnotes are intra-article See supra cross-references (zero external primary authority), capping primary-source ratio at criterion-2 score 3.",
+      "id": "PI-172",
+      "note": "Persona 4 (Provenance Auditor), Verify run 140. P1; Cite-owned. Section 14 provenance audit: claims_total 9, claims_mapped 9, unsupported_claims 0, provenance_score 4.0 (5/3/4/4/4), held at needs_polish. Routes Section 14 cite_status:needs_cite. Suggested fix: in the next Cite tick, replace the bare See supra Section VII in [^3] with pin cites to the specific Section VII subsections establishing the six-phase rotation, the lessons memory, and the forced-finding verification pass (or split [^3] into three pinned references).",
+      "opened_at": "2026-05-30T05:00:00Z",
+      "phase": "verify",
+      "section": "14",
+      "status": "open",
+      "type": "pin-cite"
     }
   ],
   "phase_index": 0,
@@ -1508,10 +1548,10 @@
   "provenance_audit": {
     "global_unsupported_open": 14,
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "sections_audited": 13,
+    "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 139,
+  "run_count": 140,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1936,9 +1976,9 @@
     },
     "14": {
       "cite_completed_at": "2026-05-25T11:00:00Z",
-      "cite_status": "needs_polish",
-      "claims_mapped": 0,
-      "claims_total": 0,
+      "cite_status": "needs_cite",
+      "claims_mapped": 9,
+      "claims_total": 9,
       "current_words": 381,
       "draft_status": "needs_cite",
       "evidence_completed_at": "2026-05-26T05:00:00Z",
@@ -1947,13 +1987,14 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-25T13:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": null,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-30T05:00:00Z",
+      "provenance_score": 4.0,
       "target_words": 400,
       "title": "Conclusion",
       "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify): re-enforcing deferred P1s. PI-098 (replicability-overclaim XIV.A/C), PI-099 (live-classroom-substitution), PI-100 (equity-and-accessibility) -> polish_status needs_polish. No Cite-owned P1; cite_status unchanged."
+      "verify_routed_at": "2026-05-30T05:00:00Z",
+      "verify_routing_reason": "Run 140 Verify/provenance (score 4.0 < 4.5): polish_status needs_polish for PI-169 (XIV.B meta-rhetoric), PI-170 (XIV.C editor-vs-teacher conflation), PI-171 (XIV.B chatbot-architecture tradeoff); cite_status needs_cite for PI-172 ([^3] bare See supra without pin for the six-phase governance enumeration). All four distinct from open PI-098/099/100. unsupported_claims 0 (conclusion fully footnoted)."
     }
   },
   "target_venue": "Journal of Legal Education",
@@ -1962,10 +2003,10 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_run_at": "2026-05-30T03:00:00Z",
+    "last_run_at": "2026-05-30T05:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 123,
+    "p1_open": 127,
     "p2_open": 41,
     "personas_read": 4
   }
