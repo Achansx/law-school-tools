@@ -85,15 +85,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "verify",
+ "current_phase": "harvest",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "stitch",
- "last_run_at": "2026-05-31T19:00:00Z",
+ "last_completed_phase": "verify",
+ "last_run_at": "2026-05-31T21:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -1453,9 +1453,49 @@
    "section": "03",
    "status": "open",
    "type": "attribution-drift"
+  },
+  {
+   "claim": "Section IX, titled 'Cost and Labor: The Honest Accounting,' presents no actual total-dollar or total-person-hour figure; its only quantities are the ~60% weekly-Claude-usage human-side anchor (IX.A) and the per-deploy wall-clock seconds (IX.C). IX.E describes the master cost-and-labor table (the workplan column set: hours by category, token spend by phase, hosting cost, total dollars, total person-hours) as still to be reconstructed, so the section delivers a plan-to-account rather than the accounting its title promises.",
+   "id": "PI-177",
+   "note": "Persona 1 (Skeptical JLE Editor) P1. Distinct from the section-09 unsupported_claims (which flag IX.E citing the archived PI-049/050/051 as live registry entries) and from the underlying cost-table reconstruction gap tracked at PI-049/050/051 (archived, outline-addressed): this is the prose-framing over-promise. The article's own transparency thesis makes a 'Cost and Labor' section that delivers no dollar or hour total a critical-reviewer target. Next Polish tick on Section 09 should move the forthcoming-table language to the front and scope the title/opening so the section does not promise an accounting it defers (for example 'a cost-and-labor accounting in progress'); alternatively a Draft/Cite tick lands the reconstructed dollar and person-hour totals as honest ranges per the workplan retroactive-backfill protocol. Routed to polish_status (framing); the substantive reconstruction remains PI-049/050/051's lane.",
+   "opened_at": "2026-05-31T21:00:00Z",
+   "phase": "verify",
+   "section": "09",
+   "status": "open",
+   "type": "promised-content-not-delivered"
+  },
+  {
+   "claim": "The article's spine claim that professorial judgment stayed in the loop ('The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable,' at I.B, the VII/VIII seam, and XIV.C) and the repeated assertion that the professor reviews and gates every layer (I.B note 2, VII.A, VII.E, X.C, XIII.C) are asserted throughout but never evidenced: the described system is an automated scheduled-task rotation firing on a cadence (VII.B; every thirty minutes per IX.C), and no section shows where the professor actually inspected, how often, or what the professor changed, while XII.B concedes 'the article does not measure that reviewer's catch rate.'",
+   "id": "PI-178",
+   "note": "Persona 2 (Legal Pedagogy Traditionalist) P1, cross-cutting (I, VII, X, XII, XIII) and routed to the owning Section 07 (Iterative Improvement Under Professorial Control). Distinct from the actor-erasure PIs (PI-015/PI-024/PI-124, which target specific sentences that erase the human actor): this is the absence of any evidentiary record that professorial review occurred at all, leaving the load-bearing 'judgment stays in the loop' claim resting on assertion (the 'confusing a good editor with a good teacher' risk PERSONAS.md names). Next Draft/Polish tick on Section 07 should add one concrete, sourced instance of professorial review changing an output (for example a logged page-feedback intake item from VIII.D that the professor originated and the rotation acted on), or scope the claim to 'the architecture keeps professorial review possible and inspectable' rather than asserting review occurred at every layer.",
+   "opened_at": "2026-05-31T21:00:00Z",
+   "phase": "verify",
+   "section": "07",
+   "status": "open",
+   "type": "unevidenced-core-claim"
+  },
+  {
+   "claim": "Section XII.B's four-axis architectural contrast (review timing, error surface, update mechanism, accountability) treats 'the chatbot-tutor alternative' as a representative category but anchors the entire category on a single platform paper, Sajja et al. 2023 (note 156); the article never cites a chatbot-tutor survey to license generalizing from one system to 'the chatbot architecture.'",
+   "id": "PI-179",
+   "note": "Persona 3 (AI-in-Education Researcher) P1, routed to Section 12 cite_status:needs_cite per L-024 (Cite owns load-bearing transfer framing and citation density). Same single-citation-anchor pattern as PI-025 (Section 08.E) and PI-040 (Section 06), now recurring at the article's central architectural-contrast section. Next Cite tick on Section 12 should add at least one survey-level chatbot-tutor citation (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the candidate; Bond et al. 2024 at the architecture level optional) to note 156 or a new XII.B footnote, with an inline transfer clause naming what generalizes from the surveyed category and what does not, mirroring the PI-025/PI-040 resolution path; a single multi-section Cite tick could close PI-025/PI-040/PI-179 together under the L-028 multi-section precedent. Section 12 polish_status reset ready_for_stitch->needs_polish so it re-polishes after the citation lands.",
+   "opened_at": "2026-05-31T21:00:00Z",
+   "phase": "verify",
+   "section": "12",
+   "status": "open",
+   "type": "literature-gap"
+  },
+  {
+   "claim": "Section IX.C states 'the clean CLI-path deploy on the 205-page corpus logs approximately sixteen seconds build plus approximately eight seconds upload'; the 205-page corpus size appears nowhere else in the article and carries no snapshot date. The article's two disclosed corpus counts are 198 pages (progress-report date, anchored across II.B, IV.E, VIII.A) and 281 pages (May 15, 2026 filesystem audit, IV.E), so 205 is an unreconciled third figure a reader cannot check.",
+   "id": "PI-180",
+   "note": "Persona 4 (Provenance Auditor) general P1 (severity P1: a number sourced but missing a snapshot date / plausibly supportable but not yet mapped). Routed to Section 09 cite_status:needs_cite. Next Cite tick on Section 09 should either anchor 205 to a dated deploy-log entry (the per-deploy CHANGELOG.md line the Deploy phase writes) with the as-of date inline, or replace '205-page corpus' with the article's disclosed 198-page snapshot count so IX.C does not introduce an unreconciled third corpus size. Compounds with PI-004 (the 198-vs-281 snapshot-date decision); resolving PI-004's snapshot discipline should also fix the 205 anchor.",
+   "opened_at": "2026-05-31T21:00:00Z",
+   "phase": "verify",
+   "section": "09",
+   "status": "open",
+   "type": "numerical-precision"
   }
  ],
- "phase_index": 6,
+ "phase_index": 0,
  "phases": [
   "harvest",
   "outline",
@@ -1467,14 +1507,14 @@
  ],
  "provenance_audit": {
   "global_unsupported_open": 14,
-  "manifest_path": "manuscript/claim-manifest.jsonl",
-  "sections_audited": 14,
-  "sections_total": 14,
-  "last_reaudit_at": "2026-05-31T07:00:00Z",
+  "last_reaudit_at": "2026-05-31T21:00:00Z",
   "last_reaudit_section": "03",
-  "reaudit_count": 1
+  "manifest_path": "manuscript/claim-manifest.jsonl",
+  "reaudit_count": 2,
+  "sections_audited": 14,
+  "sections_total": 14
  },
- "run_count": 153,
+ "run_count": 154,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1550,6 +1590,7 @@
    "polish_completed_at": "2026-05-18T03:00:00Z",
    "polish_status": "needs_polish",
    "provenance_audited": true,
+   "provenance_audited_at": "2026-05-31T21:00:00Z",
    "provenance_score": 3.4,
    "stitched_at": "2026-05-18T05:00:00Z",
    "target_words": 1200,
@@ -1734,7 +1775,7 @@
   },
   "09": {
    "cite_completed_at": "2026-05-19T21:00:00Z",
-   "cite_status": "needs_polish",
+   "cite_status": "needs_cite",
    "claims_mapped": 24,
    "claims_total": 27,
    "current_words": 761,
@@ -1837,7 +1878,7 @@
   "12": {
    "cite_at": "2026-05-31T01:00:00Z",
    "cite_note_run144": "Run-144 Cite: verified run-143 expansion's new claims carry footnote coverage (no orphans, no [CITE:]/[TODO:] markers); resolved PI-101 (Magesh 216-242 reconfirmed) and PI-164 (Bond corpus-composition CORRECTED to source-accurate 'adaptive and interactive interventions, chiefly adaptive systems and personalization'); PI-160 staged with identical resolution for Section 11's Cite tick.",
-   "cite_status": "needs_polish",
+   "cite_status": "needs_cite",
    "claims_mapped": 18,
    "claims_total": 18,
    "current_words": 1359,
@@ -1850,7 +1891,9 @@
    "outline_ready_at": "2026-05-23T05:00:00Z",
    "outline_status": "ready_for_draft",
    "polish_at": "2026-05-31T03:00:00Z",
-   "polish_status": "ready_for_stitch",
+   "polish_completed_at": "2026-05-31T03:00:00Z",
+   "polish_note_run145": "Run-145 Polish tick: italicized textual Mata v. Avianca (L-015); certified run-143 PI-113 (design-response framing + L-044 Section XI forward-ref) and PI-161 (meta-rhetoric recast); fixed the XII.B seam redundancy (two paragraphs no longer both open with 'The contrast'); applied the PI-106 numbering fix ('a fourth' -> 'a further open decision'); split argumentative run-ons in A/B/C/E and split A and E into two paragraphs each, preserving five deliberate enumerations per L-029. polish_status -> ready_for_stitch; provenance_score 4.0 left for the next Verify re-audit; current_words 1369 -> 1359.",
+   "polish_status": "needs_polish",
    "provenance_audited": true,
    "provenance_score": 4.0,
    "target_words": 1400,
@@ -1858,9 +1901,7 @@
    "unsupported_claims": [],
    "unsupported_claims_count": 0,
    "verify_routed_at": "2026-05-27T21:00:00Z",
-   "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
-   "polish_completed_at": "2026-05-31T03:00:00Z",
-   "polish_note_run145": "Run-145 Polish tick: italicized textual Mata v. Avianca (L-015); certified run-143 PI-113 (design-response framing + L-044 Section XI forward-ref) and PI-161 (meta-rhetoric recast); fixed the XII.B seam redundancy (two paragraphs no longer both open with 'The contrast'); applied the PI-106 numbering fix ('a fourth' -> 'a further open decision'); split argumentative run-ons in A/B/C/E and split A and E into two paragraphs each, preserving five deliberate enumerations per L-029. polish_status -> ready_for_stitch; provenance_score 4.0 left for the next Verify re-audit; current_words 1369 -> 1359."
+   "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
   },
   "13": {
    "cite_at": "2026-05-24T21:00:00Z",
@@ -1923,14 +1964,14 @@
  "verify": {
   "deferred_p1_count": 0,
   "forced_findings_satisfied": true,
-  "last_run_at": "2026-05-31T07:00:00Z",
+  "last_polish_resolution_run": 145,
+  "last_reaudit_section": "03",
+  "last_run_at": "2026-05-31T21:00:00Z",
   "new_findings_count": 4,
   "p0_open": 0,
-  "p1_open": 123,
+  "p1_open": 127,
   "p2_open": 41,
-  "personas_read": 4,
-  "last_polish_resolution_run": 145,
-  "last_reaudit_section": "03"
+  "personas_read": 4
  },
  "word_count_policy": {
   "earmark": "extra 2000 words reserved for Sections XI (was 900, now 1200) and XII (was 800, now 1400); other section budgets unchanged",
