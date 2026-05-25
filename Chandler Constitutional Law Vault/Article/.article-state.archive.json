@@ -342,6 +342,32 @@
       "resolved_at": "2026-05-28T21:00:00Z",
       "resolved_by": "harvest-appendix-run-124",
       "resolution": "The <vault>/rubric/ folder is now present in the checkout (alongside Templates/, surfaced the same way C's source was in run 123). Appendix D.2 was refiled directly from the six vault content-phase rubric files: Expand's previously-unavailable goal is filled, and every criterion name and weight for Ingest, Lint, Enrich, Expand, Synthesize, and Verify is reproduced verbatim in a complete weighted-criteria table, replacing the run-119 three-row reconstruction. Deploy and the out-of-rotation Consolidate rubrics are noted as intentionally excluded. D set to drafted, 999 words in the 600-1000 band, all five rubric criteria >=4."
+    },
+    {
+      "claim": "Section XII's risk catalogue (A-E) is entirely AI-architecture-internal (reviewed-static-website risk versus chatbot-tutor risk) and never names the opportunity-cost risk to traditional pedagogy: that a pre-built navigable course knowledge system may substitute for, rather than scaffold, the student's own primary engagement with the assigned cases and the casebook.",
+      "id": "PI-162",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1, run 138; deferral lifted so it routes Section 12 status. An ABSENT-risk finding: distinct from PI-113 (an overclaim about habit-formation) and from the substitution-overclaim family (PI-031/PI-039/PI-046/PI-108), which flag places the prose asserts too much rather than a risk the section fails to name. Next Polish tick on Section 12 should add a risk-catalogue entry (in XII.B's structural-risk paragraph or XII.E) acknowledging that a ready-made synthesis can displace the student's own reading and briefing of primary cases, named as an untested risk the static design does not resolve. Routes Section 12 polish_status (already needs_polish).",
+      "opened_at": "2026-05-30T01:00:00Z",
+      "phase": "verify",
+      "section": "12",
+      "status": "resolved",
+      "type": "absent-risk-pedagogy",
+      "resolved_at": "2026-05-30T11:00:00Z",
+      "resolved_by": "draft-run-143",
+      "resolution": "Resolved by the run-143 Draft tick. Added to XII.B's own-risk paragraph the sentence that a ready-made synthesis can displace the student's own reading and briefing of the primary cases, named as an untested question the static design does not resolve, exactly the absent risk the finding asked for."
+    },
+    {
+      "claim": "Section XII.A/XII.B relocates Magesh's measured runtime hallucination risk (seventeen to thirty-three percent) to build time ('a professor authors and inspects every page before deployment') and asserts the reviewed-static architecture has 'no runtime generation surface,' but presents no figure or methodology for the build-time human review's error-catch rate, so a measured risk is replaced by an unmeasured assurance and the build-time AI generation the method relies on is elided.",
+      "id": "PI-163",
+      "note": "Persona 3 (AI-in-Education Researcher) P1, run 138; deferral lifted so it routes Section 12 status. Distinct from the other open Section 12 PIs. Next Polish or Draft tick on Section 12 should add a sentence acknowledging that the architecture moves hallucination risk from the reader's runtime to a human build-time review whose catch rate the article does not measure, so the four-axis contrast is a relocation of where the risk sits and who can audit it, not its elimination. Routes Section 12 polish_status (already needs_polish).",
+      "opened_at": "2026-05-30T01:00:00Z",
+      "phase": "verify",
+      "section": "12",
+      "status": "resolved",
+      "type": "unmeasured-assurance",
+      "resolved_at": "2026-05-30T11:00:00Z",
+      "resolved_by": "draft-run-143",
+      "resolution": "Resolved by the run-143 Draft tick. Added the XII.B methodology paragraph: the four-axis contrast relocates hallucination risk from the reader's runtime to a human build-time review whose catch rate the article does not measure, the claim is comparative and structural with no controlled comparison, and the safety story is about auditability rather than a measured error rate."
     }
   ]
 }
