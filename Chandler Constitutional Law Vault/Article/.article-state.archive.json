@@ -435,6 +435,30 @@
    "resolved_at": "2026-05-31T03:00:00Z",
    "resolved_by_phase": "polish",
    "resolved_run": 145
+  },
+  {
+   "claim": "Section XI's newly stitched footnotes (assembled-draft [^146]-[^149], plus XI source [^12]/[^13] at [^151]/[^152]) carry internal maintenance-system lesson identifiers and fetch-process narration into the published Bluebook apparatus: [^146] 'the article's own L-003 ... L-031'; [^147]/[^148] 'URL verified live this run via WebSearch with allowed_domains scoping ... per the article's own L-024 transfer-of-inference clause'; [^149] 'per the article's own L-034 ... L-024'.",
+   "id": "PI-103",
+   "note": "Verify 2026-05-26T17:00 Persona 1 (Skeptical JLE Editor) P1. This is the Section XI instance of the article-wide PI-092 leak; XI's footnotes postdate PI-092, which was anchored at Section XIII and already directs an article-wide sweep. Fold Section XI into PI-092's footnote-form sweep at the next Cite tick (Cite owns Bluebook form per L-015): strip every 'per L-NNN' tag and the verbatim fetch-process narration, keep the substantive descriptive parenthetical, the transfer-of-inference content stated in plain terms, and the '(last visited <date>)' / 'URL verified live <date>' anchor. Extends L-042 from body prose to the XI footnote apparatus. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+   "opened_at": "2026-05-26T17:00:00Z",
+   "phase": "verify",
+   "section": "11",
+   "status": "resolved",
+   "type": "footnote-form-leak",
+   "resolved_at": "2026-05-31T15:00:00Z",
+   "resolution": "Run-151 Cite tick swept Section XI's footnote apparatus: stripped every 'per L-NNN' tag, the verbatim fetch-process narration (allowed_domains scoping, result-rank narration, byte-count of fetched response), and the internal PI-NNN tracker IDs from [^7]/[^8]/[^9]/[^10]/[^12]/[^13], restating the transfer-of-inference and routing content in plain terms and preserving the '(last visited)'/'URL verified live' liveness anchors. The article-wide PI-092 sweep remains open for the other sections."
+  },
+  {
+   "claim": "Section XI.D footnote [^149] names the Sajja first author 'Maurice Sajja et al.', but the identical source (same title, Platform-Independent and Curriculum-Oriented Intelligent Assistant for Higher Education, 20 Int'l J. Educ. Tech. Higher Educ. art. 42 (2023)) is cited at [^34], [^109], and [^155] as 'Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir.' The same work is attributed to two different first authors across the footnote apparatus.",
+   "id": "PI-107",
+   "note": "Verify 2026-05-27T07:00 Persona 1 (Skeptical JLE Editor) P1. A Bluebook author-name accuracy error and an internal inconsistency a reviewer cross-checking the four Sajja cites will catch. Next Cite tick on Section 11 (Cite owns Bluebook form per L-015) should correct [^149]'s author string to 'Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir' to match [^34]/[^109]/[^155], and while there normalize the journal designation form (', Art.' at [^34]/[^109] vs ' art.' at [^149]/[^155]/[^147]) flagged as this run's P2. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+   "opened_at": "2026-05-27T07:00:00Z",
+   "phase": "verify",
+   "section": "11",
+   "status": "resolved",
+   "type": "citation-accuracy-error",
+   "resolved_at": "2026-05-31T15:00:00Z",
+   "resolution": "Run-151 Cite tick corrected Section XI [^10] (assembled [^149]) Sajja first-author string from 'Maurice Sajja et al.' to 'Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir' to match the [^34]/[^109]/[^155] cites, eliminating the two-first-authors inconsistency. The P2 journal-designation normalization ('art.' vs ', Art.') needed no Section XI change (Section XI already uses lowercase 'art.'); the divergent ', Art.' instances at [^34]/[^109] belong to those sections' own Cite ticks."
   }
  ],
  "split_at": "2026-05-23T22:30:00Z",
