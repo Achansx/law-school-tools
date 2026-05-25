@@ -85,23 +85,23 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "stitch",
+ "current_phase": "verify",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "polish",
- "last_run_at": "2026-05-31T17:00:00Z",
+ "last_completed_phase": "stitch",
+ "last_run_at": "2026-05-31T19:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
-  "last_stitched_at": "2026-05-31T05:00:00Z",
+  "last_stitched_at": "2026-05-31T19:00:00Z",
   "partial_assembly": true,
   "sections_stitched": 14,
   "sections_total": 14,
-  "total_words": 12720
+  "total_words": 13028
  },
  "pending_issues": [
   {
@@ -1327,7 +1327,7 @@
   {
    "claim": "Section XI.C states that Bond's sixty-six-publication corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions', but that characterization of the corpus composition is attributed to the article's own L-024 transfer-of-inference clause in [^8]/[^147] rather than to any pin-cited finding in Bond et al. (2024); the empirical composition of the meta-review's corpus has no primary-source anchor a reader could check.",
    "id": "PI-160",
-   "note": "Verify run 137, Persona 4 (Provenance Auditor) P1 and Section 11's one unsupported_claim (reason requires-primary-source). The empirical composition of Bond's sixty-six-publication corpus is asserted in prose (XI.C) and in footnote [^8]/[^147] but traced only to the article's internal L-024 transfer-of-inference clause, not to any pin-cited Bond finding; a reader cannot check the 'predominantly chatbot-tutor and LMS' characterization against the source. Distinct from PI-103 (footnote-form-leak) and PI-104. Cite-owned; routes cite_status -> needs_cite (already set). Also flagged for Stitch: the Section 11 source footnote spells the Bond title 'Rigor' while the assembled draft's [^147]/[^162] were reconciled to British 'Rigour' at run 111, so a re-stitch must not regress the section-source spelling (P2, folds into the PI-110 final-stitch Bond reconciliation). Closes when the corpus-composition characterization gets a Bond pin cite or is hedged to what the source supports, confirmed by the next Verify pass. | UPDATE run-144 (Section 12 Cite tick, joint reconciliation with the now-resolved PI-164): WebSearch against the Springer record confirms the source does NOT support 'predominantly chatbot-tutor and learning-management-system interventions.' Bond reports adaptive systems and personalization as the predominant single application, with most reviews (47%) addressing AI applications generally and profiling/prediction, assessment/evaluation, and intelligent tutoring systems among the categories; chatbots are one application among several and LMS is not a Bond category. Section 12 was corrected to 'adaptive and interactive interventions, chiefly adaptive systems and personalization, but also intelligent tutoring systems and chatbots.' Section 11's own next Cite tick should apply the IDENTICAL correction to XI.C prose and footnote [^8]/[^147] (replace 'built predominantly on chatbot-tutor and learning-management-system interventions' with the same adaptive-and-interactive-interventions language), without importing the 47% figure per L-027; this PI then closes on the next Verify pass. Do not regress the Rigor/Rigour spelling reconciliation noted above. | STITCH run-146: interim stitch landed the run-143/144/145 Section 12 re-draft into the assembled full-draft.md, replacing the run-103 888-word XII block with the current 1359-word polished version (footnote-count-neutral, local [^1]-[^10] -> global [^153]-[^162], so [^163]-[^177] did not shift). This carries the run-144 corrected Bond corpus-composition into XII/[^162] while XI.C/[^147] still read the unsupported 'predominantly chatbot-tutor and learning-management-system', so the XI/XII Bond mismatch is now LIVE in the assembled draft and Verify will read contradictory descriptions of the same source until Section 11's next Cite tick applies the identical correction. Per L-035 Stitch did not re-characterize XI's source citation. Rigour spelling preserved at [^147]/[^162] per the re-stitch instruction above; the Section 12 source file's Rigor spelling remains for its next Cite/Polish tick. | UPDATE run-151 (Section 11 Cite tick): applied the IDENTICAL correction Section 12 landed at run 144 to XI.C prose and footnote [^8], replacing 'built predominantly on chatbot-tutor and learning-management-system interventions' with 'built predominantly on adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots,' without importing the 47% figure (L-027). Bond URL re-verified live this run (Springer auth-gate redirected WebFetch; WebSearch confirmed the verbatim URL, verbatim title, and the seven-database sixty-six-publication corpus). The XI/XII Bond mismatch that has been live in the assembled draft since run 146 is now reconciled at the section-source level. Section-source 'Rigor' spelling left intact for Stitch to reconcile to 'Rigour' in the assembled draft. PI-160 stays OPEN; closes on the next Verify pass that re-audits Section XI and confirms the corpus-composition claim maps to footnote [^8].",
+   "note": "Verify run 137, Persona 4 (Provenance Auditor) P1 and Section 11's one unsupported_claim (reason requires-primary-source). The empirical composition of Bond's sixty-six-publication corpus is asserted in prose (XI.C) and in footnote [^8]/[^147] but traced only to the article's internal L-024 transfer-of-inference clause, not to any pin-cited Bond finding; a reader cannot check the 'predominantly chatbot-tutor and LMS' characterization against the source. Distinct from PI-103 (footnote-form-leak) and PI-104. Cite-owned; routes cite_status -> needs_cite (already set). Also flagged for Stitch: the Section 11 source footnote spells the Bond title 'Rigor' while the assembled draft's [^147]/[^162] were reconciled to British 'Rigour' at run 111, so a re-stitch must not regress the section-source spelling (P2, folds into the PI-110 final-stitch Bond reconciliation). Closes when the corpus-composition characterization gets a Bond pin cite or is hedged to what the source supports, confirmed by the next Verify pass. | UPDATE run-144 (Section 12 Cite tick, joint reconciliation with the now-resolved PI-164): WebSearch against the Springer record confirms the source does NOT support 'predominantly chatbot-tutor and learning-management-system interventions.' Bond reports adaptive systems and personalization as the predominant single application, with most reviews (47%) addressing AI applications generally and profiling/prediction, assessment/evaluation, and intelligent tutoring systems among the categories; chatbots are one application among several and LMS is not a Bond category. Section 12 was corrected to 'adaptive and interactive interventions, chiefly adaptive systems and personalization, but also intelligent tutoring systems and chatbots.' Section 11's own next Cite tick should apply the IDENTICAL correction to XI.C prose and footnote [^8]/[^147] (replace 'built predominantly on chatbot-tutor and learning-management-system interventions' with the same adaptive-and-interactive-interventions language), without importing the 47% figure per L-027; this PI then closes on the next Verify pass. Do not regress the Rigor/Rigour spelling reconciliation noted above. | STITCH run-146: interim stitch landed the run-143/144/145 Section 12 re-draft into the assembled full-draft.md, replacing the run-103 888-word XII block with the current 1359-word polished version (footnote-count-neutral, local [^1]-[^10] -> global [^153]-[^162], so [^163]-[^177] did not shift). This carries the run-144 corrected Bond corpus-composition into XII/[^162] while XI.C/[^147] still read the unsupported 'predominantly chatbot-tutor and learning-management-system', so the XI/XII Bond mismatch is now LIVE in the assembled draft and Verify will read contradictory descriptions of the same source until Section 11's next Cite tick applies the identical correction. Per L-035 Stitch did not re-characterize XI's source citation. Rigour spelling preserved at [^147]/[^162] per the re-stitch instruction above; the Section 12 source file's Rigor spelling remains for its next Cite/Polish tick. | UPDATE run-151 (Section 11 Cite tick): applied the IDENTICAL correction Section 12 landed at run 144 to XI.C prose and footnote [^8], replacing 'built predominantly on chatbot-tutor and learning-management-system interventions' with 'built predominantly on adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots,' without importing the 47% figure (L-027). Bond URL re-verified live this run (Springer auth-gate redirected WebFetch; WebSearch confirmed the verbatim URL, verbatim title, and the seven-database sixty-six-publication corpus). The XI/XII Bond mismatch that has been live in the assembled draft since run 146 is now reconciled at the section-source level. Section-source 'Rigor' spelling left intact for Stitch to reconcile to 'Rigour' in the assembled draft. PI-160 stays OPEN; closes on the next Verify pass that re-audits Section XI and confirms the corpus-composition claim maps to footnote [^8]. | STITCH run-153: interim stitch landed the run-150/151/152 Section 11 re-draft/cite/polish into the assembled full-draft.md (local [^1]-[^14] -> global [^140]-[^153], shifting old [^153]-[^177] to [^154]-[^178]; no cross-reference pointed into the shifted range). This carries the run-151 Bond corpus-composition correction into XI.C/[^147] (adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots), so the XI/XII Bond mismatch live in the assembled draft since run 146 is now RESOLVED: [^147] and [^163] (was [^162]) agree. Per L-035 the verified-correct British 'Rigour' is preserved at [^147] in the assembled draft; the polished source's American 'Rigor' stays for Section 11's next Cite/Polish. Also fixed the [^163] internal cross-reference leak 'Section XI note 8' -> 'note 147'. PI-160 stays OPEN; closes on the next Verify re-audit of Section XI confirming the corpus-composition claim maps to footnote [^147].",
    "opened_at": "2026-05-29T23:00:00Z",
    "phase": "verify",
    "section": "11",
@@ -1455,7 +1455,7 @@
    "type": "attribution-drift"
   }
  ],
- "phase_index": 5,
+ "phase_index": 6,
  "phases": [
   "harvest",
   "outline",
@@ -1474,7 +1474,7 @@
   "last_reaudit_section": "03",
   "reaudit_count": 1
  },
- "run_count": 152,
+ "run_count": 153,
  "schema_version": 1,
  "sections": {
   "01": {
