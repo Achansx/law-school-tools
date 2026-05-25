@@ -1,13 +1,19 @@
 ---
 id: "13"
 title: "Institutional Implications"
-status: ready_for_stitch
+status: needs_polish
 target_words: 500
 word_count: 478
-last_phase: polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+last_phase: verify-provenance
+cite_status: needs_cite
+polish_status: needs_polish
 footnotes_count: 7
+provenance_audited: true
+provenance_score: 3.8
+claims_total: 12
+claims_mapped: 11
+unsupported_claims: 1
+provenance_note: "Audited Verify run 139 (2026-05-30). 12 factual claims, 11 mapped; one unsupported (XIII.A 'Harvard Library and the MIT Press publish H2O Open Casebooks' compresses the H2O platform-vs-series distinction, reason evidence-gap, PI-168). External footnote [^1] re-verified live this run: eLangdell quote and 30+ casebook count confirmed via WebFetch; opencasebook.org returned HTTP 403, liveness held via prior WebSearch per L-022. provenance_score 3.8 < 4.5 holds the section at polish_status:needs_polish."
 ---
 
 # XIII. Institutional Implications
