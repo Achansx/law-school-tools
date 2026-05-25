@@ -1898,7 +1898,7 @@
       "provenance_audited": true,
       "provenance_audited_at": "2026-05-29T23:00:00Z",
       "provenance_score": 3.6,
-      "target_words": 900,
+      "target_words": 1200,
       "title": "Evaluation: What Would Count as Success",
       "unsupported_claims": [
         {
@@ -1929,7 +1929,7 @@
       "polish_status": "needs_polish",
       "provenance_audited": true,
       "provenance_score": 4.0,
-      "target_words": 800,
+      "target_words": 1400,
       "title": "Risks and Limits",
       "unsupported_claims": [
         {
@@ -1998,7 +1998,7 @@
     }
   },
   "target_venue": "Journal of Legal Education",
-  "target_words_max": 12000,
+  "target_words_max": 14000,
   "target_words_min": 10000,
   "verify": {
     "deferred_p1_count": 0,
@@ -2009,5 +2009,12 @@
     "p1_open": 127,
     "p2_open": 41,
     "personas_read": 4
+  },
+  "word_count_policy": {
+    "earmark": "extra 2000 words reserved for Sections XI (was 900, now 1200) and XII (was 800, now 1400); other section budgets unchanged",
+    "new_max": 14000,
+    "previous_max": 12000,
+    "raised_at": "2026-05-25T14:50:00Z",
+    "rationale": "provenance audit surfaced under-budgeting in XI methodology and XII risks engagement"
   }
 }

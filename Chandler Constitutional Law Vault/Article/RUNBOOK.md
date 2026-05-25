@@ -145,14 +145,14 @@ If `abstract.status` is `ready_for_review` or `ready_for_human_review`, skip the
    - Recurring sentence appears exactly three times in approved spots (intro, VII/VIII seam, conclusion).
    - Internal cross-references resolve correctly.
    - Transitions at section seams read smoothly; rewrite weak transitions in place.
-   - Total word count is between 10,000 and 12,000.
+   - Total word count is between 10,000 and 14,000 (raised from 12,000 on 2026-05-25 with Section XI/XII earmark; see PROJECT_PRIMER).
 3. Assemble the full draft into `manuscript/full-draft.md` in section order.
 4. Update `.article-state.json` `manuscript.total_words`, `manuscript.last_stitched_at`.
 5. Set `stitch_status: ready_for_verify` and per-section `polish_status: stitched`.
 
 **Submission-readiness exit:** Set `gates.submission_ready.awaiting_human = true` and stop the rotation **only if all of**:
 
-1. Main-text word count in `manuscript/full-draft.md` is within 10,000 to 12,000 (appendices NOT counted).
+1. Main-text word count in `manuscript/full-draft.md` is within **10,000 to 14,000** (raised from 12,000 on 2026-05-25; appendices NOT counted; Section XI/XII earmark per PROJECT_PRIMER).
 2. All 14 sections have `polish_status: stitched`.
 3. All 6 appendices (`appendices.A` through `appendices.F`) have `status: drafted` or `polished`.
 4. Most recent Verify run reported zero P0 and zero P1 findings against the main draft.

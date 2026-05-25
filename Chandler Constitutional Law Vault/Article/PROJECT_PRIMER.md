@@ -27,7 +27,7 @@ For bash, replace the file-tool vault root with the mount path returned by `find
 
 **Title:** From Casebook to Course Knowledge System: AI-Assisted Synthesis, Obsidian, and the Future of Legal Pedagogy
 
-**Target venue:** Journal of Legal Education (jle.aals.org). Bluebook 21st. Scholastica submission. No published word cap; target 10,000 to 12,000 words plus online appendices.
+**Target venue:** Journal of Legal Education (jle.aals.org). Bluebook 21st. Scholastica submission. No published word cap. Target raised from 10,000-12,000 to **10,000 to 14,000** on 2026-05-25 after the provenance audit surfaced under-budgeting in Sections XI (Evaluation) and XII (Risks and Limits): both sections need room to engage substantively with the literature their reviewers will hold the article against (Magesh, Bond meta-review, Mata, chatbot architecture, methodology framing). The extra 2,000 words are earmarked for those two sections; other section budgets unchanged. Plus online appendices.
 
 **Author:** Alan Chan, with Professor Chandler review at human-in-the-loop checkpoints (see RUNBOOK gates).
 
@@ -51,12 +51,12 @@ Drives `.article-state.json` per-section status fields. Numbers match `Article-W
 | 08 | From Vault to Website | 1 | 700 |
 | 09 | Cost and Labor: The Honest Accounting | 6 | 700 |
 | 10 | Generalization Beyond Constitutional Law | 12 | 900 |
-| 11 | Evaluation: What Would Count as Success | 8 | 900 |
-| 12 | Risks and Limits | 9 | 800 |
+| 11 | Evaluation: What Would Count as Success | 8 | 1200 |
+| 12 | Risks and Limits | 9 | 1400 |
 | 13 | Institutional Implications | 10 | 500 |
 | 14 | Conclusion | 13 | 400 |
 
-Total target: ~11,600 words. Stitch phase enforces 10,000 to 12,000 range.
+Total target: ~12,500 words (was 11,600; +900 from Sections XI/XII rebudget). Stitch phase enforces **10,000 to 14,000** range (raised from 12,000 on 2026-05-25). The earmark discipline: the extra 2,000 words of ceiling are reserved for Sections XI and XII's deeper literature engagement; other sections should not expand to absorb the slack. If a non-XI/XII section grows past its original target by more than 10%, the next Polish/Stitch pass trims it back.
 
 ## Phase rotation
 
