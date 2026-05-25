@@ -1,0 +1,7 @@
+# Article Build Narrative — 2026-06
+
+Rolling log of what each scheduled-task run actually did. One entry per run, two to four sentences each. New month starts a new file. Continues from BUILD_NARRATIVE_2026-05.md (last entry: run 155 Harvest noop, 2026-05-31T23:00).
+
+## 2026-06-01T01:00 — Outline (run 156, noop)
+
+Fifth Outline noop, the saturated shape unchanged from the run-148 Outline noop: abstract.status is ready_for_review so the highest-priority abstract sub-task is skipped per RUNBOOK, and all fourteen sections sit at outline_status:ready_for_draft, so the section-outline procedure (which selects outline_status:needs_work) has no eligible target. Outline_status never regresses back to needs_work once the first-pass scaffold is complete, because the run-154 Verify P1s (PI-177..180) routed their sections to polish_status:needs_polish and cite_status:needs_cite rather than to any outline reset; the Outline phase will keep noop-advancing through the live Draft/Cite/Polish/Stitch/Verify cycle until a human edits an outline or the abstract regresses. Step-3a scaffold-first stays inactive (none of 01/10/12/13/14 at evidence_status:none), and the submission gate stays FALSE (most sections below ready_for_stitch, every provenance score below the 4.5 gate, verify.p1_open 127). LESSONS held at its over-cap 51 entries pending the human prune flagged since run 139; phase advanced outline->draft and phase_index 1->2 (run_count 155->156), pushed directly to master per L-056 so the tick is not stranded on the ephemeral branch.
