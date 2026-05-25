@@ -1,12 +1,21 @@
 ---
 id: "12"
 title: "Risks and Limits"
-status: ready_for_stitch
+status: needs_polish
 target_words: 800
 word_count: 870
-last_phase: polish
-cite_status: needs_polish
-polish_status: ready_for_stitch
+last_phase: verify-provenance
+cite_status: needs_cite
+polish_status: needs_polish
+provenance_audited: true
+provenance_score: 4.0
+claims_total: 18
+claims_mapped: 17
+unsupported_claims:
+  - claim_text: "XII.E paragraph 6 and footnote [^10] assert that Bond et al.'s (2024) sixty-six-publication meta-review corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions'; this empirical composition claim is traced only to the article's own L-024 transfer-of-inference clause with no pin cite to any Bond finding, so a reader cannot check it against the source. Mirrors PI-160 (the Section 11 instance) propagated through the shared Bond footnote."
+    paragraph: 6
+    reason: requires-primary-source
+provenance_note: "Run-138 Verify provenance audit (verify-provenance). claims_total 18, claims_mapped 17, one unsupported_claim (the XII.E Bond corpus-composition characterization, reason requires-primary-source, tracked as PI-164). Criterion scores 4/4/4/4/4, provenance_score 4.0. Lead case authority Mata v. Avianca re-verified this run via Midpage analyzeOpinion against 678 F. Supp. 3d 443 (Rule 11 sanctions; exactly six fabricated ChatGPT opinions confirmed). Frontmatter reconciled to the state file (status, cite_status, polish_status) per the run-127..137 reconciliation discipline; the stale ready_for_stitch values predated the PI-113 routing. Section held at polish_status: needs_polish because provenance_score 4.0 < 4.5 and the one unsupported_claim carries a reason other than intentional-conjecture."
 drafted_from_outline: outline-12-risks-and-limits.md
 draft_note: "Run-93 Draft tick. Section 12 was the only section at draft_status none (0 words); selected as lowest draft ratio per RUNBOOK Draft step 1. Inline [CITE: ...] placeholders only; Bluebook form deferred to Cite. Magesh 17-33% is the section's sole quantitative claim per L-027. Recurring-sentence trigram avoided by construction per L-002/L-026. Static-vs-chatbot verb discipline applied per L-003/L-031/L-040. Hedges PI-073, PI-002, PI-063, PI-004 each paired with an architectural-implication sentence per L-044. Transfer-of-inference clauses landed for Magesh, Mata, and Bond per L-024."
 cite_note: "Run-94 Cite tick. Ten [CITE: ...] placeholders resolved to ten Bluebook 21st footnotes. Section 12 owns two fresh first-use external citations: Magesh et al. (note 1) and Mata v. Avianca (note 2). Magesh URL verified live this run via WebSearch with allowed_domains scoping (Wiley /doi/abs/ path preferred over the workplan-transcribed /doi/full/ path that returned HTTP 403 to WebFetch, per L-043); published-version cite is 22 J. Empirical Legal Stud. 216 (2025). Mata citation and the six-fabrication/Rule 11 facts verified via Midpage analyzeOpinion against 678 F. Supp. 3d 443; no verbatim passage imported, so no L-004 quotation check triggered. Sajja (note 3), analytics (note 7), and Bond (note 10) reuse Sections VIII and XI per L-034; cross-section note pointers validated per L-041 (VIII note 15 Sajja, VIII note 5 PostHog, IV note 15 student-work, IV notes 17/18/20 snapshot, XI note 8 Bond). Workplan §6 open-decision items routed to internal-pending-issue-tracker form, never cited to Article-Workplan.md, per the Section IV convention (rubric criterion 5). Equity cross-reference (note 9) softened to Cf. per L-041 because the upstream accessibility-acknowledgment clauses (PI-026/033/064/071) remain open and have not yet landed in those sections' prose."
