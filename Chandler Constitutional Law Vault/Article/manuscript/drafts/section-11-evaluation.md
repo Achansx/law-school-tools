@@ -1,12 +1,12 @@
 ---
 id: "11"
 title: "Evaluation: What Would Count as Success"
-status: needs_polish
-target_words: 900
-word_count: 979
-last_phase: cite
-draft_status: needs_polish
-cite_status: needs_polish
+status: needs_cite
+target_words: 1200
+word_count: 1157
+last_phase: draft
+draft_status: needs_cite
+cite_status: needs_cite
 footnotes_count: 13
 cite_completed_at: 2026-05-22T19:00:00Z
 evidence_cards:
@@ -39,6 +39,8 @@ Bond and colleagues' 2024 meta-systematic review of sixty-six artificial-intelli
 ## 11.D Proportional rigor as a JLE precedent and artifact-dependent success
 
 Choi and Schwarcz's 2025 study in the seventy-third volume of this Journal at page 384, finding that generative-AI assistance helps weaker law-school exam takers more than stronger ones with a potential equalizing effect, is the strongest recent demonstration in this Journal's own pages that meaningful empirical work on artificial intelligence and law-school learning does not require a full randomized controlled trial.[^9] The method-plus-light-data posture matches that bar rather than asking the venue to accept a method paper with no data. What generalizes from Choi and Schwarcz to this article is the proposition that publishable empirical work in this Journal's house is achievable at proportional rigor; what does not transfer is the implementation surface, because their intervention is an LLM-assisted exam-answer task and this article's evaluation is a use-pattern study of a reviewed static website. The companion precedent at the evaluation altitude is Sajja and colleagues' platform-independent curriculum-grounded chatbot tutor, whose evaluation measures response quality, curriculum grounding of answers, and platform independence.[^10] Those are the right measures for a chatbot-tutor object; the Likert, analytics, and think-aloud measures described at 11.B are the right measures for a reviewed static object. The contribution the section makes at this altitude is the structural recognition that success measures are artifact-dependent, and that an evaluation framing must match the object being evaluated.
+
+Made concrete, the artifact-dependent success criterion is a claim about behavior rather than accuracy. Because the reviewed static website has no runtime generation surface, the organizing question for the four instruments is not the response-quality or answer-accuracy question the chatbot-tutor evaluation literature asks but whether a student who consults the site verifies a proposition against the primary source the page already cites rather than treating the page as a terminal authority. The reliability ceiling that Section XII documents at length is the reason the survey’s load-bearing items are perceived overreliance and perceived trust rather than self-reported comprehension, and the reason the think-aloud sessions observe whether a student who has found a doctrinal answer on the site moves to confirm it against the cited opinion or stops at the page. Success, on this account, is a navigation-and-verification pattern: a student locates the doctrine the course requires and carries the habit of checking it against the source the page names. The criterion stays modest and artifact-matched, and the substantive treatment of overreliance and hallucination remains with Section XII.
 
 ## 11.E What is open and the handoff to Section XII
 
