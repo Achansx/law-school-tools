@@ -459,6 +459,42 @@
    "type": "citation-accuracy-error",
    "resolved_at": "2026-05-31T15:00:00Z",
    "resolution": "Run-151 Cite tick corrected Section XI [^10] (assembled [^149]) Sajja first-author string from 'Maurice Sajja et al.' to 'Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir' to match the [^34]/[^109]/[^155] cites, eliminating the two-first-authors inconsistency. The P2 journal-designation normalization ('art.' vs ', Art.') needed no Section XI change (Section XI already uses lowercase 'art.'); the divergent ', Art.' instances at [^34]/[^109] belong to those sections' own Cite ticks."
+  },
+  {
+   "claim": "Section XI.D, paragraph 1, sentence 1 calls Choi & Schwarcz 'the strongest recent demonstration in this Journal's own pages' that meaningful empirical work on AI and law-school learning does not require a full RCT; the unhedged superlative asserts a field-survey judgment the article does not perform or cite.",
+   "id": "PI-102",
+   "note": "Verify 2026-05-26T17:00 Persona 1 (Skeptical JLE Editor) P1, anchored at assembled-draft [^148]. A naked superlative is the overclaim the rest of Section XI avoids. Next Polish tick on Section 11 should drop 'the strongest recent demonstration' to a sufficient existence claim, e.g., 'is a recent demonstration in this Journal's own pages that meaningful empirical work ... does not require a full randomized controlled trial.' P1-deferral ACTIVE this run, so logged without resetting Section 11 status; re-enforced once every section reaches cite_status: needs_polish once.",
+   "opened_at": "2026-05-26T17:00:00Z",
+   "phase": "verify",
+   "section": "11",
+   "status": "resolved",
+   "type": "overclaim",
+   "resolved_at": "2026-05-31T17:00:00Z",
+   "resolution": "Run-152 Polish tick on Section 11. Dropped the XI.D superlative 'the strongest recent demonstration in this Journal's own pages' to a sufficient existence claim, 'a recent demonstration in this Journal's own pages,' removing the naked field-survey judgment the article does not perform or cite."
+  },
+  {
+   "claim": "Section XI.B specifies the first instrument as 'a short anonymous end-of-semester survey ... with five Likert items on perceived usefulness, navigation, perceived trust, and perceived overreliance, plus two open-ended items' - five Likert items mapped to four named constructs, leaving the fifth item's construct unstated, so the survey instrument's construct coverage cannot be assessed as described.",
+   "id": "PI-109",
+   "note": "Verify 2026-05-27T07:00 Persona 3 (AI-in-Education Researcher) P1, anchored at XI.B paragraph 1 first instrument. Distinct from PI-104 (classroom-effects scope) and PI-105 (access/equity item gap): this is an item-count/construct-specification gap. A learning-sciences reviewer reads either an off-by-one miscount or an unspecified fifth construct. Next Polish tick on Section 11 should reconcile the count (name the fifth construct, e.g. a perceived-accuracy or static-versus-chatbot comparison item, or correct 'five' to 'four') and, if two items load on one construct, say which, so construct coverage is legible. P1-deferral ACTIVE; logged without resetting Section 11 status.",
+   "opened_at": "2026-05-27T07:00:00Z",
+   "phase": "verify",
+   "section": "11",
+   "status": "resolved",
+   "type": "instrument-specification-gap",
+   "resolved_at": "2026-05-31T17:00:00Z",
+   "resolution": "Run-152 Polish tick on Section 11. Reconciled the XI.B survey spec from 'five Likert items on [the four constructs]' to 'five Likert items covering [the four constructs]' (perceived usefulness, navigation, perceived trust, perceived overreliance), so five items across four named constructs no longer reads as an off-by-one miscount, without inventing an unsourced fifth construct -- the workplan SS5 source itself records five items against four dimensions."
+  },
+  {
+   "claim": "Section XI.B's second evaluation instrument is named 'Netlify analytics' (page-view counts by page type, search-term distribution, time on page), but Section VIII.B, footnote [^99], and Section XII.D footnote [^159] state the deployed site embeds PostHog analytics (session recording disabled, Do Not Track respected). Two different analytics providers are named for the same data source.",
+   "id": "PI-112",
+   "note": "Persona 3 (AI-in-Education Researcher) P1; deferral lifted so it resets status. Beyond the provider mismatch, the capabilities XI.B attributes to 'Netlify analytics' (search-term distribution and per-page time-on-page) are client-side event-analytics measures PostHog supplies and Netlify's server-log Analytics product does not provide in that form, so the instrument specification is also likely a capability error. Next Polish tick on Section 11 should change XI.B's second instrument from 'Netlify analytics' to 'PostHog analytics' to match VIII.B and XII.D (confirming footnote [^143] names the same provider), keeping the page-view, search-term, and time-on-page measures PostHog supports. Routes Section 11 polish_status ready_for_stitch -> needs_polish.",
+   "opened_at": "2026-05-27T21:00:00Z",
+   "phase": "verify",
+   "section": "11",
+   "status": "resolved",
+   "type": "analytics-provider-inconsistency",
+   "resolved_at": "2026-05-31T17:00:00Z",
+   "resolution": "Run-152 Polish tick on Section 11. Corrected the second instrument from 'Netlify analytics' to 'the deployed site's PostHog analytics' to match the deployed-and-cited fact at Section VIII note 5 and Section XII note 7; re-pointed footnote [^4] to Section VIII note 5 (PostHog, session recording disabled, Do Not Track respected) and neutralized [^3]'s instrument label from 'Netlify-analytics' to 'site-analytics' so no Netlify token remains in Section XI. No new external authority imported (PostHog already cited at VIII note 5); search-term distribution and per-page time-on-page are PostHog event-analytics measures, not Netlify server-log Analytics."
   }
  ],
  "split_at": "2026-05-23T22:30:00Z",
