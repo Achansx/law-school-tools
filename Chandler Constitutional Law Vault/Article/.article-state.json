@@ -1,10 +1,10 @@
 {
   "_archive_pointer": ".article-state.archive.json holds resolved and outline-addressed pending_issues; do not load every run.",
   "abstract": {
-    "consecutive_ready_runs": 1,
+    "consecutive_ready_runs": 0,
     "last_run_at": "2026-05-24T03:00:00Z",
     "last_score": 4.8,
-    "status": "ready_for_review",
+    "status": "needs_work",
     "target_words": 250,
     "words": 243
   },
@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-06-02T01:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-06-02T03:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1475,9 +1475,29 @@
       "section": "11",
       "status": "open",
       "type": "footnote-sequence-violation"
+    },
+    {
+      "claim": "Section XIV.B's candor enumeration of what the article 'does not claim' lists three items (no learning-gain claim [^175], no universal transfer [^176], no chatbot [^177]) but omits the pedagogical-substitution concession the body makes at XII.B (a ready-made synthesis can displace the student's own work of reading and briefing the primary cases; whether students lean on the map rather than build their own is an untested question the static design does not resolve). The conclusion, the article's last word, drops the productive-struggle / Socratic-displacement risk that both I.A and XII.B name.",
+      "id": "PI-186",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist), Verify run 168. P1; Polish-owned; routes Section 14 polish_status:needs_polish (already set). The 'confuses being a good editor with being a good teacher' concern PERSONAS.md names for this persona, surfacing as a conspicuous omission in the conclusion's candor list. Distinct from PI-171 (Section 14 chatbot-architecture engagement gap, a different omission). Suggested fix: add a fourth item to XIV.B's 'did not claim' enumeration conceding that a browsable doctrinal map can displace the synthesis work students should perform, with a forward-pointer to XII.B; one clause, no new citation.",
+      "opened_at": "2026-06-02T03:00:00Z",
+      "phase": "verify",
+      "section": "14",
+      "status": "open",
+      "type": "pedagogical-displacement-disclaimer-gap"
+    },
+    {
+      "claim": "Section XII.E's lead sentence renders Bond et al.'s call two-part ('greater ethics and rigor') before the same paragraph restores the three-part form two sentences later ('That call is three-part, for greater ethics, collaboration, and rigor'); the lead sentence should carry the three-part call to match its own footnote [^164] and the now-harmonized Section 01.",
+      "id": "PI-187",
+      "note": "Persona 4 (Provenance Auditor) / Persona 3, Verify run 168. P2 (log only, no status reset): XII.E self-corrects within the paragraph, so cosmetic redundancy rather than a substantive dropped prong. Mirrors the PI-185 truncation just closed in Section 01 at run 166. Suggested fix: render the XII.E lead sentence's Bond call three-part ('ethics, collaboration, and rigor') in the next Section 12 Polish tick.",
+      "opened_at": "2026-06-02T03:00:00Z",
+      "phase": "verify",
+      "section": "12",
+      "status": "open",
+      "type": "attribution-truncation"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -1489,41 +1509,42 @@
   ],
   "provenance_audit": {
     "global_unsupported_open": 14,
-    "last_reaudit_at": "2026-06-01T13:00:00Z",
+    "last_reaudit_at": "2026-06-02T03:00:00Z",
     "last_reaudit_section": "01",
     "manifest_path": "manuscript/claim-manifest.jsonl",
     "reaudit_count": 2,
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 167,
+  "run_count": 168,
   "schema_version": 1,
   "sections": {
     "01": {
       "cite_completed_at": "2026-06-01T05:00:00Z",
       "cite_status": "needs_polish",
-      "claims_mapped": 9,
-      "claims_total": 9,
+      "claims_mapped": 11,
+      "claims_total": 11,
       "current_words": 987,
       "draft_at": "2026-05-23T09:00:00Z",
       "draft_status": "needs_cite",
       "evidence_completed_at": "2026-05-24T01:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 9,
+      "last_phase": "verify",
       "outline_completed_at": "2026-05-26T07:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-06-01T23:00:00Z",
       "polish_routing_reason": "Run-166 Polish landed the two routed run-161 P1s and the companion P2: PI-184 (I.A residue sentence now names what the residue excludes, the adaptive Socratic exchange and the live reading of student confusion, forward-pointing to the XII.B concession the intro had omitted), PI-185 (I.D renders Bond's call three-part 'ethics, collaboration, and rigor' and concedes collaboration is the prong a single-author case study can least claim, forward-pointing to XII.E), and the P2 [^9] 'Rigor'->'Rigour' spelling + footnote-tail two-part->three-part harmonization. Offsetting compression of the redundant I.D 'That study...' sentence pair kept word_count to 987 (+9.7%, within +/-10%). provenance_audited reset to false for re-audit of the changed I.A/I.D prose. PI-082 (198-count primary-source/snapshot gap) stays open as a repo/human action Polish cannot close. polish_status->ready_for_stitch.",
-      "polish_status": "ready_for_stitch",
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-06-01T13:00:00Z",
+      "polish_status": "needs_polish",
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-06-02T03:00:00Z",
       "provenance_score": 4.4,
       "stitched_at": "2026-05-23T21:00:00Z",
       "target_words": 900,
       "title": "Introduction: The Hidden Archive of the Law Professor",
       "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-06-01T13:00:00Z",
-      "verify_routing_reason": "Run-161 Verify: fresh provenance audit (provenance_score 4.4, criteria 5/4/5/4/4) after the run-159 reset; 4.4 < 4.5 -> polish_status needs_polish. New P1s PI-184 (I.A residue under-disclaims the live Socratic loss) and PI-185 (I.D renders Bond's call two-part, dropping the collaboration prong [^9] carries) are Polish-owned -> needs_polish. The two sub-4.5 criteria (primary_source_ratio, numerical_precision) turn on PI-082 (198-count primary-source provenance + calendar snapshot date), a repo/human action. cite_status unchanged at needs_polish."
+      "verify_routed_at": "2026-06-02T03:00:00Z",
+      "verify_routing_reason": "Run-168 Verify: provenance re-audit of the run-166-reset section (provenance_score 4.4, criteria 5/4/5/4/4); 4.4 < 4.5 -> polish_status ready_for_stitch -> needs_polish. claims_total/claims_mapped 9/9 -> 11/11 (two accurate forward-reference claims added by the run-166 I.A/I.D edits, mapping to XII.B and XII.E); unsupported_claims stays 0. The two sub-4.5 criteria (primary_source_ratio, numerical_precision) turn on PI-082 (198-count primary-source provenance + calendar snapshot date), an unclosed repo/human action. PI-082 re-confirmed as the Provenance Auditor's forced finding; no new Section 01 P1 opened this run."
     },
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
@@ -1952,11 +1973,11 @@
     "forced_findings_satisfied": true,
     "last_polish_resolution_run": 145,
     "last_reaudit_section": "01",
-    "last_run_at": "2026-06-01T13:00:00Z",
-    "new_findings_count": 3,
+    "last_run_at": "2026-06-02T03:00:00Z",
+    "new_findings_count": 2,
     "p0_open": 0,
-    "p1_open": 122,
-    "p2_open": 41,
+    "p1_open": 123,
+    "p2_open": 42,
     "personas_read": 4
   },
   "word_count_policy": {
