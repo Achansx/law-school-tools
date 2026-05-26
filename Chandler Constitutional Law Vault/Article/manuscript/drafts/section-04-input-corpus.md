@@ -7,6 +7,7 @@ word_count: 899
 last_phase: cite
 draft_status: needs_polish
 cite_status: needs_polish
+cite_note: "Run-179 Cite tick (Section 04, the run-172 handoff: 'Section 04 cite_status left at needs_cite, PI-005 netlify URL liveness still open Cite work'). Resolved PI-005: WebFetch on https://constitutionallaw.netlify.app succeeded this run (provenance gate open per L-047 after reading the URL from this draft; returned page title 'Constitutional Law I Wiki', Dashboard/Cases/Topics/Lectures/Recent/About navigation, and the Professor Chandler Constitutional Law I Spring 2026 identification, matching Section 01 [^5] and evidence-08-live-deployed-site). Footnote [^12] refreshed to L-059 form: dropped the mixed last-visited + deferred-liveness disclaimer and the PI-005 pointer, corrected the title from 'Constitutional Law Wiki' to 'Constitutional Law I Wiki', set last-visited June 3 2026 with a verified-live-this-run parenthetical (~39 words, under the 50-word cap). PI-005 closed and moved to archive. The four [TODO: evidence needed] markers (PI-001 casebook-input, PI-002 student-work-input, PI-003 ingest-phase cost line, PI-004 snapshot-date sign-off) are human/repo-blocked evidence-gap decisions a Cite tick cannot close and stay OPEN per the no-fabrication rule; the prose already hedges each so no claim is unsupported. PI-131 arithmetic (61+66=127 slide-and-reading subset, +3 DOCX, 388 total) was already corrected in this draft at run 172 and L-060 holds; untouched this run. cite_status confirmed needs_polish (state was stale at needs_cite). Coverage: zero [CITE:] placeholders, every factual claim footnoted [^1]-[^15], only human-blocked evidence TODOs remain."
 ---
 
 # IV. The Input Corpus
@@ -61,7 +62,7 @@ The article snapshots the input-to-output state at the date of the professor-fac
 
 [^11]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection). The ten opinions referenced are: *Cohens v. Virginia*, 19 U.S. (6 Wheat.) 264 (1821); *United States v. Cruikshank*, 92 U.S. 542 (1876); *Wickard v. Filburn*, 317 U.S. 111 (1942); *Adamson v. California*, 332 U.S. 46 (1947); *Baker v. Carr*, 369 U.S. 186 (1962); *USDA v. Moreno*, 413 U.S. 528 (1973); *South Dakota v. Dole*, 483 U.S. 203 (1987); *United States v. Lopez*, 514 U.S. 549 (1995); *United States v. Morrison*, 529 U.S. 598 (2000); and *Hamdi v. Rumsfeld*, 542 U.S. 507 (2004).
 
-[^12]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection); *see also* Constitutional Law Wiki, https://constitutionallaw.netlify.app (last visited May 16, 2026) (URL liveness verification deferred to next Cite or Verify pass; see PI-005). The wiki briefs were generated against an indexed-opinion source described *infra* Section V.
+[^12]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection); the wiki briefs were generated against an indexed-opinion source described *infra* Section V. *See* Constitutional Law I Wiki, https://constitutionallaw.netlify.app (last visited June 3, 2026) (verified live this run via WebFetch).
 
 [^13]: *See infra* App. A (Input Corpus Inventory) (filename sample drawn from a directory listing of Source Materials/ on May 15, 2026).
 

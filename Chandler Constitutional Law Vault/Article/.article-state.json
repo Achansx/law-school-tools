@@ -85,15 +85,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "cite",
+ "current_phase": "polish",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "draft",
- "last_run_at": "2026-06-02T23:00:00Z",
+ "last_completed_phase": "cite",
+ "last_run_at": "2026-06-03T01:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -143,16 +143,6 @@
    "section": "04",
    "status": "open",
    "type": "snapshot-date"
-  },
-  {
-   "claim": "URL https://constitutionallaw.netlify.app cited in Section 04 footnote 12 was not verified live during this Cite run.",
-   "id": "PI-005",
-   "note": "WebFetch refused the URL by provenance in this scheduled-task run (URL appears in vault file MISSING_SOURCE_MATERIALS.md but not in a user message). Verify on next Cite or Verify pass when the URL is reachable. If dead, replace with an archive.org capture and update the footnote. Rubric criterion 3 scored at 2 this run because of this single unverified URL. Verify 2026-05-16T13:20 surfaced this same footnote as a P1 (mixed last-visited + deferred-liveness disclaimer); next Cite tick on Section 04 must resolve. L-022 names WebSearch as the resolution path to try before falling back to archive.org. 2026-05-17T11:00 Cite tick attempted resolution per L-022: WebSearch on the verbatim URL returned ten Netlify-hosted law sites but no verbatim https://constitutionallaw.netlify.app match in the first ten results, and a follow-up WebSearch for an archive.org Wayback Machine capture of the URL returned only generic Wayback Machine documentation rather than a capture. Per L-022's tail clause ('For URLs that WebSearch cannot confirm either, the L-019 deferral path still applies'), PI-005 stays open and the URL-liveness verification remains deferred. Same-run surgical resolution to the prose-side P1: Section 04 footnote [^12] was restructured to drop the mixed last-visited + deferred-liveness disclaimer entirely, with the wiki-brief inventory cite routed through App. A and a cross-reference to Section VIII.A note 1 (where the deployed-site URL is the primary anchor fact and is footnoted under Section VIII's own Cite-phase work) carrying the URL forward. The Polish-phase P1s on Section 04 (PI-006 through PI-010) remain open for the next Polish tick. Future Cite or Verify ticks should retry WebSearch periodically and try archive.org's direct lookup endpoint (https://web.archive.org/web/<timestamp>/https://constitutionallaw.netlify.app) once a user message or prior fetch result carries that endpoint into provenance. 2026-05-23T13:00 RESOLUTION (Section 01 Cite tick): WebFetch on https://constitutionallaw.netlify.app SUCCEEDED on the first call this run, returning the live Constitutional Law I Wiki (Dashboard/Cases/Topics/Lectures/Recent/About navigation, Prof. Chandler Spring 2026 identification, 'rebuilt nightly by a rotating LLM cycle' footer). The L-022 premise that WebFetch always refuses this vault-file URL by provenance no longer holds: the provenance gate opened once the URL was read from local evidence cards (evidence-08-live-deployed-site.md and siblings) in-session, per new lesson L-047. The URL-liveness substance of PI-005 is therefore resolved; Section 01 footnote [^5] cites it with last-visited May 23, 2026 and a verified-live parenthetical. This PI stays OPEN only so the next Section 04 Cite or Polish tick refreshes footnote [^12] (currently 'last visited May 16, 2026; URL liveness verification deferred ... see PI-005') to a current last-visited date and removes the deferral disclaimer, at which point PI-005 closes and archives.",
-   "opened_at": "2026-05-16T07:14:54Z",
-   "phase": "cite",
-   "section": "04",
-   "status": "open",
-   "type": "url-liveness"
   },
   {
    "claim": "Section V will reference the deployed site's Graph View, family-grid index, and holding-bar rendering as visible artifacts of the vault schema. None of the visual evidence is yet captured.",
@@ -1410,7 +1400,7 @@
    "note": "Per the Draft procedure (do not exceed budget by >15%; if over, flag for Stitch to trim), Stitch should trim Section 07 toward target during final assembly. Lowest-risk trim candidates: the 7.4 audit-trail paragraph (scorecard + build-narrative description) and the 7.2 rotation description. Do NOT cut the Prize Cases beat or the PI-178 scoping sentence in 7.5. Article total has headroom to the 14,000 ceiling, so this is a per-section discipline flag, not a total-budget breach."
   }
  ],
- "phase_index": 3,
+ "phase_index": 4,
  "phases": [
   "harvest",
   "outline",
@@ -1429,7 +1419,7 @@
   "sections_audited": 14,
   "sections_total": 14
  },
- "run_count": 178,
+ "run_count": 179,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1526,9 +1516,9 @@
   },
   "04": {
    "cite_completed_at": "2026-05-16T07:14:54Z",
-   "cite_note": "Run-172 Cite coupled fix (Section 05 was the selected section). Applied the reconciled corpus count to IV.A and IV.D to clear PI-131: 388 files total; 127 = the 61 PowerPoint + 66 PDF slide-and-reading subset per Appendix A, not a top-level total. Section 04's lone unsupported_claim (the 61+66+3-among-127 impossibility) cleared. cite_status remains needs_cite: PI-005 (netlify URL liveness, [^12]) is still-open Cite work and was out of scope for this Section-05 tick.",
-   "cite_redone_at": "2026-05-17T11:00:00Z",
-   "cite_status": "needs_cite",
+   "cite_note": "Run-179 Cite: resolved PI-005 (netlify URL liveness, the run-172 handoff). WebFetch verified https://constitutionallaw.netlify.app live this run (L-047 provenance open after reading the URL from the draft); footnote [^12] refreshed to L-059 form (disclaimer + PI-005 pointer dropped, title corrected, last-visited June 3 2026, verified-live parenthetical). PI-005 closed and archived. Four [TODO: evidence needed] markers (PI-001/002/003/004) are human/repo-blocked evidence-gaps and stay open; prose already hedges each. PI-131 arithmetic untouched (fixed at run 172, L-060 holds). Zero [CITE:] placeholders; claims footnoted [^1]-[^15].",
+   "cite_redone_at": "2026-06-03T01:00:00Z",
+   "cite_status": "needs_polish",
    "claims_mapped": 18,
    "claims_total": 19,
    "current_words": 972,
