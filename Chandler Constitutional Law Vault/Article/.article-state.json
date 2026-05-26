@@ -85,23 +85,23 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-01T07:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-01T11:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-05-31T19:00:00Z",
+    "last_stitched_at": "2026-06-01T11:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13028
+    "total_words": 13174
   },
   "pending_issues": [
     {
@@ -1404,16 +1404,6 @@
       "type": "workplan-reference-eviction"
     },
     {
-      "claim": "Stitch run 160 (interim assembly landing the run-157/158/159 Section I re-draft/cite/polish into full-draft.md) was completed locally as commit b2671c7 but could not be pushed to master: a concurrent commit (d5bc338, 'L-057 \u2014 no Article-Workplan.md references in published prose') force-updated master, reformatting the entire .article-state.json (sort_keys, 2-space indent) and adding PI-WORKPLAN-EVICT, which produced an unresolvable content conflict in .article-state.json on rebase.",
-      "id": "PI-182",
-      "note": "Per the maintenance push-race protocol the rebase was aborted and NOT auto-resolved (state-file merge is a human decision). The lost run-160 work, all regenerable: Section I landed into full-draft.md (842->974 words; footnote count 8->9, global renumber to 179 contiguous defs with the +1 shift, new [^9] cross-refs globalized to 'Section XI note 148'/'Section XII note 164' and Bond title harmonized to 'Rigour'); manuscript.total_words 13028->13160 and last_stitched_at->2026-06-01T09:00:00Z; the run-160 stitch score (avg 4.2); the cost-log and BUILD_NARRATIVE stitch entries; the stitch->verify phase advance; and the originally-planned PI-181 (abstract 'retrieval from verified legal sources' vs I.B 'build-time linking', not landed). The tick cursor on master remains current_phase:stitch / run_count:159, so the next scheduled run redoes stitch run 160 cleanly on top of d5bc338 (which did NOT touch full-draft.md or polished/section-01, so the Section I source is unchanged and the redo is faithful). b2671c7 is retained in this container reflog. Resolution: none required beyond letting the next stitch tick re-run; this entry documents the race for the human and the next run.",
-      "opened_at": "2026-06-01T09:00:00Z",
-      "phase": "stitch",
-      "section": "01",
-      "status": "open",
-      "type": "push-race-conflict"
-    },
-    {
       "claim": "Section XII (Risks and Limits) currently name-drops Magesh, Bond, and Mata without substantive engagement. The risks discussion is the article's defensive perimeter; reviewers will lean on it hardest. Expand to include: (a) direct comparison of static-site-with-professor-review vs runtime-chatbot-tutor architecture with concrete failure modes for each (not just 'static is safer'); (b) honest acknowledgment of the static-site approach's OWN failure modes \u2014 staleness, scope creep, single-point-of-failure on professor review, no real-time correction capability, no individualized adaptation; (c) Mata as ONE sentence per L-010, not a paragraph; (d) Bond meta-review engaged on its ethics/equity points specifically (not as a generic call for rigor); (e) Magesh engaged on the architectural source of the 17-33% rate (retrieval-augmented runtime generation, not corpus curation) so the article's static-site approach is positioned against the actual cause.",
       "id": "PI-XII-ENGAGE",
       "opened_at": "2026-05-26T14:00:00Z",
@@ -1484,9 +1474,19 @@
       "section": "05",
       "status": "open",
       "type": "figures-captured-obsidian"
+    },
+    {
+      "claim": "The thesis phrase describing how the system connects to verified legal sources is inconsistent across the assembled draft: Section I.B (run-159 Polish, PI-117) reads 'build-time linking to verified legal sources', while the Abstract, Section XIV.A (Conclusion), and footnote [^127] still read 'retrieval from verified legal sources'.",
+      "id": "PI-181",
+      "note": "Surfaced by the run-160 Stitch terminology-consistency check when the refreshed Section I landed. The run-159 Polish changed I.B per PI-117 (so an AI-in-education reader is not primed to read the system as runtime RAG) but did not propagate the change to the Abstract (Outline-abstract sub-task owned), Section XIV.A, or [^127] (XIV Polish/Cite owned). Routed downstream, not fixed in Stitch: the next Outline-abstract pass should align the Abstract and the next Section XIV Polish/Cite should align XIV.A and [^127] to a single agreed phrase. No fabrication; the underlying mechanism (Obsidian build-time wikilink resolution to indexed opinions, not runtime retrieval) is unchanged. This widens the abstract-vs-I.B scope of the lost run-160's planned-but-unlanded PI-181 (per PI-182) to include the XIV and [^127] occurrences.",
+      "opened_at": "2026-06-01T11:00:00Z",
+      "phase": "stitch",
+      "section": "abstract/01/14",
+      "status": "open",
+      "type": "terminology-consistency"
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1505,7 +1505,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 159,
+  "run_count": 160,
   "schema_version": 1,
   "sections": {
     "01": {

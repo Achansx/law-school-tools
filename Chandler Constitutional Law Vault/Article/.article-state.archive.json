@@ -615,6 +615,18 @@
    "type": "cross-section-inconsistency",
    "resolved_at": "2026-06-01T07:00:00Z",
    "resolution": "Resolved at run-159 Polish: I.C lead aligned to IV.A's structural-plus-rights characterization ('the structural constitution and the core individual-rights doctrines of a one-semester course'), the example list kept a clearly-signaled subset ('are among them'), and footnote [^7]'s parenthetical reconciled to 'the structural-plus-rights subset of a one-semester course'. The I.C-vs-IV.A scope inconsistency contributing to Section 01's gap-honesty provenance gap is closed."
+  },
+  {
+   "claim": "Stitch run 160 (interim assembly landing the run-157/158/159 Section I re-draft/cite/polish into full-draft.md) was completed locally as commit b2671c7 but could not be pushed to master: a concurrent commit (d5bc338, 'L-057 — no Article-Workplan.md references in published prose') force-updated master, reformatting the entire .article-state.json (sort_keys, 2-space indent) and adding PI-WORKPLAN-EVICT, which produced an unresolvable content conflict in .article-state.json on rebase.",
+   "id": "PI-182",
+   "note": "Per the maintenance push-race protocol the rebase was aborted and NOT auto-resolved (state-file merge is a human decision). The lost run-160 work, all regenerable: Section I landed into full-draft.md (842->974 words; footnote count 8->9, global renumber to 179 contiguous defs with the +1 shift, new [^9] cross-refs globalized to 'Section XI note 148'/'Section XII note 164' and Bond title harmonized to 'Rigour'); manuscript.total_words 13028->13160 and last_stitched_at->2026-06-01T09:00:00Z; the run-160 stitch score (avg 4.2); the cost-log and BUILD_NARRATIVE stitch entries; the stitch->verify phase advance; and the originally-planned PI-181 (abstract 'retrieval from verified legal sources' vs I.B 'build-time linking', not landed). The tick cursor on master remains current_phase:stitch / run_count:159, so the next scheduled run redoes stitch run 160 cleanly on top of d5bc338 (which did NOT touch full-draft.md or polished/section-01, so the Section I source is unchanged and the redo is faithful). b2671c7 is retained in this container reflog. Resolution: none required beyond letting the next stitch tick re-run; this entry documents the race for the human and the next run.",
+   "opened_at": "2026-06-01T09:00:00Z",
+   "phase": "stitch",
+   "section": "01",
+   "status": "resolved",
+   "type": "push-race-conflict",
+   "resolved_at": "2026-06-01T11:00:00Z",
+   "resolution": "Run-160 Stitch redo landed the lost work cleanly off master. The polished/section-01 source and full-draft.md were untouched by the intervening commits (d5bc338 and the figure-capture / broken-state-resolution commits), so the redo is faithful: Section I body 871->1017 words by section-word accounting, footnote 8->9, the new [^9] Bond cross-reference globalized to Section XI note 148 / Section XII note 164 with the title harmonized to 'Rigour', the uniform +1 renumber applied to every downstream marker, definition, and textual 'note N' reference (old [^9]-[^178] -> [^10]-[^179]), 179 contiguous defs verified with no dangling reference; manuscript.total_words 13028->13174 and last_stitched_at->2026-06-01T11:00:00Z; stitch->verify phase advance and run_count 159->160 applied. The originally-planned PI-181 (thesis-phrase consistency) is re-logged open in live state with the widened Abstract/XIV/[^127] scope the Stitch scan found."
   }
  ],
  "split_at": "2026-05-23T22:30:00Z",
