@@ -1404,6 +1404,7 @@
       "type": "workplan-reference-eviction"
     },
     {
+<<<<<<< Updated upstream
       "claim": "Stitch run 160 (interim assembly landing the run-157/158/159 Section I re-draft/cite/polish into full-draft.md) was completed locally as commit b2671c7 but could not be pushed to master: a concurrent commit (d5bc338, 'L-057 \u2014 no Article-Workplan.md references in published prose') force-updated master, reformatting the entire .article-state.json (sort_keys, 2-space indent) and adding PI-WORKPLAN-EVICT, which produced an unresolvable content conflict in .article-state.json on rebase.",
       "id": "PI-182",
       "note": "Per the maintenance push-race protocol the rebase was aborted and NOT auto-resolved (state-file merge is a human decision). The lost run-160 work, all regenerable: Section I landed into full-draft.md (842->974 words; footnote count 8->9, global renumber to 179 contiguous defs with the +1 shift, new [^9] cross-refs globalized to 'Section XI note 148'/'Section XII note 164' and Bond title harmonized to 'Rigour'); manuscript.total_words 13028->13160 and last_stitched_at->2026-06-01T09:00:00Z; the run-160 stitch score (avg 4.2); the cost-log and BUILD_NARRATIVE stitch entries; the stitch->verify phase advance; and the originally-planned PI-181 (abstract 'retrieval from verified legal sources' vs I.B 'build-time linking', not landed). The tick cursor on master remains current_phase:stitch / run_count:159, so the next scheduled run redoes stitch run 160 cleanly on top of d5bc338 (which did NOT touch full-draft.md or polished/section-01, so the Section I source is unchanged and the redo is faithful). b2671c7 is retained in this container reflog. Resolution: none required beyond letting the next stitch tick re-run; this entry documents the race for the human and the next run.",
@@ -1412,6 +1413,24 @@
       "section": "01",
       "status": "open",
       "type": "push-race-conflict"
+=======
+      "claim": "Section XII (Risks and Limits) currently name-drops Magesh, Bond, and Mata without substantive engagement. The risks discussion is the article's defensive perimeter; reviewers will lean on it hardest. Expand to include: (a) direct comparison of static-site-with-professor-review vs runtime-chatbot-tutor architecture with concrete failure modes for each (not just 'static is safer'); (b) honest acknowledgment of the static-site approach's OWN failure modes \u2014 staleness, scope creep, single-point-of-failure on professor review, no real-time correction capability, no individualized adaptation; (c) Mata as ONE sentence per L-010, not a paragraph; (d) Bond meta-review engaged on its ethics/equity points specifically (not as a generic call for rigor); (e) Magesh engaged on the architectural source of the 17-33% rate (retrieval-augmented runtime generation, not corpus curation) so the article's static-site approach is positioned against the actual cause.",
+      "id": "PI-XII-ENGAGE",
+      "opened_at": "2026-05-26T14:00:00Z",
+      "phase": "draft",
+      "section": "12",
+      "status": "open",
+      "type": "literature-engagement-gap"
+    },
+    {
+      "claim": "Section VII (Iterative Improvement) mentions the Prize Cases / Grier near-fabrication in passing, but this is the article's single best dramatic moment \u2014 a real near-fabrication caught by adversarial verify. Slow down and narrate it: the modernized PDF that drifted from the indexed opinion ('character' for 'accidents'); the surprise that Ingest, Lint, two Enrich passes, and Expand all reproduced the wrong word faithfully because they were all reading the same drifted source; the adversarial Verify pass that switched from keyword search to AI analysis of the indexed opinion via Midpage's analyzeOpinion and surfaced Grier's actual language; the lesson encoded back into the system as a permanent rule against trusting paraphrases. Tell the story in roughly 250-400 words as a self-contained narrative beat within Section VII. The story is more persuasive than any abstract argument about adversarial verify. Reference: see evidence-07 cards and the workplan \u00a72 description for raw material (but per L-057, do not cite the workplan in the published prose).",
+      "id": "PI-VII-NARRATE-PRIZE",
+      "opened_at": "2026-05-26T14:00:00Z",
+      "phase": "draft",
+      "section": "07",
+      "status": "open",
+      "type": "narrative-development-gap"
+>>>>>>> Stashed changes
     }
   ],
   "phase_index": 5,
@@ -1451,7 +1470,7 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-06-01T07:00:00Z",
       "polish_routing_reason": "Run-159 Polish landed Polish-owned PI-116 (editor-teacher), PI-117 (retrieval-terminology), PI-118 (scope cross-section-inconsistency) and stripped PI-115 footnote process-language (L-042 hygiene); re-fixed two meta-rhetoric self-flags the run-157 re-draft regressed (L-048); L-023 footnote apostrophe curl. provenance reset to re-audit the materially-changed prose. polish_status->ready_for_stitch.",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "provenance_audited": false,
       "provenance_score": null,
       "stitched_at": "2026-05-23T21:00:00Z",
@@ -1635,7 +1654,7 @@
       "claims_total": 22,
       "current_words": 1196,
       "draft_completed_at": "2026-05-19T03:00:00Z",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_draft",
       "evidence_cards": 10,
       "evidence_populated_at": "2026-05-18T23:00:00Z",
       "evidence_status": "populated",
@@ -1803,7 +1822,7 @@
       "claims_total": 18,
       "current_words": 1359,
       "draft_at": "2026-05-30T11:00:00Z",
-      "draft_status": "needs_cite",
+      "draft_status": "needs_draft",
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-23T03:00:00Z",
       "evidence_status": "populated",

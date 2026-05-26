@@ -455,3 +455,30 @@ rule: Article-Workplan.md is project scaffolding, NOT a citable authority. NEVER
 Workplan-referenced URL transcription notes ("repository path is the operative URL rather than the workplan annotated-bibliography's transcribed path") should be removed entirely; just give the live URL.
 Override exception: NONE. There is no situation where citing the workplan in published prose is acceptable.
 context: The article describes a method that uses internal artifacts (LESSONS, RUNBOOK, workplan) to guide itself. Those artifacts must NOT appear as cited authorities in the published prose. A reader of the article should not need to know the workplan exists. Sections 09 (Cost and Labor) and 11 (Evaluation) currently route many substantive claims through workplan footnotes; Section 02 footnotes attack the workplan's transcribed URLs as if defending against it. All of this gets cut on polish. The article's claim is that the system is inspectable; the article should not betray that claim by exposing project scaffolding in its prose.
+
+## L-058: Never reference internal artifacts in published prose
+
+phase: polish
+impact_score: 5
+date: 2026-05-26
+rule: The same rule as L-057 (no workplan) extends to EVERY internal-system artifact. The published article must NOT contain references to: LESSONS.md (any L-NNN identifier), RUNBOOK.md (any phase procedure or "the RUNBOOK says"), PROJECT_PRIMER.md, pending_issues (any "PI-NNN" identifier), run_count or specific run numbers ("run 144 confirmed"), phase names as proper nouns when describing the system's procedures (Cite phase, Stitch tick, Verify pass — these are project internal jargon; the article can describe what each phase DOES without naming our phases), score values from internal rubrics ("scoring 4.8"), the rubric files themselves, the cost-log.jsonl as a cited source, the .article-state.json, the verify-findings.md, or any reference to "the system's L-NNN" / "the article's L-NNN" / "per L-022."
+When polish encounters such a reference, REWRITE to state the substantive point directly OR delete if the prose can carry without it.
+The Appendices D (rubrics) and B (prompts) ARE the right place to expose the system's internals; the body sections are NOT.
+The article describes a method abstractly — for example "an iterative loop that scores each phase against a phase-specific rubric and records lessons as the loop runs" is fine. What is NOT fine is "per L-022, the Cite phase scoping rule says...". The former describes the architecture; the latter exposes the internal naming.
+Override exception: NONE.
+context: The article's claim is that AI systems can be inspectable and verifiable. Exposing the project's own internal naming conventions in published prose undermines that claim — it conflates the system with its bookkeeping. Same family as L-057.
+
+## L-059: Footnotes must be concise
+
+phase: cite
+impact_score: 4
+date: 2026-05-26
+rule: Footnotes carry citation + pin cite + at most one short clause of relevance. Hard cap: 50 words per footnote unless the footnote is a one-sentence Methods note (which is itself constrained to one sentence). Methodology essays do not belong in footnotes; they belong in the body (if substantive) or are deleted (if internal-only). When cite or polish encounters a footnote over 50 words:
+  - Identify the substantive citation (author, title, journal, pin cite, URL, year, last-visited date) and keep it
+  - Cut: WebFetch domain-scoping rationale, repository-path-versus-transcribed-path arguments, defenses against the workplan, run numbers, lesson references, persona routing notes, transfer-of-inference clauses, "this confirms the article's open pagination-confirmation item" tracking, internal validation chain
+  - Move substantive transfer-of-inference clauses to the body if they're load-bearing for the argument; delete otherwise
+  - If a footnote has explained methodology that the article actually needs, lift it into a single body sentence
+Example transformation:
+  - BAD (310 words): "Magesh et al., *Hallucination-Free?*... (reporting 17-33% rates; preprint at arXiv:2405.20362). The published-version pagination was reconfirmed this run (run 144) via WebSearch with allowed_domains scoping returning the verbatim title at the live Wiley abstract path and the author-hosted Stanford copy, both placing the article at volume 22, pages 216 to 242; this confirms the starting page cited above and closes the article's open pagination-confirmation item. The live-repository /doi/abs/ path is preferred over the workplan-transcribed /doi/full/ path, which returned HTTP 403 to WebFetch, per the article's repository-path-over-transcription convention. Transfer-of-inference: the runtime-generation risk this finding measures generalizes to any chatbot-tutor architecture, while the three-system evaluation instrumentation does not transfer to a reviewed static website, which has no runtime generation surface for hallucination to occur on."
+  - GOOD (38 words): "Varun Magesh et al., *Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools*, 22 J. Empirical Legal Stud. 216, 220-228 (2025) (reporting 17%-33% citation-hallucination rates across three commercial legal RAG systems)."
+context: Currently many footnotes are 150-300 words of internal validation chain (domain scoping, run numbers, transfer-of-inference, workplan defense, "this closes the article's open pagination-confirmation item"). JLE house style is tight footnotes. The instrumentation that produced these footnotes is real and valuable but belongs in Appendix B (prompts/tooling) or Appendix D (rubrics), not in every body footnote.
