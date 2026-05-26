@@ -1466,6 +1466,15 @@
       "section": "08",
       "status": "open",
       "type": "figures-captured"
+    },
+    {
+      "claim": "Two Obsidian-vault screenshots captured 2026-05-26 and saved to <vault>/Article/manuscript/figures/ for Section V: figure-5-1-marbury-typed-properties.png (Marbury v Madison .md open in Live Preview mode showing Obsidian's typed-properties UI rendering the YAML frontmatter as structured fields \u2014 case_name, citation, doctrines, concepts, status, midpage_id, source_files, holding, reasoning, doctrine_family, applied_in showing six wiki-link case references, plus 47-backlinks counter and 28-properties counter) and figure-5-2-graph-view.png (Obsidian native graph view of the entire vault, showing case/topic/lecture nodes connected by wiki-link edges; the dense connectivity is the visual proof of the wiki-link grammar claim). Both 1456x760 PNGs, captured from the actual Obsidian app driving the live vault, not staged. A third file figure-5-1-alt-marbury-source-mode.png is also saved as a fallback if Section V prefers to show raw YAML/markdown source instead of the rendered Properties UI. These figures address the gap the earlier figure capture set left: the article's claims about typed frontmatter, wiki-link grammar, and source-vault graph view (the latter now correctly attributed to Obsidian rather than the deployed site per PI-V-GRAPH-VIEW-OVERCLAIM) were not previously illustrated. Action for next Draft/Cite pass: insert two figures into Section V (5.1 next to the typed-frontmatter paragraph; 5.2 next to the connections-density paragraph), add a sentence in V noting the figure source ('Marbury v Madison case brief and full-vault graph view, captured from the Obsidian source vault, 2026-05-26'), and resolve PI-V-GRAPH-VIEW-OVERCLAIM by reframing footnote 10 to attribute the graph view to the source vault (not the deployed site) and pointing the reader to figure 5.2.",
+      "id": "PI-V-OBSIDIAN-FIGS",
+      "opened_at": "2026-05-26T17:50:00Z",
+      "phase": "draft",
+      "section": "05",
+      "status": "open",
+      "type": "figures-captured-obsidian"
     }
   ],
   "phase_index": 5,
@@ -1623,7 +1632,7 @@
       "claims_total": 25,
       "current_words": 1191,
       "draft_completed_at": "2026-05-16T19:50:00Z",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_draft",
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-16T15:30:00Z",
       "evidence_status": "populated",
