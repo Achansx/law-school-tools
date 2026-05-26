@@ -3,7 +3,7 @@ id: "05"
 title: "Building the Obsidian Vault"
 status: needs_polish
 target_words: 1100
-word_count: 1185
+word_count: 1193
 last_phase: cite
 draft_status: needs_polish
 cite_status: needs_polish
@@ -13,7 +13,7 @@ cite_status: needs_polish
 
 ## A. From flat folder to typed schema
 
-The vault organizes its content into three primary folders, Cases, Topics, and Lectures, each backed by a canonical template in Templates and a per-page YAML frontmatter schema, with read-only inputs in Source Materials, per-phase scoring criteria in rubric, and rotated logs in archive.[^1] The three content folders correspond to three distinct units of legal-pedagogy work: a decided case, a doctrine, and a class session. That typing is what lets the vault behave as a schema rather than a folder of prose. Section IV described the input side of the system, a flat export of one hundred twenty-seven top-level files; Section V describes the layer that translates that input into a typed intermediate, which the build script Section VIII later converts into a website.
+The vault organizes its content into three primary folders, Cases, Topics, and Lectures, each backed by a canonical template in Templates and a per-page YAML frontmatter schema, with read-only inputs in Source Materials, per-phase scoring criteria in rubric, and rotated logs in archive.[^1] The three content folders correspond to three distinct units of legal-pedagogy work: a decided case, a doctrine, and a class session. That typing is what lets the vault behave as a schema rather than a folder of prose. Section IV described the input side of the system, a flat export of three hundred eighty-eight files; Section V describes the layer that translates that input into a typed intermediate, which the build script Section VIII later converts into a website.
 
 The smallest structural commitment is a three-way invariant. Within Cases, the filename, the H1, and the frontmatter case_name field all agree, with no periods, and with the word and rather than an ampersand; the same rule binds Topics and Lectures.[^2] Wiki-links resolve mechanically rather than through normalization heuristics, which is what later allows Section VIII to describe the build script as a deterministic compiler instead of a fuzzy matcher.
 
@@ -31,7 +31,7 @@ The Topic page is the synthesis form, the layer at which the vault stops being a
 
 The Judicial Review topic is the canonical example. Its frontmatter key_cases list cites *Marbury* (1803), *Martin v. Hunter’s Lessee* (1816), *The Prize Cases* (1863), and *Youngstown* (1952); its source_files attribution lists three Cases pages and two Lectures pages directly consulted; the prose stitches them with case back-links at every introduction.[^8] The provenance trail runs from prose back to source, and that chain is the architectural contrast Section XII later draws between the case study and chatbot-tutor systems.
 
-The wiki-link grammar supporting the synthesis layer is small and fixed. Cross-page links take the form of bracketed folder, filename, and display-text tuples; tags are lowercase and hyphenated and placed at file end; every page carries a source_files frontmatter list in lockstep with a Sources footer enforced by the Lint phase.[^9] The deployed site renders a graph view, runs search across pages, and surfaces cross-references because the link grammar is mechanical and the provenance trail verifiable, which makes Section VIII’s self-publishing claim an architectural consequence rather than a marketing line.[^10]
+The wiki-link grammar supporting the synthesis layer is small and fixed. Cross-page links take the form of bracketed folder, filename, and display-text tuples; tags are lowercase and hyphenated and placed at file end; every page carries a source_files frontmatter list in lockstep with a Sources footer enforced by the Lint phase.[^9] The source Obsidian vault renders a graph view through Obsidian’s native graph feature, while the deployed site runs search across pages and surfaces cross-references; the link grammar is mechanical and the provenance trail verifiable, which makes Section VIII’s self-publishing claim an architectural consequence rather than a marketing line.[^10]
 
 ## D. Schema doing work prose alone cannot
 
@@ -69,7 +69,7 @@ The vault’s schema is therefore a sequence of structural commitments, each for
 
 [^9]: *See infra* App. A (Vault Architecture and File Layout) (wiki-link grammar [[folder/filename|Display Text]]; lowercase-hyphenated tags at file end; source_files frontmatter in lockstep with the Sources footer section, enforced by the Lint phase as a structural check).
 
-[^10]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (figure showing the deployed site’s graph view rendering cross-page wiki-links as an interactive node graph; figure capture pending, see PI-012).
+[^10]: *See infra* fig. 5.2 (source Obsidian vault graph view rendering cross-page wiki-links as an interactive node graph, a working view in the author’s Obsidian editing environment rather than a feature of the deployed reader-facing site; figure capture pending, see PI-V-OBSIDIAN-FIGS).
 
 [^11]: *See infra* App. A (Vault Architecture and File Layout) (Case Brief template doctrine_family field locked to one of four values: Federalism, Separation of Powers, Individual Rights, or Justiciability; same enum binds the Topic Page template’s area and family fields).
 

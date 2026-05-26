@@ -3,7 +3,7 @@ id: "04"
 title: "The Input Corpus"
 status: needs_polish
 target_words: 900
-word_count: 898
+word_count: 899
 last_phase: cite
 draft_status: needs_polish
 cite_status: needs_polish
@@ -13,7 +13,7 @@ cite_status: needs_polish
 
 ## A. What the LMS handed us
 
-The corpus comes from a single course taught by a single professor in a single semester: Professor Chandler's Constitutional Law I, Spring 2026.[^1] The doctrinal scope is the structural constitution rather than the full year of constitutional law, covering judicial review, federalism, separation of powers, the Commerce Clause, executive power, justiciability, preemption, state sovereign immunity, the Reconstruction Amendments, substantive due process, equal protection, the First Amendment, and the Second Amendment.[^2] The export arrived as a flat folder of three hundred eighty-eight files, one hundred twenty-seven of them at the top level, with sixty-one PowerPoint lecture decks, sixty-six PDFs of case readings and slide handouts, and three DOCX files among the top-level set.[^3] This is the raw surface that the schema layer described in Section V is built to translate from, and the concrete answer to the question Section II raises about why an LMS folder by itself is not yet a course knowledge system. The corpus is course-issued materials only: lecture decks, professor-prepared opinion PDFs, merged reading packets, and a small set of assessment artifacts. The published wiki on Netlify is a static, reviewed website rather than a chatbot or conversational tutor, a distinction Section XII's risk argument returns to.[^4]
+The corpus comes from a single course taught by a single professor in a single semester: Professor Chandler's Constitutional Law I, Spring 2026.[^1] The doctrinal scope is the structural constitution rather than the full year of constitutional law, covering judicial review, federalism, separation of powers, the Commerce Clause, executive power, justiciability, preemption, state sovereign immunity, the Reconstruction Amendments, substantive due process, equal protection, the First Amendment, and the Second Amendment.[^2] The export arrived as a flat folder of three hundred eighty-eight files, its top level holding sixty-one PowerPoint lecture decks and sixty-six PDFs of case readings and slide handouts, the one hundred twenty-seven slide-and-reading files the flat structure exposed first, alongside three DOCX files.[^3] This is the raw surface that the schema layer described in Section V is built to translate from, and the concrete answer to the question Section II raises about why an LMS folder by itself is not yet a course knowledge system. The corpus is course-issued materials only: lecture decks, professor-prepared opinion PDFs, merged reading packets, and a small set of assessment artifacts. The published wiki on Netlify is a static, reviewed website rather than a chatbot or conversational tutor, a distinction Section XII's risk argument returns to.[^4]
 
 ## B. Anatomy of the export
 
@@ -31,7 +31,7 @@ This article does not claim that casebook excerpts were ingested as input to the
 
 ## D. Filename hygiene as a signal
 
-The Canvas export does not enforce a filename convention. Within the same one-hundred-twenty-seven-file top-level folder, the same kind of artifact, a lecture slide deck, appears under many shapes: 11th Amendment.pptx, Architecture_of_Exclusion.pptx, Biden_v_Nebraska_Standing.pptx, Enumerated Powers- Warren Court and Beyond (2026).pptx, Federalist Papers 2025.pptx, and Gibbons v. Ogden.pptx.[^13] Hyphens, underscores, spaces, parenthetical years, and dotted abbreviations appear in arbitrary combinations within one folder. Some filenames encode topic, some encode case name, some encode year, and no rule predicts which. The point is not that filename hygiene is poor; the point is that filename-level organization carries pedagogical intent unevenly, which is the small bridge to Section V's case for a structured note layer rather than further filename cleanup.
+The Canvas export does not enforce a filename convention. Within the same top-level folder, the same kind of artifact, a lecture slide deck, appears under many shapes: 11th Amendment.pptx, Architecture_of_Exclusion.pptx, Biden_v_Nebraska_Standing.pptx, Enumerated Powers- Warren Court and Beyond (2026).pptx, Federalist Papers 2025.pptx, and Gibbons v. Ogden.pptx.[^13] Hyphens, underscores, spaces, parenthetical years, and dotted abbreviations appear in arbitrary combinations within one folder. Some filenames encode topic, some encode case name, some encode year, and no rule predicts which. The point is not that filename hygiene is poor; the point is that filename-level organization carries pedagogical intent unevenly, which is the small bridge to Section V's case for a structured note layer rather than further filename cleanup.
 
 ## E. Snapshot and disclosure
 

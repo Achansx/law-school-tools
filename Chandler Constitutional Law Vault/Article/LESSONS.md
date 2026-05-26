@@ -49,14 +49,6 @@ date: 2026-05-15
 rule: When the article quotes a judicial opinion, verify against Midpage's `analyzeOpinion` (AI analysis), not just keyword search. The Prize Cases / Grier story is the canonical example; same protocol applies to any case quote in this article.
 context: In the vault, a quotation was off by two words because the modernized PDF differed from the indexed opinion. Verify caught it. We must not reproduce the same error in the article that describes the lesson.
 
-## L-006: Word budgets are floors and ceilings, not targets
-
-phase: draft
-impact_score: 3
-date: 2026-05-15
-rule: A section's word budget in PROJECT_PRIMER is the upper soft limit; the lower limit is 80 percent of the target. If Draft cannot reach 80 percent without padding, the section is under-evidenced and Harvest should run again on that section, not Draft.
-context: Padding to hit a word count weakens the article. Stitch enforces total word count; sections should reach their targets through evidence, not filler.
-
 ## L-007: Per-phase rubric only
 
 phase: dispatcher
@@ -482,3 +474,11 @@ Example transformation:
   - BAD (310 words): "Magesh et al., *Hallucination-Free?*... (reporting 17-33% rates; preprint at arXiv:2405.20362). The published-version pagination was reconfirmed this run (run 144) via WebSearch with allowed_domains scoping returning the verbatim title at the live Wiley abstract path and the author-hosted Stanford copy, both placing the article at volume 22, pages 216 to 242; this confirms the starting page cited above and closes the article's open pagination-confirmation item. The live-repository /doi/abs/ path is preferred over the workplan-transcribed /doi/full/ path, which returned HTTP 403 to WebFetch, per the article's repository-path-over-transcription convention. Transfer-of-inference: the runtime-generation risk this finding measures generalizes to any chatbot-tutor architecture, while the three-system evaluation instrumentation does not transfer to a reviewed static website, which has no runtime generation surface for hallucination to occur on."
   - GOOD (38 words): "Varun Magesh et al., *Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools*, 22 J. Empirical Legal Stud. 216, 220-228 (2025) (reporting 17%-33% citation-hallucination rates across three commercial legal RAG systems)."
 context: Currently many footnotes are 150-300 words of internal validation chain (domain scoping, run numbers, transfer-of-inference, workplan defense, "this closes the article's open pagination-confirmation item"). JLE house style is tight footnotes. The instrumentation that produced these footnotes is real and valuable but belongs in Appendix B (prompts/tooling) or Appendix D (rubrics), not in every body footnote.
+
+## L-060: One sourced figure for any cross-section number
+
+phase: cite
+impact_score: 4
+date: 2026-06-02
+rule: When the same quantity appears in more than one section, every occurrence must trace to one sourced figure, and a component breakdown may never be asserted as a subset of a smaller stated total. Before Cite advances a section that propagates a number from another, reconcile both sites against the evidence card and the appendix that footnotes it; the corpus top-level count is the canonical case (Appendix A is correct that 127 is the 61 PowerPoint plus 66 PDF slide-and-reading subset, not the top-level total, which is 388 across all subfolders).
+context: Section IV.A stated "127 at the top level" while naming 61 + 66 + 3 = 130 component files "among" it, an arithmetic impossibility (PI-131); Section V.A then propagated the bad 127 figure unflagged (PI-136). The error survived through Draft and one Cite pass because no rule forced a cross-section number to reconcile to a single sourced value. The fix re-anchored both sites to Appendix A's framing (388 total; 127 = pptx + pdf) without inventing a new count, since the Source Materials corpus is not in the checkout to re-audit.
