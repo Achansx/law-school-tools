@@ -567,6 +567,54 @@
    "type": "citation-density",
    "resolved_at": "2026-06-01T03:00:00Z",
    "resolution": "Run-157 Draft: I.D adds a Bond et al. meta-review second anchor to the current-conversation paragraph as a [CITE:] placeholder reusing the existing Section XI note 8 / XII note 10 verification per L-034; the intro is now situated in more than a single study."
+  },
+  {
+   "claim": "Section I.C footnote [^5] and Section I.D footnote [^8] carry scheduled-task process language inside their parentheticals ('URL verified live this run via WebFetch'). 'This run' and 'via WebFetch' name the maintenance-rotation tick and tooling, which a reader of a published Bluebook footnote cannot resolve.",
+   "id": "PI-115",
+   "note": "Persona 1 (Skeptical JLE Editor) P1, run 127. Deferral LIFTED; routes Section 01 cite_status (already needs_cite). Distinct from PI-076 (body-prose snapshot alignment) and PI-082 (92/27/79 primary-anchor gap). Next Cite tick on Section 01 (Cite owns Bluebook form, L-015/L-042) strips 'this run' and 'via WebFetch' from [^5]/[^8], keeping the last-visited date and the substantive parenthetical (site navigation + Spring 2026 for [^5]; verbatim title + author institutions for [^8]); route the verification method to an appendix note if it must be recorded. Captures the deferred candidate lesson (no scheduled-task process language in published footnotes) while LESSONS sits over-cap.",
+   "opened_at": "2026-05-29T03:00:00Z",
+   "phase": "verify",
+   "section": "01",
+   "status": "resolved",
+   "type": "citation-process-language",
+   "resolved_at": "2026-06-01T07:00:00Z",
+   "resolution": "Resolved at run-159 Polish as a mechanical-hygiene footnote fix (L-042 process-language class): stripped 'verified live this run via WebFetch' from [^5] and [^8], retaining the last-visited date and the substantive parenthetical ([^5] site navigation + Spring 2026 identity; [^8] title/authors already in the citation). Closed in Polish rather than Cite because the strip is a published-footnote hygiene action, not a Bluebook-form change, and Section 01 had advanced past cite_status:needs_cite without a Cite tick selecting it since the deferral lifted. [^9]'s L-034 cross-section-reuse audit-chain method-naming was out of PI-115's [^5]/[^8] scope and left intact."
+  },
+  {
+   "claim": "Section I.B defines the expert's contribution entirely as downstream review of AI-drafted output (inspect, correct, sign off, gate), with no intro mention that the professor's prior pedagogical judgment shapes what the system produces; reads as reducing the teacher to an editorial quality-gate.",
+   "id": "PI-116",
+   "note": "Persona 2 (Legal Pedagogy Traditionalist) P1, run 127. The editor-versus-teacher conflation PERSONAS.md warns against; distinct location/conflation from PI-078 (live-pedagogy-as-loss in I.A). Deferral LIFTED; routes Section 01 polish_status (already needs_polish). Next Polish tick on Section 01 adds one clause to I.B crediting the professor's pedagogical judgment as shaping what the system is asked to produce (forward-reference to Section VI prompting-as-pedagogical-design), not only what it fixes.",
+   "opened_at": "2026-05-29T03:00:00Z",
+   "phase": "verify",
+   "section": "01",
+   "status": "resolved",
+   "type": "editor-teacher-conflation",
+   "resolved_at": "2026-06-01T07:00:00Z",
+   "resolution": "Resolved at run-159 Polish: I.B's human-expert sentence rewritten to credit the professor's pedagogical judgment as shaping what the system is asked to produce, with an inline forward-reference to Section VI (prompting as pedagogical design); the review/editor role is carried by the following two sentences and [^2]. Editor-versus-teacher conflation closed."
+  },
+  {
+   "claim": "Section I.B and the thesis restatement name 'retrieval from verified legal sources' with no intro qualifier, which reads to a learning-sciences/AI reviewer as runtime retrieval-augmented generation (RAG) - exactly what Section VIII.E ('No LLM sits in the request path') and Section XII.B ('no runtime generation surface') disavow; only Section V.D defines the intended GraphRAG-cousin sense.",
+   "id": "PI-117",
+   "note": "Persona 3 (AI-in-Education Researcher) P1, run 127. Deferral LIFTED; routes Section 01 polish_status (already needs_polish). Next Polish tick on Section 01 qualifies 'retrieval from verified legal sources' to signal build-time source-linking/verification rather than runtime retrieval (e.g., 'build-time linking to verified legal sources' or a half-clause cross-referencing V.D's GraphRAG-cousin framing), so a learning-sciences reader is not primed to read the system as RAG. NOT covered by PI-081 (which is citation-density/missing field literature).",
+   "opened_at": "2026-05-29T03:00:00Z",
+   "phase": "verify",
+   "section": "01",
+   "status": "resolved",
+   "type": "retrieval-terminology",
+   "resolved_at": "2026-06-01T07:00:00Z",
+   "resolution": "Resolved at run-159 Polish: I.B thesis 'retrieval from verified legal sources' qualified to 'build-time linking to verified legal sources' so a learning-sciences reader is not primed to read the system as runtime RAG (consistent with VIII.E/XII.B disavowal of a runtime generation surface; V.D carries the GraphRAG-cousin framing)."
+  },
+  {
+   "claim": "Section I.C labels the doctrinal scope 'the structural constitution' and lists seven doctrine areas; Section IV.A labels the same scope 'structural-plus-rights' and lists thirteen, expressly including substantive due process, equal protection, the First Amendment, and the Second Amendment. The intro under-describes the case study's actual doctrinal coverage.",
+   "id": "PI-118",
+   "note": "Persona 4 (Provenance Auditor) P1, run 127, surfaced during the Section 01 provenance audit. The I.C 'among the subjects a first constitutional-law course covers' hedge softens but does not reconcile the lead characterization. Deferral LIFTED; routes Section 01 polish_status (already needs_polish). Next Polish tick on Section 01 aligns I.C's scope characterization to IV.A (e.g., 'the structural constitution and the core individual-rights doctrines' or matching 'structural-plus-rights subset') and keeps the example list a clearly-signaled subset of IV.A's. Contributed to provenance_score gap-honesty criterion (4) for Section 01.",
+   "opened_at": "2026-05-29T03:00:00Z",
+   "phase": "verify",
+   "section": "01",
+   "status": "resolved",
+   "type": "cross-section-inconsistency",
+   "resolved_at": "2026-06-01T07:00:00Z",
+   "resolution": "Resolved at run-159 Polish: I.C lead aligned to IV.A's structural-plus-rights characterization ('the structural constitution and the core individual-rights doctrines of a one-semester course'), the example list kept a clearly-signaled subset ('are among them'), and footnote [^7]'s parenthetical reconciled to 'the structural-plus-rights subset of a one-semester course'. The I.C-vs-IV.A scope inconsistency contributing to Section 01's gap-honesty provenance gap is closed."
   }
  ],
  "split_at": "2026-05-23T22:30:00Z",
