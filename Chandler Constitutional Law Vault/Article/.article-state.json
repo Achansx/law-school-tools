@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-06-01T21:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-06-01T23:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1475,29 +1475,9 @@
       "section": "11",
       "status": "open",
       "type": "footnote-sequence-violation"
-    },
-    {
-      "claim": "Section I.A defines the recoverable teaching 'residue' as 'the structure and reasoning,' which quietly implies the valuable part of teaching is what the system captures; the live Socratic exchange, adaptive in-class hypotheticals, and reading the room are the irreplaceable performance the prior sentence concedes, but the introduction never signals that the residue excludes them.",
-      "id": "PI-184",
-      "note": "The article makes this concession well at XII.B ('a student who absorbs that map without contesting it forgoes the live Socratic contest'), but the introduction, where the residue claim is first planted, does not. Fix in the next Polish on Section 01: add a short clause to I.A naming what the residue does not include (the adaptive Socratic exchange and live student confusion) with a forward-pointer to XII.B; one sentence, no new citation. Polish-owned. Distinct from PI-029 (Section III cross-reference) and the actor-erasure PIs.",
-      "opened_at": "2026-06-01T13:00:00Z",
-      "phase": "verify",
-      "section": "01",
-      "status": "open",
-      "type": "live-pedagogy-underdisclaimer"
-    },
-    {
-      "claim": "Section I.D cites Bond et al. 2024 for a two-part call ('ethics and rigor'), but the meta-review's call is three-part ('A Call for Increased Ethics, Collaboration, and Rigour', as the section's own footnote [^9] reproduces); the omitted 'collaboration' prong is the one a single-author case study can least satisfy.",
-      "id": "PI-185",
-      "note": "Internally inconsistent with both footnote [^9] (which carries all three prongs) and Section XII.E ('That call is three-part... Collaboration is the prong a single-author case study can least claim'). Fix in the next Polish on Section 01: render Bond's call three-part in I.D and add a half-clause acknowledging collaboration is the prong this single-author study can least claim, with a forward-pointer to XII.E; also harmonizes the body with [^9]'s title. The companion P2 (local [^9] 'Rigor' -> canonical 'Rigour' spelling) folds into the same pass. Polish-owned.",
-      "opened_at": "2026-06-01T13:00:00Z",
-      "phase": "verify",
-      "section": "01",
-      "status": "open",
-      "type": "attribution-truncation"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -1516,7 +1496,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 165,
+  "run_count": 166,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1524,7 +1504,7 @@
       "cite_status": "needs_polish",
       "claims_mapped": 9,
       "claims_total": 9,
-      "current_words": 974,
+      "current_words": 987,
       "draft_at": "2026-05-23T09:00:00Z",
       "draft_status": "needs_cite",
       "evidence_completed_at": "2026-05-24T01:00:00Z",
@@ -1532,10 +1512,10 @@
       "footnotes_count": 9,
       "outline_completed_at": "2026-05-26T07:00:00Z",
       "outline_status": "ready_for_draft",
-      "polish_completed_at": "2026-06-01T07:00:00Z",
-      "polish_routing_reason": "Run-159 Polish landed Polish-owned PI-116 (editor-teacher), PI-117 (retrieval-terminology), PI-118 (scope cross-section-inconsistency) and stripped PI-115 footnote process-language (L-042 hygiene); re-fixed two meta-rhetoric self-flags the run-157 re-draft regressed (L-048); L-023 footnote apostrophe curl. provenance reset to re-audit the materially-changed prose. polish_status->ready_for_stitch.",
-      "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "polish_completed_at": "2026-06-01T23:00:00Z",
+      "polish_routing_reason": "Run-166 Polish landed the two routed run-161 P1s and the companion P2: PI-184 (I.A residue sentence now names what the residue excludes, the adaptive Socratic exchange and the live reading of student confusion, forward-pointing to the XII.B concession the intro had omitted), PI-185 (I.D renders Bond's call three-part 'ethics, collaboration, and rigor' and concedes collaboration is the prong a single-author case study can least claim, forward-pointing to XII.E), and the P2 [^9] 'Rigor'->'Rigour' spelling + footnote-tail two-part->three-part harmonization. Offsetting compression of the redundant I.D 'That study...' sentence pair kept word_count to 987 (+9.7%, within +/-10%). provenance_audited reset to false for re-audit of the changed I.A/I.D prose. PI-082 (198-count primary-source/snapshot gap) stays open as a repo/human action Polish cannot close. polish_status->ready_for_stitch.",
+      "polish_status": "ready_for_stitch",
+      "provenance_audited": false,
       "provenance_audited_at": "2026-06-01T13:00:00Z",
       "provenance_score": 4.4,
       "stitched_at": "2026-05-23T21:00:00Z",
@@ -1975,7 +1955,7 @@
     "last_run_at": "2026-06-01T13:00:00Z",
     "new_findings_count": 3,
     "p0_open": 0,
-    "p1_open": 124,
+    "p1_open": 122,
     "p2_open": 41,
     "personas_read": 4
   },
