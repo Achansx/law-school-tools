@@ -85,15 +85,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "polish",
+ "current_phase": "stitch",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "cite",
- "last_run_at": "2026-06-03T01:00:00Z",
+ "last_completed_phase": "polish",
+ "last_run_at": "2026-06-03T03:00:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -473,66 +473,6 @@
    "section": "09",
    "status": "open",
    "type": "absent-artifact-assertion"
-  },
-  {
-   "claim": "Section IV.E paragraph 1 third sentence ('The ingest-phase line of the full cost-and-labor accounting lives at the master cost table in Section IX, with this section's forward reference closing through that table once it lands.') asserts in present indicative that the ingest-phase line lives at a master cost table that does not yet exist; the master table is deferred under PI-049, PI-050, and PI-051 per Section IX's own framing.",
-   "id": "PI-059",
-   "note": "Persona 1 (Skeptical JLE Editor) P1 finding. Mirrors the PI-057 cost-table-as-promise-standing-in-for-cost-table-as-deliverable pattern now at the upstream forward-reference site; the trailing 'once it lands' clause modifies the closing action not the table's existence. Next Polish tick on Section 04 rewrites IV.E's third sentence so the master-cost-table reference is forward-pointed rather than present-asserted; suggested rewrite: 'The ingest-phase line will land in the master cost-and-labor table at Section IX once that table is reconstructed under the workplan's retroactive backfill protocol; until then, this section forward-references the line as PI-049 names the open reconstruction.' The parallel Polish tick on Section IX that lands PI-057's rewrite of 'the table reads as instrumentation' will produce the symmetric framing on the downstream side.",
-   "opened_at": "2026-05-22T11:00:00Z",
-   "phase": "verify",
-   "section": "04",
-   "status": "open",
-   "type": "cost-table-as-promise"
-  },
-  {
-   "claim": "Section IV.E paragraph 1 fifth sentence ('Applying the vault's own snapshot discipline to the article that describes it is the kind of self-consistency the thesis requires; final sign-off on the snapshot-date selection awaits professorial review.') uses self-flagging meta-rhetoric in its first clause ('is the kind of self-consistency the thesis requires') that announces the structural significance of the move rather than executing it.",
-   "id": "PI-060",
-   "note": "Persona 1 P1 finding. Fourth recurrence of the PI-022 (VIII.E 'Section VIII's most load-bearing claim is the architectural one') / PI-028 (III.E 'Section III walks the user-experience side first') / PI-036 (VI.B mid-section self-pointer) pattern L-036 named; the 2026-05-22T07:00 Polish tick on Section 04 ran with L-036 in scope per the Polish narrative's explicit lesson-application list and the construction still landed in published prose, meaning the L-036 sweep is not catching the category at Polish time across multiple ticks. Next Polish tick on Section 04 rewrites IV.E's fifth sentence so the snapshot-discipline move is made rather than announced; suggested rewrite: 'The article snapshots its inputs and outputs at a single disclosed date for the same reason the vault snapshots its content state, and final sign-off on the snapshot-date selection awaits professorial review.' Candidate L-036 refinement: expand the sweep target from 'section openings and closes' to 'section openings, closes, and any sentence that frames its own structural significance rather than executing it,' because the PI-060 sentence is in the middle of IV.E's closing paragraph rather than at the section's opening or close per se.",
-   "opened_at": "2026-05-22T11:00:00Z",
-   "phase": "verify",
-   "section": "04",
-   "status": "open",
-   "type": "voice-slip-meta-rhetoric"
-  },
-  {
-   "claim": "Section IV.A paragraph 1 sentences four and five (the corpus-description and casebook-acknowledgment pair) erase the professorial-curation moment between the assigned casebook and the course-issued PDFs; nothing in IV.A names who selected which materials to upload to Canvas, who decided which opinions to merge into reading packets (merged-incorporation.pdf, merged-equal-protection-limitations.pdf), who chose to issue modernized PDFs for some cases but not others, or why a particular case was course-issued rather than left to the assigned casebook.",
-   "id": "PI-061",
-   "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding. Sixth recurrence of the PI-015 (Section V.C passive-voice schema-as-actor erasure) / PI-031 (Section III.C lecture-summary recovery substitution) / PI-039 (Section VI.D personas-as-moot-court analog) / PI-046 (Section VII.E professorial-control-as-form-intake) / PI-054 (Section IX.E review-row erasure) actor-erasure pattern, now extending the line to the article's most upstream section. The article's thesis turns on professorial judgment being what the system is in service of; IV.A as currently polished still leaves the upstream curation actor invisible. Next Polish tick on Section 04 adds one sentence after the casebook-acknowledgment clause; suggested insertion: 'Professor Chandler chose which course-issued materials to upload to Canvas, which opinions to merge into multi-case reading packets, and which older cases to redistribute as modernized PDFs; the corpus described here reflects those curation choices rather than an automated export of every constitutional-law text in print.' The new sentence preserves the corpus-description while naming the upstream curation actor and sets up Section V's actor-naming work without duplicating it.",
-   "opened_at": "2026-05-22T11:00:00Z",
-   "phase": "verify",
-   "section": "04",
-   "status": "open",
-   "type": "actor-erasure"
-  },
-  {
-   "claim": "Section IV.E-to-V.A seam reads as procedural-and-architectural pair without substantive bridge; IV.E closes on 'final sign-off on the snapshot-date selection awaits professorial review' and V.A opens with 'The vault organizes its content into three primary folders: Cases, Topics, and Lectures' with no substantive bridge connecting the procedural close to the structural-declaration open.",
-   "id": "PI-062",
-   "note": "Persona 2 P1 finding. The 2026-05-22T09:00 Stitch tick narrative claimed the seam 'carries the IV.B-to-V.A arc cleanly across the new snapshot-and-disclosure close,' but a Civ Pro traditionalist reading the seam at full draft will note the close is a procedural sign-off and the open is an architectural declaration. The Stitch consistency check's seam-criterion did not catch the gap because each side reads clean in isolation; a candidate refinement to the Stitch consistency check would fold a 'does the seam carry a substantive idea across, or does it juxtapose two clean halves' test rather than only the per-side-clean check it currently runs. Two routing options: at IV.E, follow the snapshot-date close with one new closing sentence such as 'The structured note layer Section V describes is what translates that snapshot into a navigable form, and the next section takes up the schema that does the translating.' Or at V.A, replace the opening declarative with a transition-first sentence such as 'Section IV described the corpus as it arrived from Canvas; the vault translates that corpus into a typed schema across three primary folders: Cases, Topics, and Lectures.' The V.A version is the lighter-touch fix because Section 05's polish queue already carries six open P1s and a seam-bridge insertion folds into the existing routing without re-polishing Section 04; the IV.E version is preferred only if Section 04's Polish tick lands first.",
-   "opened_at": "2026-05-22T11:00:00Z",
-   "phase": "verify",
-   "section": "04",
-   "status": "open",
-   "type": "seam-non-bridging"
-  },
-  {
-   "claim": "Section IV.A casebook-acknowledgment hedge ('whether the casebook itself was ingested as input to the vault is an open question this article hedges throughout') closes the casebook-silence surface gap PI-007 named but does not engage with the architectural implication: the article elsewhere asserts curriculum-grounded retrieval as the load-bearing transfer-of-inference (footnote [^23] cross-references Section V's Dong et al. KG-RAG and Peng et al. GraphRAG-survey citations and Section VIII's Sajja et al. curriculum-grounded intelligent assistant), but if the casebook is not in the corpus then the curriculum-grounding claim is structurally incomplete on the input side.",
-   "id": "PI-063",
-   "note": "Persona 3 (AI-in-Education Researcher) P1 finding. A curriculum-grounded retrieval system that does not retrieve from the assigned casebook is a different architectural object than Sajja et al.'s curriculum-grounded intelligent assistant which ingests the full curriculum students read. The PI-007-and-PI-063 pair grounds the new lesson L-044 on the Polish closure of hedge-naming P1s requiring an architectural-implication sentence not only a hedge clause. Next Polish tick on Section 04 adds one sentence to IV.A after the casebook-acknowledgment clause; suggested insertion: 'The corpus's exclusion of casebook excerpts means the curriculum-grounding architectural claim Section XII develops applies to the course-issued layer rather than to the full reading load; Section XII takes up the implication for the static-versus-chatbot architectural contrast.' The Section XII cross-reference matches the IV.A static-vs-chatbot footnote convention.",
-   "opened_at": "2026-05-22T11:00:00Z",
-   "phase": "verify",
-   "section": "04",
-   "status": "open",
-   "type": "hedge-acknowledgment-without-engagement"
-  },
-  {
-   "claim": "Section IV (the section as a whole) is silent on equity, accessibility, device assumptions, and the digital divide as those concerns affect access to the input corpus, the deployed site, and the modernized-PDF layer. The corpus is described as course-issued materials uploaded to Canvas; nothing in IV names that Canvas access presupposes broadband, a device capable of rendering modernized PDFs at 300 dpi, and the institutional enrollment that gates the LMS itself.",
-   "id": "PI-064",
-   "note": "Persona 3 P1 finding. Third recurrence of the PI-026 (Section VIII silence on accessibility, equity, device and bandwidth) and PI-033 (Section III silence on accessibility, device, and equity considerations) pattern; Section IV is the third section in which the article's flagship discussions silently assume sighted, broadband, mouse-and-keyboard, Canvas-enrolled readers without naming the assumption. An AI-in-higher-ed reviewer trained on the equity literature will treat the cumulative silence across three sections as a structural literature-engagement gap. Next Polish tick on Section 04 adds one sentence to IV.A (or to the IV.E disclosure paragraph) acknowledging the access assumptions; suggested insertion: 'The corpus described here presupposes Canvas-enrolled students with broadband access and a device capable of rendering modernized PDFs; Section XII takes up the equity and access implications of the architectural choice.' The Section XII cross-reference matches the convention and defers the substantive equity argument to the section that owns it without duplicating IV.A's static-vs-chatbot footnote. The sentence breaks the three-section silence pattern and gives Section XII a hook into the input side rather than only the deployed-site and case-study sides.",
-   "opened_at": "2026-05-22T11:00:00Z",
-   "phase": "verify",
-   "section": "04",
-   "status": "open",
-   "type": "equity-and-accessibility-silence"
   },
   {
    "claim": "Section II.E-to-III.A seam reads as positional-and-walkthrough pair without substantive bridge: II.E closes on the venue-positional Abrams-parallel ('the contribution is the layer the inherited form was never designed to carry') and III.A opens with a student-eye walkthrough ('A student opens the deployed case study at https://constitutionallaw.netlify.app'); second recurrence of the PI-062 IV.E-to-V.A seam pattern.",
@@ -1379,28 +1319,39 @@
    "type": "evidence-card-inconsistency"
   },
   {
+   "claim": "Section V.C states an unbounded transfer claim, 'The synthesis form transfers to any doctrinal subject,' that Section X.D expressly bounds (the method 'assumes a course organized around tagged doctrines and leading cases'; Civil Procedure and Tax 'fit that assumption less cleanly'). V.C's 'any doctrinal subject' is the universal-applicability overreach PERSONAS.md flags for the Pedagogy Traditionalist, sitting in the schema section a reviewer reads before X.D's hedge, so the article appears to assert what it later retracts.",
    "id": "PI-189",
-   "type": "verify-finding",
+   "note": "Run-175 Verify, Persona 2 (Legal Pedagogy Traditionalist) P1. Next Polish tick on Section 05 should qualify V.C to the bounded form the article defends ('transfers to any case-and-doctrine course') with a forward-pointer to Section X.D's limits; one clause, no new citation. Routes Section 05 polish_status -> needs_polish (already reset this run by the provenance audit).",
+   "opened_at": "2026-06-02T17:00:00Z",
    "phase": "polish",
    "section": "05",
    "status": "open",
-   "opened_at": "2026-06-02T17:00:00Z",
-   "claim": "Section V.C states an unbounded transfer claim, 'The synthesis form transfers to any doctrinal subject,' that Section X.D expressly bounds (the method 'assumes a course organized around tagged doctrines and leading cases'; Civil Procedure and Tax 'fit that assumption less cleanly'). V.C's 'any doctrinal subject' is the universal-applicability overreach PERSONAS.md flags for the Pedagogy Traditionalist, sitting in the schema section a reviewer reads before X.D's hedge, so the article appears to assert what it later retracts.",
-   "note": "Run-175 Verify, Persona 2 (Legal Pedagogy Traditionalist) P1. Next Polish tick on Section 05 should qualify V.C to the bounded form the article defends ('transfers to any case-and-doctrine course') with a forward-pointer to Section X.D's limits; one clause, no new citation. Routes Section 05 polish_status -> needs_polish (already reset this run by the provenance audit)."
+   "type": "verify-finding"
   },
   {
-   "id": "PI-190",
-   "section": "07",
-   "type": "word-budget-overage",
-   "phase": "draft",
-   "status": "open",
-   "route": "stitch",
-   "opened_at": "2026-06-02T23:00:00Z",
    "claim": "Section 07 (Iterative Improvement) prose is 1370 words against a 1100 target (24.5% over, above the Draft 15% ceiling of 1265). The overage is driven by the PI-VII-NARRATE-PRIZE Prize Cases / Grier narrative beat landed this run, which is the article's strongest dramatic moment and was explicitly prioritized. The run-178 Draft recovered ~90 words by cutting the 7.2 self-narrating roadmap sentence and tightening the 7.1 transfer clause and the Youngstown beat, but the section remains over ceiling.",
-   "note": "Per the Draft procedure (do not exceed budget by >15%; if over, flag for Stitch to trim), Stitch should trim Section 07 toward target during final assembly. Lowest-risk trim candidates: the 7.4 audit-trail paragraph (scorecard + build-narrative description) and the 7.2 rotation description. Do NOT cut the Prize Cases beat or the PI-178 scoping sentence in 7.5. Article total has headroom to the 14,000 ceiling, so this is a per-section discipline flag, not a total-budget breach."
+   "id": "PI-190",
+   "note": "Per the Draft procedure (do not exceed budget by >15%; if over, flag for Stitch to trim), Stitch should trim Section 07 toward target during final assembly. Lowest-risk trim candidates: the 7.4 audit-trail paragraph (scorecard + build-narrative description) and the 7.2 rotation description. Do NOT cut the Prize Cases beat or the PI-178 scoping sentence in 7.5. Article total has headroom to the 14,000 ceiling, so this is a per-section discipline flag, not a total-budget breach.",
+   "opened_at": "2026-06-02T23:00:00Z",
+   "phase": "draft",
+   "route": "stitch",
+   "section": "07",
+   "status": "open",
+   "type": "word-budget-overage"
+  },
+  {
+   "claim": "Section 04 (The Input Corpus) polished prose is 1034 words against a 900 target (14.9% over, above the +/-10% Polish band of 990). The growth came from the six Verify-required P1 fixes the run-180 Polish landed (PI-061 curation-actor sentence, PI-063 casebook architectural-implication, PI-064 access-assumption disclosure, PI-062 IV.E-to-V.A seam bridge), partly offset by de-duplicating the now-triplicated Section V forward-references and tightening the additions plus the two IV.E rewrites (PI-059/PI-060).",
+   "id": "PI-191",
+   "note": "Per the Polish procedure (verify word count within +/-10% of target; if not, flag for Stitch), Stitch should trim Section 04 toward target during final assembly. Lowest-risk trim candidates: the IV.A 64-word doctrinal-scope enumeration could be compressed without losing the fourteen-topic content, and the IV.A 'raw surface' transition (which now overlaps the IV.E seam bridge) could be tightened. Do NOT cut the curation-actor, casebook-implication, access-assumption, or seam-bridge sentences, which close routed P1s PI-061/063/064/062. No footnote was added or removed; definitions hold at 20, so no global renumber. Article total has headroom to the 14,000 ceiling; this is a per-section discipline flag (PROJECT_PRIMER earmark: non-XI/XII sections >10% over get trimmed by the next Stitch), not a total-budget breach.",
+   "opened_at": "2026-06-03T03:00:00Z",
+   "phase": "polish",
+   "route": "stitch",
+   "section": "04",
+   "status": "open",
+   "type": "word-budget-overage"
   }
  ],
- "phase_index": 4,
+ "phase_index": 5,
  "phases": [
   "harvest",
   "outline",
@@ -1419,7 +1370,7 @@
   "sections_audited": 14,
   "sections_total": 14
  },
- "run_count": 179,
+ "run_count": 180,
  "schema_version": 1,
  "sections": {
   "01": {
@@ -1519,24 +1470,27 @@
    "cite_note": "Run-179 Cite: resolved PI-005 (netlify URL liveness, the run-172 handoff). WebFetch verified https://constitutionallaw.netlify.app live this run (L-047 provenance open after reading the URL from the draft); footnote [^12] refreshed to L-059 form (disclaimer + PI-005 pointer dropped, title corrected, last-visited June 3 2026, verified-live parenthetical). PI-005 closed and archived. Four [TODO: evidence needed] markers (PI-001/002/003/004) are human/repo-blocked evidence-gaps and stay open; prose already hedges each. PI-131 arithmetic untouched (fixed at run 172, L-060 holds). Zero [CITE:] placeholders; claims footnoted [^1]-[^15].",
    "cite_redone_at": "2026-06-03T01:00:00Z",
    "cite_status": "needs_polish",
-   "claims_mapped": 18,
+   "claims_mapped": 19,
    "claims_total": 19,
-   "current_words": 972,
+   "current_words": 1034,
    "draft_completed_at": "2026-05-16T03:13:24Z",
    "draft_status": "needs_polish",
    "evidence_cards": 8,
    "evidence_populated_at": "2026-05-15T20:05:00Z",
    "evidence_status": "populated",
    "footnotes_count": 20,
+   "last_phase": "polish",
    "outline_ready_at": "2026-05-16T01:11:52Z",
    "outline_status": "ready_for_draft",
    "pi131_resolved_at": "2026-06-02T11:00:00Z",
    "polish_completed_at": "2026-05-16T09:30:00Z",
-   "polish_redone_at": "2026-05-22T07:00:00Z",
-   "polish_status": "needs_polish",
-   "provenance_audited": true,
-   "provenance_audited_at": "2026-05-29T09:00:00Z",
+   "polish_note": "Run-180 Polish: propagated the run-172 PI-131/PI-136 arithmetic reconciliation into the polished artifact (closing the recurring Verify-Editor RESIDUAL: the assembled IV.A had read 61+66+3=130 among 127 top-level), and cleared all six P1s the 2026-05-29 Verify routed to 'the next Polish tick on Section 04' (PI-059 cost-table forward-point, PI-060 de-meta-rhetoric, PI-061 curation-actor, PI-062 IV.E-to-V.A seam bridge, PI-063 casebook architectural-implication, PI-064 access-assumption). Mechanical sweep clean. Landed 1034 words (+14.9%); flagged PI-191 for Stitch trim; footnote defs hold at 20, no global renumber.",
+   "polish_redone_at": "2026-06-03T03:00:00Z",
+   "polish_status": "ready_for_stitch",
+   "provenance_audited": false,
+   "provenance_audited_at": null,
    "provenance_score": 3.6,
+   "provenance_stale_reason": "Run-180 Polish materially rewrote IV.A (propagated the run-172 PI-131 arithmetic reconciliation: 388 total; 61 PowerPoint + 66 PDF = the 127 slide-and-reading subset the flat structure exposes first; plus 3 DOCX), IV.D (dropped the false 'one-hundred-twenty-seven-file top-level folder' total), and IV.E, closing the six routed P1s (PI-059..064). provenance_audited reset to false so the next Verify Provenance Auditor re-audits the new prose rather than the stale 2026-05-29 3.6 read; score 3.6 retained as last-known.",
    "re_stitched_at": "2026-05-22T09:00:00Z",
    "stitched_at": "2026-05-16T11:20:00Z",
    "target_words": 900,
@@ -1878,7 +1832,7 @@
   "last_run_at": "2026-06-02T17:00:00Z",
   "new_findings_count": 1,
   "p0_open": 0,
-  "p1_open": 123,
+  "p1_open": 117,
   "p2_open": 43,
   "personas_read": 4
  },
