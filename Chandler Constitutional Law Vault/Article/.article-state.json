@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-06-01T19:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-06-01T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1375,16 +1375,6 @@
       "type": "unevidenced-core-claim"
     },
     {
-      "claim": "Section XII.B's four-axis architectural contrast (review timing, error surface, update mechanism, accountability) treats 'the chatbot-tutor alternative' as a representative category but anchors the entire category on a single platform paper, Sajja et al. 2023 (note 156); the article never cites a chatbot-tutor survey to license generalizing from one system to 'the chatbot architecture.'",
-      "id": "PI-179",
-      "note": "Persona 3 (AI-in-Education Researcher) P1, routed to Section 12 cite_status:needs_cite per L-024 (Cite owns load-bearing transfer framing and citation density). Same single-citation-anchor pattern as PI-025 (Section 08.E) and PI-040 (Section 06), now recurring at the article's central architectural-contrast section. Next Cite tick on Section 12 should add at least one survey-level chatbot-tutor citation (workplan-bibliography Kuhail et al. 2023 chatbot-tutor survey is the candidate; Bond et al. 2024 at the architecture level optional) to note 156 or a new XII.B footnote, with an inline transfer clause naming what generalizes from the surveyed category and what does not, mirroring the PI-025/PI-040 resolution path; a single multi-section Cite tick could close PI-025/PI-040/PI-179 together under the L-028 multi-section precedent. Section 12 polish_status reset ready_for_stitch->needs_polish so it re-polishes after the citation lands.",
-      "opened_at": "2026-05-31T21:00:00Z",
-      "phase": "verify",
-      "section": "12",
-      "status": "open",
-      "type": "literature-gap"
-    },
-    {
       "claim": "Section IX.C states 'the clean CLI-path deploy on the 205-page corpus logs approximately sixteen seconds build plus approximately eight seconds upload'; the 205-page corpus size appears nowhere else in the article and carries no snapshot date. The article's two disclosed corpus counts are 198 pages (progress-report date, anchored across II.B, IV.E, VIII.A) and 281 pages (May 15, 2026 filesystem audit, IV.E), so 205 is an unreconciled third figure a reader cannot check.",
       "id": "PI-180",
       "note": "Persona 4 (Provenance Auditor) general P1 (severity P1: a number sourced but missing a snapshot date / plausibly supportable but not yet mapped). Routed to Section 09 cite_status:needs_cite. Next Cite tick on Section 09 should either anchor 205 to a dated deploy-log entry (the per-deploy CHANGELOG.md line the Deploy phase writes) with the as-of date inline, or replace '205-page corpus' with the article's disclosed 198-page snapshot count so IX.C does not introduce an unreconciled third corpus size. Compounds with PI-004 (the 198-vs-281 snapshot-date decision); resolving PI-004's snapshot discipline should also fix the 205 anchor.",
@@ -1507,7 +1497,7 @@
       "type": "attribution-truncation"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -1526,7 +1516,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 164,
+  "run_count": 165,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1890,19 +1880,20 @@
       "verify_routing_reason": "Run-161 Verify: PI-183 (footnote [^154] referenced in XI.D before [^151]-[^153] in XI.E; out-of-sequence in-text marker order, definitions numerically correct) -> polish_status needs_polish; the local section-11 footnote order is fixed in Polish and the global renumber rides the next Stitch."
     },
     "12": {
-      "cite_at": "2026-05-31T01:00:00Z",
+      "cite_at": "2026-06-01T21:00:00Z",
       "cite_note_run144": "Run-144 Cite: verified run-143 expansion's new claims carry footnote coverage (no orphans, no [CITE:]/[TODO:] markers); resolved PI-101 (Magesh 216-242 reconfirmed) and PI-164 (Bond corpus-composition CORRECTED to source-accurate 'adaptive and interactive interventions, chiefly adaptive systems and personalization'); PI-160 staged with identical resolution for Section 11's Cite tick.",
-      "cite_status": "needs_cite",
+      "cite_note_run165": "Run-165 Cite: confirmed run-164 XII.B additions introduced no orphan claim (architectural own-risk, no new footnote); resolved PI-179 by naming chatbot tutors as a recognized intervention category in the body and citing Bond et al. 2024 (workplan line 199) at [^3] as the verified survey-level anchor, per L-053 NOT adding Kuhail (absent from workplan); brought all ten footnotes to the L-059 50-word cap and L-058 internal-artifact compliance; Magesh [^1] re-verified live (WebFetch 403 -> WebSearch per L-052), last-visited June 1, 2026. current_words 1396->1419; cite_status->needs_polish.",
+      "cite_status": "needs_polish",
       "claims_mapped": 18,
       "claims_total": 18,
-      "current_words": 1396,
+      "current_words": 1419,
       "draft_at": "2026-06-01T19:00:00Z",
       "draft_note_run164": "Run-164 Draft: landed the sole still-unaddressed ask of PI-XII-ENGAGE (b) by adding explicit staleness (content fixed at a snapshot, can fall behind a shifting doctrine where a continuously re-grounded system would not) and scope-creep/single-point-of-failure-on-review (the reviewer's capacity, not the model's, becomes the binding constraint as the corpus grows) to the XII.B static-architecture own-failure-modes catalogue. Asks (a)/(d)/(e) were already landed by run-143; ask (c) Mata-to-one-sentence deliberately NOT regressed (run-143 deepened Mata per a run-138 Verify finding; L-010 no longer in LESSONS, so the more recent deepening governs). No new number (L-027), no new [CITE:] (architectural/analytical claims), recurring sentence absent per L-002, static-vs-chatbot verb discipline held per L-003/L-031. current_words 1359->1396. draft_status->needs_cite. PI-XII-ENGAGE resolved+archived.",
       "draft_status": "needs_cite",
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-23T03:00:00Z",
       "evidence_status": "populated",
-      "last_phase": "draft",
+      "last_phase": "cite",
       "outline_ready_at": "2026-05-23T05:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_at": "2026-05-31T03:00:00Z",
