@@ -1,20 +1,22 @@
 ---
 id: "05"
 title: "Building the Obsidian Vault"
-status: ready_for_stitch
+status: needs_polish
 target_words: 1100
 word_count: 1210
-last_phase: polish
-draft_status: needs_polish
+last_phase: verify
+draft_status: needs_cite
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: needs_polish
 stitched_at: 2026-05-17T01:30:00Z
-provenance_audited: false
-provenance_audited_at: 2026-05-29T11:00:00Z
-provenance_score: 3.8
-claims_total: 25
-claims_mapped: 24
-provenance_stale_reason: "Polish run 173 materially revised V.A (388-file count from Cite run 172), V.B (review-pipeline naming, PI-016), V.C (professor-as-curator actor and membership methodology, PI-015/PI-017), V.D (GraphRAG reframed as authoring-time analogy, PI-135), and V.E (active voice); the 2026-05-29 audit no longer matches the prose. Re-audit required."
+re_stitched_at: 2026-06-02T15:00:00Z
+provenance_audited: true
+provenance_audited_at: 2026-06-02T17:00:00Z
+provenance_score: 4.4
+claims_total: 26
+claims_mapped: 26
+unsupported_claims: []
+provenance_stale_reason: "Run-175 Verify re-audited the run-172/173 prose: score rose 3.8 -> 4.4 (criteria 5/4/5/4/4) as the 388-count inconsistency, the GraphRAG and graph-view overclaims, and the un-attributed curation/review actions all closed, but it cannot clear the 4.5 gate because primary_source_ratio and numerical_precision both turn on PI-188 (the corpus count traces to an internal filesystem audit whose Source Materials corpus is not in-repo, and V.A carries no inline snapshot date) plus three pending-figure forward references (PI-012, PI-V-OBSIDIAN-FIGS). polish_status reset stitched -> needs_polish; Polish-owned targets PI-189 (V.C unbounded 'any doctrinal subject' transfer claim) and PI-013 (V.D Dong effect-size architectural transfer)."
 ---
 
 # V. Building the Obsidian Vault
