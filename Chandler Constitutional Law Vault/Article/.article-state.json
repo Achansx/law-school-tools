@@ -85,23 +85,23 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-02T13:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-02T15:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-06-02T01:00:00Z",
+    "last_stitched_at": "2026-06-02T15:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13187
+    "total_words": 13207
   },
   "pending_issues": [
     {
@@ -1408,7 +1408,7 @@
       "type": "evidence-card-inconsistency"
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1427,7 +1427,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 173,
+  "run_count": 174,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1576,11 +1576,12 @@
       "polish_completed_at": "2026-05-16T23:30:00Z",
       "polish_note": "Run-173 Polish on the run-172-unblocked Section 05. Applied the seven Polish-owned Verify findings with their prescribed fixes: PI-133 (dropped compiler/fuzzy-matcher metaphor and 'marketing line' self-defense), PI-134 (qualified 'class session' as a post-hoc lecture summary, not a transcript of the live Socratic exchange), PI-135 (reframed the GraphRAG claim as an authoring-time analogy per L-003), PI-014 ('navigable site' replaces 'students browse'), PI-015 (professor named as curator at V.C), PI-016 (professor-review pipeline named at V.B), PI-017 (Topic-membership methodology stated, Section VI cross-ref). Full style checklist run: zero em dashes, all quotes curly (incl. footnote [^2] '&'), no straight ASCII quotes. Trimmed redundancy to hold word_count at 1210 (+10.0%, within the +-10% band) after the findings added human-in-the-loop prose; re-attached footnote [^16] whose carrying clause was trimmed. Cite-owned PI-013 left OPEN (the V.D reframe reduces its over-loading concern but the footnote dimension is Cite's); figure tasks PI-012/PI-V-OBSIDIAN-FIGS/PI-V-LOCAL-GRAPHS and Harvest-owned PI-188 untouched. polish_status needs_polish -> ready_for_stitch.",
       "polish_redone_at": "2026-06-02T13:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "stitched",
       "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T11:00:00Z",
       "provenance_score": 3.8,
       "provenance_stale_reason": "Polish run 173 materially revised V.A (388-file count from Cite run 172), V.B (review-pipeline naming, PI-016), V.C (professor-as-curator actor and membership methodology, PI-015/PI-017), V.D (GraphRAG reframed as authoring-time analogy, PI-135), and V.E (active voice); the 2026-05-29 provenance audit no longer matches the prose, so provenance_audited reset to false for Verify re-audit. provenance_score 3.8 retained as last-known.",
+      "re_stitched_at": "2026-06-02T15:00:00Z",
       "stitched_at": "2026-05-17T01:30:00Z",
       "target_words": 1100,
       "title": "Building the Obsidian Vault",
