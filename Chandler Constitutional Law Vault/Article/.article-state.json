@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-06-02T11:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-06-02T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -173,46 +173,6 @@
       "section": "05",
       "status": "open",
       "type": "citation-transfer"
-    },
-    {
-      "claim": "Section V.B's closing sentence 'the payoff Section VIII later realizes as a site students browse' presents student browsing as a present fact without supporting evidence in the present prose; Sections III, XI, and XIII (which would carry any adoption or learning-outcomes evidence) remain PENDING.",
-      "id": "PI-014",
-      "note": "Persona 1 P1 finding. Next Polish tick on Section 05 should rewrite the closing phrase to remove the implicit-adoption framing \u2014 either 'the payoff Section VIII later realizes as a navigable site' or 'a site designed for students to browse' preserves the architectural payoff without claiming a usage fact the article has not yet established.",
-      "opened_at": "2026-05-17T03:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "unsupported-empirical-claim"
-    },
-    {
-      "claim": "Section V.C's paragraph 1 sentence 'A single Topic pulls every Case brief and Lecture summary touching a doctrine into one page' uses passive voice that erases the human curator; Section V across A through D names the schema as the actor and reintroduces the professor only at V.E in passive voice.",
-      "id": "PI-015",
-      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding. The article's thesis depends on professorial judgment being visible in the system rather than absorbed into it; Section V as written makes the schema look autonomous. Next Polish tick on Section 05 should add a one-sentence professor-as-curator clause to V.C's opening ('The professor decides which briefs and summaries belong on a Topic page; the schema enforces the structure once that selection is made') and consider mirroring the actor-naming move at V.E where the realignment decision is described.",
-      "opened_at": "2026-05-17T03:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "actor-erasure"
-    },
-    {
-      "claim": "Section V.B's sentence 'Section VI's prompting design uses it to generate exam-style hypotheticals on a known structural shape rather than free-form text' can be read as a claim that AI-generated exam content reaches students without professor review; the static-reviewed-pipeline framing from Section IV.A is not carried into the V.B sentence.",
-      "id": "PI-016",
-      "note": "Persona 2 P1 finding. Next Polish tick on Section 05 should rewrite the sentence to name the review pipeline, for example 'Section VI's prompting design uses the block to draft exam-style hypotheticals on a known structural shape; the professor reviews each draft before it lands on a Topic page, consistent with the static, reviewed pipeline described in Section IV.A.' Anchors the hypothetical-generation claim inside the human-in-the-loop architecture without adding a new evidence demand.",
-      "opened_at": "2026-05-17T03:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "review-pipeline-omission"
-    },
-    {
-      "claim": "Section V.C's relevance-determination construction phrase 'every Case brief and Lecture summary touching a doctrine into one page' leaves the methodology undefined (manual curation, AI-suggested with human review, automated keyword or embedding similarity).",
-      "id": "PI-017",
-      "note": "Persona 3 P1 finding. Section X's generalization claim and any future learning-outcomes claim require the construction methodology to be explicit. The source_files frontmatter convention mentioned later in the same paragraph implies manual curation but does not state it. Next Polish tick on Section 05 should add a clause to V.C paragraph 1 \u2014 'Topic-membership is a professor curation choice recorded in the page's source_files frontmatter list rather than an automated similarity computation' \u2014 and add a forward cross-reference to Section VI for the prompting design that supports that curation.",
-      "opened_at": "2026-05-17T03:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "methodology-gap"
     },
     {
       "claim": "Section VIII's framing of the Deploy phase as zero-build-minutes via the CLI direct-upload path needs at least one numeric line in the Section IX cost-and-labor table: per-deploy wall-clock, per-month Netlify bandwidth tier, and per-month token spend on the Deploy phase's verification probes.",
@@ -945,36 +905,6 @@
       "type": "false-cross-reference"
     },
     {
-      "claim": "Section V.A paragraph 2 ('describe the build script as a deterministic compiler instead of a fuzzy matcher') and V.C paragraph 3 ('an architectural consequence rather than a marketing line') import software-engineering metaphors as self-evidently virtuous and defend against the press-release charge inside the prose.",
-      "id": "PI-133",
-      "note": "Verify run 131, Persona 1 (Skeptical JLE Editor) P1. Polish-owned register/tone finding; routes Section 05 polish_status -> needs_polish. Fix: drop the compiler/fuzzy-matcher framing for a plain exact-filename-match statement, and delete the self-referential 'rather than a marketing line' clause. Distinct from open Section 05 PIs (empirical-claim, actor-erasure, methodology).",
-      "opened_at": "2026-05-29T11:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "tone-register"
-    },
-    {
-      "claim": "Section V.A paragraph 1 equates 'a class session' with a Lectures page (a written summary), presuming the pedagogical content of a class session is fully capturable as a typed note and eliding the Socratic exchange, the in-class hypothetical, and live student confusion.",
-      "id": "PI-134",
-      "note": "Verify run 131, Persona 2 (Legal Pedagogy Traditionalist) P1. Polish-owned; routes Section 05 polish_status -> needs_polish. Live-classroom-substitution family with PI-031 (III.C) and PI-129 (IV.B); distinct location from V.C actor-erasure PIs (PI-015/PI-017). Fix: qualify the third unit, e.g. 'a class session, captured as a post-hoc lecture summary rather than a transcript of the live Socratic exchange.'",
-      "opened_at": "2026-05-29T11:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "live-classroom-substitution"
-    },
-    {
-      "claim": "Section V.D's 'manually maintained, professor-supervised cousin of GraphRAG, where the human-curated link graph and typed frontmatter do the retrieval work pure semantic similarity cannot' imports a runtime retrieval-augmented-generation label onto an authoring-time structure; the deployed artifact is a static pre-rendered site that performs no query-time retrieval or generation (L-003).",
-      "id": "PI-135",
-      "note": "Verify run 131, Persona 3 (AI-in-Education Researcher) P1. GraphRAG/knowledge-graph terminology misuse. Distinct from PI-013 (Dong et al. effect-size over-loaded as architectural anchor at V.D [^14]); this is the category error in the term 'GraphRAG cousin' itself. Polish-owned; routes Section 05 polish_status -> needs_polish. Fix: reframe as an authoring-time correspondence ('borrows GraphRAG's organizing intuition but applies it at authoring time; the deployed site serves the graph statically rather than retrieving over it per query'), keeping Dong [^14]/Peng [^15] as the source of the intuition, not as evidence about this static artifact.",
-      "opened_at": "2026-05-29T11:00:00Z",
-      "phase": "verify",
-      "section": "05",
-      "status": "open",
-      "type": "terminology-misuse"
-    },
-    {
       "claim": "Section VI.C recites internal rubric mechanics and prompt parameters in the body prose: criterion names (scope_discipline, exam_readiness), the exam_readiness 0.22 weight, scoring rules ('a fact-pattern-only hypo scores zero'; 'scoring 3 for one missing and 1 for both missing'), and exact prompt constants ('roughly 150 words'; 'five hypos in a fixed distribution (two same-side, two opposite-side, one fence-sitter)'). To a JLE editor the cumulative effect reads as internal system documentation rather than legal scholarship, and the constants are unverifiable from the text (they live in vault rubric files routed to App. A, with the prompt-text appendix App. B not yet assembled, PI-035).",
       "id": "PI-137",
       "note": "Verify run 132, Persona 1 (Skeptical JLE Editor) P1. Distinct from PI-036 (VI.B self-announcing meta-rhetoric) and PI-040 (single-survey citation-density anchor): this is a register/tone finding that VI.C argues by reciting the scoring sheet rather than the pedagogy. Polish-owned; routes polish_status -> needs_polish (already set by the prior persona pass on Section 06). Next Polish tick on Section 06 should move the bare numeric weight (exam_readiness 0.22) and the scoring-rule clauses into footnotes [^5]-[^8] (which already carry them) and keep in the body only the design claim each constant encodes (for example 'the rubric penalizes a brief finished in a single pass' without the criterion name and weight), so VI.C argues the pedagogical commitment rather than transcribing the rubric. Candidate lesson (a body paragraph should state the design rule, not the rubric weight that enforces it; numeric weights and criterion names belong in footnotes) deferred at the LESSONS over-cap of 51.",
@@ -1478,7 +1408,7 @@
       "type": "evidence-card-inconsistency"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -1497,7 +1427,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 172,
+  "run_count": 173,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1631,7 +1561,7 @@
       "cite_status": "needs_polish",
       "claims_mapped": 24,
       "claims_total": 25,
-      "current_words": 1199,
+      "current_words": 1210,
       "draft_completed_at": "2026-05-16T19:50:00Z",
       "draft_reconciled_at": "2026-06-02T09:00:00Z",
       "draft_routing_reason": "Run-171 Draft reconciliation. The literal lowest-ratio rule points at already-complete sections (14 at 0.953, 13 at 0.956, all draft_status:needs_cite), so among the only two sections still flagged draft_status:needs_draft (05 at 1.083, 07 at 1.087) the lower-ratio Section 05 was selected. Read outline-05, all eleven evidence cards, and drafts/section-05 prose: the five subsections V.A-V.E cover every outline bullet (5.1-5.5), PI-011's second iteration story (area-enum realignment) is written into V.E, the PI-012 figure references are hedged with forward pointers to Section III ([^6]/[^10]/[^12]), no [TODO] markers, no fabrication, current_words 1191 within +8.3% of the 1100 target. The needs_draft flag was STALE: the section completed draft/cite/polish/stitch on 2026-05-16/17 and every open P1 on it is Polish-owned (PI-014/015/016/133/134/135), Cite-owned (PI-136 the 127-vs-130 count, PI-013), or figure/human (PI-012, PI-V-*); none is draft-ownable. Per RUNBOOK Draft step 7 (set needs_cite when structurally complete), draft_status needs_draft -> needs_cite. This also UNBLOCKS Cite, whose step-1 selection keys on draft_status:needs_cite and could not see Section 05 while it sat at needs_draft, stranding the Cite-owned PI-136. Section 07's identical stale flag is left for the next Draft tick per one-section-per-phase discipline. No prose written; the 127/130 reconciliation is Cite-owned and was not fabricated.",
@@ -1640,14 +1570,17 @@
       "evidence_populated_at": "2026-05-16T15:30:00Z",
       "evidence_status": "populated",
       "footnotes_count": 17,
-      "last_phase": "cite",
+      "last_phase": "polish",
       "outline_ready_at": "2026-05-16T17:30:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-16T23:30:00Z",
-      "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "polish_note": "Run-173 Polish on the run-172-unblocked Section 05. Applied the seven Polish-owned Verify findings with their prescribed fixes: PI-133 (dropped compiler/fuzzy-matcher metaphor and 'marketing line' self-defense), PI-134 (qualified 'class session' as a post-hoc lecture summary, not a transcript of the live Socratic exchange), PI-135 (reframed the GraphRAG claim as an authoring-time analogy per L-003), PI-014 ('navigable site' replaces 'students browse'), PI-015 (professor named as curator at V.C), PI-016 (professor-review pipeline named at V.B), PI-017 (Topic-membership methodology stated, Section VI cross-ref). Full style checklist run: zero em dashes, all quotes curly (incl. footnote [^2] '&'), no straight ASCII quotes. Trimmed redundancy to hold word_count at 1210 (+10.0%, within the +-10% band) after the findings added human-in-the-loop prose; re-attached footnote [^16] whose carrying clause was trimmed. Cite-owned PI-013 left OPEN (the V.D reframe reduces its over-loading concern but the footnote dimension is Cite's); figure tasks PI-012/PI-V-OBSIDIAN-FIGS/PI-V-LOCAL-GRAPHS and Harvest-owned PI-188 untouched. polish_status needs_polish -> ready_for_stitch.",
+      "polish_redone_at": "2026-06-02T13:00:00Z",
+      "polish_status": "ready_for_stitch",
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T11:00:00Z",
       "provenance_score": 3.8,
+      "provenance_stale_reason": "Polish run 173 materially revised V.A (388-file count from Cite run 172), V.B (review-pipeline naming, PI-016), V.C (professor-as-curator actor and membership methodology, PI-015/PI-017), V.D (GraphRAG reframed as authoring-time analogy, PI-135), and V.E (active voice); the 2026-05-29 provenance audit no longer matches the prose, so provenance_audited reset to false for Verify re-audit. provenance_score 3.8 retained as last-known.",
       "stitched_at": "2026-05-17T01:30:00Z",
       "target_words": 1100,
       "title": "Building the Obsidian Vault",
