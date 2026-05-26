@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "outline",
-  "last_run_at": "2026-06-02T07:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-06-02T09:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1497,7 +1497,7 @@
       "type": "attribution-truncation"
     }
   ],
-  "phase_index": 2,
+  "phase_index": 3,
   "phases": [
     "harvest",
     "outline",
@@ -1516,7 +1516,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 170,
+  "run_count": 171,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1654,11 +1654,14 @@
       "claims_total": 25,
       "current_words": 1191,
       "draft_completed_at": "2026-05-16T19:50:00Z",
-      "draft_status": "needs_draft",
+      "draft_reconciled_at": "2026-06-02T09:00:00Z",
+      "draft_routing_reason": "Run-171 Draft reconciliation. The literal lowest-ratio rule points at already-complete sections (14 at 0.953, 13 at 0.956, all draft_status:needs_cite), so among the only two sections still flagged draft_status:needs_draft (05 at 1.083, 07 at 1.087) the lower-ratio Section 05 was selected. Read outline-05, all eleven evidence cards, and drafts/section-05 prose: the five subsections V.A-V.E cover every outline bullet (5.1-5.5), PI-011's second iteration story (area-enum realignment) is written into V.E, the PI-012 figure references are hedged with forward pointers to Section III ([^6]/[^10]/[^12]), no [TODO] markers, no fabrication, current_words 1191 within +8.3% of the 1100 target. The needs_draft flag was STALE: the section completed draft/cite/polish/stitch on 2026-05-16/17 and every open P1 on it is Polish-owned (PI-014/015/016/133/134/135), Cite-owned (PI-136 the 127-vs-130 count, PI-013), or figure/human (PI-012, PI-V-*); none is draft-ownable. Per RUNBOOK Draft step 7 (set needs_cite when structurally complete), draft_status needs_draft -> needs_cite. This also UNBLOCKS Cite, whose step-1 selection keys on draft_status:needs_cite and could not see Section 05 while it sat at needs_draft, stranding the Cite-owned PI-136. Section 07's identical stale flag is left for the next Draft tick per one-section-per-phase discipline. No prose written; the 127/130 reconciliation is Cite-owned and was not fabricated.",
+      "draft_status": "needs_cite",
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-16T15:30:00Z",
       "evidence_status": "populated",
       "footnotes_count": 17,
+      "last_phase": "draft",
       "outline_ready_at": "2026-05-16T17:30:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-16T23:30:00Z",
