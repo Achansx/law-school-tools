@@ -1448,6 +1448,24 @@
       "section": "multi",
       "status": "open",
       "type": "stale-figures"
+    },
+    {
+      "claim": "Section V (Building the Obsidian Vault) footnote 10 asserts: 'The deployed site renders a graph view, runs search across pages, and surfaces cross-references because the link grammar is mechanical and the provenance trail verifiable.' Verified 2026-05-26 against constitutionallaw.netlify.app: the deployed site does NOT render a graph view. The top-nav routes are Dashboard, Cases, Topics, Lectures, Recent, About \u2014 no graph view, no SVG/canvas graph visualization anywhere on the site. The graph view exists only in the source Obsidian vault (an Obsidian native feature), not on the published site. This is a factual overclaim that a careful reviewer will catch. Fix: in the Cite or Polish pass, edit the Section V V.A paragraph and footnote 10 to remove the 'graph view' claim. Either (a) drop the reference entirely, leaving 'runs search across pages, and surfaces cross-references', or (b) reframe as 'the source Obsidian vault renders a graph view via Obsidian's native graph feature, while the deployed site exposes the same link grammar through search and per-page Connections panels.' Option (b) is more accurate and preserves the architectural argument. Per L-058 and the no-internal-artifacts ban, if option (b) is chosen, frame the Obsidian graph view as a working note for the author/maintainer (Professor Chandler), not as a published-reader feature.",
+      "id": "PI-V-GRAPH-VIEW-OVERCLAIM",
+      "opened_at": "2026-05-26T17:30:00Z",
+      "phase": "cite",
+      "section": "05",
+      "status": "open",
+      "type": "factual-overclaim"
+    },
+    {
+      "claim": "Two additional Section-VIII figures captured 2026-05-26 from constitutionallaw.netlify.app and saved at <vault>/Article/manuscript/figures/: figure-3-9-about-page.png (deployed site About page, referenced by Section VIII footnote 2) and figure-3-10-feedback-form.png (page-feedback form open on the Marbury case page, referenced by Section VIII footnote 13). Both 1440x723 PNGs, viewport-only crop. Closes the Section-VIII portion of PI-019 (the search-palette figure was already captured as figure-3-8). PI-019 can be marked resolved once the next Cite tick swaps Section VIII's '[CITE: forward reference to Section III X figure; see PI-019]' placeholders to the actual figure filenames.",
+      "id": "PI-FIGS-VIII-CAPTURED",
+      "opened_at": "2026-05-26T17:30:00Z",
+      "phase": "verify",
+      "section": "08",
+      "status": "open",
+      "type": "figures-captured"
     }
   ],
   "phase_index": 5,
