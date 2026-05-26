@@ -1402,6 +1402,16 @@
       "section": "multi",
       "status": "open",
       "type": "workplan-reference-eviction"
+    },
+    {
+      "claim": "Stitch run 160 (interim assembly landing the run-157/158/159 Section I re-draft/cite/polish into full-draft.md) was completed locally as commit b2671c7 but could not be pushed to master: a concurrent commit (d5bc338, 'L-057 \u2014 no Article-Workplan.md references in published prose') force-updated master, reformatting the entire .article-state.json (sort_keys, 2-space indent) and adding PI-WORKPLAN-EVICT, which produced an unresolvable content conflict in .article-state.json on rebase.",
+      "id": "PI-182",
+      "note": "Per the maintenance push-race protocol the rebase was aborted and NOT auto-resolved (state-file merge is a human decision). The lost run-160 work, all regenerable: Section I landed into full-draft.md (842->974 words; footnote count 8->9, global renumber to 179 contiguous defs with the +1 shift, new [^9] cross-refs globalized to 'Section XI note 148'/'Section XII note 164' and Bond title harmonized to 'Rigour'); manuscript.total_words 13028->13160 and last_stitched_at->2026-06-01T09:00:00Z; the run-160 stitch score (avg 4.2); the cost-log and BUILD_NARRATIVE stitch entries; the stitch->verify phase advance; and the originally-planned PI-181 (abstract 'retrieval from verified legal sources' vs I.B 'build-time linking', not landed). The tick cursor on master remains current_phase:stitch / run_count:159, so the next scheduled run redoes stitch run 160 cleanly on top of d5bc338 (which did NOT touch full-draft.md or polished/section-01, so the Section I source is unchanged and the redo is faithful). b2671c7 is retained in this container reflog. Resolution: none required beyond letting the next stitch tick re-run; this entry documents the race for the human and the next run.",
+      "opened_at": "2026-06-01T09:00:00Z",
+      "phase": "stitch",
+      "section": "01",
+      "status": "open",
+      "type": "push-race-conflict"
     }
   ],
   "phase_index": 5,
