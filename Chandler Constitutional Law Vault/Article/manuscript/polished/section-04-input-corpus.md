@@ -1,19 +1,32 @@
 ---
 id: "04"
 title: "The Input Corpus"
-status: ready_for_stitch
+status: needs_polish
 target_words: 900
 word_count: 1034
-last_phase: polish
+last_phase: verify
 draft_status: needs_polish
 cite_status: needs_polish
-polish_status: ready_for_stitch
-provenance_audited: false
-provenance_score: 3.6
-provenance_stale_reason: "Run-180 Polish materially rewrote IV.A (propagated the run-172 PI-131 arithmetic reconciliation: 388 total; 61 PowerPoint + 66 PDF = the 127 slide-and-reading subset the flat structure exposes first; plus 3 DOCX), IV.D (dropped the false 'one-hundred-twenty-seven-file top-level folder' total), and IV.E, closing the six routed P1s (PI-059..064). provenance_audited reset to false so the next Verify Provenance Auditor re-audits the new prose rather than the stale 2026-05-29 3.6 read; score 3.6 retained as last-known. The prior unsupported_claim (the 130-among-127 arithmetic) is now resolved in prose."
-claims_total: 19
-claims_mapped: 19
-unsupported_claims: []
+polish_status: needs_polish
+provenance_audited: true
+provenance_audited_at: "2026-06-03T07:00:00Z"
+provenance_score: 4.4
+provenance_audit_note: "Run-182 Verify Provenance Auditor re-audit of the run-180/181 reconciled prose. The prior 3.6 driver (the 61+66+3=130-among-127 arithmetic impossibility) is resolved: IV.A reads 388 total / 61 PowerPoint + 66 PDF = 127 slide-and-reading subset / +3 DOCX, consistent with App. A and with Sections II and VIII. Score 4.4 (coverage 5, primary-source-ratio 4, attribution 5, numerical-precision 4, gap-honesty 4). Two residual defects route the section back to needs_polish: (1) footnotes [^14], [^15], and [^20] route the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose barred by the PROJECT_PRIMER citation policy and provenance-rubric criterion 2 (logged PI-192; the three unsupported_claims below carry reason requires-primary-source); (2) the 198-page count's snapshot is 'the progress-report date' without an explicit calendar date. 4.4 < 4.5, so the next Cite/Polish tick re-points the three footnotes to App. D (Correspondence Excerpts) or drops them (the body-prose hedges stand alone)."
+claims_total: 20
+claims_mapped: 17
+unsupported_claims:
+  - claim_text: "This article does not claim that casebook excerpts were ingested as input to the vault; that question remains open at the time of writing."
+    paragraph: 7
+    footnote: "[^14]"
+    reason: requires-primary-source
+  - claim_text: "this article does not claim that student work, including prior exam answers, office-hours notes, or LMS posts, was used as training input."
+    paragraph: 7
+    footnote: "[^15]"
+    reason: requires-primary-source
+  - claim_text: "final sign-off on the snapshot-date selection awaits professorial review."
+    paragraph: 9
+    footnote: "[^20]"
+    reason: requires-primary-source
 polish_note: "Run-180 Polish on Section 04 (the run-179 Cite handoff). Propagated the run-172 PI-131/PI-136 arithmetic reconciliation from drafts/section-04 into this polished artifact, closing the recurring Verify-Editor RESIDUAL (the assembled IV.A had read 61+66+3=130 'among' 127 top-level, an arithmetic impossibility). Cleared all six P1s the 2026-05-29 Verify routed to 'the next Polish tick on Section 04': PI-059 (IV.E cost-table present-existence overclaim -> forward-pointed to the master table to be assembled at Section IX), PI-060 (IV.E self-flagging meta-rhetoric 'is the kind of self-consistency the thesis requires' -> the move is made not announced), PI-061 (IV.A actor-erasure -> names the professor's curation choices), PI-062 (IV.E-to-V.A seam -> added a substantive bridge sentence to the structured note layer), PI-063 (IV.A casebook hedge -> added the architectural-incompleteness implication with a Section XII forward-reference), PI-064 (IV access-assumption silence -> one sentence naming broadband/device/enrollment with a Section XII forward-reference). Full mechanical sweep clean (zero em dashes, zero straight quotes; all curly). Section landed at 1034 words (+14.9% of the 900 target); de-duplicated the now-triplicated Section V forward-references and tightened the additions, but the section sits above the +/-10% band, so flagged for Stitch trim under PI-191 (no footnote added/removed; defs hold at 20, no global renumber)."
 ---
 
