@@ -6,7 +6,7 @@ target_words: 700
 word_count: 736
 last_phase: verify-provenance
 draft_status: needs_polish
-cite_status: needs_cite
+cite_status: needs_polish
 polish_status: needs_polish
 provenance_audited: true
 provenance_score: 4.4
@@ -44,7 +44,7 @@ Section VIII’s most load-bearing claim is the architectural one: the case stud
 
 [^1]: *See infra* App. A (Vault Architecture and File Layout) (deployed-site URL https://constitutionallaw.netlify.app and 198-page corpus snapshot of 92 case briefs, 27 doctrinal topic pages, and 79 lecture summaries as of the progress-report date; underlying progress report excerpted *infra* App. D (Correspondence Excerpts)).
 
-[^2]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (figure showing the deployed site’s About page as the deployed shell’s self-description naming the rotation-built provenance; figure capture pending, see PI-019).
+[^2]: *See infra* fig. 3.9 (deployed site’s About page as the deployed shell’s self-description naming the rotation-built provenance; captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026).
 
 [^3]: *See infra* App. A (Vault Architecture and File Layout) (`.site/build.py` Python build script, approximately 700 lines, plus three hand-written static-shell files `.site/dist/index.html`, `.site/dist/app.js`, and `.site/dist/style.css`).
 
@@ -52,7 +52,7 @@ Section VIII’s most load-bearing claim is the architectural one: the case stud
 
 [^5]: *See infra* App. A (Vault Architecture and File Layout) (hand-written SPA shell at `.site/dist/index.html`, `.site/dist/app.js`, and `.site/dist/style.css`; hash-route navigation reaching #/cases, #/topics, #/lectures, #/recent, #/about, and #/p/<id>; ⌘K search palette wired to search.json; PostHog analytics configured with `disable_session_recording: true` and `respect_dnt: true`; hidden Netlify `page-feedback` form stub registered at build time).
 
-[^6]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (figure showing the ⌘K search palette open with a *Marbury* query active; figure capture pending, see PI-019).
+[^6]: *See infra* fig. 3.8 (deployed site’s ⌘K search palette open with a *Marbury* query active; captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026).
 
 [^7]: *See infra* App. A (Vault Architecture and File Layout) (Netlify CLI direct-upload deploy procedure in vault `DEPLOY.md`, authenticated by a local personal access token at `.site/.netlify-token` that is gitignored and never committed).
 
@@ -66,7 +66,7 @@ Section VIII’s most load-bearing claim is the architectural one: the case stud
 
 [^12]: *See infra* App. A (Vault Architecture and File Layout) (vault `RUNBOOK.md` Step 0 feedback-intake protocol pulling submissions from the Netlify `page-feedback` form via the `manage-form-submissions` MCP, triaging each submission to the maintenance phase that can fix it, logging typed pending issues carrying `metadata.page_id`, `metadata.page_title`, `metadata.submitter_name`, `metadata.submitter_email`, `metadata.comment`, and `metadata.netlify_submission_id`, deleting each submission after triage, and requiring each subsequent phase’s scope-selection step to prefer pages with open professor-feedback issues routed to that phase).
 
-[^13]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (figure showing the deployed site’s `page-feedback` form in its open state on a case page; figure capture pending, see PI-019).
+[^13]: *See infra* fig. 3.10 (deployed site’s `page-feedback` form in its open state on a case page; captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026).
 
 [^14]: *See infra* App. A (Vault Architecture and File Layout) (deployed-site architecture: stable HTML and JSON artifacts produced at publish time by the build pipeline described above and served by the Netlify CDN without further model inference at request time; no LLM in the request path); *see also infra* Section XII (Risks and Limits) (developing the architectural contrast between the static-site case study and chatbot architectures, with reference to the Magesh et al. hallucination findings).
 

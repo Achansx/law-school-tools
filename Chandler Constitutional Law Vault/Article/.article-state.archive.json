@@ -914,34 +914,34 @@
       "note": "Surfaced during run-172 Cite while resolving PI-131/PI-136. The article prose (IV.A, IV.D, V.A) and the cited authority (Appendix A) are now reconciled to the correct framing: 388 total; 127 = the 61 PowerPoint + 66 PDF slide-and-reading subset, not a top-level total. Footnotes cite Appendix A (already correct), so re-propagation risk is low and this was left unfixed to keep Cite out of the Harvest-owned evidence cards. Next Harvest tick on Section 04 should align the card's summary sentence to Appendix A's framing (or recast it as the slide-and-reading subset) so the source matches the prose. Low priority; tracks the same fact as archived PI-131/PI-136. See L-060. || Run-183 Harvest: RESOLVED. evidence-04-top-level-counts.md body summary rewritten to match Appendix A and L-060: 388 files total; the 61 PowerPoint decks plus 66 reading PDFs are the 127 slide-and-reading files the flat structure exposed first, not a top-level total (top level is 132 files once 3 DOCX, one .txt, one .potx are added). Frontmatter notes annotated with the same framing so future ticks do not re-flag. No filesystem re-audit needed; this reconciled the card's loose prose summary to its own authoritative 2026-05-15 verification block and the owning appendix.",
       "opened_at": "2026-06-02T11:00:00Z",
       "phase": "cite",
-      "section": "04",
-      "status": "resolved",
-      "type": "evidence-card-inconsistency",
       "resolved_at": "2026-06-03T09:00:00Z",
       "resolved_phase": "harvest",
-      "resolved_run": 183
+      "resolved_run": 183,
+      "section": "04",
+      "status": "resolved",
+      "type": "evidence-card-inconsistency"
     },
     {
       "claim": "Two Obsidian-vault screenshots captured 2026-05-26 and saved to <vault>/Article/manuscript/figures/ for Section V: figure-5-1-marbury-typed-properties.png (Marbury v Madison .md open in Live Preview mode showing Obsidian's typed-properties UI rendering the YAML frontmatter as structured fields — case_name, citation, doctrines, concepts, status, midpage_id, source_files, holding, reasoning, doctrine_family, applied_in showing six wiki-link case references, plus 47-backlinks counter and 28-properties counter) and figure-5-2-graph-view.png (Obsidian native graph view of the entire vault, showing case/topic/lecture nodes connected by wiki-link edges; the dense connectivity is the visual proof of the wiki-link grammar claim). Both 1456x760 PNGs, captured from the actual Obsidian app driving the live vault, not staged. A third file figure-5-1-alt-marbury-source-mode.png is also saved as a fallback if Section V prefers to show raw YAML/markdown source instead of the rendered Properties UI. These figures address the gap the earlier figure capture set left: the article's claims about typed frontmatter, wiki-link grammar, and source-vault graph view (the latter now correctly attributed to Obsidian rather than the deployed site per PI-V-GRAPH-VIEW-OVERCLAIM) were not previously illustrated. Action for next Draft/Cite pass: insert two figures into Section V (5.1 next to the typed-frontmatter paragraph; 5.2 next to the connections-density paragraph), add a sentence in V noting the figure source ('Marbury v Madison case brief and full-vault graph view, captured from the Obsidian source vault, 2026-05-26'), and resolve PI-V-GRAPH-VIEW-OVERCLAIM by reframing footnote 10 to attribute the graph view to the source vault (not the deployed site) and pointing the reader to figure 5.2.",
       "id": "PI-V-OBSIDIAN-FIGS",
       "opened_at": "2026-05-26T17:50:00Z",
       "phase": "draft",
+      "resolution": "Run-185 Draft landed the captured Section V figures into drafts/section-05-obsidian-vault.md now that figure-5-1..5-8 PNGs are present in manuscript/figures/. Added inline (Figure 5.1) callout with new footnote [^18] (Marbury typed-properties panel), inline (Figure 5.2) at the graph-view sentence and finalized footnote [^10] by dropping the capture-pending hedge, and a V.C local-graph sentence referencing (Figures 5.3 through 5.8) with new footnote [^19] covering the six local-graph captures (case/topic/lecture node types twice each). Capture attribution May 26, 2026 carried in the footnotes per the Section III figure convention; no fabrication, figures verified present in repo. draft body 1193 -> 1237 words (+12.5%, within the +15% Draft ceiling).",
+      "resolved_at": "2026-06-03T13:00:00Z",
       "section": "05",
       "status": "resolved",
-      "type": "figures-captured-obsidian",
-      "resolved_at": "2026-06-03T13:00:00Z",
-      "resolution": "Run-185 Draft landed the captured Section V figures into drafts/section-05-obsidian-vault.md now that figure-5-1..5-8 PNGs are present in manuscript/figures/. Added inline (Figure 5.1) callout with new footnote [^18] (Marbury typed-properties panel), inline (Figure 5.2) at the graph-view sentence and finalized footnote [^10] by dropping the capture-pending hedge, and a V.C local-graph sentence referencing (Figures 5.3 through 5.8) with new footnote [^19] covering the six local-graph captures (case/topic/lecture node types twice each). Capture attribution May 26, 2026 carried in the footnotes per the Section III figure convention; no fabrication, figures verified present in repo. draft body 1193 -> 1237 words (+12.5%, within the +15% Draft ceiling)."
+      "type": "figures-captured-obsidian"
     },
     {
       "claim": "Six Obsidian local-graph captures saved 2026-05-26 at <vault>/Article/manuscript/figures/, deliberately chosen to cover all three vault node types (case / topic / lecture) twice each so the article can illustrate that the wiki-link grammar produces distinct relationship patterns at every layer of the corpus. Each capture is 1456x760, split-pane: Properties panel + body markdown on the left, local-graph in the right pane. CASES: (a) figure-5-3-marbury-local-graph.png — Marbury v Madison (1803), structural foundational case, doctrine_family Separation of Powers, cluster of ~20 nodes leaning toward federal-power doctrines (Judicial Review, Political Question Doctrine, Section 5 Enforcement Power, Executive Power, State Sovereign Immunity, etc.) plus 12 cases (Martin v Hunter's Lessee, McCulloch v Maryland, Trump v United States, Stuart v Laird, Youngstown, etc.); (b) figure-5-7-brown-v-board-local-graph.png — Brown v Board of Education (1954), rights-side foundational case, doctrine_family Individual Rights, cluster of ~15 nodes leaning toward equal-protection doctrines (Equal Protection Clause, Strict Scrutiny, Affirmative Action) plus the school-desegregation arc (Dred Scott, Plessy, Sweatt, Bolling, Hernandez, Cooper, Green, Charlotte-Mecklenburg, Milliken, San Antonio, Parents Involved, SFFA) and three related lectures. DOCTRINES: (c) figure-5-4-commerce-clause-local-graph.png — Commerce Clause topic (family Federalism), ~30 nodes spanning 11 cases (Gibbons, McCulloch, NFIB, Wickard, Lopez, Morrison, Gonzales v Raich, Youngstown, Civil Rights Cases, Martin, Prize Cases), 10+ sub-doctrines (Necessary and Proper, Implied Powers, Anti-Commandeering, State Sovereign Immunity, Enumerated Powers — both New Deal and Warren Court eras, Dormant Commerce Clause, Federalism, Executive Power, Preemption), and 7 lectures; the body prose visible on the left shows wiki-link grammar rendered as blue underlined links (Gibbons v Ogden, Wickard v Filburn, Lopez, Morrison, etc.); (d) figure-5-8-substantive-due-process-local-graph.png — Substantive Due Process topic (family Individual Rights), 60 backlinks, by far the densest doctrinal hub in the vault, cluster of ~40 nodes spanning the full SDP arc from Lochner (1905) and Pierce (1925) through Griswold, Loving, Roe, Casey, Lawrence, Obergefell to Dobbs (2022), Williamson, Glucksberg, plus the incorporation arc (Palko, Duncan, McDonald, Timbs, Slaughter-House, Barron) and adjacent doctrines (Equal Protection, Federalism, Privileges or Immunities, Second Amendment, Free Exercise, Fundamental Rights, Selective Incorporation, History and Tradition, Originalism). LECTURES: (e) figure-5-5-lecture-local-graph.png — Con Law Tutor Review 1 (type review-session), broad-sweep cluster of 22 cases across 6 doctrinal areas (Commerce Clause, Dormant Commerce Clause, Preemption, Privileges and Immunities, Anti-Commandeering, State Sovereign Immunity, Standing); demonstrates the catch-all review lecture pattern; (f) figure-5-6-affirmative-action-lecture-graph.png — Affirmative Action and Equal Protection - Bakke to SFFA (type lecture, topic_area Equal Protection), focused doctrinal arc spanning 6 cases over 45 years (Bakke 1978, Adarand 1995, Grutter 2003, Gratz 2003, Schuette 2014, SFFA 2023), tighter cluster centered on Equal Protection / Strict Scrutiny / Affirmative Action topics with three sibling lectures (Class Recap April 8, From Plessy to the Resistance, Sex Discrimination and Equal Protection); body prose visible on left shows substantive doctrinal narrative with wiki-links. Action for next Draft tick: insert as figures 5.3-5.8 in Section V. Suggested placements: 5.3 + 5.7 next to the case-page wiki-link grammar paragraph as a paired structural-vs-rights illustration; 5.4 + 5.8 next to the typed-frontmatter + topic-aggregation paragraph; 5.5 + 5.6 next to the lecture-as-synthesis-layer paragraph (or in Section IV's lecture-corpus subsection) as the broad-sweep-vs-focused-arc pairing. Together with the existing 5.1 (typed properties) and 5.2 (global graph) the Section V figure set is now eight figures and complete.",
       "id": "PI-V-LOCAL-GRAPHS",
       "opened_at": "2026-05-26T18:20:00Z",
       "phase": "draft",
+      "resolution": "Run-185 Draft landed the captured Section V figures into drafts/section-05-obsidian-vault.md now that figure-5-1..5-8 PNGs are present in manuscript/figures/. Added inline (Figure 5.1) callout with new footnote [^18] (Marbury typed-properties panel), inline (Figure 5.2) at the graph-view sentence and finalized footnote [^10] by dropping the capture-pending hedge, and a V.C local-graph sentence referencing (Figures 5.3 through 5.8) with new footnote [^19] covering the six local-graph captures (case/topic/lecture node types twice each). Capture attribution May 26, 2026 carried in the footnotes per the Section III figure convention; no fabrication, figures verified present in repo. draft body 1193 -> 1237 words (+12.5%, within the +15% Draft ceiling).",
+      "resolved_at": "2026-06-03T13:00:00Z",
       "section": "05",
       "status": "resolved",
-      "type": "figures-captured-obsidian",
-      "resolved_at": "2026-06-03T13:00:00Z",
-      "resolution": "Run-185 Draft landed the captured Section V figures into drafts/section-05-obsidian-vault.md now that figure-5-1..5-8 PNGs are present in manuscript/figures/. Added inline (Figure 5.1) callout with new footnote [^18] (Marbury typed-properties panel), inline (Figure 5.2) at the graph-view sentence and finalized footnote [^10] by dropping the capture-pending hedge, and a V.C local-graph sentence referencing (Figures 5.3 through 5.8) with new footnote [^19] covering the six local-graph captures (case/topic/lecture node types twice each). Capture attribution May 26, 2026 carried in the footnotes per the Section III figure convention; no fabrication, figures verified present in repo. draft body 1193 -> 1237 words (+12.5%, within the +15% Draft ceiling)."
+      "type": "figures-captured-obsidian"
     },
     {
       "claim": "Section V.D's footnote [^29] (Dong et al. KG-RAG study) is presented as anchoring the article's architectural claim about the static-website vault, but Dong et al.'s intervention is a chatbot-tutor with KG-RAG at runtime and the vault performs no runtime retrieval. The architectural transfer between the cited intervention setting and the case-study setting is not addressed in the prose.",
@@ -949,13 +949,13 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 plus Persona 3 (AI-in-Education Researcher) P1, collapsed to a single PI because both personas flagged the same load-bearing sentence with the same suggested fix. Next Polish tick on Section 05 should add one sentence to V.D's third paragraph naming what transfers (the general value of structured retrieval over flat semantic similarity) and what does not (the chatbot-tutor implementation); for example, 'What transfers from the KG-RAG result is the general value of structured retrieval over flat semantic similarity, not the chatbot-tutor implementation; the vault adopts the structural insight in a static-publication form.' Optionally extend footnote [^29] with a parenthetical noting the intervention-setting difference. Resolves the L-003 framing-discipline failure mode at the citation level without re-running Cite (the Bluebook form itself is fine).",
       "opened_at": "2026-05-17T03:00:00Z",
       "phase": "verify",
-      "section": "05",
-      "status": "resolved",
-      "type": "citation-transfer",
+      "resolution": "Polish run 187 added a sentence to V.D's third paragraph naming what transfers from the Dong et al. KG-RAG result (the general value of structured retrieval over flat semantic similarity) and what does not (the conversational AI tutor implementation Dong et al. built to deliver it), and extended footnote [^14] with the intervention-setting parenthetical. Bluebook form unchanged; closes the L-003 framing-discipline gap at the citation level.",
       "resolved_at": "2026-06-03T19:00:00Z",
       "resolved_phase": "polish",
       "resolved_run": 187,
-      "resolution": "Polish run 187 added a sentence to V.D's third paragraph naming what transfers from the Dong et al. KG-RAG result (the general value of structured retrieval over flat semantic similarity) and what does not (the conversational AI tutor implementation Dong et al. built to deliver it), and extended footnote [^14] with the intervention-setting parenthetical. Bluebook form unchanged; closes the L-003 framing-discipline gap at the citation level."
+      "section": "05",
+      "status": "resolved",
+      "type": "citation-transfer"
     },
     {
       "claim": "Section V.C states an unbounded transfer claim, 'The synthesis form transfers to any doctrinal subject,' that Section X.D expressly bounds (the method 'assumes a course organized around tagged doctrines and leading cases'; Civil Procedure and Tax 'fit that assumption less cleanly'). V.C's 'any doctrinal subject' is the universal-applicability overreach PERSONAS.md flags for the Pedagogy Traditionalist, sitting in the schema section a reviewer reads before X.D's hedge, so the article appears to assert what it later retracts.",
@@ -963,26 +963,53 @@
       "note": "Run-175 Verify, Persona 2 (Legal Pedagogy Traditionalist) P1. Next Polish tick on Section 05 should qualify V.C to the bounded form the article defends ('transfers to any case-and-doctrine course') with a forward-pointer to Section X.D's limits; one clause, no new citation. Routes Section 05 polish_status -> needs_polish (already reset this run by the provenance audit).",
       "opened_at": "2026-06-02T17:00:00Z",
       "phase": "polish",
-      "section": "05",
-      "status": "resolved",
-      "type": "verify-finding",
+      "resolution": "Polish run 187 qualified V.C's 'The synthesis form transfers to any doctrinal subject' to 'any case-and-doctrine course' with a forward-pointer to Section X.D's limits (courses organized around tagged doctrines and leading cases). One clause, no new citation, per the routing note.",
       "resolved_at": "2026-06-03T19:00:00Z",
       "resolved_phase": "polish",
       "resolved_run": 187,
-      "resolution": "Polish run 187 qualified V.C's 'The synthesis form transfers to any doctrinal subject' to 'any case-and-doctrine course' with a forward-pointer to Section X.D's limits (courses organized around tagged doctrines and leading cases). One clause, no new citation, per the routing note."
+      "section": "05",
+      "status": "resolved",
+      "type": "verify-finding"
     },
     {
+      "claim": "Polish run 187 was computed locally on Section 05 but lost to a push race. This tick read the run-186 handoff (Section 05 cite_status:needs_polish), folded the run-185/186 figure work into the stale run-173 polished artifact ((Figure 5.1)/[^18], (Figure 5.2) with [^10] finalized, and a V.C local-graph sentence with (Figures 5.3 through 5.8)/[^19]), and closed both routed Polish-owned P1s: PI-013 (V.D transfer/non-transfer sentence plus [^14] intervention-setting parenthetical) and PI-189 (V.C bounded 'any doctrinal subject' to 'any case-and-doctrine course' with a Section X.D forward-pointer), landing the body at 1197 words within band and advancing polish -> stitch (run 187). The direct push to master was rejected and the autostash rebase onto the concurrently-pushed commit 80b1c7f (which appended PI-193 and a BUILD_NARRATIVE entry for draft run 185) conflicted in BUILD_NARRATIVE_2026-06.md; per RUNBOOK the rebase was aborted rather than auto-resolved. The local branch was reset to origin/master, so master remains at current_phase:polish, run_count:186 with PI-013/PI-189 still open and Section 05 at polish_status:needs_polish. NO phase advance and NO score were recorded. The next Polish tick will cleanly redo run 187 from this exact state; the discarded local commit e82ec50 holds the computed prose in this container's reflog if a human wants to cherry-pick rather than recompute.",
       "id": "PI-194",
-      "type": "push-race-conflict",
-      "section": "05",
-      "status": "resolved",
       "opened_at": "2026-06-03T17:00:00Z",
       "phase": "polish",
-      "claim": "Polish run 187 was computed locally on Section 05 but lost to a push race. This tick read the run-186 handoff (Section 05 cite_status:needs_polish), folded the run-185/186 figure work into the stale run-173 polished artifact ((Figure 5.1)/[^18], (Figure 5.2) with [^10] finalized, and a V.C local-graph sentence with (Figures 5.3 through 5.8)/[^19]), and closed both routed Polish-owned P1s: PI-013 (V.D transfer/non-transfer sentence plus [^14] intervention-setting parenthetical) and PI-189 (V.C bounded 'any doctrinal subject' to 'any case-and-doctrine course' with a Section X.D forward-pointer), landing the body at 1197 words within band and advancing polish -> stitch (run 187). The direct push to master was rejected and the autostash rebase onto the concurrently-pushed commit 80b1c7f (which appended PI-193 and a BUILD_NARRATIVE entry for draft run 185) conflicted in BUILD_NARRATIVE_2026-06.md; per RUNBOOK the rebase was aborted rather than auto-resolved. The local branch was reset to origin/master, so master remains at current_phase:polish, run_count:186 with PI-013/PI-189 still open and Section 05 at polish_status:needs_polish. NO phase advance and NO score were recorded. The next Polish tick will cleanly redo run 187 from this exact state; the discarded local commit e82ec50 holds the computed prose in this container's reflog if a human wants to cherry-pick rather than recompute.",
+      "resolution": "Polish run 187 cleanly redid the run lost to the push race from the documented state: folded the run-185/186 figure work ([^18]/Figure 5.1, [^10] finalized, [^19]/Figures 5.3-5.8 plus the V.C local-graph sentence) into the polished artifact and closed PI-013 and PI-189; body at 1209 words within band; polish_status -> ready_for_stitch; phase advanced polish -> stitch (run 187). The PI-194 directive is fulfilled.",
       "resolved_at": "2026-06-03T19:00:00Z",
       "resolved_phase": "polish",
       "resolved_run": 187,
-      "resolution": "Polish run 187 cleanly redid the run lost to the push race from the documented state: folded the run-185/186 figure work ([^18]/Figure 5.1, [^10] finalized, [^19]/Figures 5.3-5.8 plus the V.C local-graph sentence) into the polished artifact and closed PI-013 and PI-189; body at 1209 words within band; polish_status -> ready_for_stitch; phase advanced polish -> stitch (run 187). The PI-194 directive is fulfilled."
+      "section": "05",
+      "status": "resolved",
+      "type": "push-race-conflict"
+    },
+    {
+      "claim": "Section VIII will reference the deployed shell's surfaces (Dashboard, the ⌘K search palette open, the Recent tab, the page-feedback form, an example case page with the holding bar visible) as visible artifacts of the build pipeline. None of those images is yet captured.",
+      "id": "PI-019",
+      "note": "Shares the underlying workplan §3.2 screenshot gap with Section III (case-page, topic-page, graph view, wiki-link cluster, Recent tab, search UI) and with Section V (PI-012 holding-bar, graph-view, four-family grid). Section VIII's specific image needs that are not already in Section III's list: the page-feedback form in its open state (the closed-loop framing from evidence-08-feedback-form-loopback), the search palette open with a 'Marbury' query active (the search-sanity probe from evidence-08-post-deploy-verification), and the About page (which carries the deployed shell's self-description). Outline 8.x should follow L-021 and use [CITE: forward reference to Section III X figure; see PI-019] for shared images and the same convention for the three Section-VIII-specific images, then let Cite resolve them as forward references when Section III's image set lands. 2026-05-17T11:00 Cite tick resolved the three Section VIII placeholders ([^2] About page, [^6] search palette, [^13] feedback form) as Bluebook *See infra* Section III forward references per L-021; PI-019 stays open until Section III's image set lands.",
+      "opened_at": "2026-05-17T05:00:00Z",
+      "phase": "harvest",
+      "resolution": "Run-193 Cite tick. Section VIII figure-footnote finalization: the three Section-VIII placeholders [^2] (About page), [^6] (Cmd-K search palette), and [^13] (page-feedback form) were swapped from 'figure capture pending, see PI-019' Section III forward references to direct Bluebook See infra fig. 3.9 / 3.8 / 3.10 cross-references with capture provenance (captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026), per PI-FIGS-VIII-CAPTURED's resolution instruction and the Section V fig.-footnote precedent ([^10]/[^18]/[^19]). Figures confirmed present in manuscript/figures/ (figure-3-9-about-page.png, figure-3-8-search-palette.png, figure-3-10-feedback-form.png); netlify URL re-verified live this run via WebFetch (title 'Constitutional Law I Wiki', Dashboard/Cases/Topics/Lectures/Recent/About nav, Prof. Chandler Spring 2026). Edits applied to both drafts/ and polished/ section-08 files; the internal 'see PI-019' tracker ID removed from prose per L-058. cite_status needs_cite -> needs_polish.",
+      "resolved_at": "2026-06-04T07:00:00Z",
+      "resolved_phase": "cite",
+      "resolved_run": 193,
+      "section": "08",
+      "status": "resolved",
+      "type": "screenshot-gap"
+    },
+    {
+      "claim": "Two additional Section-VIII figures captured 2026-05-26 from constitutionallaw.netlify.app and saved at <vault>/Article/manuscript/figures/: figure-3-9-about-page.png (deployed site About page, referenced by Section VIII footnote 2) and figure-3-10-feedback-form.png (page-feedback form open on the Marbury case page, referenced by Section VIII footnote 13). Both 1440x723 PNGs, viewport-only crop. Closes the Section-VIII portion of PI-019 (the search-palette figure was already captured as figure-3-8). PI-019 can be marked resolved once the next Cite tick swaps Section VIII's '[CITE: forward reference to Section III X figure; see PI-019]' placeholders to the actual figure filenames.",
+      "id": "PI-FIGS-VIII-CAPTURED",
+      "opened_at": "2026-05-26T17:30:00Z",
+      "phase": "verify",
+      "resolution": "Run-193 Cite tick consumed this capture record. Section VIII [^2]/[^6]/[^13] now cite fig. 3.9/3.8/3.10 directly with capture provenance (deployed site, May 26, 2026); closes the Section-VIII portion and the broader PI-019 per this PI's own resolution note. figure-3-9-about-page.png and figure-3-10-feedback-form.png confirmed present alongside the already-captured figure-3-8-search-palette.png.",
+      "resolved_at": "2026-06-04T07:00:00Z",
+      "resolved_phase": "cite",
+      "resolved_run": 193,
+      "section": "08",
+      "status": "resolved",
+      "type": "figures-captured"
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
