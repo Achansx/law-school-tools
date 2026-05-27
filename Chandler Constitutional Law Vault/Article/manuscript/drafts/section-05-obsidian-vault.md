@@ -3,9 +3,9 @@ id: "05"
 title: "Building the Obsidian Vault"
 status: needs_polish
 target_words: 1100
-word_count: 1193
-last_phase: cite
-draft_status: needs_polish
+word_count: 1237
+last_phase: draft
+draft_status: needs_cite
 cite_status: needs_polish
 ---
 
@@ -19,7 +19,7 @@ The smallest structural commitment is a three-way invariant. Within Cases, the f
 
 ## B. The Case Brief as the canonical page type
 
-Every page in Cases opens with a roughly thirty-field YAML frontmatter block before the H1.[^3] The fields cover doctrinal labels, citation metadata, authority lineage, Midpage verification anchors, and a structured holding-bar block (issue, holding, reasoning, doctrine_family) that the deployed site promotes into a banner above the prose. The frontmatter is the load-bearing surface for Section VII’s iteration loop because the loop operates on typed fields rather than re-parsing prose.
+Every page in Cases opens with a roughly thirty-field YAML frontmatter block before the H1 (Figure 5.1).[^3][^18] The fields cover doctrinal labels, citation metadata, authority lineage, Midpage verification anchors, and a structured holding-bar block (issue, holding, reasoning, doctrine_family) that the deployed site promotes into a banner above the prose. The frontmatter is the load-bearing surface for Section VII’s iteration loop because the loop operates on typed fields rather than re-parsing prose.
 
 Every Cases page also follows a fixed H2 sequence inherited from the Case Brief template: Memory Jogger, Facts, Procedural History, Judicial Votes, Holding, Analysis (with a required Majority subsection and optional Concurrence and Dissent subsections), Hypothetical Applications (split into Same-Side, Opposite-Side, and Fence-Sitter buckets totaling five hypotheticals), Critique, Key Quotations, Key Points, Connections, and Sources.[^4] The Hypothetical Applications block is the pedagogically distinctive piece, and Section VI’s prompting design uses it to generate exam-style hypotheticals on a known structural shape rather than free-form text. The Critique block’s requirement of both progressive and originalist or textualist perspectives keeps Section VI from looking like content generation alone.
 
@@ -31,7 +31,7 @@ The Topic page is the synthesis form, the layer at which the vault stops being a
 
 The Judicial Review topic is the canonical example. Its frontmatter key_cases list cites *Marbury* (1803), *Martin v. Hunter’s Lessee* (1816), *The Prize Cases* (1863), and *Youngstown* (1952); its source_files attribution lists three Cases pages and two Lectures pages directly consulted; the prose stitches them with case back-links at every introduction.[^8] The provenance trail runs from prose back to source, and that chain is the architectural contrast Section XII later draws between the case study and chatbot-tutor systems.
 
-The wiki-link grammar supporting the synthesis layer is small and fixed. Cross-page links take the form of bracketed folder, filename, and display-text tuples; tags are lowercase and hyphenated and placed at file end; every page carries a source_files frontmatter list in lockstep with a Sources footer enforced by the Lint phase.[^9] The source Obsidian vault renders a graph view through Obsidian’s native graph feature, while the deployed site runs search across pages and surfaces cross-references; the link grammar is mechanical and the provenance trail verifiable, which makes Section VIII’s self-publishing claim an architectural consequence rather than a marketing line.[^10]
+The wiki-link grammar supporting the synthesis layer is small and fixed. Cross-page links take the form of bracketed folder, filename, and display-text tuples; tags are lowercase and hyphenated and placed at file end; every page carries a source_files frontmatter list in lockstep with a Sources footer enforced by the Lint phase.[^9] The source Obsidian vault renders a graph view through Obsidian’s native graph feature (Figure 5.2), while the deployed site runs search across pages and surfaces cross-references; the link grammar is mechanical and the provenance trail verifiable, which makes Section VIII’s self-publishing claim an architectural consequence rather than a marketing line.[^10] Each page also exposes a local graph of its own wiki-link neighborhood, and the cluster differs by node type, from a single case to a dense doctrinal hub topic to a review lecture spanning several doctrines (Figures 5.3 through 5.8).[^19]
 
 ## D. Schema doing work prose alone cannot
 
@@ -69,7 +69,7 @@ The vault’s schema is therefore a sequence of structural commitments, each for
 
 [^9]: *See infra* App. A (Vault Architecture and File Layout) (wiki-link grammar [[folder/filename|Display Text]]; lowercase-hyphenated tags at file end; source_files frontmatter in lockstep with the Sources footer section, enforced by the Lint phase as a structural check).
 
-[^10]: *See infra* fig. 5.2 (source Obsidian vault graph view rendering cross-page wiki-links as an interactive node graph, a working view in the author’s Obsidian editing environment rather than a feature of the deployed reader-facing site; figure capture pending, see PI-V-OBSIDIAN-FIGS).
+[^10]: *See infra* fig. 5.2 (source Obsidian vault graph view rendering cross-page wiki-links as an interactive node graph, a working view in the author’s Obsidian editing environment rather than a feature of the deployed reader-facing site; captured from the source Obsidian vault May 26, 2026).
 
 [^11]: *See infra* App. A (Vault Architecture and File Layout) (Case Brief template doctrine_family field locked to one of four values: Federalism, Separation of Powers, Individual Rights, or Justiciability; same enum binds the Topic Page template’s area and family fields).
 
@@ -84,3 +84,7 @@ The vault’s schema is therefore a sequence of structural commitments, each for
 [^16]: *See infra* App. A (Vault Architecture and File Layout) (per-phase rubric file split into six phase-specific files; tiered file loading skipping LESSONS for phases that do not need it; monthly rotation of the BUILD_NARRATIVE file; one-line logging for no-op phase runs); *see also infra* App. D (Build-System Correspondence and Internal Drafts) (vault build-narrative entries describing the architectural transition from a single monolithic rubric to per-phase rubrics).
 
 [^17]: *See infra* App. A (Vault Architecture and File Layout) (Topics/Judicial Review.md area field initially assigned *Federal Judicial Power*, realigned to Separation of Powers per the canonical four-value enum; vault RUNBOOK.md codification of the realignment process for future drift).
+
+[^18]: Figure 5.1 (*Marbury v. Madison* (1803) Case brief open in Obsidian Live Preview, the typed-properties panel rendering the YAML frontmatter as structured fields, including case_name, citation, doctrine_family, midpage_id, source_files, and a six-entry applied_in list; captured from the source Obsidian vault May 26, 2026).
+
+[^19]: Figures 5.3 through 5.8 (local-graph captures from the source Obsidian vault, May 26, 2026, covering each node type twice: *Marbury v. Madison* and *Brown v. Board of Education* (cases), the Commerce Clause and Substantive Due Process (topics), and two review lectures, each showing the distinct wiki-link relationship cluster that layer of the corpus produces).

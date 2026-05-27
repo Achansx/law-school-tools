@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "outline",
-  "last_run_at": "2026-06-03T11:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-06-03T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1251,24 +1251,6 @@
       "type": "figures-captured"
     },
     {
-      "claim": "Two Obsidian-vault screenshots captured 2026-05-26 and saved to <vault>/Article/manuscript/figures/ for Section V: figure-5-1-marbury-typed-properties.png (Marbury v Madison .md open in Live Preview mode showing Obsidian's typed-properties UI rendering the YAML frontmatter as structured fields — case_name, citation, doctrines, concepts, status, midpage_id, source_files, holding, reasoning, doctrine_family, applied_in showing six wiki-link case references, plus 47-backlinks counter and 28-properties counter) and figure-5-2-graph-view.png (Obsidian native graph view of the entire vault, showing case/topic/lecture nodes connected by wiki-link edges; the dense connectivity is the visual proof of the wiki-link grammar claim). Both 1456x760 PNGs, captured from the actual Obsidian app driving the live vault, not staged. A third file figure-5-1-alt-marbury-source-mode.png is also saved as a fallback if Section V prefers to show raw YAML/markdown source instead of the rendered Properties UI. These figures address the gap the earlier figure capture set left: the article's claims about typed frontmatter, wiki-link grammar, and source-vault graph view (the latter now correctly attributed to Obsidian rather than the deployed site per PI-V-GRAPH-VIEW-OVERCLAIM) were not previously illustrated. Action for next Draft/Cite pass: insert two figures into Section V (5.1 next to the typed-frontmatter paragraph; 5.2 next to the connections-density paragraph), add a sentence in V noting the figure source ('Marbury v Madison case brief and full-vault graph view, captured from the Obsidian source vault, 2026-05-26'), and resolve PI-V-GRAPH-VIEW-OVERCLAIM by reframing footnote 10 to attribute the graph view to the source vault (not the deployed site) and pointing the reader to figure 5.2.",
-      "id": "PI-V-OBSIDIAN-FIGS",
-      "opened_at": "2026-05-26T17:50:00Z",
-      "phase": "draft",
-      "section": "05",
-      "status": "open",
-      "type": "figures-captured-obsidian"
-    },
-    {
-      "claim": "Six Obsidian local-graph captures saved 2026-05-26 at <vault>/Article/manuscript/figures/, deliberately chosen to cover all three vault node types (case / topic / lecture) twice each so the article can illustrate that the wiki-link grammar produces distinct relationship patterns at every layer of the corpus. Each capture is 1456x760, split-pane: Properties panel + body markdown on the left, local-graph in the right pane. CASES: (a) figure-5-3-marbury-local-graph.png — Marbury v Madison (1803), structural foundational case, doctrine_family Separation of Powers, cluster of ~20 nodes leaning toward federal-power doctrines (Judicial Review, Political Question Doctrine, Section 5 Enforcement Power, Executive Power, State Sovereign Immunity, etc.) plus 12 cases (Martin v Hunter's Lessee, McCulloch v Maryland, Trump v United States, Stuart v Laird, Youngstown, etc.); (b) figure-5-7-brown-v-board-local-graph.png — Brown v Board of Education (1954), rights-side foundational case, doctrine_family Individual Rights, cluster of ~15 nodes leaning toward equal-protection doctrines (Equal Protection Clause, Strict Scrutiny, Affirmative Action) plus the school-desegregation arc (Dred Scott, Plessy, Sweatt, Bolling, Hernandez, Cooper, Green, Charlotte-Mecklenburg, Milliken, San Antonio, Parents Involved, SFFA) and three related lectures. DOCTRINES: (c) figure-5-4-commerce-clause-local-graph.png — Commerce Clause topic (family Federalism), ~30 nodes spanning 11 cases (Gibbons, McCulloch, NFIB, Wickard, Lopez, Morrison, Gonzales v Raich, Youngstown, Civil Rights Cases, Martin, Prize Cases), 10+ sub-doctrines (Necessary and Proper, Implied Powers, Anti-Commandeering, State Sovereign Immunity, Enumerated Powers — both New Deal and Warren Court eras, Dormant Commerce Clause, Federalism, Executive Power, Preemption), and 7 lectures; the body prose visible on the left shows wiki-link grammar rendered as blue underlined links (Gibbons v Ogden, Wickard v Filburn, Lopez, Morrison, etc.); (d) figure-5-8-substantive-due-process-local-graph.png — Substantive Due Process topic (family Individual Rights), 60 backlinks, by far the densest doctrinal hub in the vault, cluster of ~40 nodes spanning the full SDP arc from Lochner (1905) and Pierce (1925) through Griswold, Loving, Roe, Casey, Lawrence, Obergefell to Dobbs (2022), Williamson, Glucksberg, plus the incorporation arc (Palko, Duncan, McDonald, Timbs, Slaughter-House, Barron) and adjacent doctrines (Equal Protection, Federalism, Privileges or Immunities, Second Amendment, Free Exercise, Fundamental Rights, Selective Incorporation, History and Tradition, Originalism). LECTURES: (e) figure-5-5-lecture-local-graph.png — Con Law Tutor Review 1 (type review-session), broad-sweep cluster of 22 cases across 6 doctrinal areas (Commerce Clause, Dormant Commerce Clause, Preemption, Privileges and Immunities, Anti-Commandeering, State Sovereign Immunity, Standing); demonstrates the catch-all review lecture pattern; (f) figure-5-6-affirmative-action-lecture-graph.png — Affirmative Action and Equal Protection - Bakke to SFFA (type lecture, topic_area Equal Protection), focused doctrinal arc spanning 6 cases over 45 years (Bakke 1978, Adarand 1995, Grutter 2003, Gratz 2003, Schuette 2014, SFFA 2023), tighter cluster centered on Equal Protection / Strict Scrutiny / Affirmative Action topics with three sibling lectures (Class Recap April 8, From Plessy to the Resistance, Sex Discrimination and Equal Protection); body prose visible on left shows substantive doctrinal narrative with wiki-links. Action for next Draft tick: insert as figures 5.3-5.8 in Section V. Suggested placements: 5.3 + 5.7 next to the case-page wiki-link grammar paragraph as a paired structural-vs-rights illustration; 5.4 + 5.8 next to the typed-frontmatter + topic-aggregation paragraph; 5.5 + 5.6 next to the lecture-as-synthesis-layer paragraph (or in Section IV's lecture-corpus subsection) as the broad-sweep-vs-focused-arc pairing. Together with the existing 5.1 (typed properties) and 5.2 (global graph) the Section V figure set is now eight figures and complete.",
-      "id": "PI-V-LOCAL-GRAPHS",
-      "opened_at": "2026-05-26T18:20:00Z",
-      "phase": "draft",
-      "section": "05",
-      "status": "open",
-      "type": "figures-captured-obsidian"
-    },
-    {
       "claim": "The thesis phrase describing how the system connects to verified legal sources is inconsistent across the assembled draft: Section I.B (run-159 Polish, PI-117) reads 'build-time linking to verified legal sources', while the Abstract, Section XIV.A (Conclusion), and footnote [^127] still read 'retrieval from verified legal sources'.",
       "id": "PI-181",
       "note": "Surfaced by the run-160 Stitch terminology-consistency check when the refreshed Section I landed. The run-159 Polish changed I.B per PI-117 (so an AI-in-education reader is not primed to read the system as runtime RAG) but did not propagate the change to the Abstract (Outline-abstract sub-task owned), Section XIV.A, or [^127] (XIV Polish/Cite owned). Routed downstream, not fixed in Stitch: the next Outline-abstract pass should align the Abstract and the next Section XIV Polish/Cite should align XIV.A and [^127] to a single agreed phrase. No fabrication; the underlying mechanism (Obsidian build-time wikilink resolution to indexed opinions, not runtime retrieval) is unchanged. This widens the abstract-vs-I.B scope of the lost run-160's planned-but-unlanded PI-181 (per PI-182) to include the XIV and [^127] occurrences. Run-170 Outline-abstract pass RESOLVED the Abstract leg: changed 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to match Section I.B and remove the runtime-RAG implication; PI-181 stays OPEN for the Section XIV Polish/Cite legs (XIV.A and footnote [^127] still read 'retrieval from verified legal sources').",
@@ -1353,7 +1335,7 @@
       "description": "Verify run 182 provenance audit of polished Section 04. Footnotes [^14], [^15], and [^20] (global [^49], [^50], [^55]) each route the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose that violates the PROJECT_PRIMER citation policy (no internal-log/personal-communication cites in published text; convert to appendix excerpts) and provenance-audit rubric criterion 2 (internal vault artifacts cited only via appendix references, never as standalone authority in prose). The three sentences are hedges about open questions (casebook ingestion, student-work ingestion, snapshot-date sign-off), so the body prose is fine; only the footnote pointers must change. Routing: Section 04 polish_status -> needs_polish (also independently forced by provenance_score 4.4 < 4.5). Next Cite/Polish tick on Section 04 re-points [^14]/[^15]/[^20] to App. D (Correspondence Excerpts) or drops the internal-tracker pointer (body hedge suffices). Distinct from PI-052 (Section IX PI- task tokens in IX.E prose) and from PI-188 (Section 04 evidence-card arithmetic, resolved at run 172)."
     }
   ],
-  "phase_index": 2,
+  "phase_index": 3,
   "phases": [
     "harvest",
     "outline",
@@ -1374,7 +1356,7 @@
     "last_audit_at": "2026-06-03T07:00:00Z",
     "last_audit_section": "04"
   },
-  "run_count": 184,
+  "run_count": 185,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1535,7 +1517,7 @@
       "cite_status": "needs_polish",
       "claims_mapped": 26,
       "claims_total": 26,
-      "current_words": 1210,
+      "current_words": 1237,
       "draft_completed_at": "2026-05-16T19:50:00Z",
       "draft_reconciled_at": "2026-06-02T09:00:00Z",
       "draft_routing_reason": "Run-171 Draft reconciliation. The literal lowest-ratio rule points at already-complete sections (14 at 0.953, 13 at 0.956, all draft_status:needs_cite), so among the only two sections still flagged draft_status:needs_draft (05 at 1.083, 07 at 1.087) the lower-ratio Section 05 was selected. Read outline-05, all eleven evidence cards, and drafts/section-05 prose: the five subsections V.A-V.E cover every outline bullet (5.1-5.5), PI-011's second iteration story (area-enum realignment) is written into V.E, the PI-012 figure references are hedged with forward pointers to Section III ([^6]/[^10]/[^12]), no [TODO] markers, no fabrication, current_words 1191 within +8.3% of the 1100 target. The needs_draft flag was STALE: the section completed draft/cite/polish/stitch on 2026-05-16/17 and every open P1 on it is Polish-owned (PI-014/015/016/133/134/135), Cite-owned (PI-136 the 127-vs-130 count, PI-013), or figure/human (PI-012, PI-V-*); none is draft-ownable. Per RUNBOOK Draft step 7 (set needs_cite when structurally complete), draft_status needs_draft -> needs_cite. This also UNBLOCKS Cite, whose step-1 selection keys on draft_status:needs_cite and could not see Section 05 while it sat at needs_draft, stranding the Cite-owned PI-136. Section 07's identical stale flag is left for the next Draft tick per one-section-per-phase discipline. No prose written; the 127/130 reconciliation is Cite-owned and was not fabricated.",
@@ -1544,7 +1526,7 @@
       "evidence_populated_at": "2026-05-16T15:30:00Z",
       "evidence_status": "populated",
       "footnotes_count": 17,
-      "last_phase": "verify",
+      "last_phase": "draft",
       "outline_ready_at": "2026-05-16T17:30:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-16T23:30:00Z",
@@ -1562,7 +1544,9 @@
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-06-02T17:00:00Z",
-      "verify_routing_reason": "Run-175 provenance re-audit scored 4.4 (<4.5 gate): polish_status stitched -> needs_polish. Polish-owned targets PI-189 (V.C unbounded transfer claim) and PI-013 (V.D Dong effect-size architectural transfer); PI-188 (corpus-count in-repo primary source) is the sub-4.5 driver but a repo/data action."
+      "verify_routing_reason": "Run-175 provenance re-audit scored 4.4 (<4.5 gate): polish_status stitched -> needs_polish. Polish-owned targets PI-189 (V.C unbounded transfer claim) and PI-013 (V.D Dong effect-size architectural transfer); PI-188 (corpus-count in-repo primary source) is the sub-4.5 driver but a repo/data action.",
+      "draft_figures_added_at": "2026-06-03T13:00:00Z",
+      "draft_note": "Run-185 Draft: landed the captured Section V figures (figure-5-1..5-8 now present in manuscript/figures/). Inserted (Figure 5.1)/[^18], (Figure 5.2) with [^10] capture-pending hedge dropped, and a V.C local-graph sentence with (Figures 5.3-5.8)/[^19]. Resolved and archived PI-V-OBSIDIAN-FIGS and PI-V-LOCAL-GRAPHS. Body 1193 -> 1237 (+12.5%, within +15%). draft_status held at needs_cite so Cite formalizes the new figure footnotes; figure refs follow the Section III callout-plus-footnote convention, no image embeds, no fabrication."
     },
     "06": {
       "cite_completed_at": "2026-05-18T15:00:00Z",
