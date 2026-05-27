@@ -85,19 +85,19 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-04T09:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-04T11:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-06-03T21:00:00Z",
+    "last_stitched_at": "2026-06-04T11:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
@@ -1315,9 +1315,20 @@
       "section": "05",
       "status": "open",
       "type": "push-race-conflict"
+    },
+    {
+      "claim": "The assembled full-draft now cross-references fig. 3.8 / 3.9 / 3.10 from Section VIII (global notes 103/99/110, run-193 Cite), and the PNGs figure-3-7..3-10 exist in manuscript/figures/, but Section III prose places figure callouts only for figs 3.1-3.6. The Section VIII cross-reference targets (and the still-stale 'capture pending' hedge on Section III's own 3.1-3.6 figure footnotes) are therefore not yet resolved/displayed inside the assembled draft's Section III.",
+      "id": "PI-198",
+      "note": "Surfaced by the run-195 interim Stitch cross-reference check. Status of inputs: all ten deployed-site PNGs (figure-3-1..3-10) and Section V's 5.1-5.8 are confirmed on disk; the deployed URL was re-verified live by run-193 Cite. So this is a Section III PROSE-PLACEMENT gap, not a fabrication or capture gap. Section III currently calls out (Figure 3.1)-(Figure 3.6) in III.A-III.D and carries two unnumbered deployed-site figure footnotes ([^62] holding-bar, [^69] four-family grid, both still hedged 'capture pending, see PI-012'); it never places (Figure 3.7) recent-tab, (Figure 3.8) search-palette, (Figure 3.9) About-page, or (Figure 3.10) feedback-form, which Section VIII's notes 103/99/110 now point at. Section III's 3.1-3.6 figure footnotes also still read the stale 'capture pending, see PI-027' hedge though the captures exist. ROUTE: a Section III Draft pass to place callouts and captions for figs 3.7-3.10 (and assign a number to the PI-012 holding-bar/grid figures), then Cite to refresh the Section III figure footnotes from 'capture pending, see PI-0XX' to the captured-provenance form (deployed site at https://constitutionallaw.netlify.app, May 26 2026) matching the run-193 Section VIII / Section V precedent and stripping internal PI tracker IDs per L-058. Until Section III catches up, the Section VIII fig cross-references resolve to figures that exist as files but are not displayed in the assembled draft. Interim Stitch propagated the Section VIII form faithfully (mirror-the-polished duty) rather than reverting it. Submission gate stays blocked by this.",
+      "opened_at": "2026-06-04T11:00:00Z",
+      "opened_run": 195,
+      "phase": "stitch",
+      "section": "03",
+      "status": "open",
+      "type": "xref-figure-placement-gap"
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1338,7 +1349,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 194,
+  "run_count": 195,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1518,13 +1529,13 @@
       "polish_completed_at": "2026-05-16T23:30:00Z",
       "polish_note": "Run-194 Polish on Section 05 resolved PI-197 (V.D Dong uninterpretable raw means) via the issue's own prescribed fallback. The assessment scale is not verifiable from the source (the Dong arXiv paper is not in-repo and WebFetch is provenance-blocked; the evidence card and workplan carry only the raw means, and the run-186 WebFetch recorded only a relative 35% increase, not an absolute scale), so the scale-less means 6.37 vs 4.71 were trimmed from prose and the sentence now leads with construct-named, scale-free statistics: 'a large, statistically significant advantage in assessment scores for knowledge-graph-augmented retrieval over pure semantic retrieval (Cohen's d of 0.86, p less than 0.001)'. Footnote [^14] retains the full reported figures (6.37 vs 4.71, p<0.001, d=0.86) for disclosure. Edit was word-neutral (33->33 words on the fragment); body holds at 1209 within the +/-10% band (ceiling 1210). provenance_audited set false per the verify_routing_reason instruction so the next Verify runs a fresh re-audit. polish_status needs_polish -> ready_for_stitch.",
       "polish_redone_at": "2026-06-04T09:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "stitched",
       "provenance_audited": false,
       "provenance_audited_at": "2026-06-02T17:00:00Z",
       "provenance_score": 4.4,
       "provenance_stale_reason": "Polish run 173 materially revised V.A (388-file count from Cite run 172), V.B (review-pipeline naming, PI-016), V.C (professor-as-curator actor and membership methodology, PI-015/PI-017), V.D (GraphRAG reframed as authoring-time analogy, PI-135), and V.E (active voice); the 2026-05-29 provenance audit no longer matches the prose, so provenance_audited reset to false for Verify re-audit. provenance_score 3.8 retained as last-known.",
-      "re_stitched_at": "2026-06-03T21:00:00Z",
-      "stitch_note": "Run-188 interim re-stitch folded the run-185 Draft / run-186 Cite / run-187 Polish of Section 05 into full-draft.md: three figure callouts ((Figure 5.1) at global note 59, (Figure 5.2) on finalized note 66, (Figures 5.3 through 5.8) at global note 67), the PI-189 V.C bound and PI-013 V.D transfer clause, the finalized fig-5.2 def, and the Dong AI-tutor parenthetical (note 71). Global footnote space renumbered 179 -> 181 by appearance order (Section V occupies notes 56-74; downstream notes 73-179 shift +2; textual cross-references at/above old note 73 shifted in lockstep); integrity re-verified contiguous 1-181 with no orphans/dupes. polish_status ready_for_stitch -> stitched.",
+      "re_stitched_at": "2026-06-04T11:00:00Z",
+      "stitch_note": "Run-195 interim re-stitch folded the run-194 Polish of Section 05 into full-draft.md: the V.D Dong sentence now reads the scale-free 'a large, statistically significant advantage in assessment scores ... (Cohen's d of 0.86, p less than 0.001)' at global note 71 (PI-197 fix), word-neutral (24->24 words on the clause), note 71 def unchanged and retaining the full figures for disclosure. No footnote insert/delete, no global renumber; 181 contiguous defs re-verified. polish_status ready_for_stitch -> stitched. provenance_audited left false so the next Verify runs a fresh re-audit over the post-PI-197 prose.",
       "stitched_at": "2026-05-17T01:30:00Z",
       "target_words": 1100,
       "title": "Building the Obsidian Vault",
