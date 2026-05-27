@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-06-03T07:00:00Z",
+  "last_completed_phase": "harvest",
+  "last_run_at": "2026-06-03T09:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -1309,16 +1309,6 @@
       "type": "attribution-truncation"
     },
     {
-      "claim": "evidence-04-top-level-counts.md's body summary still reads 'Three hundred eighty-eight files in total once subfolders are included; 127 at the top level alone', but its own top-level enumeration (61 .pptx + 66 .pdf + 3 .docx + one .txt + one .potx = 132) contradicts the 127 figure. The card's authoritative 'Filesystem verification, 2026-05-15' bullet block is correct (top-level .pptx 61, .pdf 66, .docx 3; total 388); only the loose prose summary mislabels 127 as the top-level total.",
-      "id": "PI-188",
-      "note": "Surfaced during run-172 Cite while resolving PI-131/PI-136. The article prose (IV.A, IV.D, V.A) and the cited authority (Appendix A) are now reconciled to the correct framing: 388 total; 127 = the 61 PowerPoint + 66 PDF slide-and-reading subset, not a top-level total. Footnotes cite Appendix A (already correct), so re-propagation risk is low and this was left unfixed to keep Cite out of the Harvest-owned evidence cards. Next Harvest tick on Section 04 should align the card's summary sentence to Appendix A's framing (or recast it as the slide-and-reading subset) so the source matches the prose. Low priority; tracks the same fact as archived PI-131/PI-136. See L-060.",
-      "opened_at": "2026-06-02T11:00:00Z",
-      "phase": "cite",
-      "section": "04",
-      "status": "open",
-      "type": "evidence-card-inconsistency"
-    },
-    {
       "claim": "Section V.C states an unbounded transfer claim, 'The synthesis form transfers to any doctrinal subject,' that Section X.D expressly bounds (the method 'assumes a course organized around tagged doctrines and leading cases'; Civil Procedure and Tax 'fit that assumption less cleanly'). V.C's 'any doctrinal subject' is the universal-applicability overreach PERSONAS.md flags for the Pedagogy Traditionalist, sitting in the schema section a reviewer reads before X.D's hedge, so the article appears to assert what it later retracts.",
       "id": "PI-189",
       "note": "Run-175 Verify, Persona 2 (Legal Pedagogy Traditionalist) P1. Next Polish tick on Section 05 should qualify V.C to the bounded form the article defends ('transfers to any case-and-doctrine course') with a forward-pointer to Section X.D's limits; one clause, no new citation. Routes Section 05 polish_status -> needs_polish (already reset this run by the provenance audit).",
@@ -1363,7 +1353,7 @@
       "description": "Verify run 182 provenance audit of polished Section 04. Footnotes [^14], [^15], and [^20] (global [^49], [^50], [^55]) each route the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose that violates the PROJECT_PRIMER citation policy (no internal-log/personal-communication cites in published text; convert to appendix excerpts) and provenance-audit rubric criterion 2 (internal vault artifacts cited only via appendix references, never as standalone authority in prose). The three sentences are hedges about open questions (casebook ingestion, student-work ingestion, snapshot-date sign-off), so the body prose is fine; only the footnote pointers must change. Routing: Section 04 polish_status -> needs_polish (also independently forced by provenance_score 4.4 < 4.5). Next Cite/Polish tick on Section 04 re-points [^14]/[^15]/[^20] to App. D (Correspondence Excerpts) or drops the internal-tracker pointer (body hedge suffices). Distinct from PI-052 (Section IX PI- task tokens in IX.E prose) and from PI-188 (Section 04 evidence-card arithmetic, resolved at run 172)."
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "harvest",
     "outline",
@@ -1384,7 +1374,7 @@
     "last_audit_at": "2026-06-03T07:00:00Z",
     "last_audit_section": "04"
   },
-  "run_count": 182,
+  "run_count": 183,
   "schema_version": 1,
   "sections": {
     "01": {

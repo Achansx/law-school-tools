@@ -3,10 +3,10 @@ section: "04"
 fact_type: statistic
 source_path: "Chandler Constitutional Law Vault/archive/vault-blog-post-draft.md"
 verified: true
-notes: "Top-level Source Materials counts. Filesystem audit (May 15, 2026) confirms the blog draft's figures of 61 PowerPoints and 66 PDFs at the root of Source Materials/. Use as the headline characterization of the LMS export when Section 04 opens. Workplan paragraph 2 cites the same figures."
+notes: "Top-level Source Materials counts. Filesystem audit (May 15, 2026) confirms the blog draft's figures of 61 PowerPoints and 66 PDFs at the root of Source Materials/. Use as the headline characterization of the LMS export when Section 04 opens. Workplan paragraph 2 cites the same figures. Count framing reconciled to Appendix A and L-060 (PI-188, run 183): 388 = all subfolders; 127 = the 61 PowerPoint + 66 PDF slide-and-reading subset, NOT a top-level total (top level is 132 files). Never label 127 as a top-level count."
 ---
 
-The Canvas LMS export landed as a flat folder of 260-plus files: 61 PowerPoint lecture decks (.pptx), 66 PDFs of case readings and slide handouts, 3 DOCX files, one .txt, one .potx template, plus subfolders for individually uploaded media, HTML resources, and one course image. No nested organization beyond filename. Three hundred eighty-eight files in total once subfolders are included; 127 at the top level alone.
+The Canvas LMS export landed as a flat folder of 260-plus files: 61 PowerPoint lecture decks (.pptx), 66 PDFs of case readings and slide handouts, 3 DOCX files, one .txt, one .potx template, plus subfolders for individually uploaded media, HTML resources, and one course image. No nested organization beyond filename. Three hundred eighty-eight files in total once subfolders are included; the 61 PowerPoint decks and 66 reading PDFs together are the 127 slide-and-reading files the flat structure exposed first, not a top-level total (the top level holds 132 files once the 3 DOCX, one .txt, and one .potx are added).
 
 Exact source quote, vault-blog-post-draft.md paragraph 1:
 
