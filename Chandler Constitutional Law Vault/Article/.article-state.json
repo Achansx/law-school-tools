@@ -1333,6 +1333,16 @@
       "opened_at": "2026-06-03T07:00:00Z",
       "routed_to": "cite/polish-04",
       "description": "Verify run 182 provenance audit of polished Section 04. Footnotes [^14], [^15], and [^20] (global [^49], [^50], [^55]) each route the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose that violates the PROJECT_PRIMER citation policy (no internal-log/personal-communication cites in published text; convert to appendix excerpts) and provenance-audit rubric criterion 2 (internal vault artifacts cited only via appendix references, never as standalone authority in prose). The three sentences are hedges about open questions (casebook ingestion, student-work ingestion, snapshot-date sign-off), so the body prose is fine; only the footnote pointers must change. Routing: Section 04 polish_status -> needs_polish (also independently forced by provenance_score 4.4 < 4.5). Next Cite/Polish tick on Section 04 re-points [^14]/[^15]/[^20] to App. D (Correspondence Excerpts) or drops the internal-tracker pointer (body hedge suffices). Distinct from PI-052 (Section IX PI- task tokens in IX.E prose) and from PI-188 (Section 04 evidence-card arithmetic, resolved at run 172)."
+    },
+    {
+      "id": "PI-193",
+      "type": "push-race-conflict",
+      "section": "05",
+      "status": "open",
+      "opened_at": "2026-06-03T13:00:00Z",
+      "phase": "draft",
+      "claim": "Concurrent draft ticks raced on run 185. This local tick read the saturated posture and noop-ed (no section at needs_draft; the two open PI-V figure issues judged non-prose), while the winning tick (commit bd469bd) recognized the Section V figure captures now exist in manuscript/figures/ and landed PI-V-OBSIDIAN-FIGS and PI-V-LOCAL-GRAPHS as real Draft work. This tick commit lost the push.",
+      "note": "Recovery per RUNBOOK push-race protocol: git rebase onto origin/master conflicted on the four append-heavy tick files and was NOT auto-resolved (human-decision rule). Verified the winning tick produced a strictly more complete result: run 185 advanced draft->cite with Section V figures inserted via the callout-plus-footnote convention (new [^18]/[^19], [^10] finalized), Section 05 word_count 1193->1237, PI-V-OBSIDIAN-FIGS and PI-V-LOCAL-GRAPHS resolved. NOTHING SUBSTANTIVE WAS LOST: this tick authored no prose (it noop-ed), so the winner figure insertion supersedes it entirely. The redundant local noop commit (05dd1fb) was discarded by reset to origin/master; master has since progressed through cite run 186 to current_phase polish. No scorecard or cost-log line was added for run 185 because the winning tick owns that slot; this entry is the only artifact this recovery leaves. Informational only; no remediation required. Process note: a Draft tick with open PI-V figure issues should ls manuscript/figures/ before declaring saturation, because capture files landing in the repo turn a deferred figure issue into actionable Draft work."
     }
   ],
   "phase_index": 4,
