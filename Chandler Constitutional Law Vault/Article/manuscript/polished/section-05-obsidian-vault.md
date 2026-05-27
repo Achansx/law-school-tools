@@ -1,17 +1,18 @@
 ---
 id: "05"
 title: "Building the Obsidian Vault"
-status: needs_polish
+status: ready_for_stitch
 target_words: 1100
 word_count: 1209
-last_phase: verify
+last_phase: polish
 draft_status: needs_cite
 cite_status: needs_polish
-polish_status: needs_polish
+polish_status: ready_for_stitch
+polish_note: "Run 194 (Polish) resolved PI-197 (V.D Dong uninterpretable raw means) via the issue's own prescribed fallback: the assessment scale is not verifiable from the source (the Dong arXiv paper is not in-repo and WebFetch is provenance-blocked; the evidence card and workplan carry only the raw means), so the scale-less means 6.37 vs 4.71 were trimmed from prose and the sentence now leads with the construct-named, scale-free statistics ('a large, statistically significant advantage in assessment scores ... (Cohen's d of 0.86, p less than 0.001)'). Footnote [^14] retains the full reported figures (6.37 vs 4.71, p<0.001, d=0.86) for disclosure. Body word_count word-neutral at 1209 (33->33 words on the edited fragment), still within the +/-10% band (ceiling 1210). provenance_audited set false per the verify_routing_reason instruction so the next Verify runs a fresh re-audit over post-PI-197 prose."
 stitched_at: 2026-05-17T01:30:00Z
 re_stitched_at: 2026-06-03T21:00:00Z
 verify_routing_reason: "Verify run 189 (Persona 3, AI-in-Education Researcher) P1 PI-197: the V.D Dong et al. sentence reports mean scores 6.37 vs 4.71 with no assessment scale, maximum, or named instrument, so the effect is uninterpretable to a learning-sciences reader. This is the measurement-scale facet run 182 folded into PI-013; run-187 Polish closed PI-013 on its architectural-transfer facet only and archived it, orphaning the scale facet. P1-deferral lifted, so polish_status stitched -> needs_polish (confirmed-stitched count 1 -> 0). Note: provenance fields below are stale (audited 4.4 at run 175, pre run-185/186/187 figure work and pre PI-013/PI-189 resolution); the next Polish on Section 05 should set provenance_audited:false so a fresh re-audit runs."
-provenance_audited: true
+provenance_audited: false
 provenance_audited_at: 2026-06-02T17:00:00Z
 provenance_score: 4.4
 claims_total: 26
@@ -50,7 +51,7 @@ The doctrine_family field on the Case Brief template carries exactly four values
 
 The enum is locked. RUNBOOK requires a non-fitting page to be realigned to the nearest canonical value rather than the enum widened in place; widening is a vault-wide change requiring a template-guide edit, a RUNBOOK update, and a build-narrative note.[^13] Section VII picks this up as the kind of explicit constraint that keeps an LLM-assisted system from drifting page by page.
 
-Published work on graph-augmented retrieval supplies the analogy. The Dong et al. controlled study of seventy-six students reported mean scores of 6.37 against 4.71 for a knowledge-graph-augmented retrieval system over pure semantic retrieval, p less than 0.001, Cohen’s d of 0.86,[^14] and the Peng et al. survey defines the canonical GraphRAG workflow as graph-based indexing, graph-guided retrieval, and graph-enhanced generation.[^15] What transfers to the vault is the finding itself, the general value of structured retrieval over flat semantic similarity, not the conversational AI tutor Dong et al. built to deliver it. The vault adopts that structural insight in static-publication form: the link graph and typed frontmatter are curated by hand, and the deployed site serves the graph statically rather than retrieving over it at query time.
+Published work on graph-augmented retrieval supplies the analogy. The Dong et al. controlled study of seventy-six students reported a large, statistically significant advantage in assessment scores for knowledge-graph-augmented retrieval over pure semantic retrieval (Cohen’s d of 0.86, p less than 0.001),[^14] and the Peng et al. survey defines the canonical GraphRAG workflow as graph-based indexing, graph-guided retrieval, and graph-enhanced generation.[^15] What transfers to the vault is the finding itself, the general value of structured retrieval over flat semantic similarity, not the conversational AI tutor Dong et al. built to deliver it. The vault adopts that structural insight in static-publication form: the link graph and typed frontmatter are curated by hand, and the deployed site serves the graph statically rather than retrieving over it at query time.
 
 ## E. The structure is reactive, not designed top-down
 

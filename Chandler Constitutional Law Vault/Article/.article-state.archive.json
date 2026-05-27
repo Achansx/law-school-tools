@@ -1010,6 +1010,22 @@
       "section": "08",
       "status": "resolved",
       "type": "figures-captured"
+    },
+    {
+      "description": "Verify run 189. Section V.D, paragraph beginning 'Published work on graph-augmented retrieval supplies the closest analogy', sentence 'The Dong et al. controlled study of seventy-six students reported mean scores of 6.37 against 4.71 for a knowledge-graph-augmented retrieval system over pure semantic retrieval, p less than 0.001, Cohen's d of 0.86' [^71]. The raw means 6.37 and 4.71 carry no assessment scale, maximum, or named instrument, so a learning-sciences reader cannot interpret the effect (6.37 out of what, on which measure); the p-value and Cohen's d are present, but a mean difference without a measurement range reads as imported impressiveness rather than evidence. This is the measurement-scale facet Verify run 182 folded into PI-013; run-187 Polish closed PI-013 on its architectural-transfer facet only (named structured retrieval over flat semantic similarity as what transfers vs. the conversational tutor that does not) and archived it, so the scale facet is re-logged here as its own pending issue. Fix: next Polish/Cite tick on Section 05 adds the outcome scale and measured construct to the Dong sentence (e.g., 'mean post-test scores of 6.37 vs 4.71 on a [N]-point [comprehension] measure'), or, if the scale is not verifiable from the source, trims the raw means and keeps only the effect size with its construct named. Routing: Section 05 polish_status stitched -> needs_polish (confirmed-stitched count 1 -> 0). Distinct from archived PI-013 (architectural-transfer facet, resolved run 187).",
+      "id": "PI-197",
+      "opened_at": "2026-06-03T23:00:00Z",
+      "opened_run": 189,
+      "persona": "AI-in-Education Researcher (Persona 3)",
+      "routed_to": "polish/cite-05",
+      "section": "05",
+      "severity": "P1",
+      "status": "resolved",
+      "type": "uninterpretable-effect-size",
+      "resolved_at": "2026-06-04T09:00:00Z",
+      "resolved_run": 194,
+      "resolved_by_phase": "polish",
+      "resolution": "Polish run 194 applied the issue's own scale-not-verifiable fallback: trimmed the scale-less raw means 6.37/4.71 from V.D prose and recast to lead with the construct-named, scale-free effect size and significance (Cohen's d of 0.86, p less than 0.001); footnote [^14] retains the full reported figures. The prose effect is now interpretable to a learning-sciences reader without a stated scale. Section 05 polish_status -> ready_for_stitch; provenance_audited reset false for Verify re-audit."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
