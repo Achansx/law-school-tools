@@ -942,6 +942,47 @@
       "type": "figures-captured-obsidian",
       "resolved_at": "2026-06-03T13:00:00Z",
       "resolution": "Run-185 Draft landed the captured Section V figures into drafts/section-05-obsidian-vault.md now that figure-5-1..5-8 PNGs are present in manuscript/figures/. Added inline (Figure 5.1) callout with new footnote [^18] (Marbury typed-properties panel), inline (Figure 5.2) at the graph-view sentence and finalized footnote [^10] by dropping the capture-pending hedge, and a V.C local-graph sentence referencing (Figures 5.3 through 5.8) with new footnote [^19] covering the six local-graph captures (case/topic/lecture node types twice each). Capture attribution May 26, 2026 carried in the footnotes per the Section III figure convention; no fabrication, figures verified present in repo. draft body 1193 -> 1237 words (+12.5%, within the +15% Draft ceiling)."
+    },
+    {
+      "claim": "Section V.D's footnote [^29] (Dong et al. KG-RAG study) is presented as anchoring the article's architectural claim about the static-website vault, but Dong et al.'s intervention is a chatbot-tutor with KG-RAG at runtime and the vault performs no runtime retrieval. The architectural transfer between the cited intervention setting and the case-study setting is not addressed in the prose.",
+      "id": "PI-013",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 plus Persona 3 (AI-in-Education Researcher) P1, collapsed to a single PI because both personas flagged the same load-bearing sentence with the same suggested fix. Next Polish tick on Section 05 should add one sentence to V.D's third paragraph naming what transfers (the general value of structured retrieval over flat semantic similarity) and what does not (the chatbot-tutor implementation); for example, 'What transfers from the KG-RAG result is the general value of structured retrieval over flat semantic similarity, not the chatbot-tutor implementation; the vault adopts the structural insight in a static-publication form.' Optionally extend footnote [^29] with a parenthetical noting the intervention-setting difference. Resolves the L-003 framing-discipline failure mode at the citation level without re-running Cite (the Bluebook form itself is fine).",
+      "opened_at": "2026-05-17T03:00:00Z",
+      "phase": "verify",
+      "section": "05",
+      "status": "resolved",
+      "type": "citation-transfer",
+      "resolved_at": "2026-06-03T19:00:00Z",
+      "resolved_phase": "polish",
+      "resolved_run": 187,
+      "resolution": "Polish run 187 added a sentence to V.D's third paragraph naming what transfers from the Dong et al. KG-RAG result (the general value of structured retrieval over flat semantic similarity) and what does not (the conversational AI tutor implementation Dong et al. built to deliver it), and extended footnote [^14] with the intervention-setting parenthetical. Bluebook form unchanged; closes the L-003 framing-discipline gap at the citation level."
+    },
+    {
+      "claim": "Section V.C states an unbounded transfer claim, 'The synthesis form transfers to any doctrinal subject,' that Section X.D expressly bounds (the method 'assumes a course organized around tagged doctrines and leading cases'; Civil Procedure and Tax 'fit that assumption less cleanly'). V.C's 'any doctrinal subject' is the universal-applicability overreach PERSONAS.md flags for the Pedagogy Traditionalist, sitting in the schema section a reviewer reads before X.D's hedge, so the article appears to assert what it later retracts.",
+      "id": "PI-189",
+      "note": "Run-175 Verify, Persona 2 (Legal Pedagogy Traditionalist) P1. Next Polish tick on Section 05 should qualify V.C to the bounded form the article defends ('transfers to any case-and-doctrine course') with a forward-pointer to Section X.D's limits; one clause, no new citation. Routes Section 05 polish_status -> needs_polish (already reset this run by the provenance audit).",
+      "opened_at": "2026-06-02T17:00:00Z",
+      "phase": "polish",
+      "section": "05",
+      "status": "resolved",
+      "type": "verify-finding",
+      "resolved_at": "2026-06-03T19:00:00Z",
+      "resolved_phase": "polish",
+      "resolved_run": 187,
+      "resolution": "Polish run 187 qualified V.C's 'The synthesis form transfers to any doctrinal subject' to 'any case-and-doctrine course' with a forward-pointer to Section X.D's limits (courses organized around tagged doctrines and leading cases). One clause, no new citation, per the routing note."
+    },
+    {
+      "id": "PI-194",
+      "type": "push-race-conflict",
+      "section": "05",
+      "status": "resolved",
+      "opened_at": "2026-06-03T17:00:00Z",
+      "phase": "polish",
+      "claim": "Polish run 187 was computed locally on Section 05 but lost to a push race. This tick read the run-186 handoff (Section 05 cite_status:needs_polish), folded the run-185/186 figure work into the stale run-173 polished artifact ((Figure 5.1)/[^18], (Figure 5.2) with [^10] finalized, and a V.C local-graph sentence with (Figures 5.3 through 5.8)/[^19]), and closed both routed Polish-owned P1s: PI-013 (V.D transfer/non-transfer sentence plus [^14] intervention-setting parenthetical) and PI-189 (V.C bounded 'any doctrinal subject' to 'any case-and-doctrine course' with a Section X.D forward-pointer), landing the body at 1197 words within band and advancing polish -> stitch (run 187). The direct push to master was rejected and the autostash rebase onto the concurrently-pushed commit 80b1c7f (which appended PI-193 and a BUILD_NARRATIVE entry for draft run 185) conflicted in BUILD_NARRATIVE_2026-06.md; per RUNBOOK the rebase was aborted rather than auto-resolved. The local branch was reset to origin/master, so master remains at current_phase:polish, run_count:186 with PI-013/PI-189 still open and Section 05 at polish_status:needs_polish. NO phase advance and NO score were recorded. The next Polish tick will cleanly redo run 187 from this exact state; the discarded local commit e82ec50 holds the computed prose in this container's reflog if a human wants to cherry-pick rather than recompute.",
+      "resolved_at": "2026-06-03T19:00:00Z",
+      "resolved_phase": "polish",
+      "resolved_run": 187,
+      "resolution": "Polish run 187 cleanly redid the run lost to the push race from the documented state: folded the run-185/186 figure work ([^18]/Figure 5.1, [^10] finalized, [^19]/Figures 5.3-5.8 plus the V.C local-graph sentence) into the polished artifact and closed PI-013 and PI-189; body at 1209 words within band; polish_status -> ready_for_stitch; phase advanced polish -> stitch (run 187). The PI-194 directive is fulfilled."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
