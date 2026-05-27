@@ -4,8 +4,8 @@ title: "Building the Obsidian Vault"
 status: needs_polish
 target_words: 1100
 word_count: 1237
-last_phase: draft
-draft_status: needs_cite
+last_phase: cite
+draft_status: needs_polish
 cite_status: needs_polish
 ---
 
@@ -85,6 +85,6 @@ The vault’s schema is therefore a sequence of structural commitments, each for
 
 [^17]: *See infra* App. A (Vault Architecture and File Layout) (Topics/Judicial Review.md area field initially assigned *Federal Judicial Power*, realigned to Separation of Powers per the canonical four-value enum; vault RUNBOOK.md codification of the realignment process for future drift).
 
-[^18]: Figure 5.1 (*Marbury v. Madison* (1803) Case brief open in Obsidian Live Preview, the typed-properties panel rendering the YAML frontmatter as structured fields, including case_name, citation, doctrine_family, midpage_id, source_files, and a six-entry applied_in list; captured from the source Obsidian vault May 26, 2026).
+[^18]: *See infra* fig. 5.1 (*Marbury v. Madison* (1803) case brief open in Obsidian Live Preview, the typed-properties panel rendering the YAML frontmatter as structured fields, including case_name, citation, doctrine_family, midpage_id, source_files, and a six-entry applied_in list; captured from the source Obsidian vault May 26, 2026).
 
-[^19]: Figures 5.3 through 5.8 (local-graph captures from the source Obsidian vault, May 26, 2026, covering each node type twice: *Marbury v. Madison* and *Brown v. Board of Education* (cases), the Commerce Clause and Substantive Due Process (topics), and two review lectures, each showing the distinct wiki-link relationship cluster that layer of the corpus produces).
+[^19]: *See infra* figs. 5.3–5.8 (local-graph captures from the source Obsidian vault, May 26, 2026, covering each node type twice: *Marbury v. Madison* and *Brown v. Board of Education* (cases), the Commerce Clause and Substantive Due Process (topics), and two review lectures, each showing the distinct wiki-link relationship cluster that layer of the corpus produces).
