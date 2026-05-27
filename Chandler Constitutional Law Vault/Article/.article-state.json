@@ -85,23 +85,23 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-03T19:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-03T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-06-03T05:00:00Z",
+    "last_stitched_at": "2026-06-03T21:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13270
+    "total_words": 13352
   },
   "pending_issues": [
     {
@@ -1325,7 +1325,7 @@
       "note": "Recovery per RUNBOOK push-race protocol: git rebase onto origin/master conflicted on the four append-heavy tick files and was NOT auto-resolved (human-decision rule). Verified the winning tick produced a strictly more complete result: run 185 advanced draft->cite with Section V figures inserted via the callout-plus-footnote convention (new [^18]/[^19], [^10] finalized), Section 05 word_count 1193->1237, PI-V-OBSIDIAN-FIGS and PI-V-LOCAL-GRAPHS resolved. NOTHING SUBSTANTIVE WAS LOST: this tick authored no prose (it noop-ed), so the winner figure insertion supersedes it entirely. The redundant local noop commit (05dd1fb) was discarded by reset to origin/master; master has since progressed through cite run 186 to current_phase polish. No scorecard or cost-log line was added for run 185 because the winning tick owns that slot; this entry is the only artifact this recovery leaves. Informational only; no remediation required. Process note: a Draft tick with open PI-V figure issues should ls manuscript/figures/ before declaring saturation, because capture files landing in the repo turn a deferred figure issue into actionable Draft work."
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1346,7 +1346,7 @@
     "last_audit_at": "2026-06-03T07:00:00Z",
     "last_audit_section": "04"
   },
-  "run_count": 187,
+  "run_count": 188,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1522,12 +1522,13 @@
       "polish_completed_at": "2026-05-16T23:30:00Z",
       "polish_note": "Run-187 Polish on Section 05 (clean redo of the run-187 lost to the PI-194 push race). Folded the run-185/186 figure work into the polished artifact: (Figure 5.1)/[^18] on the case-brief frontmatter sentence (V.B), (Figure 5.2) on the graph-view sentence with [^10] finalized to its May 26 2026 capture (capture-pending hedge dropped), and a new V.C local-graph sentence with (Figures 5.3 through 5.8)/[^19]; all eight captures confirmed present in manuscript/figures/. Closed both Polish-owned P1s: PI-189 bounded V.C's 'any doctrinal subject' to 'any case-and-doctrine course' with a Section X.D forward-pointer, and PI-013 added a V.D sentence naming what transfers from the Dong et al. KG-RAG result (structured retrieval over flat semantic similarity) versus what does not (the conversational AI tutor), with a matching [^14] intervention-setting parenthetical. Full style checklist: zero em dashes, all quotes curly, no straight ASCII quotes; tightened several sentences (and split the V.D transfer sentence) to hold the body at 1209 words within the +-10% band. polish_status needs_polish -> ready_for_stitch.",
       "polish_redone_at": "2026-06-03T19:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "stitched",
       "provenance_audited": true,
       "provenance_audited_at": "2026-06-02T17:00:00Z",
       "provenance_score": 4.4,
       "provenance_stale_reason": "Polish run 173 materially revised V.A (388-file count from Cite run 172), V.B (review-pipeline naming, PI-016), V.C (professor-as-curator actor and membership methodology, PI-015/PI-017), V.D (GraphRAG reframed as authoring-time analogy, PI-135), and V.E (active voice); the 2026-05-29 provenance audit no longer matches the prose, so provenance_audited reset to false for Verify re-audit. provenance_score 3.8 retained as last-known.",
-      "re_stitched_at": "2026-06-02T15:00:00Z",
+      "re_stitched_at": "2026-06-03T21:00:00Z",
+      "stitch_note": "Run-188 interim re-stitch folded the run-185 Draft / run-186 Cite / run-187 Polish of Section 05 into full-draft.md: three figure callouts ((Figure 5.1) at global note 59, (Figure 5.2) on finalized note 66, (Figures 5.3 through 5.8) at global note 67), the PI-189 V.C bound and PI-013 V.D transfer clause, the finalized fig-5.2 def, and the Dong AI-tutor parenthetical (note 71). Global footnote space renumbered 179 -> 181 by appearance order (Section V occupies notes 56-74; downstream notes 73-179 shift +2; textual cross-references at/above old note 73 shifted in lockstep); integrity re-verified contiguous 1-181 with no orphans/dupes. polish_status ready_for_stitch -> stitched.",
       "stitched_at": "2026-05-17T01:30:00Z",
       "target_words": 1100,
       "title": "Building the Obsidian Vault",

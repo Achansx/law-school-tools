@@ -9,7 +9,7 @@ draft_status: needs_cite
 cite_status: needs_polish
 polish_status: ready_for_stitch
 stitched_at: 2026-05-17T01:30:00Z
-re_stitched_at: 2026-06-02T15:00:00Z
+re_stitched_at: 2026-06-03T21:00:00Z
 provenance_audited: true
 provenance_audited_at: 2026-06-02T17:00:00Z
 provenance_score: 4.4
