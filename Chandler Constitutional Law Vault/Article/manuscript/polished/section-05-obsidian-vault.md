@@ -1,15 +1,16 @@
 ---
 id: "05"
 title: "Building the Obsidian Vault"
-status: ready_for_stitch
+status: needs_polish
 target_words: 1100
 word_count: 1209
-last_phase: polish
+last_phase: verify
 draft_status: needs_cite
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: needs_polish
 stitched_at: 2026-05-17T01:30:00Z
 re_stitched_at: 2026-06-03T21:00:00Z
+verify_routing_reason: "Verify run 189 (Persona 3, AI-in-Education Researcher) P1 PI-197: the V.D Dong et al. sentence reports mean scores 6.37 vs 4.71 with no assessment scale, maximum, or named instrument, so the effect is uninterpretable to a learning-sciences reader. This is the measurement-scale facet run 182 folded into PI-013; run-187 Polish closed PI-013 on its architectural-transfer facet only and archived it, orphaning the scale facet. P1-deferral lifted, so polish_status stitched -> needs_polish (confirmed-stitched count 1 -> 0). Note: provenance fields below are stale (audited 4.4 at run 175, pre run-185/186/187 figure work and pre PI-013/PI-189 resolution); the next Polish on Section 05 should set provenance_audited:false so a fresh re-audit runs."
 provenance_audited: true
 provenance_audited_at: 2026-06-02T17:00:00Z
 provenance_score: 4.4
