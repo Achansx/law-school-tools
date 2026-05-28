@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-06-08T13:00:00Z",
+  "last_completed_phase": "harvest",
+  "last_run_at": "2026-06-08T15:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -1378,7 +1378,7 @@
       "type": "ethics-and-irb-silence"
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "harvest",
     "outline",
@@ -1399,7 +1399,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 224,
+  "run_count": 225,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1668,7 +1668,7 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-19T13:00:00Z",
-      "verify_routing_reason": "Run-224 Verify: Section 07 re-audit after run-222 Polish reset (closed PI-207's Bond [^11] engagement-sentence leg at the polished source-of-truth and the run-223 Stitch consumed the placeholder into the assembly's global [^93]). provenance_score 4.4 -> 4.6 (5/4/4/5/5); gap_honesty lifted to 5 (PI-207 deduction cleared by the Bond engagement sentence now present in polished prose AND assembly; standing L-007 entry candidly named in body prose and listed in unsupported_claims with reason: requires-primary-source, so the prose reads as if the audit happened, which it did); primary_source_ratio holds at 4 (PI-207's drag is cleared; the standing VII.D L-007 inline-label is the sole remaining deduction); attribution_discipline holds at 4 (the standing L-007 entry); claim_coverage holds at 5 (22/23 = 95.7% mapped); numerical_precision holds at 5. 4.6 clears the 4.5 score gate for the first time across six consecutive audits at runs 129/147/167/189/203/217. However, the L-007 unsupported_claim with reason `requires-primary-source` (not `intentional-conjecture`) prevents the section from passing the rubric's full exit condition, so polish_status stays needs_polish on the L-007 axis alone — one Polish edit away from a full 5.0 across all five criteria and from clearing the exit condition outright. Persona 1 (JLE Editor) opened NEW PI-208 (VII.C voice-and-tightness slip on the run-222 Polish addition: 41-token semicolon-spliced run-on past the 35-word Polish band, plus 'instantiates' over-claim register on the load-bearing verb the run-222 narrative defended as 'deliberate' without independent scrutiny against the over-claim risk); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta)."
+      "verify_routing_reason": "Run-224 Verify: Section 07 re-audit after run-222 Polish reset (closed PI-207's Bond [^11] engagement-sentence leg at the polished source-of-truth and the run-223 Stitch consumed the placeholder into the assembly's global [^93]). provenance_score 4.4 -> 4.6 (5/4/4/5/5); gap_honesty lifted to 5 (PI-207 deduction cleared by the Bond engagement sentence now present in polished prose AND assembly; standing L-007 entry candidly named in body prose and listed in unsupported_claims with reason: requires-primary-source, so the prose reads as if the audit happened, which it did); primary_source_ratio holds at 4 (PI-207's drag is cleared; the standing VII.D L-007 inline-label is the sole remaining deduction); attribution_discipline holds at 4 (the standing L-007 entry); claim_coverage holds at 5 (22/23 = 95.7% mapped); numerical_precision holds at 5. 4.6 clears the 4.5 score gate for the first time across six consecutive audits at runs 129/147/167/189/203/217. However, the L-007 unsupported_claim with reason `requires-primary-source` (not `intentional-conjecture`) prevents the section from passing the rubric's full exit condition, so polish_status stays needs_polish on the L-007 axis alone \u2014 one Polish edit away from a full 5.0 across all five criteria and from clearing the exit condition outright. Persona 1 (JLE Editor) opened NEW PI-208 (VII.C voice-and-tightness slip on the run-222 Polish addition: 41-token semicolon-spliced run-on past the 35-word Polish band, plus 'instantiates' over-claim register on the load-bearing verb the run-222 narrative defended as 'deliberate' without independent scrutiny against the over-claim risk); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta)."
     },
     "08": {
       "cite_completed_at": "2026-06-04T07:00:00Z",
