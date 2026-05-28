@@ -85,15 +85,15 @@
   "stitch": 0,
   "verify": 0
  },
- "current_phase": "draft",
+ "current_phase": "cite",
  "gates": {
   "submission_ready": {
    "awaiting_human": false,
    "cleared_at": null
   }
  },
- "last_completed_phase": "outline",
- "last_run_at": "2026-06-04T22:00:00Z",
+ "last_completed_phase": "draft",
+ "last_run_at": "2026-06-05T00:30:00Z",
  "manuscript": {
   "abstract_assembled": true,
   "full_draft_exists": true,
@@ -1389,7 +1389,7 @@
    "note": "Recovery per the dispatcher push-race protocol and the PI-203 / PI-202 / PI-201 / PI-200 / PI-196 / PI-193 precedent: git fetch origin master then git rebase origin/master --autostash conflicted in BUILD_NARRATIVE_2026-06.md exactly as PI-203 predicted, because both this tick and 43d929d appended a block at the same file tail after the PI-202 entry (the .article-state.json advance auto-merged cleanly against 43d929d's PI-203 pending_issues insertion, and .article-scores.jsonl / cost-log.jsonl did not conflict because the winning log commit 43d929d touched neither). The rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local advance commit 6f9322e was discarded by reset --hard to origin/master. As with PI-201..203, the winning commit 43d929d only LOGGED the prior outline-198 race and did NOT advance the phase, so master remains at current_phase outline / phase_index 1 / run_count 197 / last_run_at 2026-06-04T15:00:00Z: the outline tick is still genuinely not performed on master. Nothing substantive was lost because the outline tick is a deterministic saturated-state noop (no section at outline_status:needs_work, abstract at ready_for_review), reproducible on the next pass; this entry is the informational push-race record only, with no phase advance and no scorecard or cost-log line retained for the lost commit. ESCALATION CONFIRMED: this is now the FOURTH consecutive outline-198 tick (PI-201, PI-202, PI-203, PI-204) to race and log without the phase advancing on master, and the FIRST to empirically confirm PI-203's prediction that the rebase would conflict on the BUILD_NARRATIVE tail-append. The livelock is self-perpetuating exactly as PI-203 described: each recovery commit is itself an append to .article-state.json pending_issues and BUILD_NARRATIVE, so it becomes the next concurrent tick's race winner and conflict source, and the outline->draft advance never lands while ticks run concurrently on this boundary. HUMAN ACTION REQUIRED: serialize the scheduler on the phase-advance boundary, or land the trivial outline->draft advance directly on master once (current_phase outline->draft, phase_index 1->2, run_count 197->198, plus the deterministic run-198 noop scorecard/cost-log/narrative lines), which breaks the loop permanently. A single non-concurrent run would also break it."
   }
  ],
- "phase_index": 2,
+ "phase_index": 3,
  "phases": [
   "harvest",
   "outline",
@@ -1410,7 +1410,7 @@
   "sections_audited": 14,
   "sections_total": 14
  },
- "run_count": 198,
+ "run_count": 199,
  "schema_version": 1,
  "sections": {
   "01": {
