@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-29T09:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-29T11:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -106,7 +106,7 @@
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13390,
+    "total_words": 13412,
     "stitch_run": 230,
     "stitch_note_run230": "Run-230 Stitch (interim per RUNBOOK adaptive mode; 0 of 14 polish_status ready_for_stitch or stitched). Pass-through verify-and-reconcile tick: run-228 Cite Section 12 [^167] typology pin cite (line 727) and run-229 Polish Section 07 VII.C two-sentence rewrite carrying global [^93] (line 223) both already in the assembly. Footnote integrity 182 contiguous [^1]-[^182] (zero gap/dup/orphan, all body refs resolve to a def). Recurring sentence exactly three canonical placements (I.B line 41, VII/VIII seam line 235, XIV.C line 389). Bond title 'Rigour' consistent at lines 411/579/695/727 plus 'rigour' lowercase at line 223 matching British source spelling. Terminology umbrella 'course knowledge system' unchanged (14 occurrences); 'AI tutor' only in Dong et al. comparison context (line 165 and [^71]); 'knowledge graph' only in hyphenated technical-mechanism contexts. Reconciled full-draft.md frontmatter total_words 13389 -> 13390 to match state's run-229 Polish update (one-tick frontmatter-vs-state drift closed). Submission gate stays FALSE: zero sections at polish_status:stitched, twelve sections at provenance_score < 4.5, open routed PIs against the assembled draft (PI-082, PI-086, PI-181 XIV.A leg, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209) remain."
   },
@@ -556,7 +556,7 @@
     {
       "claim": "Published footnotes throughout the assembled draft embed internal maintenance-system lesson identifiers and fetch-process narration that are not Bluebook 21st form: 'per L-022' appears 5 times, 'per L-001' twice, 'per L-027' twice, and 'per L-011'/'per L-015'/'per L-034'/'per L-038'/'per L-039' once each, alongside process annotations such as '(URL verified live via WebSearch after WebFetch returned HTTP 403, per L-022)' at Section XIII footnote [^140]. A JLE editor reads the internal lesson tags and the verbatim fetch-process narration as build scaffolding leaking into the citation apparatus.",
       "id": "PI-092",
-      "note": "Persona 1 (Skeptical JLE Editor) P1 finding, anchored on the newest instance (Section XIII [^140]) but article-wide in scope (footnotes across Sections I-X and XIII). Extends L-042 (Polish body-prose scan for internal task-tracking identifiers) from body prose to the footnote apparatus: 'per L-NNN' lesson cross-references and the verbatim fetch-process narration ('via WebFetch returning N characters', 'after WebFetch returned HTTP 403') are internal nomenclature with no place in a published Bluebook footnote, distinct from the legitimate '(last visited <date>)' / 'URL verified live <date>' annotation the article-wide convention is meant to preserve. Routed to the next Cite tick (Cite owns Bluebook form end-to-end per L-015) for a footnote-form sweep of the whole footnote tail, not only Section 13's [^140]-[^146]: strip every 'per L-NNN' tag and the fetch-process narration, keeping the substantive descriptive parenthetical and the last-visited / verified-live anchor. P1-deferral active; logged without status reset. Candidate L-042 refinement (extend scope from body prose to footnotes) deferred because LESSONS is at the 50-entry cap and the pattern is captured operationally here.",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding, anchored on the newest instance (Section XIII [^140]) but article-wide in scope (footnotes across Sections I-X and XIII). Extends L-042 (Polish body-prose scan for internal task-tracking identifiers) from body prose to the footnote apparatus: 'per L-NNN' lesson cross-references and the verbatim fetch-process narration ('via WebFetch returning N characters', 'after WebFetch returned HTTP 403') are internal nomenclature with no place in a published Bluebook footnote, distinct from the legitimate '(last visited <date>)' / 'URL verified live <date>' annotation the article-wide convention is meant to preserve. Routed to the next Cite tick (Cite owns Bluebook form end-to-end per L-015) for a footnote-form sweep of the whole footnote tail, not only Section 13's [^140]-[^146]: strip every 'per L-NNN' tag and the fetch-process narration, keeping the substantive descriptive parenthetical and the last-visited / verified-live anchor. P1-deferral active; logged without status reset. Candidate L-042 refinement (extend scope from body prose to footnotes) deferred because LESSONS is at the 50-entry cap and the pattern is captured operationally here. Run-235 Cite swept Section 13's [^1] of L-NNN tags and WebFetch/WebSearch fetch-process narration while preserving the (last visited)/URL-verified-live Bluebook anchors per the run-151 Section XI pattern; PI-092 remains open for the remaining body-prose and footnote instances article-wide.",
       "opened_at": "2026-05-25T03:00:00Z",
       "phase": "verify",
       "section": "13",
@@ -1064,16 +1064,6 @@
       "type": "chatbot-architecture-engagement-gap"
     },
     {
-      "claim": "Section XIII.A states 'Harvard Library and the MIT Press publish H2O Open Casebooks'; footnote [^1] sources the H2O platform to the Harvard Law School Library Innovation Lab and, separately, the MIT Press/Harvard open casebook series (Apr. 26, 2022) as a series built on the H2O platform. The prose's joint-publisher framing of the MIT Press as a publisher of H2O itself exceeds what the footnote supports.",
-      "id": "PI-168",
-      "note": "Persona 4 (Provenance Auditor), Verify run 139. Section 13's one unsupported_claim, reason evidence-gap. External footnote [^1] re-verified live this run: eLangdell quote ('100% Free. Creative Commons licensed. Peer-reviewed.') and 30+ casebook count confirmed via WebFetch; opencasebook.org returned HTTP 403, liveness held via prior WebSearch per L-022. P1; routes Section 13 cite_status:needs_cite (already set). Suggested fix: in the next Cite tick, recast XIII.A to 'Harvard's Library Innovation Lab operates the H2O Open Casebooks platform, on which the MIT Press and Harvard launched an open casebook series', so the prose matches what [^1] supports.",
-      "opened_at": "2026-05-30T03:00:00Z",
-      "phase": "verify",
-      "section": "13",
-      "status": "open",
-      "type": "evidence-gap"
-    },
-    {
       "claim": "Section XIV.B (paragraph 2, final sentence) states 'The article earns a reader's trust precisely by bounding what it will and will not assert.' The sentence narrates the rhetorical effect of the preceding disclaimers instead of letting them do the work.",
       "id": "PI-169",
       "note": "Persona 1 (Skeptical JLE Editor), Verify run 140. P1; fresh Section 14 site of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161/165); distinct from PI-098 (replicability overclaim, same section). Routes Section 14 polish_status:needs_polish (already set). Suggested fix: in the next Polish tick, delete the sentence or recast it as a plain transition, so the disclaimers stand without the prose announcing their effect.",
@@ -1380,7 +1370,7 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 231. The defect compounds a publication-register slip (internal catalog identifiers in body prose, violating PROJECT_PRIMER's no-internal-cites-in-published-text rule) with the archival-status staleness the run-217 Section 09 provenance audit already captured in three `unsupported_claims` entries with reason 'evidence-gap'. The audit's evidence-gap framing names the archival staleness but not the register slip the JLE-editor altitude catches. Structurally parallel to the standing VII.D L-007 unsupported_claim entry (Persona 4 re-confirmed seventh consecutive at this run); both are internal-catalog-identifier labels in body prose at the same defect class, with PI-210 capturing the IX.E instance and L-007 the longer-running VII.D peer. Next Polish or Cite tick on Section 09 should rewrite IX.E paragraph 5 final sentence to drop the inline 'PI-049', 'PI-050', 'PI-051' catalog labels and instead state the three outstanding work items in the article's own voice with App. C pointers carrying the support; e.g., 'Three Section IX work items frame what is still outstanding: the master cost-and-labor table assembled per the workplan's retroactive backfill protocol, the external pricing lookups for Anthropic API pricing, Netlify free-tier and upgrade pricing, and any metered MCP service prices, and the person-hours backfill across the four labor categories with honest confidence ranges, the methodology in a footnote so a reader can replicate it against the same vault and git history.[^15]' Re-point footnotes [^15] and [^16] from `.article-state.json` to App. C (Cost Log) Methodology Note, and update the Section 09 frontmatter to clear the three unsupported_claims entries since the publication-register slip and the archival-status staleness are both resolved by the rewrite. Routes Section 09 polish_status: needs_polish (already set; no status delta)."
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -1401,7 +1391,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 234,
+  "run_count": 235,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1857,12 +1847,12 @@
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
       "cite_note": "Seven [CITE:] placeholders resolved to footnotes [^1]-[^7]. [^1] external OER sources (opencasebook.org via WebSearch after 403 per L-022; cali.org eLangdell via WebFetch; MIT News series via WebSearch); [^2]-[^7] sibling supra/infra cross-references. Dedicated evidence-13-* cards still owed under PI-091.",
-      "cite_status": "needs_cite",
-      "claims_mapped": 11,
+      "cite_status": "needs_polish",
+      "claims_mapped": 12,
       "claims_total": 12,
-      "current_words": 478,
+      "current_words": 500,
       "draft_at": "2026-05-24T19:00:00Z",
-      "draft_status": "needs_cite",
+      "draft_status": "needs_polish",
       "evidence_cards": 6,
       "evidence_populated_at": "2026-05-25T05:00:00Z",
       "evidence_status": "populated",
@@ -1871,20 +1861,17 @@
       "polish_at": "2026-05-24T23:00:00Z",
       "polish_note": "Polished from drafts/section-13. Split four over-length argumentative sentences in 13.A and 13.C (L-029 procedural-enumeration exemption does not reach this non-infrastructure argument section); converted the 13.B institutional-role list-after-colon into a parallel active-verb sentence with the library, instructional design, and IT each carrying its own verb (L-031 named-human-actor verbs); removed two self-flagging meta-rhetoric constructions per L-036/L-048 (\"naming that split is the institutional implication\" -> \"that split is the institutional implication\"; \"The article names that question without resolving it\" -> direct assertion). No em dashes or straight quotes in body or footnotes (L-023). Footnote URL-verification annotations preserved per the article-wide convention (cf. polished Section 10 [^12]). 478 words, within +-10% of the 500 target. polish_status none -> ready_for_stitch.",
       "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_score": 3.8,
       "target_words": 500,
       "title": "Institutional Implications",
-      "unsupported_claims": [
-        {
-          "claim_text": "Section XIII.A states 'Harvard Library and the MIT Press publish H2O Open Casebooks'; footnote [^1] sources the H2O platform to the Harvard Law School Library Innovation Lab and separately the MIT Press/Harvard open casebook series (Apr. 26, 2022) as a series built on the H2O platform, so the prose's joint-publisher framing of MIT Press as a publisher of H2O itself exceeds what the footnote supports.",
-          "paragraph": 1,
-          "reason": "evidence-gap"
-        }
-      ],
+      "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish."
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish.",
+      "cite_completed_at": "2026-05-29T11:00:00Z",
+      "last_cite_touch_run": 235,
+      "last_cite_touch_note": "Run-235 Cite: resolved PI-168 (XIII.A platform-vs-series joint-publisher overclaim) by rewriting the second sentence to distinguish H2O Open Casebooks (Harvard Law School Library Innovation Lab) from the separate MIT Press / Harvard Law School Library 2022 open casebook series built on the H2O platform, and from CALI's eLangdell Press. Swept Section 13's PI-092 footnote-leak instance from [^1]: dropped 'per L-022', the WebFetch/WebSearch fetch-mechanism narration, and the 'this run' tags while preserving the (last visited)/URL-verified-live anchors per the run-151 Section XI pattern. PI-092 remains open article-wide for other sections. URL liveness re-verified live this run: opencasebook.org via WebSearch (Library Innovation Lab description); news.mit.edu MIT-Press/Harvard 2022 series via WebFetch; cali.org eLangdell via WebFetch ('100% Free. Creative Commons licensed. Peer-reviewed.' tagline confirmed). Edits landed at three sites per L-035: polished, drafts, full-draft.md [^168]. provenance_audited reset to false because the prose and footnote materially changed."
     },
     "14": {
       "cite_completed_at": "2026-05-25T11:00:00Z",
@@ -1922,7 +1909,7 @@
     "last_run_at": "2026-05-29T03:00:00Z",
     "new_findings_count": 1,
     "p0_open": 0,
-    "p1_open": 118,
+    "p1_open": 117,
     "p2_open": 43,
     "personas_read": 4
   },

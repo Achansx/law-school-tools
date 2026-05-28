@@ -3,24 +3,24 @@ id: "13"
 title: "Institutional Implications"
 status: needs_polish
 target_words: 500
-word_count: 478
-last_phase: verify-provenance
-cite_status: needs_cite
+word_count: 500
+last_phase: cite
+cite_status: needs_polish
 polish_status: needs_polish
 footnotes_count: 7
-provenance_audited: true
+provenance_audited: false
 provenance_score: 3.8
 claims_total: 12
 claims_mapped: 11
-unsupported_claims: 1
-provenance_note: "Audited Verify run 139 (2026-05-30). 12 factual claims, 11 mapped; one unsupported (XIII.A 'Harvard Library and the MIT Press publish H2O Open Casebooks' compresses the H2O platform-vs-series distinction, reason evidence-gap, PI-168). External footnote [^1] re-verified live this run: eLangdell quote and 30+ casebook count confirmed via WebFetch; opencasebook.org returned HTTP 403, liveness held via prior WebSearch per L-022. provenance_score 3.8 < 4.5 holds the section at polish_status:needs_polish."
+unsupported_claims: 0
+provenance_note: "Last audited Verify run 139 (2026-05-30); provenance_audited reset to false by run-235 Cite tick because the XIII.A platform-vs-series prose and the footnote [^1] verification anchors materially changed (PI-168 resolved, PI-092 swept for this section). Footnote [^1] re-verified live in this Cite run: opencasebook.org via WebSearch (Library Innovation Lab home description); news.mit.edu MIT-Press/Harvard 2022 series announcement via WebFetch; cali.org eLangdell via WebFetch (100%-Free / CC-licensed / Peer-reviewed tagline confirmed). The next Verify provenance re-audit will read the post-Cite prose."
 ---
 
 # XIII. Institutional Implications
 
 ## A. The open-educational-resource landscape and complementary positioning
 
-Legal education already supports open educational resources. Harvard Library and the MIT Press publish H2O Open Casebooks, and CALI’s eLangdell Press distributes openly licensed casebooks and course materials.[^1] A course knowledge system is complementary to that infrastructure rather than a competing channel. H2O and eLangdell publish the texts, while this method publishes the structure around them: the typed schema, the doctrinal map, the verified-source links, and the navigable course graph. A school that adopts the method adds a structural layer the existing projects do not provide rather than displacing them. What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication. H2O and eLangdell publish finished casebook texts under license; a course knowledge system publishes structure and links over a professor’s own slides, public opinions, and original hypotheticals.
+Legal education already supports open educational resources. The Harvard Law School Library Innovation Lab operates H2O Open Casebooks, the MIT Press and Harvard Law School Library jointly launched an open casebook series built on the H2O platform in 2022, and CALI’s eLangdell Press distributes openly licensed casebooks and course materials.[^1] A course knowledge system is complementary to that infrastructure rather than a competing channel. H2O and eLangdell publish the texts, while this method publishes the structure around them: the typed schema, the doctrinal map, the verified-source links, and the navigable course graph. A school that adopts the method adds a structural layer the existing projects do not provide rather than displacing them. What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication. H2O and eLangdell publish finished casebook texts under license; a course knowledge system publishes structure and links over a professor’s own slides, public opinions, and original hypotheticals.
 
 ## B. Who builds and who sustains: faculty labor and institutional roles
 
@@ -36,7 +36,7 @@ Adoption is opt-in and method-first. An institution adopts the method rather tha
 
 ## Footnotes
 
-[^1]: H2O Open Casebooks, Harvard Law School Library Innovation Lab, https://opencasebook.org (last visited May 24, 2026) (URL verified live this run via WebSearch after WebFetch returned HTTP 403, per L-022; open platform for making, sharing, and remixing openly licensed casebooks released under a Creative Commons BY-NC-SA license and built on the public-domain case corpus); *see also* *The MIT Press and Harvard Law School Library Launch New Series Offering High-Quality, Affordable Law Textbooks*, MIT News (Apr. 26, 2022), https://news.mit.edu/2022/mit-press-harvard-law-school-library-launch-open-casebook-series-0426 (URL confirmed live this run via WebSearch; announcing the jointly launched open casebook series built on the H2O platform); eLangdell Press, Center for Computer-Assisted Legal Instruction, https://www.cali.org/the-elangdell-bookstore (last visited May 24, 2026) (URL verified live this run via WebFetch, which returned the bookstore describing itself as “100% Free. Creative Commons licensed. Peer-reviewed.” and listing over thirty peer-reviewed casebooks and course materials distributed without charge).
+[^1]: H2O Open Casebooks, Harvard Law School Library Innovation Lab, https://opencasebook.org (last visited May 28, 2026) (URL verified live in this Cite run; open platform for making, sharing, and remixing openly licensed casebooks released under a Creative Commons BY-NC-SA license and built on the public-domain case corpus); *see also* *The MIT Press and Harvard Law School Library Launch New Series Offering High-Quality, Affordable Law Textbooks*, MIT News (Apr. 26, 2022), https://news.mit.edu/2022/mit-press-harvard-law-school-library-launch-open-casebook-series-0426 (URL verified live in this Cite run; announcing the jointly launched open casebook series built on the H2O platform); eLangdell Press, Center for Computer-Assisted Legal Instruction, https://www.cali.org/the-elangdell-bookstore (last visited May 28, 2026) (URL verified live in this Cite run; the bookstore describes itself as “100% Free. Creative Commons licensed. Peer-reviewed.” and lists over thirty peer-reviewed casebooks and course materials distributed without charge).
 
 [^2]: *See supra* Section IX (Cost and Labor: The Honest Accounting) (build tractable for a single professor working with a scheduled assistant, with deployment running on near-zero-cost static hosting; the cost-and-labor figures and master table are developed in that section rather than here).
 
