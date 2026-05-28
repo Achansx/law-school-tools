@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-06-07T23:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-06-08T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -1032,18 +1032,6 @@
       "type": "methodology-rigor-gap"
     },
     {
-      "claim": "Section XI.C states that Bond's sixty-six-publication corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions', but that characterization of the corpus composition is attributed to the article's own L-024 transfer-of-inference clause in [^8]/[^147] rather than to any pin-cited finding in Bond et al. (2024); the empirical composition of the meta-review's corpus has no primary-source anchor a reader could check.",
-      "id": "PI-160",
-      "last_cite_resolution_at": "2026-06-07T19:00:00Z",
-      "last_cite_resolution_run": 221,
-      "note": "Verify run 137, Persona 4 (Provenance Auditor) P1 and Section 11's one unsupported_claim (reason requires-primary-source). The empirical composition of Bond's sixty-six-publication corpus is asserted in prose (XI.C) and in footnote [^8]/[^147] but traced only to the article's internal L-024 transfer-of-inference clause, not to any pin-cited Bond finding; a reader cannot check the 'predominantly chatbot-tutor and LMS' characterization against the source. Distinct from PI-103 (footnote-form-leak) and PI-104. Cite-owned; routes cite_status -> needs_cite (already set). Also flagged for Stitch: the Section 11 source footnote spells the Bond title 'Rigor' while the assembled draft's [^147]/[^162] were reconciled to British 'Rigour' at run 111, so a re-stitch must not regress the section-source spelling (P2, folds into the PI-110 final-stitch Bond reconciliation). Closes when the corpus-composition characterization gets a Bond pin cite or is hedged to what the source supports, confirmed by the next Verify pass. | UPDATE run-144 (Section 12 Cite tick, joint reconciliation with the now-resolved PI-164): WebSearch against the Springer record confirms the source does NOT support 'predominantly chatbot-tutor and learning-management-system interventions.' Bond reports adaptive systems and personalization as the predominant single application, with most reviews (47%) addressing AI applications generally and profiling/prediction, assessment/evaluation, and intelligent tutoring systems among the categories; chatbots are one application among several and LMS is not a Bond category. Section 12 was corrected to 'adaptive and interactive interventions, chiefly adaptive systems and personalization, but also intelligent tutoring systems and chatbots.' Section 11's own next Cite tick should apply the IDENTICAL correction to XI.C prose and footnote [^8]/[^147] (replace 'built predominantly on chatbot-tutor and learning-management-system interventions' with the same adaptive-and-interactive-interventions language), without importing the 47% figure per L-027; this PI then closes on the next Verify pass. Do not regress the Rigor/Rigour spelling reconciliation noted above. | STITCH run-146: interim stitch landed the run-143/144/145 Section 12 re-draft into the assembled full-draft.md, replacing the run-103 888-word XII block with the current 1359-word polished version (footnote-count-neutral, local [^1]-[^10] -> global [^153]-[^162], so [^163]-[^177] did not shift). This carries the run-144 corrected Bond corpus-composition into XII/[^162] while XI.C/[^147] still read the unsupported 'predominantly chatbot-tutor and learning-management-system', so the XI/XII Bond mismatch is now LIVE in the assembled draft and Verify will read contradictory descriptions of the same source until Section 11's next Cite tick applies the identical correction. Per L-035 Stitch did not re-characterize XI's source citation. Rigour spelling preserved at [^147]/[^162] per the re-stitch instruction above; the Section 12 source file's Rigor spelling remains for its next Cite/Polish tick. | UPDATE run-151 (Section 11 Cite tick): applied the IDENTICAL correction Section 12 landed at run 144 to XI.C prose and footnote [^8], replacing 'built predominantly on chatbot-tutor and learning-management-system interventions' with 'built predominantly on adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots,' without importing the 47% figure (L-027). Bond URL re-verified live this run (Springer auth-gate redirected WebFetch; WebSearch confirmed the verbatim URL, verbatim title, and the seven-database sixty-six-publication corpus). The XI/XII Bond mismatch that has been live in the assembled draft since run 146 is now reconciled at the section-source level. Section-source 'Rigor' spelling left intact for Stitch to reconcile to 'Rigour' in the assembled draft. PI-160 stays OPEN; closes on the next Verify pass that re-audits Section XI and confirms the corpus-composition claim maps to footnote [^8]. | STITCH run-153: interim stitch landed the run-150/151/152 Section 11 re-draft/cite/polish into the assembled full-draft.md (local [^1]-[^14] -> global [^140]-[^153], shifting old [^153]-[^177] to [^154]-[^178]; no cross-reference pointed into the shifted range). This carries the run-151 Bond corpus-composition correction into XI.C/[^147] (adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots), so the XI/XII Bond mismatch live in the assembled draft since run 146 is now RESOLVED: [^147] and [^163] (was [^162]) agree. Per L-035 the verified-correct British 'Rigour' is preserved at [^147] in the assembled draft; the polished source's American 'Rigor' stays for Section 11's next Cite/Polish. Also fixed the [^163] internal cross-reference leak 'Section XI note 8' -> 'note 147'. PI-160 stays OPEN; closes on the next Verify re-audit of Section XI confirming the corpus-composition claim maps to footnote [^147]. || Run-221 Cite tick RESOLVED at the primary-source level by adding a Zawacki-Richter typology pin cite to footnote [^8] (and propagating to drafts/section-11 [^8] and full-draft.md [^150]): the new sentence anchors the corpus-composition characterization to Bond's own coding framework, which Bond applies to the sixty-six-publication corpus with Adaptive Systems and Personalisation as the predominant single application area. The four typology category labels (Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, Intelligent Tutoring Systems) and the predominance finding were independently confirmed via WebSearch with allowed_domains scoped to link.springer.com per L-022. No new numeric anchor imported per L-027 (Bond's 47%/n=31 and the n=45/46/26 role counts deliberately omitted). PI-160 stays OPEN pending the next Verify provenance re-audit to confirm the unsupported_claim now maps and to re-score Section 11; Cite does not unilaterally remove provenance-audit entries per the run-152 Polish-note discipline. Section 12 [^10] is the symmetric joint-reach leg; it already carries the application-area listing from the run-144 Cite tick but lacks the same Zawacki-Richter typology anchor, so a subsequent Section 12 Cite tick should propagate the matching pin cite.",
-      "opened_at": "2026-05-29T23:00:00Z",
-      "phase": "verify",
-      "section": "11",
-      "status": "open",
-      "type": "unsupported-characterization"
-    },
-    {
       "claim": "Section XIII.A surfaces the article's own transfer-of-inference analytic move to the reader in prose -- 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' -- narrating the reasoning architecture rather than making the positioning claim directly. Fresh-site recurrence of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161). Distinct from PI-094 (recognition overclaim) and PI-092 (footnote internal-artifact leak).",
       "id": "PI-165",
       "note": "Persona 1 (Skeptical JLE Editor), Verify run 139. P1; deferral lifted so routes Section 13 polish_status:needs_polish (already set). Suggested fix: recast as a direct claim -- the open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not -- dropping the 'What carries across / What does not carry across' scaffolding.",
@@ -1366,9 +1354,31 @@
       "route": "none",
       "status": "open",
       "type": "push-race-conflict"
+    },
+    {
+      "claim": "Section VII.C paragraph 2 final sentence (the run-222 Polish addition closing PI-207's polished leg): 'The forced-finding architecture instantiates the AI-in-higher-education field's call for increased ethics, collaboration, and rigour; the meta-review naming that call surveys chatbot-tutor and adaptive-system interventions rather than reviewed static publications, but the field-level evidentiary standard it sets applies here too.' [^11] / global [^93]. The sentence is 41 tokens, a semicolon-spliced run-on past the Polish rubric's 35-word tightness band; the verb 'instantiates' claims the forced-finding architecture LITERALLY meets a meta-review's field-level call rather than addressing or responding to it, the kind of one-sentence over-claim a JLE editor reads as Silicon Valley product-announcement register rather than scholarly engagement.",
+      "id": "PI-208",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 224. The run-222 Polish narrative explicitly noted the sentence is 'one long sentence with a semicolon splice connecting two related clauses; 41 tokens by my count (39 body tokens + the implicit footnote marker)' and treated the length as deliberate two-clause semicolon use, but the polish rubric's tightness criterion 'tighten any sentence over 35 words unless deliberate' has not been independently scrutinized against the over-claim risk; the deliberateness defense is the same defense the load-bearing verb 'instantiates' would need to survive, and the two compound. Next Polish tick on Section 07 should split at the semicolon and weaken 'instantiates' to a more scholarly register matching the surrounding paragraph; e.g., 'The forced-finding architecture responds to the AI-in-higher-education field's call for greater ethics, collaboration, and rigour. The meta-review naming that call surveys chatbot-tutor and adaptive-system interventions rather than reviewed static publications, but the field-level evidentiary standard applies here too.' The substitution preserves the cross-section reach to Section XI's evaluation framing and keeps the corpus-composition distinction visible without claiming the architecture LITERALLY satisfies the field's call. Routes Section 07 polish_status: needs_polish (already set; no status delta). The fix is independent of and compatible with the standing VII.D L-007 inline-label rewrite the same Polish tick should pick up (Persona 4 finding); closing both together at one Polish tick is the path to provenance_score 5.0 across all five criteria and to clearing the rubric exit condition outright.",
+      "opened_at": "2026-06-08T13:00:00Z",
+      "phase": "verify",
+      "route": "polish",
+      "section": "07",
+      "status": "open",
+      "type": "voice-and-tightness-slip"
+    },
+    {
+      "claim": "Section XI.B's four-instrument light-data plan (Qualtrics/Google-Forms survey, PostHog page-view analytics, three-to-five think-aloud sessions, disciplinary commitment to use-pattern rather than learning-outcomes vocabulary) is named in detail with anonymization and Do-Not-Track configurations called out, but the plan-as-design-intent does not name how IRB approval, informed consent, or institutional research-ethics review will be obtained before the instruments run; the closing sentence 'their validity, sampling frame, and analysis plan are owed before they run, and the section claims alignment with the field's call for rigor as an aim, not as completed work' gestures at the methodological owings without naming the ethics-and-IRB owing the same plan's instruments concretely require. The think-aloud sessions in particular involve human-subjects research that any U.S. law-school IRB would require to clear before recordings or click-sequence captures are made.",
+      "id": "PI-209",
+      "note": "Persona 3 (AI-in-Education Researcher) P1 finding, Verify run 224. Bond's three-part call at Section XI.C / XII.E names ethics first ('greater ethics, collaboration, and rigour'); a learning-sciences reviewer reading XI.B and XII.E will see the methodological-rigor anticipation but not the corresponding ethics-anticipation. Structurally parallel to PI-160's pattern but at a fresh site: the article closed PI-160 at the Bond-corpus-composition level (run-221 Cite Zawacki-Richter pin cite confirmed at the run-224 Verify pass) and a new field-level rigor gap surfaces immediately adjacent. Next Polish or Cite tick on Section 11 should add one sentence to XI.B's closing paragraph naming the institutional-review-board / informed-consent / research-ethics owing as a precondition to the instruments running; e.g., 'Institutional-review-board review, informed consent for the think-aloud sessions, and the privacy and confidentiality posture for the survey responses are owings the plan acknowledges; the article does not present results from instruments that have not cleared that review.' The addition need not commit to a specific IRB pathway but must name the owing on the ethics axis the way the current closing sentence names it on the validity-and-sampling-frame axis. Optionally pair with a footnote pointer to Section XII's privacy treatment at XII.D for the cross-reference. Routes Section 11 polish_status: needs_polish (already set after the run-215 PI-205 polish_status preservation and the run-221 Cite PI-160 closure not yet propagated to polish_status).",
+      "opened_at": "2026-06-08T13:00:00Z",
+      "phase": "verify",
+      "route": "polish",
+      "section": "11",
+      "status": "open",
+      "type": "ethics-and-irb-silence"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -1379,17 +1389,17 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 16,
-    "last_audit_at": "2026-06-07T11:00:00Z",
+    "global_unsupported_open": 15,
+    "last_audit_at": "2026-06-08T13:00:00Z",
     "last_audit_section": "07",
-    "last_reaudit_at": "2026-06-07T11:00:00Z",
+    "last_reaudit_at": "2026-06-08T13:00:00Z",
     "last_reaudit_section": "07",
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "reaudit_count": 5,
+    "reaudit_count": 6,
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 223,
+  "run_count": 224,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1622,8 +1632,8 @@
       "cite_note_run200": "Run-200 Cite on Section 07 closed the two Cite-routed P1s from run 137. PI-044 (VII.A unanchored 'roughly six-hundred-thirty-line Python script' line count) resolved via the routing note's option (b): the qualifier was dropped from body prose, leaving the four-design-choice enumeration in footnote [^1] to carry the structural-insight claim alone, consistent with L-001's house-lessons restriction and the article's practitioner-scholarly voice. PI-048 (Section VII single-citation-anchor on Karpathy+internal vault references, the multi-section pattern recurring from PI-025/032/040) resolved by adding new footnote [^11] for Bond et al. 2024 (the AIHE meta-review, the only survey-level citation in the workplan-bibliography per L-053; Kuhail and Du et al. multiagent-debate are not in the workplan and were deliberately not added) at the end of VII.C, with an L-024 transfer clause naming what generalizes (the field-level evidentiary standard) and what does not (the chatbot-tutor and adaptive-system intervention setting Bond surveys, versus this article's reviewed-static-publication setting). Bond URL re-verified live this run via WebSearch per L-022 (verbatim title-and-URL match at link.springer.com); under L-034 cross-section verification-reuse the same Bond URL was previously verified live in run 102 (Section 02 [^9]), run 109 (Section 03 [^18]), run 144 (Section 12 [^3]), and run 165 (Section 12 [^3] re-verify). The Bluebook 21st journal-article-number form follows L-054's lowercase 'art.' with no preceding comma. Body grew 1370 -> 1452 (+5.9%, well within the +15% Cite/Draft band even after the line-count qualifier drop); PI-190's +24.5% Stitch-trim flag stands. footnotes_count 10 -> 11; claims_mapped 21 -> 22 (the new Bond engagement sentence carries its own footnote); claims_total 22 -> 23. cite_status needs_cite -> needs_polish; draft_status needs_cite -> needs_polish (Cite output is structurally complete). Three Polish-routed P1s (PI-045 lessons-file improvement claim, PI-046 page-feedback-intake actor-erasure, PI-047 non-measurable pedagogical objective undefined) and PI-044's now-archived Cite analogue remain Polish-owned for the next Polish tick on Section 07; PI-048 remains partially open on Du et al. / Kuhail / mixed-initiative-survey because those citations are not in the workplan.",
       "cite_redone_at": "2026-06-05T02:30:00Z",
       "cite_status": "needs_polish",
-      "claims_mapped": 20,
-      "claims_total": 21,
+      "claims_mapped": 22,
+      "claims_total": 23,
       "current_words": 1452,
       "draft_completed_at": "2026-06-02T23:00:00Z",
       "draft_status": "needs_polish",
@@ -1642,11 +1652,10 @@
       "polish_last_run": 208,
       "polish_routing_reason": "Run-208 Polish closed PI-206 (resolution-propagation gap): the run-200 Cite tick recorded PI-044 closed after dropping the VII.A 'roughly six-hundred-thirty-line' Karpathy autoresearch qualifier, but the edit had only landed in drafts/section-07-iterative-improvement.md; the polished source-of-truth and the assembled manuscript/full-draft.md both still carried the unanchored line-count phrase, violating L-001 (Karpathy figures: only the verified 50 experiments overnight; no unanchored numerical claims) at the canonical authority for the article. This tick propagated the four-word drop ('roughly six-hundred-thirty-line ') into manuscript/polished/section-07-iterative-improvement.md VII.A first sentence AND manuscript/full-draft.md line 207 in the same Polish run per the PI-206 routing note. Polished word_count 1193 -> 1191 (-2 by whitespace tokenization, hyphenated compound counted as one token; +8.3% over the 1100 target, well within the +/-10% Polish band). Full-draft total_words 13352 -> 13350 (within the 10,000-14,000 policy window). Mechanical re-verified at the edit point: zero em dashes, zero straight quotes (curly throughout). provenance_audited reset to false because VII.A's first sentence materially changed; the run-203 4.0 score's numerical_precision -1 deduction was driven by exactly this defect, so the next Verify provenance re-audit should clear that drag (remaining unsupported_claim on VII.D 'L-007' inline-identifier is unchanged). polish_status holds at needs_polish per PI-206's routing note ('already needs_polish; no status delta from this PI'); three Polish-routed open P1s on Section 07 remain \u2014 PI-045 (VII.D lessons-file improvement claim), PI-046 (VII.E page-feedback-intake actor-erasure), PI-047 (VII.A non-measurable pedagogical objective undefined). PI-190 (+24.5% word-budget overage) keeps its route:stitch flag. The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 Cite resolutions touching body prose must propagate to polished AND full-draft, not just drafts \u2014 is now demonstrated by this tick's surgical execution.",
       "polish_status": "needs_polish",
-      "provenance_audit_run": 217,
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-06-07T11:00:00Z",
-      "provenance_score": 4.4,
-      "provenance_stale_reason": "Run-222 Polish landed PI-207's polished leg: added the Bond [^11] engagement sentence at the end of VII.C in polished/section-07-iterative-improvement.md (the second leg of the run-200 Cite resolution, after the run-208 PI-206 line-count leg), plus the [^11] cross-section-reuse footnote def pointing at Section XI note 8 for URL liveness. provenance_audited reset to false so the next Verify provenance re-audit reads the post-Polish prose; the run-217 4.4 audit's primary_source_ratio -1 deduction was driven primarily by the absent Bond engagement-leg in the audited polished source, so that deduction should at least partially clear (the standing VII.D L-007 inline-label deduction remains).",
+      "provenance_audit_run": 224,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-06-08T13:00:00Z",
+      "provenance_score": 4.6,
       "stitched_at": "2026-05-19T11:00:00Z",
       "target_words": 1100,
       "title": "Iterative Improvement Under Professorial Control",
@@ -1659,7 +1668,7 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-19T13:00:00Z",
-      "verify_routing_reason": "Run-217 Verify: Section 07 re-audit after run-208 Polish reset (closed PI-206 line-count leg). provenance_score 4.0 -> 4.4 (5/4/4/5/4); numerical_precision lifted to 5 (line-count qualifier gone), the four other criteria reproduce the run-203 audit. 4.4 < 4.5 holds polish_status at needs_polish. Persona 1 (JLE Editor) opened NEW PI-207 (resolution-propagation gap, Bond [^11] / VII.C engagement-sentence leg of the run-200 Cite resolution never propagated to polished or full-draft); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta)."
+      "verify_routing_reason": "Run-224 Verify: Section 07 re-audit after run-222 Polish reset (closed PI-207's Bond [^11] engagement-sentence leg at the polished source-of-truth and the run-223 Stitch consumed the placeholder into the assembly's global [^93]). provenance_score 4.4 -> 4.6 (5/4/4/5/5); gap_honesty lifted to 5 (PI-207 deduction cleared by the Bond engagement sentence now present in polished prose AND assembly; standing L-007 entry candidly named in body prose and listed in unsupported_claims with reason: requires-primary-source, so the prose reads as if the audit happened, which it did); primary_source_ratio holds at 4 (PI-207's drag is cleared; the standing VII.D L-007 inline-label is the sole remaining deduction); attribution_discipline holds at 4 (the standing L-007 entry); claim_coverage holds at 5 (22/23 = 95.7% mapped); numerical_precision holds at 5. 4.6 clears the 4.5 score gate for the first time across six consecutive audits at runs 129/147/167/189/203/217. However, the L-007 unsupported_claim with reason `requires-primary-source` (not `intentional-conjecture`) prevents the section from passing the rubric's full exit condition, so polish_status stays needs_polish on the L-007 axis alone — one Polish edit away from a full 5.0 across all five criteria and from clearing the exit condition outright. Persona 1 (JLE Editor) opened NEW PI-208 (VII.C voice-and-tightness slip on the run-222 Polish addition: 41-token semicolon-spliced run-on past the 35-word Polish band, plus 'instantiates' over-claim register on the load-bearing verb the run-222 narrative defended as 'deliberate' without independent scrutiny against the over-claim risk); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta)."
     },
     "08": {
       "cite_completed_at": "2026-06-04T07:00:00Z",
@@ -1902,11 +1911,11 @@
     "last_audit_section": "07",
     "last_polish_resolution_run": 145,
     "last_reaudit_section": "07",
-    "last_run": 217,
-    "last_run_at": "2026-06-07T11:00:00Z",
-    "new_findings_count": 1,
+    "last_run": 224,
+    "last_run_at": "2026-06-08T13:00:00Z",
+    "new_findings_count": 2,
     "p0_open": 0,
-    "p1_open": 116,
+    "p1_open": 117,
     "p2_open": 43,
     "personas_read": 4
   },

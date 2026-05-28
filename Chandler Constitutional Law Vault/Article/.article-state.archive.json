@@ -1111,6 +1111,26 @@
       "type": "resolution-propagation-gap",
       "verify_persona": "Persona 1 (Skeptical JLE Editor)",
       "verify_run": 217
+    },
+    {
+      "id": "PI-160",
+      "last_updated_at": "2026-06-08T13:00:00Z",
+      "last_updated_in_run": 224,
+      "note": "Verify run 137, Persona 4 (Provenance Auditor) P1 and Section 11's one unsupported_claim (reason requires-primary-source). The empirical composition of Bond's sixty-six-publication corpus is asserted in prose (XI.C) and in footnote [^8]/[^147] but traced only to the article's internal L-024 transfer-of-inference clause, not to any pin-cited Bond finding; a reader cannot check the 'predominantly chatbot-tutor and LMS' characterization against the source. Distinct from PI-103 (footnote-form-leak) and PI-104. | Run-144 Cite tick correction (Section 12): WebSearch against the Springer record confirmed source does NOT support 'predominantly chatbot-tutor and learning-management-system interventions'; Section 12 corrected. | Run-151 Cite tick correction (Section 11): IDENTICAL correction applied to XI.C and [^8]. | Run-153 Stitch: assembled draft reconciled at [^147]; XI/XII Bond mismatch live since run 146 resolved. | Run-221 Cite tick: PRIMARY-SOURCE RESOLUTION via Zawacki-Richter typology pin cite at [^8]/[^150]; PI-160 closes on next Verify re-audit. | Run-224 Verify: closure confirmed and archived (see resolution_note).",
+      "opened_at": "2026-05-29T23:00:00Z",
+      "opened_in_run": 137,
+      "phase": "verify",
+      "resolution_note": "Run-224 Verify (Persona 3 + Persona 4 cross-check) confirmed the run-221 Cite resolution at the primary-source level: the Zawacki-Richter typology pin cite landed at Section 11 [^8] / full-draft [^151] now anchors the corpus-composition characterization ('built predominantly on adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots') to Bond's own coding framework. The run-223 Stitch carried the anchor into the assembly's renumbered [^151] body marker in XI.C and corrected [^167]'s 'see supra Section XI note 8' cross-reference to 'see supra Section XI note 151'; the four typology category labels (Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, Intelligent Tutoring Systems) and the Adaptive-Systems-and-Personalisation predominance finding are present in [^151] body and inherited by [^167] via the cross-section-reuse convention. The corpus-composition characterization now maps to a primary-source-anchored Bond finding a reader can check via the open-access HTML at link.springer.com (URL re-verified live at run 221 per L-022). PI-160 closes after 87 runs open across runs 137-224. Section 11 frontmatter still carries the corpus-composition entry in its unsupported_claims list pending the next Section 11 Cite/Polish tick to clear the frontmatter entry; the live pending_issues PI is closed and archived here per the dispatcher-protocol resolution discipline. Section 12 [^167]'s symmetric joint-reach leg already carries the application-area listing from the run-144 Cite tick and inherits the Zawacki-Richter typology via the cross-section-reuse pointer; a follow-on Section 12 Cite tick may optionally add a parallel direct Zawacki-Richter pin cite at [^10] for symmetry, but the cross-section-reuse pointer is sufficient under the article's citation convention.",
+      "resolution_run": 224,
+      "resolved_at": "2026-06-08T13:00:00Z",
+      "route": "verify",
+      "section": "11",
+      "severity": "P1",
+      "status": "resolved",
+      "title": "Section XI.C Bond corpus-composition characterization without primary-source pin cite",
+      "type": "unsupported-characterization",
+      "verify_persona": "Provenance Auditor",
+      "verify_run": 137
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
