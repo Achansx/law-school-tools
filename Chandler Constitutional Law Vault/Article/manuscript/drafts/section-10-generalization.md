@@ -6,10 +6,11 @@ target_words: 900
 word_count: 882
 last_phase: cite
 draft_status: needs_polish
-cite_status: needs_polish
+cite_status: needs_cite
 footnotes_count: 14
-cite_completed_at: 2026-05-24T07:00:00Z
-polish_status: none
+cite_completed_at: 2026-06-06T17:00:00Z
+polish_status: needs_polish
+cite_note_run_214: "PI-181 footnote leg closed by aligning [^1] from 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to mirror the canonical I.B phrasing. cite_status remains needs_cite under PI-155/PI-156. polish_status reconciled from stale 'none' to the state file's 'needs_polish'."
 ---
 
 # X. Generalization Beyond Constitutional Law
@@ -36,7 +37,7 @@ The strongest test of a method is whether a second person can run it, and this a
 
 ## Footnotes
 
-[^1]: *See supra* Section I (Introduction: The Hidden Archive of the Law Professor) (stating the article's thesis as a method claim: that generative AI working on structured source materials, Obsidian-style markdown notes, retrieval from verified legal sources, and iterative expert review can convert a professor's dispersed course archive into a navigable course knowledge system, with the constitutional-law case study as the demonstration and the method as the transferable contribution).
+[^1]: *See supra* Section I (Introduction: The Hidden Archive of the Law Professor) (stating the article's thesis as a method claim: that generative AI working on structured source materials, Obsidian-style markdown notes, build-time linking to verified legal sources, and iterative expert review can convert a professor's dispersed course archive into a navigable course knowledge system, with the constitutional-law case study as the demonstration and the method as the transferable contribution).
 
 [^2]: *See supra* Section IV (The Input Corpus) (bounding the case study to a single course, Constitutional Law I (Spring 2026) taught by Professor Chandler, and to the structural constitution rather than the full year of constitutional law).
 

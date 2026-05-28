@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-06-06T15:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-06-06T17:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -1208,7 +1208,7 @@
     {
       "claim": "The thesis phrase describing how the system connects to verified legal sources is inconsistent across the assembled draft: Section I.B (run-159 Polish, PI-117) reads 'build-time linking to verified legal sources', while the Abstract, Section XIV.A (Conclusion), and footnote [^127] still read 'retrieval from verified legal sources'.",
       "id": "PI-181",
-      "note": "Surfaced by the run-160 Stitch terminology-consistency check when the refreshed Section I landed. The run-159 Polish changed I.B per PI-117 (so an AI-in-education reader is not primed to read the system as runtime RAG) but did not propagate the change to the Abstract (Outline-abstract sub-task owned), Section XIV.A, or [^127] (XIV Polish/Cite owned). Routed downstream, not fixed in Stitch: the next Outline-abstract pass should align the Abstract and the next Section XIV Polish/Cite should align XIV.A and [^127] to a single agreed phrase. No fabrication; the underlying mechanism (Obsidian build-time wikilink resolution to indexed opinions, not runtime retrieval) is unchanged. This widens the abstract-vs-I.B scope of the lost run-160's planned-but-unlanded PI-181 (per PI-182) to include the XIV and [^127] occurrences. Run-170 Outline-abstract pass RESOLVED the Abstract leg: changed 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to match Section I.B and remove the runtime-RAG implication; PI-181 stays OPEN for the Section XIV Polish/Cite legs (XIV.A and footnote [^127] still read 'retrieval from verified legal sources').",
+      "note": "Surfaced by the run-160 Stitch terminology-consistency check when the refreshed Section I landed. The run-159 Polish changed I.B per PI-117 (so an AI-in-education reader is not primed to read the system as runtime RAG) but did not propagate the change to the Abstract (Outline-abstract sub-task owned), Section XIV.A, or [^127] (XIV Polish/Cite owned). Routed downstream, not fixed in Stitch: the next Outline-abstract pass should align the Abstract and the next Section XIV Polish/Cite should align XIV.A and [^127] to a single agreed phrase. No fabrication; the underlying mechanism (Obsidian build-time wikilink resolution to indexed opinions, not runtime retrieval) is unchanged. This widens the abstract-vs-I.B scope of the lost run-160's planned-but-unlanded PI-181 (per PI-182) to include the XIV and [^127] occurrences. Run-170 Outline-abstract pass RESOLVED the Abstract leg: changed 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to match Section I.B and remove the runtime-RAG implication; PI-181 stays OPEN for the Section XIV Polish/Cite legs (XIV.A and footnote [^127] still read 'retrieval from verified legal sources'). Run-214 Cite tick RESOLVED the footnote leg: aligned Section 10 footnote [^1] (assembled-draft global [^129]) from 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to mirror the canonical I.B phrasing the run-159 Polish landed (PI-117) and the run-170 Outline-abstract pass propagated to the Abstract; edit landed byte-aligned in drafts/section-10 line 39, polished/section-10 line 48, and full-draft.md line 650. PI-181 stays OPEN for the XIV.A body-prose leg only (Polish-owned).",
       "opened_at": "2026-06-01T11:00:00Z",
       "phase": "stitch",
       "section": "abstract/01/14",
@@ -1373,7 +1373,7 @@
       "type": "fact-consistency-drift"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -1394,7 +1394,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 213,
+  "run_count": 214,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1740,7 +1740,7 @@
       "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file."
     },
     "10": {
-      "cite_completed_at": "2026-05-24T07:00:00Z",
+      "cite_completed_at": "2026-06-06T17:00:00Z",
       "cite_status": "needs_cite",
       "claims_mapped": 17,
       "claims_total": 18,
@@ -1763,7 +1763,9 @@
       "title": "Generalization Beyond Constitutional Law",
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T21:00:00Z",
-      "verify_routing_reason": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those."
+      "verify_routing_reason": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
+      "last_cite_touch_run": 214,
+      "last_cite_touch_note": "PI-181 footnote leg closed; cite_status stays needs_cite under open PI-155/PI-156"
     },
     "11": {
       "cite_completed_at": "2026-05-31T15:00:00Z",

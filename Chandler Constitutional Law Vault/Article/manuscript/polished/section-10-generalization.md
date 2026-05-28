@@ -4,11 +4,12 @@ title: "Generalization Beyond Constitutional Law"
 status: needs_polish
 target_words: 900
 word_count: 908
-last_phase: verify-provenance
+last_phase: cite
 draft_status: needs_polish
 cite_status: needs_cite
 polish_status: needs_polish
 footnotes_count: 14
+cite_note: "Run-214 Cite surgical fix: PI-181 footnote leg closed by aligning Section 10 footnote [^1] (assembled-draft global [^129]) from 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to mirror the canonical Section I.B phrasing the run-159 Polish landed (PI-117) and the run-170 Outline-abstract pass propagated to the Abstract. The cross-reference summary footnote [^1] paraphrases Section I's thesis and must restate the canonical phrasing rather than the older runtime-RAG-priming wording per L-035 (Stitch updates cross-section directional particles and resolves cross-section note references to canonical form when the source section moves). Edit landed in three byte-aligned places to avoid the PI-206 propagation pattern: drafts/section-10-generalization.md line 39, polished/section-10-generalization.md line 48, and full-draft.md line 650 [^129]. PI-181 stays OPEN for the XIV.A body-prose leg only (line 380 'retrieval from verified legal sources' inside the XIV.A method-recap sentence), which is Polish-owned not Cite per L-035 body-prose convention; the next Section 14 Polish tick should land it. Section 10 cite_status stays needs_cite because PI-155 (chatbot-tutor / intelligent-tutoring-system literature anchor at X.C) and PI-156 (external case-brief-form primary source for X.B) remain open; the run-136 verify_routing_reason still binds the section's Cite status."
 provenance_audited: true
 provenance_audited_at: 2026-05-29T21:00:00Z
 provenance_score: 3.8
@@ -45,7 +46,7 @@ The strongest test of a method is whether a second person can run it, and this a
 
 ## Footnotes
 
-[^1]: *See supra* Section I (Introduction: The Hidden Archive of the Law Professor) (stating the article’s thesis as a method claim: that generative AI working on structured source materials, Obsidian-style markdown notes, retrieval from verified legal sources, and iterative expert review can convert a professor’s dispersed course archive into a navigable course knowledge system, with the constitutional-law case study as the demonstration and the method as the transferable contribution).
+[^1]: *See supra* Section I (Introduction: The Hidden Archive of the Law Professor) (stating the article’s thesis as a method claim: that generative AI working on structured source materials, Obsidian-style markdown notes, build-time linking to verified legal sources, and iterative expert review can convert a professor’s dispersed course archive into a navigable course knowledge system, with the constitutional-law case study as the demonstration and the method as the transferable contribution).
 
 [^2]: *See supra* Section IV (The Input Corpus) (bounding the case study to a single course, Constitutional Law I (Spring 2026) taught by Professor Chandler, and to the structural constitution rather than the full year of constitutional law).
 
