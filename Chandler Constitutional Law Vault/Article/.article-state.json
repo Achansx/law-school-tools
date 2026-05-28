@@ -85,31 +85,32 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-05-28T20:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-05-28T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
-    "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
+    "confirmed_stitched_changed_at": "2026-05-28T21:00:00Z",
     "confirmed_stitched_count": 0,
     "full_draft_exists": true,
-    "last_polish_propagation_at": "2026-05-29T13:00:00Z",
-    "last_polish_propagation_note": "Run-236 Polish landed six Section XIII PI fixes and propagated to manuscript/full-draft.md per L-035: PI-093 (XIII.C runtime-auditability overclaim narrowed to traceable-to-named-pre-publication-reviewer; global [^173] description tail updated), PI-094 (XIII.C scholarly-output assertion recast as 'counts as scholarship is itself contested'), PI-095 (XIII.D capacity-gap clause added with new global [^175] supra Section XII), PI-165 (XIII.A meta-rhetoric recast as direct semicolon-joined claim), PI-166 (XIII.B artifact-building-vs-classroom-teaching sentence added), PI-167 (XIII.A architectural-alternative sentence with new global [^169] supra Section XII). Two new internal supra footnotes (no new external sources; allowed for Polish per L-024/L-035). Global renumber: old [^169]-[^173] -> [^170]-[^174] (+1); old [^174]-[^182] -> [^176]-[^184] (+2). Net footnote count 182 -> 184 contiguous defs [^1]-[^184], all body refs resolving, zero duplicates, zero orphans (regex-verified). Section 13 current_words 500 -> 549; total_words 13412 -> 13461; 539 words of ceiling headroom inside the 10,000-14,000 policy window.",
-    "last_polish_propagation_run": 236,
-    "last_stitched_at": "2026-05-29T15:00:00Z",
+    "last_polish_propagation_at": "2026-05-28T21:00:00Z",
+    "last_polish_propagation_note": "Run-244 Stitch propagated the run-243 Polish Section 03 three-PI burst (PI-029 false III.C/Section IV cross-reference; PI-123 III.D 'proof' overclaim plus 'free-form exam noise' contrast; PI-124 III.B Commerce Clause synthesis actor-erasure) into manuscript/full-draft.md (lines 87/93/99) and manuscript/drafts/section-03-case-study.md (lines 23/29/35) per L-035 three-site discipline, after run-243's Polish narrative landed the edits on polished but did not report propagation. No footnote additions or renumber this tick. Section 03 word_count 1281 -> 1283; total_words 13461 -> 13463, 537 words of ceiling headroom inside the 10,000-14,000 policy window. Three sentences in Section III now read: III.B 'The Commerce Clause Topic page renders Professor Chandler's synthesis of the doctrine, recorded through the reviewed pipeline Section V documents, as a single page (Figure 3.3).'; III.C 'The page makes the lecture layer, one of the four course-issued artifact families Section IV.A inventories, into a navigable destination alongside the Topic and Case pages.'; III.D 'The hypotheticals are scoped to the doctrine the page is about, and the three-bucket form is the surface-level illustration of the prompting design Section VI describes.'",
+    "last_polish_propagation_run": 244,
+    "last_stitched_at": "2026-05-28T21:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13461,
-    "stitch_run": 237,
+    "total_words": 13463,
+    "stitch_run": 244,
     "stitch_note_run230": "Run-230 Stitch (interim per RUNBOOK adaptive mode; 0 of 14 polish_status ready_for_stitch or stitched). Pass-through verify-and-reconcile tick: run-228 Cite Section 12 [^167] typology pin cite (line 727) and run-229 Polish Section 07 VII.C two-sentence rewrite carrying global [^93] (line 223) both already in the assembly. Footnote integrity 182 contiguous [^1]-[^182] (zero gap/dup/orphan, all body refs resolve to a def). Recurring sentence exactly three canonical placements (I.B line 41, VII/VIII seam line 235, XIV.C line 389). Bond title 'Rigour' consistent at lines 411/579/695/727 plus 'rigour' lowercase at line 223 matching British source spelling. Terminology umbrella 'course knowledge system' unchanged (14 occurrences); 'AI tutor' only in Dong et al. comparison context (line 165 and [^71]); 'knowledge graph' only in hyphenated technical-mechanism contexts. Reconciled full-draft.md frontmatter total_words 13389 -> 13390 to match state's run-229 Polish update (one-tick frontmatter-vs-state drift closed). Submission gate stays FALSE: zero sections at polish_status:stitched, twelve sections at provenance_score < 4.5, open routed PIs against the assembled draft (PI-082, PI-086, PI-181 XIV.A leg, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209) remain.",
-    "stitch_note_run237": "Run-237 Stitch (interim per RUNBOOK adaptive mode; state shows 1 of 14 at polish_status:ready_for_stitch \u2014 Section 13 after run-236 Polish; Sections 11/12 polished-frontmatter slots read ready_for_stitch/stitched but state holds them at needs_polish under the run-153/154 routings, so dispatcher state count = 1 not 3). Verify-and-reconcile tick: no source-of-truth body changes this pass because run-236 Polish already propagated the six Section XIII PI fixes (PI-093/094/095, PI-165/166/167) to manuscript/full-draft.md per L-035, with the global footnote renumber (old [^169]-[^173] +1 -> [^170]-[^174]; old [^174]-[^182] +2 -> [^176]-[^184]; net 182 -> 184) applied at the same Polish tick. Footnote integrity 184 contiguous defs [^1]-[^184], zero gap/dup/orphan, all 184 unique body refs resolve to a def (regex-verified). Recurring sentence exactly three canonical placements (I.B line 41, VII/VIII seam line 235, XIV.C line 389). Terminology umbrella 'course knowledge system' stable; 'AI tutor' only in Dong et al. comparison (lines 165, 535) plus the new run-236 XIII.A architectural-alternative contrast at line 363 (the method explicitly does NOT adopt it); 'knowledge graph' only in hyphenated technical-mechanism contexts ('knowledge-graph-augmented', 'Knowledge Graph-Enhanced'). Bond title 'Rigour' consistent across all body sites. Bumped full-draft.md last_stitched_at 2026-05-29T01:00:00Z -> 2026-05-29T15:00:00Z and refreshed the top-of-file interim note to read '1 of 14 at polish_status ready_for_stitch'. total_words held at 13461 (no body change). Submission gate stays FALSE: thirteen sections below ready_for_stitch in state, twelve sections at provenance_score < 4.5, open routed PIs (PI-082, PI-086, PI-181 XIV.A leg, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209, PI-177, PI-178, PI-179, PI-180) remain against the assembled draft."
+    "stitch_note_run237": "Run-237 Stitch (interim per RUNBOOK adaptive mode; state shows 1 of 14 at polish_status:ready_for_stitch \u2014 Section 13 after run-236 Polish; Sections 11/12 polished-frontmatter slots read ready_for_stitch/stitched but state holds them at needs_polish under the run-153/154 routings, so dispatcher state count = 1 not 3). Verify-and-reconcile tick: no source-of-truth body changes this pass because run-236 Polish already propagated the six Section XIII PI fixes (PI-093/094/095, PI-165/166/167) to manuscript/full-draft.md per L-035, with the global footnote renumber (old [^169]-[^173] +1 -> [^170]-[^174]; old [^174]-[^182] +2 -> [^176]-[^184]; net 182 -> 184) applied at the same Polish tick. Footnote integrity 184 contiguous defs [^1]-[^184], zero gap/dup/orphan, all 184 unique body refs resolve to a def (regex-verified). Recurring sentence exactly three canonical placements (I.B line 41, VII/VIII seam line 235, XIV.C line 389). Terminology umbrella 'course knowledge system' stable; 'AI tutor' only in Dong et al. comparison (lines 165, 535) plus the new run-236 XIII.A architectural-alternative contrast at line 363 (the method explicitly does NOT adopt it); 'knowledge graph' only in hyphenated technical-mechanism contexts ('knowledge-graph-augmented', 'Knowledge Graph-Enhanced'). Bond title 'Rigour' consistent across all body sites. Bumped full-draft.md last_stitched_at 2026-05-29T01:00:00Z -> 2026-05-29T15:00:00Z and refreshed the top-of-file interim note to read '1 of 14 at polish_status ready_for_stitch'. total_words held at 13461 (no body change). Submission gate stays FALSE: thirteen sections below ready_for_stitch in state, twelve sections at provenance_score < 4.5, open routed PIs (PI-082, PI-086, PI-181 XIV.A leg, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209, PI-177, PI-178, PI-179, PI-180) remain against the assembled draft.",
+    "stitch_note_run244": "Run-244 Stitch (interim per RUNBOOK adaptive mode; state shows 2 of 14 at polish_status:ready_for_stitch \u2014 Section 03 after run-243 Polish, Section 13 after run-236 Polish). Source-of-truth body changes this tick: propagated the run-243 Polish Section 03 three-PI burst (PI-029 false III.C/Section IV cross-reference; PI-123 III.D 'proof' overclaim plus 'free-form exam noise' contrast; PI-124 III.B Commerce Clause synthesis actor-erasure) into manuscript/full-draft.md at lines 87 (III.B), 93 (III.C), 99 (III.D) and into manuscript/drafts/section-03-case-study.md at lines 23, 29, 35 per L-035 three-site discipline, after run-243's Polish narrative landed the edits on the polished file but did not report the matching full-draft / drafts propagation. Footnote integrity 184 contiguous defs [^1]-[^184], zero gap/dup/orphan, all 184 unique body refs resolve to a def (regex-verified, unchanged from run-237). Recurring sentence at exactly three canonical placements (I.B line 41, VII/VIII seam line 235, XIV.C line 389). Terminology umbrella 'course knowledge system' stable; 'AI tutor' confined to Dong et al. comparison (lines 165, 535) and the run-236 XIII.A architectural-alternative contrast at line 363; 'knowledge graph' only in hyphenated technical-mechanism contexts. 'case-doctrine-classroom' phrase now 0 body occurrences (the PI-029 removal propagated). 'reviewed pipeline' now 2 body occurrences (the new III.B 'reviewed pipeline Section V documents' joins the V.B 'reviewed pipeline of Section IV.A', consistent with Section V documenting the pipeline Section IV introduces). total_words 13461 -> 13463 to match the polished Section 03 +2 delta (1281 -> 1283), 537 words of ceiling headroom inside the 10,000-14,000 policy window. Bumped full-draft.md last_stitched_at 2026-05-29T15:00:00Z -> 2026-05-28T21:00:00Z and refreshed the top-of-file interim note from '1 of 14' to '2 of 14 at polish_status ready_for_stitch'. Submission gate stays FALSE: twelve sections below ready_for_stitch in state (only Section 03 and Section 13 are at ready_for_stitch this tick), twelve sections at provenance_score < 4.5, and the open routed PIs (PI-082, PI-086, PI-181 XIV.A leg, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209, PI-177, PI-178, PI-179, PI-180, PI-210, PI-211 Section 11 Cite-leg, PI-216 Section 11 workplan-language Polish-leg) remain against the assembled draft."
   },
   "pending_issues": [
     {
@@ -1331,7 +1332,7 @@
       "note": "Polish-owned per L-057. Next Section 11 Polish pick should rewrite these two clauses to state the substantive claim directly without naming the workplan: 11.A 'The affirmative posture is the recommendation the workplan endorses: a method contribution paired with modest, honest evidence...' becomes 'This article adopts a method-plus-light-data posture: a method contribution paired with modest, honest evidence proportional to the claim. Three considerations justify it for a Journal of Legal Education audience: ...'. 11.E 'The labeling fork is the workplan directive that the professor and the law school's IRB administrator agree jointly...' becomes 'The labeling fork requires the professor and the law school's Institutional Review Board administrator to agree jointly whether...'. Both rewrites preserve the substantive content while removing the workplan-as-authority framing."
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1352,7 +1353,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 243,
+  "run_count": 244,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1449,7 +1450,7 @@
       "verify_routed_at": "2026-05-18T07:00:00Z",
       "verify_routing_reason": "Run 129 Verify/provenance audit (score 3.4 < 4.5): cite_status -> needs_cite for PI-125 (restore Bond et al. 2024), PI-126 (fifteen-link breakdown 'seven'->'eight other Cases'), PI-127 (NFIB [^17] pin cite 552 vs star-pagination 550), and the PI-122 App. D drop in [^3]; polish_status -> needs_polish for PI-123 ('proof' overclaim, III.D) and PI-124 (actor-erasure, III.B).",
       "word_count": 1283,
-      "last_phase": "polish"
+      "last_phase": "stitch"
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
