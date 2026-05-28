@@ -9,9 +9,9 @@ draft_status: needs_polish
 cite_status: needs_polish
 polish_status: needs_polish
 footnotes_count: 11
-provenance_audited: false
-provenance_audited_at: 2026-06-08T13:00:00Z
-provenance_audit_run: 224
+provenance_audited: true
+provenance_audited_at: 2026-05-29T03:00:00Z
+provenance_audit_run: 231
 provenance_score: 4.6
 claims_total: 23
 claims_mapped: 22
