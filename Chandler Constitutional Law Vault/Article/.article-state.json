@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-06-05T13:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-06-05T15:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -759,16 +759,6 @@
       "type": "numerical-inconsistency"
     },
     {
-      "claim": "Section III.D footnote [^17] pin-cites the Roberts formulation 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' to Nat'l Fed'n of Indep. Bus. v. Sebelius, 567 U.S. 519, 552 (2012); Midpage findInOpinion on 567 U.S. 519 (opinionId 809122) confirms the quotation is verbatim-accurate but places the sentence between the *550 and *551 star-pagination markers (U.S. Reports page 550), not page 552.",
-      "id": "PI-127",
-      "note": "Persona 4 (Provenance Auditor) P1, numerical-precision criterion; the canonical Prize Cases / Grier near-miss class (quote correct, locator off). The verbatim text is VERIFIED via Midpage, so this is a pin-cite correction, not a fabrication. Next Cite tick on Section 03 should re-confirm the exact U.S. Reports page via Midpage analyzeOpinion or the bound reporter and correct [^17] from 552 to 550 (or 550-51) if confirmed. Cite-owned; routes Section 03 cite_status -> needs_cite.",
-      "opened_at": "2026-05-29T07:00:00Z",
-      "phase": "verify",
-      "section": "03",
-      "status": "open",
-      "type": "pin-cite"
-    },
-    {
       "claim": "Section IV.B paragraph 2 ('Modernized PDFs are among the most pedagogically useful inputs the export contained, and among the most epistemically dangerous to ingest without verification against an indexed opinion') asserts twin superlatives ('most pedagogically useful', 'most epistemically dangerous') as established fact with no comparative basis, ranking, or data; the article presents no evaluation of input usefulness and no measured error rate for unverified modernized PDFs.",
       "id": "PI-128",
       "note": "Persona 1 (Skeptical JLE Editor) P1, run 130, surfaced during the Section 04 provenance-audit Verify tick. Distinct from the existing IV.B P2s (the 65-word doctrinal-scope enumeration; the [^5] directional-particle divergence). Deferral LIFTED; Polish-owned, routes Section 04 polish_status (already needs_polish). Next Polish tick drops the superlatives and states the claim descriptively (e.g. 'Modernized PDFs ease archaic phrasing for student readers, and they are the input type most in need of verification against an indexed opinion before ingestion'), keeping the Section VII forward-reference. Contributed to the gap-honesty reasoning for the Section 04 audit.",
@@ -1393,7 +1383,7 @@
       "note": "Surfaced by Run-203 Verify Persona 1 (JLE Editor). The fix is to drop 'roughly six-hundred-thirty-line' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md so the polished/assembled prose matches the run-200 draft edit; the structural-insight claim in footnote [^1]/[^88] survives without the qualifier. The general lesson recorded in the run-203 BUILD_NARRATIVE: a Cite resolution that touches body prose must propagate to the polished source AND the assembled full-draft, not just the draft scratch file. Routes Section 07 polish_status (already needs_polish; no status delta from this PI). The corresponding run-203 provenance re-audit of Section 07 records the same defect under numerical_precision (deduction -1 from 5)."
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -1414,7 +1404,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 206,
+  "run_count": 207,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1474,10 +1464,10 @@
       "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule)."
     },
     "03": {
-      "cite_at": "2026-05-27T15:00:00Z",
+      "cite_at": "2026-06-05T15:00:00Z",
       "cite_completed_at": "2026-05-18T01:00:00Z",
-      "cite_note": "Citation-density Verify P1 (PI-032) resolved. Added survey-level Bond et al. 2024 meta-review to footnote [^18] alongside the existing Sajja et al. 2023 platform-paper anchor, with an L-024 transfer clause naming what carries over from the meta-review (its field-level evidentiary standard and AI-in-education design-space mapping) and what does not (the chatbot-tutor and adaptive-system intervention settings it surveys). Per L-049 the Kuhail et al. 2023 survey named in the routing note was NOT added: a grep of Article-Workplan.md returns zero hits, so the source is unverified; the footnote documents the omission. Bond URL liveness verified live this run via WebSearch with allowed_domains scoping per L-022 (verbatim title-and-URL match, vol. 21 art. 4, 2024), consistent with the Section 02 note [^9] verification of the same URL on 2026-05-27. WebFetch on the Springer URL 303-redirected to an idp.springer.com authorize endpoint (provenance refusal), the canonical L-022 case. Body prose at III.E unchanged per PI-032. cite_status needs_cite -> needs_polish; the next Polish tick regenerates polished/section-03 from this cited draft and can pick up the five open Polish-level P1s (PI-028/029/030/031/033). Sections 06/07/08 (PI-040/048/025) remain at cite_status:needs_cite for subsequent Cite ticks; this tick resolved the lowest-numbered needs_cite section per the runbook per-section Cite procedure rather than running the multi-section pass.",
-      "cite_status": "needs_cite",
+      "cite_note": "Run 207 Cite: closed PI-127 (Section III.D footnote [^17] NFIB pin-cite locator). Re-verified via Midpage findInOpinion opinionId 809122 that the Roberts formulation 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' falls between the *550 and *551 star-pagination markers in 567 U.S. 519; the verbatim text was RE-VERIFIED across the four-snippet returned passage (the sentence sits immediately after the *550 marker, within the same paragraph that ends just before the *551 marker on snippet 5). Pin cite corrected 552 -> 550 in three places: drafts/section-03-case-study.md [^17], polished/section-03-case-study.md [^17], and full-draft.md [^34]; each footnote now carries an audit-trail parenthetical naming the Midpage opinionId and the *550/*551 star-marker bracket per the canonical Prize Cases / Grier near-miss class (quote correct, locator off; locator corrected). This is a locator correction, not a fabrication. cite_status needs_cite -> needs_polish; provenance_audited reset to false so the next Verify provenance re-audit reads the post-Cite prose. Section 03's numerical-precision criterion (Verify run 189) had scored 3 of 5 in part on the open PI-127; with PI-127 closed the next audit should clear that half of the criterion (PI-126 fifteen-link miscount remains open). PI-125 (Bond meta-review still owed in polished prose) and PI-122 (App. D 'Correspondence Excerpts' broken cross-reference) remain open Cite-routed items for subsequent ticks; this tick resolved the lowest-effort, highest-certainty open Cite P1 on Section 03 per the multi-run stall the run-189 provenance_note flagged.",
+      "cite_status": "needs_polish",
       "claims_mapped": 16,
       "claims_total": 17,
       "current_words": 1278,
@@ -1492,7 +1482,7 @@
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-18T03:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-31T21:00:00Z",
       "provenance_reaudit_note": "Verify run 189 provenance re-audit (lowest provenance_score, 3.4) per RUNBOOK sub-task. Third re-audit; score UNCHANGED at 3.4 (runs 129/147/154 also 3.4) because Section 03 prose is untouched since run 129 (rotation worked Section 05 in runs 185-188). 17 claims, 16 mapped, 1 unsupported (III.C case-doctrine-classroom-triangle/casebook's-blind-spot cross-reference to Section IV, PI-029, evidence-gap). NFIB Roberts quotation re-verified verbatim via Midpage findInOpinion opinionId 809122 at the *550 star-page marker, so PI-127 (pin 552 -> 550) remains a locator correction, not a fabrication. Open Cite/Polish PIs PI-123/PI-029/PI-125/PI-126/PI-127/PI-176 must land to clear 3.4; the rotation has still not reached Section 03.",
       "provenance_reaudited_at": "2026-06-03T23:00:00Z",
@@ -1918,7 +1908,7 @@
     "last_run_at": "2026-06-05T07:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 119,
+    "p1_open": 118,
     "p2_open": 43,
     "personas_read": 4
   },
