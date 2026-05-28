@@ -1219,6 +1219,45 @@
       "resolved_at": "2026-05-28T19:00:00Z",
       "resolved_by": "cite-run-242",
       "resolution_note": "Run-242 Cite tick resolved by removing the phantom App. A 'Article Project Architecture' / App. D 'Internal Project Records Excerpts' routings across nine Section XI footnotes (the eight named by PI-211 plus the missed-but-same-family [^11]). Three footnotes converted to legitimate cross-references: [^1] (new) -> Bond and Choi & Schwarcz at notes 3 and 4; [^2] (new) -> Sajja at note 5; [^6] (new) -> Section IV \u00a7 IV.E; [^7] (new) -> Section IX. Six footnotes (original [^1], [^3], [^4], [^5], [^6], [^11]) REMOVED as self-statements of the article's own organization (no internal-self citation needed). footnotes_count 14->8. The remaining workplan-language slips in 11.A and 11.E body prose are L-057 Polish-owned and are logged as new PI-216."
+    },
+    {
+      "claim": "Section III.C's third paragraph closes with 'The page captures the third leg of the case-doctrine-classroom triangle Section IV named as the casebook's blind spot.' Section IV does not use the phrase 'case-doctrine-classroom triangle,' does not characterize the lecture summary as a 'third leg,' and does not describe any layer as 'the casebook's blind spot.' IV.A enumerates the corpus as four content types (lecture decks, professor-prepared opinion PDFs, merged reading packets, and a small set of assessment artifacts); IV.C discusses what the LMS did not hand (ten missing opinions, the open casebook-input question under PI-001) without any blind-spot framing on the lecture-summary layer.",
+      "id": "PI-029",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding. A JLE peer reviewer reading Sections III and IV in sequence will see the cross-reference and check Section IV for the phrase, find nothing, and flag the article for fabricated internal cross-references. Next Polish tick on Section 03 should rewrite the III.C cross-reference so it points to what Section IV actually says about the corpus, not what III wishes IV said; for example, 'The page captures the lecture-deck content type Section IV.A names as one of the four course-issued artifact families, in a form a student who missed the session can read.' Drop the 'case-doctrine-classroom triangle' and 'casebook's blind spot' language entirely, since neither phrase appears anywhere in the article. Adjacent recurrence-prevention question: Stitch's cross-section consistency checks did not catch the false cross-reference in the partial-noop pass on 2026-05-18T05:00 because L-016's partial-noop convention scores only on full-strength rubric criteria; a future Stitch tick should consider whether even a partial assembly can run a string-grep cross-reference check (every 'Section N named X' or 'Section N established X' construction in section N+1 verified against section N's prose) as a structural rather than rubric check.",
+      "opened_at": "2026-05-18T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "resolved",
+      "type": "false-cross-reference",
+      "resolved_at": "2026-05-28T20:00:00Z",
+      "resolved_by_run": 243,
+      "resolved_by_phase": "polish"
+    },
+    {
+      "claim": "Section III.D's final sentence calls the three-bucket Hypothetical Applications form 'the surface-level proof that the prompting design Section VI describes produces pedagogically structured material rather than free-form exam noise'; 'proof' overclaims, since a fixed template shows the output is structured but does not establish that it is pedagogically sound rather than noise, a quality judgment the article presents no evaluation data to support.",
+      "id": "PI-123",
+      "note": "Persona 1 (Skeptical JLE Editor) P1. The three-bucket structure is the visible artifact; calling it 'proof' that the design 'produces pedagogically structured material rather than free-form exam noise' is a quality claim the article does not back with evaluation. Next Polish tick on Section 03 should soften 'proof' to 'illustration' or 'evidence' and drop or qualify the 'rather than free-form exam noise' contrast, e.g. 'the three-bucket form is the surface-level illustration of the prompting design Section VI describes, scoping hypotheticals to the page's doctrine.' Distinct from PI-108 (live-hypothetical substitution, Persona 2) and PI-030 (casebook overclaim). Routes Section 03 polish_status -> needs_polish.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "resolved",
+      "type": "overclaim",
+      "resolved_at": "2026-05-28T20:00:00Z",
+      "resolved_by_run": 243,
+      "resolved_by_phase": "polish"
+    },
+    {
+      "claim": "Section III narrates the doctrinal synthesis as the work of the system rather than the professor: III.B 'The Commerce Clause Topic page renders the doctrine as a single synthesis', III.A the four-family grid plus Cases filter rail 'give the student' entry, and III.D 'the prompting design ... produces' material; Professor Chandler's curatorial and analytical judgment is largely invisible across III.A through III.D.",
+      "id": "PI-124",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1. The article's thesis is that professorial judgment is made reusable, inspectable, and publishable, not absorbed into the system; Section III lets 'the page'/'the site'/'the prompting design' carry the verbs the professor should carry. Next Polish tick on Section 03 should add a professor-as-author clause to III.B's opening, e.g. 'The Commerce Clause Topic page renders Professor Chandler's synthesis, recorded through the vault's reviewed pipeline, as a single doctrine page', and consider mirroring the actor-naming at III.A. Same cross-section actor-erasure family as PI-015 (V.C) and PI-024 (VIII.D); distinct from PI-031/PI-108 (live-event substitution). Routes Section 03 polish_status -> needs_polish.",
+      "opened_at": "2026-05-29T07:00:00Z",
+      "phase": "verify",
+      "section": "03",
+      "status": "resolved",
+      "type": "actor-erasure",
+      "resolved_at": "2026-05-28T20:00:00Z",
+      "resolved_by_run": 243,
+      "resolved_by_phase": "polish"
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

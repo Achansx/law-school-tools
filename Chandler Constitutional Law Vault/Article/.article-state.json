@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-28T19:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-28T20:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -251,16 +251,6 @@
       "section": "03",
       "status": "open",
       "type": "voice-slip"
-    },
-    {
-      "claim": "Section III.C's third paragraph closes with 'The page captures the third leg of the case-doctrine-classroom triangle Section IV named as the casebook's blind spot.' Section IV does not use the phrase 'case-doctrine-classroom triangle,' does not characterize the lecture summary as a 'third leg,' and does not describe any layer as 'the casebook's blind spot.' IV.A enumerates the corpus as four content types (lecture decks, professor-prepared opinion PDFs, merged reading packets, and a small set of assessment artifacts); IV.C discusses what the LMS did not hand (ten missing opinions, the open casebook-input question under PI-001) without any blind-spot framing on the lecture-summary layer.",
-      "id": "PI-029",
-      "note": "Persona 1 (Skeptical JLE Editor) P1 finding. A JLE peer reviewer reading Sections III and IV in sequence will see the cross-reference and check Section IV for the phrase, find nothing, and flag the article for fabricated internal cross-references. Next Polish tick on Section 03 should rewrite the III.C cross-reference so it points to what Section IV actually says about the corpus, not what III wishes IV said; for example, 'The page captures the lecture-deck content type Section IV.A names as one of the four course-issued artifact families, in a form a student who missed the session can read.' Drop the 'case-doctrine-classroom triangle' and 'casebook's blind spot' language entirely, since neither phrase appears anywhere in the article. Adjacent recurrence-prevention question: Stitch's cross-section consistency checks did not catch the false cross-reference in the partial-noop pass on 2026-05-18T05:00 because L-016's partial-noop convention scores only on full-strength rubric criteria; a future Stitch tick should consider whether even a partial assembly can run a string-grep cross-reference check (every 'Section N named X' or 'Section N established X' construction in section N+1 verified against section N's prose) as a structural rather than rubric check.",
-      "opened_at": "2026-05-18T07:00:00Z",
-      "phase": "verify",
-      "section": "03",
-      "status": "open",
-      "type": "false-cross-reference"
     },
     {
       "claim": "Section III.B's second sentence claims 'Doctrine-first entry is the affordance the casebook table of contents does not give and the lecture-slide export does not give either.' Many constitutional-law casebooks (Chemerinsky, Stone et al., Brest et al., Sullivan and Feldman, Tribe) organize their tables of contents doctrinally (Federalism, Separation of Powers, Individual Rights, and so on), so the claim that the casebook table of contents fails to give doctrine-first entry is empirically wrong for the casebooks a Con Law I student most often uses.",
@@ -706,26 +696,6 @@
       "section": "02",
       "status": "open",
       "type": "false-cross-reference"
-    },
-    {
-      "claim": "Section III.D's final sentence calls the three-bucket Hypothetical Applications form 'the surface-level proof that the prompting design Section VI describes produces pedagogically structured material rather than free-form exam noise'; 'proof' overclaims, since a fixed template shows the output is structured but does not establish that it is pedagogically sound rather than noise, a quality judgment the article presents no evaluation data to support.",
-      "id": "PI-123",
-      "note": "Persona 1 (Skeptical JLE Editor) P1. The three-bucket structure is the visible artifact; calling it 'proof' that the design 'produces pedagogically structured material rather than free-form exam noise' is a quality claim the article does not back with evaluation. Next Polish tick on Section 03 should soften 'proof' to 'illustration' or 'evidence' and drop or qualify the 'rather than free-form exam noise' contrast, e.g. 'the three-bucket form is the surface-level illustration of the prompting design Section VI describes, scoping hypotheticals to the page's doctrine.' Distinct from PI-108 (live-hypothetical substitution, Persona 2) and PI-030 (casebook overclaim). Routes Section 03 polish_status -> needs_polish.",
-      "opened_at": "2026-05-29T07:00:00Z",
-      "phase": "verify",
-      "section": "03",
-      "status": "open",
-      "type": "overclaim"
-    },
-    {
-      "claim": "Section III narrates the doctrinal synthesis as the work of the system rather than the professor: III.B 'The Commerce Clause Topic page renders the doctrine as a single synthesis', III.A the four-family grid plus Cases filter rail 'give the student' entry, and III.D 'the prompting design ... produces' material; Professor Chandler's curatorial and analytical judgment is largely invisible across III.A through III.D.",
-      "id": "PI-124",
-      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1. The article's thesis is that professorial judgment is made reusable, inspectable, and publishable, not absorbed into the system; Section III lets 'the page'/'the site'/'the prompting design' carry the verbs the professor should carry. Next Polish tick on Section 03 should add a professor-as-author clause to III.B's opening, e.g. 'The Commerce Clause Topic page renders Professor Chandler's synthesis, recorded through the vault's reviewed pipeline, as a single doctrine page', and consider mirroring the actor-naming at III.A. Same cross-section actor-erasure family as PI-015 (V.C) and PI-024 (VIII.D); distinct from PI-031/PI-108 (live-event substitution). Routes Section 03 polish_status -> needs_polish.",
-      "opened_at": "2026-05-29T07:00:00Z",
-      "phase": "verify",
-      "section": "03",
-      "status": "open",
-      "type": "actor-erasure"
     },
     {
       "claim": "Section III.E rests the user-experience contrast on a single chatbot-architecture source (Sajja et al. 2023, footnote [^18]); the polished and assembled Section III carries no Bond et al. 2024 meta-review, although the draft (manuscript/drafts/section-03-case-study.md) cites Bond, so the survey-level AI-in-higher-education engagement was present at the draft layer but dropped from the polished file.",
@@ -1361,7 +1331,7 @@
       "note": "Polish-owned per L-057. Next Section 11 Polish pick should rewrite these two clauses to state the substantive claim directly without naming the workplan: 11.A 'The affirmative posture is the recommendation the workplan endorses: a method contribution paired with modest, honest evidence...' becomes 'This article adopts a method-plus-light-data posture: a method contribution paired with modest, honest evidence proportional to the claim. Three considerations justify it for a Journal of Legal Education audience: ...'. 11.E 'The labeling fork is the workplan directive that the professor and the law school's IRB administrator agree jointly...' becomes 'The labeling fork requires the professor and the law school's Institutional Review Board administrator to agree jointly whether...'. Both rewrites preserve the substantive content while removing the workplan-as-authority framing."
     }
   ],
-  "phase_index": 3,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -1382,7 +1352,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 242,
+  "run_count": 243,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1459,7 +1429,7 @@
       "outline_ready_at": "2026-05-17T21:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-18T03:00:00Z",
-      "polish_status": "needs_polish",
+      "polish_status": "ready_for_stitch",
       "provenance_audited": true,
       "provenance_audited_at": "2026-05-31T21:00:00Z",
       "provenance_reaudit_note": "Verify run 210 (2026-06-06T09:00) re-audit, triggered by the run-207 Cite reset of provenance_audited (not the lowest-score selection rule). 17 claims, 16 mapped, 1 unsupported (PI-029, the III.C 'case-doctrine-classroom triangle / casebook's blind spot' attribution to Section IV, evidence-gap). Criterion scores 4/3/3/4/4 (changed from run-189 4/3/3/3/4): numerical_precision lifted 3 -> 4 from the run-207 PI-127 closure (NFIB [^17] pin 552 -> 550 re-verified via Midpage findInOpinion opinionId 809122 at the *550 star marker); the remaining deduction is PI-126 fifteen-link miscount (breakdown 4+7+3=14). claim_coverage 4 (16/17 = 94.1%, PI-029 still open); primary_source_ratio 3 (App. A reproduction carries load-bearing site-description claims, PI-122 App. D drop and PI-125 Bond meta-review still owed); attribution 3 (PI-176 'curriculum-grounded' body gloss vs 'Curriculum-Oriented' source title at [^18]; PI-125 missing); gap_honesty 4 (PI-029 carried in unsupported_claims). provenance_score 3.6 = 18/5; 3.6 < 4.5, polish_status stays needs_polish. This is the first numerical movement on Section 03 in five consecutive audits (runs 129/147/154/189 all 3.4; run 210 = 3.6); the +0.2 isolates the PI-127 closure as the numerical_precision lift. The four remaining open Cite/Polish PIs (PI-029, PI-123, PI-125, PI-126, PI-176) are now what the score turns on.",
@@ -1477,7 +1447,9 @@
       ],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-18T07:00:00Z",
-      "verify_routing_reason": "Run 129 Verify/provenance audit (score 3.4 < 4.5): cite_status -> needs_cite for PI-125 (restore Bond et al. 2024), PI-126 (fifteen-link breakdown 'seven'->'eight other Cases'), PI-127 (NFIB [^17] pin cite 552 vs star-pagination 550), and the PI-122 App. D drop in [^3]; polish_status -> needs_polish for PI-123 ('proof' overclaim, III.D) and PI-124 (actor-erasure, III.B)."
+      "verify_routing_reason": "Run 129 Verify/provenance audit (score 3.4 < 4.5): cite_status -> needs_cite for PI-125 (restore Bond et al. 2024), PI-126 (fifteen-link breakdown 'seven'->'eight other Cases'), PI-127 (NFIB [^17] pin cite 552 vs star-pagination 550), and the PI-122 App. D drop in [^3]; polish_status -> needs_polish for PI-123 ('proof' overclaim, III.D) and PI-124 (actor-erasure, III.B).",
+      "word_count": 1283,
+      "last_phase": "polish"
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
