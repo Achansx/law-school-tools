@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-06-06T17:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-06-07T07:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -1361,19 +1361,9 @@
       "route": "none",
       "status": "open",
       "type": "push-race-conflict"
-    },
-    {
-      "claim": "Cross-section Bond et al. (2024) title-spelling drift: Section 02 polished [^9], full-draft [^9] / [^150] / [^166] all carry 'Rigour' (British spelling); Sections 11 and 12 polished [^8] / [^10] carry 'Rigor' (American spelling). The Section 11 run-152 polish_note explicitly named the drift and noted that the run-111 reconciliation had landed 'Rigour' in the assembled draft while the polished sections diverged. Re-surfaced this tick during the Stitch fact-consistency sweep over Section XI; logged for the next Polish or Cite tick that touches one of the affected sections to verify the canonical Springer title spelling and harmonize across all five footnote sites.",
-      "id": "PI-205",
-      "note": "Surfaced by Run-202 Stitch on Section XI. Not auto-resolved here because Stitch should not silently flip wording across sections without source verification of the canonical published title; WebFetch on the Springer abstract URL has been provenance-blocked in prior runs (idp.springer.com 303 redirect, the L-022 canonical case). The next Cite tick on any of Sections 02, 11, or 12 should run a fresh WebSearch with allowed_domains scoped to link.springer.com per L-022 (the title-and-URL match returns the verbatim canonical spelling), then a single Polish tick can sweep the five sites: assembled [^9] / [^150] / [^166] and polished section-02 [^9], section-11 [^8], section-12 [^10]. The article's general policy is to follow the cited source's spelling exactly (L-054 lowercase 'art.' precedent), so whichever spelling the Springer record uses is canonical. No assembled-draft prose changed at this Stitch tick; this entry preserves the audit trail for the harmonization.",
-      "opened_at": "2026-06-05T05:00:00Z",
-      "phase": "stitch",
-      "route": "polish-or-cite",
-      "status": "open",
-      "type": "fact-consistency-drift"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -1394,7 +1384,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 214,
+  "run_count": 215,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1786,7 +1776,7 @@
       "polish_status": "needs_polish",
       "polish_status_changed_at": "2026-06-05T07:00:00Z",
       "polish_status_changed_reason": "Run-203 Verify P1 PI-160 (Bond corpus-composition characterization at XI.C / XII.E without Bond pin cite) routes Section 11 from stitched back to needs_polish; confirmed-stitched count 1 -> 0.",
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T23:00:00Z",
       "provenance_score": 3.6,
       "stitch_note_run202": "Run-202 interim Stitch on Section 11: propagated the Run-201 Polish local renumber into manuscript/full-draft.md. XI.D second paragraph marker [^156] -> [^153] (artifact-matched rationale); XI.E [^153] -> [^154] (IRB labeling fork); XI.E [^154] -> [^155] (data-collection-status fork); XI.E [^155] -> [^156] (single-owner-section routing). Footnote-definition block reordered to match. Cross-reference inside the new [^153] corrected from the pre-existing slip 'notes 149 and 150' to 'notes 149 and 152' (matches polished source's local 'notes 7 and 10' = vocabulary discipline + Sajja, not vocabulary + Bond). Word-neutral; 181 contiguous defs preserved; no body prose changed. polish_status ready_for_stitch -> stitched. provenance_audited stays true (no prose change); 3.6 score awaits next Verify re-audit per the run-152 polish note (PI-160 was Cite-resolved at source run-151 but the recorded unsupported_claims entry awaits Verify re-score). PI-200 (new) logged for the cross-section Bond title-spelling drift surfaced this tick on the Stitch fact-consistency sweep.",
@@ -1802,7 +1792,9 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-06-01T13:00:00Z",
-      "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch."
+      "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch.",
+      "last_polish_propagation_at": "2026-06-07T07:00:00Z",
+      "last_polish_propagation_run": 215
     },
     "12": {
       "cite_at": "2026-06-01T21:00:00Z",
@@ -1825,14 +1817,16 @@
       "polish_completed_at": "2026-05-31T03:00:00Z",
       "polish_note_run145": "Run-145 Polish tick: italicized textual Mata v. Avianca (L-015); certified run-143 PI-113 (design-response framing + L-044 Section XI forward-ref) and PI-161 (meta-rhetoric recast); fixed the XII.B seam redundancy (two paragraphs no longer both open with 'The contrast'); applied the PI-106 numbering fix ('a fourth' -> 'a further open decision'); split argumentative run-ons in A/B/C/E and split A and E into two paragraphs each, preserving five deliberate enumerations per L-029. polish_status -> ready_for_stitch; provenance_score 4.0 left for the next Verify re-audit; current_words 1369 -> 1359.",
       "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_score": 4.0,
       "target_words": 1400,
       "title": "Risks and Limits",
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
+      "last_polish_propagation_at": "2026-06-07T07:00:00Z",
+      "last_polish_propagation_run": 215
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
