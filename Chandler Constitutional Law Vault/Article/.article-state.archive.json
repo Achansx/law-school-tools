@@ -1026,6 +1026,19 @@
       "resolved_run": 194,
       "resolved_by_phase": "polish",
       "resolution": "Polish run 194 applied the issue's own scale-not-verifiable fallback: trimmed the scale-less raw means 6.37/4.71 from V.D prose and recast to lead with the construct-named, scale-free effect size and significance (Cohen's d of 0.86, p less than 0.001); footnote [^14] retains the full reported figures. The prose effect is now interpretable to a learning-sciences reader without a stated scale. Section 05 polish_status -> ready_for_stitch; provenance_audited reset false for Verify re-audit."
+    },
+    {
+      "claim": "Section VII.A's first sentence asserts that Karpathy's autoresearch is 'a roughly six-hundred-thirty-line Python script' but footnote [^1] does not anchor the line count: the footnote enumerates the four design choices, projects approximately twelve experiments per hour and approximately one hundred experiments while the researcher sleeps, and names the verified fifty-experiments-overnight figure that L-001 specifically permits, but it does not name the script's line count or point at the file that would substantiate it.",
+      "id": "PI-044",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding. The line count is an empirical claim about the cited repository whose precision a JLE peer reviewer will check against the citation and, finding no support, flag as exactly the kind of unanchored empirical detail L-001's house-lessons restriction on Karpathy figures is meant to prevent (extended in spirit from numeric experiment figures to anchored-empirical-precision claims about the same repository). The line count is also not load-bearing for the article's argument; the structural-insight claim is carried by the four-design-choice enumeration in the footnote rather than by any size measurement of the script.",
+      "opened_at": "2026-05-19T13:00:00Z",
+      "phase": "verify",
+      "section": "07",
+      "status": "resolved",
+      "type": "unanchored-empirical-precision",
+      "resolved_at": "2026-06-05T02:30:00Z",
+      "resolved_by_phase": "cite",
+      "resolution": "Cite run 200 took the routing note's option (b): the 'roughly six-hundred-thirty-line' qualifier was dropped from VII.A's first sentence, leaving 'a Python script that delegates the modify, run, evaluate, keep-or-discard loop to a language-model agent'. Footnote [^1]'s four-design-choice enumeration carries the structural-insight claim alone, consistent with L-001's house-lessons restriction and the article's practitioner-scholarly voice."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
