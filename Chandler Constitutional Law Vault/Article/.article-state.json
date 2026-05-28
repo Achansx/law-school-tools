@@ -85,28 +85,28 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-07T21:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-07T23:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
     "confirmed_stitched_count": 0,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-06-07T09:00:00Z",
+    "last_polish_propagation_at": "2026-06-07T21:00:00Z",
+    "last_polish_propagation_note": "Run-222 Polish landed PI-207's polished leg AND a placeholder leg into manuscript/full-draft.md: Bond engagement sentence at end of VII.C (line 222) plus [^VII-bond-local] body marker; matching definition appended after [^181] in defs block with explicit STITCH-RENUMBER PENDING instructions for the next Stitch to renumber [^93]-[^181] to [^94]-[^182] by inserting a new global footnote between current [^92] and [^93]. Contiguity 181-contiguous-plus-1-placeholder until consumed. total_words 13350 -> 13389 (+39 tokens); 611 words of ceiling headroom within the 10,000-14,000 policy window.",
+    "last_polish_propagation_run": 222,
+    "last_stitched_at": "2026-06-07T23:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13389,
-    "last_polish_propagation_at": "2026-06-07T21:00:00Z",
-    "last_polish_propagation_run": 222,
-    "last_polish_propagation_note": "Run-222 Polish landed PI-207's polished leg AND a placeholder leg into manuscript/full-draft.md: Bond engagement sentence at end of VII.C (line 222) plus [^VII-bond-local] body marker; matching definition appended after [^181] in defs block with explicit STITCH-RENUMBER PENDING instructions for the next Stitch to renumber [^93]-[^181] to [^94]-[^182] by inserting a new global footnote between current [^92] and [^93]. Contiguity 181-contiguous-plus-1-placeholder until consumed. total_words 13350 -> 13389 (+39 tokens); 611 words of ceiling headroom within the 10,000-14,000 policy window."
+    "total_words": 13389
   },
   "pending_issues": [
     {
@@ -1034,14 +1034,14 @@
     {
       "claim": "Section XI.C states that Bond's sixty-six-publication corpus is 'built predominantly on chatbot-tutor and learning-management-system interventions', but that characterization of the corpus composition is attributed to the article's own L-024 transfer-of-inference clause in [^8]/[^147] rather than to any pin-cited finding in Bond et al. (2024); the empirical composition of the meta-review's corpus has no primary-source anchor a reader could check.",
       "id": "PI-160",
+      "last_cite_resolution_at": "2026-06-07T19:00:00Z",
+      "last_cite_resolution_run": 221,
       "note": "Verify run 137, Persona 4 (Provenance Auditor) P1 and Section 11's one unsupported_claim (reason requires-primary-source). The empirical composition of Bond's sixty-six-publication corpus is asserted in prose (XI.C) and in footnote [^8]/[^147] but traced only to the article's internal L-024 transfer-of-inference clause, not to any pin-cited Bond finding; a reader cannot check the 'predominantly chatbot-tutor and LMS' characterization against the source. Distinct from PI-103 (footnote-form-leak) and PI-104. Cite-owned; routes cite_status -> needs_cite (already set). Also flagged for Stitch: the Section 11 source footnote spells the Bond title 'Rigor' while the assembled draft's [^147]/[^162] were reconciled to British 'Rigour' at run 111, so a re-stitch must not regress the section-source spelling (P2, folds into the PI-110 final-stitch Bond reconciliation). Closes when the corpus-composition characterization gets a Bond pin cite or is hedged to what the source supports, confirmed by the next Verify pass. | UPDATE run-144 (Section 12 Cite tick, joint reconciliation with the now-resolved PI-164): WebSearch against the Springer record confirms the source does NOT support 'predominantly chatbot-tutor and learning-management-system interventions.' Bond reports adaptive systems and personalization as the predominant single application, with most reviews (47%) addressing AI applications generally and profiling/prediction, assessment/evaluation, and intelligent tutoring systems among the categories; chatbots are one application among several and LMS is not a Bond category. Section 12 was corrected to 'adaptive and interactive interventions, chiefly adaptive systems and personalization, but also intelligent tutoring systems and chatbots.' Section 11's own next Cite tick should apply the IDENTICAL correction to XI.C prose and footnote [^8]/[^147] (replace 'built predominantly on chatbot-tutor and learning-management-system interventions' with the same adaptive-and-interactive-interventions language), without importing the 47% figure per L-027; this PI then closes on the next Verify pass. Do not regress the Rigor/Rigour spelling reconciliation noted above. | STITCH run-146: interim stitch landed the run-143/144/145 Section 12 re-draft into the assembled full-draft.md, replacing the run-103 888-word XII block with the current 1359-word polished version (footnote-count-neutral, local [^1]-[^10] -> global [^153]-[^162], so [^163]-[^177] did not shift). This carries the run-144 corrected Bond corpus-composition into XII/[^162] while XI.C/[^147] still read the unsupported 'predominantly chatbot-tutor and learning-management-system', so the XI/XII Bond mismatch is now LIVE in the assembled draft and Verify will read contradictory descriptions of the same source until Section 11's next Cite tick applies the identical correction. Per L-035 Stitch did not re-characterize XI's source citation. Rigour spelling preserved at [^147]/[^162] per the re-stitch instruction above; the Section 12 source file's Rigor spelling remains for its next Cite/Polish tick. | UPDATE run-151 (Section 11 Cite tick): applied the IDENTICAL correction Section 12 landed at run 144 to XI.C prose and footnote [^8], replacing 'built predominantly on chatbot-tutor and learning-management-system interventions' with 'built predominantly on adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots,' without importing the 47% figure (L-027). Bond URL re-verified live this run (Springer auth-gate redirected WebFetch; WebSearch confirmed the verbatim URL, verbatim title, and the seven-database sixty-six-publication corpus). The XI/XII Bond mismatch that has been live in the assembled draft since run 146 is now reconciled at the section-source level. Section-source 'Rigor' spelling left intact for Stitch to reconcile to 'Rigour' in the assembled draft. PI-160 stays OPEN; closes on the next Verify pass that re-audits Section XI and confirms the corpus-composition claim maps to footnote [^8]. | STITCH run-153: interim stitch landed the run-150/151/152 Section 11 re-draft/cite/polish into the assembled full-draft.md (local [^1]-[^14] -> global [^140]-[^153], shifting old [^153]-[^177] to [^154]-[^178]; no cross-reference pointed into the shifted range). This carries the run-151 Bond corpus-composition correction into XI.C/[^147] (adaptive and interactive interventions, chiefly adaptive systems and personalization but also intelligent tutoring systems and chatbots), so the XI/XII Bond mismatch live in the assembled draft since run 146 is now RESOLVED: [^147] and [^163] (was [^162]) agree. Per L-035 the verified-correct British 'Rigour' is preserved at [^147] in the assembled draft; the polished source's American 'Rigor' stays for Section 11's next Cite/Polish. Also fixed the [^163] internal cross-reference leak 'Section XI note 8' -> 'note 147'. PI-160 stays OPEN; closes on the next Verify re-audit of Section XI confirming the corpus-composition claim maps to footnote [^147]. || Run-221 Cite tick RESOLVED at the primary-source level by adding a Zawacki-Richter typology pin cite to footnote [^8] (and propagating to drafts/section-11 [^8] and full-draft.md [^150]): the new sentence anchors the corpus-composition characterization to Bond's own coding framework, which Bond applies to the sixty-six-publication corpus with Adaptive Systems and Personalisation as the predominant single application area. The four typology category labels (Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, Intelligent Tutoring Systems) and the predominance finding were independently confirmed via WebSearch with allowed_domains scoped to link.springer.com per L-022. No new numeric anchor imported per L-027 (Bond's 47%/n=31 and the n=45/46/26 role counts deliberately omitted). PI-160 stays OPEN pending the next Verify provenance re-audit to confirm the unsupported_claim now maps and to re-score Section 11; Cite does not unilaterally remove provenance-audit entries per the run-152 Polish-note discipline. Section 12 [^10] is the symmetric joint-reach leg; it already carries the application-area listing from the run-144 Cite tick but lacks the same Zawacki-Richter typology anchor, so a subsequent Section 12 Cite tick should propagate the matching pin cite.",
       "opened_at": "2026-05-29T23:00:00Z",
       "phase": "verify",
       "section": "11",
       "status": "open",
-      "type": "unsupported-characterization",
-      "last_cite_resolution_run": 221,
-      "last_cite_resolution_at": "2026-06-07T19:00:00Z"
+      "type": "unsupported-characterization"
     },
     {
       "claim": "Section XIII.A surfaces the article's own transfer-of-inference analytic move to the reader in prose -- 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' -- narrating the reasoning architecture rather than making the positioning claim directly. Fresh-site recurrence of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161). Distinct from PI-094 (recognition overclaim) and PI-092 (footnote internal-artifact leak).",
@@ -1366,25 +1366,9 @@
       "route": "none",
       "status": "open",
       "type": "push-race-conflict"
-    },
-    {
-      "id": "PI-207",
-      "note": "Surfaced by the run-217 Verify provenance re-audit of Section 07. The run-200 Cite tick (cite_note_run200) recorded PI-048 closed by adding a Bond et al. (2024) AIHE meta-review engagement sentence at the end of VII.C with new footnote [^11], landing in drafts/section-07-iterative-improvement.md only. PI-206 captured the line-count leg of the same drafts-vs-polished propagation gap and was closed at run 208 by dropping the 'roughly six-hundred-thirty-line' qualifier in both polished/section-07-iterative-improvement.md and manuscript/full-draft.md line 210; the run-208 Polish did NOT propagate the Bond [^11] addition, and PI-048 was archived against the drafts-only resolution. State's sections.07.footnotes_count: 11 and the polished file's frontmatter footnotes_count: 10 show the metadata drift. The next Polish tick on Section 07 should propagate the Bond engagement sentence and the [^11] definition from drafts/section-07-iterative-improvement.md into polished/section-07-iterative-improvement.md AND into manuscript/full-draft.md (the global footnote number assigned via Stitch renumbering or held as [^11-local] for the Stitch pass to consume), mirroring the run-208 surgical pattern that closed PI-206 at three sites. Routes Section 07 polish_status: needs_polish (already set; no status delta). The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 a Cite resolution touching body prose must propagate to polished and the assembled full-draft, not just the drafts scratch file \u2014 applies here too; PI-207 is the second leg of the same defect PI-206 captured only one leg of, and the multi-facet-PI-archived-on-single-facet pattern (run-189 / PI-013 narrative; run-217 / PI-048 narrative) recurs.\n\n[run-222 update] Run-222 Polish landed BOTH legs partially: (a) polished/section-07-iterative-improvement.md received the Bond engagement sentence at end of VII.C plus new [^11] footnote def reformulated to the cross-section-reuse convention (pointing at Section XI note 8 for URL liveness), and (b) manuscript/full-draft.md received the body sentence at line 222 plus a placeholder footnote marker [^VII-bond-local] with matching def appended after [^181] per the PI-207 routing-note authorization. The polished leg is the source-of-truth leg, FULLY CLOSED this run; the full-draft leg landed with the placeholder marker the next Stitch tick should CONSUME by renumbering [^93]-[^181] to [^94]-[^182] (inserting a new global footnote between current [^92] and [^93]). Route changed from polish to stitch; PI-207 stays OPEN until the next Stitch closes the renumber. The multi-facet-PI pattern the run-217 narrative flagged is now made explicit by tracking each leg separately (polished leg done; full-draft Stitch-renumber leg pending) rather than archiving the whole PI on single-facet resolution.",
-      "opened_at": "2026-06-07T11:00:00Z",
-      "opened_in_run": 217,
-      "route": "stitch",
-      "section": "07",
-      "severity": "P1",
-      "status": "open",
-      "title": "Section 07 VII.C Bond [^11] engagement-sentence leg of the run-200 Cite resolution never propagated from drafts to polished/full-draft",
-      "type": "resolution-propagation-gap",
-      "verify_persona": "Persona 1 (Skeptical JLE Editor)",
-      "verify_run": 217,
-      "last_updated_at": "2026-06-07T21:00:00Z",
-      "last_updated_in_run": 222
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1405,7 +1389,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 222,
+  "run_count": 223,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1648,6 +1632,10 @@
       "evidence_status": "populated",
       "footnotes_count": 11,
       "last_phase": "polish",
+      "last_polish_propagation_at": "2026-06-07T21:00:00Z",
+      "last_polish_propagation_note": "Run-222 Polish closed PI-207's polished leg (Bond engagement sentence + new [^11] def at end of VII.C in polished/section-07-iterative-improvement.md) and landed a placeholder leg into manuscript/full-draft.md ([^VII-bond-local] body marker plus matching def appended after [^181]) per PI-207's explicit Stitch-consumption authorization. [^11] reformulated from drafts' bare-cite form to the cross-section-reuse convention pointing at Section XI note 8 ('see infra Section XI note 8 (Bond ...); URL liveness is owned by Section XI per the article's cross-section-reuse convention') matching polished/section-01 [^9] and polished/section-12 [^10]. Polished word_count 1191 -> 1230 (+39 tokens by whitespace tokenization; 1230/1100 = +11.8%, just past the +/-10% Polish band, exacerbating PI-190 but not opening a new flag). full-draft.md total_words 13350 -> 13389; the assembly stays within the 10,000-14,000 policy window with 611 words of ceiling headroom. Mechanical sweep at the edit point: zero em dashes, zero straight quotes (curly throughout). Voice practitioner-scholarly; tightness one long semicolon-spliced sentence (deliberate two-clause structure carrying the architecture-instantiates claim and the meta-review-corpus distinction); first-person 5 (no I introduced); section coherence strengthened (VII.C now closes with a forward-pointer to Section XI's evaluation framing). PI-207 status: route changed from polish to stitch; note extended with the run-222 partial resolution and Stitch-renumber instructions; stays OPEN until the next Stitch consumes the placeholder and renumbers.",
+      "last_polish_propagation_run": 222,
+      "last_polish_run": 222,
       "outline_ready_at": "2026-05-19T01:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-06-07T21:00:00Z",
@@ -1671,11 +1659,7 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-19T13:00:00Z",
-      "verify_routing_reason": "Run-217 Verify: Section 07 re-audit after run-208 Polish reset (closed PI-206 line-count leg). provenance_score 4.0 -> 4.4 (5/4/4/5/4); numerical_precision lifted to 5 (line-count qualifier gone), the four other criteria reproduce the run-203 audit. 4.4 < 4.5 holds polish_status at needs_polish. Persona 1 (JLE Editor) opened NEW PI-207 (resolution-propagation gap, Bond [^11] / VII.C engagement-sentence leg of the run-200 Cite resolution never propagated to polished or full-draft); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta).",
-      "last_polish_run": 222,
-      "last_polish_propagation_at": "2026-06-07T21:00:00Z",
-      "last_polish_propagation_run": 222,
-      "last_polish_propagation_note": "Run-222 Polish closed PI-207's polished leg (Bond engagement sentence + new [^11] def at end of VII.C in polished/section-07-iterative-improvement.md) and landed a placeholder leg into manuscript/full-draft.md ([^VII-bond-local] body marker plus matching def appended after [^181]) per PI-207's explicit Stitch-consumption authorization. [^11] reformulated from drafts' bare-cite form to the cross-section-reuse convention pointing at Section XI note 8 ('see infra Section XI note 8 (Bond ...); URL liveness is owned by Section XI per the article's cross-section-reuse convention') matching polished/section-01 [^9] and polished/section-12 [^10]. Polished word_count 1191 -> 1230 (+39 tokens by whitespace tokenization; 1230/1100 = +11.8%, just past the +/-10% Polish band, exacerbating PI-190 but not opening a new flag). full-draft.md total_words 13350 -> 13389; the assembly stays within the 10,000-14,000 policy window with 611 words of ceiling headroom. Mechanical sweep at the edit point: zero em dashes, zero straight quotes (curly throughout). Voice practitioner-scholarly; tightness one long semicolon-spliced sentence (deliberate two-clause structure carrying the architecture-instantiates claim and the meta-review-corpus distinction); first-person 5 (no I introduced); section coherence strengthened (VII.C now closes with a forward-pointer to Section XI's evaluation framing). PI-207 status: route changed from polish to stitch; note extended with the run-222 partial resolution and Stitch-renumber instructions; stays OPEN until the next Stitch consumes the placeholder and renumbers."
+      "verify_routing_reason": "Run-217 Verify: Section 07 re-audit after run-208 Polish reset (closed PI-206 line-count leg). provenance_score 4.0 -> 4.4 (5/4/4/5/4); numerical_precision lifted to 5 (line-count qualifier gone), the four other criteria reproduce the run-203 audit. 4.4 < 4.5 holds polish_status at needs_polish. Persona 1 (JLE Editor) opened NEW PI-207 (resolution-propagation gap, Bond [^11] / VII.C engagement-sentence leg of the run-200 Cite resolution never propagated to polished or full-draft); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta)."
     },
     "08": {
       "cite_completed_at": "2026-06-04T07:00:00Z",
@@ -1794,6 +1778,7 @@
       "evidence_populated_at": "2026-05-22T13:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 14,
+      "last_cite_run": 221,
       "last_phase": "stitch",
       "last_polish_propagation_at": "2026-06-07T07:00:00Z",
       "last_polish_propagation_run": 215,
@@ -1819,8 +1804,7 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-06-01T13:00:00Z",
-      "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch.",
-      "last_cite_run": 221
+      "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch."
     },
     "12": {
       "cite_at": "2026-06-01T21:00:00Z",
@@ -1922,7 +1906,7 @@
     "last_run_at": "2026-06-07T11:00:00Z",
     "new_findings_count": 1,
     "p0_open": 0,
-    "p1_open": 117,
+    "p1_open": 116,
     "p2_open": 43,
     "personas_read": 4
   },

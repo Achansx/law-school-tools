@@ -1017,15 +1017,15 @@
       "opened_at": "2026-06-03T23:00:00Z",
       "opened_run": 189,
       "persona": "AI-in-Education Researcher (Persona 3)",
+      "resolution": "Polish run 194 applied the issue's own scale-not-verifiable fallback: trimmed the scale-less raw means 6.37/4.71 from V.D prose and recast to lead with the construct-named, scale-free effect size and significance (Cohen's d of 0.86, p less than 0.001); footnote [^14] retains the full reported figures. The prose effect is now interpretable to a learning-sciences reader without a stated scale. Section 05 polish_status -> ready_for_stitch; provenance_audited reset false for Verify re-audit.",
+      "resolved_at": "2026-06-04T09:00:00Z",
+      "resolved_by_phase": "polish",
+      "resolved_run": 194,
       "routed_to": "polish/cite-05",
       "section": "05",
       "severity": "P1",
       "status": "resolved",
-      "type": "uninterpretable-effect-size",
-      "resolved_at": "2026-06-04T09:00:00Z",
-      "resolved_run": 194,
-      "resolved_by_phase": "polish",
-      "resolution": "Polish run 194 applied the issue's own scale-not-verifiable fallback: trimmed the scale-less raw means 6.37/4.71 from V.D prose and recast to lead with the construct-named, scale-free effect size and significance (Cohen's d of 0.86, p less than 0.001); footnote [^14] retains the full reported figures. The prose effect is now interpretable to a learning-sciences reader without a stated scale. Section 05 polish_status -> ready_for_stitch; provenance_audited reset false for Verify re-audit."
+      "type": "uninterpretable-effect-size"
     },
     {
       "claim": "Section VII.A's first sentence asserts that Karpathy's autoresearch is 'a roughly six-hundred-thirty-line Python script' but footnote [^1] does not anchor the line count: the footnote enumerates the four design choices, projects approximately twelve experiments per hour and approximately one hundred experiments while the researcher sleeps, and names the verified fifty-experiments-overnight figure that L-001 specifically permits, but it does not name the script's line count or point at the file that would substantiate it.",
@@ -1033,12 +1033,12 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding. The line count is an empirical claim about the cited repository whose precision a JLE peer reviewer will check against the citation and, finding no support, flag as exactly the kind of unanchored empirical detail L-001's house-lessons restriction on Karpathy figures is meant to prevent (extended in spirit from numeric experiment figures to anchored-empirical-precision claims about the same repository). The line count is also not load-bearing for the article's argument; the structural-insight claim is carried by the four-design-choice enumeration in the footnote rather than by any size measurement of the script.",
       "opened_at": "2026-05-19T13:00:00Z",
       "phase": "verify",
-      "section": "07",
-      "status": "resolved",
-      "type": "unanchored-empirical-precision",
+      "resolution": "Cite run 200 took the routing note's option (b): the 'roughly six-hundred-thirty-line' qualifier was dropped from VII.A's first sentence, leaving 'a Python script that delegates the modify, run, evaluate, keep-or-discard loop to a language-model agent'. Footnote [^1]'s four-design-choice enumeration carries the structural-insight claim alone, consistent with L-001's house-lessons restriction and the article's practitioner-scholarly voice.",
       "resolved_at": "2026-06-05T02:30:00Z",
       "resolved_by_phase": "cite",
-      "resolution": "Cite run 200 took the routing note's option (b): the 'roughly six-hundred-thirty-line' qualifier was dropped from VII.A's first sentence, leaving 'a Python script that delegates the modify, run, evaluate, keep-or-discard loop to a language-model agent'. Footnote [^1]'s four-design-choice enumeration carries the structural-insight claim alone, consistent with L-001's house-lessons restriction and the article's practitioner-scholarly voice."
+      "section": "07",
+      "status": "resolved",
+      "type": "unanchored-empirical-precision"
     },
     {
       "claim": "Section XI.D footnote [^154] is referenced in the body before footnotes [^151]-[^153] (Section XI.E), violating the law-review convention that footnotes are numbered in order of first textual appearance.",
@@ -1046,12 +1046,12 @@
       "note": "Definitions are numerically correct in the Footnotes block (151,152,153,154 at full-draft lines 691/693/695/697); the defect is in-text marker order. The XI.D 'Made concrete, the artifact-dependent success criterion...' paragraph and its [^154] (which reads 'See supra notes 147 and 150') were inserted after XI.E's notes were numbered. Fix in the next Polish on Section 11: reorder the local section-11 footnotes so the XI.D note precedes the XI.E labeling-fork/data-status/single-owner notes, then let the next Stitch global renumber re-sequence the assembled draft. Distinct from PI-110 (Section II Bond stitch-deferred renumber) and PI-122 (Section II false cross-references).",
       "opened_at": "2026-06-01T13:00:00Z",
       "phase": "verify",
-      "section": "11",
-      "status": "resolved",
-      "type": "footnote-sequence-violation",
+      "resolution_note": "Local section-11 footnote reorder: inline markers were 1,2,3,4,5,6,7,8,9,10,14,11,12,13 and are now sequential 1..14; the old [^14] (artifact-matched success criterion) is now [^11], old [^11] (IRB labeling fork) is now [^12], old [^12] (data-collection status fork) is now [^13], old [^13] (single-owner routing) is now [^14]. Footnote-definition block reordered to match. Cross-references inside footnotes ('supra note 3', 'supra notes 7 and 10', 'supra Section VIII note 5') unaffected. The global renumber across the assembled draft rides the next Stitch.",
       "resolved_at": "2026-06-05T03:00:00Z",
       "resolved_by": "polish run 201",
-      "resolution_note": "Local section-11 footnote reorder: inline markers were 1,2,3,4,5,6,7,8,9,10,14,11,12,13 and are now sequential 1..14; the old [^14] (artifact-matched success criterion) is now [^11], old [^11] (IRB labeling fork) is now [^12], old [^12] (data-collection status fork) is now [^13], old [^13] (single-owner routing) is now [^14]. Footnote-definition block reordered to match. Cross-references inside footnotes ('supra note 3', 'supra notes 7 and 10', 'supra Section VIII note 5') unaffected. The global renumber across the assembled draft rides the next Stitch."
+      "section": "11",
+      "status": "resolved",
+      "type": "footnote-sequence-violation"
     },
     {
       "claim": "Section III.D footnote [^17] pin-cites the Roberts formulation 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' to Nat'l Fed'n of Indep. Bus. v. Sebelius, 567 U.S. 519, 552 (2012); Midpage findInOpinion on 567 U.S. 519 (opinionId 809122) confirms the quotation is verbatim-accurate but places the sentence between the *550 and *551 star-pagination markers (U.S. Reports page 550), not page 552.",
@@ -1059,25 +1059,25 @@
       "note": "Persona 4 (Provenance Auditor) P1, numerical-precision criterion; the canonical Prize Cases / Grier near-miss class (quote correct, locator off). The verbatim text is VERIFIED via Midpage, so this is a pin-cite correction, not a fabrication. Next Cite tick on Section 03 should re-confirm the exact U.S. Reports page via Midpage analyzeOpinion or the bound reporter and correct [^17] from 552 to 550 (or 550-51) if confirmed. Cite-owned; routes Section 03 cite_status -> needs_cite.",
       "opened_at": "2026-05-29T07:00:00Z",
       "phase": "verify",
-      "section": "03",
-      "status": "resolved",
-      "type": "pin-cite",
+      "resolution_note": "Run 207 Cite: Midpage findInOpinion opinionId 809122 re-confirmed the verbatim text 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' between the *550 and *551 star markers in 567 U.S. 519. Pin cite corrected 552 -> 550 in drafts/section-03-case-study.md [^17], polished/section-03-case-study.md [^17], and full-draft.md [^34], each with an audit-trail parenthetical naming opinionId 809122 and the *550/*551 bracket. Section 03 cite_status flipped to needs_polish; provenance_audited reset to false for the next Verify re-audit.",
       "resolved_at": "2026-06-05T15:00:00Z",
       "resolved_in_run": 207,
-      "resolution_note": "Run 207 Cite: Midpage findInOpinion opinionId 809122 re-confirmed the verbatim text 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' between the *550 and *551 star markers in 567 U.S. 519. Pin cite corrected 552 -> 550 in drafts/section-03-case-study.md [^17], polished/section-03-case-study.md [^17], and full-draft.md [^34], each with an audit-trail parenthetical naming opinionId 809122 and the *550/*551 bracket. Section 03 cite_status flipped to needs_polish; provenance_audited reset to false for the next Verify re-audit."
+      "section": "03",
+      "status": "resolved",
+      "type": "pin-cite"
     },
     {
-      "id": "PI-206",
-      "type": "resolution-propagation-gap",
-      "phase": "verify",
-      "opened_at": "2026-06-05T07:00:00Z",
-      "status": "resolved",
-      "route": "polish",
       "claim": "Section VII.A first sentence in the polished source-of-truth manuscript/polished/section-07-iterative-improvement.md AND in the assembled manuscript/full-draft.md still carry 'a roughly six-hundred-thirty-line Python script' qualifier on the Karpathy autoresearch script. The run-200 Cite tick recorded PI-044 closed by 'dropping the qualifier from body prose', but the edit only landed in drafts/section-07-iterative-improvement.md; it did not propagate up to the polished source or the assembled draft, so the L-001 Karpathy-figures discipline is violated at the canonical authority for the article even though PI-044 was archived as resolved.",
+      "id": "PI-206",
       "note": "Surfaced by Run-203 Verify Persona 1 (JLE Editor). The fix is to drop 'roughly six-hundred-thirty-line' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md so the polished/assembled prose matches the run-200 draft edit; the structural-insight claim in footnote [^1]/[^88] survives without the qualifier. The general lesson recorded in the run-203 BUILD_NARRATIVE: a Cite resolution that touches body prose must propagate to the polished source AND the assembled full-draft, not just the draft scratch file. Routes Section 07 polish_status (already needs_polish; no status delta from this PI). The corresponding run-203 provenance re-audit of Section 07 records the same defect under numerical_precision (deduction -1 from 5).",
+      "opened_at": "2026-06-05T07:00:00Z",
+      "phase": "verify",
+      "resolution_note": "Run-208 Polish dropped 'roughly six-hundred-thirty-line ' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md, matching the run-200 Cite edit that had only landed in drafts/section-07-iterative-improvement.md. Polished word_count 1193 -> 1191, full-draft total_words 13352 -> 13350. provenance_audited reset to false on Section 07 so the next Verify provenance re-audit reads the cleaned VII.A prose; the run-203 audit's -1 numerical_precision deduction was driven entirely by this defect and should clear. polish_status held at needs_polish per the PI-206 routing note (no status delta from this PI). The L-001 Karpathy-figures discipline now honored at the canonical authority for the article rather than only in the draft scratch file.",
       "resolved_at": "2026-06-05T17:00:00Z",
       "resolved_run": 208,
-      "resolution_note": "Run-208 Polish dropped 'roughly six-hundred-thirty-line ' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md, matching the run-200 Cite edit that had only landed in drafts/section-07-iterative-improvement.md. Polished word_count 1193 -> 1191, full-draft total_words 13352 -> 13350. provenance_audited reset to false on Section 07 so the next Verify provenance re-audit reads the cleaned VII.A prose; the run-203 audit's -1 numerical_precision deduction was driven entirely by this defect and should clear. polish_status held at needs_polish per the PI-206 routing note (no status delta from this PI). The L-001 Karpathy-figures discipline now honored at the canonical authority for the article rather than only in the draft scratch file."
+      "route": "polish",
+      "status": "resolved",
+      "type": "resolution-propagation-gap"
     },
     {
       "claim": "Cross-section Bond et al. (2024) title-spelling drift: Section 02 polished [^9], full-draft [^9] / [^150] / [^166] all carry 'Rigour' (British spelling); Sections 11 and 12 polished [^8] / [^10] carry 'Rigor' (American spelling). The Section 11 run-152 polish_note explicitly named the drift and noted that the run-111 reconciliation had landed 'Rigour' in the assembled draft while the polished sections diverged. Re-surfaced this tick during the Stitch fact-consistency sweep over Section XI; logged for the next Polish or Cite tick that touches one of the affected sections to verify the canonical Springer title spelling and harmonize across all five footnote sites.",
@@ -1085,12 +1085,32 @@
       "note": "Surfaced by Run-202 Stitch on Section XI. Not auto-resolved here because Stitch should not silently flip wording across sections without source verification of the canonical published title; WebFetch on the Springer abstract URL has been provenance-blocked in prior runs (idp.springer.com 303 redirect, the L-022 canonical case). The next Cite tick on any of Sections 02, 11, or 12 should run a fresh WebSearch with allowed_domains scoped to link.springer.com per L-022 (the title-and-URL match returns the verbatim canonical spelling), then a single Polish tick can sweep the five sites: assembled [^9] / [^150] / [^166] and polished section-02 [^9], section-11 [^8], section-12 [^10]. The article's general policy is to follow the cited source's spelling exactly (L-054 lowercase 'art.' precedent), so whichever spelling the Springer record uses is canonical. No assembled-draft prose changed at this Stitch tick; this entry preserves the audit trail for the harmonization.",
       "opened_at": "2026-06-05T05:00:00Z",
       "phase": "stitch",
+      "resolution_note": "Run-215 Polish propagation closed PI-205: Bond title spelling drift reconciled across all five footnote sites. Fresh WebSearch this run with allowed_domains scoped to link.springer.com per L-022 confirmed the canonical Springer title carries 'Rigour' (British spelling) in the verbatim title-and-URL match returned in the first result page. Edits landed in (a) polished/section-11-evaluation.md [^8] (was 'Rigor'), (b) polished/section-12-risks-and-limits.md [^10] (was 'Rigor'), and (c) drafts/section-11-evaluation.md [^8] (was 'Rigor'); the assembled full-draft.md ([^9]/[^150]/[^166]), polished/section-01 [^9], polished/section-02 [^9], and the other drafts/ files were already byte-aligned at 'Rigour'. Lowercase paraphrase 'rigor' / 'proportional rigor' / 'ethics-and-rigor' in body text and footnote tails left as-is because they are American-context paraphrase, not verbatim title quotation (L-054 applies to verbatim title reproduction only). provenance_audited reset to false on Sections 11 and 12 so the next Verify provenance re-audit registers the reconciliation; Section 11's run-137 audit had explicitly named the title spelling as a numerical_precision deduction so the score should lift on that criterion, and Section 12's prose changed in one location so a re-audit is appropriate. PI migrated to .article-state.archive.json.",
+      "resolution_run": 215,
+      "resolved_at": "2026-06-07T07:00:00Z",
       "route": "polish-or-cite",
       "status": "resolved",
-      "type": "fact-consistency-drift",
-      "resolved_at": "2026-06-07T07:00:00Z",
-      "resolution_run": 215,
-      "resolution_note": "Run-215 Polish propagation closed PI-205: Bond title spelling drift reconciled across all five footnote sites. Fresh WebSearch this run with allowed_domains scoped to link.springer.com per L-022 confirmed the canonical Springer title carries 'Rigour' (British spelling) in the verbatim title-and-URL match returned in the first result page. Edits landed in (a) polished/section-11-evaluation.md [^8] (was 'Rigor'), (b) polished/section-12-risks-and-limits.md [^10] (was 'Rigor'), and (c) drafts/section-11-evaluation.md [^8] (was 'Rigor'); the assembled full-draft.md ([^9]/[^150]/[^166]), polished/section-01 [^9], polished/section-02 [^9], and the other drafts/ files were already byte-aligned at 'Rigour'. Lowercase paraphrase 'rigor' / 'proportional rigor' / 'ethics-and-rigor' in body text and footnote tails left as-is because they are American-context paraphrase, not verbatim title quotation (L-054 applies to verbatim title reproduction only). provenance_audited reset to false on Sections 11 and 12 so the next Verify provenance re-audit registers the reconciliation; Section 11's run-137 audit had explicitly named the title spelling as a numerical_precision deduction so the score should lift on that criterion, and Section 12's prose changed in one location so a re-audit is appropriate. PI migrated to .article-state.archive.json."
+      "type": "fact-consistency-drift"
+    },
+    {
+      "id": "PI-207",
+      "last_updated_at": "2026-06-07T21:00:00Z",
+      "last_updated_in_run": 222,
+      "note": "Surfaced by the run-217 Verify provenance re-audit of Section 07. The run-200 Cite tick (cite_note_run200) recorded PI-048 closed by adding a Bond et al. (2024) AIHE meta-review engagement sentence at the end of VII.C with new footnote [^11], landing in drafts/section-07-iterative-improvement.md only. PI-206 captured the line-count leg of the same drafts-vs-polished propagation gap and was closed at run 208 by dropping the 'roughly six-hundred-thirty-line' qualifier in both polished/section-07-iterative-improvement.md and manuscript/full-draft.md line 210; the run-208 Polish did NOT propagate the Bond [^11] addition, and PI-048 was archived against the drafts-only resolution. State's sections.07.footnotes_count: 11 and the polished file's frontmatter footnotes_count: 10 show the metadata drift. The next Polish tick on Section 07 should propagate the Bond engagement sentence and the [^11] definition from drafts/section-07-iterative-improvement.md into polished/section-07-iterative-improvement.md AND into manuscript/full-draft.md (the global footnote number assigned via Stitch renumbering or held as [^11-local] for the Stitch pass to consume), mirroring the run-208 surgical pattern that closed PI-206 at three sites. Routes Section 07 polish_status: needs_polish (already set; no status delta). The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 a Cite resolution touching body prose must propagate to polished and the assembled full-draft, not just the drafts scratch file \u2014 applies here too; PI-207 is the second leg of the same defect PI-206 captured only one leg of, and the multi-facet-PI-archived-on-single-facet pattern (run-189 / PI-013 narrative; run-217 / PI-048 narrative) recurs.\n\n[run-222 update] Run-222 Polish landed BOTH legs partially: (a) polished/section-07-iterative-improvement.md received the Bond engagement sentence at end of VII.C plus new [^11] footnote def reformulated to the cross-section-reuse convention (pointing at Section XI note 8 for URL liveness), and (b) manuscript/full-draft.md received the body sentence at line 222 plus a placeholder footnote marker [^VII-bond-local] with matching def appended after [^181] per the PI-207 routing-note authorization. The polished leg is the source-of-truth leg, FULLY CLOSED this run; the full-draft leg landed with the placeholder marker the next Stitch tick should CONSUME by renumbering [^93]-[^181] to [^94]-[^182] (inserting a new global footnote between current [^92] and [^93]). Route changed from polish to stitch; PI-207 stays OPEN until the next Stitch closes the renumber. The multi-facet-PI pattern the run-217 narrative flagged is now made explicit by tracking each leg separately (polished leg done; full-draft Stitch-renumber leg pending) rather than archiving the whole PI on single-facet resolution.",
+      "opened_at": "2026-06-07T11:00:00Z",
+      "opened_in_run": 217,
+      "phase": "stitch",
+      "resolution_note": "Run-223 Stitch consumed the run-222 Polish placeholder. The [^VII-bond-local] body marker at full-draft.md line 222 was replaced with [^93], and the new global [^93] footnote def was inserted between former [^92] and former [^93] in the defs block. Existing defs [^93]-[^181] were renumbered to [^94]-[^182] (89 def-header shifts), 93 body-marker occurrences with N>=93 shifted by +1, 14 inline [^N] def-cross-refs shifted by +1, and 16 textual 'note N' def-cross-refs shifted by +1 (note 98 -> 99 x4, note 102 -> 103 x2, note 112 -> 113 x2, note 145 -> 146 x2, note 150 -> 151 x4, note 166 -> 167 x1). The new [^93] def globalized polished/section-07 [^11]'s cross-section reuse text from local notes (Section XI note 8, Section XII note 10) to global notes (Section XI note 151, Section XII note 167) per the article's cross-section reference convention and corrected the directional particles from 'supra' to 'infra' since Section VII precedes Sections XI and XII (L-035). STITCH-RENUMBER PENDING marker removed. Contiguity re-verified end-to-end: 182 contiguous def headers [^1]-[^182] with no gap/dup/orphan; every body marker resolves to a def. PI-207 migrated to .article-state.archive.json.",
+      "resolution_run": 223,
+      "resolved_at": "2026-06-07T23:00:00Z",
+      "route": "stitch",
+      "section": "07",
+      "severity": "P1",
+      "status": "resolved",
+      "title": "Section 07 VII.C Bond [^11] engagement-sentence leg of the run-200 Cite resolution never propagated from drafts to polished/full-draft",
+      "type": "resolution-propagation-gap",
+      "verify_persona": "Persona 1 (Skeptical JLE Editor)",
+      "verify_run": 217
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
