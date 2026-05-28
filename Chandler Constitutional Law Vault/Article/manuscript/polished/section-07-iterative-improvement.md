@@ -9,12 +9,12 @@ draft_status: needs_polish
 cite_status: needs_polish
 polish_status: needs_polish
 footnotes_count: 10
-provenance_audited: false
-provenance_audited_at: 2026-06-05T07:00:00Z
-provenance_audit_run: 203
-provenance_score: 4.0
-claims_total: 22
-claims_mapped: 21
+provenance_audited: true
+provenance_audited_at: 2026-06-07T11:00:00Z
+provenance_audit_run: 217
+provenance_score: 4.4
+claims_total: 21
+claims_mapped: 20
 unsupported_claims:
   - claim_text: "VII.D paragraph 2 final sentence asserts 'The per-phase-rubric-only principle is the article's own L-007', citing an internal vault LESSONS entry by its catalog identifier as standalone inline authority for a general design principle. L-007 is not reproduced in the prose and is unresolvable by a reader; footnote [^7] routes the underlying tiered-loading principle to App. A, so the inline 'L-007' label carries no external or appendix-anchored authority on its own."
     paragraph: 2
@@ -25,7 +25,8 @@ audit_notes:
     note: "Re-audit after run-200 Cite reset of provenance_audited. Polished source is byte-identical to the run-152 Polish output: the run-200 Cite tick landed Bond [^11] and dropped the VII.A 'roughly six-hundred-thirty-line' qualifier in drafts/section-07-iterative-improvement.md only, so the polished file the audit reads has not received those edits. Numerical_precision deducted to 4 for the unanchored VII.A line-count qualifier; the same defect is routed to PI-206 (resolution-propagation gap) for Polish to close once it brings the polished source into line with the draft. Score reproduces the run-167 4.0 because nothing in the audited source has changed."
   - run: 208
     note: "Run-208 Polish dropped the VII.A 'roughly six-hundred-thirty-line' qualifier in both polished/ and full-draft.md, closing PI-206. provenance_audited reset to false for the next Verify provenance re-audit; the run-203 4.0 score's numerical_precision -1 deduction should clear at the next audit since this was its sole cause."
----
+  - run: 217
+    note: "Re-audit after the run-208 Polish reset. Numerical_precision rose 4 to 5 (the unanchored VII.A line-count qualifier is gone, the verified fifty-experiments-overnight figure and the March 7 2026 release date both anchored in [^1]); claim_coverage stays at 5 (20/21 = 95.2% mapped, the line-count claim dropped from the manifest because the prose no longer carries it); primary_source_ratio stays at 4 (PI-207 NEW resolution-propagation gap discovered this run: the run-200 Cite tick added Bond [^11] at VII.C in drafts/section-07-iterative-improvement.md but the polished source-of-truth and the assembled full-draft both still carry the 10-footnote run-152 Polish output with no Bond engagement, leaving the Karpathy-plus-internal-anchor concentration that PI-048 was meant to broaden visible in the audited source; the standing VII.D L-007 inline-label still routes through body prose without appendix anchoring); attribution_discipline stays at 4 (the standing VII.D L-007 entry is the sole deduction, re-confirmed by Persona 4 this run); gap_honesty stays at 4 (the prose now correctly omits the line-count, but does not flag inline that PI-207's Bond engagement-sentence leg is missing from VII.C and does not flag the L-007 internal-label as a deliberate concession). provenance_score 4.0 -> 4.4 (+0.4, the largest single-audit movement on Section 07 across five consecutive audits at runs 129/147/167/189/203 all 4.0); claims_total 22 -> 21 (line-count claim no longer in prose); claims_mapped 21 -> 20 (line-count claim was mapped to [^1] in the frontmatter accounting at run 203); unsupported_claims stays 1 (VII.D L-007 entry, unchanged). 4.4 < 4.5, so Section 07 stays at polish_status: needs_polish; the next Polish tick needs to close both PI-207 (Bond [^11] propagation) and the VII.D L-007 rewrite to clear the gate."
 
 # VII. Iterative Improvement Under Professorial Control
 
