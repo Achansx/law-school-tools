@@ -85,28 +85,28 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-29T11:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-29T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
     "confirmed_stitched_count": 0,
     "full_draft_exists": true,
-    "last_polish_propagation_at": "2026-05-28T23:00:00Z",
-    "last_polish_propagation_note": "Run-222 Polish landed PI-207's polished leg AND a placeholder leg into manuscript/full-draft.md: Bond engagement sentence at end of VII.C (line 222) plus [^VII-bond-local] body marker; matching definition appended after [^181] in defs block with explicit STITCH-RENUMBER PENDING instructions for the next Stitch to renumber [^93]-[^181] to [^94]-[^182] by inserting a new global footnote between current [^92] and [^93]. Contiguity 181-contiguous-plus-1-placeholder until consumed. total_words 13350 -> 13389 (+39 tokens); 611 words of ceiling headroom within the 10,000-14,000 policy window.",
-    "last_polish_propagation_run": 229,
+    "last_polish_propagation_at": "2026-05-29T13:00:00Z",
+    "last_polish_propagation_note": "Run-236 Polish landed six Section XIII PI fixes and propagated to manuscript/full-draft.md per L-035: PI-093 (XIII.C runtime-auditability overclaim narrowed to traceable-to-named-pre-publication-reviewer; global [^173] description tail updated), PI-094 (XIII.C scholarly-output assertion recast as 'counts as scholarship is itself contested'), PI-095 (XIII.D capacity-gap clause added with new global [^175] supra Section XII), PI-165 (XIII.A meta-rhetoric recast as direct semicolon-joined claim), PI-166 (XIII.B artifact-building-vs-classroom-teaching sentence added), PI-167 (XIII.A architectural-alternative sentence with new global [^169] supra Section XII). Two new internal supra footnotes (no new external sources; allowed for Polish per L-024/L-035). Global renumber: old [^169]-[^173] -> [^170]-[^174] (+1); old [^174]-[^182] -> [^176]-[^184] (+2). Net footnote count 182 -> 184 contiguous defs [^1]-[^184], all body refs resolving, zero duplicates, zero orphans (regex-verified). Section 13 current_words 500 -> 549; total_words 13412 -> 13461; 539 words of ceiling headroom inside the 10,000-14,000 policy window.",
+    "last_polish_propagation_run": 236,
     "last_stitched_at": "2026-05-29T01:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13412,
+    "total_words": 13461,
     "stitch_run": 230,
     "stitch_note_run230": "Run-230 Stitch (interim per RUNBOOK adaptive mode; 0 of 14 polish_status ready_for_stitch or stitched). Pass-through verify-and-reconcile tick: run-228 Cite Section 12 [^167] typology pin cite (line 727) and run-229 Polish Section 07 VII.C two-sentence rewrite carrying global [^93] (line 223) both already in the assembly. Footnote integrity 182 contiguous [^1]-[^182] (zero gap/dup/orphan, all body refs resolve to a def). Recurring sentence exactly three canonical placements (I.B line 41, VII/VIII seam line 235, XIV.C line 389). Bond title 'Rigour' consistent at lines 411/579/695/727 plus 'rigour' lowercase at line 223 matching British source spelling. Terminology umbrella 'course knowledge system' unchanged (14 occurrences); 'AI tutor' only in Dong et al. comparison context (line 165 and [^71]); 'knowledge graph' only in hyphenated technical-mechanism contexts. Reconciled full-draft.md frontmatter total_words 13389 -> 13390 to match state's run-229 Polish update (one-tick frontmatter-vs-state drift closed). Submission gate stays FALSE: zero sections at polish_status:stitched, twelve sections at provenance_score < 4.5, open routed PIs against the assembled draft (PI-082, PI-086, PI-181 XIV.A leg, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209) remain."
   },
@@ -564,26 +564,6 @@
       "type": "internal-artifact-leak"
     },
     {
-      "claim": "Section XIII.C sentence 4 ('The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not.' [^144]) overclaims that a runtime system's generated responses are not auditable; runtime systems can and do log their generations, so the responses are auditable as text. The distinction the article actually wants is accountability to a named pre-publication human reviewer, not auditability as such. The supporting footnote [^144] is a supra to Section XII, which is still PENDING.",
-      "id": "PI-093",
-      "note": "Persona 1 (Skeptical JLE Editor) P1 finding on Section XIII.C. The static-vs-chatbot distinction is load-bearing for the article (cf. PI-021/PI-022 at Section VIII), so a categorical 'not auditable' overclaim against runtime systems is exactly the overstatement a skeptical reviewer flags. Next Polish tick on Section 13 should narrow the sentence to name the real distinction, e.g. 'The chain of responsibility runs to a named professor who reviewed the page before publication, an accountability a runtime system's generated responses do not carry.' P1-deferral active; logged without status reset. The [^144] supra-to-PENDING-Section-XII reference is a known interim artifact (flagged at the run-83 Stitch) that resolves when XII lands; it is not a directional error.",
-      "opened_at": "2026-05-25T03:00:00Z",
-      "phase": "verify",
-      "section": "13",
-      "status": "open",
-      "type": "chatbot-architecture-overclaim"
-    },
-    {
-      "claim": "Section XIII.C sentence 5 ('A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion') asserts as settled that the artifact IS a scholarly output, then frames the open question as merely how to classify it. Whether a reviewed course website counts as scholarship at all, as opposed to teaching material, is itself contested in promotion-and-tenure practice; the flat 'is a scholarly output' pre-decides the recognition question the sentence claims to leave open.",
-      "id": "PI-094",
-      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding on Section XIII.C. The article's thesis turns on honest scoping of what it claims; asserting scholarly status as a premise rather than as the contested recognition question is an overclaim a traditionalist promotion-committee reader will catch. Next Polish tick on Section 13 should recast so scholarly status is the open question, e.g. 'Whether a versioned, citable, publicly served course artifact counts as a scholarly output, as teaching infrastructure, or as both is the recognition question an institution must decide.' P1-deferral active; logged without status reset.",
-      "opened_at": "2026-05-25T03:00:00Z",
-      "phase": "verify",
-      "section": "13",
-      "status": "open",
-      "type": "recognition-overclaim"
-    },
-    {
       "claim": "Section XIII frames institutional adoption as 'a modest, replicable infrastructure investment' (XIII.D) supported by library, instructional-design, and information-technology stewardship (XIII.B), but is silent on the institutional digital divide: that stewardship is itself unevenly distributed across institutions, so 'modest' and 'replicable' overstate for under-resourced schools. The equity-and-accessibility-silence pattern (PI-026/PI-033/PI-064/PI-071/PI-080) recurs at the institution-resource level rather than the student-access level.",
       "id": "PI-095",
       "note": "Persona 3 (AI-in-Education Researcher) P1 finding on Section XIII. The run-82 Polish tick declined L-050's access-assumption sentence on the ground that Section XIII 'makes no open-access claim', but XIII.A's OER complementary-positioning ('open-resource commitment to reusable, openly licensed teaching materials') and XIII.D's 'modest, replicable infrastructure investment' framing do make an institutional-resource-equity assumption that L-050's spirit reaches. Next Polish tick on Section 13 should add one sentence to XIII.B or XIII.D conceding the institutional-resource asymmetry with a Section XII forward-reference, e.g. 'The library, instructional-design, and information-technology stewardship the method assumes is itself unevenly distributed across institutions, a resource-equity limit Section XII takes up.' Refines the L-050 boundary: an open-resource POSITIONING claim, not only an open-ACCESS claim, triggers the access-assumption sentence. P1-deferral active; logged without status reset.",
@@ -591,7 +571,10 @@
       "phase": "verify",
       "section": "13",
       "status": "open",
-      "type": "equity-and-accessibility-gap"
+      "type": "equity-and-accessibility-gap",
+      "landed_at": "2026-05-29T13:00:00Z",
+      "landed_by_run": 236,
+      "landed_note": "Run-236 Polish added a closing clause to XIII.D's institutional-implication sentence: '...offered as an invitation rather than a mandate, subject to a capacity gap in library, instructional-design, and information-technology stewardship that Section XII develops.[^8]' New internal supra footnote [^8] (global [^175]) points to Section XII (Risks and Limits) for the institutional-capacity-gap access constraint. The concession names the same three institutional roles XIII.B already names as the stewardship matrix, so the 'modest, replicable' framing is hedged by the institutional digital divide. Left OPEN for next Verify to certify the concession satisfies the AI-in-Education-Researcher persona's equity-and-accessibility concern."
     },
     {
       "claim": "Section XIII engages no external scholarship on open-educational-resource adoption, the scholarship of teaching and learning (SoTL), or the recognition of teaching artifacts in promotion review; footnote [^140] cites only the two OER project home pages plus an MIT News press release, and [^141]-[^146] are internal supra/infra cross-references. The complementary-positioning (XIII.A) and recognition (XIII.C) claims therefore rest on zero scholarly literature, recurring the citation-density pattern (PI-025/PI-032/PI-040/PI-048/PI-072/PI-088).",
@@ -1034,16 +1017,6 @@
       "type": "methodology-rigor-gap"
     },
     {
-      "claim": "Section XIII.A surfaces the article's own transfer-of-inference analytic move to the reader in prose -- 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' -- narrating the reasoning architecture rather than making the positioning claim directly. Fresh-site recurrence of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161). Distinct from PI-094 (recognition overclaim) and PI-092 (footnote internal-artifact leak).",
-      "id": "PI-165",
-      "note": "Persona 1 (Skeptical JLE Editor), Verify run 139. P1; deferral lifted so routes Section 13 polish_status:needs_polish (already set). Suggested fix: recast as a direct claim -- the open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not -- dropping the 'What carries across / What does not carry across' scaffolding.",
-      "opened_at": "2026-05-30T03:00:00Z",
-      "phase": "verify",
-      "section": "13",
-      "status": "open",
-      "type": "voice-slip"
-    },
-    {
       "claim": "Section XIII.B frames the contribution as 'faculty scholarship of teaching coupled with institutional stewardship', characterizing the professor's role as authoring and curating a navigable artifact; the section never distinguishes the labor of building and stewarding a course knowledge system from the labor of teaching with it in a live classroom (Socratic dialogue, in-class hypotheticals, live student confusion). Reads as equating good editorial/curatorial labor with good teaching.",
       "id": "PI-166",
       "note": "Persona 2 (Legal Pedagogy Traditionalist), Verify run 139. On-brief: 'confuses being a good editor with being a good teacher.' Distinct from PI-094 (recognition-as-scholarship) and PI-095 (equity/accessibility). P1; routes Section 13 polish_status:needs_polish (already set). Suggested fix: add a sentence in XIII.B distinguishing the artifact-building/stewardship labor from classroom teaching, and note the section addresses the former, not a claim that the artifact substitutes for the live teaching it supports.",
@@ -1051,7 +1024,10 @@
       "phase": "verify",
       "section": "13",
       "status": "open",
-      "type": "editor-vs-teacher-conflation"
+      "type": "editor-vs-teacher-conflation",
+      "landed_at": "2026-05-29T13:00:00Z",
+      "landed_by_run": 236,
+      "landed_note": "Run-236 Polish added a sentence to XIII.B between the institutional-roles enumeration and the closing 'faculty scholarship of teaching coupled with institutional stewardship' sentence: 'What this section names is artifact-building labor; teaching with the artifact remains the professor's classroom craft.' The labor of building and stewarding the artifact is now explicitly distinguished from the labor of teaching with it in the live classroom (Socratic dialogue, in-class hypotheticals, seminar craft). Left OPEN for next Verify to certify the distinction satisfies the Legal-Pedagogy-Traditionalist persona's editor-vs-teacher-conflation concern."
     },
     {
       "claim": "Section XIII.A positions the course knowledge system only against open-educational-resource text repositories (H2O, eLangdell) as 'complementary rather than a competing channel', and never positions it against the LMS-integrated AI-tutor and adaptive-courseware products an institution actually evaluates alongside it; the architectural-choice rationale (reviewed static site vs. institutional AI-tutor procurement) is left unmade at the institutional-infrastructure level.",
@@ -1061,7 +1037,10 @@
       "phase": "verify",
       "section": "13",
       "status": "open",
-      "type": "chatbot-architecture-engagement-gap"
+      "type": "chatbot-architecture-engagement-gap",
+      "landed_at": "2026-05-29T13:00:00Z",
+      "landed_by_run": 236,
+      "landed_note": "Run-236 Polish added a sentence to XIII.A between the complementary-positioning sentence and the structure-vs-text contrast: 'The architectural alternative is the runtime AI tutor or adaptive courseware; this method chooses the reviewed static site instead.[^2]' New internal supra footnote [^2] (global [^169]) points to Section XII (Risks and Limits) for the architectural contrast. The contemporary alternative an institution actually weighs alongside this method (runtime LMS-integrated AI tutor and adaptive courseware) is now named, and this method's architectural choice (reviewed static site) is stated. Left OPEN for next Verify to certify the engagement satisfies the AI-in-Education-Researcher persona's chatbot-architecture-engagement-gap concern."
     },
     {
       "claim": "Section XIV.B (paragraph 2, final sentence) states 'The article earns a reader's trust precisely by bounding what it will and will not assert.' The sentence narrates the rhetorical effect of the preceding disclaimers instead of letting them do the work.",
@@ -1370,7 +1349,7 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 231. The defect compounds a publication-register slip (internal catalog identifiers in body prose, violating PROJECT_PRIMER's no-internal-cites-in-published-text rule) with the archival-status staleness the run-217 Section 09 provenance audit already captured in three `unsupported_claims` entries with reason 'evidence-gap'. The audit's evidence-gap framing names the archival staleness but not the register slip the JLE-editor altitude catches. Structurally parallel to the standing VII.D L-007 unsupported_claim entry (Persona 4 re-confirmed seventh consecutive at this run); both are internal-catalog-identifier labels in body prose at the same defect class, with PI-210 capturing the IX.E instance and L-007 the longer-running VII.D peer. Next Polish or Cite tick on Section 09 should rewrite IX.E paragraph 5 final sentence to drop the inline 'PI-049', 'PI-050', 'PI-051' catalog labels and instead state the three outstanding work items in the article's own voice with App. C pointers carrying the support; e.g., 'Three Section IX work items frame what is still outstanding: the master cost-and-labor table assembled per the workplan's retroactive backfill protocol, the external pricing lookups for Anthropic API pricing, Netlify free-tier and upgrade pricing, and any metered MCP service prices, and the person-hours backfill across the four labor categories with honest confidence ranges, the methodology in a footnote so a reader can replicate it against the same vault and git history.[^15]' Re-point footnotes [^15] and [^16] from `.article-state.json` to App. C (Cost Log) Methodology Note, and update the Section 09 frontmatter to clear the three unsupported_claims entries since the publication-register slip and the archival-status staleness are both resolved by the rewrite. Routes Section 09 polish_status: needs_polish (already set; no status delta)."
     }
   ],
-  "phase_index": 4,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -1391,7 +1370,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 235,
+  "run_count": 236,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1850,7 +1829,7 @@
       "cite_status": "needs_polish",
       "claims_mapped": 12,
       "claims_total": 12,
-      "current_words": 500,
+      "current_words": 549,
       "draft_at": "2026-05-24T19:00:00Z",
       "draft_status": "needs_polish",
       "evidence_cards": 6,
@@ -1860,7 +1839,7 @@
       "outline_status": "ready_for_draft",
       "polish_at": "2026-05-24T23:00:00Z",
       "polish_note": "Polished from drafts/section-13. Split four over-length argumentative sentences in 13.A and 13.C (L-029 procedural-enumeration exemption does not reach this non-infrastructure argument section); converted the 13.B institutional-role list-after-colon into a parallel active-verb sentence with the library, instructional design, and IT each carrying its own verb (L-031 named-human-actor verbs); removed two self-flagging meta-rhetoric constructions per L-036/L-048 (\"naming that split is the institutional implication\" -> \"that split is the institutional implication\"; \"The article names that question without resolving it\" -> direct assertion). No em dashes or straight quotes in body or footnotes (L-023). Footnote URL-verification annotations preserved per the article-wide convention (cf. polished Section 10 [^12]). 478 words, within +-10% of the 500 target. polish_status none -> ready_for_stitch.",
-      "polish_status": "needs_polish",
+      "polish_status": "ready_for_stitch",
       "provenance_audited": false,
       "provenance_score": 3.8,
       "target_words": 500,
@@ -1871,7 +1850,10 @@
       "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish.",
       "cite_completed_at": "2026-05-29T11:00:00Z",
       "last_cite_touch_run": 235,
-      "last_cite_touch_note": "Run-235 Cite: resolved PI-168 (XIII.A platform-vs-series joint-publisher overclaim) by rewriting the second sentence to distinguish H2O Open Casebooks (Harvard Law School Library Innovation Lab) from the separate MIT Press / Harvard Law School Library 2022 open casebook series built on the H2O platform, and from CALI's eLangdell Press. Swept Section 13's PI-092 footnote-leak instance from [^1]: dropped 'per L-022', the WebFetch/WebSearch fetch-mechanism narration, and the 'this run' tags while preserving the (last visited)/URL-verified-live anchors per the run-151 Section XI pattern. PI-092 remains open article-wide for other sections. URL liveness re-verified live this run: opencasebook.org via WebSearch (Library Innovation Lab description); news.mit.edu MIT-Press/Harvard 2022 series via WebFetch; cali.org eLangdell via WebFetch ('100% Free. Creative Commons licensed. Peer-reviewed.' tagline confirmed). Edits landed at three sites per L-035: polished, drafts, full-draft.md [^168]. provenance_audited reset to false because the prose and footnote materially changed."
+      "last_cite_touch_note": "Run-235 Cite: resolved PI-168 (XIII.A platform-vs-series joint-publisher overclaim) by rewriting the second sentence to distinguish H2O Open Casebooks (Harvard Law School Library Innovation Lab) from the separate MIT Press / Harvard Law School Library 2022 open casebook series built on the H2O platform, and from CALI's eLangdell Press. Swept Section 13's PI-092 footnote-leak instance from [^1]: dropped 'per L-022', the WebFetch/WebSearch fetch-mechanism narration, and the 'this run' tags while preserving the (last visited)/URL-verified-live anchors per the run-151 Section XI pattern. PI-092 remains open article-wide for other sections. URL liveness re-verified live this run: opencasebook.org via WebSearch (Library Innovation Lab description); news.mit.edu MIT-Press/Harvard 2022 series via WebFetch; cali.org eLangdell via WebFetch ('100% Free. Creative Commons licensed. Peer-reviewed.' tagline confirmed). Edits landed at three sites per L-035: polished, drafts, full-draft.md [^168]. provenance_audited reset to false because the prose and footnote materially changed.",
+      "polish_completed_at": "2026-05-29T13:00:00Z",
+      "last_polish_touch_run": 236,
+      "last_polish_touch_note": "Run-236 Polish: landed six Polish-owned PI fixes on Section XIII. PI-093 (XIII.C runtime-auditability overclaim) narrowed to traceable-to-named-pre-publication-reviewer; footnote [^6] (global [^173]) description tail updated to match. PI-094 (XIII.C scholarly-output assertion treated as settled) recast as 'counts as scholarship is itself contested'. PI-095 (XIII.D equity/accessibility / institutional-capacity gap) added a capacity-gap clause to the closing institutional-implication sentence pointing to a new internal [^8] (global [^175]) supra Section XII. PI-165 (XIII.A 'What carries across / What does not carry across' meta-rhetoric) recast as a direct semicolon-joined claim 'The open-resource commitment ... carries across; the object of publication does not' per L-036/L-048. PI-166 (XIII.B editor-vs-teacher conflation) added a sentence distinguishing artifact-building labor from teaching with the artifact in the classroom. PI-167 (XIII.A chatbot-architecture engagement gap) added an architectural-alternative sentence naming the runtime AI tutor and adaptive courseware as the contemporary alternative, with new internal [^2] (global [^169]) supra Section XII. Two new internal supra footnotes added (no new external sources; internal cross-references only). Footnote count 7 -> 9 in section-local numbering; global numbering renumbered 169..173 -> 170..174 and 174..182 -> 176..184; net global footnote count 182 -> 184. All edits propagated per L-035 to polished, drafts, and full-draft.md in the same tick. current_words 500 -> 549 (within +/-10% of 500 target). Resolution discipline per run-152 pattern: objective mechanical/factual P1s (PI-093, PI-094, PI-165) marked resolved and archived; persona-judgment P1s (PI-095, PI-166, PI-167) landed but kept OPEN for next Verify to certify the concessions satisfy the persona concerns. Mechanical hygiene clean: zero em dashes, all curly apostrophes/quotes, the 43-word XIII.A OER opener preserved as a deliberate three-actor enumeration list per L-029."
     },
     "14": {
       "cite_completed_at": "2026-05-25T11:00:00Z",
@@ -1909,7 +1891,7 @@
     "last_run_at": "2026-05-29T03:00:00Z",
     "new_findings_count": 1,
     "p0_open": 0,
-    "p1_open": 117,
+    "p1_open": 114,
     "p2_open": 43,
     "personas_read": 4
   },

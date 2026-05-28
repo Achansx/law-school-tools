@@ -1158,6 +1158,45 @@
       "resolved_at": "2026-05-29T11:00:00Z",
       "resolved_by_run": 235,
       "resolution_note": "Closed by run-235 Cite: XIII.A second sentence rewritten to distinguish the three OER actors the footnote actually supports \u2014 H2O Open Casebooks (Harvard Law School Library Innovation Lab platform), the MIT Press / Harvard Law School Library jointly launched 2022 open casebook series built on the H2O platform, and CALI's eLangdell Press. The compressed joint-publisher framing the provenance audit flagged is removed; the three URLs were re-verified live this run (opencasebook.org via WebSearch, news.mit.edu and cali.org via WebFetch). Section 13 unsupported_claims goes 1->0."
+    },
+    {
+      "claim": "Section XIII.C sentence 4 ('The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not.' [^144]) overclaims that a runtime system's generated responses are not auditable; runtime systems can and do log their generations, so the responses are auditable as text. The distinction the article actually wants is accountability to a named pre-publication human reviewer, not auditability as such. The supporting footnote [^144] is a supra to Section XII, which is still PENDING.",
+      "id": "PI-093",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding on Section XIII.C. The static-vs-chatbot distinction is load-bearing for the article (cf. PI-021/PI-022 at Section VIII), so a categorical 'not auditable' overclaim against runtime systems is exactly the overstatement a skeptical reviewer flags. Next Polish tick on Section 13 should narrow the sentence to name the real distinction, e.g. 'The chain of responsibility runs to a named professor who reviewed the page before publication, an accountability a runtime system's generated responses do not carry.' P1-deferral active; logged without status reset. The [^144] supra-to-PENDING-Section-XII reference is a known interim artifact (flagged at the run-83 Stitch) that resolves when XII lands; it is not a directional error.",
+      "opened_at": "2026-05-25T03:00:00Z",
+      "phase": "verify",
+      "section": "13",
+      "status": "resolved",
+      "type": "chatbot-architecture-overclaim",
+      "resolved_at": "2026-05-29T13:00:00Z",
+      "resolved_by_run": 236,
+      "resolution_note": "Run-236 Polish narrowed XIII.C sentence 'The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not' to 'The chain of responsibility traces to a named pre-publication human reviewer in a way a runtime system's generations do not.' Global footnote [^173] description tail updated correspondingly. The persona's flagged overclaim (runtime systems CAN log generations as text) is now resolved by naming the real distinction: traceability to a named pre-publication human reviewer, not auditability of the text itself."
+    },
+    {
+      "claim": "Section XIII.C sentence 5 ('A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion') asserts as settled that the artifact IS a scholarly output, then frames the open question as merely how to classify it. Whether a reviewed course website counts as scholarship at all, as opposed to teaching material, is itself contested in promotion-and-tenure practice; the flat 'is a scholarly output' pre-decides the recognition question the sentence claims to leave open.",
+      "id": "PI-094",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding on Section XIII.C. The article's thesis turns on honest scoping of what it claims; asserting scholarly status as a premise rather than as the contested recognition question is an overclaim a traditionalist promotion-committee reader will catch. Next Polish tick on Section 13 should recast so scholarly status is the open question, e.g. 'Whether a versioned, citable, publicly served course artifact counts as a scholarly output, as teaching infrastructure, or as both is the recognition question an institution must decide.' P1-deferral active; logged without status reset.",
+      "opened_at": "2026-05-25T03:00:00Z",
+      "phase": "verify",
+      "section": "13",
+      "status": "resolved",
+      "type": "recognition-overclaim",
+      "resolved_at": "2026-05-29T13:00:00Z",
+      "resolved_by_run": 236,
+      "resolution_note": "Run-236 Polish recast XIII.C 'A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion' to 'Whether a versioned, citable, publicly served course artifact counts as scholarship is itself contested, and the institution must decide whether to treat it as teaching infrastructure or as scholarship for review and promotion.' Scholarly status is now the open question rather than asserted as settled."
+    },
+    {
+      "claim": "Section XIII.A surfaces the article's own transfer-of-inference analytic move to the reader in prose -- 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' -- narrating the reasoning architecture rather than making the positioning claim directly. Fresh-site recurrence of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161). Distinct from PI-094 (recognition overclaim) and PI-092 (footnote internal-artifact leak).",
+      "id": "PI-165",
+      "note": "Persona 1 (Skeptical JLE Editor), Verify run 139. P1; deferral lifted so routes Section 13 polish_status:needs_polish (already set). Suggested fix: recast as a direct claim -- the open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not -- dropping the 'What carries across / What does not carry across' scaffolding.",
+      "opened_at": "2026-05-30T03:00:00Z",
+      "phase": "verify",
+      "section": "13",
+      "status": "resolved",
+      "type": "voice-slip",
+      "resolved_at": "2026-05-29T13:00:00Z",
+      "resolved_by_run": 236,
+      "resolution_note": "Run-236 Polish recast XIII.A meta-rhetoric 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' to the direct semicolon-joined claim 'The open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not.' per L-036 self-flagging meta-rhetoric ban and L-048 explicit per-sentence enumeration. The transfer-of-inference analytic move is no longer surfaced to the reader as narration."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
