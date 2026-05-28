@@ -85,19 +85,19 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-05T03:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-05T05:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
-    "last_stitched_at": "2026-06-04T11:00:00Z",
+    "last_stitched_at": "2026-06-05T05:00:00Z",
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
@@ -1369,9 +1369,19 @@
       "route": "none",
       "claim": "Run 198 (outline noop) raced a concurrent push for the fourth time, after PI-201, PI-202, and PI-203. This tick computed the identical saturated outline noop (abstract at ready_for_review so the abstract sub-task is skipped, all 14 sections at outline_status:ready_for_draft with none at needs_work, step-3a scaffold-first inactive since all 14 are at evidence_status:populated), advanced outline->draft (phase_index 1->2, run_count 197->198), committed locally (6f9322e), and unlike the PI-201..203 ticks ALSO appended the run-198 noop scorecard and cost-log lines, then lost the push (fetch-first rejection) to commit 43d929d, which had landed the PI-203 push-race ESCALATION log on master first.",
       "note": "Recovery per the dispatcher push-race protocol and the PI-203 / PI-202 / PI-201 / PI-200 / PI-196 / PI-193 precedent: git fetch origin master then git rebase origin/master --autostash conflicted in BUILD_NARRATIVE_2026-06.md exactly as PI-203 predicted, because both this tick and 43d929d appended a block at the same file tail after the PI-202 entry (the .article-state.json advance auto-merged cleanly against 43d929d's PI-203 pending_issues insertion, and .article-scores.jsonl / cost-log.jsonl did not conflict because the winning log commit 43d929d touched neither). The rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local advance commit 6f9322e was discarded by reset --hard to origin/master. As with PI-201..203, the winning commit 43d929d only LOGGED the prior outline-198 race and did NOT advance the phase, so master remains at current_phase outline / phase_index 1 / run_count 197 / last_run_at 2026-06-04T15:00:00Z: the outline tick is still genuinely not performed on master. Nothing substantive was lost because the outline tick is a deterministic saturated-state noop (no section at outline_status:needs_work, abstract at ready_for_review), reproducible on the next pass; this entry is the informational push-race record only, with no phase advance and no scorecard or cost-log line retained for the lost commit. ESCALATION CONFIRMED: this is now the FOURTH consecutive outline-198 tick (PI-201, PI-202, PI-203, PI-204) to race and log without the phase advancing on master, and the FIRST to empirically confirm PI-203's prediction that the rebase would conflict on the BUILD_NARRATIVE tail-append. The livelock is self-perpetuating exactly as PI-203 described: each recovery commit is itself an append to .article-state.json pending_issues and BUILD_NARRATIVE, so it becomes the next concurrent tick's race winner and conflict source, and the outline->draft advance never lands while ticks run concurrently on this boundary. HUMAN ACTION REQUIRED: serialize the scheduler on the phase-advance boundary, or land the trivial outline->draft advance directly on master once (current_phase outline->draft, phase_index 1->2, run_count 197->198, plus the deterministic run-198 noop scorecard/cost-log/narrative lines), which breaks the loop permanently. A single non-concurrent run would also break it."
+    },
+    {
+      "id": "PI-205",
+      "type": "fact-consistency-drift",
+      "phase": "stitch",
+      "opened_at": "2026-06-05T05:00:00Z",
+      "status": "open",
+      "route": "polish-or-cite",
+      "claim": "Cross-section Bond et al. (2024) title-spelling drift: Section 02 polished [^9], full-draft [^9] / [^150] / [^166] all carry 'Rigour' (British spelling); Sections 11 and 12 polished [^8] / [^10] carry 'Rigor' (American spelling). The Section 11 run-152 polish_note explicitly named the drift and noted that the run-111 reconciliation had landed 'Rigour' in the assembled draft while the polished sections diverged. Re-surfaced this tick during the Stitch fact-consistency sweep over Section XI; logged for the next Polish or Cite tick that touches one of the affected sections to verify the canonical Springer title spelling and harmonize across all five footnote sites.",
+      "note": "Surfaced by Run-202 Stitch on Section XI. Not auto-resolved here because Stitch should not silently flip wording across sections without source verification of the canonical published title; WebFetch on the Springer abstract URL has been provenance-blocked in prior runs (idp.springer.com 303 redirect, the L-022 canonical case). The next Cite tick on any of Sections 02, 11, or 12 should run a fresh WebSearch with allowed_domains scoped to link.springer.com per L-022 (the title-and-URL match returns the verbatim canonical spelling), then a single Polish tick can sweep the five sites: assembled [^9] / [^150] / [^166] and polished section-02 [^9], section-11 [^8], section-12 [^10]. The article's general policy is to follow the cited source's spelling exactly (L-054 lowercase 'art.' precedent), so whichever spelling the Springer record uses is canonical. No assembled-draft prose changed at this Stitch tick; this entry preserves the audit trail for the harmonization."
     }
   ],
-  "phase_index": 5,
+  "phase_index": 6,
   "phases": [
     "harvest",
     "outline",
@@ -1392,7 +1402,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 201,
+  "run_count": 202,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1774,10 +1784,12 @@
       "outline_ready_at": "2026-05-22T15:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-06-05T03:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "stitched",
       "provenance_audited": true,
       "provenance_audited_at": "2026-05-29T23:00:00Z",
       "provenance_score": 3.6,
+      "stitched_at": "2026-06-05T05:00:00Z",
+      "stitch_note_run202": "Run-202 interim Stitch on Section 11: propagated the Run-201 Polish local renumber into manuscript/full-draft.md. XI.D second paragraph marker [^156] -> [^153] (artifact-matched rationale); XI.E [^153] -> [^154] (IRB labeling fork); XI.E [^154] -> [^155] (data-collection-status fork); XI.E [^155] -> [^156] (single-owner-section routing). Footnote-definition block reordered to match. Cross-reference inside the new [^153] corrected from the pre-existing slip 'notes 149 and 150' to 'notes 149 and 152' (matches polished source's local 'notes 7 and 10' = vocabulary discipline + Sajja, not vocabulary + Bond). Word-neutral; 181 contiguous defs preserved; no body prose changed. polish_status ready_for_stitch -> stitched. provenance_audited stays true (no prose change); 3.6 score awaits next Verify re-audit per the run-152 polish note (PI-160 was Cite-resolved at source run-151 but the recorded unsupported_claims entry awaits Verify re-score). PI-200 (new) logged for the cross-section Bond title-spelling drift surfaced this tick on the Stitch fact-consistency sweep.",
       "target_words": 1200,
       "title": "Evaluation: What Would Count as Success",
       "unsupported_claims": [
@@ -1790,7 +1802,7 @@
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-06-01T13:00:00Z",
       "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch.",
-      "last_phase": "polish"
+      "last_phase": "stitch"
     },
     "12": {
       "cite_at": "2026-06-01T21:00:00Z",

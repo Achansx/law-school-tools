@@ -1,13 +1,14 @@
 ---
 id: "11"
 title: "Evaluation: What Would Count as Success"
-status: ready_for_stitch
+status: stitched
 target_words: 1200
 word_count: 1316
-last_phase: polish
+last_phase: stitch
 draft_status: needs_cite
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: stitched
+stitched_at: 2026-06-05T05:00:00Z
 footnotes_count: 14
 cite_completed_at: 2026-05-31T15:00:00Z
 polish_completed_at: 2026-06-05T03:00:00Z
