@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-06-08T19:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-06-08T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -106,7 +106,7 @@
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13389
+    "total_words": 13411
   },
   "pending_issues": [
     {
@@ -1399,7 +1399,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 227,
+  "run_count": 228,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1816,13 +1816,18 @@
       "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch."
     },
     "12": {
-      "cite_at": "2026-06-01T21:00:00Z",
+      "cite_at": "2026-06-08T21:00:00Z",
       "cite_note_run144": "Run-144 Cite: verified run-143 expansion's new claims carry footnote coverage (no orphans, no [CITE:]/[TODO:] markers); resolved PI-101 (Magesh 216-242 reconfirmed) and PI-164 (Bond corpus-composition CORRECTED to source-accurate 'adaptive and interactive interventions, chiefly adaptive systems and personalization'); PI-160 staged with identical resolution for Section 11's Cite tick.",
       "cite_note_run165": "Run-165 Cite: confirmed run-164 XII.B additions introduced no orphan claim (architectural own-risk, no new footnote); resolved PI-179 by naming chatbot tutors as a recognized intervention category in the body and citing Bond et al. 2024 (workplan line 199) at [^3] as the verified survey-level anchor, per L-053 NOT adding Kuhail (absent from workplan); brought all ten footnotes to the L-059 50-word cap and L-058 internal-artifact compliance; Magesh [^1] re-verified live (WebFetch 403 -> WebSearch per L-052), last-visited June 1, 2026. current_words 1396->1419; cite_status->needs_polish.",
+      "cite_note_run228": "Run-228 Cite: propagated the Zawacki-Richter typology pin cite from Section 11's [^8]/[^151] (added at run 221 to close PI-160) to Section 12's symmetric [^10]/[^167], the cross-section consistency follow-up the run-221 narrative explicitly flagged ('a subsequent Section 12 Cite tick should propagate the matching pin-cite sentence to [^10] for cross-section consistency'). New clause anchors the corpus-composition characterization to Bond's coding framework: 'Bond codes the corpus through Zawacki-Richter et al.'s (2019) typology of Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, and Intelligent Tutoring Systems, with Adaptive Systems and Personalisation the predominant single application area across the corpus.' Replaces the inline 'whose interventions are chiefly adaptive systems and personalization, with profiling and prediction, assessment and evaluation, intelligent tutoring systems, and chatbots among the application areas its constituent reviews cover' descriptive listing with the typology-attributed version, removing redundancy with the new clause. The 'corpus-composition characterization above was confirmed' tail clause updated to 'typology-anchored application-area distribution above was confirmed' to track the new anchor. Edit propagated to three sites per L-035 cross-file discipline: polished/section-12-risks-and-limits.md [^10] (curly throughout), drafts/section-12-risks-and-limits.md [^10] (matched the shorter drafts register, adding the same Zawacki-Richter clause with curly apostrophe to match surrounding drafts convention), and manuscript/full-draft.md global [^167] line 727 (curly throughout). Same Zawacki-Richter typology and Adaptive-Systems-and-Personalisation predominance verified independently this run via WebSearch with allowed_domains scoped to link.springer.com per L-022 (the Springer cookie-auth still 303-redirects WebFetch on both the article landing page and the PDF, so WebSearch is the canonical verification path), returning the verbatim Bond title and URL plus the Zawacki-Richter-2019 typology-citation co-occurrence with Adaptive Systems and Personalisation as the predominant single application area, matching the run-221 verification on the Section 11 [^8] addition. No new numerical anchor introduced per L-027 (Bond's 47% / n=31 general-applications figure and the n=45/n=46/n=26 role counts deliberately omitted; Magesh 17%-33% remains the article's sole quantitative AI-in-higher-education anchor). No URL change (cross-reference to Section XI note 151 unchanged; URL liveness owned by Section XI per the article's cross-section-reuse convention; Bond URL last re-verified live at run 221). Mechanical sweep at the edit point: zero em dashes introduced, curly apostrophes preserved in polished and full-draft, drafts apostrophe matched to surrounding drafts register. The footnote stays over L-059's 50-word cap (the existing structure has carried the transfer-of-inference clause since run 165); the L-059 fix is Polish-owned and the existing run-165 polish_note records it as policy-acknowledged. provenance_audited reset to false because the footnote materially changed; the next Verify provenance re-audit reads the post-Cite text. polished/section-12 footnote_count holds at 10 (no insert/delete); manuscript total_words grows by approximately 22 words (the typology-attributed sentence replaces the descriptive listing across two sites, polished and full-draft; drafts adds the typology clause; net body footnote-text additions). Cross-section consistency check: Section 11 [^8]/[^151] (Zawacki-Richter pin cite + 'Adaptive Systems and Personalisation the predominant single application area across the corpus') and Section 12 [^10]/[^167] (now mirroring the same typology anchor under the section's distinct transfer-of-inference clause) are now structurally parallel on the Bond corpus-composition characterization. PI-159 (full validity/reliability/sampling/analysis methods treatment for the four Section XI instruments) remains Cite-open on Section 11 per L-053 (workplan does not name a methods source); this is the next Cite-actionable item on the Bond-cluster, not in this Section 12 tick's scope. cite_status holds at needs_polish (already set at run 165); last_cite_run -> 228; last_cite_propagation fields added.",
       "cite_status": "needs_polish",
       "claims_mapped": 18,
       "claims_total": 18,
       "current_words": 1419,
+      "last_cite_propagation_at": "2026-06-08T21:00:00Z",
+      "last_cite_propagation_note": "Run-228 propagated Zawacki-Richter typology pin cite to Section 12 [^10]/[^167] across three sites (polished, drafts, full-draft); cross-section consistency with Section 11 [^8]/[^151] now established on the Bond corpus-composition characterization.",
+      "last_cite_propagation_run": 228,
+      "last_cite_run": 228,
       "draft_at": "2026-06-01T19:00:00Z",
       "draft_note_run164": "Run-164 Draft: landed the sole still-unaddressed ask of PI-XII-ENGAGE (b) by adding explicit staleness (content fixed at a snapshot, can fall behind a shifting doctrine where a continuously re-grounded system would not) and scope-creep/single-point-of-failure-on-review (the reviewer's capacity, not the model's, becomes the binding constraint as the corpus grows) to the XII.B static-architecture own-failure-modes catalogue. Asks (a)/(d)/(e) were already landed by run-143; ask (c) Mata-to-one-sentence deliberately NOT regressed (run-143 deepened Mata per a run-138 Verify finding; L-010 no longer in LESSONS, so the more recent deepening governs). No new number (L-027), no new [CITE:] (architectural/analytical claims), recurring sentence absent per L-002, static-vs-chatbot verb discipline held per L-003/L-031. current_words 1359->1396. draft_status->needs_cite. PI-XII-ENGAGE resolved+archived.",
       "draft_status": "needs_cite",

@@ -58,4 +58,4 @@ Equity and accessibility are the part of the risk surface the article discloses 
 
 [^9]: The equity-and-accessibility risks are consolidated here: the deployed application’s broadband and modern-browser dependence, the open screen-reader question for its hash-route navigation and search palette, the device assumption in the 300-dpi PDFs, and the Canvas-enrollment gate on the input corpus. *Cf. supra* Sections II, III, IV, and VIII.
 
-[^10]: *See supra* Section XI note 8 (Bond et al. meta-review). Bond’s corpus is chiefly adaptive systems and personalization, with intelligent tutoring systems and chatbots among its application areas; the ethics-and-rigor critique reaches any such system, including a reviewed static website.
+[^10]: *See supra* Section XI note 8 (Bond et al. meta-review). Bond codes the corpus through Zawacki-Richter et al.’s (2019) typology of Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, and Intelligent Tutoring Systems, with Adaptive Systems and Personalisation the predominant single application area; the ethics-and-rigor critique reaches any such system, including a reviewed static website.
