@@ -1065,6 +1065,19 @@
       "resolved_at": "2026-06-05T15:00:00Z",
       "resolved_in_run": 207,
       "resolution_note": "Run 207 Cite: Midpage findInOpinion opinionId 809122 re-confirmed the verbatim text 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' between the *550 and *551 star markers in 567 U.S. 519. Pin cite corrected 552 -> 550 in drafts/section-03-case-study.md [^17], polished/section-03-case-study.md [^17], and full-draft.md [^34], each with an audit-trail parenthetical naming opinionId 809122 and the *550/*551 bracket. Section 03 cite_status flipped to needs_polish; provenance_audited reset to false for the next Verify re-audit."
+    },
+    {
+      "id": "PI-206",
+      "type": "resolution-propagation-gap",
+      "phase": "verify",
+      "opened_at": "2026-06-05T07:00:00Z",
+      "status": "resolved",
+      "route": "polish",
+      "claim": "Section VII.A first sentence in the polished source-of-truth manuscript/polished/section-07-iterative-improvement.md AND in the assembled manuscript/full-draft.md still carry 'a roughly six-hundred-thirty-line Python script' qualifier on the Karpathy autoresearch script. The run-200 Cite tick recorded PI-044 closed by 'dropping the qualifier from body prose', but the edit only landed in drafts/section-07-iterative-improvement.md; it did not propagate up to the polished source or the assembled draft, so the L-001 Karpathy-figures discipline is violated at the canonical authority for the article even though PI-044 was archived as resolved.",
+      "note": "Surfaced by Run-203 Verify Persona 1 (JLE Editor). The fix is to drop 'roughly six-hundred-thirty-line' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md so the polished/assembled prose matches the run-200 draft edit; the structural-insight claim in footnote [^1]/[^88] survives without the qualifier. The general lesson recorded in the run-203 BUILD_NARRATIVE: a Cite resolution that touches body prose must propagate to the polished source AND the assembled full-draft, not just the draft scratch file. Routes Section 07 polish_status (already needs_polish; no status delta from this PI). The corresponding run-203 provenance re-audit of Section 07 records the same defect under numerical_precision (deduction -1 from 5).",
+      "resolved_at": "2026-06-05T17:00:00Z",
+      "resolved_run": 208,
+      "resolution_note": "Run-208 Polish dropped 'roughly six-hundred-thirty-line ' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md, matching the run-200 Cite edit that had only landed in drafts/section-07-iterative-improvement.md. Polished word_count 1193 -> 1191, full-draft total_words 13352 -> 13350. provenance_audited reset to false on Section 07 so the next Verify provenance re-audit reads the cleaned VII.A prose; the run-203 audit's -1 numerical_precision deduction was driven entirely by this defect and should clear. polish_status held at needs_polish per the PI-206 routing note (no status delta from this PI). The L-001 Karpathy-figures discipline now honored at the canonical authority for the article rather than only in the draft scratch file."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

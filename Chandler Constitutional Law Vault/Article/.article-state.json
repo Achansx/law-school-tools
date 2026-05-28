@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-06-05T15:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-06-05T17:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "full_draft_exists": true,
@@ -101,7 +101,7 @@
     "partial_assembly": true,
     "sections_stitched": 14,
     "sections_total": 14,
-    "total_words": 13352,
+    "total_words": 13350,
     "confirmed_stitched_count": 0,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z"
   },
@@ -1371,19 +1371,9 @@
       "route": "polish-or-cite",
       "claim": "Cross-section Bond et al. (2024) title-spelling drift: Section 02 polished [^9], full-draft [^9] / [^150] / [^166] all carry 'Rigour' (British spelling); Sections 11 and 12 polished [^8] / [^10] carry 'Rigor' (American spelling). The Section 11 run-152 polish_note explicitly named the drift and noted that the run-111 reconciliation had landed 'Rigour' in the assembled draft while the polished sections diverged. Re-surfaced this tick during the Stitch fact-consistency sweep over Section XI; logged for the next Polish or Cite tick that touches one of the affected sections to verify the canonical Springer title spelling and harmonize across all five footnote sites.",
       "note": "Surfaced by Run-202 Stitch on Section XI. Not auto-resolved here because Stitch should not silently flip wording across sections without source verification of the canonical published title; WebFetch on the Springer abstract URL has been provenance-blocked in prior runs (idp.springer.com 303 redirect, the L-022 canonical case). The next Cite tick on any of Sections 02, 11, or 12 should run a fresh WebSearch with allowed_domains scoped to link.springer.com per L-022 (the title-and-URL match returns the verbatim canonical spelling), then a single Polish tick can sweep the five sites: assembled [^9] / [^150] / [^166] and polished section-02 [^9], section-11 [^8], section-12 [^10]. The article's general policy is to follow the cited source's spelling exactly (L-054 lowercase 'art.' precedent), so whichever spelling the Springer record uses is canonical. No assembled-draft prose changed at this Stitch tick; this entry preserves the audit trail for the harmonization."
-    },
-    {
-      "id": "PI-206",
-      "type": "resolution-propagation-gap",
-      "phase": "verify",
-      "opened_at": "2026-06-05T07:00:00Z",
-      "status": "open",
-      "route": "polish",
-      "claim": "Section VII.A first sentence in the polished source-of-truth manuscript/polished/section-07-iterative-improvement.md AND in the assembled manuscript/full-draft.md still carry 'a roughly six-hundred-thirty-line Python script' qualifier on the Karpathy autoresearch script. The run-200 Cite tick recorded PI-044 closed by 'dropping the qualifier from body prose', but the edit only landed in drafts/section-07-iterative-improvement.md; it did not propagate up to the polished source or the assembled draft, so the L-001 Karpathy-figures discipline is violated at the canonical authority for the article even though PI-044 was archived as resolved.",
-      "note": "Surfaced by Run-203 Verify Persona 1 (JLE Editor). The fix is to drop 'roughly six-hundred-thirty-line' from VII.A's first sentence in both manuscript/polished/section-07-iterative-improvement.md and manuscript/full-draft.md so the polished/assembled prose matches the run-200 draft edit; the structural-insight claim in footnote [^1]/[^88] survives without the qualifier. The general lesson recorded in the run-203 BUILD_NARRATIVE: a Cite resolution that touches body prose must propagate to the polished source AND the assembled full-draft, not just the draft scratch file. Routes Section 07 polish_status (already needs_polish; no status delta from this PI). The corresponding run-203 provenance re-audit of Section 07 records the same defect under numerical_precision (deduction -1 from 5)."
     }
   ],
-  "phase_index": 4,
+  "phase_index": 5,
   "phases": [
     "harvest",
     "outline",
@@ -1404,7 +1394,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 207,
+  "run_count": 208,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1646,12 +1636,12 @@
       "evidence_populated_at": "2026-05-18T23:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 11,
-      "last_phase": "cite",
+      "last_phase": "polish",
       "outline_ready_at": "2026-05-19T01:00:00Z",
       "outline_status": "ready_for_draft",
-      "polish_completed_at": "2026-05-19T07:00:00Z",
+      "polish_completed_at": "2026-06-05T17:00:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_score": 4.0,
       "provenance_stale_reason": "Run-200 Cite added Bond et al. [^11] and an L-024 transfer-clause sentence to VII.C, plus dropped the 'roughly six-hundred-thirty-line' qualifier from VII.A; provenance_audited reset to false so the next Verify Provenance Auditor re-audits the post-cite prose rather than the stale 2026-05-19 4.0 read. Score 4.0 retained as last-known.",
       "stitched_at": "2026-05-19T11:00:00Z",
@@ -1668,7 +1658,9 @@
       "verify_routed_at": "2026-05-19T13:00:00Z",
       "verify_routing_reason": "Persona 1 P1 (PI-044 VII.A first-sentence line-count precision 'a roughly six-hundred-thirty-line Python script' unanchored in footnote [^1] which enumerates the four design choices and the verified fifty-experiments-overnight figure but not the script line count) routes to cite_status: needs_cite per L-015 (Cite owns Bluebook end-to-end) and the L-001 caveat extended from numeric experiment figures to anchored-empirical-precision claims about the same Karpathy autoresearch repository; next Cite tick on Section 07 should either verify the line count against the repository's program.md and train.py files via WebSearch or workspace web_fetch and add the anchor to footnote [^1], or drop the qualifier from body prose entirely so the four-design-choice footnote enumeration carries the structural-insight claim alone. Persona 3 P1 (PI-048 Section VII as a whole anchoring load-bearing iterative-loop, human-in-the-loop, and adversarial-evaluation claims on a single Karpathy GitHub-repository citation plus internal vault references, recurring the PI-025 pattern from Section 08.E and the PI-032 pattern from Section 03.E and the PI-040 pattern from Section 06 and now quadruply-flagged across four sections on the same single-citation-anchor pattern) also routes to cite_status: needs_cite per L-024 (Cite owns load-bearing transfer framing and citation-density end-to-end when external-literature anchoring is the load-bearing move); the same future Cite tick can resolve PI-025, PI-032, PI-040, and PI-048 in one multi-section pass under the L-028 precedent and L-034 cross-section verification-reuse, with the Du et al. 2023 multiagent-debate, Kuhail et al. 2023 chatbot-tutor survey, Bond et al. 2024 meta-review, plus a mixed-initiative / human-in-the-loop survey as the candidate citations serving all four sections. Persona 1 P1 (PI-045 VII.D paragraph 1 final sentence 'The lessons file is what answers a reader who asks whether the loop is improving or just running' implicit empirical claim about loop improvement conflating artifact with evaluation, raised by Personas 1 and 3 on the same sentence with the same suggested fix and collapsed to a single PI) plus Persona 2 P1 (PI-046 VII.E first sentence 'The vault's answer to professorial control is the page-feedback intake at Step 0 of every scheduled-task run' reducing the live pedagogical role to an asynchronous form, recurring the PI-031 / PI-039 / PI-024 actor-erasure pattern and now flagged in three sections at three Verify ticks as the article's most recurrent traditionalist-skeptic concern) plus Persona 2 P1 (PI-047 VII.A 'non-measurable pedagogical objective' undefined and inverting the loop's actual measured criteria of editorial accuracy and structural consistency demonstrated across the Prize Cases, Youngstown, and token-problem stories) all collapse to three Polish-level one-sentence prose insertions or rewrites that Polish can land without re-running Cite; PI-045 dovetails with the Personas 1+3 collapse on the same sentence so a single Polish-time rewrite resolves both findings. Section 07 polish_status flipped from stitched to needs_polish for the three Polish-level P1s; cite_status flipped from needs_polish to needs_cite for the two Cite-level P1s. New lesson L-040 added on the Polish voice-unity sweep including a live-pedagogy-versus-static-artifact slip check, distinct from L-031's personifying-verb check, L-036's self-flagging meta-rhetoric check, and L-003's AI-tutor-vocabulary ban. VII/VIII recurring-sentence placement at the close of VII.E reads as earned on this first Verify pass that can assess it, with no finding or routing required.",
       "provenance_audited_at": "2026-06-05T07:00:00Z",
-      "provenance_audit_run": 203
+      "provenance_audit_run": 203,
+      "polish_last_run": 208,
+      "polish_routing_reason": "Run-208 Polish closed PI-206 (resolution-propagation gap): the run-200 Cite tick recorded PI-044 closed after dropping the VII.A 'roughly six-hundred-thirty-line' Karpathy autoresearch qualifier, but the edit had only landed in drafts/section-07-iterative-improvement.md; the polished source-of-truth and the assembled manuscript/full-draft.md both still carried the unanchored line-count phrase, violating L-001 (Karpathy figures: only the verified 50 experiments overnight; no unanchored numerical claims) at the canonical authority for the article. This tick propagated the four-word drop ('roughly six-hundred-thirty-line ') into manuscript/polished/section-07-iterative-improvement.md VII.A first sentence AND manuscript/full-draft.md line 207 in the same Polish run per the PI-206 routing note. Polished word_count 1193 -> 1191 (-2 by whitespace tokenization, hyphenated compound counted as one token; +8.3% over the 1100 target, well within the +/-10% Polish band). Full-draft total_words 13352 -> 13350 (within the 10,000-14,000 policy window). Mechanical re-verified at the edit point: zero em dashes, zero straight quotes (curly throughout). provenance_audited reset to false because VII.A's first sentence materially changed; the run-203 4.0 score's numerical_precision -1 deduction was driven by exactly this defect, so the next Verify provenance re-audit should clear that drag (remaining unsupported_claim on VII.D 'L-007' inline-identifier is unchanged). polish_status holds at needs_polish per PI-206's routing note ('already needs_polish; no status delta from this PI'); three Polish-routed open P1s on Section 07 remain \u2014 PI-045 (VII.D lessons-file improvement claim), PI-046 (VII.E page-feedback-intake actor-erasure), PI-047 (VII.A non-measurable pedagogical objective undefined). PI-190 (+24.5% word-budget overage) keeps its route:stitch flag. The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 Cite resolutions touching body prose must propagate to polished AND full-draft, not just drafts \u2014 is now demonstrated by this tick's surgical execution."
     },
     "08": {
       "cite_completed_at": "2026-06-04T07:00:00Z",
@@ -1908,7 +1900,7 @@
     "last_run_at": "2026-06-05T07:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 118,
+    "p1_open": 117,
     "p2_open": 43,
     "personas_read": 4
   },

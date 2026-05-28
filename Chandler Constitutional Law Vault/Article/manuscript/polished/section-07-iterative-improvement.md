@@ -3,13 +3,13 @@ id: "07"
 title: "Iterative Improvement Under Professorial Control"
 status: needs_polish
 target_words: 1100
-word_count: 1193
-last_phase: verify-provenance
+word_count: 1191
+last_phase: polish
 draft_status: needs_polish
-cite_status: needs_cite
+cite_status: needs_polish
 polish_status: needs_polish
 footnotes_count: 10
-provenance_audited: true
+provenance_audited: false
 provenance_audited_at: 2026-06-05T07:00:00Z
 provenance_audit_run: 203
 provenance_score: 4.0
@@ -19,16 +19,19 @@ unsupported_claims:
   - claim_text: "VII.D paragraph 2 final sentence asserts 'The per-phase-rubric-only principle is the article's own L-007', citing an internal vault LESSONS entry by its catalog identifier as standalone inline authority for a general design principle. L-007 is not reproduced in the prose and is unresolvable by a reader; footnote [^7] routes the underlying tiered-loading principle to App. A, so the inline 'L-007' label carries no external or appendix-anchored authority on its own."
     paragraph: 2
     reason: requires-primary-source
+polish_note: "Run-208 Polish tick closed PI-206 (resolution-propagation gap): dropped 'roughly six-hundred-thirty-line ' from VII.A's first sentence so the polished source matches the run-200 Cite edit that had only landed in drafts/section-07-iterative-improvement.md. Same edit propagated to manuscript/full-draft.md line 207 in the same tick per the PI-206 routing-note instruction. The structural-insight claim in footnote [^1] (single file to modify, fixed five-minute budget, self-contained dependencies, agent-edits-train.py / human-edits-program.md separation) survives without the line-count qualifier and continues to carry the architectural argument. L-001 (Karpathy figures discipline: verified 50 experiments overnight only) now honored at the canonical authority for the article, not just the draft scratch file. word_count 1193 -> 1191 (-2 words by whitespace tokenization with 'six-hundred-thirty-line' counted as one hyphenated token; well within the +/-10% Polish band for the 1100 target, over by 8.3%). Mechanical re-verified at the edit point: zero em dashes, zero straight quotes (curly throughout). provenance_audited reset to false because VII.A's first sentence materially changed; the run-203 4.0 audit's numerical_precision -1 deduction was driven by exactly this defect, so the next Verify provenance re-audit should clear that drag (the remaining unsupported_claim on VII.D 'L-007' is unchanged). polish_status holds at needs_polish per PI-206's routing note ('already needs_polish; no status delta from this PI'); three other Polish-routed open P1s on Section 07 remain: PI-045 (VII.D lessons-file-improvement claim), PI-046 (VII.E page-feedback-intake actor-erasure), PI-047 (VII.A non-measurable pedagogical objective undefined), per the run-200 Cite narrative inventory. PI-190 word-budget overage flag still routes Stitch."
 audit_notes:
   - run: 203
     note: "Re-audit after run-200 Cite reset of provenance_audited. Polished source is byte-identical to the run-152 Polish output: the run-200 Cite tick landed Bond [^11] and dropped the VII.A 'roughly six-hundred-thirty-line' qualifier in drafts/section-07-iterative-improvement.md only, so the polished file the audit reads has not received those edits. Numerical_precision deducted to 4 for the unanchored VII.A line-count qualifier; the same defect is routed to PI-206 (resolution-propagation gap) for Polish to close once it brings the polished source into line with the draft. Score reproduces the run-167 4.0 because nothing in the audited source has changed."
+  - run: 208
+    note: "Run-208 Polish dropped the VII.A 'roughly six-hundred-thirty-line' qualifier in both polished/ and full-draft.md, closing PI-206. provenance_audited reset to false for the next Verify provenance re-audit; the run-203 4.0 score's numerical_precision -1 deduction should clear at the next audit since this was its sole cause."
 ---
 
 # VII. Iterative Improvement Under Professorial Control
 
 ## A. The Karpathy loop, domesticated
 
-On March 7, 2026, Andrej Karpathy released `autoresearch`, a roughly six-hundred-thirty-line Python script that delegates the modify, run, evaluate, keep-or-discard loop to a language-model agent and that ran fifty experiments overnight to surface a learning-rate improvement.[^1] The structural insight the script makes legible is four-piece: a per-phase rubric that scores each pass on criteria the phase owns, a lessons file that carries durable memory between passes, a rolling scorecard that records what each pass produced, and a forced-finding adversarial pass that has to return findings rather than confirm everything looks fine. The vault adopts the architecture and not the autonomous-agent setting that runs it. Karpathy’s loop runs unsupervised against a measurable scientific objective; the vault’s loop runs against a non-measurable pedagogical objective, with the professor available to gate, defer, redirect, or reverse any phase, and with reviewer comments preferred over the rotation’s own next-in-queue work. The structural insight imports because it makes generation reviewable; the autonomous-agent execution does not import because the article’s central claim is that professorial judgment is what the loop is in service of, not what the loop replaces.
+On March 7, 2026, Andrej Karpathy released `autoresearch`, a Python script that delegates the modify, run, evaluate, keep-or-discard loop to a language-model agent and that ran fifty experiments overnight to surface a learning-rate improvement.[^1] The structural insight the script makes legible is four-piece: a per-phase rubric that scores each pass on criteria the phase owns, a lessons file that carries durable memory between passes, a rolling scorecard that records what each pass produced, and a forced-finding adversarial pass that has to return findings rather than confirm everything looks fine. The vault adopts the architecture and not the autonomous-agent setting that runs it. Karpathy’s loop runs unsupervised against a measurable scientific objective; the vault’s loop runs against a non-measurable pedagogical objective, with the professor available to gate, defer, redirect, or reverse any phase, and with reviewer comments preferred over the rotation’s own next-in-queue work. The structural insight imports because it makes generation reviewable; the autonomous-agent execution does not import because the article’s central claim is that professorial judgment is what the loop is in service of, not what the loop replaces.
 
 ## B. One phase per tick: the rotation as the loop
 
