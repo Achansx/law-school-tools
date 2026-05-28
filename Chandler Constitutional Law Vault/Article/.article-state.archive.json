@@ -1039,6 +1039,19 @@
       "resolved_at": "2026-06-05T02:30:00Z",
       "resolved_by_phase": "cite",
       "resolution": "Cite run 200 took the routing note's option (b): the 'roughly six-hundred-thirty-line' qualifier was dropped from VII.A's first sentence, leaving 'a Python script that delegates the modify, run, evaluate, keep-or-discard loop to a language-model agent'. Footnote [^1]'s four-design-choice enumeration carries the structural-insight claim alone, consistent with L-001's house-lessons restriction and the article's practitioner-scholarly voice."
+    },
+    {
+      "claim": "Section XI.D footnote [^154] is referenced in the body before footnotes [^151]-[^153] (Section XI.E), violating the law-review convention that footnotes are numbered in order of first textual appearance.",
+      "id": "PI-183",
+      "note": "Definitions are numerically correct in the Footnotes block (151,152,153,154 at full-draft lines 691/693/695/697); the defect is in-text marker order. The XI.D 'Made concrete, the artifact-dependent success criterion...' paragraph and its [^154] (which reads 'See supra notes 147 and 150') were inserted after XI.E's notes were numbered. Fix in the next Polish on Section 11: reorder the local section-11 footnotes so the XI.D note precedes the XI.E labeling-fork/data-status/single-owner notes, then let the next Stitch global renumber re-sequence the assembled draft. Distinct from PI-110 (Section II Bond stitch-deferred renumber) and PI-122 (Section II false cross-references).",
+      "opened_at": "2026-06-01T13:00:00Z",
+      "phase": "verify",
+      "section": "11",
+      "status": "resolved",
+      "type": "footnote-sequence-violation",
+      "resolved_at": "2026-06-05T03:00:00Z",
+      "resolved_by": "polish run 201",
+      "resolution_note": "Local section-11 footnote reorder: inline markers were 1,2,3,4,5,6,7,8,9,10,14,11,12,13 and are now sequential 1..14; the old [^14] (artifact-matched success criterion) is now [^11], old [^11] (IRB labeling fork) is now [^12], old [^12] (data-collection status fork) is now [^13], old [^13] (single-owner routing) is now [^14]. Footnote-definition block reordered to match. Cross-references inside footnotes ('supra note 3', 'supra notes 7 and 10', 'supra Section VIII note 5') unaffected. The global renumber across the assembled draft rides the next Stitch."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
