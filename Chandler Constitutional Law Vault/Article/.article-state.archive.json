@@ -1197,6 +1197,28 @@
       "resolved_at": "2026-05-29T13:00:00Z",
       "resolved_by_run": 236,
       "resolution_note": "Run-236 Polish recast XIII.A meta-rhetoric 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' to the direct semicolon-joined claim 'The open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not.' per L-036 self-flagging meta-rhetoric ban and L-048 explicit per-sentence enumeration. The transfer-of-inference analytic move is no longer surfaced to the reader as narration."
+    },
+    {
+      "id": "PI-211",
+      "type": "false-cross-reference",
+      "section": "11",
+      "status": "resolved",
+      "opened_at": "2026-05-29T17:00:00Z",
+      "opened_in_run": 238,
+      "persona": "Provenance Auditor (Persona 4)",
+      "severity": "P1",
+      "claim": "Section XI footnotes [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14] (polished, mapped to assembly [^140]/[^141]/[^142]/[^145]/[^146]/[^155]/[^156]/[^157] per the run-153 stitch renumber) cite '*See infra* App. A (Article Project Architecture)' with seven phantom subsection names (Thesis-Level Disclaimer, Evaluation Posture Recommendation, Four-Instrument Light-Data Plan, Evaluation-Vocabulary Discipline, IRB and Research-vs-Feedback Labeling Fork, Data-Collection-Status Fork, Single-Owner-Section Routing Convention) and '*see also infra* App. D (Internal Project Records Excerpts)' / '(Correspondence Excerpts)' subtitles. The real appendices in manuscript/appendices/ are A 'Input Inventory' with \u00a7\u00a7 A.1 Source Materials Provided / A.2 Categories Intentionally Excluded / A.3 Source Material Conventions, B 'AI Tooling,' C 'Obsidian Templates,' D 'Rubrics,' E 'Cost and Labor,' F 'Technical Setup'; none contains any of the seven named Section-XI subsections. Same defect class as PI-122 (Section 02 App. D pointer) but broader: both A and D subtitles are phantom in Section 11.",
+      "note": "Persona 4 (Provenance Auditor) P1, surfaced during the Section 11 provenance re-audit (provenance_score 3.6->4.2, attribution_discipline criterion 4->3). Cite-owned: next Cite tick on Section 11 drops the '(Article Project Architecture)' parenthetical from every App. A pointer; either replaces the named subsections with App. A's actual subsection numbers (A.1/A.2/A.3 where the claim concerns the input corpus) or creates a new App. G 'Workplan Excerpts' under an unused letter and populates it with the workplan \u00a71/\u00a75/\u00a76 excerpts the eight footnotes promise. Drops every '*see also infra* App. D (Internal Project Records Excerpts)' and '(Correspondence Excerpts)' sub-reference from Section 11 footnotes and lets the App. A primary pointer carry the support; defers any correspondence-appendix cross-reference until the progress-report email is in the repo (PI-082). Routes Section 11 cite_status: needs_polish -> needs_cite. Distinct from PI-122 because Section 11 is not in PI-122's named Cite-fix scope (Sections 02/04/08/09) and because both A and D subtitles are phantom rather than just D.",
+      "routes_to": [
+        "Cite (Section 11 footnote rewrite)",
+        "Stitch (assembly footnote-def propagation after Cite)"
+      ],
+      "verify_run_log": [
+        238
+      ],
+      "resolved_at": "2026-05-28T19:00:00Z",
+      "resolved_by": "cite-run-242",
+      "resolution_note": "Run-242 Cite tick resolved by removing the phantom App. A 'Article Project Architecture' / App. D 'Internal Project Records Excerpts' routings across nine Section XI footnotes (the eight named by PI-211 plus the missed-but-same-family [^11]). Three footnotes converted to legitimate cross-references: [^1] (new) -> Bond and Choi & Schwarcz at notes 3 and 4; [^2] (new) -> Sajja at note 5; [^6] (new) -> Section IV \u00a7 IV.E; [^7] (new) -> Section IX. Six footnotes (original [^1], [^3], [^4], [^5], [^6], [^11]) REMOVED as self-statements of the article's own organization (no internal-self citation needed). footnotes_count 14->8. The remaining workplan-language slips in 11.A and 11.E body prose are L-057 Polish-owned and are logged as new PI-216."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
