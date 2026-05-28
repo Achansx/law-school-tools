@@ -1337,6 +1337,16 @@
    "route": "polish",
    "claim": "The per-section source of truth polished/section-05-obsidian-vault.md is less developed than the assembled full-draft.md Section V: the assembly's V.A carries the IV->V '388-file' bridge clause and the 'post-hoc lecture summary rather than a transcript of the live Socratic exchange' phrasing, and its V.B carries the inline six-case applied_in list (Martin, McCulloch, Prize Cases, Rahimi, Cohens, Boerne), none of which is in the polished source. A reader auditing the published per-section source cannot reproduce the manuscript's Section V, which violates the article's own verifiability standard.",
    "note": "Verify run 196, Persona 4 (Provenance Auditor) P1. The run-188 Stitch note records the divergence as deliberate ('the run-181 seam work was preserved rather than overwritten by the more generic polished-file seam'). Note the tension with PI-188: that issue was resolved by REMOVING the unverifiable 388 count from the polished V.A, while the assembly still carries it. Direction is a human/Polish call: (a) back-port the richer full-draft Section V seam into the polished source, or (b) trim the 388 bridge from the assembly so both converge on the clean source; then re-stitch. Routes Section 05 polish_status stitched -> needs_polish (confirmed-stitched 1 -> 0). The fresh provenance re-audit of the polished source itself is clean (4.6, 26/26, 0 unsupported); this finding is about source != artifact, not about unsupported claims."
+  },
+  {
+   "id": "PI-200",
+   "type": "push-race-conflict",
+   "phase": "harvest",
+   "opened_at": "2026-06-04T15:30:00Z",
+   "status": "open",
+   "route": "none",
+   "claim": "Run 197 (harvest noop) raced a concurrent tick. The concurrent tick (commit 52062c7) landed an equivalent run-197 harvest noop on master first and advanced harvest->outline; this tick's redundant local commit (0b39b75) lost the push (HTTP 403 / fetch-first rejection).",
+   "note": "Recovery per the dispatcher push-race protocol and the run-188 (PI-196) / run-185 (PI-193) precedent: git fetch origin master then git rebase origin/master --autostash conflicted on the three append-heavy shared files (.article-scores.jsonl, BUILD_NARRATIVE_2026-06.md, manuscript/cost-log.jsonl) because both ticks appended a run-197 block at the same file tails; the rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local commit 0b39b75 was discarded by reset --hard to origin/master. Nothing substantive was lost: the winning scorecard, cost-log, and BUILD_NARRATIVE run-197 entries reach the identical saturated-noop conclusion (all 14 sections evidence_status:populated, all six appendices status:drafted, neither the main-section scope nor the appendix sub-task has a target) and the identical state advance (current_phase outline, phase_index 1, run_count 197, last_run_at 2026-06-04T15:00:00Z). This entry is the informational push-race record only; no phase re-advance and no scorecard or cost-log line is added for the lost commit, mirroring the PI-193/PI-196 recoveries."
   }
  ],
  "phase_index": 1,
