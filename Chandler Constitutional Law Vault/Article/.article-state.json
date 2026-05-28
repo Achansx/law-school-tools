@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "outline",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "harvest",
-  "last_run_at": "2026-06-07T13:00:00Z",
+  "last_completed_phase": "outline",
+  "last_run_at": "2026-06-07T15:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -1364,20 +1364,20 @@
     },
     {
       "id": "PI-207",
-      "section": "07",
+      "note": "Surfaced by the run-217 Verify provenance re-audit of Section 07. The run-200 Cite tick (cite_note_run200) recorded PI-048 closed by adding a Bond et al. (2024) AIHE meta-review engagement sentence at the end of VII.C with new footnote [^11], landing in drafts/section-07-iterative-improvement.md only. PI-206 captured the line-count leg of the same drafts-vs-polished propagation gap and was closed at run 208 by dropping the 'roughly six-hundred-thirty-line' qualifier in both polished/section-07-iterative-improvement.md and manuscript/full-draft.md line 210; the run-208 Polish did NOT propagate the Bond [^11] addition, and PI-048 was archived against the drafts-only resolution. State's sections.07.footnotes_count: 11 and the polished file's frontmatter footnotes_count: 10 show the metadata drift. The next Polish tick on Section 07 should propagate the Bond engagement sentence and the [^11] definition from drafts/section-07-iterative-improvement.md into polished/section-07-iterative-improvement.md AND into manuscript/full-draft.md (the global footnote number assigned via Stitch renumbering or held as [^11-local] for the Stitch pass to consume), mirroring the run-208 surgical pattern that closed PI-206 at three sites. Routes Section 07 polish_status: needs_polish (already set; no status delta). The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 a Cite resolution touching body prose must propagate to polished and the assembled full-draft, not just the drafts scratch file \u2014 applies here too; PI-207 is the second leg of the same defect PI-206 captured only one leg of, and the multi-facet-PI-archived-on-single-facet pattern (run-189 / PI-013 narrative; run-217 / PI-048 narrative) recurs.",
       "opened_at": "2026-06-07T11:00:00Z",
       "opened_in_run": 217,
-      "severity": "P1",
-      "type": "resolution-propagation-gap",
-      "title": "Section 07 VII.C Bond [^11] engagement-sentence leg of the run-200 Cite resolution never propagated from drafts to polished/full-draft",
-      "status": "open",
       "route": "polish",
+      "section": "07",
+      "severity": "P1",
+      "status": "open",
+      "title": "Section 07 VII.C Bond [^11] engagement-sentence leg of the run-200 Cite resolution never propagated from drafts to polished/full-draft",
+      "type": "resolution-propagation-gap",
       "verify_persona": "Persona 1 (Skeptical JLE Editor)",
-      "verify_run": 217,
-      "note": "Surfaced by the run-217 Verify provenance re-audit of Section 07. The run-200 Cite tick (cite_note_run200) recorded PI-048 closed by adding a Bond et al. (2024) AIHE meta-review engagement sentence at the end of VII.C with new footnote [^11], landing in drafts/section-07-iterative-improvement.md only. PI-206 captured the line-count leg of the same drafts-vs-polished propagation gap and was closed at run 208 by dropping the 'roughly six-hundred-thirty-line' qualifier in both polished/section-07-iterative-improvement.md and manuscript/full-draft.md line 210; the run-208 Polish did NOT propagate the Bond [^11] addition, and PI-048 was archived against the drafts-only resolution. State's sections.07.footnotes_count: 11 and the polished file's frontmatter footnotes_count: 10 show the metadata drift. The next Polish tick on Section 07 should propagate the Bond engagement sentence and the [^11] definition from drafts/section-07-iterative-improvement.md into polished/section-07-iterative-improvement.md AND into manuscript/full-draft.md (the global footnote number assigned via Stitch renumbering or held as [^11-local] for the Stitch pass to consume), mirroring the run-208 surgical pattern that closed PI-206 at three sites. Routes Section 07 polish_status: needs_polish (already set; no status delta). The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 a Cite resolution touching body prose must propagate to polished and the assembled full-draft, not just the drafts scratch file \u2014 applies here too; PI-207 is the second leg of the same defect PI-206 captured only one leg of, and the multi-facet-PI-archived-on-single-facet pattern (run-189 / PI-013 narrative; run-217 / PI-048 narrative) recurs."
+      "verify_run": 217
     }
   ],
-  "phase_index": 1,
+  "phase_index": 2,
   "phases": [
     "harvest",
     "outline",
@@ -1398,7 +1398,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 218,
+  "run_count": 219,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1755,6 +1755,8 @@
       "evidence_populated_at": "2026-05-24T15:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 14,
+      "last_cite_touch_note": "PI-181 footnote leg closed; cite_status stays needs_cite under open PI-155/PI-156",
+      "last_cite_touch_run": 214,
       "outline_at": "2026-05-26T21:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-24T09:00:00Z",
@@ -1767,9 +1769,7 @@
       "title": "Generalization Beyond Constitutional Law",
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T21:00:00Z",
-      "verify_routing_reason": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
-      "last_cite_touch_run": 214,
-      "last_cite_touch_note": "PI-181 footnote leg closed; cite_status stays needs_cite under open PI-155/PI-156"
+      "verify_routing_reason": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those."
     },
     "11": {
       "cite_completed_at": "2026-05-31T15:00:00Z",
@@ -1784,6 +1784,8 @@
       "evidence_status": "populated",
       "footnotes_count": 14,
       "last_phase": "stitch",
+      "last_polish_propagation_at": "2026-06-07T07:00:00Z",
+      "last_polish_propagation_run": 215,
       "outline_ready_at": "2026-05-22T15:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-06-05T03:00:00Z",
@@ -1806,9 +1808,7 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-06-01T13:00:00Z",
-      "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch.",
-      "last_polish_propagation_at": "2026-06-07T07:00:00Z",
-      "last_polish_propagation_run": 215
+      "verify_routing_reason": "PI-183 (XI.D in-text [^154] before XI.E [^151]-[^153]; local section-11 footnote order out of sequence) resolved at Run-201 Polish: in-text markers and footnote-definition block reordered to 1..14 sequentially within the section; global manuscript renumber rides the next Stitch."
     },
     "12": {
       "cite_at": "2026-06-01T21:00:00Z",
@@ -1825,6 +1825,8 @@
       "evidence_populated_at": "2026-05-23T03:00:00Z",
       "evidence_status": "populated",
       "last_phase": "cite",
+      "last_polish_propagation_at": "2026-06-07T07:00:00Z",
+      "last_polish_propagation_run": 215,
       "outline_ready_at": "2026-05-23T05:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_at": "2026-05-31T03:00:00Z",
@@ -1838,9 +1840,7 @@
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
-      "last_polish_propagation_at": "2026-06-07T07:00:00Z",
-      "last_polish_propagation_run": 215
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
