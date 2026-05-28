@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "outline",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-06-07T11:00:00Z",
+  "last_completed_phase": "harvest",
+  "last_run_at": "2026-06-07T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-06-05T07:00:00Z",
@@ -1377,7 +1377,7 @@
       "note": "Surfaced by the run-217 Verify provenance re-audit of Section 07. The run-200 Cite tick (cite_note_run200) recorded PI-048 closed by adding a Bond et al. (2024) AIHE meta-review engagement sentence at the end of VII.C with new footnote [^11], landing in drafts/section-07-iterative-improvement.md only. PI-206 captured the line-count leg of the same drafts-vs-polished propagation gap and was closed at run 208 by dropping the 'roughly six-hundred-thirty-line' qualifier in both polished/section-07-iterative-improvement.md and manuscript/full-draft.md line 210; the run-208 Polish did NOT propagate the Bond [^11] addition, and PI-048 was archived against the drafts-only resolution. State's sections.07.footnotes_count: 11 and the polished file's frontmatter footnotes_count: 10 show the metadata drift. The next Polish tick on Section 07 should propagate the Bond engagement sentence and the [^11] definition from drafts/section-07-iterative-improvement.md into polished/section-07-iterative-improvement.md AND into manuscript/full-draft.md (the global footnote number assigned via Stitch renumbering or held as [^11-local] for the Stitch pass to consume), mirroring the run-208 surgical pattern that closed PI-206 at three sites. Routes Section 07 polish_status: needs_polish (already set; no status delta). The broader propagation discipline the run-203 BUILD_NARRATIVE recorded \u2014 a Cite resolution touching body prose must propagate to polished and the assembled full-draft, not just the drafts scratch file \u2014 applies here too; PI-207 is the second leg of the same defect PI-206 captured only one leg of, and the multi-facet-PI-archived-on-single-facet pattern (run-189 / PI-013 narrative; run-217 / PI-048 narrative) recurs."
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "harvest",
     "outline",
@@ -1398,7 +1398,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 217,
+  "run_count": 218,
   "schema_version": 1,
   "sections": {
     "01": {
