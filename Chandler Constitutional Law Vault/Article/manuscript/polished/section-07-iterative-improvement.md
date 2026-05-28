@@ -10,6 +10,8 @@ cite_status: needs_cite
 polish_status: needs_polish
 footnotes_count: 10
 provenance_audited: true
+provenance_audited_at: 2026-06-05T07:00:00Z
+provenance_audit_run: 203
 provenance_score: 4.0
 claims_total: 22
 claims_mapped: 21
@@ -17,6 +19,9 @@ unsupported_claims:
   - claim_text: "VII.D paragraph 2 final sentence asserts 'The per-phase-rubric-only principle is the article's own L-007', citing an internal vault LESSONS entry by its catalog identifier as standalone inline authority for a general design principle. L-007 is not reproduced in the prose and is unresolvable by a reader; footnote [^7] routes the underlying tiered-loading principle to App. A, so the inline 'L-007' label carries no external or appendix-anchored authority on its own."
     paragraph: 2
     reason: requires-primary-source
+audit_notes:
+  - run: 203
+    note: "Re-audit after run-200 Cite reset of provenance_audited. Polished source is byte-identical to the run-152 Polish output: the run-200 Cite tick landed Bond [^11] and dropped the VII.A 'roughly six-hundred-thirty-line' qualifier in drafts/section-07-iterative-improvement.md only, so the polished file the audit reads has not received those edits. Numerical_precision deducted to 4 for the unanchored VII.A line-count qualifier; the same defect is routed to PI-206 (resolution-propagation gap) for Polish to close once it brings the polished source into line with the draft. Score reproduces the run-167 4.0 because nothing in the audited source has changed."
 ---
 
 # VII. Iterative Improvement Under Professorial Control
