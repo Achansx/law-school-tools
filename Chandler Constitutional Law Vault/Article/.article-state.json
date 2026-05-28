@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-28T21:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-28T22:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-28T21:00:00Z",
@@ -1330,9 +1330,21 @@
       "status": "open",
       "claim": "Section XI body prose retains two L-057-violating workplan references: 11.A's 'The affirmative posture is the recommendation the workplan endorses' and 11.E's 'the labeling fork is the workplan directive that the professor and the law school's Institutional Review Board administrator agree jointly.' Cite-241 removed the phantom-appendix footnote routings (PI-211) but cannot rewrite body prose per its no-prose-edit rule.",
       "note": "Polish-owned per L-057. Next Section 11 Polish pick should rewrite these two clauses to state the substantive claim directly without naming the workplan: 11.A 'The affirmative posture is the recommendation the workplan endorses: a method contribution paired with modest, honest evidence...' becomes 'This article adopts a method-plus-light-data posture: a method contribution paired with modest, honest evidence proportional to the claim. Three considerations justify it for a Journal of Legal Education audience: ...'. 11.E 'The labeling fork is the workplan directive that the professor and the law school's IRB administrator agree jointly...' becomes 'The labeling fork requires the professor and the law school's Institutional Review Board administrator to agree jointly whether...'. Both rewrites preserve the substantive content while removing the workplan-as-authority framing."
+    },
+    {
+      "id": "PI-217",
+      "section": "11",
+      "phase": "verify",
+      "type": "cross-file-propagation-gap",
+      "route": "cite",
+      "opened_at": "2026-05-28T22:00:00Z",
+      "opened_by": "verify-run-245",
+      "status": "open",
+      "claim": "Run-242 Cite narrative reported PI-211 closed (Section 11 footnotes 14 -> 8, [^14] renumbered to [^8], six phantom-subtitle removals and four cross-reference conversions), but the L-035 three-site cross-file propagation discipline was violated: only `manuscript/drafts/section-11-evaluation.md` carries the 8-footnote fix; `manuscript/polished/section-11-evaluation.md` and `manuscript/full-draft.md` still carry the 14 unfixed footnotes with phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles intact (grep-verified this tick: 7 occurrences in polished, 7 in full-draft, 0 in drafts). state.sections.11 fields (footnotes_count: 8, claims_total: 8, claims_mapped: 8) were updated at run 242 to reflect the narrative-level fix but the polished/full-draft source-of-truth was not changed; this divergence is the catchable defect. A reader following any of full-draft footnotes [^144]/[^145]/[^146]/[^150]/[^155]/[^156]/[^157] still lands on phantom appendix subtitles that do not exist in `manuscript/appendices/`. Same defect class as the run-243 Polish Section 03 burst (which landed on polished but not on full-draft or drafts until the run-244 Stitch propagated it three-way), but more serious because the run-242 Cite narrative explicitly cited L-035 cross-file discipline as the standard and then failed it. PI-211 remains open at the polished source-of-truth despite the run-242 narrative-level closure claim.",
+      "note": "Persona 4 (Provenance Auditor) P1 finding, Verify run 245. Routes Section 11 cite_status: needs_polish -> needs_cite for the propagation work. Next Section 11 Cite tick should re-execute the run-242 Cite operations on the polished source-of-truth: remove six self-statement footnotes (original [^1]/[^3]/[^4]/[^5]/[^6]/[^11]), convert four to legitimate cross-references ([^2] to Bond/Choi & Schwarcz at notes 3 and 4, [^7] to Sajja at note 5, [^12] to Section IV § IV.E, [^13] to Section IX), and renumber the remaining [^14] to [^8] with supra-note references updated from 'notes 7 and 10' to 'notes 2 and 5'. Then propagate to the assembled full-draft.md by re-stitching with a global footnote renumber for the six removed slots; the drafts/section-11-evaluation.md target is already at the post-fix state. The Section 12 [^10] cross-reference to 'Section XI note 8' already resolves to Bond in both the unfixed (current polished) and the would-be-fixed (post-renumber) states because Bond is at [^8] in polished and would remain at [^8] after the renumber; the cross-section parallel the run-228 Cite established between Section 11 [^8] and Section 12 [^10] holds in either resolution path. This is a routing-discipline observation worth surfacing in BUILD_NARRATIVE: the run-242 Cite narrative claimed PI-211 closure with explicit L-035 cross-file discipline framing but propagated the fix only to drafts; pattern is narrative-vs-source-of-truth divergence at the cross-file propagation boundary, catchable only by reading the actual file state. PI-211 remains open at the polished source-of-truth as the underlying defect; PI-217 captures the propagation gap as a fresh PI."
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -1343,17 +1355,17 @@
     "verify"
   ],
   "provenance_audit": {
-    "global_unsupported_open": 15,
-    "last_audit_at": "2026-06-08T13:00:00Z",
-    "last_audit_section": "07",
-    "last_reaudit_at": "2026-06-08T13:00:00Z",
-    "last_reaudit_section": "07",
+    "global_unsupported_open": 14,
+    "last_audit_at": "2026-05-28T22:00:00Z",
+    "last_audit_section": "03",
+    "last_reaudit_at": "2026-05-28T22:00:00Z",
+    "last_reaudit_section": "03",
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "reaudit_count": 6,
+    "reaudit_count": 7,
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 244,
+  "run_count": 245,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1417,7 +1429,7 @@
       "cite_completed_at": "2026-05-18T01:00:00Z",
       "cite_note": "Run 207 Cite: closed PI-127 (Section III.D footnote [^17] NFIB pin-cite locator). Re-verified via Midpage findInOpinion opinionId 809122 that the Roberts formulation 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' falls between the *550 and *551 star-pagination markers in 567 U.S. 519; the verbatim text was RE-VERIFIED across the four-snippet returned passage (the sentence sits immediately after the *550 marker, within the same paragraph that ends just before the *551 marker on snippet 5). Pin cite corrected 552 -> 550 in three places: drafts/section-03-case-study.md [^17], polished/section-03-case-study.md [^17], and full-draft.md [^34]; each footnote now carries an audit-trail parenthetical naming the Midpage opinionId and the *550/*551 star-marker bracket per the canonical Prize Cases / Grier near-miss class (quote correct, locator off; locator corrected). This is a locator correction, not a fabrication. cite_status needs_cite -> needs_polish; provenance_audited reset to false so the next Verify provenance re-audit reads the post-Cite prose. Section 03's numerical-precision criterion (Verify run 189) had scored 3 of 5 in part on the open PI-127; with PI-127 closed the next audit should clear that half of the criterion (PI-126 fifteen-link miscount remains open). PI-125 (Bond meta-review still owed in polished prose) and PI-122 (App. D 'Correspondence Excerpts' broken cross-reference) remain open Cite-routed items for subsequent ticks; this tick resolved the lowest-effort, highest-certainty open Cite P1 on Section 03 per the multi-run stall the run-189 provenance_note flagged.",
       "cite_status": "needs_polish",
-      "claims_mapped": 16,
+      "claims_mapped": 17,
       "claims_total": 17,
       "current_words": 1278,
       "draft_completed_at": "2026-05-17T23:00:00Z",
@@ -1430,27 +1442,22 @@
       "outline_ready_at": "2026-05-17T21:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-18T03:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "provenance_audited": true,
       "provenance_audited_at": "2026-05-31T21:00:00Z",
-      "provenance_reaudit_note": "Verify run 210 (2026-06-06T09:00) re-audit, triggered by the run-207 Cite reset of provenance_audited (not the lowest-score selection rule). 17 claims, 16 mapped, 1 unsupported (PI-029, the III.C 'case-doctrine-classroom triangle / casebook's blind spot' attribution to Section IV, evidence-gap). Criterion scores 4/3/3/4/4 (changed from run-189 4/3/3/3/4): numerical_precision lifted 3 -> 4 from the run-207 PI-127 closure (NFIB [^17] pin 552 -> 550 re-verified via Midpage findInOpinion opinionId 809122 at the *550 star marker); the remaining deduction is PI-126 fifteen-link miscount (breakdown 4+7+3=14). claim_coverage 4 (16/17 = 94.1%, PI-029 still open); primary_source_ratio 3 (App. A reproduction carries load-bearing site-description claims, PI-122 App. D drop and PI-125 Bond meta-review still owed); attribution 3 (PI-176 'curriculum-grounded' body gloss vs 'Curriculum-Oriented' source title at [^18]; PI-125 missing); gap_honesty 4 (PI-029 carried in unsupported_claims). provenance_score 3.6 = 18/5; 3.6 < 4.5, polish_status stays needs_polish. This is the first numerical movement on Section 03 in five consecutive audits (runs 129/147/154/189 all 3.4; run 210 = 3.6); the +0.2 isolates the PI-127 closure as the numerical_precision lift. The four remaining open Cite/Polish PIs (PI-029, PI-123, PI-125, PI-126, PI-176) are now what the score turns on.",
-      "provenance_reaudited_at": "2026-06-06T09:00:00Z",
-      "provenance_score": 3.6,
+      "provenance_audit_run": 245,
+      "provenance_reaudit_note": "Verify run 245 (2026-05-28T22:00) re-audit, triggered by the run-243 Polish PI-029/123/124 burst reset of provenance_audited (the polished frontmatter held provenance_audited:false against state's true; this audit reconciles to true at the new score). claims_total 17 unchanged (PI-029 substituted the IV.A-accurate four-course-issued-artifact-families claim for the false case-doctrine-classroom-triangle attribution; PI-124 substituted the Professor-Chandler-author-with-Section-V-reviewed-pipeline claim for the III.B actor-erased synthesis sentence; PI-123 softened III.D's 'proof' to 'illustration' without changing claim count); claims_mapped 16 -> 17 (PI-029 closure cleared the III.C unmapped entry); unsupported_claims stays empty (the run-243 polish_note cleared the PI-029 entry pending this re-audit per the run-152 polish-note discipline). Criterion scores 5/3/4/4/4 (changed from run-210 4/3/3/4/4): claim_coverage 5 (17/17 = 100%, PI-029 closed); primary_source_ratio 3 (unchanged; PI-125 Bond meta-review restoration and PI-122 App. D drop in [^3] remain Cite-owned-open); attribution_discipline 4 (PI-124 actor-erasure closure lifts +1; remaining deductions are PI-176 'curriculum-grounded' vs 'Curriculum-Oriented' at [^18] and PI-125 missing Bond meta-review); numerical_precision 4 (unchanged; PI-126 fifteen-link miscount 4+7+3=14 remains Cite-owned-open); gap_honesty 4 (unchanged; PI-029 III.C gap closed but PI-126 link-count discrepancy not flagged inline). provenance_score 3.6 -> 4.0 = 20/5; 4.0 < 4.5 so polish_status ready_for_stitch -> needs_polish (the run-243 polish_status advancement reverses until PI-125/PI-126/PI-176 land). The run-244 Stitch propagated prose changes are preserved at full-draft.md lines 87/93/99 and drafts/section-03 lines 23/29/35; only the section-status flag flips. This is the eighth re-audit of Section 03 (runs 129/147/154/189/210/231/238/245); the +0.4 swing isolates PI-029 closure (+0.2 claim_coverage) and PI-124 closure (+0.2 attribution_discipline). The three remaining open Cite-owned PIs (PI-125, PI-126, PI-176) are now what the score turns on; raising it to 4.5 requires two of those three to land.",
+      "provenance_reaudited_at": "2026-05-28T22:00:00Z",
+      "provenance_score": 4.0,
       "stitched_at": "2026-05-18T05:00:00Z",
       "target_words": 1200,
       "title": "Case Study: A Constitutional-Law Knowledge System",
-      "unsupported_claims": [
-        {
-          "claim_text": "Section III.C paragraph 3 attributes to Section IV a 'case-doctrine-classroom triangle' framing and a characterization of the lecture layer as 'the casebook's blind spot'; Section IV uses none of these phrases.",
-          "paragraph": 6,
-          "reason": "evidence-gap"
-        }
-      ],
+      "unsupported_claims": [],
       "unsupported_claims_count": 0,
-      "verify_routed_at": "2026-05-18T07:00:00Z",
-      "verify_routing_reason": "Run 129 Verify/provenance audit (score 3.4 < 4.5): cite_status -> needs_cite for PI-125 (restore Bond et al. 2024), PI-126 (fifteen-link breakdown 'seven'->'eight other Cases'), PI-127 (NFIB [^17] pin cite 552 vs star-pagination 550), and the PI-122 App. D drop in [^3]; polish_status -> needs_polish for PI-123 ('proof' overclaim, III.D) and PI-124 (actor-erasure, III.B).",
+      "verify_routed_at": "2026-05-28T22:00:00Z",
+      "verify_routing_reason": "Run 245 Verify/provenance re-audit: claims 16/17 -> 17/17 mapped (PI-029 closure), provenance_score 3.6 -> 4.0 (PI-029 +0.2 claim_coverage, PI-124 +0.2 attribution_discipline); 4.0 < 4.5 so polish_status ready_for_stitch -> needs_polish until PI-125 (Bond meta-review restoration), PI-126 (fifteen-link breakdown), and PI-176 (curriculum-grounded vs curriculum-oriented) Cite-owned items land. Run 129 baseline: cite_status -> needs_cite for PI-125/PI-126/PI-127/PI-122 App. D drop; polish_status -> needs_polish for PI-123/PI-124 (closed at run 243). PI-127 closed at run 207.",
       "word_count": 1283,
-      "last_phase": "stitch"
+      "last_phase": "verify-provenance"
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
@@ -1733,7 +1740,9 @@
     },
     "11": {
       "cite_completed_at": "2026-05-28T19:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
+      "cite_status_changed_at": "2026-05-28T22:00:00Z",
+      "cite_status_changed_reason": "Run-245 Verify (Provenance Auditor / Persona 4) re-opens cite_status for PI-217 (Section 11 L-035 three-site propagation gap; run-242 Cite narrative reported PI-211 closed with the 14->8 footnotes_count fix and the [^14]->[^8] renumber, but the L-035 cross-file discipline was violated: only drafts/section-11-evaluation.md carries the 8-footnote fix; polished/section-11-evaluation.md and manuscript/full-draft.md still carry the 14 unfixed footnotes with phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles, regex-confirmed this tick). state.footnotes_count and state.claims_total/claims_mapped were updated at run 242 to reflect the narrative-level fix but the polished/full-draft source-of-truth was not updated; this divergence is the catchable defect. Next Section 11 Cite tick should re-execute the run-242 fix on the polished file and then propagate to full-draft via the next Stitch; the drafts site is already at the post-fix state.",
       "claims_mapped": 8,
       "claims_total": 8,
       "current_words": 1316,
@@ -1866,14 +1875,14 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "11",
+    "last_audit_section": "03",
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "07",
-    "last_run": 238,
-    "last_run_at": "2026-05-29T17:00:00Z",
+    "last_reaudit_section": "03",
+    "last_run": 245,
+    "last_run_at": "2026-05-28T22:00:00Z",
     "new_findings_count": 1,
     "p0_open": 0,
-    "p1_open": 115,
+    "p1_open": 116,
     "p2_open": 43,
     "personas_read": 4
   },
