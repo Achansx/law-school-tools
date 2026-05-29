@@ -1,13 +1,15 @@
 ---
 id: "14"
 title: "Conclusion"
-status: needs_polish
+status: ready_for_stitch
 target_words: 400
-word_count: 415
-last_phase: verify-provenance
+word_count: 411
+last_phase: polish
 draft_status: needs_cite
 cite_status: needs_polish
-polish_status: needs_polish
+polish_status: ready_for_stitch
+last_polish_at: 2026-05-30T03:00:00Z
+polish_note_run288_drafts: "Mirror of polished/section-14-conclusion.md PI-226 Polish edit landed at drafts lines 21 (XIV.A 'opener was not automation. It was a method, one in which' -> 'opener is a method, in which') and 29 (XIV.C 'rather than constituting that teaching' -> '; the teaching itself remains the professor's'). Three-site L-035 propagation per polished frontmatter polish_note_run288. -5 / word-neutral; drafts word_count 415 -> 411 (one-sentence XIV.B structure carries 11 extra words vs polished two-sentence split, hence drafts 411 vs polished 400). polish_status needs_polish -> ready_for_stitch; status mirrors polished."
 footnotes_count: 8
 drafted_from_outline: outline-14-conclusion.md
 verify_provenance_note_run285: "Section 14 polish_status reverts ready_for_stitch -> needs_polish per the run-285 Verify Provenance Auditor re-audit on the post-run-252 Cite + post-run-254 Polish polished prose (4.4 < 4.5 gate). Five P1s route here: PI-226 NEW Persona 1 (XIV.A/XIV.C meta-rhetorical X-was-not-Y-it-was-Z pattern), PI-099 re-confirm narrowed Persona 2 (live-teaching named but loop framing elides classroom-judgment locus), PI-227 NEW Persona 3 (Bond-collaboration-prong elision in XIV.C second-instance future-work framing), PI-228 NEW Persona 4 (synthesis-section internal-cross-reference disclosure gap, the gap_honesty 4-band deduction), PI-229 NEW Persona 5 supplemental (XIV.C [^181] adopter first-step routing gap forwarding to Section XIII institutional implications rather than to spec sections V/VI/VII). See polished/section-14-conclusion.md provenance_note_run285 for the full audit narrative; the drafts mirror is updated for the status reversion only and propagates no body or footnote changes this tick."
@@ -18,7 +20,7 @@ evidence_note: "Scaffold-first draft under the run-79 (Section 13) and run-73 (S
 
 ## A. The archive, opened: the method as the contribution
 
-The article opened with a law professor’s archive that no one, the professor included, could open as a whole: years of slides, readings, briefs, and packets scattered across a flat folder structure that stored the material without connecting it.[^1] It closes by naming what opened that archive. The opener was not automation. It was a method, one in which generative AI, structured source materials, typed markdown notes, retrieval from verified legal sources, and iterative expert review convert a dispersed archive into a navigable, cross-linked, student-facing course knowledge system. The contribution is the method, not the artifact. The constitutional-law system is the demonstration; the transferable result is the replicable process that other doctrinal courses with similar archives can follow.[^2]
+The article opened with a law professor’s archive that no one, the professor included, could open as a whole: years of slides, readings, briefs, and packets scattered across a flat folder structure that stored the material without connecting it.[^1] It closes by naming what opened that archive. The opener is a method, in which generative AI, structured source materials, typed markdown notes, retrieval from verified legal sources, and iterative expert review convert a dispersed archive into a navigable, cross-linked, student-facing course knowledge system. The contribution is the method, not the artifact. The constitutional-law system is the demonstration; the transferable result is the replicable process that other doctrinal courses with similar archives can follow.[^2]
 
 ## B. What the case study showed, and what it did not claim
 
@@ -26,7 +28,7 @@ The case study showed a tractable pipeline that ran from source files to typed n
 
 ## C. Professorial judgment and the invitation forward
 
-The through-line of the whole article is that the expert never left the loop. The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable. The adopted method equips an artifact that supports the professor’s live teaching rather than constituting that teaching. The article closes on the method-first, opt-in invitation that the institutional discussion handed forward: a faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^7] The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^8] The invitation is offered as a modest, replicable infrastructure choice rather than a mandate, and whether to extend it is the reader’s to decide.
+The through-line of the whole article is that the expert never left the loop. The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable. The adopted method equips an artifact that supports the professor’s live teaching; the teaching itself remains the professor’s. The article closes on the method-first, opt-in invitation that the institutional discussion handed forward: a faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^7] The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^8] The invitation is offered as a modest, replicable infrastructure choice rather than a mandate, and whether to extend it is the reader’s to decide.
 
 ## Footnotes
 

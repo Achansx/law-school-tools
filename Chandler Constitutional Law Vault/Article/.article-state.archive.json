@@ -1620,6 +1620,23 @@
       "archived_at": "2026-05-29T23:00:00Z",
       "archived_in_run": 286,
       "archived_note": "Migrated from live state pending_issues per RUNBOOK >150KB audit rule on run-286 Draft noop dispatcher pass (state file at ~331KB pre-tick, well above 150KB threshold; only one non-open entry found during the sweep). Original status resolution by maintainer-handwrite of new Section II.F subsection (Adjacent tools, and what the method adds) at run 269 closed PI-JLE-RELATED-WORK and the resolved status was logged then; live-state retention was redundant after closure but cleared only this tick."
+    },
+    {
+      "id": "PI-226",
+      "section": "14",
+      "phase": "verify",
+      "type": "voice-and-register-negate-then-reframe-pattern-density",
+      "status": "resolved",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "opened_by_run": 285,
+      "routed_to": "polish",
+      "severity": "P1",
+      "claim": "Section XIV.A 'The opener was not automation. It was a method.' (full-draft.md line 397) paired with XIV.C 'The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable.' (line 405, canonical recurring sentence per L-002 third placement) and XIV.C 'The adopted method equips an artifact that supports the professor's live teaching rather than constituting that teaching.' (line 405) — three negate-then-reframe X-was-not-Y-it-was-Z pivots in 400 conclusion words = roughly one per 130 words, slogan-stacking density.",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 285. Voice-and-register defect at the conclusion's load-bearing site: the canonical recurring sentence per L-002 sits sandwiched between two cousins of the same negate-then-reframe rhetorical move (XIV.A 'was not automation, it was a method' precedes; XIV.C 'supports … rather than constituting' follows), blurring the canonical sentence's earned distinct weight. Distinct from PI-098 (replicability-overclaim) and PI-186 (pedagogical-displacement-disclaimer-gap). Suggested fix: retire one of the two cousin instances bracketing the canonical sentence. (a) Rewrite XIV.A's 'The opener was not automation. It was a method.' to drop the negate-then-reframe form: 'The opener was a method.' (preferred — the 'was not automation' binary is the more conspicuous slogan a JLE editor would flag as SV register). (b) Rewrite XIV.C's 'rather than constituting that teaching' to drop the cousin: 'The adopted method equips an artifact that supports the professor's live teaching.' (lighter touch, preserves XIV.A framing). Either form lifts density from one-per-130-words to one-per-200-words, restoring the canonical sentence's distinctive weight.",
+      "resolved_at": "2026-05-30T03:00:00Z",
+      "resolved_by_run": 288,
+      "resolved_by_phase": "polish",
+      "resolution_note": "Run-288 Polish on Section 14 diluted two of the three negate-then-reframe X-was-not-Y-it-was-Z pivots, leaving the canonical recurring sentence as the sole instance. XIV.A 'The opener was not automation. It was a method, one in which generative AI...' rewritten to 'The opener is a method, in which generative AI...' (-5 words). XIV.C 'rather than constituting that teaching' rewritten to '; the teaching itself remains the professor's' (word-neutral, replaces rather-than negate with positive semicolon-coordinated declarative). Three-site L-035 propagation across polished/drafts/full-draft. Density lifted from one-per-130 to one-per-400 (only the canonical at L-002 third placement remains)."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
