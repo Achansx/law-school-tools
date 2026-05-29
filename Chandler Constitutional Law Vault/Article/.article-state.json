@@ -88,15 +88,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-31T20:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-31T22:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T18:00:00Z",
@@ -1163,7 +1163,9 @@
       "status": "open",
       "subsection": "X.E",
       "suggested_fix": "Either narrow X.E's 'a comparable doctrinal course' to 'a comparable case-method doctrinal course' (making the case-method scope explicit and acknowledging X.D's rules-and-procedure / statutory extension as a SEPARATE n=2 question), or broaden X.E to specify two falsification tracks -- easier track ('a comparable case-method doctrinal course such as Torts or Contracts') and harder track ('a rules-and-procedure or statutory course, where X.D acknowledges the three-folder taxonomy would need re-typing before it could carry the work'). Optionally add a footnote to X.E cross-referencing X.D so a reader sees the two-track structure without holding X.D and X.E in mind simultaneously.",
-      "type": "two-track-n2-framing-gap"
+      "type": "two-track-n2-framing-gap",
+      "last_reconfirmed_run": 306,
+      "reconfirm_count": 1
     },
     {
       "claim": "Section X.E's run-268-inserted PI-219 leg b sentence 'The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' in manuscript/polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 specifies 'the same checkpoints' without naming what the checkpoints are, where they live, or how an adopter would operationalize 'the same' against a different course. Section VII defines the per-phase professorial gating, the forced-finding adversarial review pass, and the LESSONS-file memory between runs, but X.E does not cross-reference Section VII; a mid-career professor reading X.E in isolation as the n=2 invitation has no way to know which structural feature is checkpoint-load-bearing without re-reading Section VII end-to-end.",
@@ -1459,7 +1461,9 @@
       "status": "open",
       "routed_to": "polish-10",
       "description": "Closing sentence reads 'the contribution is reusable in a way a single website is not: a method can be run again on a different corpus, while a finished site can only be admired or copied'. The 'admired or copied' contrast lands as Silicon-Valley reproducibility rhetoric rather than as legal-education scholarship voice. It asserts portability as a property the reader should accept rather than as a claim Section X.C (loop discipline) and Section X.E (second instance) actually establish, and elides the prerequisite skill, time, infrastructure, and institutional roles Section IX accounts for (Persona 5 reproducibility concerns).",
-      "suggested_fix": "Replace the contrast with a hedged statement that points forward. Example: 'a method can be re-run on a different corpus by a colleague willing to invest the schema-typing, prompt-engineering, and review labor Section IX accounts for, whereas a single website is only the demonstration'. Word-neutral; cross-routes the claim to the bounded subsections that already carry the burden."
+      "suggested_fix": "Replace the contrast with a hedged statement that points forward. Example: 'a method can be re-run on a different corpus by a colleague willing to invest the schema-typing, prompt-engineering, and review labor Section IX accounts for, whereas a single website is only the demonstration'. Word-neutral; cross-routes the claim to the bounded subsections that already carry the burden.",
+      "last_reconfirmed_run": 306,
+      "reconfirm_count": 1
     },
     {
       "id": "PI-239",
@@ -1493,9 +1497,38 @@
       "routed_to": "outline-abstract OR polish-07",
       "description": "Altitude mismatch on the loop's intellectual provenance: the abstract clause generically gestures at 'iterative loops now common in software', while Section VII.A specifically attributes the architecture to Karpathy's March 7, 2026 autoresearch release. A developmental editor reading abstract -> body in order encounters a generic gesture in the abstract that the body re-anchors to a named source. The current asymmetry reads as the abstract softening a body claim the body in fact owns.",
       "suggested_fix": "(a) Revise the abstract clause to 'a forced-finding verification pass adapted from the Karpathy-style iterative loop now common in software experimentation' (word-neutral) so the altitude matches Section VII.A's specific attribution. (b) Alternatively, keep the abstract clause generic and lift Section VII.A's lead sentence to a higher-altitude framing so the body opens at the abstract's altitude."
+    },
+    {
+      "id": "PI-241",
+      "type": "compound-cite-without-per-source-pin-cite",
+      "severity": "P1",
+      "opened_in_run": 306,
+      "opened_by_persona": "Skeptical JLE Editor",
+      "status": "open",
+      "section": "10",
+      "subsection": "X.A",
+      "anchor": "[^17] polished / [^150] full-draft",
+      "route_to": "cite",
+      "paired_pi": "sections.10.unsupported_claims (Persona 4 provenance-side framing)",
+      "description": "X.A reform-canon-treats-teaching-method-as-the-unit assertion's [^17]/[^150] compound string-cite to Sullivan 2007 / Stuckey 2007 / Maranville 2015 lacks per-source pin-cites required under Bluebook 21st R.1.5(a)(ii) / R.10.6.1 for a load-bearing 'the canon treats X as Y' proposition. The three works carry analytically distinct theses (integrative apprenticeship; outcomes-based pedagogy; outcomes-assessment scaffolding) and none reduces to the article's framing without a specific page or chapter anchor.",
+      "suggested_fix": "Form (b) preferred: retain single footnote slot but add per-source pin-cites within the compound (Sullivan et al., Educating Lawyers 27-29 (2007); Stuckey et al., Best Practices 39-44 (CLEA 2007); Maranville et al. eds., Building on Best Practices ch. 1 sec. C (LexisNexis 2015) (all last visited May 29, 2026)) -- +0 footnote slots, +~10 footnote words inside L-059 50-word cap, lifts criterion 1 + 3 simultaneously for provenance_score 4.0 -> 4.6 above the 4.5 gate."
+    },
+    {
+      "id": "PI-242",
+      "type": "adopter-onboarding-corpus-and-labor-threshold-gap",
+      "severity": "P1",
+      "opened_in_run": 306,
+      "opened_by_persona": "Practitioner-Adopter (supplemental)",
+      "status": "open",
+      "section": "10",
+      "subsection": "X.A",
+      "anchor": "X.A paragraph 1 method-portability claim",
+      "route_to": "polish",
+      "description": "X.A names the method as the contribution unit that travels (run-304 Polish +25-word reform-canon-anchor sentence) and the canon as the warrant ([^17]/[^150] Carnegie / Best Practices / Building on Best Practices), but does not specify the minimum corpus an adopter needs before the method can be run: minimum case count, minimum doctrine count, minimum lecture corpus, minimum prior tagging, minimum time-budget per page, minimum review cadence. Section IV catalogues the case study's input corpus and Section IX tracks its per-tick labor, but neither is named at X.A's portability site, so an adopter encountering the 'different corpus' claim has no inline pointer to the corpus-and-labor floor the case study actually required. Distinct from PI-221 (X.E 'same checkpoints' cross-reference gap).",
+      "suggested_fix": "Tighter form preferred to preserve word budget (Section 10 already at 1004 / 900 = +11.6%, flagged for Stitch trim): an X.A sentence reading roughly \"Section IV catalogues the case study corpus and Section IX its labor; an adopter inheriting the method inherits both as the floor the X.A portability claim assumes.\" (~28 words, +5 over current 23-word X.A close, +0 footnotes; internal cross-references to existing Section IV and Section IX anchors)."
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -1514,7 +1547,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 305,
+  "run_count": 306,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1849,9 +1882,9 @@
     "10": {
       "cite_completed_at": "2026-05-31T00:00:00Z",
       "cite_last_run": 303,
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "claims_mapped": 20,
-      "claims_total": 20,
+      "claims_total": 21,
       "current_words": 1004,
       "draft_at": "2026-05-30T21:00:00Z",
       "draft_status": "needs_polish",
@@ -1871,16 +1904,26 @@
       "polish_status": "needs_polish",
       "polish_status_prior_run_268": "ready_for_stitch",
       "polished_word_count": 1004,
-      "provenance_audit_run": 270,
-      "provenance_audit_run_prior": 263,
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-30T22:00:00Z",
-      "provenance_score": 4.2,
+      "provenance_audit_run": 306,
+      "provenance_audit_run_prior": 270,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-31T22:00:00Z",
+      "provenance_score": 4.0,
       "provenance_score_prior": 4.0,
       "stitched_at": "2026-05-24T11:00:00Z",
       "target_words": 900,
       "title": "Generalization Beyond Constitutional Law",
-      "unsupported_claims": [],
+      "unsupported_claims": [
+        {
+          "claim_text": "The legal-education reform canon treats teaching method, not any single course's finished materials, as the unit of pedagogical contribution capable of traveling across doctrinal courses.",
+          "paragraph": 1,
+          "subsection": "X.A",
+          "anchor": "[^17] polished / [^150] full-draft",
+          "reason": "requires-pin-cite-to-canon-source",
+          "opened_in_run": 306,
+          "paired_pi": "PI-241"
+        }
+      ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-30T08:00:00Z",
       "verify_routing_reason": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
@@ -1894,7 +1937,10 @@
       "polish_status_prior_run_304": "needs_polish",
       "flag_for_stitch_trim_run_304": "1004 / 900 = +11.6%, +14 words past +/-10% Polish band (810-990) after the run-304 X.A legal-ed-canon-anchor propagation (+25 words). Polish-rubric criterion 5 allows the flag-for-Stitch path. Stitch should trim X.A or another Section 10 subsection back into 810-990 on the next Stitch pass on Section 10 after the dedicated Section 02 propagation Stitch.",
       "stitch_propagated_at_run_305": "2026-05-31T20:00:00Z",
-      "stitch_propagation_note_run_305": "Run-305 Stitch propagated the run-302 Draft + run-303 Cite + run-304 Polish X.A new sentence and the local [^17] = Carnegie/Best Practices/Building on Best Practices footnote from polished/section-10-generalization.md into manuscript/full-draft.md as new global [^150], with +1 renumber of existing globals [^150]-[^186] -> [^151]-[^187]. polish_status holds at needs_polish on the still-open PI-238 (X.A 'admired or copied' Silicon-Valley-rhetoric routing), PI-220/PI-221 (X.E framing/checkpoints gaps), and the +14-over-Polish-band word_count 1004 vs. target 900 flagged by run-304 for a future Polish trim tick. polished file unchanged (already source-of-truth at run 304); drafts file unchanged. The Section 10 X-leg of PI-JLE-LEGAL-ED-LIT now closes at the full-draft layer; only the XI leg remains open under the priority-2 queue."
+      "stitch_propagation_note_run_305": "Run-305 Stitch propagated the run-302 Draft + run-303 Cite + run-304 Polish X.A new sentence and the local [^17] = Carnegie/Best Practices/Building on Best Practices footnote from polished/section-10-generalization.md into manuscript/full-draft.md as new global [^150], with +1 renumber of existing globals [^150]-[^186] -> [^151]-[^187]. polish_status holds at needs_polish on the still-open PI-238 (X.A 'admired or copied' Silicon-Valley-rhetoric routing), PI-220/PI-221 (X.E framing/checkpoints gaps), and the +14-over-Polish-band word_count 1004 vs. target 900 flagged by run-304 for a future Polish trim tick. polished file unchanged (already source-of-truth at run 304); drafts file unchanged. The Section 10 X-leg of PI-JLE-LEGAL-ED-LIT now closes at the full-draft layer; only the XI leg remains open under the priority-2 queue.",
+      "provenance_score_prior_run_304": 4.2,
+      "last_verify_touch_run": 306,
+      "last_verify_touch_note": "Run-306 Verify Provenance Auditor re-audit on Section 10 (lowest-numbered polished section at provenance_audited:false after run-304 Polish reset). Score 4.0 (-0.2 from run-270 4.2 baseline) on criterion 1 claim_coverage 5 -> 4 from one new unsupported_claim at X.A reform-canon-anchor site (the run-304 Polish-inserted sentence with [^17]/[^150] compound string-cite to Sullivan 2007 / Stuckey 2007 / Maranville 2015 without per-source pin-cites). Two new PIs opened: PI-241 (Persona 1 Skeptical JLE Editor; routed to Section 10 Cite; Form (b) per-source pin-cite expansion in place lifts criterion 1 + 3 simultaneously for 4.0 -> 4.6 above the 4.5 gate); PI-242 (Persona 5 Practitioner-Adopter supplemental; X.A adopter-onboarding-corpus-and-labor-threshold gap; routed to Section 10 Polish; tighter form is +5-word X.A sentence cross-referencing Section IV corpus and Section IX labor). PI-220 (Persona 2) re-confirmed third-consecutive at unchanged X.D/X.E body. PI-238 (Persona 3 X.A 'admired or copied' Silicon-Valley reproducibility-rhetoric) re-confirmed second-consecutive at unchanged X.A body. cite_status needs_polish -> needs_cite on the PI-241 Cite-tier routing; polish_status holds at needs_polish."
     },
     "11": {
       "cite_completed_at": "2026-05-28T19:00:00Z",
@@ -2085,18 +2131,18 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "14",
+    "last_audit_section": "10",
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "02",
-    "last_run": 301,
-    "last_run_at": "2026-05-30T20:00:00Z",
-    "new_findings_count": 5,
+    "last_reaudit_section": "10",
+    "last_run": 306,
+    "last_run_at": "2026-05-31T22:00:00Z",
+    "new_findings_count": 2,
     "p0_open": 0,
-    "p1_open": 132,
+    "p1_open": 134,
     "p2_open": 43,
     "personas_read": 5
   },
-  "verify_deferred_note": "verify run 301 re-audited Section 02 against the post-run-300 dedicated Stitch propagation that landed II.E [^18] (Carnegie + Best Practices + Sturm & Guinier compound), II.E [^19] (Bond meta-review), II.F [^20] (Quimbee/Oyez/Studicata tricolon), and II.F [^21] (Ahrens 2017 + Matuschak Evergreen Notes) into the assembled full-draft. provenance_score 4.0 -> 4.2 (+0.2 on criterion-2 primary_source_ratio 3 -> 4 lifting 50-69% 3-band to 60-79% 4-band after four new external cites; other criteria hold). 4.2 < 4.5 gate so polish_status reverts ready_for_stitch -> needs_polish. Five P1s route: PI-236 (Persona 1 XI.D/XI.E body marker out-of-ascending-order 150-154-157-155-156-158 -> Section 11 Polish/Cite), PI-237 (Persona 2 II.E [^18] compound-cite dual-attached-to-substantively-distinct-Carnegie/BP-pair-vs-Sturm-Guinier-matrix-critique -> Section 02 Polish), PI-238 (Persona 3 X.A 'method can be run again ... a finished site can only be admired or copied' Silicon-Valley reproducibility-rhetoric -> Section 10 Polish), PI-239 (Persona 4 Provenance Auditor [^18] dual-marker partial-mapping case formally logged, paired with PI-237 -> Section 02 Polish/Cite), PI-240 (Persona 6 abstract-vs-Section-VII.A Karpathy-attribution altitude mismatch -> Abstract Outline-sub-task OR Section 07 Polish; abstract.status ready_for_review -> needs_work). Manifest: 5 lines appended (4 new mapped + 1 carry-over PI-234 CrunchTime re-log). Personas 5; forced_findings_satisfied true; deferred_p1_count 0 (lifted). Submission gate stays FALSE on multiple sections at provenance_score < 4.5, the PI-PROPAG-300-OVERAGE 14033 word overage from run-300 propagation, and the open routed PIs (PI-082, PI-088, PI-181, PI-190, PI-191, PI-198, PI-199, PI-013, PI-188, PI-189, PI-209 IX.B IRB/consent/ethics silence twelfth consecutive non-closure, PI-177, PI-178, PI-179, PI-180, PI-219 leg a, PI-220, PI-221, PI-222, PI-223, PI-227 fifth Verify cycle, PI-228, PI-230 expanded scope, PI-231 third Verify cycle, PI-232, PI-233 closed at run-300, PI-234, PI-235, PI-236, PI-237, PI-238, PI-239, PI-240) against the assembled draft.",
+  "verify_deferred_note": "verify run 306 re-audited Section 10 against the post-run-304 Polish + run-305 Stitch X.A propagation that landed [^17] / global [^150] (Sullivan et al. 2007 + Stuckey et al. 2007 + Maranville et al. 2015 compound string-cite) plus the new X.A +25-word reform-canon-anchor sentence. provenance_score 4.2 (run 270 baseline) -> 4.0 (-0.2 on criterion 1 claim_coverage 5 -> 4 driven by one new unsupported_claim at the X.A reform-canon-anchor site; the compound cite lacks per-source pin-cites required for a load-bearing 'the canon treats X as Y' proposition). 4.0 < 4.5 gate so polish_status holds at needs_polish; cite_status needs_polish -> needs_cite on the PI-241 Cite-tier routing. Two new P1s open: PI-241 (Persona 1 Skeptical JLE Editor; X.A [^17]/[^150] compound-cite-no-pin-cite; routed to Section 10 Cite); PI-242 (Persona 5 Practitioner-Adopter supplemental; X.A adopter-onboarding-corpus-and-labor-threshold gap; routed to Section 10 Polish). Two re-confirms: PI-220 (Persona 2 X.D/X.E two-track-n=2-framing tension) third-consecutive; PI-238 (Persona 3 X.A 'admired or copied' Silicon-Valley reproducibility-rhetoric) second-consecutive -- the run-304 Polish inserted the new reform-canon sentence AFTER 'admired or copied' but did not retire PI-238's binary. Manifest: 3 lines appended (1 new unmapped + 2 newly-audited mapped at X.A). Personas 5; forced_findings_satisfied true; deferred_p1_count 0 (lifted). Submission gate stays FALSE on PI-PROPAG-300-OVERAGE (full-draft 14058 vs. 14000 ceiling, +58), eight sections at provenance_score < 4.5, and the open routed PIs against the assembled draft.",
   "word_count_policy": {
     "earmark": "extra 2000 words reserved for Sections XI (was 900, now 1200) and XII (was 800, now 1400); other section budgets unchanged",
     "new_max": 14000,
