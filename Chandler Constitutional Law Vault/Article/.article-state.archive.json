@@ -1355,6 +1355,22 @@
       "route": "none",
       "status": "open",
       "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-29T06:00:00Z",
+      "archived_reason": "Resolved at run-249 Cite by re-executing the run-242 footnote restructure on polished/section-11-evaluation.md; the L-035 three-site propagation gap is closed at the polished source-of-truth (drafts already at the post-fix state from run 242; full-draft propagation owed to next Stitch with the deterministic global renumber).",
+      "claim": "Run-242 Cite narrative reported PI-211 closed (Section 11 footnotes 14 -> 8, [^14] renumbered to [^8], six phantom-subtitle removals and four cross-reference conversions), but the L-035 three-site cross-file propagation discipline was violated: only `manuscript/drafts/section-11-evaluation.md` carries the 8-footnote fix; `manuscript/polished/section-11-evaluation.md` and `manuscript/full-draft.md` still carry the 14 unfixed footnotes with phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles intact (grep-verified this tick: 7 occurrences in polished, 7 in full-draft, 0 in drafts). state.sections.11 fields (footnotes_count: 8, claims_total: 8, claims_mapped: 8) were updated at run 242 to reflect the narrative-level fix but the polished/full-draft source-of-truth was not changed; this divergence is the catchable defect. A reader following any of full-draft footnotes [^144]/[^145]/[^146]/[^150]/[^155]/[^156]/[^157] still lands on phantom appendix subtitles that do not exist in `manuscript/appendices/`. Same defect class as the run-243 Polish Section 03 burst (which landed on polished but not on full-draft or drafts until the run-244 Stitch propagated it three-way), but more serious because the run-242 Cite narrative explicitly cited L-035 cross-file discipline as the standard and then failed it. PI-211 remains open at the polished source-of-truth despite the run-242 narrative-level closure claim.",
+      "id": "PI-217",
+      "note": "Persona 4 (Provenance Auditor) P1 finding, Verify run 245. RESOLVED at run-249 Cite: polished/section-11-evaluation.md re-executed against the run-242 instructions. Body markers [^1]/[^3]/[^4]/[^5]/[^6]/[^12] removed; [^2]/[^7]/[^13]/[^14] converted and renumbered to [^1]/[^2]/[^6]/[^7]; [^8]/[^9]/[^10] (Bond/Choi&Schwarcz/Sajja) preserved and renumbered to [^3]/[^4]/[^5]; [^11] (artifact-matched evaluation) renumbered to [^8] with body supra cross-reference updated 'notes 7 and 10' -> 'notes 2 and 5'. Phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles eliminated (regex-confirmed zero in polished body post-fix). Run-215 Rigour spelling and run-221 Zawacki-Richter typology pin cite Bond enhancements preserved at the renumbered [^3]. full-draft.md propagation owed to next Stitch with the deterministic global renumber ([^158]-[^184] -> [^152]-[^178]); drafts already at the post-fix state from run 242. The narrative-vs-source-of-truth divergence pattern is the salient operational lesson: a narrative-level closure claim under explicit L-035 framing was not matched by actual file state, and was catchable only by re-reading the polished file. The same defect class was caught at run 244 (Polish Section 03 burst landed on polished but not full-draft/drafts until Stitch propagated three-way); together the two precedents argue for a pre-commit grep check on cross-file propagation before declaring an L-035 closure.",
+      "opened_at": "2026-05-28T22:00:00Z",
+      "opened_by": "verify-run-245",
+      "phase": "verify",
+      "resolved_at": "2026-05-29T06:00:00Z",
+      "resolved_by": "cite-run-249",
+      "route": "cite",
+      "section": "11",
+      "status": "resolved",
+      "type": "cross-file-propagation-gap"
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

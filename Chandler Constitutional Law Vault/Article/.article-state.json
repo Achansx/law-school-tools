@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-29T04:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-29T06:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-28T21:00:00Z",
@@ -1249,21 +1249,9 @@
       "section": "11",
       "status": "open",
       "type": "workplan-language-slip"
-    },
-    {
-      "claim": "Run-242 Cite narrative reported PI-211 closed (Section 11 footnotes 14 -> 8, [^14] renumbered to [^8], six phantom-subtitle removals and four cross-reference conversions), but the L-035 three-site cross-file propagation discipline was violated: only `manuscript/drafts/section-11-evaluation.md` carries the 8-footnote fix; `manuscript/polished/section-11-evaluation.md` and `manuscript/full-draft.md` still carry the 14 unfixed footnotes with phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles intact (grep-verified this tick: 7 occurrences in polished, 7 in full-draft, 0 in drafts). state.sections.11 fields (footnotes_count: 8, claims_total: 8, claims_mapped: 8) were updated at run 242 to reflect the narrative-level fix but the polished/full-draft source-of-truth was not changed; this divergence is the catchable defect. A reader following any of full-draft footnotes [^144]/[^145]/[^146]/[^150]/[^155]/[^156]/[^157] still lands on phantom appendix subtitles that do not exist in `manuscript/appendices/`. Same defect class as the run-243 Polish Section 03 burst (which landed on polished but not on full-draft or drafts until the run-244 Stitch propagated it three-way), but more serious because the run-242 Cite narrative explicitly cited L-035 cross-file discipline as the standard and then failed it. PI-211 remains open at the polished source-of-truth despite the run-242 narrative-level closure claim.",
-      "id": "PI-217",
-      "note": "Persona 4 (Provenance Auditor) P1 finding, Verify run 245. Routes Section 11 cite_status: needs_polish -> needs_cite for the propagation work. Next Section 11 Cite tick should re-execute the run-242 Cite operations on the polished source-of-truth: remove six self-statement footnotes (original [^1]/[^3]/[^4]/[^5]/[^6]/[^11]), convert four to legitimate cross-references ([^2] to Bond/Choi & Schwarcz at notes 3 and 4, [^7] to Sajja at note 5, [^12] to Section IV \u00a7 IV.E, [^13] to Section IX), and renumber the remaining [^14] to [^8] with supra-note references updated from 'notes 7 and 10' to 'notes 2 and 5'. Then propagate to the assembled full-draft.md by re-stitching with a global footnote renumber for the six removed slots; the drafts/section-11-evaluation.md target is already at the post-fix state. The Section 12 [^10] cross-reference to 'Section XI note 8' already resolves to Bond in both the unfixed (current polished) and the would-be-fixed (post-renumber) states because Bond is at [^8] in polished and would remain at [^8] after the renumber; the cross-section parallel the run-228 Cite established between Section 11 [^8] and Section 12 [^10] holds in either resolution path. This is a routing-discipline observation worth surfacing in BUILD_NARRATIVE: the run-242 Cite narrative claimed PI-211 closure with explicit L-035 cross-file discipline framing but propagated the fix only to drafts; pattern is narrative-vs-source-of-truth divergence at the cross-file propagation boundary, catchable only by reading the actual file state. PI-211 remains open at the polished source-of-truth as the underlying defect; PI-217 captures the propagation gap as a fresh PI.",
-      "opened_at": "2026-05-28T22:00:00Z",
-      "opened_by": "verify-run-245",
-      "phase": "verify",
-      "route": "cite",
-      "section": "11",
-      "status": "open",
-      "type": "cross-file-propagation-gap"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -1284,7 +1272,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 248,
+  "run_count": 249,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1660,21 +1648,24 @@
     "11": {
       "cite_completed_at": "2026-05-28T19:00:00Z",
       "cite_note": "Run-242 Cite tick resolved PI-211 (Section XI phantom App. A 'Article Project Architecture' subtitle plus seven phantom subsections, phantom App. D 'Internal Project Records Excerpts'/'Correspondence Excerpts' subtitle across original [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14]; original [^11] carried the same phantom routing and was fixed in this sweep for internal consistency). Real appendices are A 'Input Inventory' \u00a7\u00a7A.1-A.3 and D 'Karpathy-Loop Per-Phase Rubric' \u00a7\u00a7D.1-D.4; no real subsection holds the article's own architectural decisions, so per cite-rubric criterion 5 and L-058 the footnotes resolve: original [^1] (disclaimer self-statement) REMOVED; original [^2] CONVERTED to 'see infra notes 3 and 4' (Bond and Choi & Schwarcz); original [^3]/[^4]/[^5]/[^6] (four-instrument plan and supra-references) REMOVED; original [^7] CONVERTED to 'see infra note 5' (Sajja); original [^11] (IRB labeling fork) REMOVED; original [^12] CONVERTED to 'see supra Section IV (Input Corpus) \u00a7 IV.E'; original [^13] CONVERTED to 'see infra Section IX (Cost and Labor)'. Renumber: [^2]->[^1], [^7]->[^2], [^8]->[^3], [^9]->[^4], [^10]->[^5], [^12]->[^6], [^13]->[^7], [^14]->[^8]; [^14]'s 'see supra notes 7 and 10' updated to 'see supra notes 2 and 5'. footnotes_count 14->8. All eight footnotes within the L-059 50-word cap. Body prose unchanged per Cite's no-prose-edit rule; remaining workplan-language slips at 11.A and 11.E (L-057) are Polish-owned and logged as PI-216. No URL re-verification this tick: Bond [^3] and Choi & Schwarcz [^4] reuse run-151 WebSearch liveness; Sajja [^5] inherits liveness from Sections III/VIII per L-034. cite_status->needs_polish.",
-      "cite_redone_at": "2026-05-28T19:00:00Z",
-      "cite_status": "needs_cite",
-      "cite_status_changed_at": "2026-05-28T22:00:00Z",
-      "cite_status_changed_reason": "Run-245 Verify (Provenance Auditor / Persona 4) re-opens cite_status for PI-217 (Section 11 L-035 three-site propagation gap; run-242 Cite narrative reported PI-211 closed with the 14->8 footnotes_count fix and the [^14]->[^8] renumber, but the L-035 cross-file discipline was violated: only drafts/section-11-evaluation.md carries the 8-footnote fix; polished/section-11-evaluation.md and manuscript/full-draft.md still carry the 14 unfixed footnotes with phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles, regex-confirmed this tick). state.footnotes_count and state.claims_total/claims_mapped were updated at run 242 to reflect the narrative-level fix but the polished/full-draft source-of-truth was not updated; this divergence is the catchable defect. Next Section 11 Cite tick should re-execute the run-242 fix on the polished file and then propagate to full-draft via the next Stitch; the drafts site is already at the post-fix state.",
+      "cite_redone_at": "2026-05-29T06:00:00Z",
+      "cite_status": "needs_polish",
+      "cite_status_changed_at": "2026-05-29T06:00:00Z",
+      "cite_status_changed_reason": "Run-249 Cite resolved PI-217 by re-executing the run-242 footnote restructure on polished/section-11-evaluation.md (14 -> 8 footnotes; six self-statement footnotes [^1]/[^3]/[^4]/[^5]/[^6]/[^12] removed; four cross-references [^2]/[^7]/[^13]/[^14] converted; remaining [^11] renumbered to [^8] with body supra cross-reference updated from 'notes 7 and 10' to 'notes 2 and 5'). Phantom 'App. A (Article Project Architecture)' and 'App. D (Internal Project Records Excerpts)' subtitles now zero in polished body (regex-confirmed). All run-215 Rigour spelling and run-221 Zawacki-Richter typology pin cite Bond enhancements preserved at the new [^3]. Drafts site already at post-fix state from run 242; full-draft propagation owed to next Stitch (six removed Section 11 footnote slots require global renumber of [^158]-[^184] down by six to [^152]-[^178]). PI-217 closed and migrated to archive; underlying PI-211 also closes at the polished source-of-truth. cite_status needs_cite -> needs_polish.",
       "claims_mapped": 8,
       "claims_total": 8,
-      "current_words": 1316,
+      "current_words": 1309,
       "draft_completed_at": "2026-05-31T13:00:00Z",
       "draft_status": "needs_cite",
       "evidence_cards": 10,
       "evidence_populated_at": "2026-05-22T13:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 8,
-      "last_cite_run": 242,
+      "last_cite_run": 249,
       "last_phase": "cite",
+      "last_cite_propagation_at": "2026-05-29T06:00:00Z",
+      "last_cite_propagation_run": 249,
+      "last_cite_propagation_note": "Run-249 Cite resolved PI-217 (Verify run-245 Provenance Auditor finding) by re-executing the run-242 footnote restructure on polished/section-11-evaluation.md, closing the L-035 cross-file propagation gap. Phantom App. A/D subtitles eliminated from the polished source-of-truth (zero post-fix); 14 -> 8 footnotes; six self-statements removed; four cross-references converted to legitimate supra/infra forms; remaining [^11] artifact-matched-evaluation footnote renumbered to [^8] with body supra cross-reference updated from 'notes 7 and 10' to 'notes 2 and 5'. The run-215 Rigour title spelling and run-221 Zawacki-Richter typology pin cite Bond enhancements preserved at the renumbered [^3]. Section 12 [^10] cross-reference to 'Section XI note 8' still resolves to artifact-matched-evaluation under the new local numbering. Full-draft propagation owed to next Stitch (six removed Section 11 footnote slots require global renumber of [^158]-[^184] down by six to [^152]-[^178]); drafts already at the post-fix state from run 242. Source-of-truth file state now matches the state-file claim of footnotes_count: 8 made at run 242.",
       "last_polish_propagation_at": "2026-06-07T07:00:00Z",
       "last_polish_propagation_run": 215,
       "outline_ready_at": "2026-05-22T15:00:00Z",
@@ -1684,9 +1675,10 @@
       "polish_status_changed_at": "2026-05-29T17:00:00Z",
       "polish_status_changed_reason": "Run-238 Verify provenance re-audit (after run-215 Polish Rigour propagation and run-221 Cite Zawacki-Richter typology pin cite): claims_total 15->17, claims_mapped 14->17, PI-160 stale unsupported_claim cleared, score 3.6->4.2; PI-211 NEW (phantom-appendix-subtitle plus phantom-subsection mis-routing across eight footnotes) routes Section 11 cite_status needs_polish->needs_cite for the Cite-owned footnote-text fix. 4.2 < 4.5 holds polish_status:needs_polish.",
       "provenance_audit_run": 238,
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T17:00:00Z",
       "provenance_score": 4.2,
+      "provenance_stale_reason": "Run-249 Cite materially changed polished/section-11-evaluation.md body markers (6 removed) and 8 footnote definitions (6 removed, 4 converted, 4 renumbered/preserved). Next Verify Provenance Auditor re-audit reads the post-Cite prose; the run-238 4.2 score is retained as last-known. The phantom-App. A/D subtitle and L-058 internal-artifact deductions that contributed to the prior 4.2 should clear at the next audit since the post-fix source carries zero phantom subtitles and zero internal-artifact-only citations.",
       "stitch_note_run202": "Run-202 interim Stitch on Section 11: propagated the Run-201 Polish local renumber into manuscript/full-draft.md. XI.D second paragraph marker [^156] -> [^153] (artifact-matched rationale); XI.E [^153] -> [^154] (IRB labeling fork); XI.E [^154] -> [^155] (data-collection-status fork); XI.E [^155] -> [^156] (single-owner-section routing). Footnote-definition block reordered to match. Cross-reference inside the new [^153] corrected from the pre-existing slip 'notes 149 and 150' to 'notes 149 and 152' (matches polished source's local 'notes 7 and 10' = vocabulary discipline + Sajja, not vocabulary + Bond). Word-neutral; 181 contiguous defs preserved; no body prose changed. polish_status ready_for_stitch -> stitched. provenance_audited stays true (no prose change); 3.6 score awaits next Verify re-audit per the run-152 polish note (PI-160 was Cite-resolved at source run-151 but the recorded unsupported_claims entry awaits Verify re-score). PI-200 (new) logged for the cross-section Bond title-spelling drift surfaced this tick on the Stitch fact-consistency sweep.",
       "stitched_at": "2026-06-05T05:00:00Z",
       "target_words": 1200,
