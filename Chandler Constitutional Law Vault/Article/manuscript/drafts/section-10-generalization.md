@@ -1,16 +1,18 @@
 ---
 id: "10"
 title: "Generalization Beyond Constitutional Law"
-status: ready_for_stitch
+status: needs_polish
 target_words: 900
 word_count: 1008
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_polish
 cite_status: needs_polish
 footnotes_count: 16
 cite_completed_at: 2026-05-30T02:00:00Z
 polish_completed_at: 2026-05-30T18:00:00Z
-polish_status: ready_for_stitch
+polish_status: needs_polish
+verify_provenance_note_run270: "Run-270 Verify-provenance re-audit on the polished/section-10 source-of-truth re-scored 5/3/4/4/5 = 4.2 (+0.2 from the run-263 4.0 baseline; criterion 1 lift on the run-267 PI-218 closure and run-268 +2-claim insertion; 20/20 claims mapped, unsupported_claims empty). 4.2 < 4.5 so polish_status reverts ready_for_stitch -> needs_polish per rubric/provenance-audit.md exit condition. Two new PIs opened against this section: PI-220 (Persona 2 Pedagogy Traditionalist; X.D / X.E two-track-n=2-framing tension on 'comparable doctrinal course' definition) and PI-221 (Persona 5 Practitioner-Adopter supplemental; X.E 'same checkpoints' Section VII cross-reference gap). No body or footnote changes this tick; polish_status reversion is the only state-routing delta. See polished/section-10-generalization.md provenance_note_run270 for the full audit rationale and frontmatter delta."
+polish_status_prior_run_268: ready_for_stitch
 polish_note_run_268: "Polish run 268 propagated the polished/section-10 PI-154 (X.C editor-vs-teacher distinction) and PI-219 legs b+c (X.E n=1 anticipate-and-rebut) body inserts into this drafts file per L-035 three-site discipline. X.C sentence added between 'another pass.[^11]' and 'The architectural commitment carries too.': 'That production-loop role is what the method makes reusable; it is not the live teaching, which Section XII counts among the losses.' (22 words). X.E two sentences added between 'reports one instance rather than two.' and 'The generalization claim is therefore an invitation as much as a result.': 'The standard objection is that one instance cannot license a generalization. The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints.' (36 words combined). Net body delta +58 words; word_count 950 -> 1008 in this drafts mirror; polished file 921 -> 979 within +/-10% band; full-draft total_words 13540 -> 13598. polish_status advances to ready_for_stitch; PI-154 fully closed and archived; PI-219 stays open with route changed to cite for the leg-a external-comparable-effort anchor that Polish cannot import. See polished/section-10-generalization.md polish_note_run_268 for the full closure rationale, mechanical/voice/tightness/first-person/coherence checks, and the deferred multi-facet routing."
 polish_note_run_261: "Polish run 261 propagated the run-261 polished-file five-PI-closure body delta (PI-085 X.B opening hedge; PI-086+PI-090 X.D conjecture rewrite; PI-089 X.C tooling hedge; PI-153 X.A meta-rhetoric cut) into this drafts file with footnote anchors translated to this file's post-run-260 layout ([^14] Usman, unchanged in slot). Body word delta -15 (965 -> 950, within +/-10% of 900). polish_status holds at needs_polish on the open PI-088 (Cite-routed) and PI-154 (next Polish tick) axes. See polished/section-10-generalization.md polish_note_run_261 for the full closure rationale."
 cite_note_run_214: "PI-181 footnote leg closed by aligning [^1] from 'retrieval from verified legal sources' to 'build-time linking to verified legal sources' to mirror the canonical I.B phrasing. cite_status remains needs_cite under PI-155/PI-156. polish_status reconciled from stale 'none' to the state file's 'needs_polish'."
