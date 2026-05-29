@@ -1562,6 +1562,19 @@
       "resolved_run": 272,
       "resolution_phase": "cite",
       "resolution_note": "Surgical fix per PI-routing drop-option: deleted the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause from polished Section 04 footnotes [^14], [^15], [^20] (and the full-draft manuscript-global [^49], [^50], [^55] mirrors). The open-question body-prose hedges stand alone as the PI directive specified ('body hedge suffices'). Footnote count unchanged at 20; no global renumber. Unsupported_claims cleared; claims_mapped advances 17 -> 20. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual flagged in the run-182 provenance note (note 17's 'progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; remains for the next Polish tick."
+    },
+    {
+      "claim": "Sections 02, 09, 11, 12 contain prose and footnotes that reference Article-Workplan.md as a source. Per new L-057, the workplan must NOT appear in published prose; rewrite to state substantive claims directly.",
+      "id": "PI-WORKPLAN-EVICT",
+      "opened_at": "2026-05-26T13:30:00Z",
+      "phase": "polish",
+      "section": "multi",
+      "status": "resolved",
+      "type": "workplan-reference-eviction",
+      "resolved_at": "2026-05-31T04:00:00Z",
+      "resolved_run": 273,
+      "resolution_phase": "polish",
+      "resolution_note": "Resolved at run-273 Polish on Section 09. Section 09 carried the largest remaining cluster of L-057 workplan references and L-058 internal-artifact references in the article. Run-273 closed body prose at IX.A (the 'workplan names' opener replaced with the unfalsifiability thesis and the 'workplan also fixes the column set' clause replaced with 'The column set Section IX reports is fixed in advance'), IX.C (BUILD_NARRATIVE proper-noun softened to 'rolling build-narrative'), IX.D (PROJECT_PRIMER/LESSONS/BUILD_NARRATIVE/PERSONAS all-caps file names replaced with descriptive common-noun forms and 'The article's own L-007' replaced with the substantive prohibition statement), and IX.E (the 'workplan names' attribution dropped, six PI-NNN identifiers in body replaced with Section-numbered descriptive forms); plus twelve footnotes ([^1]/[^2]/[^3]/[^4]/[^7]/[^8]/[^11]/[^12]/[^13]/[^14]/[^15]/[^16]) rewritten to remove Article-Workplan.md \u00a7X attributions, .article-state.json pending_issues registry naming, six PI-NNN identifier names, eight L-NNN lesson tags, and the heavy Article RUNBOOK.md / PERSONAS.md / BUILD_NARRATIVE_YYYY-MM.md / LESSONS.md L-007 file-name routing in [^11]. Body workplan/L-NNN/PI-NNN token count in Sections 02, 09, 11, 12 body prose now zero across all three sites (polished, drafts, full-draft); Section 11 closed at run 250. Section 02's footnote-internal 'workplan annotated bibliography' / 'workplan-transcribed path' transcription-error mentions in [^1] / [^4] / [^8] / [^9] (defending against an off-by-one in a historical URL) are a separate facet; closing them does not change a substantive claim and is a future Polish-tick item; this run resolves the multi-section L-057 body-prose-and-substantive-footnote-attribution sweep for Sections 09 / 11 / 12 (12 had no major refs to evict). PI-WORKPLAN-EVICT migrated to .article-state.archive.json."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

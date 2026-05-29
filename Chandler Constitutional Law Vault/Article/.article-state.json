@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-31T02:00:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-31T04:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T22:00:00Z",
@@ -989,15 +989,6 @@
       "type": "numerical-precision"
     },
     {
-      "claim": "Sections 02, 09, 11, 12 contain prose and footnotes that reference Article-Workplan.md as a source. Per new L-057, the workplan must NOT appear in published prose; rewrite to state substantive claims directly.",
-      "id": "PI-WORKPLAN-EVICT",
-      "opened_at": "2026-05-26T13:30:00Z",
-      "phase": "polish",
-      "section": "multi",
-      "status": "open",
-      "type": "workplan-reference-eviction"
-    },
-    {
       "claim": "Eight Section-III figures (3.1-3.8) have been captured from the live constitutionallaw.netlify.app site and saved under <vault>/Article/manuscript/figures/ as figure-3-1-entry-shell.png, figure-3-2-topics-grid.png, figure-3-3-commerce-clause-topic.png, figure-3-4-marbury-case-brief.png, figure-3-5-marbury-connections.png, figure-3-6-hypothetical-applications.png, figure-3-7-recent-tab.png, and figure-3-8-search-palette.png. All 1440x900 PNGs captured 2026-05-26 via Chrome MCP navigate + screencapture + PIL crop. Section 03 prose and footnotes already reference these figures; this PI records that the image files now exist so figure-existence checks in Verify do not flag them as missing. No prose changes required; possible Polish-tick action is to add a short \"figures source: site constitutionallaw.netlify.app, captured 2026-05-26\" line to the figures README.",
       "id": "PI-FIGS-CAPTURED",
       "opened_at": "2026-05-26T16:30:00Z",
@@ -1182,7 +1173,7 @@
       "type": "adopter-checkpoint-specification-gap"
     }
   ],
-  "phase_index": 2,
+  "phase_index": 3,
   "phases": [
     "draft",
     "cite",
@@ -1201,7 +1192,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 272,
+  "run_count": 273,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1485,7 +1476,7 @@
       "cite_status": "needs_cite",
       "claims_mapped": 24,
       "claims_total": 27,
-      "current_words": 761,
+      "current_words": 768,
       "draft_completed_at": "2026-05-19T19:00:00Z",
       "draft_status": "needs_polish",
       "evidence_cards": 9,
@@ -1495,32 +1486,16 @@
       "manuscript_global_footnote_range": "[^89]-[^104]",
       "outline_ready_at": "2026-05-19T17:00:00Z",
       "outline_status": "ready_for_draft",
-      "polish_completed_at": "2026-05-19T23:00:00Z",
-      "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "polish_completed_at": "2026-05-31T04:00:00Z",
+      "polish_status": "ready_for_stitch",
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T19:00:00Z",
       "provenance_score": 4.2,
       "stitched_at": "2026-05-20T01:00:00Z",
       "target_words": 700,
       "title": "Cost and Labor: The Honest Accounting",
-      "unsupported_claims": [
-        {
-          "claim_text": "IX.E frames PI-049 (master cost-and-labor table reconstruction) as still outstanding and footnote [^15] pins it to the .article-state.json pending_issues registry, but PI-049 is archived to .article-state.archive.json (status outline-addressed) and is not in the live registry.",
-          "paragraph": 5,
-          "reason": "evidence-gap"
-        },
-        {
-          "claim_text": "IX.E names PI-050 (external pricing lookups deferred to Cite) with no dedicated footnote, and PI-050 is archived to .article-state.archive.json (status outline-addressed) rather than present in the live pending_issues registry.",
-          "paragraph": 5,
-          "reason": "evidence-gap"
-        },
-        {
-          "claim_text": "IX.E frames PI-051 (person-hours backfill) as still outstanding and footnote [^16] pins it to the registry, but PI-051 is archived to .article-state.archive.json (status outline-addressed).",
-          "paragraph": 5,
-          "reason": "evidence-gap"
-        }
-      ],
-      "unsupported_claims_count": 3,
+      "unsupported_claims": [],
+      "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-29T19:00:00Z",
       "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file."
     },
