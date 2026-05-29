@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-29T21:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-29T23:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-29T21:00:00Z",
@@ -1116,18 +1116,6 @@
       "type": "literature-venue-fit"
     },
     {
-      "claim": "The article lacks a related-work / novelty treatment, which JLE reviewers will probe (how is this different from existing tools?). A prior-art map is staged in Article/research/legal-ed-scholarship.md (Prior-art / comparables block). Add a short related-work passage (route Sections I/II) that names-and-distinguishes the closest comparators: (1) H2O/Open Casebook (Harvard LIL) -- open remixable LINEAR casebooks vs. this single-professor non-linear knowledge graph layering evaluative judgment over primary sources; (2) Studicata -- AI-generated + human-reviewed briefs, the closest METHOD analog, but commercial breadth-scaling vs. depth-scaling one professor's course; (3) CALI Lessons/eLangdell -- consortium multi-author exercises/casebooks vs. one professor's integrated course graph; (4) general/legal LLM tutors (ChatGPT, Lexis+ AI, CoCounsel) -- live-generative with measured 17-33% hallucination (Stanford legal-RAG study) vs. static human-reviewed text whose accuracy is a property of the ARTIFACT, not a model at query time. ACKNOWLEDGE (do not distinguish away) Andy Matuschak evergreen notes + Obsidian Digital Garden + Ahrens How to Take Smart Notes (2017) as structural precedent; novelty = applying that form to a law professor's reviewed course archive. Academic legal KGs/ontologies (PrOnto etc.) graph THE LAW for machine reasoning, not teaching-from-archive; no published law-professor Obsidian course site exists -- both novelty openings. Cite phase verifies all URLs live; never fabricate. See the prior-art research note and L-062.",
-      "id": "PI-JLE-RELATED-WORK",
-      "opened_at": "2026-05-28T21:45:00Z",
-      "persona": "JLE Editor (Persona 1)",
-      "section": "multi",
-      "severity": "P1",
-      "status": "resolved",
-      "type": "related-work",
-      "resolved_at": "2026-05-29T15:00:00Z",
-      "resolution": "Maintainer hand-wrote new subsection II.F (Adjacent tools, and what the method adds) into section-02: distinguishes commercial study aids (Quimbee/CrunchTime/Oyez/Studicata; Studicata = closest method analog) and the digital-garden/evergreen-notes precedent (Ahrens, Matuschak, Obsidian), plus a consolidated three-axis novelty statement cross-referencing the AI-tutor (Sec X), open-casebook (Sec XIII), and autonomous-loop (Sec VII) distinctions already in the draft. Five [CITE:] placeholders left for the Cite phase to Bluebook-format and verify live; section 02 cite_status set to needs_cite. II.F is protected related-work content; Stitch to rebalance II word budget by trimming pre-existing II.B/II.D overage, not II.F."
-    },
-    {
       "claim": "Section X.E ('From a method to a second instance') sentences 'The strongest test of a method is whether a second person can run it, and this article reports one instance rather than two. The generalization claim is therefore an invitation as much as a result' in manuscript/polished/section-10-generalization.md lines 44-46 and the matched assembled-draft site at manuscript/full-draft.md lines 304-306 do not anticipate and rebut the standard reviewer-2 attack on n=1 case studies: that the article asserts the method generalizes but reports one instance and offers no external comparable example, no theoretical argument that the method's components have been independently validated, and no falsifiable minimum-viable-instance-2 specification. The article's existing defenses (X.A's 'method is the contribution' and X.E's 'invitation as much as a result') are labels rather than load-bearing rebuttals.",
       "id": "PI-219",
       "note": "Persona 7 (Adversarial Reviewer, supplemental rotating in this tick per PERSONAS.md run_count-mod-3 = 263 mod 3 = 2 -> Persona 7) P1 finding. Distinct from PI-088 (literature-gap, Cite-routed) at the rhetorical-anticipation axis: the section needs an anticipate-then-rebut paragraph or sentence cluster naming the n=1 critique explicitly. Suggested fix: in the next Polish or Cite tick on Section 10, add one paragraph to X.E (between 'The strongest test...' and 'The corpus...') naming the n=1 critique and rebutting on three legs: (a) cite a comparable course-knowledge-system or open-doctrinal-course effort; (b) commit to a falsifiable minimum-viable-instance-2 specification; (c) acknowledge the reduction directly in X.A or X.E. Routes Section 10 polish_status: needs_polish (no status delta).",
@@ -1279,7 +1267,7 @@
       "note": "Persona 5 (Practitioner-Adopter) SUPPLEMENTAL P1 finding rotating in per PERSONAS.md run_count-mod-3 = 285 mod 3 = 0 -> Persona 5, Verify run 285. The conclusion's adoption-invitation footnote routes adopters to the contextual section (XIII) rather than to the spec sections (V/VI/VII) where the four named method elements are documented for replication. Distinct from PI-098 (replicability-overclaim). Suggested fix: (a) Expand [^181] from a single Section XIII pointer to a compound cross-reference to Section XIII + Section V (typed schema) + Section VI (verified-source discipline) + Section VII (professorial gating + iterative loop with VII.B six-phase enumeration); footnote word count ~120, above L-059 50-word cap unless leaner form used. (b) Inline the section anchors in body prose: 'A faculty member adopts the method — the typed schema (Section V), the verified-source discipline (Section VI), the professorial gating (Section VII), and the iterative loop (Section VII per VII.B's six-phase enumeration) — rather than the constitutional-law artifact.' (+18 body words; preferred form, routes adopters at the point of naming)."
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -1298,7 +1286,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 285,
+  "run_count": 286,
   "schema_version": 1,
   "sections": {
     "01": {
