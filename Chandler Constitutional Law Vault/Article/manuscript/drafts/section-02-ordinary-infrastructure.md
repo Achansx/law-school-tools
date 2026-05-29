@@ -1,16 +1,18 @@
 ---
 id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
-status: needs_polish
+status: needs_cite
 target_words: 700
-word_count: 840
-last_phase: polish
-draft_status: needs_polish
-cite_status: needs_polish
+word_count: 1125
+last_phase: draft
+draft_status: needs_cite
+cite_status: needs_cite
 polish_status: needs_polish
 footnotes_count: 9
 last_cite_run: 277
 last_polish_run: 278
+last_draft_run: 291
+draft_note_run291: "Run-291 Draft tick (FINAL-PUSH priority 1: PI-JLE-RELATED-WORK). Backfilled new subsection II.F (Adjacent tools, and what the method adds) into drafts/section-02 from polished/section-02 to restore L-035 three-site coherence after the maintainer's run-279 direct insertion into polished left drafts and the assembled full-draft at the pre-II.F layout. Body added: three families framing (commercial study aid: Quimbee/CrunchTime/Oyez/Studicata; published personal knowledge base: Ahrens/Matuschak/Obsidian digital-garden precedent; alternatives distinguished elsewhere with Sec X/Sec XIII/Sec VII cross-references) plus a three-axis distinguishing-commitments synthesis (accuracy as artifact property; identified-professor judgment; personal-archive-graph). Five [CITE:] placeholders inserted matching polished verbatim (Quimbee, Oyez, Studicata, Ahrens 2017 book, Matuschak notes) for the next Cite tick to Bluebook-format and verify live per L-022/L-043. No fabricated source: each [CITE:] points to a verifiable public artifact named in research/legal-ed-scholarship.md or in the maintainer's run-279 polished-file insertion. House-voice rules honored (one idea per sentence, third-person, active voice, no em dashes, straight quotes per drafts-file convention with Polish to convert). Drafts body word_count 840 -> 1125 (+285, II.F prose only). Section II's overage against the 700 target (1125/700 = +60.7%) is by design per the maintainer_note_run279_relatedwork PROTECTED-content directive: Polish/Stitch should trim II.B/II.D's pre-existing overage rather than II.F. draft_status -> needs_cite (five new [CITE:] placeholders override the prior needs_polish state); cite_status mirrored to needs_cite to match polished; polish_status held at needs_polish until the next Cite + Polish ticks land. footnotes_count held at 9 (Cite will renumber to 14 after Bluebooking the five new placeholders)."
 polish_note_run278: "Run-278 Polish tick mirrored the polished-file footnote strip in [^5] (per L-039 / per L-034 / per L-038 build-system tags removed; substantive forward-pointer to Section VII note 4 preserved) and [^7] (PI-005 / L-022 / L-028 surgical-fix-routing tag removed; substantive Section VIII note 1 anchor preserved). Drafts body untouched (drafts word_count 840 unchanged); polished body is 857 (the documented 770-vs-857 drift the run-277 Cite narrative noted, reconciled there). Word budget flagged for Stitch trim against the +/-10% band on the polished side."
 cite_note_run277: "Run-277 Cite tick mirrored the polished-file resolution of PI-119 (build-system-artifact strip from [^1]/[^4]/[^8]/[^9] Bluebook parentheticals) and PI-122 (App. D Correspondence Excerpts false cross-reference removed from [^2]/[^3]/[^6]; App. A title corrected to 'Input Inventory'). Last-visited dates refreshed to June 1, 2026 on Rubin/Mertz/Abrams/Bond after live URL re-verification (WebFetch for first three; WebSearch fallback for Bond per L-022 cookie-auth wall). Body untouched."
 ---
@@ -36,6 +38,10 @@ A third affordance the inherited inventory does not produce is the doctrinal-syn
 ## E. Positioning within the JLE pedagogical-reform line
 
 The course knowledge system extends the casebook, the syllabus, and the live classroom rather than displacing any of them, and the article sits within an established Journal of Legal Education line of pedagogical-reform pieces that adapt inherited teaching forms instead of rejecting them. Jamie R. Abrams's reframing of the Socratic method is a recent representative of that line, and the rhetorical posture this article adopts toward ordinary course infrastructure parallels the posture Abrams adopts toward Socratic teaching: the inherited form is not the deficiency the proposal is built to remedy, and the contribution is the layer the inherited form was never designed to carry.[^8] The article also engages the AI-in-higher-education research literature, whose most recent meta-review of that field calls for greater ethics, collaboration, and rigour in how such research is conducted and reported.[^9] What carries over from that meta-review is its evidentiary standard, which this article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII; what does not carry over is the chatbot-tutor and adaptive-system intervention setting it surveys, because the case study here is a reviewed static publication that places no model in front of the student.
+
+## F. Adjacent tools, and what the method adds
+
+Three families of existing tools sit near this proposal, and none occupies its position. The first is the commercial study aid: Quimbee, CrunchTime, and Oyez supply case summaries, outlines, and audio across the standard curriculum, and Studicata pairs editorial review with drafting assistance to produce its briefs.[CITE: Quimbee, https://www.quimbee.com] [CITE: Oyez, https://www.oyez.org] [CITE: Studicata, https://www.studicata.com] Studicata's draft-then-review workflow is the closest methodological analogue, yet each of these is a product that scales one editorial voice across many courses for a paying student, where the course knowledge system preserves a single professor's judgment over that professor's own course, with every quotation traced to the controlling opinion. The second family is the published personal knowledge base, the linked, evergreen "digital garden" that writers such as Sönke Ahrens and Andy Matuschak have developed and that the Obsidian community now publishes routinely.[CITE: Sönke Ahrens, How to Take Smart Notes (2017)] [CITE: Andy Matuschak, Evergreen notes, https://notes.andymatuschak.org] The form is a real precedent; what is new is applying it to a doctrinal course under source verification and professorial review rather than to a writer's private notes. The third family comprises the alternatives the article distinguishes elsewhere: the runtime AI tutor (Section X), the open casebook (Section XIII), and the autonomous build loop (Section VII). Across all three the distinguishing commitments hold constant. Accuracy is a property of a reviewed static artifact rather than of a model answering at the moment of the query; the judgment preserved is one identified professor's rather than a commercial or crowd aggregate; and the navigational graph grows from a personal teaching archive rather than from a casebook's linear sequence or a machine-reasoning legal ontology.
 
 ## Footnotes
 
