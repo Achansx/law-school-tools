@@ -1,10 +1,10 @@
 ---
 id: "14"
 title: "Conclusion"
-status: needs_polish
+status: ready_for_stitch
 target_words: 400
-word_count: 392
-last_phase: cite
+word_count: 415
+last_phase: polish
 draft_status: needs_cite
 cite_status: needs_polish
 footnotes_count: 8
@@ -20,11 +20,11 @@ The article opened with a law professor’s archive that no one, the professor i
 
 ## B. What the case study showed, and what it did not claim
 
-The case study showed a tractable pipeline that ran from source files to typed notes to a deployed, reviewed static site, governed by a six-phase rotation, a running lessons memory, and a forced-finding verification pass, with a professor reviewing each layer before it advanced.[^3] The article is as careful about what it declined to claim as about what it showed. It does not claim that students learned more, because it did not run the study that would license that claim.[^4] It does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^5] And it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation.[^6] The article earns a reader’s trust precisely by bounding what it will and will not assert.
+The case study showed a tractable pipeline that ran from source files to typed notes to a deployed, reviewed static site, governed by a six-phase rotation, a running lessons memory, and a forced-finding verification pass, with a professor reviewing each layer before it advanced.[^3] The article is as careful about what it declined to claim as about what it showed. It does not claim that students learned more, because it did not run the study that would license that claim.[^4] It does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^5] And it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation, a deliberate tradeoff in which the static architecture forgoes the adaptivity and interactive feedback a chatbot offers in exchange for build-time auditability.[^6]
 
 ## C. Professorial judgment and the invitation forward
 
-The through-line of the whole article is that the expert never left the loop. The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable. The article closes on the method-first, opt-in invitation that the institutional discussion handed forward: a faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^7] The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^8] The invitation is offered as a modest, replicable infrastructure choice rather than a mandate, and whether to extend it is the reader’s to decide.
+The through-line of the whole article is that the expert never left the loop. The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable. The adopted method equips an artifact that supports the professor’s live teaching rather than constituting that teaching. The article closes on the method-first, opt-in invitation that the institutional discussion handed forward: a faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^7] The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^8] The invitation is offered as a modest, replicable infrastructure choice rather than a mandate, and whether to extend it is the reader’s to decide.
 
 ## Footnotes
 
