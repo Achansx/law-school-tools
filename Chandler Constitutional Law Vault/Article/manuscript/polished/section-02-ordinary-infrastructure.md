@@ -1,7 +1,7 @@
 ---
 id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
-status: ready_for_stitch
+status: needs_polish
 target_words: 700
 word_count: 1156
 last_cite_run: 297
@@ -15,22 +15,28 @@ maintainer_note_run279_relatedwork: "Maintainer inserted new subsection II.F (Ad
 last_phase: verify-provenance
 draft_status: needs_polish
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: needs_polish
 last_polish_run_pre293: 278
 polish_run278_word_budget_flag: true
 polish_note_run278: "Run-278 Polish tick on Section 02 (last Cite'd at run 277; lowest-numbered Polish-eligible section). Discharged the run-277 Cite-deferred residue in footnotes [^5] and [^7]: stripped 'per L-039', 'per L-034 cross-section verification reuse rather than re-verified at Section II's Cite tick', and 'per L-038' from [^5] (build-system-language inside published Bluebook parentheticals per L-057/L-058); stripped 'Deployed-site URL liveness remains deferred under PI-005 per L-022 and L-028 surgical-fix routing;' from [^7] (same pattern). Substance preserved: [^5] still routes URL liveness to Section VII note 4 and forward-pointer rationale stays intact; [^7] still routes the deployed-site anchor through Section VIII note 1. Removed 'AI-analysis' modifier from [^5] Midpage analyzeOpinion phrase (redundant with the tool name). Reconciled the documented 770-vs-857 word_count drift the run-277 Cite narrative flagged: actual polished body is 857 against 700 target = 1.224 (+22%), exceeding the +/-10% Polish band; FLAGGED FOR STITCH TRIM. Mechanical hygiene re-run: zero em dashes in body (criterion 1 = 5); zero ASCII straight quotes in body (criterion 1 = 5); voice practitioner-scholarly throughout (criterion 2 = 5); two enumerative long sentences in II.B remain deliberate (criterion 3 = 3); no first-person in section (criterion 4 = 5); thesis-led II.A, four supporting subsections II.B-II.D, JLE-line positioning at II.E (coherence 5). polish_status held at needs_polish because the +22% overage is a real Polish gate; the Stitch tick will trim the II.B inventory sentence and the II.D synthesis-affordance second paragraph back to the +/-10% band. Drafts file mirrored for [^5]/[^7] footnote edits per L-035. provenance_audited stays at run-128 4.0 (the L-057/L-058 footnote strip changes attribution-discipline criterion but does not move the provenance_score until Verify re-audits the post-Polish text); the next Provenance Auditor pick should re-audit Section 02 because the run-277 Cite + this Polish tick materially changed [^1]/[^2]/[^3]/[^4]/[^5]/[^6]/[^7]/[^8]/[^9] footnote text."
 footnotes_count: 12
-provenance_audited: false
-provenance_audited_at: 2026-05-29T23:30:00Z
-provenance_audit_run: 295
+provenance_audited: true
+provenance_audited_at: 2026-05-30T20:00:00Z
+provenance_audit_run: 301
+provenance_audit_run_pre301: 295
+provenance_audited_at_pre301: 2026-05-29T23:30:00Z
+provenance_note_run301: "Run-301 Verify Provenance Auditor re-audit of Section 02 after the run-300 dedicated Stitch propagation landed Section II.E [^18] (Carnegie + Best Practices + Sturm & Guinier), Section II.E [^19] (Bond meta-review), Section II.F [^20] (Quimbee + Oyez + Studicata tricolon), and Section II.F [^21] (Ahrens 2017 + Matuschak Evergreen Notes) into the assembled full-draft.md. claims_total 14 -> 18 (+4 new claims: Carnegie/Best Practices as pedagogical-reform-line modern statements; Sturm & Guinier as institutional-culture diagnosis; Bond as field-level evidentiary-standard transfer; Ahrens + Matuschak as digital-garden precedent). claims_mapped 12 -> 15 (the three new external cites map cleanly; the [^18] dual-marker partial-mapping case is logged in claim-manifest with reason 'partially-mapped-compound-cite-dual-attached-to-distinct-sub-claim'; PI-234 CrunchTime gap persists; PI-235 Obsidian-community-publishes-routinely gap persists). unsupported_claims holds at 3 entries (PI-082 154-figure; PI-234 CrunchTime; PI-235 Obsidian-community). Criterion scores 4/4/5/4/4 = 4.2 (+0.2 over run-295 4.0): claim_coverage holds 4 (15/18 = 83.3% in 70-89% 3-band lifted to 4 with explicit-unsupported-claims gap-honesty credit); primary_source_ratio 3 -> 4 (9 of 14 external = 64.3% after the four new external footnotes lift the 50-69% 3-band to the 60-79% 4-band, the structural-ceiling internal-anchor cluster from App. A pointers + Section VII forward-pointer no longer dominating); attribution_discipline holds 5 (post-run-277 strip preserved; [^18] string-cite names all three works by author/short-title/year, [^21] names Ahrens by author/title/year and Matuschak by author/title/URL); numerical_precision holds 4 (PI-082 154-figure standing); gap_honesty holds 4 (three entries logged honestly). 4.2 < 4.5 gate, so polish_status routes ready_for_stitch -> needs_polish. New P1 PI-239 logged for the [^18] dual-marker substantive distinction (Carnegie + Best Practices pedagogical-reform-pair vs. Sturm & Guinier institutional-culture diagnosis); paired with Persona 2 PI-237 at the substantive angle. Five claim-manifest lines appended."
 provenance_audit_reset_at_run297: "Reset true -> false at run-297 because the [^12] insertion + 56-word II.E sentence add three new external footnote-anchored claims (Carnegie Report, Best Practices, Sturm & Guinier) post-dating the run-295 4.0 audit; next Verify-provenance Section 02 pick should re-audit."
-provenance_score: 4.0
+provenance_score: 4.2
+provenance_score_pre301: 4.0
 provenance_score_run128: 4.0
 provenance_audit_run_run128: 128
 provenance_note_run295: "Run-295 Verify Provenance Auditor re-audit, first re-audit since the run-128 4.0 baseline, against the post-run-291/292/293 II.F + post-run-277 footnote-strip + post-run-279 II.E Bond prose. Criterion scores 4/3/5/4/4 = 4.0 unchanged in average but redistributed: claim_coverage 5->4 (12/14 = 85.7% with the four new II.F claims of which two partially map (CrunchTime entity in [^10] string-cite unmapped; Obsidian-community-publishes-routinely framing broader than [^11] Ahrens+Matuschak supports), 70-89% 3-band lifts to 4 with the explicit unsupported_claims gap-honesty-credit); primary_source_ratio holds at 3 (6 of 11 footnotes external = 55%, structural ceiling from the App. A internal-anchor cluster at [^2]/[^3]/[^6]/[^7] and the Section VII forward-pointer at [^5]); attribution_discipline 4->5 (the run-277 Cite L-057/L-058 footnote strip closed the run-128 attribution defect; every external cite now names author/work/year/last-visited cleanly); numerical_precision holds at 4 (standing 154-figure PI-082 primary-source-pointer gap unchanged); gap_honesty holds at 4 (the existing 154-figure unsupported_claims entry plus the two new entries this re-audit adds lift the gap-honesty surface; the 5-band score deferred to the next re-audit confirming the additions are clean). 4.0 < 4.5 gate; polish_status ready_for_stitch -> needs_polish. PI-232 (Persona 2 II.D synthesis-as-deliverable framing), PI-233 (Persona 6 polished-vs-assembled mismatch tracked NEXT-Stitch-OWED), PI-234 (CrunchTime named-but-uncited in II.F), PI-235 (Obsidian-community-publishes-routinely broader-than-cite) become the section's next-up Polish/Cite targets."
 cite_note_run292: "Run-292 Cite tick converted the five run-291 II.F [CITE:] placeholders into two consolidated Bluebook 21st footnotes ([^10] string-cite Quimbee/Oyez/Studicata; [^11] string-cite Ahrens 2017 book + Matuschak Evergreen Notes), with URL liveness verified live this tick via WebFetch on Quimbee/Studicata/Matuschak and WebSearch allowed_domains:[oyez.org] fallback on Oyez per L-022 (Oyez SPA returns the {{meta.fullTitle}} template before JS render). Each footnote carries a one-clause relevance pointer in the section's existing [^4]/[^8] style; [^10] is 46 words and [^11] is 41 words, both under the L-059 50-word cap. CrunchTime named in II.F without a placeholder remains uncited; out of scope this tick. footnotes_count 9 -> 11 (the L-059 string-cite form gives 2 not 5 new footnotes; the run-291 narrative's anticipated 9->14 was a pre-consolidation estimate). cite_status needs_cite -> needs_polish; polish_status held at needs_polish. provenance_audited reset true -> false (two new footnote-anchored claims now reference [^10]/[^11], superseding the run-128 4.0 audit; next Verify-provenance pick should re-audit Section 02). Body word delta -22 from [CITE:] string removal; polished word_count 1112 -> 1090. Three-site L-035 propagation: drafts edited in parallel; manuscript/full-draft.md propagation deferred to the next Stitch tick per L-063 footnote-renumber-against-global-stream discipline."
-claims_total: 14
-claims_mapped: 12
+claims_total: 18
+claims_mapped: 15
+claims_total_pre301: 14
+claims_mapped_pre301: 12
 unsupported_claims:
   - claim_text: "the May 2026 snapshot's 154 still-unprocessed source materials figure"
     paragraph: 2
