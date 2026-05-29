@@ -1441,12 +1441,12 @@
       "note": "Verify run 136, Persona 3 (AI-in-Education Researcher) P1; the alternative-architecture engagement PERSONAS.md names for this persona. Per L-024 (Cite owns load-bearing transfer framing and citation-density), routes to the multi-section Cite literature pass rather than Polish; cite_status -> needs_cite (already set). Distinct from PI-088 (broad cross-disciplinary method-transfer literature gap), PI-093 (XIII.C auditability overclaim), and PI-147 (VIII.E one-sided risk framing). The Cite pass should add one external anchor at X.C on intelligent-tutoring-systems / chatbot-tutor architecture (the Sajja et al. 2023 line already cited in Section VIII, or a tutoring-systems review) so the static-architecture generalization names and engages the alternative it forgoes.",
       "opened_at": "2026-05-29T21:00:00Z",
       "phase": "verify",
-      "section": "10",
-      "status": "resolved",
-      "type": "chatbot-architecture-literature-gap",
+      "resolution": "Section 10 Cite tick added external anchor and (for PI-156) hedge; see drafts/section-10-generalization.md frontmatter cite_note_run_260 for full closure rationale.",
       "resolved_at": "2026-05-30T02:00:00Z",
       "resolved_by": "cite-run-260",
-      "resolution": "Section 10 Cite tick added external anchor and (for PI-156) hedge; see drafts/section-10-generalization.md frontmatter cite_note_run_260 for full closure rationale."
+      "section": "10",
+      "status": "resolved",
+      "type": "chatbot-architecture-literature-gap"
     },
     {
       "claim": "Section X.B (paragraph 2) generalization that the three-unit schema and the nine-section brief 'recur in nearly every doctrinal course' and that 'a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape' is cited to footnotes [^3] and [^4], both supra cross-references to Section V, which describes only the single constitutional-law vault; the claim about the universe of other courses has no source that establishes it.",
@@ -1454,12 +1454,12 @@
       "note": "Verify run 136, Persona 4 (Provenance Auditor) P1 and Section 10's one unsupported_claim (reason requires-primary-source). Distinct from PI-090 (the narrower Usman [^12] reach gap in X.D) and PI-088 (the broad literature absence). Deferral lifted; routes cite_status -> needs_cite (already set). Next Cite tick on Section 10 adds an external source on the standard law-school case-brief form (a legal-writing or 1L-method text establishing that torts and contracts courses brief in the same Facts/Holding/Analysis shape), or hedges X.B's 'recur in nearly every doctrinal course' to a claim the cited con-law vault can support ('recur in this course and, by the standard brief form, are likely to recur in other case-method courses'). Closes when the cross-course reach resolves to an external source or is hedged and the next Verify pass confirms the unsupported_claim clears.",
       "opened_at": "2026-05-29T21:00:00Z",
       "phase": "verify",
-      "section": "10",
-      "status": "resolved",
-      "type": "unsupported-generalization",
+      "resolution": "Section 10 Cite tick added external anchor and (for PI-156) hedge; see drafts/section-10-generalization.md frontmatter cite_note_run_260 for full closure rationale.",
       "resolved_at": "2026-05-30T02:00:00Z",
       "resolved_by": "cite-run-260",
-      "resolution": "Section 10 Cite tick added external anchor and (for PI-156) hedge; see drafts/section-10-generalization.md frontmatter cite_note_run_260 for full closure rationale."
+      "section": "10",
+      "status": "resolved",
+      "type": "unsupported-generalization"
     },
     {
       "claim": "Section X.B asserts schema transfer as settled (\"What generalizes first is the shape of the schema\"; \"those three units recur in nearly every doctrinal course\" [^128]; \"a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape\" [^129]) while X.D concedes a procedure or statutory course \"fits that assumption less cleanly\" and that whether the structure maps \"is a question this section raises rather than settles.\" X.B is never cross-referenced to that limit, so a reviewer reading the section's confident opening reads transfer as demonstrated.",
@@ -1467,11 +1467,11 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding on Section X. P1-deferral active this run (Sections 02/03/06/07/08 at cite_status needs_cite, 12/13/14 at none); logged without status reset. Next Polish tick on Section 10 should qualify X.B's first sentence to 'What is most likely to generalize is the shape of the schema' and append a forward-pointer to the X.D limits ('subject to the limits set out below'), reconciling the confident B framing with the unproven D hedge.",
       "opened_at": "2026-05-24T13:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-30T04:00:00Z",
+      "resolved_by": "run-261 polish Section 10",
       "section": "10",
       "status": "resolved",
-      "type": "generalization-overclaim",
-      "resolved_at": "2026-05-30T04:00:00Z",
-      "resolved_by": "run-261 polish Section 10"
+      "type": "generalization-overclaim"
     },
     {
       "claim": "Section X.D sentences 5-6 (\"The general ground for thinking the method still reaches such courses is that doctrinal courses share a learnable structure of rule, exception, and application that maps onto a small set of note types\") offer an optimistic bridge to procedure and statutory courses with no support, and the rule-exception-application reduction flattens what a Civil Procedure professor treats as distinctive (procedural posture, the interaction of rules, the absence of a single leading case per doctrine). The next sentence concedes the mapping is unsettled, so the optimism is asserted against the section's own hedge.",
@@ -1479,11 +1479,11 @@
       "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding on Section X, the Civil-Procedure-generalization concern PERSONAS.md names for this persona. P1-deferral active; logged without status reset. Next Polish tick on Section 10 should recast the 'general ground' sentence as an explicit conjecture pending a second-course attempt ('Whether that shared structure is enough to carry the method into a procedure or statutory course is exactly what a second instance would test') or cut the optimistic framing and let the limit stand.",
       "opened_at": "2026-05-24T13:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-30T04:00:00Z",
+      "resolved_by": "run-261 polish Section 10",
       "section": "10",
       "status": "resolved",
-      "type": "generalization-overreach",
-      "resolved_at": "2026-05-30T04:00:00Z",
-      "resolved_by": "run-261 polish Section 10"
+      "type": "generalization-overreach"
     },
     {
       "claim": "Section X.C sentence 2 ('a statute-heavy course would check against the code and its history instead') asserts the verified-source discipline transfers to statutory courses, but the discipline as the article describes it depends on a case-law-specific indexed-source service (Midpage); 'check against the code and its history' hand-waves the tooling a statutory adaptation would require, conflating the verification discipline with the infrastructure that makes it executable.",
@@ -1491,11 +1491,11 @@
       "note": "Persona 3 (AI-in-Education Researcher) P1 finding on Section X. P1-deferral active; logged without status reset. Next Polish tick on Section 10 should add a clause conceding the verification tooling is case-law-specific and a statutory adaptation would need a comparable indexed-source service, or hedge 'would check' to 'would need a comparable indexed-source service to check.'",
       "opened_at": "2026-05-24T13:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-30T04:00:00Z",
+      "resolved_by": "run-261 polish Section 10",
       "section": "10",
       "status": "resolved",
-      "type": "verification-tooling-gap",
-      "resolved_at": "2026-05-30T04:00:00Z",
-      "resolved_by": "run-261 polish Section 10"
+      "type": "verification-tooling-gap"
     },
     {
       "claim": "Section X.D's claim that doctrinal courses 'share a learnable structure of rule, exception, and application that maps onto a small set of note types' rests on a single external citation (Usman 2018, footnote [^12]), but Usman supports only the 'learnable rule/exception/application structure' half; the bridge to 'maps onto a small set of note types' is the article's own design inference with no source. The workplan bibliography's 'maps cleanly onto note types in a vault' phrasing (line 219) is the workplan's editorial gloss on how to USE the source, not a finding attributable to Usman.",
@@ -1503,11 +1503,11 @@
       "note": "Opened by the Section 10 Harvest tick (run 78) while building evidence-10-usman-cognitive-structure.md. Distinct from PI-088 (the broad absence of cross-disciplinary method-transfer / replicability literature behind X.A-X.B): this is a narrower citation-reach gap on the one external cite Section X already has. Resolution options for a future Cite or Polish tick on Section 10: (a) reframe X.D's clause so the note-type mapping reads as the author's structural inference rather than a cited finding (e.g. 'a structure that, this article argues, maps onto a small set of note types'); or (b) add a second citation that actually supports the cognition-to-note-type-schema bridge (a cognitive-science-of-categorization or worked-example-schema source). Option (a) is the cleaner allocation because the mapping is the article's own design argument and over-citing it to Usman risks the framing-discipline failure L-003 names. URL liveness for [^12] is independently confirmed this run (WebFetch returned the published 2.6 MB PDF) and is not part of this gap.",
       "opened_at": "2026-05-24T15:00:00Z",
       "phase": "harvest",
+      "resolved_at": "2026-05-30T04:00:00Z",
+      "resolved_by": "run-261 polish Section 10",
       "section": "10",
       "status": "resolved",
-      "type": "citation-reach-gap",
-      "resolved_at": "2026-05-30T04:00:00Z",
-      "resolved_by": "run-261 polish Section 10"
+      "type": "citation-reach-gap"
     },
     {
       "claim": "Section X.A (paragraph 1) sentence 'A bounded base case is what makes a generalization claim testable rather than rhetorical, so this section states what would carry to another doctrinal course and what would not' describes the section's own argumentative method to the reader rather than making the argument.",
@@ -1515,11 +1515,11 @@
       "note": "Verify run 136, Persona 1 (Skeptical JLE Editor) P1. Sixth recurrence of the self-flagging meta-rhetoric family (PI-022/PI-028/PI-036/PI-141/PI-145) at a Section X.A site L-036 (which names only section openings and closes) does not cover. Distinct from PI-085 (X.B schema-transfer asserted as settled). Deferral lifted; routes polish_status -> needs_polish (already set). Next Polish tick on Section 10 cuts the meta-justification and lets the structure carry itself, e.g. 'This section separates what would carry to another doctrinal course from what would not', dropping the 'testable rather than rhetorical' self-description. Candidate lesson (deferred at the LESSONS over-cap): the L-036 self-flagging sweep should also target sentences that justify the section's own argumentative method, not only section openings and closes.",
       "opened_at": "2026-05-29T21:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-30T04:00:00Z",
+      "resolved_by": "run-261 polish Section 10",
       "section": "10",
       "status": "resolved",
-      "type": "meta-rhetoric-self-narration",
-      "resolved_at": "2026-05-30T04:00:00Z",
-      "resolved_by": "run-261 polish Section 10"
+      "type": "meta-rhetoric-self-narration"
     },
     {
       "claim": "Section X.B sentences 'those three page-type units recur in nearly every doctrinal course[^3]' and 'The nine-section case brief the vault enforces is the standard law-school brief rather than a constitutional-law artifact; a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape.[^4]' in manuscript/polished/section-10-generalization.md line 34 and the matched site at manuscript/full-draft.md line 292 still cite [^3]/[^4] = supra Section V (the single con-law vault) as authority for the universal cross-course brief-form transfer claim. The run-260 Cite tick closed PI-156 by adding Mertz 2007 at drafts [^5] as the 1L case-method ethnography anchor and hedged 'recur in nearly every doctrinal course' to 'recur across the standard 1L case-method curriculum and, by the standard brief form, in case-method doctrinal courses generally' -- but the change landed in drafts only. polished/section-10 and full-draft.md still carry the pre-run-260 universal phrasing and the [^3]/[^4] supra-Section-V citations. Structurally the L-035 cross-file-propagation defect class PI-217 captured for Section 11 (closed at run-249 Cite); the Section 10 mirror is the same Cite-Stitch source-of-truth gap on a different section.",
@@ -1527,12 +1527,12 @@
       "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding. The run-261 Polish PI-086 closure landed the X.D second-instance-conjecture recast but not the X.B universal the walk-back exists to walk back; on the polished/full-draft surface a Civil Procedure professor still reads the universal-then-walkback the run-260 Cite anchor was supposed to close. Suggested fix: in the next Cite or Stitch tick on Section 10, propagate the run-260 drafts Mertz/Sajja insertions to polished and full-draft (14 -> 16 polished footnotes; 178 -> 180 full-draft footnotes with 50+ downstream global renumber). Routes Section 10 cite_status: needs_polish -> needs_cite for the Cite-tier three-site operation; polish_status unchanged at needs_polish.",
       "opened_at": "2026-05-30T08:00:00Z",
       "phase": "verify",
-      "section": "10",
-      "status": "resolved",
-      "type": "cite-to-polished-propagation-gap",
       "resolved_at": "2026-05-30T16:00:00Z",
       "resolved_in_run": 267,
-      "resolved_note": "Closed in run-267 Cite. The run-260 drafts Mertz at [^5] and Sajja at [^12] insertions propagated to polished/section-10-generalization.md and manuscript/full-draft.md per L-035, with downstream global footnote renumber across the [^134]-[^178] range to [^135]/[^140] +1 then [^142]/[^180] +2 and the two new defs inserted at global [^134] (Mertz) and global [^141] (Sajja). Cross-section textual references updated in [^9] / [^93] / [^146] / [^147] / [^153] / [^163]. Verified: 180 contiguous defs zero gap/dup/orphan; recurring sentence at 3 placements; em-dash zero in main text; terminology umbrella unchanged. Polished claims_mapped 17 -> 18 and unsupported_claims emptied through the new Mertz anchor on the X.B universal-brief-form gap."
+      "resolved_note": "Closed in run-267 Cite. The run-260 drafts Mertz at [^5] and Sajja at [^12] insertions propagated to polished/section-10-generalization.md and manuscript/full-draft.md per L-035, with downstream global footnote renumber across the [^134]-[^178] range to [^135]/[^140] +1 then [^142]/[^180] +2 and the two new defs inserted at global [^134] (Mertz) and global [^141] (Sajja). Cross-section textual references updated in [^9] / [^93] / [^146] / [^147] / [^153] / [^163]. Verified: 180 contiguous defs zero gap/dup/orphan; recurring sentence at 3 placements; em-dash zero in main text; terminology umbrella unchanged. Polished claims_mapped 17 -> 18 and unsupported_claims emptied through the new Mertz anchor on the X.B universal-brief-form gap.",
+      "section": "10",
+      "status": "resolved",
+      "type": "cite-to-polished-propagation-gap"
     },
     {
       "claim": "Section X.C (paragraph 3) 'the professor remains the gating actor at every phase, reviewing and approving each layer before it reaches a student and able to send any page back for another pass' describes the professorial role purely as editorial review and approval, eliding the Socratic dialogue, the in-class hypothetical, and live student confusion as the generalization claim travels.",
@@ -1540,12 +1540,12 @@
       "note": "Verify run 136, Persona 2 (Legal Pedagogy Traditionalist) P1. Same editor-vs-teacher family as PI-046/PI-146 but at a fresh Section X.C site and a distinct claim (generalizing the professorial role itself). Distinct from PI-086 (X.D rule-exception-application flattening for Civ Pro). Deferral lifted; routes polish_status -> needs_polish (already set). Next Polish tick on Section 10 adds a clause distinguishing the professor's gating/review role in the production loop from the teaching role the method does not replace, cross-referencing the recurring 'made that judgment reusable, inspectable, and publishable' thesis, so 'gating actor' is not read as the whole of professorial work.",
       "opened_at": "2026-05-29T21:00:00Z",
       "phase": "verify",
-      "section": "10",
-      "status": "resolved",
-      "type": "editor-vs-teacher-conflation",
+      "resolution_note": "Closed at Polish run 268 by inserting one sentence at X.C after the gating-actor sentence and before the architectural-commitment sentence: 'That production-loop role is what the method makes reusable; it is not the live teaching, which Section XII counts among the losses.' (22 words, deliberate semicolon splice carrying the two-clause distinction between production-loop gating and live teaching; cross-references Section XII's loss accounting so 'gating actor' is not read as the whole of professorial work). Three-site L-035 propagation landed at polished/section-10-generalization.md, drafts/section-10-generalization.md, and manuscript/full-draft.md line 302 in the same tick. Mechanical sweep clean (zero em dashes, zero straight quotes, curly throughout). The editor-vs-teacher family PI-046 / PI-146 at Sections 07 / 13 are now closed; the X.C site PI-154 captured is the third and final fresh-site recurrence.",
       "resolved_at": "2026-05-30T18:00:00Z",
       "resolved_by": "run-268 polish Section 10",
-      "resolution_note": "Closed at Polish run 268 by inserting one sentence at X.C after the gating-actor sentence and before the architectural-commitment sentence: 'That production-loop role is what the method makes reusable; it is not the live teaching, which Section XII counts among the losses.' (22 words, deliberate semicolon splice carrying the two-clause distinction between production-loop gating and live teaching; cross-references Section XII's loss accounting so 'gating actor' is not read as the whole of professorial work). Three-site L-035 propagation landed at polished/section-10-generalization.md, drafts/section-10-generalization.md, and manuscript/full-draft.md line 302 in the same tick. Mechanical sweep clean (zero em dashes, zero straight quotes, curly throughout). The editor-vs-teacher family PI-046 / PI-146 at Sections 07 / 13 are now closed; the X.C site PI-154 captured is the third and final fresh-site recurrence."
+      "section": "10",
+      "status": "resolved",
+      "type": "editor-vs-teacher-conflation"
     },
     {
       "description": "Verify run 182 provenance audit of polished Section 04. Footnotes [^14], [^15], and [^20] (global [^49], [^50], [^55]) each route the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose that violates the PROJECT_PRIMER citation policy (no internal-log/personal-communication cites in published text; convert to appendix excerpts) and provenance-audit rubric criterion 2 (internal vault artifacts cited only via appendix references, never as standalone authority in prose). The three sentences are hedges about open questions (casebook ingestion, student-work ingestion, snapshot-date sign-off), so the body prose is fine; only the footnote pointers must change. Routing: Section 04 polish_status -> needs_polish (also independently forced by provenance_score 4.4 < 4.5). Next Cite/Polish tick on Section 04 re-points [^14]/[^15]/[^20] to App. D (Correspondence Excerpts) or drops the internal-tracker pointer (body hedge suffices). Distinct from PI-052 (Section IX PI- task tokens in IX.E prose) and from PI-188 (Section 04 evidence-card arithmetic, resolved at run 172).",
@@ -1553,28 +1553,45 @@
       "opened_at": "2026-06-03T07:00:00Z",
       "opened_run": 182,
       "persona": "Provenance Auditor (Persona 4)",
+      "resolution_note": "Surgical fix per PI-routing drop-option: deleted the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause from polished Section 04 footnotes [^14], [^15], [^20] (and the full-draft manuscript-global [^49], [^50], [^55] mirrors). The open-question body-prose hedges stand alone as the PI directive specified ('body hedge suffices'). Footnote count unchanged at 20; no global renumber. Unsupported_claims cleared; claims_mapped advances 17 -> 20. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual flagged in the run-182 provenance note (note 17's 'progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; remains for the next Polish tick.",
+      "resolution_phase": "cite",
+      "resolved_at": "2026-05-31T02:00:00Z",
+      "resolved_run": 272,
       "routed_to": "cite/polish-04",
       "section": "04",
       "severity": "P1",
       "status": "resolved",
-      "type": "internal-artifact-citation-in-prose",
-      "resolved_at": "2026-05-31T02:00:00Z",
-      "resolved_run": 272,
-      "resolution_phase": "cite",
-      "resolution_note": "Surgical fix per PI-routing drop-option: deleted the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause from polished Section 04 footnotes [^14], [^15], [^20] (and the full-draft manuscript-global [^49], [^50], [^55] mirrors). The open-question body-prose hedges stand alone as the PI directive specified ('body hedge suffices'). Footnote count unchanged at 20; no global renumber. Unsupported_claims cleared; claims_mapped advances 17 -> 20. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual flagged in the run-182 provenance note (note 17's 'progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; remains for the next Polish tick."
+      "type": "internal-artifact-citation-in-prose"
     },
     {
       "claim": "Sections 02, 09, 11, 12 contain prose and footnotes that reference Article-Workplan.md as a source. Per new L-057, the workplan must NOT appear in published prose; rewrite to state substantive claims directly.",
       "id": "PI-WORKPLAN-EVICT",
       "opened_at": "2026-05-26T13:30:00Z",
       "phase": "polish",
-      "section": "multi",
-      "status": "resolved",
-      "type": "workplan-reference-eviction",
+      "resolution_note": "Resolved at run-273 Polish on Section 09. Section 09 carried the largest remaining cluster of L-057 workplan references and L-058 internal-artifact references in the article. Run-273 closed body prose at IX.A (the 'workplan names' opener replaced with the unfalsifiability thesis and the 'workplan also fixes the column set' clause replaced with 'The column set Section IX reports is fixed in advance'), IX.C (BUILD_NARRATIVE proper-noun softened to 'rolling build-narrative'), IX.D (PROJECT_PRIMER/LESSONS/BUILD_NARRATIVE/PERSONAS all-caps file names replaced with descriptive common-noun forms and 'The article's own L-007' replaced with the substantive prohibition statement), and IX.E (the 'workplan names' attribution dropped, six PI-NNN identifiers in body replaced with Section-numbered descriptive forms); plus twelve footnotes ([^1]/[^2]/[^3]/[^4]/[^7]/[^8]/[^11]/[^12]/[^13]/[^14]/[^15]/[^16]) rewritten to remove Article-Workplan.md \u00a7X attributions, .article-state.json pending_issues registry naming, six PI-NNN identifier names, eight L-NNN lesson tags, and the heavy Article RUNBOOK.md / PERSONAS.md / BUILD_NARRATIVE_YYYY-MM.md / LESSONS.md L-007 file-name routing in [^11]. Body workplan/L-NNN/PI-NNN token count in Sections 02, 09, 11, 12 body prose now zero across all three sites (polished, drafts, full-draft); Section 11 closed at run 250. Section 02's footnote-internal 'workplan annotated bibliography' / 'workplan-transcribed path' transcription-error mentions in [^1] / [^4] / [^8] / [^9] (defending against an off-by-one in a historical URL) are a separate facet; closing them does not change a substantive claim and is a future Polish-tick item; this run resolves the multi-section L-057 body-prose-and-substantive-footnote-attribution sweep for Sections 09 / 11 / 12 (12 had no major refs to evict). PI-WORKPLAN-EVICT migrated to .article-state.archive.json.",
+      "resolution_phase": "polish",
       "resolved_at": "2026-05-31T04:00:00Z",
       "resolved_run": 273,
-      "resolution_phase": "polish",
-      "resolution_note": "Resolved at run-273 Polish on Section 09. Section 09 carried the largest remaining cluster of L-057 workplan references and L-058 internal-artifact references in the article. Run-273 closed body prose at IX.A (the 'workplan names' opener replaced with the unfalsifiability thesis and the 'workplan also fixes the column set' clause replaced with 'The column set Section IX reports is fixed in advance'), IX.C (BUILD_NARRATIVE proper-noun softened to 'rolling build-narrative'), IX.D (PROJECT_PRIMER/LESSONS/BUILD_NARRATIVE/PERSONAS all-caps file names replaced with descriptive common-noun forms and 'The article's own L-007' replaced with the substantive prohibition statement), and IX.E (the 'workplan names' attribution dropped, six PI-NNN identifiers in body replaced with Section-numbered descriptive forms); plus twelve footnotes ([^1]/[^2]/[^3]/[^4]/[^7]/[^8]/[^11]/[^12]/[^13]/[^14]/[^15]/[^16]) rewritten to remove Article-Workplan.md \u00a7X attributions, .article-state.json pending_issues registry naming, six PI-NNN identifier names, eight L-NNN lesson tags, and the heavy Article RUNBOOK.md / PERSONAS.md / BUILD_NARRATIVE_YYYY-MM.md / LESSONS.md L-007 file-name routing in [^11]. Body workplan/L-NNN/PI-NNN token count in Sections 02, 09, 11, 12 body prose now zero across all three sites (polished, drafts, full-draft); Section 11 closed at run 250. Section 02's footnote-internal 'workplan annotated bibliography' / 'workplan-transcribed path' transcription-error mentions in [^1] / [^4] / [^8] / [^9] (defending against an off-by-one in a historical URL) are a separate facet; closing them does not change a substantive claim and is a future Polish-tick item; this run resolves the multi-section L-057 body-prose-and-substantive-footnote-attribution sweep for Sections 09 / 11 / 12 (12 had no major refs to evict). PI-WORKPLAN-EVICT migrated to .article-state.archive.json."
+      "section": "multi",
+      "status": "resolved",
+      "type": "workplan-reference-eviction"
+    },
+    {
+      "archival_note": "Body-level closure landed in run 273 Polish (L-057 workplan-eviction + L-058 internal-artifact-eviction sweep on IX.E replaced the PI-049/050/051 named-identifier register with Section-numbered descriptive forms 'Section IV's ingest line, Section VIII's deploy line, and Section VII's iteration line' for the three downstream-consumer slot and 'the master cost-and-labor table reconstruction itself remains owed' / 'the external pricing lookups ... are deferred to a later citation pass' / 'a person-hours backfill ... remains owed' for the three outstanding-item slot, and the matching footnote rewrites at [^114]-[^117]/[^120]/[^121]/[^124]-[^129] dropped the registry-naming and PI-NNN attributions; run-273 narrative did not explicitly archive PI-210 alongside PI-WORKPLAN-EVICT, and run-275 Verify observes the body-level resolution and migrates the entry to the archive per the RUNBOOK pending-issue archival rule).",
+      "archived_at": "2026-05-31T08:00:00Z",
+      "archived_by_run": 275,
+      "claim": "Section IX.E paragraph 5 final sentence in `manuscript/polished/section-09-cost-and-labor.md` line 49 and `manuscript/full-draft.md` line 279 names three internal pending-issue catalog identifiers ('PI-049', 'PI-050', 'PI-051') as body-prose authority labels in the published register, and footnotes [^15] and [^16] (full-draft [^128]/[^129]) pin the labels to the article's own `.article-state.json` pending-issue tracker as their inline authority. A JLE editor reads this as Silicon Valley product-management register rather than scholarly prose: a published article does not refer to its own ticket numbers by catalog identifier in body text, and the three identifiers carry no meaning to any reader who has not read the state file. Additionally factually stale: PI-049, PI-050, and PI-051 are all archived (status `outline-addressed`) to `.article-state.archive.json` and not in the live registry a reader would check, so the prose's framing of them as 'still outstanding' is approximately fifty runs out of date.",
+      "id": "PI-210",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 231. The defect compounds a publication-register slip (internal catalog identifiers in body prose, violating PROJECT_PRIMER's no-internal-cites-in-published-text rule) with the archival-status staleness the run-217 Section 09 provenance audit already captured in three `unsupported_claims` entries with reason 'evidence-gap'. The audit's evidence-gap framing names the archival staleness but not the register slip the JLE-editor altitude catches. Structurally parallel to the standing VII.D L-007 unsupported_claim entry (Persona 4 re-confirmed seventh consecutive at this run); both are internal-catalog-identifier labels in body prose at the same defect class, with PI-210 capturing the IX.E instance and L-007 the longer-running VII.D peer. Next Polish or Cite tick on Section 09 should rewrite IX.E paragraph 5 final sentence to drop the inline 'PI-049', 'PI-050', 'PI-051' catalog labels and instead state the three outstanding work items in the article's own voice with App. C pointers carrying the support; e.g., 'Three Section IX work items frame what is still outstanding: the master cost-and-labor table assembled per the workplan's retroactive backfill protocol, the external pricing lookups for Anthropic API pricing, Netlify free-tier and upgrade pricing, and any metered MCP service prices, and the person-hours backfill across the four labor categories with honest confidence ranges, the methodology in a footnote so a reader can replicate it against the same vault and git history.[^15]' Re-point footnotes [^15] and [^16] from `.article-state.json` to App. C (Cost Log) Methodology Note, and update the Section 09 frontmatter to clear the three unsupported_claims entries since the publication-register slip and the archival-status staleness are both resolved by the rewrite. Routes Section 09 polish_status: needs_polish (already set; no status delta).",
+      "opened_at": "2026-05-29T03:00:00Z",
+      "phase": "verify",
+      "resolved_at": "2026-05-31T08:00:00Z",
+      "resolved_by_phase": "polish",
+      "resolved_by_run": 273,
+      "route": "polish",
+      "section": "09",
+      "status": "resolved",
+      "type": "verify-finding"
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

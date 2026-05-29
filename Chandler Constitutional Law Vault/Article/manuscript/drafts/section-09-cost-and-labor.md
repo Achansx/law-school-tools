@@ -1,10 +1,11 @@
 ---
 section: "09"
 title: "Cost and Labor: The Honest Accounting"
-status: ready_for_stitch
+status: needs_polish
 target_words: 700
 word_count: 770
-last_phase: polish
+last_phase: verify-provenance
+verify_provenance_note_run275: "Run-275 Verify provenance re-audit of Section 09. claims_total 27 -> 25, claims_mapped 24 -> 25 (the three run-135 unsupported_claims tied to PI-049/050/051 closed via the run-273 Polish body-prose eviction), unsupported_claims stays [], criterion scores 5/3/4/4/5 = 4.2 (claim_coverage lifted 3 -> 5 vs. run-135 88.9% mapped). 4.2 < 4.5 gate so polish_status reverts ready_for_stitch -> needs_polish. Two new PIs opened (PI-222 IX.A residue-of-eviction attribution gap; PI-223 IX.A/IX.E unfalsifiability-admission structural anticipate-and-rebut gap). PI-210 observed resolved at body level by run 273 Polish and migrated to archive this Verify pass. See polished/section-09 frontmatter provenance_note_run275 for the full audit narrative."
 footnotes_count: 16
 evidence_cards:
   - evidence-09-workplan-cost-table-spec
