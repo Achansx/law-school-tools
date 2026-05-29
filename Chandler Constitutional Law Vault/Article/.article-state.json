@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-30T22:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-31T00:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T22:00:00Z",
@@ -1158,43 +1158,43 @@
       "id": "PI-219",
       "note": "Persona 7 (Adversarial Reviewer, supplemental rotating in this tick per PERSONAS.md run_count-mod-3 = 263 mod 3 = 2 -> Persona 7) P1 finding. Distinct from PI-088 (literature-gap, Cite-routed) at the rhetorical-anticipation axis: the section needs an anticipate-then-rebut paragraph or sentence cluster naming the n=1 critique explicitly. Suggested fix: in the next Polish or Cite tick on Section 10, add one paragraph to X.E (between 'The strongest test...' and 'The corpus...') naming the n=1 critique and rebutting on three legs: (a) cite a comparable course-knowledge-system or open-doctrinal-course effort; (b) commit to a falsifiable minimum-viable-instance-2 specification; (c) acknowledge the reduction directly in X.A or X.E. Routes Section 10 polish_status: needs_polish (no status delta).",
       "opened_at": "2026-05-30T08:00:00Z",
+      "partial_resolution_run_268": "Polish run 268 closed legs b and c: leg c (acknowledge the reduction) landed as the first of two new X.E sentences ('The standard objection is that one instance cannot license a generalization.', 11 words); leg b (commit to a falsifiable minimum-viable-instance-2 specification) landed as the second new X.E sentence ('The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints.', 25 words). Three-site propagation complete (polished, drafts, full-draft.md line 310). Leg a (cite a comparable course-knowledge-system or open-doctrinal-course effort) stays open and Cite-routed per L-024 (Cite owns load-bearing transfer framing and external anchors). The PI now tracks only the leg-a Cite work; routes_to changed polish -> cite and the per-leg explicit tracking follows the run-222/229 multi-facet pattern.",
       "phase": "verify",
+      "route": "cite",
       "section": "10",
       "status": "open",
-      "type": "reviewer2-anticipation-gap",
-      "route": "cite",
-      "partial_resolution_run_268": "Polish run 268 closed legs b and c: leg c (acknowledge the reduction) landed as the first of two new X.E sentences ('The standard objection is that one instance cannot license a generalization.', 11 words); leg b (commit to a falsifiable minimum-viable-instance-2 specification) landed as the second new X.E sentence ('The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints.', 25 words). Three-site propagation complete (polished, drafts, full-draft.md line 310). Leg a (cite a comparable course-knowledge-system or open-doctrinal-course effort) stays open and Cite-routed per L-024 (Cite owns load-bearing transfer framing and external anchors). The PI now tracks only the leg-a Cite work; routes_to changed polish -> cite and the per-leg explicit tracking follows the run-222/229 multi-facet pattern."
+      "type": "reviewer2-anticipation-gap"
     },
     {
+      "claim": "Section X.E's run-268-inserted PI-219 leg b sentence 'The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' in manuscript/polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 advances a 'comparable doctrinal course' minimum-viable-instance specification that elides X.D's own concession that 'A rules-and-procedure course such as Civil Procedure, or a heavily statutory course such as Tax, fits that assumption less cleanly' and that 'The three-folder taxonomy would need re-typing before it could carry the work.' X.D acknowledges the harder n=2 extension; X.E narrows the n=2 invitation to a 'comparable' (implicitly case-method) doctrinal course, leaving a Civil Procedure professor reading X.D and X.E in sequence with two incompatible n=2 framings and no place to stand inside the invitation.",
       "id": "PI-220",
-      "type": "two-track-n2-framing-gap",
-      "status": "open",
       "opened_at": "2026-05-30T22:00:00Z",
       "opened_in_run": 270,
       "persona": "2-pedagogy-traditionalist",
-      "section": "10",
-      "subsection": "X.E",
       "route": "polish",
+      "section": "10",
       "severity": "P1",
-      "claim": "Section X.E's run-268-inserted PI-219 leg b sentence 'The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' in manuscript/polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 advances a 'comparable doctrinal course' minimum-viable-instance specification that elides X.D's own concession that 'A rules-and-procedure course such as Civil Procedure, or a heavily statutory course such as Tax, fits that assumption less cleanly' and that 'The three-folder taxonomy would need re-typing before it could carry the work.' X.D acknowledges the harder n=2 extension; X.E narrows the n=2 invitation to a 'comparable' (implicitly case-method) doctrinal course, leaving a Civil Procedure professor reading X.D and X.E in sequence with two incompatible n=2 framings and no place to stand inside the invitation.",
-      "suggested_fix": "Either narrow X.E's 'a comparable doctrinal course' to 'a comparable case-method doctrinal course' (making the case-method scope explicit and acknowledging X.D's rules-and-procedure / statutory extension as a SEPARATE n=2 question), or broaden X.E to specify two falsification tracks -- easier track ('a comparable case-method doctrinal course such as Torts or Contracts') and harder track ('a rules-and-procedure or statutory course, where X.D acknowledges the three-folder taxonomy would need re-typing before it could carry the work'). Optionally add a footnote to X.E cross-referencing X.D so a reader sees the two-track structure without holding X.D and X.E in mind simultaneously."
+      "status": "open",
+      "subsection": "X.E",
+      "suggested_fix": "Either narrow X.E's 'a comparable doctrinal course' to 'a comparable case-method doctrinal course' (making the case-method scope explicit and acknowledging X.D's rules-and-procedure / statutory extension as a SEPARATE n=2 question), or broaden X.E to specify two falsification tracks -- easier track ('a comparable case-method doctrinal course such as Torts or Contracts') and harder track ('a rules-and-procedure or statutory course, where X.D acknowledges the three-folder taxonomy would need re-typing before it could carry the work'). Optionally add a footnote to X.E cross-referencing X.D so a reader sees the two-track structure without holding X.D and X.E in mind simultaneously.",
+      "type": "two-track-n2-framing-gap"
     },
     {
+      "claim": "Section X.E's run-268-inserted PI-219 leg b sentence 'The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' in manuscript/polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 specifies 'the same checkpoints' without naming what the checkpoints are, where they live, or how an adopter would operationalize 'the same' against a different course. Section VII defines the per-phase professorial gating, the forced-finding adversarial review pass, and the LESSONS-file memory between runs, but X.E does not cross-reference Section VII; a mid-career professor reading X.E in isolation as the n=2 invitation has no way to know which structural feature is checkpoint-load-bearing without re-reading Section VII end-to-end.",
       "id": "PI-221",
-      "type": "adopter-checkpoint-specification-gap",
-      "status": "open",
       "opened_at": "2026-05-30T22:00:00Z",
       "opened_in_run": 270,
       "persona": "5-practitioner-adopter-supplemental",
-      "section": "10",
-      "subsection": "X.E",
       "route": "polish",
+      "section": "10",
       "severity": "P1",
-      "claim": "Section X.E's run-268-inserted PI-219 leg b sentence 'The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' in manuscript/polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 specifies 'the same checkpoints' without naming what the checkpoints are, where they live, or how an adopter would operationalize 'the same' against a different course. Section VII defines the per-phase professorial gating, the forced-finding adversarial review pass, and the LESSONS-file memory between runs, but X.E does not cross-reference Section VII; a mid-career professor reading X.E in isolation as the n=2 invitation has no way to know which structural feature is checkpoint-load-bearing without re-reading Section VII end-to-end.",
-      "suggested_fix": "Add a cross-reference clause to the X.E PI-219 leg b sentence pointing the adopter to Section VII as the checkpoints definition site; for example, append '[^N] See supra Section VII (defining the per-phase professorial checkpoints the second-instance specification refers to)' to the end of the leg b sentence. Alternatively, expand the leg b sentence to name the load-bearing checkpoint components inline: 'a comparable doctrinal course built and reviewed by a different faculty member under the same per-phase professorial gating, the same forced-finding adversarial review pass, and the same LESSONS-file memory between runs.'"
+      "status": "open",
+      "subsection": "X.E",
+      "suggested_fix": "Add a cross-reference clause to the X.E PI-219 leg b sentence pointing the adopter to Section VII as the checkpoints definition site; for example, append '[^N] See supra Section VII (defining the per-phase professorial checkpoints the second-instance specification refers to)' to the end of the leg b sentence. Alternatively, expand the leg b sentence to name the load-bearing checkpoint components inline: 'a comparable doctrinal course built and reviewed by a different faculty member under the same per-phase professorial gating, the same forced-finding adversarial review pass, and the same LESSONS-file memory between runs.'",
+      "type": "adopter-checkpoint-specification-gap"
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -1213,7 +1213,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 270,
+  "run_count": 271,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1581,6 +1581,8 @@
       "polish_completed_at": "2026-05-30T18:00:00Z",
       "polish_last_run": 268,
       "polish_status": "needs_polish",
+      "polish_status_prior_run_268": "ready_for_stitch",
+      "polished_word_count": 979,
       "provenance_audit_run": 270,
       "provenance_audit_run_prior": 263,
       "provenance_audited": true,
@@ -1590,16 +1592,14 @@
       "stitched_at": "2026-05-24T11:00:00Z",
       "target_words": 900,
       "title": "Generalization Beyond Constitutional Law",
+      "unsupported_claims": [],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-30T08:00:00Z",
       "verify_routing_reason": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
       "verify_routing_reason_run136": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
       "verify_routing_reason_run263": "Run 263 Verify/provenance (4.0 < 4.5): provenance re-audit lifted Section 10 from the run-136 3.8 baseline to 4.0 (criterion 5 gap_honesty 4 -> 5 on the run-261 X.D second-instance-conjecture recast and the X.A accessibility handoff); still under the 4.5 submission gate. Two new PIs opened: PI-218 (Persona 2 Cite-to-polished propagation gap on the run-260 Mertz/Sajja drafts-only anchors; routes cite_status: needs_polish -> needs_cite for the Cite-tier three-site insertion per L-035) and PI-219 (Persona 7 Adversarial Reviewer X.E n=1 anticipate-and-rebut gap; routes polish_status: needs_polish, no status delta). polish_status holds at needs_polish on PI-088 (X.A-X.B literature-gap, Cite-routed per L-024), PI-154 (X.C editor-vs-teacher gating-role conflation), PI-218 (propagation), and PI-219 (reviewer2-anticipation). The X.B unsupported_claim entry persists in frontmatter at requires-primary-source until the PI-218 Mertz/Sajja propagation lands at the polished/full-draft surface.",
-      "word_count": 1008,
-      "polished_word_count": 979,
-      "polish_status_prior_run_268": "ready_for_stitch",
-      "unsupported_claims": [],
-      "verify_routing_reason_run_270": "Run-270 Verify-provenance re-audit scored 5/3/4/4/5 = 4.2 against the post-run-267 Cite and post-run-268 Polish prose (+0.2 from the run-263 4.0 baseline on criterion 1 lift). 4.2 < 4.5 reverts polish_status ready_for_stitch -> needs_polish per rubric/provenance-audit.md exit condition. PI-220 (Persona 2 X.D/X.E two-track-n=2-framing tension) and PI-221 (Persona 5 supplemental X.E same-checkpoints Section VII cross-reference gap) opened."
+      "verify_routing_reason_run_270": "Run-270 Verify-provenance re-audit scored 5/3/4/4/5 = 4.2 against the post-run-267 Cite and post-run-268 Polish prose (+0.2 from the run-263 4.0 baseline on criterion 1 lift). 4.2 < 4.5 reverts polish_status ready_for_stitch -> needs_polish per rubric/provenance-audit.md exit condition. PI-220 (Persona 2 X.D/X.E two-track-n=2-framing tension) and PI-221 (Persona 5 supplemental X.E same-checkpoints Section VII cross-reference gap) opened.",
+      "word_count": 1008
     },
     "11": {
       "cite_completed_at": "2026-05-28T19:00:00Z",
