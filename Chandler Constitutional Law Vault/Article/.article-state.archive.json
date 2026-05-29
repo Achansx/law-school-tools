@@ -1138,13 +1138,13 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 224. The run-222 Polish narrative explicitly noted the sentence is 'one long sentence with a semicolon splice connecting two related clauses; 41 tokens by my count (39 body tokens + the implicit footnote marker)' and treated the length as deliberate two-clause semicolon use, but the polish rubric's tightness criterion 'tighten any sentence over 35 words unless deliberate' has not been independently scrutinized against the over-claim risk; the deliberateness defense is the same defense the load-bearing verb 'instantiates' would need to survive, and the two compound. Next Polish tick on Section 07 should split at the semicolon and weaken 'instantiates' to a more scholarly register matching the surrounding paragraph; e.g., 'The forced-finding architecture responds to the AI-in-higher-education field's call for greater ethics, collaboration, and rigour. The meta-review naming that call surveys chatbot-tutor and adaptive-system interventions rather than reviewed static publications, but the field-level evidentiary standard applies here too.' The substitution preserves the cross-section reach to Section XI's evaluation framing and keeps the corpus-composition distinction visible without claiming the architecture LITERALLY satisfies the field's call. Routes Section 07 polish_status: needs_polish (already set; no status delta). The fix is independent of and compatible with the standing VII.D L-007 inline-label rewrite the same Polish tick should pick up (Persona 4 finding); closing both together at one Polish tick is the path to provenance_score 5.0 across all five criteria and to clearing the rubric exit condition outright.",
       "opened_at": "2026-06-08T13:00:00Z",
       "phase": "verify",
+      "resolution_note": "Resolved at run-229 Polish (Section 07 VII.C closing sentence): split the semicolon-spliced run-on into two sentences (16 + 25 hyphen-aware tokens, both under the 35-word band) and replaced 'instantiates' with 'responds to' per the PI-208 suggested fix. The substitution matches the [^11] footnote def's scholarly register ('the evidentiary standard the forced-finding Verify architecture is intended to satisfy'). Edit landed at polished/section-07 line 53, drafts/section-07 line 38, and full-draft.md line 223 (global [^93]) per L-035 cross-file discipline. Both prose concerns Persona 1 raised (sentence length past the 35-word band; 'instantiates' over-claim register) are addressed. polish_status holds at needs_polish on the independent L-007 axis.",
+      "resolved_at": "2026-05-28T23:00:00Z",
+      "resolved_by_run": 229,
       "route": "polish",
       "section": "07",
       "status": "resolved",
-      "type": "voice-and-tightness-slip",
-      "resolved_at": "2026-05-28T23:00:00Z",
-      "resolved_by_run": 229,
-      "resolution_note": "Resolved at run-229 Polish (Section 07 VII.C closing sentence): split the semicolon-spliced run-on into two sentences (16 + 25 hyphen-aware tokens, both under the 35-word band) and replaced 'instantiates' with 'responds to' per the PI-208 suggested fix. The substitution matches the [^11] footnote def's scholarly register ('the evidentiary standard the forced-finding Verify architecture is intended to satisfy'). Edit landed at polished/section-07 line 53, drafts/section-07 line 38, and full-draft.md line 223 (global [^93]) per L-035 cross-file discipline. Both prose concerns Persona 1 raised (sentence length past the 35-word band; 'instantiates' over-claim register) are addressed. polish_status holds at needs_polish on the independent L-007 axis."
+      "type": "voice-and-tightness-slip"
     },
     {
       "claim": "Section XIII.A states 'Harvard Library and the MIT Press publish H2O Open Casebooks'; footnote [^1] sources the H2O platform to the Harvard Law School Library Innovation Lab and, separately, the MIT Press/Harvard open casebook series (Apr. 26, 2022) as a series built on the H2O platform. The prose's joint-publisher framing of the MIT Press as a publisher of H2O itself exceeds what the footnote supports.",
@@ -1152,12 +1152,12 @@
       "note": "Persona 4 (Provenance Auditor), Verify run 139. Section 13's one unsupported_claim, reason evidence-gap. External footnote [^1] re-verified live this run: eLangdell quote ('100% Free. Creative Commons licensed. Peer-reviewed.') and 30+ casebook count confirmed via WebFetch; opencasebook.org returned HTTP 403, liveness held via prior WebSearch per L-022. P1; routes Section 13 cite_status:needs_cite (already set). Suggested fix: in the next Cite tick, recast XIII.A to 'Harvard's Library Innovation Lab operates the H2O Open Casebooks platform, on which the MIT Press and Harvard launched an open casebook series', so the prose matches what [^1] supports.",
       "opened_at": "2026-05-30T03:00:00Z",
       "phase": "verify",
-      "section": "13",
-      "status": "resolved",
-      "type": "evidence-gap",
+      "resolution_note": "Closed by run-235 Cite: XIII.A second sentence rewritten to distinguish the three OER actors the footnote actually supports \u2014 H2O Open Casebooks (Harvard Law School Library Innovation Lab platform), the MIT Press / Harvard Law School Library jointly launched 2022 open casebook series built on the H2O platform, and CALI's eLangdell Press. The compressed joint-publisher framing the provenance audit flagged is removed; the three URLs were re-verified live this run (opencasebook.org via WebSearch, news.mit.edu and cali.org via WebFetch). Section 13 unsupported_claims goes 1->0.",
       "resolved_at": "2026-05-29T11:00:00Z",
       "resolved_by_run": 235,
-      "resolution_note": "Closed by run-235 Cite: XIII.A second sentence rewritten to distinguish the three OER actors the footnote actually supports \u2014 H2O Open Casebooks (Harvard Law School Library Innovation Lab platform), the MIT Press / Harvard Law School Library jointly launched 2022 open casebook series built on the H2O platform, and CALI's eLangdell Press. The compressed joint-publisher framing the provenance audit flagged is removed; the three URLs were re-verified live this run (opencasebook.org via WebSearch, news.mit.edu and cali.org via WebFetch). Section 13 unsupported_claims goes 1->0."
+      "section": "13",
+      "status": "resolved",
+      "type": "evidence-gap"
     },
     {
       "claim": "Section XIII.C sentence 4 ('The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not.' [^144]) overclaims that a runtime system's generated responses are not auditable; runtime systems can and do log their generations, so the responses are auditable as text. The distinction the article actually wants is accountability to a named pre-publication human reviewer, not auditability as such. The supporting footnote [^144] is a supra to Section XII, which is still PENDING.",
@@ -1165,12 +1165,12 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding on Section XIII.C. The static-vs-chatbot distinction is load-bearing for the article (cf. PI-021/PI-022 at Section VIII), so a categorical 'not auditable' overclaim against runtime systems is exactly the overstatement a skeptical reviewer flags. Next Polish tick on Section 13 should narrow the sentence to name the real distinction, e.g. 'The chain of responsibility runs to a named professor who reviewed the page before publication, an accountability a runtime system's generated responses do not carry.' P1-deferral active; logged without status reset. The [^144] supra-to-PENDING-Section-XII reference is a known interim artifact (flagged at the run-83 Stitch) that resolves when XII lands; it is not a directional error.",
       "opened_at": "2026-05-25T03:00:00Z",
       "phase": "verify",
-      "section": "13",
-      "status": "resolved",
-      "type": "chatbot-architecture-overclaim",
+      "resolution_note": "Run-236 Polish narrowed XIII.C sentence 'The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not' to 'The chain of responsibility traces to a named pre-publication human reviewer in a way a runtime system's generations do not.' Global footnote [^173] description tail updated correspondingly. The persona's flagged overclaim (runtime systems CAN log generations as text) is now resolved by naming the real distinction: traceability to a named pre-publication human reviewer, not auditability of the text itself.",
       "resolved_at": "2026-05-29T13:00:00Z",
       "resolved_by_run": 236,
-      "resolution_note": "Run-236 Polish narrowed XIII.C sentence 'The chain of responsibility is therefore auditable in a way a runtime system's generated responses are not' to 'The chain of responsibility traces to a named pre-publication human reviewer in a way a runtime system's generations do not.' Global footnote [^173] description tail updated correspondingly. The persona's flagged overclaim (runtime systems CAN log generations as text) is now resolved by naming the real distinction: traceability to a named pre-publication human reviewer, not auditability of the text itself."
+      "section": "13",
+      "status": "resolved",
+      "type": "chatbot-architecture-overclaim"
     },
     {
       "claim": "Section XIII.C sentence 5 ('A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion') asserts as settled that the artifact IS a scholarly output, then frames the open question as merely how to classify it. Whether a reviewed course website counts as scholarship at all, as opposed to teaching material, is itself contested in promotion-and-tenure practice; the flat 'is a scholarly output' pre-decides the recognition question the sentence claims to leave open.",
@@ -1178,12 +1178,12 @@
       "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding on Section XIII.C. The article's thesis turns on honest scoping of what it claims; asserting scholarly status as a premise rather than as the contested recognition question is an overclaim a traditionalist promotion-committee reader will catch. Next Polish tick on Section 13 should recast so scholarly status is the open question, e.g. 'Whether a versioned, citable, publicly served course artifact counts as a scholarly output, as teaching infrastructure, or as both is the recognition question an institution must decide.' P1-deferral active; logged without status reset.",
       "opened_at": "2026-05-25T03:00:00Z",
       "phase": "verify",
-      "section": "13",
-      "status": "resolved",
-      "type": "recognition-overclaim",
+      "resolution_note": "Run-236 Polish recast XIII.C 'A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion' to 'Whether a versioned, citable, publicly served course artifact counts as scholarship is itself contested, and the institution must decide whether to treat it as teaching infrastructure or as scholarship for review and promotion.' Scholarly status is now the open question rather than asserted as settled.",
       "resolved_at": "2026-05-29T13:00:00Z",
       "resolved_by_run": 236,
-      "resolution_note": "Run-236 Polish recast XIII.C 'A versioned, citable, publicly served course artifact is a scholarly output, and an institution must decide whether to count it as teaching infrastructure or as scholarship for review and promotion' to 'Whether a versioned, citable, publicly served course artifact counts as scholarship is itself contested, and the institution must decide whether to treat it as teaching infrastructure or as scholarship for review and promotion.' Scholarly status is now the open question rather than asserted as settled."
+      "section": "13",
+      "status": "resolved",
+      "type": "recognition-overclaim"
     },
     {
       "claim": "Section XIII.A surfaces the article's own transfer-of-inference analytic move to the reader in prose -- 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' -- narrating the reasoning architecture rather than making the positioning claim directly. Fresh-site recurrence of the meta-rhetoric/voice-slip family (PI-022/028/036/060/141/145/153/157/161). Distinct from PI-094 (recognition overclaim) and PI-092 (footnote internal-artifact leak).",
@@ -1191,34 +1191,34 @@
       "note": "Persona 1 (Skeptical JLE Editor), Verify run 139. P1; deferral lifted so routes Section 13 polish_status:needs_polish (already set). Suggested fix: recast as a direct claim -- the open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not -- dropping the 'What carries across / What does not carry across' scaffolding.",
       "opened_at": "2026-05-30T03:00:00Z",
       "phase": "verify",
-      "section": "13",
-      "status": "resolved",
-      "type": "voice-slip",
+      "resolution_note": "Run-236 Polish recast XIII.A meta-rhetoric 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' to the direct semicolon-joined claim 'The open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not.' per L-036 self-flagging meta-rhetoric ban and L-048 explicit per-sentence enumeration. The transfer-of-inference analytic move is no longer surfaced to the reader as narration.",
       "resolved_at": "2026-05-29T13:00:00Z",
       "resolved_by_run": 236,
-      "resolution_note": "Run-236 Polish recast XIII.A meta-rhetoric 'What carries across is the open-resource commitment to reusable, openly licensed teaching materials. What does not carry across is the object of publication.' to the direct semicolon-joined claim 'The open-resource commitment to reusable, openly licensed materials carries across; the object of publication does not.' per L-036 self-flagging meta-rhetoric ban and L-048 explicit per-sentence enumeration. The transfer-of-inference analytic move is no longer surfaced to the reader as narration."
+      "section": "13",
+      "status": "resolved",
+      "type": "voice-slip"
     },
     {
+      "claim": "Section XI footnotes [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14] (polished, mapped to assembly [^140]/[^141]/[^142]/[^145]/[^146]/[^155]/[^156]/[^157] per the run-153 stitch renumber) cite '*See infra* App. A (Article Project Architecture)' with seven phantom subsection names (Thesis-Level Disclaimer, Evaluation Posture Recommendation, Four-Instrument Light-Data Plan, Evaluation-Vocabulary Discipline, IRB and Research-vs-Feedback Labeling Fork, Data-Collection-Status Fork, Single-Owner-Section Routing Convention) and '*see also infra* App. D (Internal Project Records Excerpts)' / '(Correspondence Excerpts)' subtitles. The real appendices in manuscript/appendices/ are A 'Input Inventory' with \u00a7\u00a7 A.1 Source Materials Provided / A.2 Categories Intentionally Excluded / A.3 Source Material Conventions, B 'AI Tooling,' C 'Obsidian Templates,' D 'Rubrics,' E 'Cost and Labor,' F 'Technical Setup'; none contains any of the seven named Section-XI subsections. Same defect class as PI-122 (Section 02 App. D pointer) but broader: both A and D subtitles are phantom in Section 11.",
       "id": "PI-211",
-      "type": "false-cross-reference",
-      "section": "11",
-      "status": "resolved",
+      "note": "Persona 4 (Provenance Auditor) P1, surfaced during the Section 11 provenance re-audit (provenance_score 3.6->4.2, attribution_discipline criterion 4->3). Cite-owned: next Cite tick on Section 11 drops the '(Article Project Architecture)' parenthetical from every App. A pointer; either replaces the named subsections with App. A's actual subsection numbers (A.1/A.2/A.3 where the claim concerns the input corpus) or creates a new App. G 'Workplan Excerpts' under an unused letter and populates it with the workplan \u00a71/\u00a75/\u00a76 excerpts the eight footnotes promise. Drops every '*see also infra* App. D (Internal Project Records Excerpts)' and '(Correspondence Excerpts)' sub-reference from Section 11 footnotes and lets the App. A primary pointer carry the support; defers any correspondence-appendix cross-reference until the progress-report email is in the repo (PI-082). Routes Section 11 cite_status: needs_polish -> needs_cite. Distinct from PI-122 because Section 11 is not in PI-122's named Cite-fix scope (Sections 02/04/08/09) and because both A and D subtitles are phantom rather than just D.",
       "opened_at": "2026-05-29T17:00:00Z",
       "opened_in_run": 238,
       "persona": "Provenance Auditor (Persona 4)",
-      "severity": "P1",
-      "claim": "Section XI footnotes [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14] (polished, mapped to assembly [^140]/[^141]/[^142]/[^145]/[^146]/[^155]/[^156]/[^157] per the run-153 stitch renumber) cite '*See infra* App. A (Article Project Architecture)' with seven phantom subsection names (Thesis-Level Disclaimer, Evaluation Posture Recommendation, Four-Instrument Light-Data Plan, Evaluation-Vocabulary Discipline, IRB and Research-vs-Feedback Labeling Fork, Data-Collection-Status Fork, Single-Owner-Section Routing Convention) and '*see also infra* App. D (Internal Project Records Excerpts)' / '(Correspondence Excerpts)' subtitles. The real appendices in manuscript/appendices/ are A 'Input Inventory' with \u00a7\u00a7 A.1 Source Materials Provided / A.2 Categories Intentionally Excluded / A.3 Source Material Conventions, B 'AI Tooling,' C 'Obsidian Templates,' D 'Rubrics,' E 'Cost and Labor,' F 'Technical Setup'; none contains any of the seven named Section-XI subsections. Same defect class as PI-122 (Section 02 App. D pointer) but broader: both A and D subtitles are phantom in Section 11.",
-      "note": "Persona 4 (Provenance Auditor) P1, surfaced during the Section 11 provenance re-audit (provenance_score 3.6->4.2, attribution_discipline criterion 4->3). Cite-owned: next Cite tick on Section 11 drops the '(Article Project Architecture)' parenthetical from every App. A pointer; either replaces the named subsections with App. A's actual subsection numbers (A.1/A.2/A.3 where the claim concerns the input corpus) or creates a new App. G 'Workplan Excerpts' under an unused letter and populates it with the workplan \u00a71/\u00a75/\u00a76 excerpts the eight footnotes promise. Drops every '*see also infra* App. D (Internal Project Records Excerpts)' and '(Correspondence Excerpts)' sub-reference from Section 11 footnotes and lets the App. A primary pointer carry the support; defers any correspondence-appendix cross-reference until the progress-report email is in the repo (PI-082). Routes Section 11 cite_status: needs_polish -> needs_cite. Distinct from PI-122 because Section 11 is not in PI-122's named Cite-fix scope (Sections 02/04/08/09) and because both A and D subtitles are phantom rather than just D.",
+      "resolution_note": "Run-242 Cite tick resolved by removing the phantom App. A 'Article Project Architecture' / App. D 'Internal Project Records Excerpts' routings across nine Section XI footnotes (the eight named by PI-211 plus the missed-but-same-family [^11]). Three footnotes converted to legitimate cross-references: [^1] (new) -> Bond and Choi & Schwarcz at notes 3 and 4; [^2] (new) -> Sajja at note 5; [^6] (new) -> Section IV \u00a7 IV.E; [^7] (new) -> Section IX. Six footnotes (original [^1], [^3], [^4], [^5], [^6], [^11]) REMOVED as self-statements of the article's own organization (no internal-self citation needed). footnotes_count 14->8. The remaining workplan-language slips in 11.A and 11.E body prose are L-057 Polish-owned and are logged as new PI-216.",
+      "resolved_at": "2026-05-28T19:00:00Z",
+      "resolved_by": "cite-run-242",
       "routes_to": [
         "Cite (Section 11 footnote rewrite)",
         "Stitch (assembly footnote-def propagation after Cite)"
       ],
+      "section": "11",
+      "severity": "P1",
+      "status": "resolved",
+      "type": "false-cross-reference",
       "verify_run_log": [
         238
-      ],
-      "resolved_at": "2026-05-28T19:00:00Z",
-      "resolved_by": "cite-run-242",
-      "resolution_note": "Run-242 Cite tick resolved by removing the phantom App. A 'Article Project Architecture' / App. D 'Internal Project Records Excerpts' routings across nine Section XI footnotes (the eight named by PI-211 plus the missed-but-same-family [^11]). Three footnotes converted to legitimate cross-references: [^1] (new) -> Bond and Choi & Schwarcz at notes 3 and 4; [^2] (new) -> Sajja at note 5; [^6] (new) -> Section IV \u00a7 IV.E; [^7] (new) -> Section IX. Six footnotes (original [^1], [^3], [^4], [^5], [^6], [^11]) REMOVED as self-statements of the article's own organization (no internal-self citation needed). footnotes_count 14->8. The remaining workplan-language slips in 11.A and 11.E body prose are L-057 Polish-owned and are logged as new PI-216."
+      ]
     },
     {
       "claim": "Section III.C's third paragraph closes with 'The page captures the third leg of the case-doctrine-classroom triangle Section IV named as the casebook's blind spot.' Section IV does not use the phrase 'case-doctrine-classroom triangle,' does not characterize the lecture summary as a 'third leg,' and does not describe any layer as 'the casebook's blind spot.' IV.A enumerates the corpus as four content types (lecture decks, professor-prepared opinion PDFs, merged reading packets, and a small set of assessment artifacts); IV.C discusses what the LMS did not hand (ten missing opinions, the open casebook-input question under PI-001) without any blind-spot framing on the lecture-summary layer.",
@@ -1226,12 +1226,12 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding. A JLE peer reviewer reading Sections III and IV in sequence will see the cross-reference and check Section IV for the phrase, find nothing, and flag the article for fabricated internal cross-references. Next Polish tick on Section 03 should rewrite the III.C cross-reference so it points to what Section IV actually says about the corpus, not what III wishes IV said; for example, 'The page captures the lecture-deck content type Section IV.A names as one of the four course-issued artifact families, in a form a student who missed the session can read.' Drop the 'case-doctrine-classroom triangle' and 'casebook's blind spot' language entirely, since neither phrase appears anywhere in the article. Adjacent recurrence-prevention question: Stitch's cross-section consistency checks did not catch the false cross-reference in the partial-noop pass on 2026-05-18T05:00 because L-016's partial-noop convention scores only on full-strength rubric criteria; a future Stitch tick should consider whether even a partial assembly can run a string-grep cross-reference check (every 'Section N named X' or 'Section N established X' construction in section N+1 verified against section N's prose) as a structural rather than rubric check.",
       "opened_at": "2026-05-18T07:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-28T20:00:00Z",
+      "resolved_by_phase": "polish",
+      "resolved_by_run": 243,
       "section": "03",
       "status": "resolved",
-      "type": "false-cross-reference",
-      "resolved_at": "2026-05-28T20:00:00Z",
-      "resolved_by_run": 243,
-      "resolved_by_phase": "polish"
+      "type": "false-cross-reference"
     },
     {
       "claim": "Section III.D's final sentence calls the three-bucket Hypothetical Applications form 'the surface-level proof that the prompting design Section VI describes produces pedagogically structured material rather than free-form exam noise'; 'proof' overclaims, since a fixed template shows the output is structured but does not establish that it is pedagogically sound rather than noise, a quality judgment the article presents no evaluation data to support.",
@@ -1239,12 +1239,12 @@
       "note": "Persona 1 (Skeptical JLE Editor) P1. The three-bucket structure is the visible artifact; calling it 'proof' that the design 'produces pedagogically structured material rather than free-form exam noise' is a quality claim the article does not back with evaluation. Next Polish tick on Section 03 should soften 'proof' to 'illustration' or 'evidence' and drop or qualify the 'rather than free-form exam noise' contrast, e.g. 'the three-bucket form is the surface-level illustration of the prompting design Section VI describes, scoping hypotheticals to the page's doctrine.' Distinct from PI-108 (live-hypothetical substitution, Persona 2) and PI-030 (casebook overclaim). Routes Section 03 polish_status -> needs_polish.",
       "opened_at": "2026-05-29T07:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-28T20:00:00Z",
+      "resolved_by_phase": "polish",
+      "resolved_by_run": 243,
       "section": "03",
       "status": "resolved",
-      "type": "overclaim",
-      "resolved_at": "2026-05-28T20:00:00Z",
-      "resolved_by_run": 243,
-      "resolved_by_phase": "polish"
+      "type": "overclaim"
     },
     {
       "claim": "Section III narrates the doctrinal synthesis as the work of the system rather than the professor: III.B 'The Commerce Clause Topic page renders the doctrine as a single synthesis', III.A the four-family grid plus Cases filter rail 'give the student' entry, and III.D 'the prompting design ... produces' material; Professor Chandler's curatorial and analytical judgment is largely invisible across III.A through III.D.",
@@ -1252,12 +1252,109 @@
       "note": "Persona 2 (Legal Pedagogy Traditionalist) P1. The article's thesis is that professorial judgment is made reusable, inspectable, and publishable, not absorbed into the system; Section III lets 'the page'/'the site'/'the prompting design' carry the verbs the professor should carry. Next Polish tick on Section 03 should add a professor-as-author clause to III.B's opening, e.g. 'The Commerce Clause Topic page renders Professor Chandler's synthesis, recorded through the vault's reviewed pipeline, as a single doctrine page', and consider mirroring the actor-naming at III.A. Same cross-section actor-erasure family as PI-015 (V.C) and PI-024 (VIII.D); distinct from PI-031/PI-108 (live-event substitution). Routes Section 03 polish_status -> needs_polish.",
       "opened_at": "2026-05-29T07:00:00Z",
       "phase": "verify",
+      "resolved_at": "2026-05-28T20:00:00Z",
+      "resolved_by_phase": "polish",
+      "resolved_by_run": 243,
       "section": "03",
       "status": "resolved",
-      "type": "actor-erasure",
-      "resolved_at": "2026-05-28T20:00:00Z",
-      "resolved_by_run": 243,
-      "resolved_by_phase": "polish"
+      "type": "actor-erasure"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Two concurrent cite ticks raced on run 74; both selected Section 10 (Generalization) under scaffold-first and produced equivalent fourteen-footnote Bluebook output. This local tick's commit lost the push and the rebase produced content conflicts on all five tick files.",
+      "id": "PI-084",
+      "note": "Recovery per RUNBOOK push-race protocol: git rebase onto origin/master conflicted on .article-state.json, .article-scores.jsonl, BUILD_NARRATIVE_2026-05.md, manuscript/cost-log.jsonl, and manuscript/drafts/section-10-generalization.md because the winning tick (commit cc10221) had independently cited the same Section 10 and advanced cite->polish. Conflicts were NOT auto-resolved (human-decision rule). Verified the winning tick produced an equivalent, complete result: current_phase polish, run_count 74, Section 10 cite_status needs_polish / draft_status needs_polish / footnotes_count 14, identical pending-issue set. NOTHING SUBSTANTIVE WAS LOST: the only discarded artifact is this tick's cosmetically-different footnote wording, which achieved the same coverage, the same internal cross-reference routing (Sections I/III/IV/V/VII/XI/XII), and the same single external authority (Usman, Making Legal Education Stick, Legal Writing Inst. 2018, URL verified live via WebFetch). The redundant local commit was discarded by reset to origin/master. Informational only; no remediation required. Underlying cause is the same scaffold-first sequencing pressure noted in PI-083: with Section 10 the unambiguous lowest-numbered work item, two ticks firing close together both pick it.",
+      "opened_at": "2026-05-24T07:00:00Z",
+      "phase": "cite",
+      "section": "10",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Concurrent draft ticks raced on run 185. This local tick read the saturated posture and noop-ed (no section at needs_draft; the two open PI-V figure issues judged non-prose), while the winning tick (commit bd469bd) recognized the Section V figure captures now exist in manuscript/figures/ and landed PI-V-OBSIDIAN-FIGS and PI-V-LOCAL-GRAPHS as real Draft work. This tick commit lost the push.",
+      "id": "PI-193",
+      "note": "Recovery per RUNBOOK push-race protocol: git rebase onto origin/master conflicted on the four append-heavy tick files and was NOT auto-resolved (human-decision rule). Verified the winning tick produced a strictly more complete result: run 185 advanced draft->cite with Section V figures inserted via the callout-plus-footnote convention (new [^18]/[^19], [^10] finalized), Section 05 word_count 1193->1237, PI-V-OBSIDIAN-FIGS and PI-V-LOCAL-GRAPHS resolved. NOTHING SUBSTANTIVE WAS LOST: this tick authored no prose (it noop-ed), so the winner figure insertion supersedes it entirely. The redundant local noop commit (05dd1fb) was discarded by reset to origin/master; master has since progressed through cite run 186 to current_phase polish. No scorecard or cost-log line was added for run 185 because the winning tick owns that slot; this entry is the only artifact this recovery leaves. Informational only; no remediation required. Process note: a Draft tick with open PI-V figure issues should ls manuscript/figures/ before declaring saturation, because capture files landing in the repo turn a deferred figure issue into actionable Draft work.",
+      "opened_at": "2026-06-03T13:00:00Z",
+      "phase": "draft",
+      "section": "05",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Two stitch ticks raced on run 188. A concurrent tick (commit 3e9ba88) landed an equivalent Section V stitch and advanced stitch->verify first; this local tick computed its own run-188 stitch and lost the push.",
+      "id": "PI-196",
+      "note": "Recovery per RUNBOOK push-race protocol: git rebase onto origin/master conflicted on the append-heavy tick files (.article-scores.jsonl, .article-state.json, BUILD_NARRATIVE_2026-06.md, manuscript/cost-log.jsonl, manuscript/full-draft.md) and was NOT auto-resolved (human-decision rule). NOTHING SUBSTANTIVE WAS LOST: the winning tick performed the same interim Stitch (Section V landed into full-draft.md at global [^56]-[^74], footnotes_total 179->181, 181 contiguous defs, Section 05 polish_status stitched, phase stitch->verify, run_count 188). The winner is in fact cleaner on the one point this tick had flagged: its Section V body markers run in strict appearance order [^56]..[^74], so this tick's PI-195 (out-of-order figure markers [^73]/[^74]) does NOT apply to master and needs no follow-up; PI-195 was a local-only artifact and is not carried forward. The two assemblies differ in body-prose word accounting (winner total_words 13352 vs this tick's 13269), which is the winner's slot to own; no reconciliation is attempted here. The redundant local stitch commit (0fcd33f) was discarded by reset to origin/master. No scorecard or cost-log line was added for run 188 because the winning tick owns that slot, and no phase re-advance was performed; this entry plus its BUILD_NARRATIVE note are the only artifacts this recovery leaves. Process note: stitch ticks are append-and-renumber heavy across five shared files, so concurrent runs will reliably rebase-conflict; the loser should reset and log rather than auto-merge, exactly as run-185 (PI-193) and run-187 (PI-194) did.",
+      "opened_at": "2026-06-03T21:00:00Z",
+      "opened_run": 188,
+      "phase": "stitch",
+      "section": "05",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Run 197 (harvest noop) raced a concurrent tick. The concurrent tick (commit 52062c7) landed an equivalent run-197 harvest noop on master first and advanced harvest->outline; this tick's redundant local commit (0b39b75) lost the push (HTTP 403 / fetch-first rejection).",
+      "id": "PI-200",
+      "note": "Recovery per the dispatcher push-race protocol and the run-188 (PI-196) / run-185 (PI-193) precedent: git fetch origin master then git rebase origin/master --autostash conflicted on the three append-heavy shared files (.article-scores.jsonl, BUILD_NARRATIVE_2026-06.md, manuscript/cost-log.jsonl) because both ticks appended a run-197 block at the same file tails; the rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local commit 0b39b75 was discarded by reset --hard to origin/master. Nothing substantive was lost: the winning scorecard, cost-log, and BUILD_NARRATIVE run-197 entries reach the identical saturated-noop conclusion (all 14 sections evidence_status:populated, all six appendices status:drafted, neither the main-section scope nor the appendix sub-task has a target) and the identical state advance (current_phase outline, phase_index 1, run_count 197, last_run_at 2026-06-04T15:00:00Z). This entry is the informational push-race record only; no phase re-advance and no scorecard or cost-log line is added for the lost commit, mirroring the PI-193/PI-196 recoveries.",
+      "opened_at": "2026-06-04T15:30:00Z",
+      "phase": "harvest",
+      "route": "none",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Run 198 (outline noop) raced a concurrent push. This tick computed the saturated outline noop (abstract at ready_for_review so the abstract sub-task is skipped, all 14 sections at outline_status:ready_for_draft with none at needs_work, step-3a scaffold-first inactive since all 14 are at evidence_status:populated) and advanced outline->draft (phase_index 1->2, run_count 197->198), then lost the push (HTTP 403 / fetch-first rejection) to commit a881ab5, which had landed the PI-200 push-race log on master first.",
+      "id": "PI-201",
+      "note": "Recovery per the dispatcher push-race protocol and the PI-200 / PI-196 / PI-193 precedent: git fetch origin master then git rebase origin/master --autostash conflicted in BUILD_NARRATIVE_2026-06.md because both this tick and a881ab5 appended a block at the same file tail (the .article-state.json edits auto-merged, and .article-scores.jsonl / cost-log.jsonl did not conflict because a881ab5 touched neither); the rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local commit 1ab145e was discarded by reset --hard to origin/master. Unlike PI-200, the winning commit a881ab5 only LOGGED the harvest-197 push race and did NOT advance the phase, so master remains at current_phase outline / phase_index 1 / run_count 197 / last_run_at 2026-06-04T15:00:00Z: the outline tick was genuinely not performed on master, and the next scheduled run will redo it. Nothing substantive was lost because the outline tick is a deterministic saturated-state noop (no section at outline_status:needs_work, abstract at ready_for_review), reproducible on the next pass. This entry is the informational push-race record only; no phase advance and no scorecard or cost-log line is added for the lost commit, mirroring the PI-193/PI-196/PI-200 recoveries.",
+      "opened_at": "2026-06-04T17:30:00Z",
+      "phase": "outline",
+      "route": "none",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Run 198 (outline noop) raced a concurrent push, the second outline-198 tick to do so after PI-201. This tick computed the identical saturated outline noop (abstract at ready_for_review so the abstract sub-task is skipped, all 14 sections at outline_status:ready_for_draft with none at needs_work, step-3a scaffold-first inactive since all 14 are at evidence_status:populated) and advanced outline->draft (phase_index 1->2, run_count 197->198), then lost the push (fetch-first rejection) to commit 9418791, which had landed the PI-201 push-race log on master first.",
+      "id": "PI-202",
+      "note": "Recovery per the dispatcher push-race protocol and the PI-201 / PI-200 / PI-196 / PI-193 precedent: git fetch origin master then git rebase origin/master --autostash conflicted in BUILD_NARRATIVE_2026-06.md because both this tick and 9418791 appended a block at the same file tail (the .article-state.json edits auto-merged cleanly, and .article-scores.jsonl / cost-log.jsonl did not conflict because the winning log commit 9418791 touched neither); the rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local commit 31e56e1 was discarded by reset --hard to origin/master. As with PI-201, the winning commit 9418791 only LOGGED the prior outline-198 push race and did NOT advance the phase, so master remains at current_phase outline / phase_index 1 / run_count 197 / last_run_at 2026-06-04T15:00:00Z: the outline tick is still genuinely not performed on master, and a future non-concurrent run will redo it. Nothing substantive was lost because the outline tick is a deterministic saturated-state noop (no section at outline_status:needs_work, abstract at ready_for_review), reproducible on the next pass. This entry is the informational push-race record only; no phase advance and no scorecard or cost-log line is added for the lost commit, mirroring the PI-193/PI-196/PI-200/PI-201 recoveries. Human-attention note: two consecutive outline-198 ticks (PI-201 and this PI-202) have now raced and logged without the phase advancing, because each lost to the other's log commit rather than to a real advance; if the next scheduled run does not land the outline->draft advance cleanly, the scheduler concurrency on this phase boundary should be reviewed.",
+      "opened_at": "2026-06-04T18:00:00Z",
+      "phase": "outline",
+      "route": "none",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Run 198 (outline noop) raced a concurrent push for the third time after PI-201 and PI-202. This tick computed the identical saturated outline noop (abstract at ready_for_review so the abstract sub-task is skipped, all 14 sections at outline_status:ready_for_draft with none at needs_work, step-3a scaffold-first inactive since all 14 are at evidence_status:populated) and advanced outline->draft (phase_index 1->2, run_count 197->198), then lost the push (HTTP 403 fetch-first rejection) to commit 0097d5a, which had landed the PI-202 push-race log on master first.",
+      "id": "PI-203",
+      "note": "Recovery per the dispatcher push-race protocol and the PI-202 / PI-201 / PI-200 / PI-196 / PI-193 precedent: git fetch origin master then git rebase origin/master --autostash conflicted in BUILD_NARRATIVE_2026-06.md because both this tick and 0097d5a appended a block at the same file tail after the PI-201 entry (the .article-state.json edits auto-merged cleanly, and .article-scores.jsonl / cost-log.jsonl did not conflict because the winning log commit 0097d5a touched neither); the rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local commit dd3e3e2 was discarded by reset --hard to origin/master. As with PI-201 and PI-202, the winning commit 0097d5a only LOGGED the prior outline-198 push race and did NOT advance the phase, so master remains at current_phase outline / phase_index 1 / run_count 197 / last_run_at 2026-06-04T15:00:00Z: the outline tick is still genuinely not performed on master. Nothing substantive was lost because the outline tick is a deterministic saturated-state noop (no section at outline_status:needs_work, abstract at ready_for_review), reproducible on the next pass; this entry is the informational push-race record only, with no phase advance and no scorecard or cost-log line for the lost commit. ESCALATION (raising the PI-202 human-attention note): this is now the THIRD consecutive outline-198 tick (PI-201, PI-202, PI-203) to race and log without the phase ever advancing on master, each losing to a prior race-LOG commit rather than to a real advance. The pattern is self-perpetuating: every concurrent tick advances locally, conflicts on the same BUILD_NARRATIVE tail-append, aborts per the no-auto-resolve rule, and adds another log commit that becomes the next tick's race winner, so the outline->draft advance never lands. A single non-concurrent run will break the loop; if concurrent ticks continue, a human should serialize the scheduler on this phase boundary or pre-resolve the BUILD_NARRATIVE append contention. Recommend human review of scheduler concurrency.",
+      "opened_at": "2026-06-04T20:00:00Z",
+      "phase": "outline",
+      "route": "none",
+      "status": "open",
+      "type": "push-race-conflict"
+    },
+    {
+      "archived_at": "2026-05-28T19:30:00Z",
+      "archived_reason": "push-race-conflict bookkeeping; winning tick already landed; no article content",
+      "claim": "Run 198 (outline noop) raced a concurrent push for the fourth time, after PI-201, PI-202, and PI-203. This tick computed the identical saturated outline noop (abstract at ready_for_review so the abstract sub-task is skipped, all 14 sections at outline_status:ready_for_draft with none at needs_work, step-3a scaffold-first inactive since all 14 are at evidence_status:populated), advanced outline->draft (phase_index 1->2, run_count 197->198), committed locally (6f9322e), and unlike the PI-201..203 ticks ALSO appended the run-198 noop scorecard and cost-log lines, then lost the push (fetch-first rejection) to commit 43d929d, which had landed the PI-203 push-race ESCALATION log on master first.",
+      "id": "PI-204",
+      "note": "Recovery per the dispatcher push-race protocol and the PI-203 / PI-202 / PI-201 / PI-200 / PI-196 / PI-193 precedent: git fetch origin master then git rebase origin/master --autostash conflicted in BUILD_NARRATIVE_2026-06.md exactly as PI-203 predicted, because both this tick and 43d929d appended a block at the same file tail after the PI-202 entry (the .article-state.json advance auto-merged cleanly against 43d929d's PI-203 pending_issues insertion, and .article-scores.jsonl / cost-log.jsonl did not conflict because the winning log commit 43d929d touched neither). The rebase was aborted rather than auto-resolved per the human-decision rule, and the redundant local advance commit 6f9322e was discarded by reset --hard to origin/master. As with PI-201..203, the winning commit 43d929d only LOGGED the prior outline-198 race and did NOT advance the phase, so master remains at current_phase outline / phase_index 1 / run_count 197 / last_run_at 2026-06-04T15:00:00Z: the outline tick is still genuinely not performed on master. Nothing substantive was lost because the outline tick is a deterministic saturated-state noop (no section at outline_status:needs_work, abstract at ready_for_review), reproducible on the next pass; this entry is the informational push-race record only, with no phase advance and no scorecard or cost-log line retained for the lost commit. ESCALATION CONFIRMED: this is now the FOURTH consecutive outline-198 tick (PI-201, PI-202, PI-203, PI-204) to race and log without the phase advancing on master, and the FIRST to empirically confirm PI-203's prediction that the rebase would conflict on the BUILD_NARRATIVE tail-append. The livelock is self-perpetuating exactly as PI-203 described: each recovery commit is itself an append to .article-state.json pending_issues and BUILD_NARRATIVE, so it becomes the next concurrent tick's race winner and conflict source, and the outline->draft advance never lands while ticks run concurrently on this boundary. HUMAN ACTION REQUIRED: serialize the scheduler on the phase-advance boundary, or land the trivial outline->draft advance directly on master once (current_phase outline->draft, phase_index 1->2, run_count 197->198, plus the deterministic run-198 noop scorecard/cost-log/narrative lines), which breaks the loop permanently. A single non-concurrent run would also break it.",
+      "opened_at": "2026-06-04T20:30:00Z",
+      "phase": "outline",
+      "route": "none",
+      "status": "open",
+      "type": "push-race-conflict"
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
