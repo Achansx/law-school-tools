@@ -93,6 +93,11 @@
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
+    },
+    "handoff_freeze": {
+      "awaiting_human": true,
+      "set_at": "2026-05-29T17:00:00Z",
+      "reason": "Consolidation hand-off complete at run 308 (14,058 words, 187 contiguous footnotes). Frozen draft: manuscript/HANDOFF-2026-05-29.md; cover memo: PROFESSOR_CHANDLER_HANDOFF.md. The maintenance loop is HALTED pending human review. The system does not submit to JLE and does not email the professor. Clear this gate (awaiting_human:false) only to resume ticking."
     }
   },
   "last_completed_phase": "cite",
