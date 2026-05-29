@@ -127,3 +127,51 @@ Center of gravity for JLE = Carnegie + Best Practices + the JLE AI articles (Cho
 ABA 302/315. The existing AI/CS sources (Sajja, Dong, Peng, Magesh, Bond) become supporting
 machinery, not the article's intellectual core. Rubrics literature (Sparrow) is the strongest
 bridge between the legal-pedagogy frame and the article's "reusable, inspectable judgment" thesis.
+
+## Round 2 adds (gap-fill research agent, 2026-05-28) — verify each URL at Cite (L-022/L-043)
+Targeted three gaps: currency (recent AI-in-legal-ed), thin SoTL bucket, and evaluation method for Sec XI.
+
+### Currency — recent (2024-2026) AI in legal education (law venues)
+- Dahl, Magesh, Suzgun & Ho, "Large Legal Fictions: Profiling Legal Hallucinations in Large
+  Language Models," 16 J. Legal Analysis 64 (2024). https://academic.oup.com/jla/article/16/1/64/7699227
+  (preprint https://arxiv.org/abs/2401.01301) — peer-reviewed evidence LLM legal hallucination is
+  pervasive (~58-88% on verifiable case questions); load-bearing anchor for "why not a live chatbot."
+  NOTE: shares authors with existing Magesh "Hallucination-Free?" cite — complementary (general-LLM
+  hallucination vs. commercial RAG-tool audit), NOT duplicate. Sections: I, II, X, XI. [Cite: verify the
+  exact percentage from primary source before any statistic enters prose.]
+- Bakht Munir, "Integrating Generative AI in Legal Pedagogy: A Case Study," 53 Int'l J. Legal Info. 272
+  (2025). https://www.cambridge.org/core/journals/international-journal-of-legal-information/article/integrating-generative-ai-in-legal-pedagogy-a-case-study/BA18B044ACFEB39043A27C774A96D636
+  — peer-reviewed case study; AI-vs-human-answer method parallels the inspectable-judgment thesis. Sections: II, VII, X, XI.
+- Pascale Lorber, "Generative AI, Law Schools and Assessment: Where Next?," 59 The Law Teacher (iss.3) (2025).
+  https://www.tandfonline.com/doi/full/10.1080/03069400.2025.2535822 [T&F 403s bots; confirmed via search]
+  — refereed legal-ed venue on AI + assessment integrity; supports contamination-avoidance argument. Sections: II, XI, XIII.
+- Carolyn V. Williams, "Bracing for Impact: Revising Legal Writing Assessments Ahead of the Collision of
+  Generative AI and the NextGen Bar Exam," 28 Legal Writing 1 (2024).
+  https://www.legalwritingjournal.org/article/92759 (SSRN mirror abstract_id=4509603) — ties AI assessment
+  redesign to NextGen bar (begins July 2026); concrete Sec XIII accreditation stake. Sections: XI, XIII, XIV.
+- Casey M. Reiter, "Write, AI, Revise: A Framework for Integrating Generative AI into Legal Writing
+  Self-Assessment," 38 The Second Draft no.3 (Legal Writing Inst., Dec. 2025).
+  https://www.lwionline.org/article/write-ai-revise-framework-inte-grating-generative-ai-legal-writing-self-assessment
+  — human-in-the-loop "inspect the AI's feedback" pedagogy. CAVEAT: LWI practitioner publication, not a
+  student-edited law review — flag venue type for editors. Sections: VI, VII, XI.
+- Nachman Gutowski & Jeremy Hurley, "Forging Ahead or Proceeding with Caution: Developing Policy for
+  Generative AI in Legal Education," U. Louisville L. Rev. (forthcoming Spring 2025). SSRN abstract_id=5076598;
+  repo https://scholars.law.unlv.edu/facpub/1488/ — law-school genAI policy survey. CAVEAT: FORTHCOMING,
+  confirm final vol/page before pin cite. Sections: II, XIII.
+
+### Evaluation method (grounds Sec XI as recognized method, not anecdote)
+- Susan McKenney & Thomas C. Reeves, *Conducting Educational Design Research* (2d ed., Routledge 2019).
+  https://www.routledge.com/Conducting-Educational-Design-Research/McKenney-Reeves/p/book/9781138095564
+  — standard practitioner reference for educational design research; gives Sec XI a citable framework
+  (analysis->design->evaluation in authentic settings). NON-LAW (higher-ed), foundational + applicable. Sections: X, XI.
+- Sasha Barab & Kurt Squire, "Design-Based Research: Putting a Stake in the Ground," 13 J. Learning Sciences 1
+  (2004). open PDF https://sashabarab.org/wp-content/uploads/2015/03/dbr-jls.pdf — foundational DBR statement;
+  legitimizes evaluating a real-classroom intervention + the designer-as-researcher role. NON-LAW. Sections: X, XI.
+
+### SoTL / digital pedagogy in law (bucket remains thin)
+- "Student-Active Lectures in Legal Education," 58 The Law Teacher 217 (2024).
+  https://www.tandfonline.com/doi/full/10.1080/03069400.2024.2335033 — recent empirical law study, online vs.
+  on-campus lectures + engagement. CAVEAT: author byline not captured — Cite must pull it from the article. Sections: VI, VII, X.
+- (context, NOT a clean cite) law-specific "externalizing tacit teaching expertise" had no clean peer-reviewed
+  law-review source; lean on already-vetted Leering (SoTL/reflective practice) for that strand. Round 3
+  (concept-mapping / knowledge-organization in legal ed; flipped/blended law course design) pending.
