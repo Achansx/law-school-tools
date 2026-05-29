@@ -87,7 +87,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "stitch",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -1396,7 +1396,7 @@
       ]
     }
   ],
-  "phase_index": 4,
+  "phase_index": 3,
   "phases": [
     "draft",
     "cite",
