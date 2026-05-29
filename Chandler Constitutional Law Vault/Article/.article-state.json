@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-31T10:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-31T12:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-31T08:00:00Z",
@@ -614,16 +614,6 @@
       "type": "snapshot-consistency-violation"
     },
     {
-      "claim": "Section II footnotes [^1], [^4], [^8], and [^9] carry scheduled-task process language inside published Bluebook parentheticals: 'URL liveness verified live via WebSearch with allowed_domains scoping to [domains] per L-022' plus 'per L-024' and similar internal-lesson tags. A reader of a published footnote cannot resolve the article's own maintenance tooling ('via WebSearch', 'allowed_domains scoping') or its internal lesson registry ('per L-0NN').",
-      "id": "PI-119",
-      "note": "Persona 1 (Skeptical JLE Editor) P1. Distinct location from PI-115 (Section I [^5]/[^8] 'verified live this run via WebFetch'); same class, different section and tooling string. Cite-owned per L-015/L-042: next Cite tick on Section 02 strips 'verified live via WebSearch with allowed_domains scoping to ...' and every 'per L-0NN' tag from [^1]/[^4]/[^8]/[^9], keeping the last-visited date and the substantive parenthetical (publisher/repository record, alternate stable anchor); if the verification method must be recorded, route it to an appendix note. Routes Section 02 cite_status -> needs_cite.",
-      "opened_at": "2026-05-29T05:00:00Z",
-      "phase": "verify",
-      "section": "02",
-      "status": "open",
-      "type": "build-system-artifact"
-    },
-    {
       "claim": "Section II.D's final two sentences claim 'none of those forms produces the per-doctrine synthesis view the Topic page is,' but modern constitutional-law casebooks carry Note sections, doctrinal chapter introductions, and problem sets that synthesize a doctrine across cases; the casebook does produce a synthesis view, one bound to the editor's chosen sequence rather than to this professor's course.",
       "id": "PI-120",
       "note": "Persona 2 (Legal Pedagogy Traditionalist) P1. Distinct from PI-030 (III.B 'doctrine-first entry' table-of-contents overclaim); this is the synthesis-view claim at II.D. Polish-owned: next Polish tick on Section 02 softens II.D so the contrast is against the flat-folder LMS export rather than the casebook, acknowledging that the casebook Note apparatus synthesizes doctrine but is bound to the publisher's sequence whereas the Topic page synthesizes around this professor's course and links live to its own briefs and lectures. Routes Section 02 polish_status -> needs_polish.",
@@ -651,7 +641,10 @@
       "phase": "verify",
       "section": "02",
       "status": "open",
-      "type": "false-cross-reference"
+      "type": "false-cross-reference",
+      "section_02_addressed_at": "2026-05-31T12:00:00Z",
+      "section_02_addressed_by": "run-277-cite",
+      "section_02_addressed_note": "Section II footnotes [^2]/[^3]/[^6] App. D (Correspondence Excerpts) pointer removed; App. A title corrected to 'Input Inventory'. Eight remaining occurrences across Sections IV/VIII/IX still open; full closure requires Cite ticks on those sections."
     },
     {
       "claim": "Section III.E rests the user-experience contrast on a single chatbot-architecture source (Sajja et al. 2023, footnote [^18]); the polished and assembled Section III carries no Bond et al. 2024 meta-review, although the draft (manuscript/drafts/section-03-case-study.md) cites Bond, so the survey-level AI-in-higher-education engagement was present at the draft layer but dropped from the polished file.",
@@ -1215,7 +1208,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 276,
+  "run_count": 277,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1248,8 +1241,8 @@
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
       "cite_note": "Cite tick resolved PI-072 (Section II AI-in-higher-education literature-engagement gap). Added footnote [^9] citing Bond et al. 2024 meta-review (21 Int'l J. Educ. Tech. Higher Educ. art. 4), URL https://link.springer.com/article/10.1186/s41239-023-00436-z verified live via WebSearch per L-022 (verbatim title-and-URL match), with an L-024 transfer clause in II.E body prose naming what carries over (the meta-review's evidentiary standard, which the article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII) and what does not (the chatbot-tutor and adaptive-system intervention setting it surveys, versus the reviewed static publication of the case study). Kuhail et al. 2023 (named in prior Verify routing notes and in PI-072) is NOT in the workplan annotated bibliography; it was deliberately not added to avoid an unverified/fabricated citation, and Bond et al. alone closes the field-engagement gap. The five remaining Section 02 P1s (PI-067 II.B numeric colon-list, PI-068 II.E self-flagging meta-rhetoric, PI-069 II.D casebook-as-sequence overclaim, PI-070 II.E-to-III.A seam, PI-071 II accessibility silence) are Polish-level and remain for the next Polish tick. Body grew to 840 words (target 700, +20%); flagged for Stitch trim.",
-      "cite_redone_at": "2026-05-27T01:00:00Z",
-      "cite_status": "needs_cite",
+      "cite_redone_at": "2026-05-31T12:00:00Z",
+      "cite_status": "needs_polish",
       "claims_mapped": 10,
       "claims_total": 10,
       "current_words": 857,
@@ -1272,7 +1265,9 @@
       "title": "Why Ordinary Course Infrastructure Is Not Enough",
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T05:00:00Z",
-      "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule)."
+      "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule).",
+      "last_cite_run": 277,
+      "cite_note_run277": "Run-277 Cite tick resolved PI-119 (build-system-artifact strip from Section II footnotes [^1]/[^4]/[^8]/[^9] Bluebook parentheticals; 'URL liveness verified live via WebSearch with allowed_domains scoping ... per L-022/L-024' language removed; parentheticals now clean Bluebook form '(last visited June 1, 2026)') and resolved the Section 02 portion of PI-122 (App. D Correspondence Excerpts false cross-reference removed from [^2]/[^3]/[^6]; App. A title corrected to actual 'Input Inventory'); PI-122 stays open for the IV/VIII/IX occurrences. URL liveness re-verified live: Rubin/Mertz/Abrams via WebFetch (verbatim title-and-author matches); Bond via WebSearch with allowed_domains scoping to link.springer.com per L-022 after WebFetch returned 303 IDP cookie-auth (verbatim title-and-URL match). Mertz [^4] also stripped 'workplan's directive of restraint' L-057/PI-216 build-system-language while preserving substantive contextual-frame disclaimer; Abrams [^8] meta-commentary trimmed to rhetorical-posture-and-venue disclaimer; Bond [^9] Kuhail-routing paragraph removed (build-system-artifact). Body prose untouched per Cite no-prose-edit rule. Polished and drafts files mirrored. cite_status->needs_polish."
     },
     "03": {
       "cite_at": "2026-06-05T15:00:00Z",

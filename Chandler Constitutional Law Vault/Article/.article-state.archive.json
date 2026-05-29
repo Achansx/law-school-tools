@@ -1592,6 +1592,19 @@
       "section": "09",
       "status": "resolved",
       "type": "verify-finding"
+    },
+    {
+      "claim": "Section II footnotes [^1], [^4], [^8], and [^9] carry scheduled-task process language inside published Bluebook parentheticals: 'URL liveness verified live via WebSearch with allowed_domains scoping to [domains] per L-022' plus 'per L-024' and similar internal-lesson tags. A reader of a published footnote cannot resolve the article's own maintenance tooling ('via WebSearch', 'allowed_domains scoping') or its internal lesson registry ('per L-0NN').",
+      "id": "PI-119",
+      "note": "Persona 1 (Skeptical JLE Editor) P1. Distinct location from PI-115 (Section I [^5]/[^8] 'verified live this run via WebFetch'); same class, different section and tooling string. Cite-owned per L-015/L-042: next Cite tick on Section 02 strips 'verified live via WebSearch with allowed_domains scoping to ...' and every 'per L-0NN' tag from [^1]/[^4]/[^8]/[^9], keeping the last-visited date and the substantive parenthetical (publisher/repository record, alternate stable anchor); if the verification method must be recorded, route it to an appendix note. Routes Section 02 cite_status -> needs_cite.",
+      "opened_at": "2026-05-29T05:00:00Z",
+      "phase": "verify",
+      "section": "02",
+      "status": "resolved",
+      "type": "build-system-artifact",
+      "resolved_at": "2026-05-31T12:00:00Z",
+      "resolved_by": "run-277-cite-section-02",
+      "resolution_note": "Section II footnotes [^1]/[^4]/[^8]/[^9] stripped of 'URL liveness verified live via WebSearch with allowed_domains scoping ... per L-022' build-system-artifact language. Parentheticals now read clean Bluebook form '(last visited June 1, 2026)'. Polished and drafts files mirrored."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
