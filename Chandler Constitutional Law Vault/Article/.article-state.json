@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-31T18:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-06-01T18:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-31T18:00:00Z",
@@ -1222,7 +1222,7 @@
       "suggested_fix": "In the next Polish or Stitch tick on Section 13, do BOTH: (a) Add one bridging sentence at the XII.E -> XIII.A seam pivoting explicitly from risk-and-limits to institutional-implications (e.g., append at end of XII.E: 'Those risks and limits set the institutional-implications agenda that follows: how the method fits the open-educational-resource landscape, how its labor distributes across faculty and institutional stewardship, how its governance is recognized, and what the institution must decide about adoption.'). (b) Re-anchor [^169] (XIII.C versioned-commit + named-reviewer operational claim) to Section VII (gating) and Section VIII (versioning) rather than Section XII, and split [^171] into an institution-side leg (Section XII) plus a student-side leg (XII.E accessibility surface) per the Persona 3 PI-095 re-confirm. The (b) re-anchoring reduces Section 13's supra-XII dependence from 3-of-9 to 1-of-9 footnotes and lets the section stand on its own."
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -1241,7 +1241,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 280,
+  "run_count": 281,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1689,12 +1689,15 @@
       "cite_at": "2026-05-24T21:00:00Z",
       "cite_completed_at": "2026-05-29T11:00:00Z",
       "cite_note": "Seven [CITE:] placeholders resolved to footnotes [^1]-[^7]. [^1] external OER sources (opencasebook.org via WebSearch after 403 per L-022; cali.org eLangdell via WebFetch; MIT News series via WebSearch); [^2]-[^7] sibling supra/infra cross-references. Dedicated evidence-13-* cards still owed under PI-091.",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "claims_mapped": 15,
       "claims_total": 16,
-      "current_words": 549,
+      "current_words": 573,
       "draft_at": "2026-05-24T19:00:00Z",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_cite",
+      "last_draft_touch_run": 281,
+      "last_draft_touch_at": "2026-06-01T18:00:00Z",
+      "last_draft_touch_note": "Run-281 Draft tick targeted Section 13 under the FINAL-PUSH priority block (PI-JLE-LEGAL-ED-LIT, route Sections I/II/X/XI/XIII) and the run-280 Verify burst (PI-224 XIII.B scholarship-of-teaching label without legal-education-canon anchor). Two prose edits landed in drafts/section-13-institutional-implications.md. XIII.B closer softened from 'is therefore best read as' to 'can therefore be read as' (PI-224 suggested-fix option b: retire the asserted-as-settled tension with the adjacent XIII.C contestation admission, word-neutral). XIII.C contestation sentence rewritten to name the parties between whom the recognition is contested (Boyer's account of scholarship that includes the scholarship of teaching vs. the research-only conception that still governs most promotion-and-tenure norms) with a new [CITE: Boyer, Scholarship Reconsidered (1990); Sturm & Guinier, 60 Vand. L. Rev. 515 (2007); Leering, Reflective Practice and SoTL in Legal Education (2018)] placeholder, and the institution-must-decide sentence anchored to ABA Standard 405 with a second new [CITE: ABA Standard 405] placeholder. Two new [CITE:] placeholders for the Cite phase to resolve to footnotes per the legal-ed-scholarship.md Top-8 (#1 Carnegie not used here because Boyer is the SoTL primary source for the contestation specifically; #8 Sturm & Guinier and #7 ABA Standards from the Top-8 plus the Round-1 SoTL bucket entry Leering). cite_status holds at needs_cite (was needs_polish) so Cite picks up the new placeholders; draft_status needs_polish -> needs_cite; polish_status holds at needs_polish. Body word count 549 -> 573 (14.6% over the 500 target; within the Draft 15% ceiling per rubric/draft.md criterion 5; polish band will need ~25-word trim or the XI/XII earmark precedent for a small over-band carry on a substantive literature-anchor addition). PI-224 suggested fix landed in this Draft tick at the prose layer; the [CITE:] resolution to Bluebook 21st form lands in the next Cite tick on Section 13. PI-JLE-LEGAL-ED-LIT remains open with the Section XIII Boyer/Sturm-Guinier/Leering/ABA-405 anchor leg now landed and Sections I/II/X/XI still routed. Edits at the drafts site only this tick per the L-035 source-polished-file rule (Polish writes to polished; this tick is a Draft tick, so polished file remains pre-edit pending the next Cite + Polish chain on Section 13).",
       "evidence_cards": 6,
       "evidence_populated_at": "2026-05-25T05:00:00Z",
       "evidence_status": "populated",
