@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "harvest",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-29T17:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-29T19:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-29T17:00:00Z",
@@ -1222,7 +1222,7 @@
       "type": "literature-venue-fit"
     }
   ],
-  "phase_index": 6,
+  "phase_index": 0,
   "phases": [
     "harvest",
     "outline",
@@ -1234,16 +1234,16 @@
   ],
   "provenance_audit": {
     "global_unsupported_open": 14,
-    "last_audit_at": "2026-05-28T22:00:00Z",
-    "last_audit_section": "03",
-    "last_reaudit_at": "2026-05-28T22:00:00Z",
-    "last_reaudit_section": "03",
+    "last_audit_at": "2026-05-29T19:00:00Z",
+    "last_audit_section": "11",
+    "last_reaudit_at": "2026-05-29T19:00:00Z",
+    "last_reaudit_section": "11",
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "reaudit_count": 7,
+    "reaudit_count": 8,
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 255,
+  "run_count": 256,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1649,10 +1649,10 @@
       "polish_status": "needs_polish",
       "polish_status_changed_at": "2026-05-29T17:00:00Z",
       "polish_status_changed_reason": "Run-238 Verify provenance re-audit (after run-215 Polish Rigour propagation and run-221 Cite Zawacki-Richter typology pin cite): claims_total 15->17, claims_mapped 14->17, PI-160 stale unsupported_claim cleared, score 3.6->4.2; PI-211 NEW (phantom-appendix-subtitle plus phantom-subsection mis-routing across eight footnotes) routes Section 11 cite_status needs_polish->needs_cite for the Cite-owned footnote-text fix. 4.2 < 4.5 holds polish_status:needs_polish.",
-      "provenance_audit_run": 238,
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-29T17:00:00Z",
-      "provenance_score": 4.2,
+      "provenance_audit_run": 256,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T19:00:00Z",
+      "provenance_score": 4.4,
       "provenance_stale_reason": "Run-249 Cite materially changed polished/section-11-evaluation.md body markers (6 removed) and 8 footnote definitions (6 removed, 4 converted, 4 renumbered/preserved). Next Verify Provenance Auditor re-audit reads the post-Cite prose; the run-238 4.2 score is retained as last-known. The phantom-App. A/D subtitle and L-058 internal-artifact deductions that contributed to the prior 4.2 should clear at the next audit since the post-fix source carries zero phantom subtitles and zero internal-artifact-only citations.",
       "stitch_note_run202": "Run-202 interim Stitch on Section 11: propagated the Run-201 Polish local renumber into manuscript/full-draft.md. XI.D second paragraph marker [^156] -> [^153] (artifact-matched rationale); XI.E [^153] -> [^154] (IRB labeling fork); XI.E [^154] -> [^155] (data-collection-status fork); XI.E [^155] -> [^156] (single-owner-section routing). Footnote-definition block reordered to match. Cross-reference inside the new [^153] corrected from the pre-existing slip 'notes 149 and 150' to 'notes 149 and 152' (matches polished source's local 'notes 7 and 10' = vocabulary discipline + Sajja, not vocabulary + Bond). Word-neutral; 181 contiguous defs preserved; no body prose changed. polish_status ready_for_stitch -> stitched. provenance_audited stays true (no prose change); 3.6 score awaits next Verify re-audit per the run-152 polish note (PI-160 was Cite-resolved at source run-151 but the recorded unsupported_claims entry awaits Verify re-score). PI-200 (new) logged for the cross-section Bond title-spelling drift surfaced this tick on the Stitch fact-consistency sweep.",
       "stitched_at": "2026-06-05T05:00:00Z",
@@ -1661,7 +1661,8 @@
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-29T17:00:00Z",
-      "verify_routing_reason": "PI-211 (Section XI footnotes [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14] cite phantom App. A \"Article Project Architecture\" subtitle plus seven phantom subsections and phantom App. D \"Internal Project Records Excerpts\"/\"Correspondence Excerpts\" subtitle; real appendices are A \"Input Inventory\" \u00a7\u00a7A.1-A.3 and D \"Rubrics\") Cite-owned; PI-209 (XI.B IRB/consent silence) Polish-owned, third consecutive Verify re-confirm."
+      "verify_routing_reason": "PI-211 (Section XI footnotes [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14] cite phantom App. A \"Article Project Architecture\" subtitle plus seven phantom subsections and phantom App. D \"Internal Project Records Excerpts\"/\"Correspondence Excerpts\" subtitle; real appendices are A \"Input Inventory\" \u00a7\u00a7A.1-A.3 and D \"Rubrics\") Cite-owned; PI-209 (XI.B IRB/consent silence) Polish-owned, third consecutive Verify re-confirm.",
+      "provenance_score_prior": 4.2
     },
     "12": {
       "cite_at": "2026-06-08T21:00:00Z",
@@ -1772,18 +1773,18 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "03",
+    "last_audit_section": "11",
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "03",
-    "last_run": 245,
-    "last_run_at": "2026-05-28T22:00:00Z",
-    "new_findings_count": 1,
+    "last_reaudit_section": "11",
+    "last_run": 256,
+    "last_run_at": "2026-05-29T19:00:00Z",
+    "new_findings_count": 0,
     "p0_open": 0,
     "p1_open": 116,
     "p2_open": 43,
     "personas_read": 4
   },
-  "verify_deferred_note": "verify run 252 deferred + harvest/outline noops skipped; current_phase steered to draft for burst convergence (productive draft/cite/polish/stitch rotations); allow verify after ~2-3 content rotations",
+  "verify_deferred_note": "verify run 252 deferred + harvest/outline noops skipped; the run-249 Cite / run-250 Polish / run-251 Stitch Section 11 burst and the run-253 Cite / run-254 Polish / run-255 Stitch Section 14 burst completed the steered productive rotations; the deferred Verify ran as run-256, re-auditing Section 11 (the lowest-numbered provenance_audited:false section) and producing three P1 re-confirms plus the Persona 4 P2 confirming-audit; the steer is now satisfied and the dispatcher returns to the natural verify-> harvest -> outline -> draft rotation.",
   "word_count_policy": {
     "earmark": "extra 2000 words reserved for Sections XI (was 900, now 1200) and XII (was 800, now 1400); other section budgets unchanged",
     "new_max": 14000,
