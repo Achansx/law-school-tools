@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -1261,7 +1261,7 @@
       "type": "literature-venue-fit"
     }
   ],
-  "phase_index": 0,
+  "phase_index": 2,
   "phases": [
     "harvest",
     "outline",
@@ -1811,7 +1811,7 @@
     "p2_open": 43,
     "personas_read": 4
   },
-  "verify_deferred_note": "verify run 252 deferred by operator to let cite/polish findings consolidate (burst convergence); will allow verify after ~2-3 more content rotations",
+  "verify_deferred_note": "verify run 252 deferred + harvest/outline noops skipped; current_phase steered to draft for burst convergence (productive draft/cite/polish/stitch rotations); allow verify after ~2-3 content rotations",
   "word_count_policy": {
     "earmark": "extra 2000 words reserved for Sections XI (was 900, now 1200) and XII (was 800, now 1400); other section budgets unchanged",
     "new_max": 14000,
