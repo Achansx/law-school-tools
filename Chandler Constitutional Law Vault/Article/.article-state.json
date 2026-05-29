@@ -1220,6 +1220,16 @@
       "severity": "P1",
       "status": "open",
       "type": "literature-venue-fit"
+    },
+    {
+      "claim": "The article lacks a related-work / novelty treatment, which JLE reviewers will probe (how is this different from existing tools?). A prior-art map is staged in Article/research/legal-ed-scholarship.md (Prior-art / comparables block). Add a short related-work passage (route Sections I/II) that names-and-distinguishes the closest comparators: (1) H2O/Open Casebook (Harvard LIL) -- open remixable LINEAR casebooks vs. this single-professor non-linear knowledge graph layering evaluative judgment over primary sources; (2) Studicata -- AI-generated + human-reviewed briefs, the closest METHOD analog, but commercial breadth-scaling vs. depth-scaling one professor's course; (3) CALI Lessons/eLangdell -- consortium multi-author exercises/casebooks vs. one professor's integrated course graph; (4) general/legal LLM tutors (ChatGPT, Lexis+ AI, CoCounsel) -- live-generative with measured 17-33% hallucination (Stanford legal-RAG study) vs. static human-reviewed text whose accuracy is a property of the ARTIFACT, not a model at query time. ACKNOWLEDGE (do not distinguish away) Andy Matuschak evergreen notes + Obsidian Digital Garden + Ahrens How to Take Smart Notes (2017) as structural precedent; novelty = applying that form to a law professor's reviewed course archive. Academic legal KGs/ontologies (PrOnto etc.) graph THE LAW for machine reasoning, not teaching-from-archive; no published law-professor Obsidian course site exists -- both novelty openings. Cite phase verifies all URLs live; never fabricate. See the prior-art research note and L-062.",
+      "id": "PI-JLE-RELATED-WORK",
+      "opened_at": "2026-05-28T21:45:00Z",
+      "persona": "JLE Editor (Persona 1)",
+      "section": "multi",
+      "severity": "P1",
+      "status": "open",
+      "type": "related-work"
     }
   ],
   "phase_index": 0,
