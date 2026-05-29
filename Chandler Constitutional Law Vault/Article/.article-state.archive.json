@@ -1520,6 +1520,19 @@
       "type": "meta-rhetoric-self-narration",
       "resolved_at": "2026-05-30T04:00:00Z",
       "resolved_by": "run-261 polish Section 10"
+    },
+    {
+      "claim": "Section X.B sentences 'those three page-type units recur in nearly every doctrinal course[^3]' and 'The nine-section case brief the vault enforces is the standard law-school brief rather than a constitutional-law artifact; a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape.[^4]' in manuscript/polished/section-10-generalization.md line 34 and the matched site at manuscript/full-draft.md line 292 still cite [^3]/[^4] = supra Section V (the single con-law vault) as authority for the universal cross-course brief-form transfer claim. The run-260 Cite tick closed PI-156 by adding Mertz 2007 at drafts [^5] as the 1L case-method ethnography anchor and hedged 'recur in nearly every doctrinal course' to 'recur across the standard 1L case-method curriculum and, by the standard brief form, in case-method doctrinal courses generally' -- but the change landed in drafts only. polished/section-10 and full-draft.md still carry the pre-run-260 universal phrasing and the [^3]/[^4] supra-Section-V citations. Structurally the L-035 cross-file-propagation defect class PI-217 captured for Section 11 (closed at run-249 Cite); the Section 10 mirror is the same Cite-Stitch source-of-truth gap on a different section.",
+      "id": "PI-218",
+      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding. The run-261 Polish PI-086 closure landed the X.D second-instance-conjecture recast but not the X.B universal the walk-back exists to walk back; on the polished/full-draft surface a Civil Procedure professor still reads the universal-then-walkback the run-260 Cite anchor was supposed to close. Suggested fix: in the next Cite or Stitch tick on Section 10, propagate the run-260 drafts Mertz/Sajja insertions to polished and full-draft (14 -> 16 polished footnotes; 178 -> 180 full-draft footnotes with 50+ downstream global renumber). Routes Section 10 cite_status: needs_polish -> needs_cite for the Cite-tier three-site operation; polish_status unchanged at needs_polish.",
+      "opened_at": "2026-05-30T08:00:00Z",
+      "phase": "verify",
+      "section": "10",
+      "status": "resolved",
+      "type": "cite-to-polished-propagation-gap",
+      "resolved_at": "2026-05-30T16:00:00Z",
+      "resolved_in_run": 267,
+      "resolved_note": "Closed in run-267 Cite. The run-260 drafts Mertz at [^5] and Sajja at [^12] insertions propagated to polished/section-10-generalization.md and manuscript/full-draft.md per L-035, with downstream global footnote renumber across the [^134]-[^178] range to [^135]/[^140] +1 then [^142]/[^180] +2 and the two new defs inserted at global [^134] (Mertz) and global [^141] (Sajja). Cross-section textual references updated in [^9] / [^93] / [^146] / [^147] / [^153] / [^163]. Verified: 180 contiguous defs zero gap/dup/orphan; recurring sentence at 3 placements; em-dash zero in main text; terminology umbrella unchanged. Polished claims_mapped 17 -> 18 and unsupported_claims emptied through the new Mertz anchor on the X.B universal-brief-form gap."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

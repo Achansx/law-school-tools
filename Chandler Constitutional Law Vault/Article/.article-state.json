@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-30T14:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-30T16:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-29T17:00:00Z",
@@ -1163,16 +1163,6 @@
       "type": "related-work"
     },
     {
-      "claim": "Section X.B sentences 'those three page-type units recur in nearly every doctrinal course[^3]' and 'The nine-section case brief the vault enforces is the standard law-school brief rather than a constitutional-law artifact; a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape.[^4]' in manuscript/polished/section-10-generalization.md line 34 and the matched site at manuscript/full-draft.md line 292 still cite [^3]/[^4] = supra Section V (the single con-law vault) as authority for the universal cross-course brief-form transfer claim. The run-260 Cite tick closed PI-156 by adding Mertz 2007 at drafts [^5] as the 1L case-method ethnography anchor and hedged 'recur in nearly every doctrinal course' to 'recur across the standard 1L case-method curriculum and, by the standard brief form, in case-method doctrinal courses generally' -- but the change landed in drafts only. polished/section-10 and full-draft.md still carry the pre-run-260 universal phrasing and the [^3]/[^4] supra-Section-V citations. Structurally the L-035 cross-file-propagation defect class PI-217 captured for Section 11 (closed at run-249 Cite); the Section 10 mirror is the same Cite-Stitch source-of-truth gap on a different section.",
-      "id": "PI-218",
-      "note": "Persona 2 (Legal Pedagogy Traditionalist) P1 finding. The run-261 Polish PI-086 closure landed the X.D second-instance-conjecture recast but not the X.B universal the walk-back exists to walk back; on the polished/full-draft surface a Civil Procedure professor still reads the universal-then-walkback the run-260 Cite anchor was supposed to close. Suggested fix: in the next Cite or Stitch tick on Section 10, propagate the run-260 drafts Mertz/Sajja insertions to polished and full-draft (14 -> 16 polished footnotes; 178 -> 180 full-draft footnotes with 50+ downstream global renumber). Routes Section 10 cite_status: needs_polish -> needs_cite for the Cite-tier three-site operation; polish_status unchanged at needs_polish.",
-      "opened_at": "2026-05-30T08:00:00Z",
-      "phase": "verify",
-      "section": "10",
-      "status": "open",
-      "type": "cite-to-polished-propagation-gap"
-    },
-    {
       "claim": "Section X.E ('From a method to a second instance') sentences 'The strongest test of a method is whether a second person can run it, and this article reports one instance rather than two. The generalization claim is therefore an invitation as much as a result' in manuscript/polished/section-10-generalization.md lines 44-46 and the matched assembled-draft site at manuscript/full-draft.md lines 304-306 do not anticipate and rebut the standard reviewer-2 attack on n=1 case studies: that the article asserts the method generalizes but reports one instance and offers no external comparable example, no theoretical argument that the method's components have been independently validated, and no falsifiable minimum-viable-instance-2 specification. The article's existing defenses (X.A's 'method is the contribution' and X.E's 'invitation as much as a result') are labels rather than load-bearing rebuttals.",
       "id": "PI-219",
       "note": "Persona 7 (Adversarial Reviewer, supplemental rotating in this tick per PERSONAS.md run_count-mod-3 = 263 mod 3 = 2 -> Persona 7) P1 finding. Distinct from PI-088 (literature-gap, Cite-routed) at the rhetorical-anticipation axis: the section needs an anticipate-then-rebut paragraph or sentence cluster naming the n=1 critique explicitly. Suggested fix: in the next Polish or Cite tick on Section 10, add one paragraph to X.E (between 'The strongest test...' and 'The corpus...') naming the n=1 critique and rebutting on three legs: (a) cite a comparable course-knowledge-system or open-doctrinal-course effort; (b) commit to a falsifiable minimum-viable-instance-2 specification; (c) acknowledge the reduction directly in X.A or X.E. Routes Section 10 polish_status: needs_polish (no status delta).",
@@ -1183,7 +1173,7 @@
       "type": "reviewer2-anticipation-gap"
     }
   ],
-  "phase_index": 3,
+  "phase_index": 4,
   "phases": [
     "harvest",
     "outline",
@@ -1204,7 +1194,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 266,
+  "run_count": 267,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1550,20 +1540,20 @@
       "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file."
     },
     "10": {
-      "cite_completed_at": "2026-05-30T02:00:00Z",
-      "cite_last_run": 260,
-      "cite_status": "needs_cite",
-      "claims_mapped": 17,
+      "cite_completed_at": "2026-05-30T16:00:00Z",
+      "cite_last_run": 267,
+      "cite_status": "needs_polish",
+      "claims_mapped": 18,
       "claims_total": 18,
-      "current_words": 950,
+      "current_words": 921,
       "draft_at": "2026-05-24T05:00:00Z",
       "draft_status": "needs_polish",
       "evidence_cards": 7,
       "evidence_populated_at": "2026-05-24T15:00:00Z",
       "evidence_status": "populated",
       "footnotes_count": 16,
-      "last_cite_touch_note": "PI-181 footnote leg closed; cite_status stays needs_cite under open PI-155/PI-156",
-      "last_cite_touch_run": 214,
+      "last_cite_touch_note": "Run-267 Cite propagated the run-260 drafts Mertz at local [^5] and Sajja at local [^12] insertions into polished/section-10-generalization.md and manuscript/full-draft.md, closing PI-218 (cite-to-polished-propagation-gap). Body propagation: X.B sentence 2 'recur in nearly every doctrinal course' replaced with the Mertz-anchored '1L case-method curriculum' hedge plus ' that the 1L case-method curriculum trains students to read and produce' before the dual [^4][^5] anchor; X.C closing 'system that generates answers' restored to drafts 'chatbot tutor that generates answers ... the alternative architecture the curriculum-oriented intelligent-assistant literature has developed for higher-education settings.[^12]' with Sajja's L-024 transfer-of-inference clause landed in body. Footnote layout polished local [^5]-[^11] shift +1 to [^6]-[^12], new [^5] = Mertz 2007; polished local [^12]-[^14] shift +2 to [^14]-[^16], new [^12] = Sajja et al. 2023. Three-site L-035 propagation complete: drafts (already at 16-fn from run-260), polished (this tick, 14 -> 16), full-draft.md (this tick, 178 -> 180 global with the [^140]-[^178] range shifted +2 to [^142]-[^180] and [^134]-[^139] shifted +1 to [^135]-[^140] plus the two new inserts at [^134] / [^141]). URL liveness for both new external anchors verified live this run via WebSearch with allowed_domains scoping per L-022 (Mertz https://global.oup.com/academic/product/the-language-of-law-school-9780195183108 returning OUP product record plus academic.oup.com chapter records; Sajja https://link.springer.com/article/10.1186/s41239-023-00412-7 returning Springer article record at the title and DOI). [^14] Usman process-leak ('URL verified live this run via WebFetch') trimmed in polished per L-058/L-059 50-word cap. unsupported_claims X.B universal-brief-form gap (PI-156 remnant) now closes through the new [^5] Mertz anchor; claims_mapped 17 -> 18, unsupported_claims [] in polished frontmatter. PI-218 resolved and migrates to archive; PI-088 (X.A/X.B replicable-method literature gap, distinct from PI-156) remains open and Cite-routed for a future tick; PI-219 (X.E n=1 anticipate-and-rebut gap) remains open and Polish/Cite-routed. cite_status -> needs_polish; polish_status holds at needs_polish on the open PI-088, PI-154, PI-219 axes.",
+      "last_cite_touch_run": 267,
       "last_phase": "polish",
       "last_polish_touch_note": "Run 261 Polish closed PI-085 (X.B opening hedge with X.D forward-reference), PI-086 (X.D 'general ground' optimism recast as second-instance conjecture), PI-089 (X.C statute-tooling hedge), PI-090 (X.D Usman note-type-mapping bridge dropped), and PI-153 (X.A meta-rhetoric self-narration cut). Body word delta -15 (965 -> 950, within +/-10% of 900). polish_status holds at needs_polish on the remaining open Polish-routed PI-088 (Cite-routed literature-gap per L-024, not Polish-closable) and PI-154 (X.C editor-vs-teacher gating-role conflation, deferred to next Polish tick). Polish/Cite source-of-truth divergence between drafts (post-run-260 with Mertz at [^5] and Sajja at [^12]) and polished/section-10 + full-draft.md (still at pre-run-260 14-footnote layout) persists this tick; the Mertz/Sajja propagation is Stitch-owed body-and-footnote insertion that will land alongside this tick's polish fixes at the next Stitch. provenance_audited stays false; the next Provenance Auditor re-audit will re-score against the post-Polish prose.",
       "last_polish_touch_run": 261,
@@ -1574,7 +1564,7 @@
       "polish_status": "needs_polish",
       "provenance_audit_run": 263,
       "provenance_audit_run_prior": 136,
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-30T08:00:00Z",
       "provenance_score": 4.0,
       "provenance_score_prior": 3.8,
