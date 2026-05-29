@@ -11,6 +11,12 @@ fabricate a citation, author, title, or URL. Items flagged "confirm" or "URL
 UNVERIFIED" must be checked before use. This file is a research note, not authority;
 it must never be cited in published prose (L-058).
 
+LIVE PRE-CHECK 2026-05-28: All Top-8 confirmed real and citable (see inline [VERIFIED] tags).
+Only substantive change: Holmes Perkins "AI Now" is PUBLISHED (97 Temple L. Rev. 227 (2024)),
+not forthcoming. Schwartz year (repo shows 2020 vs. published 2001) and Sturm & Guinier
+(Columbia repo copy withdrawn; cite Vand. L. Rev.) are caveats, not blockers. Hess + Sparrow
+flags resolved (Sparrow URL added). Cite phase must STILL re-verify per L-022/L-043 before use.
+
 ## Top 8 must-cite (highest leverage for JLE acceptance)
 
 1. Sullivan, Colby, Wegner, Bond & Shulman, *Educating Lawyers: Preparation for the
@@ -29,22 +35,30 @@ it must never be cited in published prose (L-058).
 4. Michael Hunter Schwartz, "Teaching Law by Design: How Learning Theory and Instructional
    Design Can Inform and Reform Law Teaching," 38 San Diego L. Rev. 347 (2001) — learning-
    science backbone (expert/novice, backwards design).
-   https://digital.sandiego.edu/sdlr/vol38/iss2/2/
+   https://digital.sandiego.edu/sdlr/vol38/iss2/2/ [VERIFIED 2026-05-28: page loads, title+author
+   match; repo metadata shows upload year 2020 — keep published cite 2001; Cite confirm vs. journal.]
    Sections: VI, VII, XI
 5. Maranville, Bliss, Kaas & Sedillo Lopez (eds.), *Building on Best Practices: Transforming
    Legal Education in a Changing World* (LexisNexis 2015) — recent, evaluation-rich successor.
    https://readingroom.law.gsu.edu/faculty_pub/2074/
    Sections: VII, X, XI, XIII
-6. Rachelle Holmes Perkins, "AI Now," 97 Temple L. Rev. (forthcoming) — faculty duty to
-   understand generative AI across pedagogy/scholarship/governance.
+6. Rachelle Holmes Perkins, "AI Now," 97 Temple L. Rev. 227 (2024) — faculty duty to
+   understand generative AI across pedagogy/scholarship/governance. [VERIFIED 2026-05-28:
+   PUBLISHED, no longer forthcoming; pp. 227-263; also Geo. Mason Legal Studies Research
+   Paper No. LS 24-14. SSRN 403s automated fetches but the link is valid.]
    https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4840481
    Sections: I, XIII, XIV
 7. ABA Standards 302 & 315 (Learning Outcomes & Assessment), ABA Standards and Rules of
    Procedure for Approval of Law Schools — accreditation mandate (inputs -> outcomes).
+   [VERIFIED 2026-05-28: revised outcomes/assessment standards effective Aug 2025, compliance by
+   AY 2026-27 — timely hook. For Bluebook cite to the Standards text use Chapter 3 (Standards 301-315):
+   https://www.americanbar.org/content/dam/aba/administrative/legal_education_and_admissions_to_the_bar/standards/2025-2026/2025-2026-standards-chapter-3.pdf ]
    https://www.americanbar.org/groups/legal_education/about/committees/outcomes-assessments/about/
    Sections: XI, XIII
 8. Susan Sturm & Lani Guinier, "The Law School Matrix: Reforming Legal Education in a Culture
    of Competition and Conformity," 60 Vand. L. Rev. 515 (2007) — institutional-culture critique.
+   [VERIFIED 2026-05-28: title+authors match but the Columbia repo copy reads "withdrawn"; cite the
+   Vand. L. Rev. publication by Bluebook journal form — treat the URL below as convenience-only.]
    https://scholarship.law.columbia.edu/faculty_scholarship/1502/
    Sections: I, II, XIII
 
@@ -64,7 +78,8 @@ it must never be cited in published prose (L-058).
 - Best Practices (Top 8 #2).
 - Schwartz, "Teaching Law by Design" (Top 8 #4).
 - Gerald F. Hess, "Heads and Hearts: The Teaching and Learning Environment in Law School,"
-  52 J. Legal Educ. 75 (2002). URL UNVERIFIED (pre-digital JLE archive) — confirm. Sections: II, XI
+  52 J. Legal Educ. 75 (2002). [VERIFIED 2026-05-28: source confirmed real; no stable free URL
+  (pre-digital JLE) — cite by Bluebook journal form, no URL needed.] Sections: II, XI
 
 ### 3. Curricular design & course infrastructure
 - Maranville et al. (Top 8 #5).
@@ -94,7 +109,8 @@ it must never be cited in published prose (L-058).
   2000). Sections: XI
 - Sophie M. Sparrow, "Describing the Ball: Improve Teaching by Using Rubrics-Explicit Grading
   Criteria," 2004 Mich. St. L. Rev. 1 — rubrics make evaluative judgment explicit and
-  replicable; direct parallel to the article's "inspectable judgment" thesis. Sections: VI, XI
+  replicable; direct parallel to the article's "inspectable judgment" thesis.
+  https://scholars.unh.edu/law_facpub/32/ [VERIFIED 2026-05-28; also SSRN abstract_id=1569041] Sections: VI, XI
 - Barbara Glesner Fines, "Outcomes Assessment for Improving Student Learning" (in *Building on
   Best Practices* 2015). https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2637490  — Sections: XI
 
