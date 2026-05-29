@@ -32,7 +32,7 @@ The through-line of the whole article is that the expert never left the loop. Th
 
 [^2]: *See supra* Section X (Generalization Beyond Constitutional Law) (the contribution is the replicable method rather than the constitutional-law artifact, a method other doctrinal courses with comparable case-and-doctrine archives can adapt).
 
-[^3]: *See supra* Section VII (Iterative Improvement Under Professorial Control) (the pipeline running from source files to typed notes to a deployed, reviewed static site, governed by a six-phase rotation, a running lessons memory, and a forced-finding verification pass, with the professor reviewing each layer before it advanced).
+[^3]: *See supra* Section VII.B (One phase per tick: the rotation as the loop) (enumerating the six phases as Ingest, Lint, Enrich, Expand, Synthesize, and Verify and describing the one-phase-per-tick execution discipline); *see also supra* Sections VII.C (the forced-finding Verify pass) and VII.D (loop memory as durable record).
 
 [^4]: *See supra* Section XI (Evaluation: What Would Count as Success) (the article declines to claim that students learned more because it did not run the controlled study that would license the claim).
 

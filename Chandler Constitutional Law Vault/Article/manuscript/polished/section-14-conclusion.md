@@ -4,11 +4,11 @@ title: "Conclusion"
 status: needs_polish
 target_words: 400
 word_count: 381
-last_phase: verify-provenance
-cite_status: needs_cite
+last_phase: cite
+cite_status: needs_polish
 polish_status: needs_polish
 footnotes_count: 8
-provenance_audited: true
+provenance_audited: false
 provenance_audited_at: 2026-05-30T05:00:00Z
 provenance_score: 4.0
 claims_total: 9
@@ -37,7 +37,7 @@ Across every layer, the expert never left the loop. The system did not replace p
 
 [^2]: *See supra* Section X (Generalization Beyond Constitutional Law) (the contribution is the replicable method rather than the constitutional-law artifact, a method other doctrinal courses with comparable case-and-doctrine archives can adapt).
 
-[^3]: *See supra* Section VII (Iterative Improvement Under Professorial Control) (the pipeline running from source files to typed notes to a deployed, reviewed static site, governed by a six-phase rotation, a running lessons memory, and a forced-finding verification pass, with the professor reviewing each layer before it advanced).
+[^3]: *See supra* Section VII.B (One phase per tick: the rotation as the loop) (enumerating the six phases as Ingest, Lint, Enrich, Expand, Synthesize, and Verify and describing the one-phase-per-tick execution discipline); *see also supra* Sections VII.C (the forced-finding Verify pass) and VII.D (loop memory as durable record).
 
 [^4]: *See supra* Section XI (Evaluation: What Would Count as Success) (the article declines to claim that students learned more because it did not run the controlled study that would license the claim).
 

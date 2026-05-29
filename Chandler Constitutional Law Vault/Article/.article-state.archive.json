@@ -2,6 +2,18 @@
   "_schema_note": "Resolved and outline-addressed pending_issues, moved out of live state for context efficiency. Append-only. Reattach if a closed issue resurfaces by moving the entry back.",
   "archived_pending_issues": [
     {
+      "claim": "Section XIV.B (paragraph 2) states 'A six-phase rotation, a running lessons memory, and a forced-finding verification pass governed it, and a professor reviewed each layer before it advanced,' but footnote [^3] supports this three-part procedural claim with a bare See supra to the whole of Section VII rather than a pin to where each named governance mechanism is documented. All eight conclusion footnotes are intra-article See supra cross-references (zero external primary authority), capping primary-source ratio at criterion-2 score 3.",
+      "id": "PI-172",
+      "note": "Persona 4 (Provenance Auditor), Verify run 140. P1; Cite-owned. Section 14 provenance audit: claims_total 9, claims_mapped 9, unsupported_claims 0, provenance_score 4.0 (5/3/4/4/4), held at needs_polish. Routes Section 14 cite_status:needs_cite. Suggested fix: in the next Cite tick, replace the bare See supra Section VII in [^3] with pin cites to the specific Section VII subsections establishing the six-phase rotation, the lessons memory, and the forced-finding verification pass (or split [^3] into three pinned references). RESOLVED at run-252 Cite (2026-05-29T13:00:00Z): replaced bare 'See supra Section VII' with pinned three-target cross-reference: primary 'See supra Section VII.B' (One phase per tick: the rotation as the loop) parenthetically enumerating the six phases (Ingest, Lint, Enrich, Expand, Synthesize, Verify); 'see also supra Sections VII.C' (the forced-finding Verify pass) and VII.D (loop memory as durable record). Edit landed at three sites per L-035: polished/section-14-conclusion.md [^3] line 40, drafts/section-14-conclusion.md [^3] line 35, manuscript/full-draft.md [^173] line 744. Footnote word-neutral at 47 of the L-059 50-word cap. claims_total/claims_mapped unchanged at 9/9. provenance_audited reset to false for next Verify Provenance Auditor re-audit; the criterion-2 primary_source_ratio deduction from the bare-See-supra granularity should clear at re-audit. Section 14 cite_status needs_cite -> needs_polish; polish_status holds at needs_polish on the three remaining Polish-owned P1s (PI-169 XIV.B meta-rhetoric, PI-170 XIV.C editor-vs-teacher conflation, PI-171 XIV.B chatbot-architecture tradeoff).",
+      "opened_at": "2026-05-30T05:00:00Z",
+      "phase": "verify",
+      "resolved_at": "2026-05-29T13:00:00Z",
+      "resolved_run": 252,
+      "section": "14",
+      "status": "resolved",
+      "type": "pin-cite"
+    },
+    {
       "claim": "Four [TODO: evidence needed for X; see PI-NNN] bracket markers appear inline in published prose at the close of Sections IV.C and IV.E.",
       "id": "PI-006",
       "note": "Persona 1 (Skeptical JLE Editor) P1 finding. Submission-ready prose cannot contain Markdown build-system placeholders. 2026-05-22T07:00 Polish tick on Section 04 rewrote the four affected sentences as clean prose hedges and moved the PI- pointers into same-section footnotes [^14], [^15], [^19], [^20]; the underlying PI-001 through PI-004 substantive gaps remain open in this article's internal task tracker pending professorial resolution, but the prose surface is now clean. PI-053 Route A also satisfied at IV.E by the new [^19] forward reference to Section IX's master cost table for the ingest-phase line.",
