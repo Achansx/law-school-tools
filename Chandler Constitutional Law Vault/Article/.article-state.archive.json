@@ -1434,6 +1434,32 @@
       "section": "14",
       "status": "resolved",
       "type": "chatbot-architecture-engagement-gap"
+    },
+    {
+      "claim": "Section X.C (paragraph 3) generalizes the reviewed-static-website vs runtime-answer-generating architectural choice to 'any course that adopts the method' but engages no chatbot-tutor / intelligent-tutoring-system literature at the generalization site; [^11] forward-references Section XII for the risk posture only, so the architectural recommendation travels as an assertion rather than a literature-grounded design choice.",
+      "id": "PI-155",
+      "note": "Verify run 136, Persona 3 (AI-in-Education Researcher) P1; the alternative-architecture engagement PERSONAS.md names for this persona. Per L-024 (Cite owns load-bearing transfer framing and citation-density), routes to the multi-section Cite literature pass rather than Polish; cite_status -> needs_cite (already set). Distinct from PI-088 (broad cross-disciplinary method-transfer literature gap), PI-093 (XIII.C auditability overclaim), and PI-147 (VIII.E one-sided risk framing). The Cite pass should add one external anchor at X.C on intelligent-tutoring-systems / chatbot-tutor architecture (the Sajja et al. 2023 line already cited in Section VIII, or a tutoring-systems review) so the static-architecture generalization names and engages the alternative it forgoes.",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "phase": "verify",
+      "section": "10",
+      "status": "resolved",
+      "type": "chatbot-architecture-literature-gap",
+      "resolved_at": "2026-05-30T02:00:00Z",
+      "resolved_by": "cite-run-260",
+      "resolution": "Section 10 Cite tick added external anchor and (for PI-156) hedge; see drafts/section-10-generalization.md frontmatter cite_note_run_260 for full closure rationale."
+    },
+    {
+      "claim": "Section X.B (paragraph 2) generalization that the three-unit schema and the nine-section brief 'recur in nearly every doctrinal course' and that 'a torts or contracts course briefs its cases in the same Facts, Holding, and Analysis shape' is cited to footnotes [^3] and [^4], both supra cross-references to Section V, which describes only the single constitutional-law vault; the claim about the universe of other courses has no source that establishes it.",
+      "id": "PI-156",
+      "note": "Verify run 136, Persona 4 (Provenance Auditor) P1 and Section 10's one unsupported_claim (reason requires-primary-source). Distinct from PI-090 (the narrower Usman [^12] reach gap in X.D) and PI-088 (the broad literature absence). Deferral lifted; routes cite_status -> needs_cite (already set). Next Cite tick on Section 10 adds an external source on the standard law-school case-brief form (a legal-writing or 1L-method text establishing that torts and contracts courses brief in the same Facts/Holding/Analysis shape), or hedges X.B's 'recur in nearly every doctrinal course' to a claim the cited con-law vault can support ('recur in this course and, by the standard brief form, are likely to recur in other case-method courses'). Closes when the cross-course reach resolves to an external source or is hedged and the next Verify pass confirms the unsupported_claim clears.",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "phase": "verify",
+      "section": "10",
+      "status": "resolved",
+      "type": "unsupported-generalization",
+      "resolved_at": "2026-05-30T02:00:00Z",
+      "resolved_by": "cite-run-260",
+      "resolution": "Section 10 Cite tick added external anchor and (for PI-156) hedge; see drafts/section-10-generalization.md frontmatter cite_note_run_260 for full closure rationale."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
