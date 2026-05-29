@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "reason": "REOPENED to close the PI-JLE-LEGAL-ED-LIT Section X and XI legs (legal-education-canon re-anchoring in Generalization and Evaluation). Loop resumed under FINAL-PUSH MODE priority 2. Re-freeze manuscript/HANDOFF-<date>.md and re-set this gate (awaiting_human:true) once PI-JLE-LEGAL-ED-LIT is resolved. The system still does not submit to JLE and does not email the professor."
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-30T01:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-30T02:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T18:00:00Z",
@@ -1143,7 +1143,8 @@
         "X_draft_advanced_at_run_302": "Section X leg advanced at run-302 Draft: inserted one 25-word legal-ed-canon-anchor sentence at end of X.A (after 'admired or copied') string-citing Carnegie Report (Sullivan et al. 2007), Best Practices for Legal Education (Stuckey et al., CLEA 2007), and Building on Best Practices (Maranville et al., LexisNexis 2015) via one [CITE:] placeholder. Sturm & Guinier from the Section II.E precedent intentionally swapped out (institutional-culture diagnosis fits II but not X's method-as-contribution warrant); Building on Best Practices substituted per research/legal-ed-scholarship.md Section 3 mapping to Sections VII, X, XI, XIII. Bluebook formatting and URL liveness verification for the three sources deferred to the next Cite tick on Section 10 (L-022/L-043). Leg closes when the placeholder is converted to a published Bluebook footnote and propagated to polished/full-draft. Section XI leg remains open after this tick; remains the lowest-numbered open leg for the next eligible Draft tick.",
         "X_closed_at_run_303": "Section X leg closed at run-303 Cite: converted the run-302 [CITE:] placeholder at X.A into Bluebook footnote [^17] string-citing Carnegie Report (Sullivan et al. 2007), Best Practices for Legal Education (Stuckey et al., CLEA 2007), and Building on Best Practices (Maranville et al. eds., LexisNexis 2015). URL liveness verified live this run via WebFetch on all three first-use external URLs (Carnegie PDF 806 KB, Best Practices PDF 1.3 MB, Building on Best Practices GSU faculty-pub record). Footnote total 48 words under L-059 50-word cap. Three legs remain open: Sections X.B (PI-088 secondary anchor), XI (legal-ed-canon-anchor for evaluation framework), and one drafts-to-polished-to-full-draft propagation tick the next Polish tick on Section 10 owns under L-035 three-site discipline.",
         "X_polish_propagated_at_run_304": "Section X leg propagated through Polish at run-304: inserted the run-302 X.A sentence and run-303 [^17] footnote into polished/section-10-generalization.md per L-035 three-site discipline (drafts already carries them; full-draft.md still does not). Body word delta +25; polished 979 -> 1004 (+14 over +/-10% Polish band; flag_for_stitch_trim recorded). Footnotes_count 16 -> 17 with no inline renumber required (appended slot). Apostrophe register converted ASCII -> curly. Leg now closed at Draft + Cite + Polish levels for Section 10; remaining work is the Stitch propagation of the X.A sentence + [^17] insertion into manuscript/full-draft.md, which requires a global footnote renumber (one new global slot between Section 10's last footnote and Section 11's first) and is queued behind the FINAL-PUSH MODE bullet 3 dedicated Section 02 propagation Stitch per the 'next Stitch after that' discipline. Section XI leg remains the only open leg of PI-JLE-LEGAL-ED-LIT at Draft level and remains the lowest-numbered open leg for the next eligible Draft tick under FINAL-PUSH MODE priority 2.",
-        "XI_closed_at_run_308": "Section XI leg closed at run-308 Cite: converted the run-307 [CITE: ...] placeholder at 11.A end into Bluebook 21st footnote [^9] string-citing Am. Bar Ass'n Standard 315, Barbara Glesner Fines, *Outcomes Assessment for Improving Student Learning* (in Schwartz et al.), in *Building on Best Practices* (Maranville et al. eds., LexisNexis 2015), and Sophie M. Sparrow, *Describing the Ball*, 2004 Mich. St. L. Rev. 1, under a single 'all last visited May 29, 2026' parenthetical. Footnote 50 words at L-059 hard cap. URL liveness: Sparrow WebFetch live; ABA WebSearch L-022 fallback live; SSRN WebSearch L-022 fallback live with title-mismatch discovery (the SSRN URL hosts the Schwartz et al. chapter containing the Glesner Fines Section D, named via '(in Schwartz et al.)' qualifier in the footnote and logged as PI-243 for future Polish/Cite cleanup). PI-JLE-LEGAL-ED-LIT all section legs (I, II, X, XI, XIII) now closed at drafts + cite layers; the remaining open work is polished + full-draft propagation for Sections X (queued at run-304) and XI (queued at this tick), which the next Polish and Stitch ticks own under L-035 three-site discipline."
+        "XI_closed_at_run_308": "Section XI leg closed at run-308 Cite: converted the run-307 [CITE: ...] placeholder at 11.A end into Bluebook 21st footnote [^9] string-citing Am. Bar Ass'n Standard 315, Barbara Glesner Fines, *Outcomes Assessment for Improving Student Learning* (in Schwartz et al.), in *Building on Best Practices* (Maranville et al. eds., LexisNexis 2015), and Sophie M. Sparrow, *Describing the Ball*, 2004 Mich. St. L. Rev. 1, under a single 'all last visited May 29, 2026' parenthetical. Footnote 50 words at L-059 hard cap. URL liveness: Sparrow WebFetch live; ABA WebSearch L-022 fallback live; SSRN WebSearch L-022 fallback live with title-mismatch discovery (the SSRN URL hosts the Schwartz et al. chapter containing the Glesner Fines Section D, named via '(in Schwartz et al.)' qualifier in the footnote and logged as PI-243 for future Polish/Cite cleanup). PI-JLE-LEGAL-ED-LIT all section legs (I, II, X, XI, XIII) now closed at drafts + cite layers; the remaining open work is polished + full-draft propagation for Sections X (queued at run-304) and XI (queued at this tick), which the next Polish and Stitch ticks own under L-035 three-site discipline.",
+        "XI_pin_cite_expanded_at_run_313": "Section XI canon-anchor follow-up at run-313 Cite: expanded [^9] from the run-308 50-word L-059-capped compound string-cite to a 65-word L-064-loosened per-source-pin-cite footnote, closing PI-244 (compound-cite-no-pin-cite defect at canon anchor, third instance of the recurring class L-064 codified at run 311) and PI-243 (SSRN-host title-mismatch at Glesner Fines slot, opened at run-308 cite). New form: ABA Std 315 & Interp. 315-1 (2014); Glesner Fines \u00a7 D, in Schwartz et al., Revisiting the Characteristics of Effective Education, in Building on Best Practices (Maranville et al. eds., LexisNexis 2015); Sparrow 4-7 \u2014 all three with per-source pin-cites supporting the load-bearing 'canon treats outcomes assessment as structured judgment proportional to teaching purpose' XI.A assertion. URL liveness re-verified live this tick on all three URLs per L-022. Drafts layer carries the expanded [^9]; remaining work is polished + full-draft propagation (next Polish tick on Section 11 + next Stitch tick own under L-035 three-site discipline). The Section 02 II.E [^12] (PI-237) and Section 10 X.A [^17] (PI-241) parallel canon-anchor compound-cites remain open at the per-source-pin-cite layer and are the next eligible Cite-tick targets under L-064 on Sections 02 and 10."
       },
       "last_progress_at": "2026-05-29T22:30:00Z",
       "last_progress_run": 308
@@ -1537,38 +1538,6 @@
       "suggested_fix": "Tighter form preferred to preserve word budget (Section 10 already at 1004 / 900 = +11.6%, flagged for Stitch trim): an X.A sentence reading roughly \"Section IV catalogues the case study corpus and Section IX its labor; an adopter inheriting the method inherits both as the floor the X.A portability claim assumes.\" (~28 words, +5 over current 23-word X.A close, +0 footnotes; internal cross-references to existing Section IV and Section IX anchors)."
     },
     {
-      "id": "PI-243",
-      "type": "ssrn-host-vs-section-title-mismatch-at-11A-footnote-9-glesner-fines-citation",
-      "section": "11",
-      "subsection": "11.A end",
-      "anchor": "[^9] drafts/section-11-evaluation.md (polished/full-draft propagation pending)",
-      "severity": "P1",
-      "opened_at": "2026-05-29T22:30:00Z",
-      "opened_in_run": 308,
-      "opened_by_persona": "Cite-phase honesty surface (Persona 4 framing anticipated)",
-      "status": "open",
-      "route_to": "polish-or-cite-future",
-      "description": "The [^9] string-cite at 11.A end attributes 'Barbara Glesner Fines, Outcomes Assessment for Improving Student Learning, in Building on Best Practices' to SSRN URL https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2637490 with a parenthetical '(in Schwartz et al.)' qualifier. The SSRN paper at that URL is actually titled 'Revisiting the Characteristics of Effective Education' with five authors (Schwartz, Bushaw, Homer, Maranville, Glesner Fines), and the Outcomes Assessment for Improving Student Learning content is Section D of that multi-author chapter. The Cite tick at run-308 named this discrepancy honestly via the '(in Schwartz et al.)' qualifier rather than implying the SSRN URL hosts a standalone Glesner Fines paper, but a careful reader following the URL still encounters a title-and-author surface that does not match the footnote's lead author + title presentation.",
-      "suggested_fix": "Two routes. (a) Polish/Cite inflates [^9] with full chapter nest: 'Barbara Glesner Fines, *Outcomes Assessment for Improving Student Learning*, in Michael Hunter Schwartz et al., *Revisiting the Characteristics of Effective Education*, in *Building on Best Practices* (Maranville et al. eds., LexisNexis 2015), [URL]' --- this is the most accurate Bluebook form but adds ~8 words and breaks the L-059 50-word cap, requiring either a cap-loosening rule for compound first-use citations or trimming one of the other two cites in the string. (b) Cite swaps the SSRN URL to a more direct host of the Glesner Fines section if one exists (e.g., a separate SSRN abstract, a publisher excerpt page, or a faculty repository host). Route (a) preserves URL liveness already verified; route (b) requires a fresh URL liveness verification per L-022.",
-      "related_pis": [
-        "PI-JLE-LEGAL-ED-LIT (parent: the XI leg whose closure produced this discrepancy)",
-        "PI-241 (sibling cite-discipline P1 on Section 10 [^17] compound-cite-without-pin-cite)"
-      ],
-      "paired_with": "PI-JLE-LEGAL-ED-LIT XI leg legs_progress.XI_closed_at_run_308"
-    },
-    {
-      "id": "PI-244",
-      "type": "compound-cite-no-pin-cite-at-canon-anchor",
-      "severity": "P1",
-      "section": "11",
-      "status": "open",
-      "opened_at": "2026-05-30T00:00:00Z",
-      "opened_run": 311,
-      "opened_by_persona": "1 Skeptical JLE Editor",
-      "routes_to": "Section 11 Cite tick to expand [^9]/[^159] with per-source pin-cites; paired with PI-243 SSRN-host title-mismatch on the same footnote slot",
-      "note": "Bluebook 21st compound-string-cite-without-pin-cite defect at the XI.A new canon-discipline anchor. [^9]/[^159] string-cites Am. Bar Ass\u2019n Standard 315 + Glesner Fines + Sparrow under one parenthetical with no per-source pin-cites for a load-bearing 'the canon treats outcomes assessment as structured judgment proportional to teaching purpose rather than as a uniform research bar' assertion. Under R.1.5(a)(ii) and R.10.6.1 this form supports parallel general background, not a load-bearing 'the canon treats X as Y' claim. THIRD instance of the same defect class (PI-237 at Section 02 II.E [^18]; PI-241 at Section 10 X.A [^17]/[^150]; now PI-244 at Section 11 XI.A [^9]/[^159]) \u2014 discipline-level recurring across PI-JLE-LEGAL-ED-LIT canon-anchor sites; satisfies the recurrence threshold for a new LESSON entry (L-064). Suggested fix Form (b): per-source pin-cites in place \u2014 ABA Std 315 & Interp. 315-1 (2014); Glesner Fines \u00a7 D (Maranville et al. eds., LexisNexis 2015); Sparrow 4-7 \u2014 +0 footnote slots, +~25 words inside an L-059-loosened cap, paired with PI-243 closure."
-    },
-    {
       "id": "PI-245",
       "type": "teaching-purpose-substitution-slip-at-canon-anchor",
       "severity": "P1",
@@ -1609,7 +1578,7 @@
       "last_progress_run": 312
     }
   ],
-  "phase_index": 1,
+  "phase_index": 2,
   "phases": [
     "draft",
     "cite",
@@ -1631,7 +1600,7 @@
       "11"
     ]
   },
-  "run_count": 312,
+  "run_count": 313,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2029,10 +1998,10 @@
       "last_draft_touch_run": 312
     },
     "11": {
-      "cite_completed_at": "2026-05-29T22:30:00Z",
+      "cite_completed_at": "2026-05-30T02:00:00Z",
       "cite_note": "Run-308 Cite tick closed PI-JLE-LEGAL-ED-LIT Section XI leg (the last remaining open leg of FINAL-PUSH MODE bullet 2 priority 2). Converted the run-307 [CITE: ...] placeholder at 11.A end into Bluebook 21st footnote [^9] string-citing ABA Standard 315, Glesner Fines *Outcomes Assessment for Improving Student Learning* (in Schwartz et al.), and Sparrow *Describing the Ball* under a single 'all last visited May 29, 2026' parenthetical. Footnote 50 words at L-059 hard cap (no relevance tail; cap-discipline forced cuts: ABA short title, Glesner Fines without chapter-title and editor-name expansion, Sparrow subtitle dropped). URL liveness: Sparrow UNH-Scholars verified live via WebFetch (title, author, journal cite, year confirmed); ABA URL HTTP 403 to WebFetch, L-022 fallback to WebSearch returned the verbatim URL as first hit confirming the Outcomes-Assessments Committee page; SSRN URL HTTP 403 to WebFetch, L-022 fallback to WebSearch returned the verbatim URL but discovered the SSRN paper at 2637490 is actually titled 'Revisiting the Characteristics of Effective Education' with five authors including Glesner Fines, and the Outcomes Assessment piece is Section D within that chapter; the [^9] footnote names this honestly via '(in Schwartz et al.)' qualifier. PI-243 opened (P1) for the SSRN-host title-mismatch as a future Polish/Cite cleanup. drafts layer carries the new sentence and [^9]; polished and full-draft propagation owed to the next Polish and Stitch ticks (queued behind Section 10 X.A backlog per FINAL-PUSH MODE bullet 3). footnotes_count 8 -> 9; draft_status / cite_status needs_cite -> needs_polish. PRIOR cite_note (run-242) preserved below: Run-242 Cite tick resolved PI-211 (Section XI phantom App. A 'Article Project Architecture' subtitle plus seven phantom subsections, phantom App. D 'Internal Project Records Excerpts'/'Correspondence Excerpts' subtitle across original [^1]/[^2]/[^3]/[^6]/[^7]/[^12]/[^13]/[^14]; original [^11] carried the same phantom routing and was fixed in this sweep for internal consistency). Real appendices are A 'Input Inventory' \u00a7\u00a7A.1-A.3 and D 'Karpathy-Loop Per-Phase Rubric' \u00a7\u00a7D.1-D.4; no real subsection holds the article's own architectural decisions, so per cite-rubric criterion 5 and L-058 the footnotes resolve: original [^1] (disclaimer self-statement) REMOVED; original [^2] CONVERTED to 'see infra notes 3 and 4' (Bond and Choi & Schwarcz); original [^3]/[^4]/[^5]/[^6] (four-instrument plan and supra-references) REMOVED; original [^7] CONVERTED to 'see infra note 5' (Sajja); original [^11] (IRB labeling fork) REMOVED; original [^12] CONVERTED to 'see supra Section IV (Input Corpus) \u00a7 IV.E'; original [^13] CONVERTED to 'see infra Section IX (Cost and Labor)'. Renumber: [^2]->[^1], [^7]->[^2], [^8]->[^3], [^9]->[^4], [^10]->[^5], [^12]->[^6], [^13]->[^7], [^14]->[^8]; [^14]'s 'see supra notes 7 and 10' updated to 'see supra notes 2 and 5'. footnotes_count 14->8. All eight footnotes within the L-059 50-word cap. Body prose unchanged per Cite's no-prose-edit rule; remaining workplan-language slips at 11.A and 11.E (L-057) are Polish-owned and logged as PI-216. No URL re-verification this tick: Bond [^3] and Choi & Schwarcz [^4] reuse run-151 WebSearch liveness; Sajja [^5] inherits liveness from Sections III/VIII per L-034. cite_status->needs_polish.",
       "cite_redone_at": "2026-05-29T22:30:00Z",
-      "cite_status": "needs_cite",
+      "cite_status": "needs_polish",
       "cite_status_changed_at": "2026-05-29T22:30:00Z",
       "cite_status_changed_reason": "Run-308 Cite converted the run-307 [CITE: ...] placeholder at 11.A end into Bluebook 21st footnote [^9] (ABA Standard 315 + Glesner Fines + Sparrow, 50 words at L-059 cap, URLs verified live per L-022 fallback to WebSearch on the 403-blocked ABA and SSRN hosts). PI-JLE-LEGAL-ED-LIT XI leg closed at Draft + Cite levels; polished + full-draft propagation queued for Polish and Stitch.",
       "claims_mapped": 17,
@@ -2091,7 +2060,9 @@
       "full_draft_propagation_at": "2026-05-29T23:30:00Z",
       "full_draft_propagation_run": 310,
       "provenance_score_prior_run_256": 4.4,
-      "last_verify_run": 311
+      "last_verify_run": 311,
+      "cite_last_run": 313,
+      "last_cite_touch_note": "Run-313 Cite closed paired PI-244 (per-source pin-cites at canon-anchor compound) and PI-243 (SSRN-host title-mismatch) on [^9] string-cite. Expanded compound under one parenthetical with per-source locators: ABA Std 315 & Interp. 315-1 (2014); Glesner Fines \u00a7 D in Schwartz et al. Revisiting the Characteristics of Effective Education in Building on Best Practices (Maranville et al. eds., LexisNexis 2015); Sparrow 4-7. Final footnote 65 words inside L-064 60-65-word canon-anchor cap. URL liveness re-verified live this tick (Sparrow WebFetch; ABA + SSRN L-022 WebSearch fallback). Body unchanged (1197 words). cite_status needs_cite -> needs_polish; polish_status holds at needs_polish on open polished/section-11 propagation (next Polish tick owns per L-035, paralleling run-303->run-304 Section 10 X.A pattern)."
     },
     "12": {
       "cite_at": "2026-06-08T21:00:00Z",
@@ -2243,7 +2214,7 @@
     "last_run_at": "2026-05-30T00:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 138,
+    "p1_open": 136,
     "p2_open": 43,
     "personas_read": 5
   },
