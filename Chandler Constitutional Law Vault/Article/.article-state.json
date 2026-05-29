@@ -85,15 +85,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "outline",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "harvest",
-  "last_run_at": "2026-05-29T21:00:00Z",
+  "last_completed_phase": "outline",
+  "last_run_at": "2026-05-29T23:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-29T17:00:00Z",
@@ -1232,7 +1232,7 @@
       "type": "related-work"
     }
   ],
-  "phase_index": 1,
+  "phase_index": 2,
   "phases": [
     "harvest",
     "outline",
@@ -1253,7 +1253,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 257,
+  "run_count": 258,
   "schema_version": 1,
   "sections": {
     "01": {
