@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "reason": "REOPENED to close the PI-JLE-LEGAL-ED-LIT Section X and XI legs (legal-education-canon re-anchoring in Generalization and Evaluation). Loop resumed under FINAL-PUSH MODE priority 2. Re-freeze manuscript/HANDOFF-<date>.md and re-set this gate (awaiting_human:true) once PI-JLE-LEGAL-ED-LIT is resolved. The system still does not submit to JLE and does not email the professor."
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-30T03:30:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-30T04:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T18:00:00Z",
@@ -1578,9 +1578,79 @@
       "draft_advanced_at_run_312": "Section X.E disclaimer (+35 words) inserted at end of X.E in drafts/section-10-generalization.md between the 'where it held and where it broke' colleague-attempt sentence and the bridge-to-XI sentence: 'The article describes the schema; the test is a second instance, a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints, that this piece explicitly routes to future work.' Paired XIV.B 8-word echo (+8 words) landed in same tick at drafts/section-14-conclusion.md after the [^6] build-time-auditability sentence: 'The article describes the schema; the test awaits.' Both layers at Draft. PI-247 stays open: polished/full-draft propagation owed to next Polish ticks on Sections 10 and 14 (L-035 three-site discipline), plus Stitch propagation to manuscript/full-draft.md when those Polish ticks land. No em dashes (L-005); no straight ASCII quotes; one idea per sentence; practitioner-scholarly meta-disclaimer register.",
       "last_progress_at": "2026-05-30T01:00:00Z",
       "last_progress_run": 312
+    },
+    {
+      "id": "PI-248",
+      "type": "XII-E-equity-accessibility-canon-anchor-absent",
+      "opened_at": "2026-05-30T04:00:00Z",
+      "opened_in_run": 316,
+      "opened_by_persona": "1 Skeptical JLE Editor",
+      "severity": "P1",
+      "section": "12",
+      "location": "XII.E paragraph 1 (polished [^9] / full-draft [^168])",
+      "description": "XII.E equity-and-accessibility risk-catalogue lacks an external legal-education-accessibility-canon anchor; footnote [^9]/[^168] is an internal cross-reference to Sections II/III/IV/VIII only, with Bond [^10]/[^169] as the only external source but Bond is AI-in-higher-ed not legal-education accessibility canon. FOURTH instance of the FINAL-PUSH MODE PI-JLE-LEGAL-ED-LIT canon-anchor-gap pattern after PI-237 / PI-241 / PI-244 and the first instance of substantive-anchoring-absent-entirely (vs. compound-cite-no-pin-cite).",
+      "suggested_fix": "Form (a) Cite-tier: expand [^9]/[^168] in place with ABA Standard 208 (accommodations for persons with disabilities) or Standard 305(d) plus one legal-education-accessibility-scholarship pin cite from the workplan (Dinerstein, Lamparello, or comparable canonical work); +~30 words inside L-064 60-65-word canon-anchor cap; lifts provenance criteria 1/2/3 simultaneously, taking Section 12 above the 4.5 gate. Form (b) Polish-tier alternative: body-prose anchor at XII.E paragraph 1 opening.",
+      "routes_to": "Section 12 Cite (primary); Section 12 Polish (alternative)",
+      "status": "open"
+    },
+    {
+      "id": "PI-249",
+      "type": "XII-B-two-architecture-taxonomy-elides-case-method-Socratic-baseline",
+      "opened_at": "2026-05-30T04:00:00Z",
+      "opened_in_run": 316,
+      "opened_by_persona": "2 Legal Pedagogy Traditionalist",
+      "severity": "P1",
+      "section": "12",
+      "location": "XII.B paragraphs 1-3 (polished + full-draft lines 377-383)",
+      "description": "XII.B frames the safety comparison as static-vs-chatbot only, eliding the case-method-plus-Socratic baseline as the actual third comparison pole and the canonical pedagogical baseline for any JLE article on AI-assisted pedagogy. The XII.B third paragraph names 'the live Socratic contest' as a thing the static method's reader forgoes but treats it as a narrow concession rather than as the actual baseline. Compounds with PI-046 (Section VII live-pedagogy substitution), PI-031 (Section III.C lecture-summary substitution), and PI-245 (Section XI.A teaching-purpose substitution) as the article's recurring static-vs-AI taxonomy quietly substituting for the case-method-plus-Socratic baseline.",
+      "suggested_fix": "Polish tick on Section 12: add one sentence to XII.B paragraph 1 after the 'four axes' sentence explicitly naming the case-method Socratic baseline as the third comparison pole (+44 words). Alternative tighter form: parenthetical clause at XII.A paragraph 2 close (+34 words) keeping the case-method baseline visible at the safety-argument site.",
+      "routes_to": "Section 12 Polish",
+      "status": "open"
+    },
+    {
+      "id": "PI-250",
+      "type": "XII-B-chatbot-tutor-architecture-literature-thin-on-ITS-adaptive-systems",
+      "opened_at": "2026-05-30T04:00:00Z",
+      "opened_in_run": 316,
+      "opened_by_persona": "3 AI-in-Education Researcher",
+      "severity": "P1",
+      "section": "12",
+      "location": "XII.B paragraph 1 (polished [^3] / full-draft [^162])",
+      "description": "XII.B anchors the chatbot-tutor architecture comparison on Sajja et al. 2023 alone, when the section's own Bond cross-reference at [^10]/[^169] names the broader Zawacki-Richter typology (Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, Intelligent Tutoring Systems). Asymmetric engagement: section uses the broader typology only at XII.E and not at the XII.B comparison anchor where it would be load-bearing. Compounds with PI-246 (Section XI.C Bond three-prong asymmetric engagement).",
+      "suggested_fix": "Polish-only (no new footnote, leverages existing [^10]/[^169] Bond typology pin cite): rewrite XII.B paragraph 1 second sentence to anchor on Sajja AS WELL AS the broader ITS / adaptive-personalization architectures Bond's typology codes (+24 words, em-dashes substituted by commas per L-005). L-053-compliant (does not add a source not in the workplan).",
+      "routes_to": "Section 12 Polish (Cite-tier alternative deferred per L-053 unless workplan-cited ITS survey identified)",
+      "status": "open"
+    },
+    {
+      "id": "PI-251",
+      "type": "XII-E-equity-canon-anchor-provenance-side-framing-of-PI-248",
+      "opened_at": "2026-05-30T04:00:00Z",
+      "opened_in_run": 316,
+      "opened_by_persona": "4 Provenance Auditor",
+      "severity": "P1",
+      "section": "12",
+      "location": "XII.E paragraph 1 opening sentence (polished [^9] / full-draft [^168])",
+      "description": "Provenance-audit verifiability-principle framing of the XII.E equity-and-accessibility-canon-anchor-gap defect (PI-248 substantive twin); logged as the unsupported_claim entry on Section 12's polished frontmatter with reason `requires-legal-education-canon-anchor`. Routing shared with PI-248 on the same Cite-tier or Polish-tier fix.",
+      "suggested_fix": "Same as PI-248 Form (a): expand [^9]/[^168] with external legal-education-accessibility-canon anchor; lifts Section 12 provenance criteria 1/2/3 to 5/4/5 in one fix, taking Section 12 above the 4.5 gate.",
+      "routes_to": "Section 12 Cite (paired with PI-248)",
+      "status": "open"
+    },
+    {
+      "id": "PI-252",
+      "type": "XII-whole-section-umbrella-term-drift-from-course-knowledge-system",
+      "opened_at": "2026-05-30T04:00:00Z",
+      "opened_in_run": 316,
+      "opened_by_persona": "6 Structural/Developmental Editor (SUPPLEMENTAL)",
+      "severity": "P1",
+      "section": "12",
+      "location": "Section XII body (full-draft lines 369-397, polished section-12 body)",
+      "description": "Section XII drops the PROJECT_PRIMER umbrella term 'course knowledge system' (appears once in section) in favor of 'the case study' (8 times) and 'static architecture' / 'static design' / 'static site' / 'reviewed static website' (6 times). 'The system' (the recurring sentence's canonical referent) does not appear in Section XII at all. Adjacent sections do not drift this hard: XI uses umbrella 4 times, XIII 7 times, XIV 3 times. The drift breaks PROJECT_PRIMER's terminology-consistency convention at a single section and reads as if Section XII is talking about three different objects rather than one course knowledge system whose risk surface is being catalogued. Distinct from PI-181 (terminology consistency across abstract/01/14).",
+      "suggested_fix": "Polish tick on Section 12: substitute 3-4 'the case study' instances with 'the course knowledge system' or 'the system' at load-bearing sentences (XII.A 'no claim that the generative models', XII.B 'risk profile differs', XII.B 'instead publishes', XII.D 'used only course-issued materials'). Preserve the case-study label where it refers to the bounded artifact (XII.C 'grounding covers', XII.E 'risk surface'). Net +6 words; restores umbrella cadence without losing the case-study-vs-method distinction.",
+      "routes_to": "Section 12 Polish",
+      "status": "open"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -1602,7 +1672,7 @@
       "11"
     ]
   },
-  "run_count": 315,
+  "run_count": 316,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2073,7 +2143,7 @@
       "cite_note_run165": "Run-165 Cite: confirmed run-164 XII.B additions introduced no orphan claim (architectural own-risk, no new footnote); resolved PI-179 by naming chatbot tutors as a recognized intervention category in the body and citing Bond et al. 2024 (workplan line 199) at [^3] as the verified survey-level anchor, per L-053 NOT adding Kuhail (absent from workplan); brought all ten footnotes to the L-059 50-word cap and L-058 internal-artifact compliance; Magesh [^1] re-verified live (WebFetch 403 -> WebSearch per L-052), last-visited June 1, 2026. current_words 1396->1419; cite_status->needs_polish.",
       "cite_note_run228": "Run-228 Cite: propagated the Zawacki-Richter typology pin cite from Section 11's [^8]/[^151] (added at run 221 to close PI-160) to Section 12's symmetric [^10]/[^167], the cross-section consistency follow-up the run-221 narrative explicitly flagged ('a subsequent Section 12 Cite tick should propagate the matching pin-cite sentence to [^10] for cross-section consistency'). New clause anchors the corpus-composition characterization to Bond's coding framework: 'Bond codes the corpus through Zawacki-Richter et al.'s (2019) typology of Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, and Intelligent Tutoring Systems, with Adaptive Systems and Personalisation the predominant single application area across the corpus.' Replaces the inline 'whose interventions are chiefly adaptive systems and personalization, with profiling and prediction, assessment and evaluation, intelligent tutoring systems, and chatbots among the application areas its constituent reviews cover' descriptive listing with the typology-attributed version, removing redundancy with the new clause. The 'corpus-composition characterization above was confirmed' tail clause updated to 'typology-anchored application-area distribution above was confirmed' to track the new anchor. Edit propagated to three sites per L-035 cross-file discipline: polished/section-12-risks-and-limits.md [^10] (curly throughout), drafts/section-12-risks-and-limits.md [^10] (matched the shorter drafts register, adding the same Zawacki-Richter clause with curly apostrophe to match surrounding drafts convention), and manuscript/full-draft.md global [^167] line 727 (curly throughout). Same Zawacki-Richter typology and Adaptive-Systems-and-Personalisation predominance verified independently this run via WebSearch with allowed_domains scoped to link.springer.com per L-022 (the Springer cookie-auth still 303-redirects WebFetch on both the article landing page and the PDF, so WebSearch is the canonical verification path), returning the verbatim Bond title and URL plus the Zawacki-Richter-2019 typology-citation co-occurrence with Adaptive Systems and Personalisation as the predominant single application area, matching the run-221 verification on the Section 11 [^8] addition. No new numerical anchor introduced per L-027 (Bond's 47% / n=31 general-applications figure and the n=45/n=46/n=26 role counts deliberately omitted; Magesh 17%-33% remains the article's sole quantitative AI-in-higher-education anchor). No URL change (cross-reference to Section XI note 151 unchanged; URL liveness owned by Section XI per the article's cross-section-reuse convention; Bond URL last re-verified live at run 221). Mechanical sweep at the edit point: zero em dashes introduced, curly apostrophes preserved in polished and full-draft, drafts apostrophe matched to surrounding drafts register. The footnote stays over L-059's 50-word cap (the existing structure has carried the transfer-of-inference clause since run 165); the L-059 fix is Polish-owned and the existing run-165 polish_note records it as policy-acknowledged. provenance_audited reset to false because the footnote materially changed; the next Verify provenance re-audit reads the post-Cite text. polished/section-12 footnote_count holds at 10 (no insert/delete); manuscript total_words grows by approximately 22 words (the typology-attributed sentence replaces the descriptive listing across two sites, polished and full-draft; drafts adds the typology clause; net body footnote-text additions). Cross-section consistency check: Section 11 [^8]/[^151] (Zawacki-Richter pin cite + 'Adaptive Systems and Personalisation the predominant single application area across the corpus') and Section 12 [^10]/[^167] (now mirroring the same typology anchor under the section's distinct transfer-of-inference clause) are now structurally parallel on the Bond corpus-composition characterization. PI-159 (full validity/reliability/sampling/analysis methods treatment for the four Section XI instruments) remains Cite-open on Section 11 per L-053 (workplan does not name a methods source); this is the next Cite-actionable item on the Bond-cluster, not in this Section 12 tick's scope. cite_status holds at needs_polish (already set at run 165); last_cite_run -> 228; last_cite_propagation fields added.",
       "cite_status": "needs_polish",
-      "claims_mapped": 18,
+      "claims_mapped": 17,
       "claims_total": 18,
       "current_words": 1419,
       "draft_at": "2026-06-01T19:00:00Z",
@@ -2095,14 +2165,27 @@
       "polish_completed_at": "2026-05-31T03:00:00Z",
       "polish_note_run145": "Run-145 Polish tick: italicized textual Mata v. Avianca (L-015); certified run-143 PI-113 (design-response framing + L-044 Section XI forward-ref) and PI-161 (meta-rhetoric recast); fixed the XII.B seam redundancy (two paragraphs no longer both open with 'The contrast'); applied the PI-106 numbering fix ('a fourth' -> 'a further open decision'); split argumentative run-ons in A/B/C/E and split A and E into two paragraphs each, preserving five deliberate enumerations per L-029. polish_status -> ready_for_stitch; provenance_score 4.0 left for the next Verify re-audit; current_words 1369 -> 1359.",
       "polish_status": "needs_polish",
-      "provenance_audited": false,
-      "provenance_score": 4.0,
+      "provenance_audited": true,
+      "provenance_score": 4.2,
       "target_words": 1400,
       "title": "Risks and Limits",
-      "unsupported_claims": [],
-      "unsupported_claims_count": 0,
+      "unsupported_claims": [
+        {
+          "claim_text": "Equity and accessibility are the part of the risk surface the article discloses rather than claims to solve.",
+          "paragraph": 1,
+          "location": "XII.E paragraph 1 opening sentence (polished [^9] / full-draft [^168])",
+          "reason": "requires-legal-education-canon-anchor",
+          "paired_with": "PI-248",
+          "routes_to": "Section 12 Cite Form (a) primary; Section 12 Polish Form (b) alternative"
+        }
+      ],
+      "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
+      "provenance_audited_at": "2026-05-30T04:00:00Z",
+      "provenance_audit_run": 316,
+      "provenance_score_prior_run_138": 4.0,
+      "provenance_audit_note_run316": "Run-316 Verify provenance re-audit: first Section-12 re-audit since the run-138 4.0 baseline. Audit clears the LAST unaudited polished section in the article; all 14 sections now provenance_audited:true post run-316 (satisfies RUNBOOK Stitch criterion 5 per-section flag). Score 4.0 -> 4.2 (+0.4): claim_coverage 4 (17/18 = 94.4% mapped; XII.E equity-anchor unmapped pending PI-248); primary_source_ratio 3 (2/10 external; structural-ceiling lift per run-306/run-311 synthesis-section precedent); attribution_discipline 4 (PI-241/PI-244 4-band line on the new XII.E canon-anchor gap); numerical_precision 5 (Magesh 17-33% + Mata six fabrications + Bond sixty-six studies all consistent); gap_honesty 5 (lift 4 -> 5 on run-215 spelling fix + run-228 typology clause + section's explicit-disclaimer discipline throughout). 4.2 < 4.5 gate, polish_status holds at needs_polish. Path to 4.6: PI-248 Form (a) Cite-tier ABA Standard 208/305(d) + legal-education-accessibility-scholarship pin cite at [^9]/[^168] lifts criteria 1/2/3 simultaneously."
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
@@ -2210,14 +2293,14 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "11",
+    "last_audit_section": "12",
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "11",
-    "last_run": 311,
-    "last_run_at": "2026-05-30T00:00:00Z",
+    "last_reaudit_section": "12",
+    "last_run": 316,
+    "last_run_at": "2026-05-30T04:00:00Z",
     "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 136,
+    "p1_open": 140,
     "p2_open": 43,
     "personas_read": 5
   },
