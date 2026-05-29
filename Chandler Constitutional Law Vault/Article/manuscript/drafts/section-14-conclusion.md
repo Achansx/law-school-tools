@@ -1,14 +1,16 @@
 ---
 id: "14"
 title: "Conclusion"
-status: ready_for_stitch
+status: needs_polish
 target_words: 400
 word_count: 415
-last_phase: polish
+last_phase: verify-provenance
 draft_status: needs_cite
 cite_status: needs_polish
+polish_status: needs_polish
 footnotes_count: 8
 drafted_from_outline: outline-14-conclusion.md
+verify_provenance_note_run285: "Section 14 polish_status reverts ready_for_stitch -> needs_polish per the run-285 Verify Provenance Auditor re-audit on the post-run-252 Cite + post-run-254 Polish polished prose (4.4 < 4.5 gate). Five P1s route here: PI-226 NEW Persona 1 (XIV.A/XIV.C meta-rhetorical X-was-not-Y-it-was-Z pattern), PI-099 re-confirm narrowed Persona 2 (live-teaching named but loop framing elides classroom-judgment locus), PI-227 NEW Persona 3 (Bond-collaboration-prong elision in XIV.C second-instance future-work framing), PI-228 NEW Persona 4 (synthesis-section internal-cross-reference disclosure gap, the gap_honesty 4-band deduction), PI-229 NEW Persona 5 supplemental (XIV.C [^181] adopter first-step routing gap forwarding to Section XIII institutional implications rather than to spec sections V/VI/VII). See polished/section-14-conclusion.md provenance_note_run285 for the full audit narrative; the drafts mirror is updated for the status reversion only and propagates no body or footnote changes this tick."
 evidence_note: "Scaffold-first draft under the run-79 (Section 13) and run-73 (Section 10) precedents; Section 14 has evidence_status: none and no dedicated evidence-14-* cards. Per L-046 this framing section is drafted from the article's own thesis (Article-Workplan.md §1/§10, PROJECT_PRIMER thesis and house-voice recurring sentence) plus named sibling cards (01, 07, 10, 11, 12, 13). The Conclusion introduces no new fact; every concrete recap cross-references its owning section per L-027. PI-097 tracks the owed dedicated evidence-14-* Harvest cards, after which Draft/Cite re-bind the cross-reference placeholders. Recurring sentence lands once in 14.C as its third and final canonical placement per L-002/L-026; Stitch enforces the global count of three."
 ---
 

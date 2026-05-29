@@ -85,19 +85,19 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-29T19:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-29T21:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
-    "confirmed_stitched_changed_at": "2026-05-31T18:00:00Z",
-    "confirmed_stitched_count": 1,
+    "confirmed_stitched_changed_at": "2026-05-29T21:00:00Z",
+    "confirmed_stitched_count": 0,
     "full_draft_exists": true,
     "last_polish_propagation_at": "2026-05-29T17:00:00Z",
     "last_polish_propagation_note": "Run-283 Polish on Section 13 propagated the run-281 Draft prose edits and the run-282 Cite [^10]/[^11] footnotes from drafts/section-13-institutional-implications.md into polished/section-13-institutional-implications.md and manuscript/full-draft.md per the L-035 three-site discipline, closing the two-tick deferred propagation flagged in the run-282 Cite note. Polished body changes: (1) XIII.B closer 'A course knowledge system is therefore best read as faculty scholarship of teaching coupled with institutional stewardship' rewritten to 'A course knowledge system can therefore be read as faculty scholarship of teaching coupled with institutional stewardship' per PI-224 fix option b (softening the asserted-as-settled tension with the adjacent XIII.C contestation admission, word-neutral). (2) XIII.C contestation sentence rewritten to name the contestation parties (Boyer's scholarship-of-teaching account vs. the research-only conception governing promotion-and-tenure norms) anchored to new [^10] (Boyer 1990 / Sturm & Guinier 60 Vand. L. Rev. 515 (2007) / Leering 2018 compound cite), with the institution-must-decide clause separately anchored to new [^11] (ABA Standard 405). Polished frontmatter: word_count 549 -> 573 (+24 from the XIII.C contestation rewrite); footnotes_count 9 -> 11; last_phase verify-provenance -> polish; polish_status holds at needs_polish per the Polish-then-Verify-Provenance closure path on PI-224 / the XIII.C contestation unsupported_claim (the next Verify Provenance Auditor re-audit on Section 13 will re-score against the post-Polish prose to decide whether the [^10]/[^11] anchors clear the contestation unsupported_claim entry, closing PI-224 fully and lifting provenance_score from 4.0 toward >=4.5, or whether the audit surfaces a follow-on routing). Assembled-draft propagation: XIII.B / XIII.C body edits mirrored at the assembly with the inline marker translation polished [^10] -> global [^173] and polished [^11] -> global [^174]; new [^173] and [^174] defs inserted between [^172] and the prior [^173] (Section XIV's first body marker); the prior global [^173]-[^180] Section XIV body markers and footnote defs shifted +2 to [^175]-[^182] across both body refs (lines ~395/399/401/403) and def headers; zero non-Section-XIV cross-references to Section XIV slots needed update (regex-verified zero 'note 173' through 'note 180' references in any non-Section-XIV footnote body). Integrity verified: 182 contiguous footnote defs [^1]-[^182] in the assembled draft, zero gap/dup/orphan, every body inline marker resolves to a def (Python audit). manuscript.total_words 13600 -> 13624, 376 words of ceiling headroom inside the 10,000-14,000 policy window. footnotes_total 180 -> 182. Recurring sentence preserved at three canonical placements; terminology umbrella and em-dash/ASCII-quote/Rigour checks all green. PI-224 stays open pending the next Verify Provenance Auditor re-audit on the post-Polish polished source (the audit will determine whether the new [^10]/[^11] anchors clear the run-280 unsupported_claim entry; if cleared, PI-224 closes and Section 13 polish_status can lift to ready_for_stitch). PI-JLE-LEGAL-ED-LIT advanced one section: Section XIII's Boyer / Sturm & Guinier / Leering / ABA Standard 405 leg is now fully prose-and-footnote propagated; Sections I / II / X / XI still routed.",
@@ -557,7 +557,9 @@
       "phase": "verify",
       "section": "14",
       "status": "open",
-      "type": "live-classroom-substitution"
+      "type": "live-classroom-substitution",
+      "reconfirmed_at_run_285": "2026-05-29T21:00:00Z",
+      "reconfirmation_note_run_285": "Run-285 Verify Persona 2 re-confirms PI-099 at narrowed live-teaching-named-but-loop-framing-elides-classroom-judgment-locus scope. The run-254 Polish PI-170 closure inserted 'supports the professor's live teaching rather than constituting that teaching' at XIV.C, which closes the silence-on-live-classroom leg at the artifact-vs-teaching axis. The narrowed leg still open: XIV.C 'Across every layer, the expert never left the loop' describes the build-and-review pipeline as the locus of judgment (the [^181] *See supra* Section XIII pointer resolves the loop to the institutional-implications discussion of the build-time review pipeline), eliding the in-class teaching loop where the Socratic dialogue, in-class hypothetical, and live reading of student confusion remain the canonical traditionalist particulars (Section I.A line 51 names this explicitly). Suggested fix: add one sentence after 'the expert never left the loop' distinguishing the build-and-review pipeline from the in-class teaching loop and naming the canonical particulars, e.g., 'The loop here is the build-and-review pipeline that prepares the artifact, not the in-class teaching loop where the Socratic dialogue, the in-class hypothetical, and the live reading of student confusion remain irreplaceable per Section I.A.' (38 words). Polish-routed (Section 14 polish_status already routed to needs_polish this tick by PI-226 / PI-227 / PI-228 / PI-229)."
     },
     {
       "claim": "Section XIV is silent on access, equity, and the digital divide. XIV.C frames the close as “a modest, replicable infrastructure choice rather than a mandate” and XIV.A describes a “student-facing” system, but neither carries the access precondition Section X.A states explicitly (“reaches only students who have web access, a usable device, and the digital fluency to navigate it, a precondition Section XII takes up”). The equity caveat present in the body drops out at the conclusion.",
@@ -1223,9 +1225,61 @@
       "routed_to": "polish",
       "description": "Section XIII reads as Section XII's appendix because three of its nine footnotes ([^165] at XIII.A, [^169] at XIII.C, [^171] at XIII.D in assembled-global numbering; polished local [^2], [^6], [^8]) are supra Section XII forward-references that defer the architectural-contrast, governance-traceability, and capacity-gap legs of the institutional-implications argument back to Section XII. The XII.E -> XIII.A seam at full-draft.md lines 371-373 has no bridging sentence: XII.E closes on Bond-collaboration as the limit of a single-author case study and XIII.A opens cold with H2O / MIT / CALI as if the open-educational-resource landscape were a fresh topic, not the natural pivot from the just-closed risk-and-limits discussion. The structural defect is two-axis: missing seam bridge + over-dependence on supra Section XII forward-references makes Section XIII read as derivative of Section XII rather than as a distinct argument. Routes Section 13 polish_status:ready_for_stitch -> needs_polish.",
       "suggested_fix": "In the next Polish or Stitch tick on Section 13, do BOTH: (a) Add one bridging sentence at the XII.E -> XIII.A seam pivoting explicitly from risk-and-limits to institutional-implications (e.g., append at end of XII.E: 'Those risks and limits set the institutional-implications agenda that follows: how the method fits the open-educational-resource landscape, how its labor distributes across faculty and institutional stewardship, how its governance is recognized, and what the institution must decide about adoption.'). (b) Re-anchor [^169] (XIII.C versioned-commit + named-reviewer operational claim) to Section VII (gating) and Section VIII (versioning) rather than Section XII, and split [^171] into an institution-side leg (Section XII) plus a student-side leg (XII.E accessibility surface) per the Persona 3 PI-095 re-confirm. The (b) re-anchoring reduces Section 13's supra-XII dependence from 3-of-9 to 1-of-9 footnotes and lets the section stand on its own."
+    },
+    {
+      "id": "PI-226",
+      "section": "14",
+      "phase": "verify",
+      "type": "voice-and-register-negate-then-reframe-pattern-density",
+      "status": "open",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "opened_by_run": 285,
+      "routed_to": "polish",
+      "severity": "P1",
+      "claim": "Section XIV.A 'The opener was not automation. It was a method.' (full-draft.md line 397) paired with XIV.C 'The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable.' (line 405, canonical recurring sentence per L-002 third placement) and XIV.C 'The adopted method equips an artifact that supports the professor's live teaching rather than constituting that teaching.' (line 405) — three negate-then-reframe X-was-not-Y-it-was-Z pivots in 400 conclusion words = roughly one per 130 words, slogan-stacking density.",
+      "note": "Persona 1 (Skeptical JLE Editor) P1 finding, Verify run 285. Voice-and-register defect at the conclusion's load-bearing site: the canonical recurring sentence per L-002 sits sandwiched between two cousins of the same negate-then-reframe rhetorical move (XIV.A 'was not automation, it was a method' precedes; XIV.C 'supports … rather than constituting' follows), blurring the canonical sentence's earned distinct weight. Distinct from PI-098 (replicability-overclaim) and PI-186 (pedagogical-displacement-disclaimer-gap). Suggested fix: retire one of the two cousin instances bracketing the canonical sentence. (a) Rewrite XIV.A's 'The opener was not automation. It was a method.' to drop the negate-then-reframe form: 'The opener was a method.' (preferred — the 'was not automation' binary is the more conspicuous slogan a JLE editor would flag as SV register). (b) Rewrite XIV.C's 'rather than constituting that teaching' to drop the cousin: 'The adopted method equips an artifact that supports the professor's live teaching.' (lighter touch, preserves XIV.A framing). Either form lifts density from one-per-130-words to one-per-200-words, restoring the canonical sentence's distinctive weight."
+    },
+    {
+      "id": "PI-227",
+      "section": "14",
+      "phase": "verify",
+      "type": "bond-collaboration-prong-elision-in-future-work-framing",
+      "status": "open",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "opened_by_run": 285,
+      "routed_to": "polish",
+      "severity": "P1",
+      "claim": "Section XIV.C 'The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.' (full-draft.md line 405) implies a single-faculty-member single-institution n=2 replication and silently elides the Bond meta-review's collaboration prong that the article elsewhere foregrounds (the rigour anchor is canonical at four full-draft sites: lines 411/579/695/727; Section XII.E closes on collaboration as the limit of a single-author case study; Section XIII.B names institutional-collaboration roles).",
+      "note": "Persona 3 (AI-in-Education Researcher) P1 finding, Verify run 285. The article's own Section XII.E names collaboration as a structural limit and Bond's 'ethics, collaboration, and rigour' three-prong call is the meta-review's organizing frame; XIV.C's second-instance future-work sentence is the natural conclusion-level site to echo the collaboration prong but reads as same-context-different-doctrine replication rather than cross-institutional collaborative form. Distinct from PI-100 (equity-and-accessibility-gap) and PI-098 (replicability-overclaim). Suggested fix: (a) Rewrite the sentence to specify collaborative form: 'The natural next step is a second instance in another course built and reviewed by a different faculty member at a different institution under a shared evaluation protocol, addressing the collaboration prong Bond's meta-review identifies as a field-level gap and that Section XII.E names as a structural limit of the single-author case study.' (+25 words, names cross-institutional collaboration). (b) Split into two sentences with the cross-reference (lighter rewrite, +29 words). The (a) form is preferred for compactness."
+    },
+    {
+      "id": "PI-228",
+      "section": "14",
+      "phase": "verify",
+      "type": "synthesis-section-internal-cross-reference-disclosure-gap",
+      "status": "open",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "opened_by_run": 285,
+      "routed_to": "polish",
+      "severity": "P1",
+      "claim": "Section 14's polished prose does not flag that the conclusion's procedural summary rests entirely on internal cross-references with zero external primary anchors; all eight footnotes [^1]-[^8] (assembled [^175]-[^182]) are *See supra* intra-article cross-references to Sections I/VII/X/XI/XII/XIII, and the body prose does not disclose the audit's structural finding that this is intentional. The gap_honesty criterion-5 4-band deduction from the run-140 baseline holds at this re-audit because no Polish tick has yet addressed it.",
+      "note": "Persona 4 (Provenance Auditor) P1 finding, Verify run 285 re-audit; provenance_score 4.0 -> 4.4 (+0.4 on criterion-3 attribution_discipline 4 -> 5 and criterion-4 numerical_precision 4 -> 5, both on the run-252 PI-172 closure); 4.4 < 4.5 gate so polish_status reverts ready_for_stitch -> needs_polish. The path to 4.6 (above the gate) is closing this PI by adding one sentence to XIV.A (end of paragraph 1, before 'It closes by naming what opened that archive' pivot) OR to XIV.B (start of paragraph 2, before 'The case study showed a tractable pipeline') flagging the conclusion's intentional all-internal-cross-reference structure. Example XIV.A addition: 'The closing argument that follows synthesizes the article's earlier sections rather than introducing new primary authority; every footnote in this conclusion is an internal cross-reference to the section where each claim's primary anchor lives.' (33 words; explicit gap-honesty flag). The single-sentence addition closes the gap_honesty 4-band and lifts the section above the 4.5 gate."
+    },
+    {
+      "id": "PI-229",
+      "section": "14",
+      "phase": "verify",
+      "type": "adopter-first-step-method-spec-routing-gap",
+      "status": "open",
+      "opened_at": "2026-05-29T21:00:00Z",
+      "opened_by_run": 285,
+      "routed_to": "polish",
+      "severity": "P1",
+      "claim": "Section XIV.C 'A faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^181]' (full-draft.md line 405) names four method elements but the [^181] footnote forwards adopters to Section XIII (Institutional Implications) for context rather than to the spec sections where each element is documented for replication: typed schema in Section V; verified-source discipline in Section VI (and *Prize Cases* narrative in Section VII); professorial gating in Section VII; iterative loop with six-phase rotation pinned to VII.B.",
+      "note": "Persona 5 (Practitioner-Adopter) SUPPLEMENTAL P1 finding rotating in per PERSONAS.md run_count-mod-3 = 285 mod 3 = 0 -> Persona 5, Verify run 285. The conclusion's adoption-invitation footnote routes adopters to the contextual section (XIII) rather than to the spec sections (V/VI/VII) where the four named method elements are documented for replication. Distinct from PI-098 (replicability-overclaim). Suggested fix: (a) Expand [^181] from a single Section XIII pointer to a compound cross-reference to Section XIII + Section V (typed schema) + Section VI (verified-source discipline) + Section VII (professorial gating + iterative loop with VII.B six-phase enumeration); footnote word count ~120, above L-059 50-word cap unless leaner form used. (b) Inline the section anchors in body prose: 'A faculty member adopts the method — the typed schema (Section V), the verified-source discipline (Section VI), the professorial gating (Section VII), and the iterative loop (Section VII per VII.B's six-phase enumeration) — rather than the constitutional-law artifact.' (+18 body words; preferred form, routes adopters at the point of naming)."
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -1235,16 +1289,16 @@
   ],
   "provenance_audit": {
     "global_unsupported_open": 15,
-    "last_audit_at": "2026-05-31T18:00:00Z",
-    "last_audit_section": "13",
-    "last_reaudit_at": "2026-05-31T18:00:00Z",
-    "last_reaudit_section": "13",
+    "last_audit_at": "2026-05-29T21:00:00Z",
+    "last_audit_section": "14",
+    "last_reaudit_at": "2026-05-29T21:00:00Z",
+    "last_reaudit_section": "14",
     "manifest_path": "manuscript/claim-manifest.jsonl",
-    "reaudit_count": 12,
+    "reaudit_count": 13,
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 284,
+  "run_count": 285,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1758,20 +1812,26 @@
       "last_cite_propagation_note": "Run-252: PI-172 closed; [^3]/[^173] now pin to VII.B (six-phase enumeration), VII.C (forced-finding Verify), VII.D (loop memory). Word-neutral at 47 words (under L-059 50-word cap). Three-site propagation per L-035. provenance_audited reset for next Verify re-audit.",
       "last_cite_propagation_run": 252,
       "last_cite_run": 252,
-      "last_phase": "polish",
+      "last_phase": "verify-provenance",
       "last_polish_at": "2026-05-29T15:00:00Z",
       "outline_status": "ready_for_draft",
       "polish_completed_at": "2026-05-25T13:00:00Z",
-      "polish_status": "ready_for_stitch",
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-30T05:00:00Z",
-      "provenance_score": 4.0,
+      "polish_status": "needs_polish",
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-29T21:00:00Z",
+      "provenance_score": 4.4,
       "provenance_stale_reason": "Run-252 Cite materially changed [^3] body (bare See supra -> pinned three-target cross-reference to VII.B/VII.C/VII.D); next Verify Provenance Auditor re-audit reads the post-Cite footnote. Run-140 4.0 score retained as last-known; criterion-2 (primary_source_ratio) deduction from the bare-See-supra granularity should clear at re-audit since the pin gap is closed.",
       "target_words": 400,
       "title": "Conclusion",
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-30T05:00:00Z",
-      "verify_routing_reason": "Run 140 Verify/provenance (score 4.0 < 4.5): polish_status needs_polish for PI-169 (XIV.B meta-rhetoric), PI-170 (XIV.C editor-vs-teacher conflation), PI-171 (XIV.B chatbot-architecture tradeoff); cite_status needs_cite for PI-172 ([^3] bare See supra without pin for the six-phase governance enumeration; CLOSED at run-252 Cite). All four distinct from open PI-098/099/100. unsupported_claims 0 (conclusion fully footnoted)."
+      "verify_routing_reason": "Run 140 Verify/provenance (score 4.0 < 4.5): polish_status needs_polish for PI-169 (XIV.B meta-rhetoric), PI-170 (XIV.C editor-vs-teacher conflation), PI-171 (XIV.B chatbot-architecture tradeoff); cite_status needs_cite for PI-172 ([^3] bare See supra without pin for the six-phase governance enumeration; CLOSED at run-252 Cite). All four distinct from open PI-098/099/100. unsupported_claims 0 (conclusion fully footnoted).",
+      "polish_status_changed_at": "2026-05-29T21:00:00Z",
+      "polish_status_changed_reason": "Run-285 Verify Provenance Auditor re-audit (first re-audit since the run-140 baseline): provenance_score 4.0 -> 4.4 (+0.4 lift on criterion-3 attribution_discipline 4 -> 5 and criterion-4 numerical_precision 4 -> 5, both on the run-252 Cite PI-172 closure pinning [^3]/[^177] to VII.B + VII.C + VII.D); 4.4 < 4.5 gate, so polish_status reverts ready_for_stitch -> needs_polish per rubric exit condition. Five P1 findings route here: PI-226 Persona 1 (XIV.A/XIV.C negate-then-reframe pattern density), PI-099 re-confirm narrowed Persona 2 (loop framing elides classroom-judgment locus), PI-227 Persona 3 (Bond-collaboration-prong elision in XIV.C second-instance future-work framing), PI-228 Persona 4 (synthesis-section internal-cross-reference disclosure gap, gap_honesty 4-band path to 4.6), PI-229 Persona 5 supplemental (XIV.C [^181] adopter first-step routing gap).",
+      "provenance_audit_run": 285,
+      "provenance_score_prior": 4.0,
+      "provenance_audit_run_prior": 140,
+      "provenance_note_run285": "Run-285 Verify-provenance re-audit, first re-audit of Section 14 since the run-140 baseline (4.0 across 5/3/4/4/4). Re-read polished/section-14-conclusion.md post run-252 Cite (PI-172 [^3] bare *See supra* Section VII replaced with pinned three-target cross-reference to VII.B six-phase enumeration + VII.C forced-finding Verify pass + VII.D loop memory; word-neutral at 47 of L-059 50-word cap) and run-254 Polish (PI-169 XIV.B meta-rhetoric removal, PI-170 XIV.C live-teaching-distinguishing sentence insertion, PI-171 XIV.B chatbot-architecture-tradeoff clause appended). claims_total hold at 9; claims_mapped hold at 9; unsupported_claims stay empty. Criterion scores 5/3/5/5/4 = 4.4 (+0.4 from baseline): criterion 1 claim_coverage 5 (9/9 mapped), criterion 2 primary_source_ratio 3 (0 of 8 footnotes external; structural 3-band ceiling for synthesis-conclusion form that does not admit external anchors, same pattern as Sections 03/04/05/09/10/11/13), criterion 3 attribution_discipline 5 (lift 4 -> 5 on run-252 PI-172 closure), criterion 4 numerical_precision 5 (lift 4 -> 5 on the same closure pinning six-phase rotation to VII.B enumeration), criterion 5 gap_honesty 4 (hold; the prose does not flag the conclusion's all-internal-cross-reference structure; PI-228 opens this tick targeting the one-sentence disclosure path to 4.6). 4.4 < 4.5 gate; polish_status reverts ready_for_stitch -> needs_polish. Five P1s route here: PI-226 NEW (Persona 1 XIV.A/XIV.C negate-then-reframe pattern density 3 occurrences in 400 words), PI-099 re-confirm narrowed (Persona 2 live-teaching named at XIV.C but loop framing elides classroom-judgment locus), PI-227 NEW (Persona 3 XIV.C second-instance future-work framing omits Bond meta-review collaboration prong), PI-228 NEW (Persona 4 synthesis-section internal-cross-reference disclosure gap_honesty 4-band path to 4.6), PI-229 NEW (Persona 5 supplemental XIV.C [^181] adopter first-step routing gap forwards to Section XIII institutional implications rather than to spec sections V/VI/VII). Path to 4.6: PI-228 closure adds one sentence to XIV.A or XIV.B flagging the conclusion's intentional all-internal-cross-reference structure, lifting gap_honesty 4 -> 5."
     }
   },
   "target_venue": "Journal of Legal Education",
@@ -1780,18 +1840,18 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "13",
+    "last_audit_section": "14",
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "13",
-    "last_run": 280,
-    "last_run_at": "2026-05-31T18:00:00Z",
-    "new_findings_count": 2,
+    "last_reaudit_section": "14",
+    "last_run": 285,
+    "last_run_at": "2026-05-29T21:00:00Z",
+    "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 117,
+    "p1_open": 121,
     "p2_open": 43,
     "personas_read": 5
   },
-  "verify_deferred_note": "verify run 270 re-audited Section 10 after the run-267 Cite / run-268 Polish burst landed; provenance_score 4.0 -> 4.2 (+0.2 from criterion 1 lift on the run-267 PI-218 closure and run-268 +2-claim insertion), still under the 4.5 gate so polish_status reverts ready_for_stitch -> needs_polish; two new P1s opened (PI-220 X.D/X.E two-track-n=2-framing tension; PI-221 X.E same-checkpoints Section VII cross-reference gap); two re-confirms held (PI-209 7th consec on XI.B ethics/IRB silence; PI-210 6th consec on IX.E internal-tracker labels). The rotation returns to verify -> harvest on the natural cadence; the routing-discipline-asymmetry pattern persists (Section 10 burst across three consecutive ticks vs. Section 09 / Section 11 untouched).",
+  "verify_deferred_note": "verify run 285 re-audited Section 14 after the run-252 Cite PI-172 closure landed and the run-254 Polish three-PI burst (PI-169/170/171) landed; provenance_score 4.0 -> 4.4 (+0.4 on criterion-3 attribution_discipline and criterion-4 numerical_precision both lifting 4 -> 5 on the run-252 PI-172 closure), still under the 4.5 gate so polish_status reverts ready_for_stitch -> needs_polish; five P1s route Section 14 to needs_polish (PI-226 Persona 1 negate-then-reframe pattern density, PI-099 re-confirm narrowed Persona 2 loop-framing-elides-classroom-judgment, PI-227 Persona 3 Bond-collaboration-prong elision in XIV.C, PI-228 Persona 4 synthesis-section internal-cross-reference disclosure gap, PI-229 Persona 5 supplemental XIV.C [^181] adopter first-step routing gap). The rotation returns to verify -> draft on the FINAL-PUSH skip-harvest/outline cadence; the routing-discipline-asymmetry pattern compounds from run 280's three-section idle to five sections idle (Sections 09/10/11/14 untouched in the run-280 -> run-285 interval while Section 13 burst across run-281/282/283 for PI-224 closure).",
   "word_count_policy": {
     "earmark": "extra 2000 words reserved for Sections XI (was 900, now 1200) and XII (was 800, now 1400); other section budgets unchanged",
     "new_max": 14000,
