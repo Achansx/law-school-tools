@@ -87,15 +87,15 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-30T00:30:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-30T01:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-29T23:30:00Z",
@@ -1122,7 +1122,8 @@
       "type": "literature-venue-fit",
       "legs_progress": {
         "I_closed_at_run_287": "Section I leg closed at run-287 Cite via [^8] augmentation to Choi/Hickman/Monahan/Schwarcz 2022 *ChatGPT Goes to Law School*, 71 J. Legal Educ. 387, the JLE-flagship AI-in-law-school anchor (URL verified live via WebFetch). XIII leg already closed at run 281/282/283 burst (Boyer/Sturm-Guinier/Leering [^10] + ABA Standard 405 [^11]). Sections II, X, XI legs remain open.",
-        "II_draft_advanced_at_run_296": "Section II leg advanced at run-296 Draft: inserted one 60-word legal-ed-canon-anchor sentence into II.E (between Abrams [^8] and Bond [^9]) string-citing Carnegie Report (Sullivan et al. 2007), Best Practices for Legal Education (Stuckey et al. 2007), and Sturm & Guinier The Law School Matrix (60 Vand. L. Rev. 515, 2007) via one [CITE:] placeholder. Bluebook formatting and URL liveness verification for the three sources deferred to the next Cite tick on Section 02 (L-022/L-043). Leg closes when the placeholder is converted to a published Bluebook footnote and propagated to polished/full-draft (anticipated runs 297 Cite, 298+ Polish/Stitch). Sections X and XI legs remain open after this tick."
+        "II_draft_advanced_at_run_296": "Section II leg advanced at run-296 Draft: inserted one 60-word legal-ed-canon-anchor sentence into II.E (between Abrams [^8] and Bond [^9]) string-citing Carnegie Report (Sullivan et al. 2007), Best Practices for Legal Education (Stuckey et al. 2007), and Sturm & Guinier The Law School Matrix (60 Vand. L. Rev. 515, 2007) via one [CITE:] placeholder. Bluebook formatting and URL liveness verification for the three sources deferred to the next Cite tick on Section 02 (L-022/L-043). Leg closes when the placeholder is converted to a published Bluebook footnote and propagated to polished/full-draft (anticipated runs 297 Cite, 298+ Polish/Stitch). Sections X and XI legs remain open after this tick.",
+        "II_closed_at_run_297": "Section II leg closed at run-297 Cite: converted the run-296 [CITE:] placeholder into Bluebook footnote [^12] string-citing Carnegie Report (Sullivan et al. 2007), Best Practices for Legal Education (Stuckey et al., CLEA 2007), and Sturm & Guinier The Law School Matrix (60 Vand. L. Rev. 515, 2007). URL liveness verified live (Carnegie WebFetch PDF; Stuckey WebSearch fallback for transient 503 per L-022; Sturm & Guinier WebSearch fallback). Bluebook form: 49 words, short titles, shared 'all last visited May 29, 2026' parenthetical, under L-059 50-word cap. Drafts and polished propagated this tick per L-035; full-draft deferred to next Stitch per L-063. Sections X and XI legs remain open after this tick."
       },
       "last_progress_at": "2026-05-30T00:30:00Z",
       "last_progress_run": 296
@@ -1411,7 +1412,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 296,
+  "run_count": 297,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1449,12 +1450,12 @@
       "cite_completed_at": "2026-05-22T05:00:00Z",
       "cite_note": "Cite tick resolved PI-072 (Section II AI-in-higher-education literature-engagement gap). Added footnote [^9] citing Bond et al. 2024 meta-review (21 Int'l J. Educ. Tech. Higher Educ. art. 4), URL https://link.springer.com/article/10.1186/s41239-023-00436-z verified live via WebSearch per L-022 (verbatim title-and-URL match), with an L-024 transfer clause in II.E body prose naming what carries over (the meta-review's evidentiary standard, which the article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII) and what does not (the chatbot-tutor and adaptive-system intervention setting it surveys, versus the reviewed static publication of the case study). Kuhail et al. 2023 (named in prior Verify routing notes and in PI-072) is NOT in the workplan annotated bibliography; it was deliberately not added to avoid an unverified/fabricated citation, and Bond et al. alone closes the field-engagement gap. The five remaining Section 02 P1s (PI-067 II.B numeric colon-list, PI-068 II.E self-flagging meta-rhetoric, PI-069 II.D casebook-as-sequence overclaim, PI-070 II.E-to-III.A seam, PI-071 II accessibility silence) are Polish-level and remain for the next Polish tick. Body grew to 840 words (target 700, +20%); flagged for Stitch trim.",
       "cite_redone_at": "2026-05-29T20:00:00Z",
-      "cite_status": "needs_cite",
+      "cite_status": "needs_polish",
       "claims_mapped": 12,
       "claims_total": 14,
       "current_words": 1173,
       "draft_completed_at": "2026-05-29T18:00:00Z",
-      "draft_status": "needs_cite",
+      "draft_status": "needs_polish",
       "evidence_cards": 9,
       "evidence_status": "populated",
       "footnotes_count": 11,
@@ -1465,7 +1466,7 @@
       "polish_note": "Polish run 110 (re-polish after eighth-Verify routing) resolved four of five routed P1s: PI-067 (II.B numeric colon-list plus Uploaded Media subfolder), PI-068 (II.E self-flagging meta-rhetoric, L-036), PI-069 (II.D casebook doctrinal-organization acknowledgment), and PI-071 (II.B accessibility assumption with Section XII forward-reference, L-050). PI-070 (II.E-to-III.A seam) deferred to the preferred Section 03 III.A transition-first fix and remains open. The prior polished file was stale relative to the 2026-05-27 Cite redo and lacked the Bond et al. 2024 [^9] footnote and its L-024 transfer clause (PI-072 resolution); this tick carried that cited content forward into the polished file (footnotes_count 8->9 in the file frontmatter; state already at 9) with curly-quote hygiene. Body is 857 words (target 700, +22%) and is flagged for Stitch trim; the +10% band is unreachable without dropping required Verify/Cite content. Hygiene clean (zero em dashes, zero straight quotes). Cross-section Bond title-spelling drift (Section II 'Rigour' vs full-draft Section XI/XII 'Rigor') logged for Stitch's L-054 pass. polish_status -> ready_for_stitch.",
       "polish_redone_at": "2026-05-29T21:30:00Z",
       "polish_status": "needs_polish",
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_score": 4.0,
       "stitched_at": "2026-05-22T23:00:00Z",
       "target_words": 700,
@@ -1473,7 +1474,7 @@
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T05:00:00Z",
       "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule).",
-      "last_cite_run": 292,
+      "last_cite_run": 297,
       "cite_note_run277": "Run-277 Cite tick resolved PI-119 (build-system-artifact strip from Section II footnotes [^1]/[^4]/[^8]/[^9] Bluebook parentheticals; 'URL liveness verified live via WebSearch with allowed_domains scoping ... per L-022/L-024' language removed; parentheticals now clean Bluebook form '(last visited June 1, 2026)') and resolved the Section 02 portion of PI-122 (App. D Correspondence Excerpts false cross-reference removed from [^2]/[^3]/[^6]; App. A title corrected to actual 'Input Inventory'); PI-122 stays open for the IV/VIII/IX occurrences. URL liveness re-verified live: Rubin/Mertz/Abrams via WebFetch (verbatim title-and-author matches); Bond via WebSearch with allowed_domains scoping to link.springer.com per L-022 after WebFetch returned 303 IDP cookie-auth (verbatim title-and-URL match). Mertz [^4] also stripped 'workplan's directive of restraint' L-057/PI-216 build-system-language while preserving substantive contextual-frame disclaimer; Abrams [^8] meta-commentary trimmed to rhetorical-posture-and-venue disclaimer; Bond [^9] Kuhail-routing paragraph removed (build-system-artifact). Body prose untouched per Cite no-prose-edit rule. Polished and drafts files mirrored. cite_status->needs_polish.",
       "last_phase": "draft",
       "last_polish_run": 293,
@@ -1503,7 +1504,9 @@
         }
       ],
       "last_draft_run": 296,
-      "draft_run296_note": "Run-296 Draft tick on Section 02 II.E under FINAL-PUSH priority 2 (PI-JLE-LEGAL-ED-LIT, Section II leg; Section I leg closed at run-287 via [^8] Choi/Hickman/Monahan/Schwarcz, Section XIII leg closed at runs 281-283 via Boyer/Sturm-Guinier/Leering [^10] + ABA Standard 405 [^11]; Sections X and XI legs remain open). Inserted one 60-word legal-ed-canon-anchor sentence into drafts II.E between the Abrams [^8] sentence and the Bond [^9] sentence: 'The line itself is older than its recent JLE representatives. The Carnegie Report and the Best Practices for Legal Education road map are the load-bearing modern statements of pedagogical reform by augmentation rather than replacement, and Susan Sturm and Lani Guinier\u2019s law-school-matrix critique anchors the institutional-culture diagnosis the proposed course-knowledge layer has to take into account.' One [CITE:] placeholder string-citing three legal-ed-canon sources for the next Cite tick to Bluebook-format and verify URL liveness per L-022/L-043: (1) Sullivan/Colby/Wegner/Bond/Shulman, Educating Lawyers (Carnegie Foundation/Jossey-Bass 2007) at archive.carnegiefoundation.org; (2) Stuckey et al., Best Practices for Legal Education (CLEA 2007) at encle.org; (3) Susan Sturm & Lani Guinier, The Law School Matrix, 60 Vand. L. Rev. 515 (2007). Drafts word_count 1113 -> 1173 (+60); footnotes_count holds at 11 pending the next Cite tick (which will add [^12] or one consolidated string-cite slot per the run-292 L-059 concise-form precedent). draft_status / cite_status -> needs_cite; polish_status -> needs_polish; status -> needs_cite. +67.6% body overage persists and stays Stitch-routed (II.B / II.D the canonical trim target, not II.E or II.F whose content is PI-JLE-RELATED-WORK / PI-JLE-LEGAL-ED-LIT load-bearing). Three-site L-035 propagation: drafts edited this tick; polished and full-draft propagation deferred to the next Cite tick."
+      "draft_run296_note": "Run-296 Draft tick on Section 02 II.E under FINAL-PUSH priority 2 (PI-JLE-LEGAL-ED-LIT, Section II leg; Section I leg closed at run-287 via [^8] Choi/Hickman/Monahan/Schwarcz, Section XIII leg closed at runs 281-283 via Boyer/Sturm-Guinier/Leering [^10] + ABA Standard 405 [^11]; Sections X and XI legs remain open). Inserted one 60-word legal-ed-canon-anchor sentence into drafts II.E between the Abrams [^8] sentence and the Bond [^9] sentence: 'The line itself is older than its recent JLE representatives. The Carnegie Report and the Best Practices for Legal Education road map are the load-bearing modern statements of pedagogical reform by augmentation rather than replacement, and Susan Sturm and Lani Guinier\u2019s law-school-matrix critique anchors the institutional-culture diagnosis the proposed course-knowledge layer has to take into account.' One [CITE:] placeholder string-citing three legal-ed-canon sources for the next Cite tick to Bluebook-format and verify URL liveness per L-022/L-043: (1) Sullivan/Colby/Wegner/Bond/Shulman, Educating Lawyers (Carnegie Foundation/Jossey-Bass 2007) at archive.carnegiefoundation.org; (2) Stuckey et al., Best Practices for Legal Education (CLEA 2007) at encle.org; (3) Susan Sturm & Lani Guinier, The Law School Matrix, 60 Vand. L. Rev. 515 (2007). Drafts word_count 1113 -> 1173 (+60); footnotes_count holds at 11 pending the next Cite tick (which will add [^12] or one consolidated string-cite slot per the run-292 L-059 concise-form precedent). draft_status / cite_status -> needs_cite; polish_status -> needs_polish; status -> needs_cite. +67.6% body overage persists and stays Stitch-routed (II.B / II.D the canonical trim target, not II.E or II.F whose content is PI-JLE-RELATED-WORK / PI-JLE-LEGAL-ED-LIT load-bearing). Three-site L-035 propagation: drafts edited this tick; polished and full-draft propagation deferred to the next Cite tick.",
+      "draft_words": 1137,
+      "cite_note_run297": "Run-297 Cite tick converted run-296 Draft II.E [CITE:] placeholder string-citing Carnegie/Stuckey/Sturm-Guinier into consolidated Bluebook footnote [^12] (49 words, short titles, shared 'all last visited' parenthetical, under L-059 50-word cap). URL liveness: Carnegie WebFetch PDF live; Stuckey 503 transient + WebSearch encle.org canonical hit per L-022; Sturm & Guinier WebSearch scholarship.law.vanderbilt.edu canonical hit. Three-site L-035: drafts and polished mirrored this tick (polished inserted both the curly-form 56-word sentence and [^12] since run-296 only touched drafts); full-draft deferred to next Stitch per L-063. footnotes_count 11->12. drafts body 1173->1137 (-36); polished body 1100->1157 (+57 from sentence insertion). cite_status needs_cite -> needs_polish. PI-JLE-LEGAL-ED-LIT Section II leg closed at Bluebook-form level; Sections X and XI legs remain open. provenance_audited reset true->false (three new external claims post-date run-295 audit)."
     },
     "03": {
       "cite_at": "2026-06-05T15:00:00Z",
