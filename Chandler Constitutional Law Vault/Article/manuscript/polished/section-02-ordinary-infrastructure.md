@@ -3,10 +3,11 @@ id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
 status: needs_polish
 target_words: 700
-word_count: 857
-last_phase: polish
+word_count: 1112
+maintainer_note_run279_relatedwork: "Maintainer inserted new subsection II.F (Adjacent tools, and what the method adds) closing PI-JLE-RELATED-WORK: commercial study aids (Quimbee/CrunchTime/Oyez/Studicata; Studicata = closest method analog), the digital-garden/evergreen-notes precedent (Ahrens, Matuschak, Obsidian), and a consolidated three-axis novelty statement cross-referencing the AI-tutor (Sec X), open-casebook (Sec XIII), and autonomous-loop (Sec VII) distinctions already in the draft. Five [CITE:] placeholders left for the Cite phase to Bluebook-format and verify live (Quimbee https://www.quimbee.com; Oyez https://www.oyez.org; Studicata https://www.studicata.com; Ahrens, How to Take Smart Notes (2017); Matuschak https://notes.andymatuschak.org). cite_status set to needs_cite for that. Section is now ~1112 words vs 700 target; II.F is PROTECTED related-work content — Stitch should rebalance by trimming the pre-existing II.B/II.D overage flagged in run-278, NOT by cutting II.F. Global draft ~13,600, headroom under the 14,000 ceiling."
+last_phase: draft
 draft_status: needs_polish
-cite_status: needs_polish
+cite_status: needs_cite
 polish_status: needs_polish
 last_polish_run: 278
 polish_run278_word_budget_flag: true
@@ -47,6 +48,10 @@ A third affordance the inherited inventory does not produce is the doctrinal-syn
 ## E. Positioning within the JLE pedagogical-reform line
 
 The course knowledge system extends the casebook, the syllabus, and the live classroom rather than displacing any of them. Jamie R. Abrams’s reframing of the Socratic method belongs to a Journal of Legal Education line of pedagogical-reform pieces that adapt inherited teaching forms instead of rejecting them, and the same move applies here: the inherited form is not the deficiency the proposal is built to remedy, and the contribution is the layer the inherited form was never designed to carry.[^8] The article also engages the AI-in-higher-education research literature, whose most recent meta-review of that field calls for greater ethics, collaboration, and rigour in how such research is conducted and reported.[^9] What carries over from that meta-review is its evidentiary standard, which this article meets by disclaiming learning-outcomes gains and cataloguing risks in Section XII; what does not carry over is the chatbot-tutor and adaptive-system intervention setting it surveys, because the case study here is a reviewed static publication that places no model in front of the student.
+
+## F. Adjacent tools, and what the method adds
+
+Three families of existing tools sit near this proposal, and none occupies its position. The first is the commercial study aid: Quimbee, CrunchTime, and Oyez supply case summaries, outlines, and audio across the standard curriculum, and Studicata pairs editorial review with drafting assistance to produce its briefs.[CITE: Quimbee, https://www.quimbee.com] [CITE: Oyez, https://www.oyez.org] [CITE: Studicata, https://www.studicata.com] Studicata’s draft-then-review workflow is the closest methodological analogue, yet each of these is a product that scales one editorial voice across many courses for a paying student, where the course knowledge system preserves a single professor’s judgment over that professor’s own course, with every quotation traced to the controlling opinion. The second family is the published personal knowledge base, the linked, evergreen “digital garden” that writers such as Sönke Ahrens and Andy Matuschak have developed and that the Obsidian community now publishes routinely.[CITE: Sönke Ahrens, How to Take Smart Notes (2017)] [CITE: Andy Matuschak, Evergreen notes, https://notes.andymatuschak.org] The form is a real precedent; what is new is applying it to a doctrinal course under source verification and professorial review rather than to a writer’s private notes. The third family comprises the alternatives the article distinguishes elsewhere: the runtime AI tutor (Section X), the open casebook (Section XIII), and the autonomous build loop (Section VII). Across all three the distinguishing commitments hold constant. Accuracy is a property of a reviewed static artifact rather than of a model answering at the moment of the query; the judgment preserved is one identified professor’s rather than a commercial or crowd aggregate; and the navigational graph grows from a personal teaching archive rather than from a casebook’s linear sequence or a machine-reasoning legal ontology.
 
 ## Footnotes
 
