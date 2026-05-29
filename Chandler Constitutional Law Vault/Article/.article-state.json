@@ -85,7 +85,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "harvest",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -1196,8 +1196,6 @@
   ],
   "phase_index": 0,
   "phases": [
-    "harvest",
-    "outline",
     "draft",
     "cite",
     "polish",

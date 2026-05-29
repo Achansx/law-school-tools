@@ -18,6 +18,19 @@ Step-by-step phase instructions. Read this plus `PROJECT_PRIMER.md`, the current
    This data is the source for Section IX (Cost and Labor). Honesty here is the article's argument; do not estimate when you can count.
 10. If the cumulative state suggests the article is submission-ready, set `gates.submission_ready.awaiting_human = true` (see Stitch and Verify exit conditions).
 
+## FINAL-PUSH MODE (active 2026-05-29, set by maintainer; removed at consolidation)
+
+While this block is present it overrides the default rotation and selection heuristics:
+
+- **Rotation — skip Harvest and Outline.** Scaffold-first is lifted (all 14 sections `evidence_status: populated`) and the abstract + appendices are drafted, so Harvest and Outline are noops. When advancing `current_phase` (dispatcher step 7), if the next phase would be `harvest` or `outline`, skip forward to `draft`. Effective rotation: **draft → cite → polish → stitch → verify → draft …**. EXCEPTION: if any section regresses to `evidence_status: none` or `outline_status: needs_work`, run the one needed Harvest/Outline run, then resume skipping. (Verify is NOT throttled — it still runs every cycle.)
+- **Priority — attack the real blockers first.** Cite, Polish, and Draft MUST address the following before any generic "lowest ratio / needs_work" section round-robin, in this order:
+  1. **PI-JLE-RELATED-WORK** — add the related-work / novelty passage (route Sections I/II) using the "Prior-art / comparables" block in `research/legal-ed-scholarship.md`. Name-and-distinguish H2O/Open Casebook, Studicata, CALI/eLangdell, and live LLM tutors; acknowledge the digital-garden precedent. New prose = a Draft or Polish task.
+  2. **PI-JLE-LEGAL-ED-LIT** — re-anchor load-bearing pedagogy/framing claims on the legal-education canon (Carnegie, Best Practices, ABA 302/315, Schwartz, Sturm & Guinier, plus the Round-2/3 + governance adds in that research file). Cite verifies each URL live (L-022/L-043); never fabricate.
+  3. **PI-192**.
+  4. **Consolidation blockers:** strip workplan-language references from published prose (PI-216 / L-057/L-058 violations); reconcile the stale "198 pages / 92 cases / 27 topics / 79 lectures" counts against live figures, or add the L-011 drift footnote if 198 is the intentional snapshot; wire or remove dangling figure references (only some figures are placed in the full draft).
+  Only after the active section's relevant blockers are addressed should the phase fall back to its normal heuristic.
+- This block does not change rubric scoring, the never-fabricate rule, Bluebook 21st form, curly-quote/no-em-dash prose rules, or the push protocol.
+
 ## Phase: Harvest
 
 **Goal:** Build or refresh evidence cards in `manuscript/evidence/`. One card per atomic fact / quotation / statistic the article needs.
