@@ -1,14 +1,15 @@
 ---
 id: "14"
 title: "Conclusion"
-status: ready_for_stitch
+status: needs_polish
 target_words: 400
-word_count: 411
-last_phase: polish
-draft_status: needs_cite
+word_count: 419
+last_phase: draft
+draft_status: needs_polish
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: needs_polish
 last_polish_at: 2026-05-30T03:00:00Z
+draft_note_run_312: "Draft run 312 paired-fix-echo leg of PI-247 (Persona 7 Adversarial Reviewer; method-asserted-not-demonstrated n=1 rejection vector logged at run-311 Verify): inserted an 8-word echo sentence at the end of XIV.B immediately after the build-time-auditability sentence and its [^6] marker, reading 'The article describes the schema; the test awaits.' The echo mirrors the Section X.E end-disclaimer landed this same Draft tick ('The article describes the schema; the test is a second instance, a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints, that this piece explicitly routes to future work.'), reinforcing the Reviewer-2-anticipation meta-disclaimer at the Conclusion's already-load-bearing 'what the case study did not claim' enumeration. Eight words exactly per PI-247's prescribed echo count; no em dashes per L-005; no straight ASCII quotes; reads as a tight semicolon-joined coda to XIV.B's 'declined to claim' list rather than a sixth standalone disclaimer. No new footnote needed; the echo is a self-contained meta-statement keyed to Section X.E's argument-spine framing (the X.E [^16] forward to Section XI's evaluation plan already carries the substantive cross-reference). Body word delta +8; word_count 411 -> 419 (+4.75% of target 400, within the RUNBOOK Draft 15% cap and within the Polish +/-10% band). polish_status reverts ready_for_stitch -> needs_polish for the polished/full-draft propagation accountable to the next Polish tick on Section 14 under L-035 three-site discipline (polished/section-14-conclusion.md and manuscript/full-draft.md both still end XIV.B at '...auditability.[^6]' without the echo; this Draft tick scope is drafts-only, matching the run-302 / run-307 Draft precedents' drafts-first then Polish-propagates pattern). draft_status needs_cite -> needs_polish: this tick is the Draft layer's owed work on PI-247 XIV.B leg; no new cite work generated (the echo carries no factual claim requiring a Bluebook anchor). status mirrors polish_status. PI-247 status open; XIV.B leg advanced at Draft level pending Polish propagation; Section 10 X.E leg landed in parallel this same tick at drafts/section-10-generalization.md."
 polish_note_run288_drafts: "Mirror of polished/section-14-conclusion.md PI-226 Polish edit landed at drafts lines 21 (XIV.A 'opener was not automation. It was a method, one in which' -> 'opener is a method, in which') and 29 (XIV.C 'rather than constituting that teaching' -> '; the teaching itself remains the professor's'). Three-site L-035 propagation per polished frontmatter polish_note_run288. -5 / word-neutral; drafts word_count 415 -> 411 (one-sentence XIV.B structure carries 11 extra words vs polished two-sentence split, hence drafts 411 vs polished 400). polish_status needs_polish -> ready_for_stitch; status mirrors polished."
 footnotes_count: 8
 drafted_from_outline: outline-14-conclusion.md
@@ -24,7 +25,7 @@ The article opened with a law professor’s archive that no one, the professor i
 
 ## B. What the case study showed, and what it did not claim
 
-The case study showed a tractable pipeline that ran from source files to typed notes to a deployed, reviewed static site, governed by a six-phase rotation, a running lessons memory, and a forced-finding verification pass, with a professor reviewing each layer before it advanced.[^3] The article is as careful about what it declined to claim as about what it showed. It does not claim that students learned more, because it did not run the study that would license that claim.[^4] It does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^5] And it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation, a deliberate tradeoff in which the static architecture forgoes the adaptivity and interactive feedback a chatbot offers in exchange for build-time auditability.[^6]
+The case study showed a tractable pipeline that ran from source files to typed notes to a deployed, reviewed static site, governed by a six-phase rotation, a running lessons memory, and a forced-finding verification pass, with a professor reviewing each layer before it advanced.[^3] The article is as careful about what it declined to claim as about what it showed. It does not claim that students learned more, because it did not run the study that would license that claim.[^4] It does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^5] And it does not present a chatbot, because the case study is a reviewed static website whose risk surface sits at build-time professorial review rather than at runtime generation, a deliberate tradeoff in which the static architecture forgoes the adaptivity and interactive feedback a chatbot offers in exchange for build-time auditability.[^6] The article describes the schema; the test awaits.
 
 ## C. Professorial judgment and the invitation forward
 
