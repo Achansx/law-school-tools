@@ -95,9 +95,10 @@
       "cleared_at": null
     },
     "handoff_freeze": {
-      "awaiting_human": true,
+      "awaiting_human": false,
       "set_at": "2026-05-29T17:00:00Z",
-      "reason": "Consolidation hand-off complete at run 308 (14,058 words, 187 contiguous footnotes). Frozen draft: manuscript/HANDOFF-2026-05-29.md; cover memo: PROFESSOR_CHANDLER_HANDOFF.md. The maintenance loop is HALTED pending human review. The system does not submit to JLE and does not email the professor. Clear this gate (awaiting_human:false) only to resume ticking."
+      "cleared_at": "2026-05-29T22:40:00Z",
+      "reason": "REOPENED to close the PI-JLE-LEGAL-ED-LIT Section X and XI legs (legal-education-canon re-anchoring in Generalization and Evaluation). Loop resumed under FINAL-PUSH MODE priority 2. Re-freeze manuscript/HANDOFF-<date>.md and re-set this gate (awaiting_human:true) once PI-JLE-LEGAL-ED-LIT is resolved. The system still does not submit to JLE and does not email the professor."
     }
   },
   "last_completed_phase": "cite",
