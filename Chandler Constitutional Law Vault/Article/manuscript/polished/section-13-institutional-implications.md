@@ -1,19 +1,27 @@
 ---
 id: "13"
 title: "Institutional Implications"
-status: ready_for_stitch
+status: needs_polish
 target_words: 500
 word_count: 549
-last_phase: polish
+last_phase: verify-provenance
 cite_status: needs_polish
-polish_status: ready_for_stitch
+polish_status: needs_polish
 footnotes_count: 9
-provenance_audited: false
-provenance_score: 3.8
-claims_total: 12
-claims_mapped: 11
-unsupported_claims: 0
-provenance_note: "Last audited Verify run 139 (2026-05-30); provenance_audited reset to false by run-235 Cite tick because the XIII.A platform-vs-series prose and the footnote [^1] verification anchors materially changed (PI-168 resolved, PI-092 swept for this section). Run-236 Polish added two new internal supra footnotes pointing to Section XII: [^2] for the AI-tutor / adaptive-courseware architectural alternative (PI-167) and [^8] for the institutional capacity-gap access constraint (PI-095). Footnote [^1] re-verified live in run 235 (opencasebook.org via WebSearch, news.mit.edu via WebFetch, cali.org via WebFetch). The next Verify provenance re-audit will read the post-Polish prose."
+provenance_audited: true
+provenance_audited_at: 2026-05-31T18:00:00Z
+provenance_audit_run: 280
+provenance_score: 4.0
+provenance_score_prior: 3.8
+provenance_audit_run_prior: 139
+claims_total: 16
+claims_mapped: 15
+unsupported_claims:
+  - claim_text: "Whether a versioned, citable, publicly served course artifact counts as scholarship is itself contested, and the institution must decide whether to treat it as teaching infrastructure or as scholarship for review and promotion."
+    paragraph: 3
+    reason: requires-primary-source
+provenance_note_run280: "Run-280 Verify Provenance Auditor re-audit, first re-audit since the run-139 baseline (3.8 across 4/3/4/5/3 against pre-run-235 Cite + pre-run-236 Polish 12-claim scan with 1 unsupported_claim on the MIT Press joint-publisher claim that the run-235 Cite closed by adding the MIT News [^1] anchor for the 2022 series). Re-scored 4/3/4/5/4 = 4.0 against the post-run-235 / post-run-236 polished prose, a +0.2 lift from the 3.8 baseline driven by criterion 5 gap_honesty 3 -> 4 on the run-236 XIII.C 'contested' recognition flag and XIII.D capacity-gap flag both reading as explicit gap-flagging. claims_total expanded 12 -> 16 (four new factual claims the run-139 baseline missed: XIII.A complementary-not-competing structural claim, XIII.B three-actor library/ID/IT enumeration, XIII.C versioned-commit operational claim, XIII.C 'counts as scholarship is itself contested' claim-of-contestation); claims_mapped 11 -> 15 (15/16 = 93.75% mapped); unsupported_claims 0 -> 1 (one new entry: XIII.C contestation claim with reason requires-primary-source; asserts contestation as a state of the field without naming whom it is contested between or anchoring to Boyer 1990 / Sturm & Guinier / ABA Standard 405 / SoTL-in-law literature). Criterion breakdown: claim_coverage 4 (hold at 4 with the expanded-scan 93.75% ratio sitting in the same 90-94% interpolation zone the run-139 11/12 = 91.67% ratio held); primary_source_ratio 3 (1 of 9 footnotes external primary at [^1] opencasebook.org / news.mit.edu / cali.org, structural synthesis ceiling); attribution_discipline 4 ([^4] partial-anchor on the XIII.B library/ID/IT three-actor enumeration with [^4] forward-referencing Section VIII only for IT hosting; [^6] cross-section anchor target slightly misaligned with XIII.C versioned-commit + named-reviewer operational claim forwarding to Section XII when Section VII / VIII would be the natural anchor); numerical_precision 5 (only numerical claim is MIT Press / Harvard 2022 series launch, anchored to MIT News April 26, 2022 URL with last-visited snapshot); gap_honesty 4 (XIII.C explicit 'contested' / 'stays open' flag and XIII.D capacity-gap flag both gap-flagging; 4-band deduction is the run-280 unsupported_claim addition for the XIII.C contestation claim the prose treats as a settled fact of contestation). 4.0 < 4.5, so polish_status reverts ready_for_stitch -> needs_polish per rubric/provenance-audit.md exit; PI-224 (XIII.B scholarship-of-teaching anchor), PI-225 (XII -> XIII seam + supra-XII dependence), PI-166 re-confirm (XIII.C recognition-framing leg), PI-095 re-confirm (XIII.D student-side accessibility leg), and the new XIII.C contestation unsupported_claim closing path are the next-up Polish targets. Provenance audit run state: last_audit_section / last_reaudit_section 09 -> 13; reaudit_count 11 -> 12; sections_audited stays 14; global_unsupported_open 14 -> 15."
+provenance_note: "Last audited Verify run 139 (2026-05-30); provenance_audited reset to false by run-235 Cite tick because the XIII.A platform-vs-series prose and the footnote [^1] verification anchors materially changed (PI-168 resolved, PI-092 swept for this section). Run-236 Polish added two new internal supra footnotes pointing to Section XII: [^2] for the AI-tutor / adaptive-courseware architectural alternative (PI-167) and [^8] for the institutional capacity-gap access constraint (PI-095). Footnote [^1] re-verified live in run 235 (opencasebook.org via WebSearch, news.mit.edu via WebFetch, cali.org via WebFetch). Run-280 Verify Provenance Auditor re-audit re-scored 4/3/4/5/4 = 4.0 (+0.2 from the 3.8 baseline); see provenance_note_run280 above."
 ---
 
 # XIII. Institutional Implications
