@@ -499,9 +499,9 @@ Across every layer, the expert never left the loop. The system did not replace p
 
 [^48]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection: wiki briefs for the ten listed opinions present in the vault’s Cases/ folder as of the May 15, 2026 filesystem audit). The wiki briefs were generated against an indexed-opinion source described *infra* Section V; the deployed-site URL anchoring the published versions is named in body prose at Section VIII.A and footnoted at *infra* Section VIII note 99.
 
-[^49]: Casebook-ingestion status remains an open question at the time of writing pending professorial resolution; the article hedges any positive claim about casebook ingestion throughout until that question lands, and the underlying record lives in this article’s internal pending-issue tracker.
+[^49]: Casebook-ingestion status remains an open question at the time of writing pending professorial resolution; the article hedges any positive claim about casebook ingestion throughout until that question lands.
 
-[^50]: Student-work-ingestion status, including prior exam answers, office-hours notes, and LMS posts, remains an open question at the time of writing pending professorial resolution; the privacy framing in Section XII depends on whichever way the question lands, and the underlying record lives in this article’s internal pending-issue tracker.
+[^50]: Student-work-ingestion status, including prior exam answers, office-hours notes, and LMS posts, remains an open question at the time of writing pending professorial resolution; the privacy framing in Section XII depends on whichever way the question lands.
 
 [^51]: *See infra* App. A (Input Corpus Inventory) (filename sample drawn from a directory listing of Source Materials/ on May 15, 2026).
 
@@ -511,7 +511,7 @@ Across every layer, the expert never left the loop. The system did not replace p
 
 [^54]: *See also infra* Section IX (Cost and Labor: The Honest Accounting) (master cost-and-labor table; ingest-phase line item closes through that table per the article’s single-owner cost-routing convention).
 
-[^55]: The recommended snapshot is the professor-facing progress report’s date that records the one hundred ninety-eight-page output state; final sign-off on the snapshot selection awaits professorial review and the underlying record lives in this article’s internal pending-issue tracker.
+[^55]: The recommended snapshot is the professor-facing progress report’s date that records the one hundred ninety-eight-page output state; final sign-off on the snapshot selection awaits professorial review.
 
 [^56]: *See infra* App. A (Vault Architecture and File Layout) (Cases/, Topics/, and Lectures/ as the three first-class content folders, each backed by a canonical template in Templates/; Source Materials/ as read-only input; rubric/ as per-phase scoring criteria; archive/ as rotated narrative logs).
 

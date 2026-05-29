@@ -11,22 +11,10 @@ polish_status: needs_polish
 provenance_audited: true
 provenance_audited_at: "2026-06-03T07:00:00Z"
 provenance_score: 4.4
-provenance_audit_note: "Run-182 Verify Provenance Auditor re-audit of the run-180/181 reconciled prose. The prior 3.6 driver (the 61+66+3=130-among-127 arithmetic impossibility) is resolved: IV.A reads 388 total / 61 PowerPoint + 66 PDF = 127 slide-and-reading subset / +3 DOCX, consistent with App. A and with Sections II and VIII. Score 4.4 (coverage 5, primary-source-ratio 4, attribution 5, numerical-precision 4, gap-honesty 4). Two residual defects route the section back to needs_polish: (1) footnotes [^14], [^15], and [^20] route the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose barred by the PROJECT_PRIMER citation policy and provenance-rubric criterion 2 (logged PI-192; the three unsupported_claims below carry reason requires-primary-source); (2) the 198-page count's snapshot is 'the progress-report date' without an explicit calendar date. 4.4 < 4.5, so the next Cite/Polish tick re-points the three footnotes to App. D (Correspondence Excerpts) or drops them (the body-prose hedges stand alone)."
+provenance_audit_note: "Run-182 Verify Provenance Auditor re-audit scored 4.4 (coverage 5, primary-source-ratio 4, attribution 5, numerical-precision 4, gap-honesty 4) and routed PI-192 against footnotes [^14], [^15], [^20] for routing the underlying record to 'this article's internal pending-issue tracker,' an internal-log citation in published prose barred by the PROJECT_PRIMER citation policy. Run-272 Cite tick surgically resolved PI-192 per the PI-routing directive's drop-option (body hedge suffices): the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause was deleted from each of [^14], [^15], [^20], leaving the open-question body-prose hedges standing alone. The three unsupported_claims rows are cleared; claims_mapped advances 17 -> 20. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual (note 17's 'the progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; logged below for the next Polish tick."
 claims_total: 20
-claims_mapped: 17
-unsupported_claims:
-  - claim_text: "This article does not claim that casebook excerpts were ingested as input to the vault; that question remains open at the time of writing."
-    paragraph: 7
-    footnote: "[^14]"
-    reason: requires-primary-source
-  - claim_text: "this article does not claim that student work, including prior exam answers, office-hours notes, or LMS posts, was used as training input."
-    paragraph: 7
-    footnote: "[^15]"
-    reason: requires-primary-source
-  - claim_text: "final sign-off on the snapshot-date selection awaits professorial review."
-    paragraph: 9
-    footnote: "[^20]"
-    reason: requires-primary-source
+claims_mapped: 20
+unsupported_claims: []
 polish_note: "Run-180 Polish on Section 04 (the run-179 Cite handoff). Propagated the run-172 PI-131/PI-136 arithmetic reconciliation from drafts/section-04 into this polished artifact, closing the recurring Verify-Editor RESIDUAL (the assembled IV.A had read 61+66+3=130 'among' 127 top-level, an arithmetic impossibility). Cleared all six P1s the 2026-05-29 Verify routed to 'the next Polish tick on Section 04': PI-059 (IV.E cost-table present-existence overclaim -> forward-pointed to the master table to be assembled at Section IX), PI-060 (IV.E self-flagging meta-rhetoric 'is the kind of self-consistency the thesis requires' -> the move is made not announced), PI-061 (IV.A actor-erasure -> names the professor's curation choices), PI-062 (IV.E-to-V.A seam -> added a substantive bridge sentence to the structured note layer), PI-063 (IV.A casebook hedge -> added the architectural-incompleteness implication with a Section XII forward-reference), PI-064 (IV access-assumption silence -> one sentence naming broadband/device/enrollment with a Section XII forward-reference). Full mechanical sweep clean (zero em dashes, zero straight quotes; all curly). Section landed at 1034 words (+14.9% of the 900 target); de-duplicated the now-triplicated Section V forward-references and tightened the additions, but the section sits above the +/-10% band, so flagged for Stitch trim under PI-191 (no footnote added/removed; defs hold at 20, no global renumber)."
 ---
 
@@ -86,9 +74,9 @@ The article snapshots the input-to-output state at the date of the professor-fac
 
 [^13]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection: wiki briefs for the ten listed opinions present in the vault’s Cases/ folder as of the May 15, 2026 filesystem audit). The wiki briefs were generated against an indexed-opinion source described *infra* Section V; the deployed-site URL anchoring the published versions is named in body prose at Section VIII.A and footnoted at *infra* Section VIII note 1.
 
-[^14]: Casebook-ingestion status remains an open question at the time of writing pending professorial resolution; the article hedges any positive claim about casebook ingestion throughout until that question lands, and the underlying record lives in this article’s internal pending-issue tracker.
+[^14]: Casebook-ingestion status remains an open question at the time of writing pending professorial resolution; the article hedges any positive claim about casebook ingestion throughout until that question lands.
 
-[^15]: Student-work-ingestion status, including prior exam answers, office-hours notes, and LMS posts, remains an open question at the time of writing pending professorial resolution; the privacy framing in Section XII depends on whichever way the question lands, and the underlying record lives in this article’s internal pending-issue tracker.
+[^15]: Student-work-ingestion status, including prior exam answers, office-hours notes, and LMS posts, remains an open question at the time of writing pending professorial resolution; the privacy framing in Section XII depends on whichever way the question lands.
 
 [^16]: *See infra* App. A (Input Corpus Inventory) (filename sample drawn from a directory listing of Source Materials/ on May 15, 2026).
 
@@ -98,4 +86,4 @@ The article snapshots the input-to-output state at the date of the professor-fac
 
 [^19]: *See also infra* Section IX (Cost and Labor: The Honest Accounting) (master cost-and-labor table; ingest-phase line item closes through that table per the article’s single-owner cost-routing convention).
 
-[^20]: The recommended snapshot is the professor-facing progress report’s date that records the one hundred ninety-eight-page output state; final sign-off on the snapshot selection awaits professorial review and the underlying record lives in this article’s internal pending-issue tracker.
+[^20]: The recommended snapshot is the professor-facing progress report’s date that records the one hundred ninety-eight-page output state; final sign-off on the snapshot selection awaits professorial review.
