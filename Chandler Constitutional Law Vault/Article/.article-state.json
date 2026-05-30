@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "reason": "REOPENED to close the PI-JLE-LEGAL-ED-LIT Section X and XI legs (legal-education-canon re-anchoring in Generalization and Evaluation). Loop resumed under FINAL-PUSH MODE priority 2. Re-freeze manuscript/HANDOFF-<date>.md and re-set this gate (awaiting_human:true) once PI-JLE-LEGAL-ED-LIT is resolved. The system still does not submit to JLE and does not email the professor."
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-30T10:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-30T11:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T18:00:00Z",
@@ -1681,10 +1681,12 @@
       "routes_to": "Section 03 cite_status needs_polish \u2192 needs_cite (PI-253 Cite-tier footnote-edit work)",
       "verify_run": 321,
       "legs_progress": {
-        "drafts": "not-started",
+        "drafts": "closed at run 323 by stripping [^17] -30w audit-trail parenthetical (Midpage opinionId/PI-127) and [^18] Sajja -27w URL-liveness sentence (WebSearch/89,771-char-fetch); URL-liveness disclosure preserved in existing (last visited May 17, 2026) particle; total footnote-text delta -57w; body word_count unchanged",
         "polished": "not-started",
         "full-draft": "not-started"
-      }
+      },
+      "last_progress_at": "2026-05-30T11:00:00Z",
+      "last_progress_run": 323
     },
     {
       "id": "PI-254",
@@ -1769,7 +1771,7 @@
       }
     }
   ],
-  "phase_index": 1,
+  "phase_index": 2,
   "phases": [
     "draft",
     "cite",
@@ -1791,7 +1793,7 @@
       "11"
     ]
   },
-  "run_count": 322,
+  "run_count": 323,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -1876,7 +1878,7 @@
       "cite_at": "2026-06-05T15:00:00Z",
       "cite_completed_at": "2026-05-18T01:00:00Z",
       "cite_note": "Run 207 Cite: closed PI-127 (Section III.D footnote [^17] NFIB pin-cite locator). Re-verified via Midpage findInOpinion opinionId 809122 that the Roberts formulation 'The power to regulate commerce presupposes the existence of commercial activity to be regulated' falls between the *550 and *551 star-pagination markers in 567 U.S. 519; the verbatim text was RE-VERIFIED across the four-snippet returned passage (the sentence sits immediately after the *550 marker, within the same paragraph that ends just before the *551 marker on snippet 5). Pin cite corrected 552 -> 550 in three places: drafts/section-03-case-study.md [^17], polished/section-03-case-study.md [^17], and full-draft.md [^34]; each footnote now carries an audit-trail parenthetical naming the Midpage opinionId and the *550/*551 star-marker bracket per the canonical Prize Cases / Grier near-miss class (quote correct, locator off; locator corrected). This is a locator correction, not a fabrication. cite_status needs_cite -> needs_polish; provenance_audited reset to false so the next Verify provenance re-audit reads the post-Cite prose. Section 03's numerical-precision criterion (Verify run 189) had scored 3 of 5 in part on the open PI-127; with PI-127 closed the next audit should clear that half of the criterion (PI-126 fifteen-link miscount remains open). PI-125 (Bond meta-review still owed in polished prose) and PI-122 (App. D 'Correspondence Excerpts' broken cross-reference) remain open Cite-routed items for subsequent ticks; this tick resolved the lowest-effort, highest-certainty open Cite P1 on Section 03 per the multi-run stall the run-189 provenance_note flagged.",
-      "cite_status": "needs_cite",
+      "cite_status": "needs_polish",
       "claims_mapped": 16,
       "claims_total": 17,
       "current_words": 1278,
