@@ -1675,6 +1675,25 @@
       "resolved_at": "2026-05-30T02:00:00Z",
       "resolved_in_run": 313,
       "resolution_note": "Closed at run-313 Cite tick on Section 11 [^9] per the L-064 60-65-word canon-anchor cap loosening. PI-244 (compound-cite-no-pin-cite) closed by per-source pin-cites: ABA Std 315 & Interp. 315-1 (2014); Glesner Fines \u00a7 D; Sparrow 4-7. PI-243 (SSRN-host title-mismatch) closed by full chapter nest: 'in Schwartz et al., Revisiting the Characteristics of Effective Education, in Building on Best Practices (Maranville et al. eds., LexisNexis 2015)' honestly naming the SSRN host's chapter title and five-author surface. Drafts layer carries the new [^9]; polished and full-draft propagation owed to next Polish/Stitch ticks under L-035 three-site discipline."
+    },
+    {
+      "id": "PI-251",
+      "type": "XII-E-equity-canon-anchor-provenance-side-framing-of-PI-248",
+      "opened_at": "2026-05-30T04:00:00Z",
+      "opened_in_run": 316,
+      "opened_by_persona": "4 Provenance Auditor",
+      "severity": "P1",
+      "section": "12",
+      "location": "XII.E paragraph 1 opening sentence (polished [^9] / full-draft [^168])",
+      "description": "Provenance-audit verifiability-principle framing of the XII.E equity-and-accessibility-canon-anchor-gap defect (PI-248 substantive twin); logged as the unsupported_claim entry on Section 12's polished frontmatter with reason `requires-legal-education-canon-anchor`. Routing shared with PI-248 on the same Cite-tier or Polish-tier fix.",
+      "suggested_fix": "Same as PI-248 Form (a): expand [^9]/[^168] with external legal-education-accessibility-canon anchor; lifts Section 12 provenance criteria 1/2/3 to 5/4/5 in one fix, taking Section 12 above the 4.5 gate.",
+      "routes_to": "Section 12 Cite (paired with PI-248)",
+      "status": "resolved",
+      "drafts_advanced_at_run_318": "Paired provenance-side closure with PI-248: Section 12 [^9] expanded at drafts layer with Am. Bar Ass'n Standard 207 (2025) (the actual disability-accommodation standard; the routing note's 'Standard 208' was off-point per primary-source verification, L-053). Dinerstein/Lamparello secondary slot DECLINED (no workplan backing). unsupported_claims entry on Section 12 frontmatter cleared at drafts layer; polished-layer unsupported_claims will follow at next Polish propagation. PI-251 stays OPEN at polished + full-draft layers under L-035.",
+      "last_progress_at": "2026-05-30T06:00:00Z",
+      "last_progress_run": 318,
+      "resolved_at": "2026-05-30T07:00:00Z",
+      "resolution_note": "Functionally resolved at run-319 Polish tick: the Section 12 polished frontmatter unsupported_claims entry that this PI was the provenance-side twin of (XII.E equity-canon-anchor-gap, paired with PI-248) is now cleared because the run-318 Cite tick's Standard 207 anchor at drafts/section-12 [^9] propagated to polished/section-12 [^9] this tick. claims_mapped 17 -> 18. The provenance_score lift from 4.2 toward 4.6 still requires a Verify provenance re-audit on Section 12 (Verify's work, not Polish's)."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
