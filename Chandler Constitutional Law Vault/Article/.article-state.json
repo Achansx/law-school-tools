@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-31T01:30:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-31T03:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:00:00Z",
@@ -1759,7 +1759,8 @@
       "section": "multi",
       "severity": "P1",
       "status": "open",
-      "type": "editorial-review"
+      "type": "editorial-review",
+      "progress_note_run331": "Run-331 Cite tick advanced PI-ER-APPENDIX defect (c): all 57 'App. A (Vault Architecture and File Layout)' misroutes re-pointed at polished source-of-truth across sections 02 (1 ref), 03 (11), 05 (12), 06 (9), 07 (7), 08 (9), 09 (8). Routings: build/deploy/site content -> App. F (Technical Setup) [27 refs]; template/schema content -> App. C (Obsidian Note Templates) [22 refs]; rubric/phase/RUNBOOK architecture -> App. D (Karpathy-Loop Per-Phase Rubric) [14 refs]; input/output corpus content -> App. A (Input Inventory) with corrected parenthetical [3 refs]; cost-and-labor methodology -> App. E (Cost and Time Log) [4 refs]; some footnotes split across two appendices via 'see also infra' where content spans (e.g., section 05 [^1], section 06 [^8], section 08 [^1], section 09 [^2]). Hygiene normalization: the 12 'App. A (Input Corpus Inventory)' refs in section 04 and the 2 in section 01 normalized to the actual appendix title 'App. A (Input Inventory)' (audit-ALL-App.-X-strings directive). The defect (a) phantom App. D 'Correspondence Excerpts' / 'Internal Project Records Excerpts' subtitles and the App. A 'Article Project Architecture' phantom verified clean in live footnote bodies (regex-confirmed; remaining grep hits are in YAML frontmatter run-notes documenting prior closures). Defect (c) now CLOSED. Stitch propagation of polished -> full-draft owed to next Stitch tick per L-035. PI-ER-APPENDIX as a whole: defects (a), (b), (c) all CLOSED at polished source-of-truth; ready to migrate to archive on next Stitch propagation."
     },
     {
       "claim": "Remove 3 internal-pending-issue-tracker cites at [^163],[^165],[^167] ('the underlying record lives in this article's internal pending-issue tracker'). Re-support from public source, move to appendix, or cut the sentence. rubric/cite.md crit 5.",
@@ -1769,8 +1770,11 @@
       "persona": "Editorial Review Skill (run-315)",
       "section": "multi",
       "severity": "P1",
-      "status": "open",
-      "type": "editorial-review"
+      "status": "resolved",
+      "type": "editorial-review",
+      "resolved_at": "2026-05-31T03:30:00Z",
+      "resolved_in_run": 331,
+      "resolution_note": "Run-331 Cite tick resolved PI-ER-INTERNALCITE: the 'underlying record lives in this article's internal pending-issue tracker' clause was stripped from section 12 footnotes [^4], [^6], [^8] (assembled-global [^163], [^165], [^167]). Drop-option per PI-routing parallel to PI-192 resolution at run-272: the body-prose hedge stands alone. Rubric/cite.md criterion 5 (zero internal-source citations in published prose) is now satisfied at the polished source-of-truth. Full-draft.md propagation owed to next Stitch tick per L-035."
     },
     {
       "claim": "Trim title: drop 'and the Future of Legal Pedagogy' for a phrase matching the bounded claim.",
@@ -1987,7 +1991,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 330,
+  "run_count": 331,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2041,7 +2045,7 @@
       "evidence_cards": 9,
       "evidence_status": "populated",
       "footnotes_count": 11,
-      "last_cite_run": 324,
+      "last_cite_run": 331,
       "last_cite_run_pre324": 297,
       "last_draft_run": 296,
       "last_phase": "verify-provenance",
@@ -2073,7 +2077,8 @@
       "unsupported_claims": 3,
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T05:00:00Z",
-      "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule)."
+      "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule).",
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "03": {
       "cite_at": "2026-06-05T15:00:00Z",
@@ -2112,7 +2117,9 @@
       "verify_note_run321": "Run-321 Verify provenance re-audit: provenance_score 4.0 \u2192 3.6 (-0.4 from run-245 baseline). PI-253 (Persona 1, [^17]/[^18] internal-process-language audit-trail-parenthetical leak \u2014 L-058 violation in published prose footnotes) routes Section 03 cite_status needs_polish \u2192 needs_cite. PI-254 (Persona 2, III.E 'where the relevant doctrine already lives' displacement-of-derivation substitution), PI-255 (Persona 3, III.E 'chatbot-tutor literature' broader-typology asymmetric-engagement \u2014 third instance after PI-246 Section XI.C / PI-250 Section XII.B), PI-256 (Persona 5 Practitioner-Adopter SUPPLEMENTAL, III.B/III.C/III.D admire-not-reproduce no-MVP-vs-extension-signal), PI-257 (Persona 4 provenance-side framing of PI-255 logged in unsupported_claims with reason `requires-broader-typology-cross-reference`) route Section 03 polish_status needs_polish (holds). Path to 4.6 above the 4.5 gate: PI-253 Cite strip lifts attribution_discipline 3 \u2192 4 (+0.2); PI-255 Polish Bond typology cross-reference lifts claim_coverage 4 \u2192 5 (+0.2); PI-126 III.C link-count Cite fix lifts numerical_precision 4 \u2192 5 (+0.2) \u2014 three landings together bring 3.6 \u2192 4.6 above the gate, all L-053-compliant.",
       "verify_routed_at": "2026-05-28T22:00:00Z",
       "verify_routing_reason": "Run 245 Verify/provenance re-audit: claims 16/17 -> 17/17 mapped (PI-029 closure), provenance_score 3.6 -> 4.0 (PI-029 +0.2 claim_coverage, PI-124 +0.2 attribution_discipline); 4.0 < 4.5 so polish_status ready_for_stitch -> needs_polish until PI-125 (Bond meta-review restoration), PI-126 (fifteen-link breakdown), and PI-176 (curriculum-grounded vs curriculum-oriented) Cite-owned items land. Run 129 baseline: cite_status -> needs_cite for PI-125/PI-126/PI-127/PI-122 App. D drop; polish_status -> needs_polish for PI-123/PI-124 (closed at run 243). PI-127 closed at run 207.",
-      "word_count": 1283
+      "word_count": 1283,
+      "last_cite_run": 331,
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
@@ -2188,7 +2195,9 @@
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-06-04T13:00:00Z",
-      "verify_routing_reason": "Verify run 196 (Persona 4, Provenance Auditor) P1 PI-199 (source-assembly divergence): polished source != assembled full-draft Section V (assembly carries the V.A 388-file bridge, the V.B inline six-case applied_in list, and refined V.A/V.B/V.C phrasing the source lacks; preserved by Stitch since run 188 per the run-188 note). The fresh re-audit of this source is clean (26/26, 0 unsupported, 4.6, PASSES the 4.5 gate), but source != artifact undermines the verifiability standard, so polish_status stitched -> needs_polish for reconciliation; direction (back-port to source vs trim 388 from assembly) is a human/Polish call."
+      "verify_routing_reason": "Verify run 196 (Persona 4, Provenance Auditor) P1 PI-199 (source-assembly divergence): polished source != assembled full-draft Section V (assembly carries the V.A 388-file bridge, the V.B inline six-case applied_in list, and refined V.A/V.B/V.C phrasing the source lacks; preserved by Stitch since run 188 per the run-188 note). The fresh re-audit of this source is clean (26/26, 0 unsupported, 4.6, PASSES the 4.5 gate), but source != artifact undermines the verifiability standard, so polish_status stitched -> needs_polish for reconciliation; direction (back-port to source vs trim 388 from assembly) is a human/Polish call.",
+      "last_cite_run": 331,
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "06": {
       "cite_completed_at": "2026-05-18T15:00:00Z",
@@ -2221,7 +2230,9 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T13:00:00Z",
-      "verify_routing_reason": "Run-132 sixth Verify tick of the provenance-audit burst audited Section 06 (lowest-numbered polished section with provenance_audited: false; sections_audited was 5). All four personas read independently and each returned one new P1, all on Section 06 and all checked against the open Section 06 PIs (PI-035 through PI-040) to avoid duplication. PI-137 (Persona 1: VI.C recites rubric criterion names, the exam_readiness 0.22 weight, scoring rules, and exact prompt constants in body prose, reading as system documentation; distinct from PI-036/PI-040) and PI-138 (Persona 2: VI.C's fixed 2/2/1 hypothetical quota and one-progressive-one-originalist critique rule flatten exam-design judgment; distinct from PI-038/PI-039) and PI-139 (Persona 3: VI.D asserts the adversarial-architecture's efficacy from the single Prize Cases anecdote with no methodology and no engagement with the mixed self-critique / multi-agent-debate literature; distinct from PI-040's citation-density gap) are Polish-owned and route polish_status -> needs_polish. PI-140 (Persona 4 / Provenance Auditor: VI.B's 'canonical law-school case-brief format' convention claim is uncited; structure traces only to the vault's own template, not an external authority) is Cite-owned and is Section 06's one unsupported_claim (reason requires-primary-source); Section 06 is already at cite_status: needs_cite from PI-040. Provenance audit score 4.2 < 4.5 (criteria 5/4/4/4/4) independently holds Section 06 at polish_status: needs_polish. claims_total 20, claims_mapped 19, unsupported 1. Twenty claim-manifest lines appended. Stale polished-file frontmatter (polish_status: ready_for_stitch) reconciled to the state file."
+      "verify_routing_reason": "Run-132 sixth Verify tick of the provenance-audit burst audited Section 06 (lowest-numbered polished section with provenance_audited: false; sections_audited was 5). All four personas read independently and each returned one new P1, all on Section 06 and all checked against the open Section 06 PIs (PI-035 through PI-040) to avoid duplication. PI-137 (Persona 1: VI.C recites rubric criterion names, the exam_readiness 0.22 weight, scoring rules, and exact prompt constants in body prose, reading as system documentation; distinct from PI-036/PI-040) and PI-138 (Persona 2: VI.C's fixed 2/2/1 hypothetical quota and one-progressive-one-originalist critique rule flatten exam-design judgment; distinct from PI-038/PI-039) and PI-139 (Persona 3: VI.D asserts the adversarial-architecture's efficacy from the single Prize Cases anecdote with no methodology and no engagement with the mixed self-critique / multi-agent-debate literature; distinct from PI-040's citation-density gap) are Polish-owned and route polish_status -> needs_polish. PI-140 (Persona 4 / Provenance Auditor: VI.B's 'canonical law-school case-brief format' convention claim is uncited; structure traces only to the vault's own template, not an external authority) is Cite-owned and is Section 06's one unsupported_claim (reason requires-primary-source); Section 06 is already at cite_status: needs_cite from PI-040. Provenance audit score 4.2 < 4.5 (criteria 5/4/4/4/4) independently holds Section 06 at polish_status: needs_polish. claims_total 20, claims_mapped 19, unsupported 1. Twenty claim-manifest lines appended. Stale polished-file frontmatter (polish_status: ready_for_stitch) reconciled to the state file.",
+      "last_cite_run": 331,
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "07": {
       "cite_completed_at": "2026-05-19T05:00:00Z",
@@ -2264,7 +2275,9 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-19T13:00:00Z",
-      "verify_routing_reason": "Run-224 Verify: Section 07 re-audit after run-222 Polish reset (closed PI-207's Bond [^11] engagement-sentence leg at the polished source-of-truth and the run-223 Stitch consumed the placeholder into the assembly's global [^93]). provenance_score 4.4 -> 4.6 (5/4/4/5/5); gap_honesty lifted to 5 (PI-207 deduction cleared by the Bond engagement sentence now present in polished prose AND assembly; standing L-007 entry candidly named in body prose and listed in unsupported_claims with reason: requires-primary-source, so the prose reads as if the audit happened, which it did); primary_source_ratio holds at 4 (PI-207's drag is cleared; the standing VII.D L-007 inline-label is the sole remaining deduction); attribution_discipline holds at 4 (the standing L-007 entry); claim_coverage holds at 5 (22/23 = 95.7% mapped); numerical_precision holds at 5. 4.6 clears the 4.5 score gate for the first time across six consecutive audits at runs 129/147/167/189/203/217. However, the L-007 unsupported_claim with reason `requires-primary-source` (not `intentional-conjecture`) prevents the section from passing the rubric's full exit condition, so polish_status stays needs_polish on the L-007 axis alone \u2014 one Polish edit away from a full 5.0 across all five criteria and from clearing the exit condition outright. Persona 1 (JLE Editor) opened NEW PI-208 (VII.C voice-and-tightness slip on the run-222 Polish addition: 41-token semicolon-spliced run-on past the 35-word Polish band, plus 'instantiates' over-claim register on the load-bearing verb the run-222 narrative defended as 'deliberate' without independent scrutiny against the over-claim risk); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta)."
+      "verify_routing_reason": "Run-224 Verify: Section 07 re-audit after run-222 Polish reset (closed PI-207's Bond [^11] engagement-sentence leg at the polished source-of-truth and the run-223 Stitch consumed the placeholder into the assembly's global [^93]). provenance_score 4.4 -> 4.6 (5/4/4/5/5); gap_honesty lifted to 5 (PI-207 deduction cleared by the Bond engagement sentence now present in polished prose AND assembly; standing L-007 entry candidly named in body prose and listed in unsupported_claims with reason: requires-primary-source, so the prose reads as if the audit happened, which it did); primary_source_ratio holds at 4 (PI-207's drag is cleared; the standing VII.D L-007 inline-label is the sole remaining deduction); attribution_discipline holds at 4 (the standing L-007 entry); claim_coverage holds at 5 (22/23 = 95.7% mapped); numerical_precision holds at 5. 4.6 clears the 4.5 score gate for the first time across six consecutive audits at runs 129/147/167/189/203/217. However, the L-007 unsupported_claim with reason `requires-primary-source` (not `intentional-conjecture`) prevents the section from passing the rubric's full exit condition, so polish_status stays needs_polish on the L-007 axis alone \u2014 one Polish edit away from a full 5.0 across all five criteria and from clearing the exit condition outright. Persona 1 (JLE Editor) opened NEW PI-208 (VII.C voice-and-tightness slip on the run-222 Polish addition: 41-token semicolon-spliced run-on past the 35-word Polish band, plus 'instantiates' over-claim register on the load-bearing verb the run-222 narrative defended as 'deliberate' without independent scrutiny against the over-claim risk); Persona 4 (Provenance Auditor) re-confirmed the standing VII.D L-007 inline-label unsupported_claim. Routes Section 07 polish_status: needs_polish (already set; no status delta).",
+      "last_cite_run": 331,
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "08": {
       "cite_completed_at": "2026-06-04T07:00:00Z",
@@ -2297,7 +2310,9 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T17:00:00Z",
-      "verify_routing_reason": "Run-134 eighth Verify tick of the provenance-audit burst audited Section 08 (lowest-numbered polished section with provenance_audited:false; sections_audited was 7). All four personas read independently and each returned one new P1, all on Section 08 and all checked against the eight open Section 08 PIs (PI-018, PI-019, PI-021 through PI-026) to avoid duplication. PI-145 (Persona 1: VIII.A self-flagging 'Section VIII opens by naming the URL and the snapshot ... so the IV-V-VIII trio triangulates on a single fact' meta-rhetoric, fifth recurrence of the PI-022/PI-028/PI-036/PI-141 family at a distinct VIII.A site) and PI-146 (Persona 2: VIII.E 'reviewed static site' / 'written and verified by the rotation phases' lets the automated Verify rotation perform 'reviewed', which a traditionalist reads as professorial per-page sign-off the section never establishes; editor-versus-teacher conflation distinct from PI-023/PI-024) and PI-147 (Persona 3: VIII.E presents the static-versus-chatbot choice as a one-sided risk win without naming the runtime-question-answering affordance the static architecture forgoes; distinct from PI-025 citation-density and PI-026 accessibility) are Polish-owned and route polish_status -> needs_polish (already set). PI-148 (Persona 4 / Provenance Auditor: VIII.A's 198-page snapshot lacks an explicit as-of date in prose and footnote [^1]; number sourced but missing a snapshot date) is Section 08's one unsupported_claim, reason evidence-gap, coupled to PI-004 and not resolvable until PI-004 fixes the snapshot date. Provenance audit score 4.4 < 4.5 (criteria 5/4/5/4/4) independently holds Section 08 at polish_status: needs_polish. claims_total 23, claims_mapped 22, unsupported 1. Twenty-three claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch, cite_status: needs_polish) reconciled to the state file."
+      "verify_routing_reason": "Run-134 eighth Verify tick of the provenance-audit burst audited Section 08 (lowest-numbered polished section with provenance_audited:false; sections_audited was 7). All four personas read independently and each returned one new P1, all on Section 08 and all checked against the eight open Section 08 PIs (PI-018, PI-019, PI-021 through PI-026) to avoid duplication. PI-145 (Persona 1: VIII.A self-flagging 'Section VIII opens by naming the URL and the snapshot ... so the IV-V-VIII trio triangulates on a single fact' meta-rhetoric, fifth recurrence of the PI-022/PI-028/PI-036/PI-141 family at a distinct VIII.A site) and PI-146 (Persona 2: VIII.E 'reviewed static site' / 'written and verified by the rotation phases' lets the automated Verify rotation perform 'reviewed', which a traditionalist reads as professorial per-page sign-off the section never establishes; editor-versus-teacher conflation distinct from PI-023/PI-024) and PI-147 (Persona 3: VIII.E presents the static-versus-chatbot choice as a one-sided risk win without naming the runtime-question-answering affordance the static architecture forgoes; distinct from PI-025 citation-density and PI-026 accessibility) are Polish-owned and route polish_status -> needs_polish (already set). PI-148 (Persona 4 / Provenance Auditor: VIII.A's 198-page snapshot lacks an explicit as-of date in prose and footnote [^1]; number sourced but missing a snapshot date) is Section 08's one unsupported_claim, reason evidence-gap, coupled to PI-004 and not resolvable until PI-004 fixes the snapshot date. Provenance audit score 4.4 < 4.5 (criteria 5/4/5/4/4) independently holds Section 08 at polish_status: needs_polish. claims_total 23, claims_mapped 22, unsupported 1. Twenty-three claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch, cite_status: needs_polish) reconciled to the state file.",
+      "last_cite_run": 331,
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "09": {
       "cite_completed_at": "2026-05-19T21:00:00Z",
@@ -2337,7 +2352,9 @@
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-29T19:00:00Z",
-      "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file."
+      "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file.",
+      "last_cite_run": 331,
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "10": {
       "cite_completed_at": "2026-05-31T22:30:00Z",
@@ -2503,7 +2520,7 @@
       "last_cite_propagation_at": "2026-06-08T21:00:00Z",
       "last_cite_propagation_note": "Run-228 propagated Zawacki-Richter typology pin cite to Section 12 [^10]/[^167] across three sites (polished, drafts, full-draft); cross-section consistency with Section 11 [^8]/[^151] now established on the Bond corpus-composition characterization.",
       "last_cite_propagation_run": 228,
-      "last_cite_run": 318,
+      "last_cite_run": 331,
       "last_phase": "stitch",
       "last_polish_at": "2026-05-30T07:00:00Z",
       "last_polish_propagation_at": "2026-06-07T07:00:00Z",
@@ -2533,7 +2550,8 @@
       "unsupported_claims": [],
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
+      "last_cite_run_at": "2026-05-31T03:30:00Z"
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",

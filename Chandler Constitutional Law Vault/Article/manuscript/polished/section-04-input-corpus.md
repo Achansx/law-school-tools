@@ -48,41 +48,41 @@ The article snapshots the input-to-output state at the date of the professor-fac
 
 ## Footnotes
 
-[^1]: *See infra* App. A (Input Corpus Inventory) (cataloguing course-issued materials for Constitutional Law I (Spring 2026) taught by Professor Chandler).
+[^1]: *See infra* App. A (Input Inventory) (cataloguing course-issued materials for Constitutional Law I (Spring 2026) taught by Professor Chandler).
 
 [^2]: *Id.* The fourteen-topic enumeration names the structural-plus-rights subset taught in this one-semester sequence; *see also infra* Section X (taking up whether the method generalizes to other doctrinal areas and to fuller constitutional law sequences).
 
-[^3]: *See infra* App. A (Input Corpus Inventory) (filesystem audit of the Source Materials/ folder, Constitutional Law Vault (May 15, 2026)).
+[^3]: *See infra* App. A (Input Inventory) (filesystem audit of the Source Materials/ folder, Constitutional Law Vault (May 15, 2026)).
 
 [^4]: Casebook-input status remains an open question at the time of writing pending professorial resolution; the article carries the hedge in body prose throughout Sections IV and XII rather than asserting either inclusion or exclusion.
 
 [^5]: *See infra* Section III (describing the deployed static website and its review pipeline); *see also infra* Section XII (distinguishing the static, reviewed website from chatbot architectures). For representative chatbot-tutor architectures against which the static-website contrast operates, *see also infra* Section V (citing Dong et al. KG-RAG and Peng et al. GraphRAG-survey for the structured-retrieval architectural insight); *see also infra* Section VIII (citing Sajja et al. as a single-platform chatbot-tutor exemplar). The transfer-of-inference framing is the architectural insight that structure-aware retrieval beats flat semantic similarity; the chatbot-tutor implementation surface does not transfer to the case study’s static, reviewed publication form.
 
-[^6]: *See infra* App. A (Input Corpus Inventory) (Source Materials/Uploaded Media/ subfolder: one hundred thirty-five individual case-opinion PDFs as of filesystem audit (May 15, 2026)).
+[^6]: *See infra* App. A (Input Inventory) (Source Materials/Uploaded Media/ subfolder: one hundred thirty-five individual case-opinion PDFs as of filesystem audit (May 15, 2026)).
 
 [^7]: *Id.* (twelve merged-prefixed reading packets, including merged-incorporation.pdf and merged-equal-protection-limitations.pdf).
 
 [^8]: *Id.* (resources/ subfolder of eighty-one HTML files exported from the Canvas LMS; unfiled/Midterm_Rubric.pdf).
 
-[^9]: *See infra* App. A (Input Corpus Inventory) (filesystem audit of files containing the modernized tag in filenames across Source Materials/ and Source Materials/Uploaded Media/ (May 15, 2026)).
+[^9]: *See infra* App. A (Input Inventory) (filesystem audit of files containing the modernized tag in filenames across Source Materials/ and Source Materials/Uploaded Media/ (May 15, 2026)).
 
 [^10]: *Id.*
 
-[^11]: *See infra* App. A (Input Corpus Inventory) (Source Materials/Uploaded Media/Final Exam Constitutional Law Fall 2023.pdf; Constitutional Law Final Exam Spring 2025 (Reduced).pdf; TEFA_Exam_Question.docx.pdf; and Source Materials/unfiled/Midterm_Rubric.pdf).
+[^11]: *See infra* App. A (Input Inventory) (Source Materials/Uploaded Media/Final Exam Constitutional Law Fall 2023.pdf; Constitutional Law Final Exam Spring 2025 (Reduced).pdf; TEFA_Exam_Question.docx.pdf; and Source Materials/unfiled/Midterm_Rubric.pdf).
 
-[^12]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection). The ten opinions referenced are: *Cohens v. Virginia*, 19 U.S. (6 Wheat.) 264 (1821); *United States v. Cruikshank*, 92 U.S. 542 (1876); *Wickard v. Filburn*, 317 U.S. 111 (1942); *Adamson v. California*, 332 U.S. 46 (1947); *Baker v. Carr*, 369 U.S. 186 (1962); *USDA v. Moreno*, 413 U.S. 528 (1973); *South Dakota v. Dole*, 483 U.S. 203 (1987); *United States v. Lopez*, 514 U.S. 549 (1995); *United States v. Morrison*, 529 U.S. 598 (2000); and *Hamdi v. Rumsfeld*, 542 U.S. 507 (2004).
+[^12]: *See infra* App. A (Input Inventory) (Missing-from-Export subsection). The ten opinions referenced are: *Cohens v. Virginia*, 19 U.S. (6 Wheat.) 264 (1821); *United States v. Cruikshank*, 92 U.S. 542 (1876); *Wickard v. Filburn*, 317 U.S. 111 (1942); *Adamson v. California*, 332 U.S. 46 (1947); *Baker v. Carr*, 369 U.S. 186 (1962); *USDA v. Moreno*, 413 U.S. 528 (1973); *South Dakota v. Dole*, 483 U.S. 203 (1987); *United States v. Lopez*, 514 U.S. 549 (1995); *United States v. Morrison*, 529 U.S. 598 (2000); and *Hamdi v. Rumsfeld*, 542 U.S. 507 (2004).
 
-[^13]: *See infra* App. A (Input Corpus Inventory) (Missing-from-Export subsection: wiki briefs for the ten listed opinions present in the vault’s Cases/ folder as of the May 15, 2026 filesystem audit). The wiki briefs were generated against an indexed-opinion source described *infra* Section V; the deployed-site URL anchoring the published versions is named in body prose at Section VIII.A and footnoted at *infra* Section VIII note 1.
+[^13]: *See infra* App. A (Input Inventory) (Missing-from-Export subsection: wiki briefs for the ten listed opinions present in the vault’s Cases/ folder as of the May 15, 2026 filesystem audit). The wiki briefs were generated against an indexed-opinion source described *infra* Section V; the deployed-site URL anchoring the published versions is named in body prose at Section VIII.A and footnoted at *infra* Section VIII note 1.
 
 [^14]: Casebook-ingestion status remains an open question at the time of writing pending professorial resolution; the article hedges any positive claim about casebook ingestion throughout until that question lands.
 
 [^15]: Student-work-ingestion status, including prior exam answers, office-hours notes, and LMS posts, remains an open question at the time of writing pending professorial resolution; the privacy framing in Section XII depends on whichever way the question lands.
 
-[^16]: *See infra* App. A (Input Corpus Inventory) (filename sample drawn from a directory listing of Source Materials/ on May 15, 2026).
+[^16]: *See infra* App. A (Input Inventory) (filename sample drawn from a directory listing of Source Materials/ on May 15, 2026).
 
-[^17]: *See infra* App. A (Input Corpus Inventory) (Vault Output Snapshot subsection: one hundred ninety-eight wiki pages as of the progress-report date, comprising ninety-two case briefs, twenty-seven doctrinal topic pages, and seventy-nine lecture summaries).
+[^17]: *See infra* App. A (Input Inventory) (Vault Output Snapshot subsection: one hundred ninety-eight wiki pages as of the progress-report date, comprising ninety-two case briefs, twenty-seven doctrinal topic pages, and seventy-nine lecture summaries).
 
-[^18]: *See infra* App. A (Input Corpus Inventory) (filesystem audit of May 15, 2026: one hundred thirty-one case briefs, fifty-three doctrinal topic pages, and ninety-seven lecture summaries, totaling two hundred eighty-one pages).
+[^18]: *See infra* App. A (Input Inventory) (filesystem audit of May 15, 2026: one hundred thirty-one case briefs, fifty-three doctrinal topic pages, and ninety-seven lecture summaries, totaling two hundred eighty-one pages).
 
 [^19]: *See also infra* Section IX (Cost and Labor: The Honest Accounting) (master cost-and-labor table; ingest-phase line item closes through that table per the article’s single-owner cost-routing convention).
 

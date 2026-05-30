@@ -63,39 +63,39 @@ The vault’s schema is therefore a sequence of structural commitments, each for
 
 ## Footnotes
 
-[^1]: *See infra* App. A (Vault Architecture and File Layout) (Cases/, Topics/, and Lectures/ as the three first-class content folders, each backed by a canonical template in Templates/; Source Materials/ as read-only input; rubric/ as per-phase scoring criteria; archive/ as rotated narrative logs).
+[^1]: *See infra* App. A (Input Inventory) § A.3 (Source Material Conventions: Cases/, Topics/, and Lectures/ as the three first-class content folders, each backed by a canonical template in Templates/; Source Materials/ as read-only input); *see also infra* App. C (Obsidian Note Templates) (templates for the three content folders); *see also infra* App. D (Karpathy-Loop Per-Phase Rubric) (rubric/ as per-phase scoring criteria; archive/ as rotated narrative logs).
 
-[^2]: *See infra* App. A (Vault Architecture and File Layout) (filename, H1, and frontmatter case_name three-way invariant for Cases, with no periods and “and” rather than “&”; parallel rule for Topics/Topic Name.md and Lectures/Lecture Title.md).
+[^2]: *See infra* App. A (Input Inventory) § A.3 (Source Material Conventions: filename, H1, and frontmatter case_name three-way invariant for Cases, with no periods and “and” rather than “&”; parallel rule for Topics/Topic Name.md and Lectures/Lecture Title.md).
 
-[^3]: *See infra* App. A (Vault Architecture and File Layout) (Case Brief template YAML frontmatter, with approximately thirty fields including doctrines, concepts, citation, argued, decided, author, vote, disposition, midpage_id, midpage_url, cited_by, verified, source_files, issue, holding, reasoning, doctrine_family, relies_on, distinguishes, applied_in, overrules, and overruled_by).
+[^3]: *See infra* App. C (Obsidian Note Templates) (Case Brief template YAML frontmatter, with approximately thirty fields including doctrines, concepts, citation, argued, decided, author, vote, disposition, midpage_id, midpage_url, cited_by, verified, source_files, issue, holding, reasoning, doctrine_family, relies_on, distinguishes, applied_in, overrules, and overruled_by).
 
-[^4]: *See infra* App. A (Vault Architecture and File Layout) (Case Brief template H2 sequence: Memory Jogger; Facts; Procedural History; Judicial Votes; Holding; Analysis, with required Majority subsection and optional Concurrence and Dissent subsections; Hypothetical Applications, with Same-Side, Opposite-Side, and Fence-Sitter subsections totaling five hypotheticals; Critique; Key Quotations; Key Points; Connections; Sources).
+[^4]: *See infra* App. C (Obsidian Note Templates) (Case Brief template H2 sequence: Memory Jogger; Facts; Procedural History; Judicial Votes; Holding; Analysis, with required Majority subsection and optional Concurrence and Dissent subsections; Hypothetical Applications, with Same-Side, Opposite-Side, and Fence-Sitter subsections totaling five hypotheticals; Critique; Key Quotations; Key Points; Connections; Sources).
 
-[^5]: *See infra* App. A (Vault Architecture and File Layout) (frontmatter snapshot of Cases/Marbury v Madison (1803).md, verified April 24, 2026, capturing midpage_id ‘84759’, cited_by 3,995 (sourced from CourtListener find_citing_cases), six-entry applied_in list naming *Martin v. Hunter’s Lessee*, *McCulloch v. Maryland*, *The Prize Cases*, *United States v. Rahimi*, *Cohens v. Virginia*, and *City of Boerne v. Flores*, and doctrine_family Separation of Powers).
+[^5]: *See infra* App. C (Obsidian Note Templates) (Case Brief template instantiated as Cases/Marbury v Madison (1803).md, frontmatter snapshot verified April 24, 2026, capturing midpage_id ‘84759’, cited_by 3,995 (sourced from CourtListener find_citing_cases), six-entry applied_in list naming *Martin v. Hunter’s Lessee*, *McCulloch v. Maryland*, *The Prize Cases*, *United States v. Rahimi*, *Cohens v. Virginia*, and *City of Boerne v. Flores*, and doctrine_family Separation of Powers).
 
 [^6]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (figure showing the holding-bar block rendered as a structured banner above case prose on the deployed site; figure capture pending, see PI-012).
 
-[^7]: *See infra* App. A (Vault Architecture and File Layout) (Topic Page template structure: Overview; Governing Rule; Doctrinal Development; Key Cases table; Hypothetical Applications; exam-spotting framework; Critique).
+[^7]: *See infra* App. C (Obsidian Note Templates) (Topic Page template structure: Overview; Governing Rule; Doctrinal Development; Key Cases table; Hypothetical Applications; exam-spotting framework; Critique).
 
-[^8]: *See infra* App. A (Vault Architecture and File Layout) (Topics/Judicial Review.md frontmatter key_cases list naming *Marbury v. Madison* (1803), *Martin v. Hunter’s Lessee* (1816), *The Prize Cases* (1863), and *Youngstown Sheet and Tube Co. v. Sawyer* (1952); source_files attribution to three Cases pages and two Lectures pages; case back-links at every case introduction in the Doctrinal Development section).
+[^8]: *See infra* App. C (Obsidian Note Templates) (Topic Page template instantiated as Topics/Judicial Review.md, frontmatter key_cases list naming *Marbury v. Madison* (1803), *Martin v. Hunter’s Lessee* (1816), *The Prize Cases* (1863), and *Youngstown Sheet and Tube Co. v. Sawyer* (1952); source_files attribution to three Cases pages and two Lectures pages; case back-links at every case introduction in the Doctrinal Development section).
 
-[^9]: *See infra* App. A (Vault Architecture and File Layout) (wiki-link grammar [[folder/filename|Display Text]]; lowercase-hyphenated tags at file end; source_files frontmatter in lockstep with the Sources footer section, enforced by the Lint phase as a structural check).
+[^9]: *See infra* App. C (Obsidian Note Templates) (wiki-link grammar [[folder/filename|Display Text]]; lowercase-hyphenated tags at file end; source_files frontmatter in lockstep with the Sources footer section, enforced by the Lint phase as a structural check).
 
 [^10]: *See infra* fig. 5.2 (source Obsidian vault graph view rendering cross-page wiki-links as an interactive node graph, a working view in the author’s Obsidian editing environment rather than a feature of the deployed reader-facing site; captured from the source Obsidian vault May 26, 2026).
 
-[^11]: *See infra* App. A (Vault Architecture and File Layout) (Case Brief template doctrine_family field locked to one of four values: Federalism, Separation of Powers, Individual Rights, or Justiciability; same enum binds the Topic Page template’s area and family fields).
+[^11]: *See infra* App. C (Obsidian Note Templates) (Case Brief template doctrine_family field locked to one of four values: Federalism, Separation of Powers, Individual Rights, or Justiciability; same enum binds the Topic Page template’s area and family fields).
 
 [^12]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (figure showing the deployed site’s four-family grid index, with each column color-driven by the doctrine_family field on Case Brief and Topic Page templates; figure capture pending, see PI-012).
 
-[^13]: *See infra* App. A (Vault Architecture and File Layout) (enum realignment policy in vault RUNBOOK.md, requiring a non-fitting page to be realigned to the nearest canonical value; widening the enum requires a template-guide edit, a RUNBOOK.md update, and a one-paragraph BUILD_NARRATIVE entry).
+[^13]: *See infra* App. D (Karpathy-Loop Per-Phase Rubric) (enum realignment policy in vault RUNBOOK.md, requiring a non-fitting page to be realigned to the nearest canonical value; widening the enum requires a template-guide edit, a RUNBOOK.md update, and a one-paragraph BUILD_NARRATIVE entry).
 
 [^14]: Chenxi Dong, Yimin Yuan, Kan Chen, Shupei Cheng & Chujie Wen, *How to Build an Adaptive AI Tutor for Any Course Using Knowledge Graph-Enhanced Retrieval-Augmented Generation (KG-RAG)*, arXiv:2311.17696 (Feb. 12, 2025), https://arxiv.org/abs/2311.17696 (last visited May 16, 2026) (controlled study of seventy-six students reporting knowledge-graph-augmented retrieval mean assessment score 6.37 against 4.71 for pure semantic retrieval; p < 0.001; Cohen’s *d* = 0.86; the study delivered that gain through an adaptive conversational AI tutor, the runtime architecture the vault does not adopt).
 
 [^15]: Boci Peng, Yun Zhu, Yongchao Liu, Xiaohe Bo, Haizhou Shi, Chuntao Hong, Yan Zhang & Siliang Tang, *Graph Retrieval-Augmented Generation: A Survey*, arXiv:2408.08921 (Aug. 15, 2024), https://arxiv.org/abs/2408.08921 (last visited May 16, 2026) (defining the canonical GraphRAG workflow as graph-based indexing, graph-guided retrieval, and graph-enhanced generation).
 
-[^16]: *See infra* App. A (Vault Architecture and File Layout) (per-phase rubric file split into six phase-specific files; tiered file loading skipping LESSONS for phases that do not need it; monthly rotation of the BUILD_NARRATIVE file; one-line logging for no-op phase runs).
+[^16]: *See infra* App. D (Karpathy-Loop Per-Phase Rubric) (per-phase rubric file split into six phase-specific files; tiered file loading skipping LESSONS for phases that do not need it; monthly rotation of the BUILD_NARRATIVE file; one-line logging for no-op phase runs).
 
-[^17]: *See infra* App. A (Vault Architecture and File Layout) (Topics/Judicial Review.md area field initially assigned *Federal Judicial Power*, realigned to Separation of Powers per the canonical four-value enum; vault RUNBOOK.md codification of the realignment process for future drift).
+[^17]: *See infra* App. D (Karpathy-Loop Per-Phase Rubric) (Topics/Judicial Review.md area field initially assigned *Federal Judicial Power*, realigned to Separation of Powers per the canonical four-value enum; vault RUNBOOK.md codification of the realignment process for future drift).
 
 [^18]: *See infra* fig. 5.1 (*Marbury v. Madison* (1803) case brief open in Obsidian Live Preview, the typed-properties panel rendering the YAML frontmatter as structured fields, including case_name, citation, doctrine_family, midpage_id, source_files, and a six-entry applied_in list; captured from the source Obsidian vault May 26, 2026).
 
