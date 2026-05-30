@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "cite",
+  "current_phase": "polish",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "draft",
-  "last_run_at": "2026-05-31T11:00:00Z",
+  "last_completed_phase": "cite",
+  "last_run_at": "2026-05-31T13:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:00:00Z",
@@ -1787,17 +1787,6 @@
       "type": "editorial-review"
     },
     {
-      "claim": "Add 1-2 student-overreliance learning-sciences cites at XII.B (e.g. Westhoff, Vasconcelos) \u2014 verify live, no fabrication. Bond is field-level only.",
-      "id": "PI-ER-OVERRELIANCE",
-      "opened_at": "2026-05-30T16:36:03Z",
-      "owner_phase": "cite",
-      "persona": "Editorial Review Skill (run-315)",
-      "section": "12",
-      "severity": "P2",
-      "status": "open",
-      "type": "editorial-review"
-    },
-    {
       "claim": "Add one sentence at XIV.C committing what the author would hand a colleague attempting a second instance (schemas, rubrics, prompt library, cost-log) to land the X.E invitation as a real offer.",
       "id": "PI-ER-XIVC-COMMIT",
       "opened_at": "2026-05-30T16:36:03Z",
@@ -2017,7 +2006,7 @@
       ]
     }
   ],
-  "phase_index": 1,
+  "phase_index": 2,
   "phases": [
     "draft",
     "cite",
@@ -2039,7 +2028,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 335,
+  "run_count": 336,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2577,7 +2566,7 @@
       "last_cite_propagation_at": "2026-06-08T21:00:00Z",
       "last_cite_propagation_note": "Run-228 propagated Zawacki-Richter typology pin cite to Section 12 [^10]/[^167] across three sites (polished, drafts, full-draft); cross-section consistency with Section 11 [^8]/[^151] now established on the Bond corpus-composition characterization.",
       "last_cite_propagation_run": 228,
-      "last_cite_run": 331,
+      "last_cite_run": 336,
       "last_phase": "stitch",
       "last_polish_at": "2026-05-30T07:00:00Z",
       "last_polish_propagation_at": "2026-06-07T07:00:00Z",
@@ -2611,7 +2600,9 @@
       "last_cite_run_at": "2026-05-31T03:30:00Z",
       "last_stitch_run": 333,
       "stitch_status": "stitched",
-      "stitch_note_run333": "Run-333 Stitch tick propagated the run-331 Cite PI-ER-INTERNALCITE strip (three trailing 'internal pending-issue tracker' clauses at section XII [^163]/[^165]/[^167]) from polished/section-12-risks-and-limits.md into manuscript/full-draft.md. polish_status stitched (unchanged)."
+      "stitch_note_run333": "Run-333 Stitch tick propagated the run-331 Cite PI-ER-INTERNALCITE strip (three trailing 'internal pending-issue tracker' clauses at section XII [^163]/[^165]/[^167]) from polished/section-12-risks-and-limits.md into manuscript/full-draft.md. polish_status stitched (unchanged).",
+      "footnotes_count": 11,
+      "cite_note_run336": "Run-336 Cite tick closed PI-ER-OVERRELIANCE (EDITORIAL-REVIEW PASS priority-5 cite-owned, first in that priority group after priorities 1-4 closed) by adding compound footnote [^11] at XII.B's displacement-risk clause. Two primary academic sources, both URL-liveness-verified live this run via archive-equivalent mirrors after the direct DOI returned HTTP 403 to WebFetch: (1) Helena Vasconcelos et al., Explanations Can Reduce Overreliance on AI Systems During Decision-Making, 7 Proc. ACM Hum.-Comput. Interact. art. 129 (CSCW1 2023), DOI 10.1145/3579605 (verified via arxiv.org/abs/2212.06823, confirming exact title, six-author list, and CSCW 2023 venue per L-022/L-043); (2) Hamsa Bastani et al., Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics, 122 Proc. Nat'l Acad. Sci. U.S.A. e2422633122 (2025), DOI 10.1073/pnas.2422633122 (verified via pmc.ncbi.nlm.nih.gov/articles/PMC12232635/, confirming exact title, six-author list, volume 122, issue 26, July 1 2025 publication, and the verbatim 'crutch' framing plus the 17% unaided-exam decline finding). L-053 substitution: the PI routing note's 'Westhoff' candidate could not be verified across multiple WebSearch query forms; per L-053 the Westhoff slot was declined and Bastani et al. PNAS 2025 substituted as the empirical AI-in-education anchor (the Wharton/Penn high-school-math randomized trial is the touchstone paper in the 'AI study tools' category the run-315 reviewer evidently intended). The Vasconcelos slot was kept verbatim. Body micro-restructure: the displacement-risk clause and the untested-question clause were one sentence; split into two at the comma to give the [^11] marker a natural end-of-clause attachment site, matching the polished-section-12 sentence-split the run-145 Polish tick already adopted. Body word count unchanged at 1467; the split removes 'and' and adds period+capitalization with net delta zero. footnotes_count 10 -> 11. drafts/section-12 carries the [^11] addition; polished/section-12 and manuscript/full-draft.md [^11]/[^170] propagation owed to the next Polish and Stitch ticks on Section 12 under L-035 three-site discipline. PI-ER-OVERRELIANCE status open -> resolved; entry migrated to .article-state.archive.json archived_pending_issues per the RUNBOOK pending-issue-archival rule. Transfer-of-inference closing per Section XII [^1]/[^10] precedent: overreliance phenomenon reaches any AI-tool deployment in legal education and bears on the displacement-risk claim; the Bastani magnitude does not transfer to a reviewed static website which exposes no runtime generation surface. Mechanical hygiene: zero em dashes, curly apostrophes throughout, both new prose sentences after split are 18 and 23 words (under L-005 35-word ceiling). No new orphan factual claim. No new internal-pending-issue-tracker reference per L-058 / rubric/cite.md criterion 5."
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
