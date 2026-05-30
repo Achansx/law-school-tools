@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "reason": "REOPENED 2026-05-30 for the EDITORIAL-REVIEW PASS against research/editorial-review-run315-2026-05-30.md (run-315 review of HANDOFF-2026-05-29-FINAL.md). Loop drives the PI-ER-* items per RUNBOOK EDITORIAL-REVIEW PASS priority order. Re-freeze and re-set this gate when all PI-ER-* loop-addressable items resolve. System still does not submit and does not email the professor."
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-30T23:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-30T23:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:00:00Z",
@@ -1892,9 +1892,80 @@
       "opened_at": "2026-05-30T16:36:03Z",
       "persona": "Editorial Review Skill (run-315)",
       "claim": "PROFESSOR-ONLY: casebook-ingestion (PI-001), student-work-ingestion (PI-002), 'all 198 snapshot pages professor-reviewed' provenance, X.E candidate course. Loop drafts conditional language + flags only; must NOT assert an answer."
+    },
+    {
+      "id": "PI-258",
+      "severity": "P1",
+      "status": "open",
+      "type": "attribution-discipline-confirm-at-proof-marker-leak",
+      "opened_at": "2026-05-30T23:30:00Z",
+      "opened_at_run": 329,
+      "persona": "1-skeptical-jle-editor",
+      "section": "10",
+      "claim": "Section X.A footnote [^17] in polished/section-10-generalization.md line 110 and full-draft.md [^150] carries `[confirm-at-proof: chapter]` editorial-marker leak inside published-prose footnote at the load-bearing reform-canon-anchor site. The marker names an unresolved editorial task — not a Bluebook locator and not a venue-appropriate footnote element. Bluebook 21st does not recognize `[confirm-at-proof: X]`; JLE editor reads bracketed editor's-note language inside the citation as unfinished. RUNBOOK FINAL-PUSH MODE authorized the marker when source page not machine-readable from here, but L-058 governs at publication boundary. SECOND instance of L-058 published-prose internal-process-marker family after PI-253 (Section 03 [^17]/[^18] audit-trail parentheticals at run 321, drafts-leg closed at run 323).",
+      "suggested_fix": "Next Cite tick on Section 10: strip the `[confirm-at-proof: chapter]` marker via path (a) drop-Maranville-from-compound (preferred under L-053 + L-058 — Sullivan + Stuckey per-source pins already anchor the proposition; Maranville is reinforcing tertiary, not load-bearing; footnote shrinks 61 → 46 words, well under L-064 cap); path (b) replace with verifiable chapter or page locator if maintainer can confirm off-line; path (c) migrate to Appendix D follow-up note. Three-site L-035 propagation lands at polished + drafts + full-draft.md [^150] in same Cite tick (same-slot edit, no L-063 renumber per run-324 PI-237 precedent).",
+      "routes_to": "Section 10 cite_status needs_polish → needs_cite (PI-258 Cite-tier reset); polish_status holds at needs_polish",
+      "paired_with": [
+        "PI-261"
+      ]
+    },
+    {
+      "id": "PI-259",
+      "severity": "P1",
+      "status": "open",
+      "type": "generalization-scope-restriction-asymmetry",
+      "opened_at": "2026-05-30T23:30:00Z",
+      "opened_at_run": 329,
+      "persona": "2-legal-pedagogy-traditionalist",
+      "section": "10",
+      "claim": "Section X.E paragraph 1 minimum-viable-second-instance specification (polished line 74, full-draft Section X.E) restricts the n=2 test to 'a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints' after the run-322 Draft PI-220 narrow-option closure. X.D conceded that rules-and-procedure courses (Civil Procedure) and statutory courses (Tax) fit the method's assumption less cleanly; X.E then specifies the test using exactly the case-method scope where the method fits assumption-cleanly, leaving Civ Pro and Tax with no n=2 test. The generalization claim is systematically under-tested in exactly the courses where it would face the steepest assumption gap. Compounds with PI-247 (X.E meta-disclaimer Polish-layer propagation still open).",
+      "suggested_fix": "Next Polish on Section 10: expand X.E paragraph 1 with one sentence acknowledging the scope-restriction asymmetry. Preferred +44 words at X.E paragraph 1 close: 'A rules-and-procedure or heavily statutory second instance is a separate and harder test the article does not undertake; the present specification's case-method scope concedes that the method's most difficult generalization step is the one X.D names rather than the one X.E specifies.' Alternative tighter +22 words. Section 10 polished word_count 1004 → 1048 or 1026 over the +/-10% band, requiring Stitch trim from named candidate sites (X.A 'method can be run again' tail or X.C PI-154 closure sentence).",
+      "routes_to": "Section 10 polish_status needs_polish (holds)"
+    },
+    {
+      "id": "PI-260",
+      "severity": "P1",
+      "status": "open",
+      "type": "asymmetric-literature-engagement",
+      "opened_at": "2026-05-30T23:30:00Z",
+      "opened_at_run": 329,
+      "persona": "3-ai-in-education-researcher",
+      "section": "10",
+      "claim": "Section X.C paragraph 1 sentence 'the alternative architecture the curriculum-oriented intelligent-assistant literature has developed for higher-education settings.[^12]' (polished line 66, full-draft Section X.C) anchors a literature-level generalization on Sajja et al. 2023 alone. Bond's Zawacki-Richter typology codes the chatbot-tutor architecture within Intelligent Tutoring Systems and Adaptive Systems and Personalisation categories. FOURTH instance of broader-AI-in-education-typology asymmetric-engagement defect class after PI-246 (XI.C three-prong), PI-250 (XII.B chatbot-architecture, closed run 319), PI-255 (III.E chatbot-tutor-literature, still open). Pattern recurrence threshold satisfied for L-067 candidate the run-321 narrative named.",
+      "suggested_fix": "Next Polish on Section 10: expand X.C with L-053-compliant Polish-only Bond typology cross-reference using *See supra* Section XI note 8 / global [^153] particle, mirroring PI-250 run-319 closure pattern. Preferred +26 words inserted before the existing [^12] anchor: 'the curriculum-oriented intelligent-assistant literature has developed for higher-education settings, which Bond's typology codes as Intelligent Tutoring Systems and Adaptive Systems and Personalisation (see supra Section XI note 8), two of the four Zawacki-Richter application categories,' (em-dashes substituted by commas per L-005). Alternative tighter +15 words with see supra particle alone. No new footnote (Section XI note 8 / global [^153] Bond pin cite leveraged).",
+      "routes_to": "Section 10 polish_status needs_polish (holds)"
+    },
+    {
+      "id": "PI-261",
+      "severity": "P1",
+      "status": "open",
+      "type": "provenance-side-twin",
+      "opened_at": "2026-05-30T23:30:00Z",
+      "opened_at_run": 329,
+      "persona": "4-provenance-auditor",
+      "section": "10",
+      "claim": "Provenance-side framing of PI-258: the X.A reform-canon claim at polished line 58 / full-draft Section X.A is logged in polished/section-10 frontmatter unsupported_claims with reason `requires-confirm-at-proof-strip-or-source-removal`. The unsupported_claim is partial-mapped: Sullivan + Stuckey per-source pin cites (Summary at 10-11 / Best Practices at 39-44) anchor the proposition cleanly, but the Maranville third source carries `[confirm-at-proof: chapter]` rather than a verified pin and an L-058 published-prose internal-process-marker leak. Per the audit's verifiability principle and PI-253 precedent, the partial mapping at the load-bearing reform-canon-anchor site counts as unmapped pending the PI-258 Cite-tier fix. NEW provenance-side defect class: the `[confirm-at-proof: X]` editorial-marker variant of the L-058 published-prose-process-marker family (third L-058 variant after the footnote process-language and audit-trail-parenthetical variants).",
+      "suggested_fix": "Same as PI-258 path (a) drop-Maranville-from-compound (preferred). Closure lifts criterion 1 claim_coverage to 5 (20/20 or 21/21 mapped) and criterion 3 attribution_discipline 4 → 5 (L-058 violation closes and per-source pin discipline lifts the 4-band line at the load-bearing site), bringing Section 10 provenance_score 4.2 → 4.6+ above the 4.5 gate at one Cite tick.",
+      "routes_to": "Section 10 polish_status needs_polish (twin of PI-258; closure shared with PI-258 Cite-tier fix)",
+      "paired_with": [
+        "PI-258"
+      ]
+    },
+    {
+      "id": "PI-262",
+      "severity": "P1",
+      "status": "open",
+      "type": "unfalsifiable-test-specification",
+      "opened_at": "2026-05-30T23:30:00Z",
+      "opened_at_run": 329,
+      "persona": "7-adversarial-reviewer-supplemental",
+      "section": "10",
+      "claim": "Section X.E paragraph 1 minimum-viable-second-instance specification (polished line 74, full-draft Section X.E) names the TEST DESIGN (different faculty, same checkpoints, comparable case-method doctrinal course) but not the SUCCESS-FAILURE CRITERIA. The reader cannot tell what 'held' versus 'broke' would look like as observable outcomes: at what cost-and-labor-per-week threshold does the test 'succeed'? What constitutes 'failure' — colleague abandons build? Schema does not carry? Loop cannot meet verification standard? The specification is unfalsifiable as written: any second instance can be claimed as confirmation by varying what counts as 'comparable enough,' or excused as not-comparable-enough by varying the same threshold. Reviewer 2 rejection paragraph: 'The article's central empirical claim — that the method generalizes — is structurally unfalsifiable. The proposed second-instance test specifies design but not criteria.' Compounds with PI-219 (run-263 Adversarial Reviewer X.E n=1 anticipate-and-rebut gap; leg b+c closed run 268 via standard-objection and bounded-answer sentences; leg a still open Cite-routed). PI-262 names the deeper falsifiability-criteria leg the run-268 closure did not address.",
+      "suggested_fix": "Next Polish on Section 10: expand X.E paragraph 1 close with one sentence stating success-failure criteria. Preferred +57 words at X.E close: 'The test succeeds if the second instance reproduces the schema, the loop, and the verified-source discipline at cost-and-labor-per-week within an order of magnitude of Section IX's accounting; it fails if the colleague abandons the build, finds that the schema does not carry, or finds that the loop cannot meet the verification standard at a comparable cost-per-page rate.' Alternative tighter +28 words. Section 10 polished word_count compounding with PI-259 + PI-260 over-band pressure; next Stitch tick must trim 70-120 words elsewhere.",
+      "routes_to": "Section 10 polish_status needs_polish (holds)"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -1916,7 +1987,7 @@
       "11"
     ]
   },
-  "run_count": 328,
+  "run_count": 329,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2262,7 +2333,7 @@
     "10": {
       "cite_completed_at": "2026-05-31T22:30:00Z",
       "cite_last_run": 303,
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "claims_mapped": 20,
       "claims_total": 21,
       "current_words": 1069,
@@ -2284,11 +2355,11 @@
       "polish_status": "needs_polish",
       "polish_status_prior_run_268": "ready_for_stitch",
       "polished_word_count": 1004,
-      "provenance_audit_run": 306,
-      "provenance_audit_run_prior": 270,
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-31T22:00:00Z",
-      "provenance_score": 4.0,
+      "provenance_audit_run": 329,
+      "provenance_audit_run_prior": 306,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-30T23:30:00Z",
+      "provenance_score": 4.2,
       "provenance_score_prior": 4.0,
       "stitched_at": "2026-05-24T11:00:00Z",
       "target_words": 900,
@@ -2298,10 +2369,16 @@
           "claim_text": "The legal-education reform canon treats teaching method, not any single course's finished materials, as the unit of pedagogical contribution capable of traveling across doctrinal courses.",
           "paragraph": 1,
           "subsection": "X.A",
-          "anchor": "[^17] polished / [^150] full-draft",
-          "reason": "requires-pin-cite-to-canon-source",
-          "opened_in_run": 306,
-          "paired_pi": "PI-241"
+          "anchor": "[^17] polished / [^150] full-draft (compound cite with Maranville third source carrying [confirm-at-proof: chapter] published-prose internal-process-marker leak under L-058)",
+          "reason": "requires-confirm-at-proof-strip-or-source-removal",
+          "opened_in_run": 329,
+          "paired_pi": "PI-258",
+          "paired_with": [
+            "PI-258",
+            "PI-261"
+          ],
+          "support_type": "footnote-partial",
+          "support_ref": "[^17]"
         }
       ],
       "unsupported_claims_count": 1,
@@ -2319,8 +2396,8 @@
       "stitch_propagated_at_run_305": "2026-05-31T20:00:00Z",
       "stitch_propagation_note_run_305": "Run-305 Stitch propagated the run-302 Draft + run-303 Cite + run-304 Polish X.A new sentence and the local [^17] = Carnegie/Best Practices/Building on Best Practices footnote from polished/section-10-generalization.md into manuscript/full-draft.md as new global [^150], with +1 renumber of existing globals [^150]-[^186] -> [^151]-[^187]. polish_status holds at needs_polish on the still-open PI-238 (X.A 'admired or copied' Silicon-Valley-rhetoric routing), PI-220/PI-221 (X.E framing/checkpoints gaps), and the +14-over-Polish-band word_count 1004 vs. target 900 flagged by run-304 for a future Polish trim tick. polished file unchanged (already source-of-truth at run 304); drafts file unchanged. The Section 10 X-leg of PI-JLE-LEGAL-ED-LIT now closes at the full-draft layer; only the XI leg remains open under the priority-2 queue.",
       "provenance_score_prior_run_304": 4.2,
-      "last_verify_touch_run": 306,
-      "last_verify_touch_note": "Run-306 Verify Provenance Auditor re-audit on Section 10 (lowest-numbered polished section at provenance_audited:false after run-304 Polish reset). Score 4.0 (-0.2 from run-270 4.2 baseline) on criterion 1 claim_coverage 5 -> 4 from one new unsupported_claim at X.A reform-canon-anchor site (the run-304 Polish-inserted sentence with [^17]/[^150] compound string-cite to Sullivan 2007 / Stuckey 2007 / Maranville 2015 without per-source pin-cites). Two new PIs opened: PI-241 (Persona 1 Skeptical JLE Editor; routed to Section 10 Cite; Form (b) per-source pin-cite expansion in place lifts criterion 1 + 3 simultaneously for 4.0 -> 4.6 above the 4.5 gate); PI-242 (Persona 5 Practitioner-Adopter supplemental; X.A adopter-onboarding-corpus-and-labor-threshold gap; routed to Section 10 Polish; tighter form is +5-word X.A sentence cross-referencing Section IV corpus and Section IX labor). PI-220 (Persona 2) re-confirmed third-consecutive at unchanged X.D/X.E body. PI-238 (Persona 3 X.A 'admired or copied' Silicon-Valley reproducibility-rhetoric) re-confirmed second-consecutive at unchanged X.A body. cite_status needs_polish -> needs_cite on the PI-241 Cite-tier routing; polish_status holds at needs_polish.",
+      "last_verify_touch_run": 329,
+      "last_verify_touch_note": "Verify run-329 re-audited Section 10 against post-run-325 [^17]/[^150] PI-241 per-source pin-cite expansion (Sullivan Carnegie Summary at 10-11; Stuckey Best Practices at 39-44; Maranville Building on Best Practices [confirm-at-proof: chapter]). Score 4.0 → 4.2 (claim_coverage 4 → 5 on PI-241 mapping; attribution_discipline 4 → 4 holds on Maranville [confirm-at-proof: chapter] L-058 leak; primary_source_ratio 3 holds on synthesis structural ceiling; numerical_precision 4 holds; gap_honesty 5 holds). 4.2 < 4.5 gate, polish_status holds at needs_polish; cite_status routes needs_polish → needs_cite on the PI-258 Cite-tier [confirm-at-proof: chapter] strip. Five P1 findings opened: PI-258 (Persona 1 Cite), PI-259 (Persona 2 Polish — X.E rules-and-procedure scope-restriction), PI-260 (Persona 3 Polish — X.C Bond typology cross-reference; FOURTH asymmetric-engagement defect-class instance), PI-261 (Persona 4 provenance-side twin of PI-258), PI-262 (Persona 7 Adversarial Reviewer Polish — X.E falsifiability-criteria gap).",
       "draft_note_run_312": "PI-247 Section X.E leg landed at Draft level: inserted one 35-word meta-disclaimer at end of X.E ('The article describes the schema; the test is a second instance, a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints, that this piece explicitly routes to future work.'). +35 body words; drafts word_count 1033 -> 1068 (+18.7% of target 900). No new footnote slot (meta-disclaimer about the article's own claim altitude, no factual claim requiring Bluebook anchor). Polish/Stitch own propagation to polished/section-10 and full-draft.md. PI-247 status: open; X.E leg at Draft level closed pending Polish propagation; paired XIV.B 8-word echo landed simultaneously this tick at drafts/section-14-conclusion.md.",
       "draft_note_run_322": "PI-220 (Persona 2 Pedagogy Traditionalist; X.D/X.E two-track-n=2-framing tension on 'comparable doctrinal course' definition; opened run 270) closed at Draft layer via PI-220's narrow-option fix: inserted 'case-method' before 'doctrinal course' in the X.E PI-219 leg b sentence (line 45) so 'a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' becomes 'a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints', harmonizing the leg-b scope with the leg-d run-312 sentence three sentences later that already reads 'a comparable case-method doctrinal course' and acknowledging X.D's 'A rules-and-procedure course such as Civil Procedure, or a heavily statutory course such as Tax, fits that assumption less cleanly' concession. Body word delta +1; word_count 1068 -> 1069 (+18.8% of target 900, holds within the PI-247 accepted-overage; the Draft 15% cap is exceeded on the run-312 PI-247 baseline this tick inherits, not a fresh breach; flag_for_stitch_trim_run_304 remains the operative trim flag). No new footnote slot; the narrow option preserves L-053 (no new sources) by leaning on existing case-method evidence at X.B [^5] Mertz and X.D [^14] Usman. PI-220's broaden-option (two falsification tracks) intentionally declined to avoid the +60-80 word addition Section 10 cannot afford under the +/-10% Polish band. draft_status holds at needs_polish; cite_status unchanged (no new external anchor); polish_status holds at needs_polish on the open PI-238 / PI-221 / PI-242 / PI-247 axes and on the load-bearing PI-220 propagation to polished/section-10-generalization.md and manuscript/full-draft.md (next Polish tick on Section 10 owns under L-035 three-site discipline; the polished file line 44 and full-draft.md line 312 still carry the bare 'comparable doctrinal course' phrasing). Substantive effect: the article's minimum-viable-second-instance specification is now load-bearing only over case-method doctrinal courses, leaving X.D's rules-and-procedure / statutory extension question as a SEPARATE second-instance test the article does not undertake.",
       "last_draft_touch_run": 322,
@@ -2555,14 +2632,14 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "03",
+    "last_audit_section": "10",
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "03",
-    "last_run": 321,
-    "last_run_at": "2026-05-30T09:00:00Z",
-    "new_findings_count": 5,
+    "last_reaudit_section": "10",
+    "last_run": 329,
+    "last_run_at": "2026-05-30T23:30:00Z",
+    "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 145,
+    "p1_open": 149,
     "p2_open": 43,
     "personas_read": 5,
     "last_cite_run": 325
