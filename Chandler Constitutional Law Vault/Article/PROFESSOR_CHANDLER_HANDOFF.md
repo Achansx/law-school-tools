@@ -2,9 +2,10 @@
 
 **To:** Professor Chandler
 **Re:** Draft law-review article (for the *Journal of Legal Education*) describing the Constitutional Law I course-knowledge system — **draft for your review, not a submission**
-**Date:** May 29, 2026
+**Date:** May 30, 2026
 **Companion site:** https://constitutionallaw.netlify.app
-**Frozen draft:** `Article/manuscript/HANDOFF-2026-05-29-FINAL.md`
+**Frozen draft:** `Article/manuscript/HANDOFF-2026-05-30.md`
+**Clean submission copy (frontmatter stripped):** `Article/manuscript/SUBMISSION-2026-05-30.md`
 
 ---
 
@@ -14,9 +15,10 @@ A complete working draft of a method article for the *Journal of Legal Education
 
 ## 2. Status at hand-off
 
-- **~14,084 words**, 14 sections (I–XIV) plus abstract and appendices.
-- **188 footnotes**, contiguous and integrity-checked (no gaps, duplicates, or orphans); Bluebook 21st form; external URLs verified live.
-- Assembled draft: `Article/manuscript/full-draft.md` (frozen copy: `Article/manuscript/HANDOFF-2026-05-29-FINAL.md`).
+- Title (trimmed this round): **"From Casebook to Course Knowledge System: AI-Assisted Synthesis and Obsidian."**
+- **~14,104 words**, 14 sections (I–XIV) plus abstract and appendices.
+- **190 footnotes**, contiguous and integrity-checked (no gaps, duplicates, or orphans); Bluebook 21st form; external URLs verified live.
+- Assembled draft: `Article/manuscript/full-draft.md`. Frozen copy: `Article/manuscript/HANDOFF-2026-05-30.md`. A **clean submission copy with the working build-metadata frontmatter stripped** is at `Article/manuscript/SUBMISSION-2026-05-30.md`.
 - This is a **coherent, reviewable full draft** — not yet a finalized submission (open items in §4).
 
 ## 3. What has been done and checked
@@ -26,12 +28,13 @@ A complete working draft of a method article for the *Journal of Legal Education
 - **Internal build-process language removed from the prose.** References to the project's own workplan, lessons file, and internal issue identifiers have been evicted from the published text (they do not belong in a law-review article); a body scan shows zero remaining.
 - **Venue fit strengthened — and now fully anchored.** The article engages the legal-education canon (Carnegie Report; *Best Practices for Legal Education*; *Building on Best Practices*; Sturm & Guinier; ABA Standards 207/315/405; the JLE AI scholarship incl. Choi & Schwarcz; Bond's meta-review) rather than leaning only on AI/CS sources, and it carries a **related-work passage (§II.F)** distinguishing the system from commercial study aids (Quimbee/CrunchTime/Oyez/Studicata), open casebooks (H2O/eLangdell), live AI tutors, and the "digital garden" note-publishing form. Every load-bearing pedagogy/framing section (I, II, X, XI, XII, XIII) now carries a legal-ed-canon anchor with **per-source page pin-cites**, not bare string-cites.
 - **Secondary-source citations were audited for support, not just liveness.** A dedicated pass gathered the actual source documents (open PDFs only — no paywalled or pirated copies) and checked that each secondary work *says what the draft cites it for*. All 18 secondary works came back **SUPPORTED**; the evidence record is in `Article/research/secondary-source-citation-support-audit.md` (copyright-safe, quotes ≤15 words). A handful of exact page numbers in edited-volume chapters could not be machine-verified and are flagged inline as `[confirm-at-proof: …]` rather than guessed.
+- **A full editorial-review pass was run and addressed** (the review is saved at `Article/research/editorial-review-run315-2026-05-30.md`). Closed this round: the title was trimmed; **all appendix cross-references were reconciled** against the actual appendix files (the broken "App. D — Correspondence/Iteration Excerpts" pointers — internal-record material that does not belong in a published article — were removed, not built, and the cost-table pointer was re-lettered to its real appendix); the three remaining "internal pending-issue tracker" footnote citations were removed; a **§IX cost-and-labor table (Table 9.1)** was assembled from the build's own cost log (its cells verified exact against the log; dollar and person-hour columns are honestly marked as out of scope rather than estimated); a learning-sciences **overreliance citation** was added at §XII.B (Vasconcelos 2023; Bastani et al., PNAS 2025); a §XIV.C sentence now states what a colleague attempting a second instance would be given; the Boyer scholarship-of-teaching typology got a half-sentence of unpacking; and two over-long sentences (§IV.A, §V.B) were split. (The earlier review you may have seen was run against a stale local copy and flagged duplicate footnotes — that defect was already fixed; this pass worked against the current draft.)
 
 ## 4. Open items before any submission (honest list)
 
-1. **Legal-education re-anchoring is now complete.** The tracking item (`PI-JLE-LEGAL-ED-LIT`) is **resolved**: §X (Generalization) and §XI (Evaluation) — the two sections that were still open at the previous freeze — are now anchored to the legal-ed canon with per-source page pin-cites, matching §II. **Please still review whether the legal-ed engagement reads as sufficient for your taste**, especially in §X and §XI; the anchors are in place, but the depth of engagement is a matter of authorial judgment that is properly yours.
-2. **A few page numbers are marked for confirmation at proof.** Where an edited-volume chapter's exact pagination could not be verified from a machine-readable source, the footnote carries a visible `[confirm-at-proof: …]` marker (e.g., the *Building on Best Practices* / Maranville chapter pin). These are honest placeholders, not guesses, and want a quick check against a print/library copy at the proof stage. Same for the *Building on Best Practices* / Boyer 1990 pagination and the exact 2025–26 title of ABA Standard 405.
-3. **Word count.** ~84 words over the 14,000-word self-imposed ceiling — a trivial trim (flagged to fall on §II.B/§II.D, which are over-budget; the protected §II.E/§II.F additions should stay).
+1. **Decisions only you can make — the loop deliberately did not answer these.** (a) **Casebook ingestion:** whether casebook excerpts were ingested into the corpus. (b) **Student-work ingestion:** whether any student work was ingested (bears on the §XII.D privacy framing). (c) **Review coverage:** whether *every* one of the 198 snapshot-date pages was professor-reviewed before deployment — the "reviewed static site" claim rests on this. (d) **§X.E second instance:** if you have a specific course in mind for the "minimum viable second instance" (Torts? Contracts?), naming it sharpens the invitation. The draft hedges (a)–(c) honestly and the loop drafted balanced conditional language, but it is **barred from asserting an answer**; at submission each wants one definitive sentence from you, after which §§IV/XII tighten accordingly.
+2. **A few citations want a page-proof confirmation** (all flagged honestly, none guessed): the edited-volume chapter pins (`[confirm-at-proof: …]` on the *Building on Best Practices*/Maranville chapter; the Boyer 1990 pagination; the exact 2025–26 title of ABA Standard 405). **New this round:** the §XII.B overreliance footnote cites Bastani et al., *Generative AI Without Guardrails Can Harm Learning*, PNAS 2025 — the source and its qualitative finding are verified, but (i) please confirm the "about seventeen percent" figure against the published text, and (ii) **PNAS issued a correction** to that article (DOI 10.1073/pnas.2518204122); confirm the cited numbers reflect the corrected version.
+3. **Word count.** ~104 words over the 14,000-word self-imposed ceiling. The editorial review itself called this a defensible policy-window crossing the venue is unlikely to enforce strictly; a final trim on §II.B/§II.D (over-budget; the protected §II.E/§II.F additions should stay) is available if you'd rather land under.
 4. **Figures need format conversion before submission.** The captured figures are PNGs at screen resolution. JLE requires figures as **separate `.jpg`/`.tif`/`.eps` files at ≥300 dpi, grayscale preferred, named to their in-text figure numbers.** This is an image-preparation step a person (or an image tool) must do; the writing loop cannot.
 5. **Open review findings remain in the queue.** The article's adversarial review personas continue to surface style/citation/coherence findings each pass; these are normal manuscript-QA items, not correctness blockers.
 6. **This was never auto-finalized.** The internal "submission-ready" gate was deliberately never tripped; final sign-off is a human decision (yours).
