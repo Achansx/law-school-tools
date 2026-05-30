@@ -42,7 +42,7 @@ Section VIII’s most load-bearing claim is the architectural one: the case stud
 
 ## Footnotes
 
-[^1]: *See infra* App. A (Vault Architecture and File Layout) (deployed-site URL https://constitutionallaw.netlify.app and 198-page corpus snapshot of 92 case briefs, 27 doctrinal topic pages, and 79 lecture summaries as of the progress-report date; underlying progress report excerpted *infra* App. D (Correspondence Excerpts)).
+[^1]: *See infra* App. A (Vault Architecture and File Layout) (deployed-site URL https://constitutionallaw.netlify.app and 198-page corpus snapshot of 92 case briefs, 27 doctrinal topic pages, and 79 lecture summaries as of the progress-report date).
 
 [^2]: *See infra* fig. 3.9 (deployed site’s About page as the deployed shell’s self-description naming the rotation-built provenance; captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026).
 

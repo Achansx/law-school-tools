@@ -93,7 +93,7 @@ The vault’s schema is therefore a sequence of structural commitments, each for
 
 [^15]: Boci Peng, Yun Zhu, Yongchao Liu, Xiaohe Bo, Haizhou Shi, Chuntao Hong, Yan Zhang & Siliang Tang, *Graph Retrieval-Augmented Generation: A Survey*, arXiv:2408.08921 (Aug. 15, 2024), https://arxiv.org/abs/2408.08921 (last visited May 16, 2026) (defining the canonical GraphRAG workflow as graph-based indexing, graph-guided retrieval, and graph-enhanced generation).
 
-[^16]: *See infra* App. A (Vault Architecture and File Layout) (per-phase rubric file split into six phase-specific files; tiered file loading skipping LESSONS for phases that do not need it; monthly rotation of the BUILD_NARRATIVE file; one-line logging for no-op phase runs); *see also infra* App. D (Build-System Correspondence and Internal Drafts) (vault build-narrative entries describing the architectural transition from a single monolithic rubric to per-phase rubrics).
+[^16]: *See infra* App. A (Vault Architecture and File Layout) (per-phase rubric file split into six phase-specific files; tiered file loading skipping LESSONS for phases that do not need it; monthly rotation of the BUILD_NARRATIVE file; one-line logging for no-op phase runs).
 
 [^17]: *See infra* App. A (Vault Architecture and File Layout) (Topics/Judicial Review.md area field initially assigned *Federal Judicial Power*, realigned to Separation of Powers per the canonical four-value enum; vault RUNBOOK.md codification of the realignment process for future drift).
 

@@ -53,7 +53,7 @@ The argument proceeds in the order a reader needs it. It begins with why ordinar
 
 [^4]: *See infra* Section XI (Evaluation: What Would Count as Success) (stating that the article advances a method claim rather than a learning-outcomes claim, and describing the method-plus-light-data evaluation posture adopted in lieu of a controlled trial the single course cannot run).
 
-[^5]: Constitutional Law I Wiki, https://constitutionallaw.netlify.app (last visited May 23, 2026) (the deployed static site presents Dashboard, Cases, Topics, Lectures, Recent, and About navigation and identifies the course as Professor Chandler’s Constitutional Law I, Spring 2026); *see also infra* App. A (Input Corpus Inventory) (198-page corpus snapshot of 92 case briefs, 27 doctrinal topic pages, and 79 lecture summaries as of the progress-report date; underlying progress report excerpted *infra* App. D (Correspondence Excerpts)).
+[^5]: Constitutional Law I Wiki, https://constitutionallaw.netlify.app (last visited May 23, 2026) (the deployed static site presents Dashboard, Cases, Topics, Lectures, Recent, and About navigation and identifies the course as Professor Chandler’s Constitutional Law I, Spring 2026); *see also infra* App. A (Input Corpus Inventory) (198-page corpus snapshot of 92 case briefs, 27 doctrinal topic pages, and 79 lecture summaries as of the progress-report date).
 
 [^6]: *See infra* Section III (Case Study: A Constitutional-Law Knowledge System) (describing the discipline under which every key quotation on a case page links to the cited line of the indexed judicial opinion, so a reader can trace each pull-quote to the source that controls it).
 

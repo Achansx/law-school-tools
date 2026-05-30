@@ -69,7 +69,7 @@ The user-experience contrast with a chatbot tutor is structural rather than rhet
 
 [^2]: Figure 3.1 (capture pending, see PI-027) (deployed-site top-nav entry shell, brand row, and ⌘K search-palette trigger as a Con Law I student first encounters them on opening the deployed case study).
 
-[^3]: *See infra* App. A (Vault Architecture and File Layout) (Recent route `#/recent` listing pages the maintenance rotation has most recently touched; ⌘K search palette indexing case names, topic names, doctrine families, and lecture titles via `.site/dist/search.json`; four-family Topics grid and Cases area filter rail dispatched in `.site/dist/app.js`); *see also infra* App. D (Correspondence Excerpts) (progress report describing the Recent tab as showing whatever the maintenance cycle has most recently touched).
+[^3]: *See infra* App. A (Vault Architecture and File Layout) (Recent route `#/recent` listing pages the maintenance rotation has most recently touched; ⌘K search palette indexing case names, topic names, doctrine families, and lecture titles via `.site/dist/search.json`; four-family Topics grid and Cases area filter rail dispatched in `.site/dist/app.js`).
 
 [^4]: *See infra* App. A (Vault Architecture and File Layout) (Topics index `#/topics` rendering a four-family grid keyed to the `doctrine_family` enum, and Cases index `#/cases` rendering a filter-rail-plus-year-blocks digest, both dispatched in `.site/dist/app.js`); *see also supra* Section V (Building the Obsidian Vault) (documenting the four-bucket `doctrine_family` enum that drives the Topics grid).
 

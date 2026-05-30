@@ -80,7 +80,7 @@ The article snapshots the input-to-output state at the date of the professor-fac
 
 [^16]: *See infra* App. A (Input Corpus Inventory) (filename sample drawn from a directory listing of Source Materials/ on May 15, 2026).
 
-[^17]: *See infra* App. A (Input Corpus Inventory) (Vault Output Snapshot subsection: one hundred ninety-eight wiki pages as of the progress-report date, comprising ninety-two case briefs, twenty-seven doctrinal topic pages, and seventy-nine lecture summaries; underlying progress report excerpted *infra* App. D (Correspondence Excerpts)).
+[^17]: *See infra* App. A (Input Corpus Inventory) (Vault Output Snapshot subsection: one hundred ninety-eight wiki pages as of the progress-report date, comprising ninety-two case briefs, twenty-seven doctrinal topic pages, and seventy-nine lecture summaries).
 
 [^18]: *See infra* App. A (Input Corpus Inventory) (filesystem audit of May 15, 2026: one hundred thirty-one case briefs, fifty-three doctrinal topic pages, and ninety-seven lecture summaries, totaling two hundred eighty-one pages).
 
