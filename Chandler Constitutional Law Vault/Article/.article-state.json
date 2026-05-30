@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "reason": "REOPENED to close the PI-JLE-LEGAL-ED-LIT Section X and XI legs (legal-education-canon re-anchoring in Generalization and Evaluation). Loop resumed under FINAL-PUSH MODE priority 2. Re-freeze manuscript/HANDOFF-<date>.md and re-set this gate (awaiting_human:true) once PI-JLE-LEGAL-ED-LIT is resolved. The system still does not submit to JLE and does not email the professor."
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-30T04:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-30T05:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T18:00:00Z",
@@ -1605,7 +1605,10 @@
       "description": "XII.B frames the safety comparison as static-vs-chatbot only, eliding the case-method-plus-Socratic baseline as the actual third comparison pole and the canonical pedagogical baseline for any JLE article on AI-assisted pedagogy. The XII.B third paragraph names 'the live Socratic contest' as a thing the static method's reader forgoes but treats it as a narrow concession rather than as the actual baseline. Compounds with PI-046 (Section VII live-pedagogy substitution), PI-031 (Section III.C lecture-summary substitution), and PI-245 (Section XI.A teaching-purpose substitution) as the article's recurring static-vs-AI taxonomy quietly substituting for the case-method-plus-Socratic baseline.",
       "suggested_fix": "Polish tick on Section 12: add one sentence to XII.B paragraph 1 after the 'four axes' sentence explicitly naming the case-method Socratic baseline as the third comparison pole (+44 words). Alternative tighter form: parenthetical clause at XII.A paragraph 2 close (+34 words) keeping the case-method baseline visible at the safety-argument site.",
       "routes_to": "Section 12 Polish",
-      "status": "open"
+      "status": "open",
+      "legs_progress": {
+        "draft_advanced_at_run_317": "PI-249's 44-word form landed at drafts/section-12-risks-and-limits.md as a 48-word two-sentence insertion at the end of XII.B paragraph 1 immediately after the four-axes sentence (the case method conducted through live Socratic exchange named as the canonical legal-education baseline third pole; reviewed static website and chatbot-tutor architecture positioned as adjacent interventions rather than substitutes). drafts/section-12 current_words 1419 -> 1467 (+48; PI's +44 target overshot by +4, well within section +/-10% band). Polish and full-draft propagation owed under L-035 three-site discipline; PI-249 stays open until polished/section-12 mirrors the new sentences and full-draft.md carries them through Stitch."
+      }
     },
     {
       "id": "PI-250",
@@ -1650,7 +1653,7 @@
       "status": "open"
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -1672,7 +1675,7 @@
       "11"
     ]
   },
-  "run_count": 316,
+  "run_count": 317,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2145,8 +2148,8 @@
       "cite_status": "needs_polish",
       "claims_mapped": 17,
       "claims_total": 18,
-      "current_words": 1419,
-      "draft_at": "2026-06-01T19:00:00Z",
+      "current_words": 1467,
+      "draft_at": "2026-05-30T05:00:00Z",
       "draft_note_run164": "Run-164 Draft: landed the sole still-unaddressed ask of PI-XII-ENGAGE (b) by adding explicit staleness (content fixed at a snapshot, can fall behind a shifting doctrine where a continuously re-grounded system would not) and scope-creep/single-point-of-failure-on-review (the reviewer's capacity, not the model's, becomes the binding constraint as the corpus grows) to the XII.B static-architecture own-failure-modes catalogue. Asks (a)/(d)/(e) were already landed by run-143; ask (c) Mata-to-one-sentence deliberately NOT regressed (run-143 deepened Mata per a run-138 Verify finding; L-010 no longer in LESSONS, so the more recent deepening governs). No new number (L-027), no new [CITE:] (architectural/analytical claims), recurring sentence absent per L-002, static-vs-chatbot verb discipline held per L-003/L-031. current_words 1359->1396. draft_status->needs_cite. PI-XII-ENGAGE resolved+archived.",
       "draft_status": "needs_cite",
       "evidence_cards": 11,
@@ -2156,7 +2159,7 @@
       "last_cite_propagation_note": "Run-228 propagated Zawacki-Richter typology pin cite to Section 12 [^10]/[^167] across three sites (polished, drafts, full-draft); cross-section consistency with Section 11 [^8]/[^151] now established on the Bond corpus-composition characterization.",
       "last_cite_propagation_run": 228,
       "last_cite_run": 228,
-      "last_phase": "cite",
+      "last_phase": "draft",
       "last_polish_propagation_at": "2026-06-07T07:00:00Z",
       "last_polish_propagation_run": 215,
       "outline_ready_at": "2026-05-23T05:00:00Z",
@@ -2185,7 +2188,8 @@
       "provenance_audited_at": "2026-05-30T04:00:00Z",
       "provenance_audit_run": 316,
       "provenance_score_prior_run_138": 4.0,
-      "provenance_audit_note_run316": "Run-316 Verify provenance re-audit: first Section-12 re-audit since the run-138 4.0 baseline. Audit clears the LAST unaudited polished section in the article; all 14 sections now provenance_audited:true post run-316 (satisfies RUNBOOK Stitch criterion 5 per-section flag). Score 4.0 -> 4.2 (+0.4): claim_coverage 4 (17/18 = 94.4% mapped; XII.E equity-anchor unmapped pending PI-248); primary_source_ratio 3 (2/10 external; structural-ceiling lift per run-306/run-311 synthesis-section precedent); attribution_discipline 4 (PI-241/PI-244 4-band line on the new XII.E canon-anchor gap); numerical_precision 5 (Magesh 17-33% + Mata six fabrications + Bond sixty-six studies all consistent); gap_honesty 5 (lift 4 -> 5 on run-215 spelling fix + run-228 typology clause + section's explicit-disclaimer discipline throughout). 4.2 < 4.5 gate, polish_status holds at needs_polish. Path to 4.6: PI-248 Form (a) Cite-tier ABA Standard 208/305(d) + legal-education-accessibility-scholarship pin cite at [^9]/[^168] lifts criteria 1/2/3 simultaneously."
+      "provenance_audit_note_run316": "Run-316 Verify provenance re-audit: first Section-12 re-audit since the run-138 4.0 baseline. Audit clears the LAST unaudited polished section in the article; all 14 sections now provenance_audited:true post run-316 (satisfies RUNBOOK Stitch criterion 5 per-section flag). Score 4.0 -> 4.2 (+0.4): claim_coverage 4 (17/18 = 94.4% mapped; XII.E equity-anchor unmapped pending PI-248); primary_source_ratio 3 (2/10 external; structural-ceiling lift per run-306/run-311 synthesis-section precedent); attribution_discipline 4 (PI-241/PI-244 4-band line on the new XII.E canon-anchor gap); numerical_precision 5 (Magesh 17-33% + Mata six fabrications + Bond sixty-six studies all consistent); gap_honesty 5 (lift 4 -> 5 on run-215 spelling fix + run-228 typology clause + section's explicit-disclaimer discipline throughout). 4.2 < 4.5 gate, polish_status holds at needs_polish. Path to 4.6: PI-248 Form (a) Cite-tier ABA Standard 208/305(d) + legal-education-accessibility-scholarship pin cite at [^9]/[^168] lifts criteria 1/2/3 simultaneously.",
+      "draft_note_run317": "Run-317 Draft tick. Section 12 selected per FINAL-PUSH MODE priority fallback (priorities 1-3 closed; priority 4 Polish/Stitch territory) and Verify run-316 PI-249 routing (P1, Persona 2 Legal Pedagogy Traditionalist; nominally routed to Polish but addressed at Draft per the run-312 precedent for substantive sentence-level prose adds). Landed PI-249's 44-word form as a 48-word two-sentence insertion at the end of XII.B paragraph 1 immediately after the four-axes sentence, naming the case method conducted through live Socratic exchange as the canonical legal-education baseline against which the reviewed static website and the chatbot-tutor architecture are interventions adjacent rather than substitutes. The four-axes inventory now reads as a two-architecture contrast within an explicit three-pole comparison; the third pole is made visible at the head of XII.B rather than appearing only as the paragraph-3 Socratic-displacement-risk concession the JLE traditionalist persona complained about. No new external citation (L-053-compliant; the canonical legal-education frame is already in the article via Mertz at Section II [^4] and X [^5] and via Carnegie/Best Practices/Sturm-Guinier at Section II [^12], X [^17], XI [^9]). No em dashes; no straight quotes. Recurring sentence absent from XII per L-002. Sentence 1 = 29 words; sentence 2 = 19 words; both under the 35-word polish ceiling. current_words 1419 -> 1467 (+48; +4 over PI-249's suggested +44 form, well within the section's +/-10% band at 1467/1400 = 1.048). draft_status holds at needs_cite for the next Cite tick to confirm no orphan claim was introduced and to consider a Bluebook *See supra* cross-reference particle to Section II [^4] / Section II [^12] at the new third-pole site. PI-249 advanced one site (drafts); polished and full-draft propagation owed to next Polish/Stitch under L-035 three-site discipline; PI-249 remains open with a draft_advanced_at_run_317 marker. PI-250 / PI-252 (Polish-route) and PI-248 / PI-251 (Cite-route) NOT addressed this tick; the next Polish or Cite tick on Section 12 takes them."
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
