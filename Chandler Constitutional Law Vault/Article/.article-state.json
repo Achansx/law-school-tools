@@ -89,7 +89,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -102,17 +102,17 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-06-01T00:00:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-06-01T02:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-31T17:00:00Z",
     "confirmed_stitched_count": 2,
-    "footnotes_total": 189,
+    "footnotes_total": 190,
     "full_draft_exists": true,
-    "last_polish_propagation_at": "2026-05-29T17:00:00Z",
-    "last_polish_propagation_note": "Run-283 Polish on Section 13 propagated the run-281 Draft prose edits and the run-282 Cite [^10]/[^11] footnotes from drafts/section-13-institutional-implications.md into polished/section-13-institutional-implications.md and manuscript/full-draft.md per the L-035 three-site discipline, closing the two-tick deferred propagation flagged in the run-282 Cite note. Polished body changes: (1) XIII.B closer 'A course knowledge system is therefore best read as faculty scholarship of teaching coupled with institutional stewardship' rewritten to 'A course knowledge system can therefore be read as faculty scholarship of teaching coupled with institutional stewardship' per PI-224 fix option b (softening the asserted-as-settled tension with the adjacent XIII.C contestation admission, word-neutral). (2) XIII.C contestation sentence rewritten to name the contestation parties (Boyer's scholarship-of-teaching account vs. the research-only conception governing promotion-and-tenure norms) anchored to new [^10] (Boyer 1990 / Sturm & Guinier 60 Vand. L. Rev. 515 (2007) / Leering 2018 compound cite), with the institution-must-decide clause separately anchored to new [^11] (ABA Standard 405). Polished frontmatter: word_count 549 -> 573 (+24 from the XIII.C contestation rewrite); footnotes_count 9 -> 11; last_phase verify-provenance -> polish; polish_status holds at needs_polish per the Polish-then-Verify-Provenance closure path on PI-224 / the XIII.C contestation unsupported_claim (the next Verify Provenance Auditor re-audit on Section 13 will re-score against the post-Polish prose to decide whether the [^10]/[^11] anchors clear the contestation unsupported_claim entry, closing PI-224 fully and lifting provenance_score from 4.0 toward >=4.5, or whether the audit surfaces a follow-on routing). Assembled-draft propagation: XIII.B / XIII.C body edits mirrored at the assembly with the inline marker translation polished [^10] -> global [^173] and polished [^11] -> global [^174]; new [^173] and [^174] defs inserted between [^172] and the prior [^173] (Section XIV's first body marker); the prior global [^173]-[^180] Section XIV body markers and footnote defs shifted +2 to [^175]-[^182] across both body refs (lines ~395/399/401/403) and def headers; zero non-Section-XIV cross-references to Section XIV slots needed update (regex-verified zero 'note 173' through 'note 180' references in any non-Section-XIV footnote body). Integrity verified: 182 contiguous footnote defs [^1]-[^182] in the assembled draft, zero gap/dup/orphan, every body inline marker resolves to a def (Python audit). manuscript.total_words 13600 -> 13624, 376 words of ceiling headroom inside the 10,000-14,000 policy window. footnotes_total 180 -> 182. Recurring sentence preserved at three canonical placements; terminology umbrella and em-dash/ASCII-quote/Rigour checks all green. PI-224 stays open pending the next Verify Provenance Auditor re-audit on the post-Polish polished source (the audit will determine whether the new [^10]/[^11] anchors clear the run-280 unsupported_claim entry; if cleared, PI-224 closes and Section 13 polish_status can lift to ready_for_stitch). PI-JLE-LEGAL-ED-LIT advanced one section: Section XIII's Boyer / Sturm & Guinier / Leering / ABA Standard 405 leg is now fully prose-and-footnote propagated; Sections I / II / X / XI still routed.",
-    "last_polish_propagation_run": 283,
+    "last_polish_propagation_at": "2026-06-01T02:00:00Z",
+    "last_polish_propagation_note": "Run-341 Stitch BATCH PROPAGATION TICK closed the run-340 Polish handoff for four PI-ER-* Polish-owned items plus the run-330 Draft IXTABLE delivery still in-polish-only. Landings: (1) PI-ER-TITLE Stitch leg \u2014 full-draft YAML title and H1 trimmed from \"From Casebook to Course Knowledge System: AI-Assisted Synthesis, Obsidian, and the Future of Legal Pedagogy\" to \"From Casebook to Course Knowledge System: AI-Assisted Synthesis and Obsidian\". (2) PI-ER-IXTABLE Stitch leg \u2014 Section IX.A column-set re-anchor, IX.C opener tightened, IX.D cross-rubric trim + Table 9.1 closer, IX.E full rewrite delivering Table 9.1 (7-phase Article-loop ticks: Harvest 36/26909, Outline 25/15066, Draft 38/19032, Cite 40/13512, Polish 37/15533, Stitch 38/25883, Verify 50/135132, Total 264/251067) and the two-omissions-as-scope closer, plus footnotes [^120]/[^121]/[^132]/[^133] rewritten verbatim from polished/section-09 local [^3]/[^4]/[^15]/[^16]. (3) PI-ER-BOYER Stitch leg \u2014 XIII.C contestation sentence expanded with the Boyer four-scholarship typology naming clause (+5 body words). (4) PI-ER-XIVC-COMMIT Stitch leg \u2014 XIV.C inserted the 33-word concrete-commit sentence \"The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced, so the second instance starts from artifacts rather than reconstructs them.[^190]\" between [^188] and the closing modest-replicable sentence; appended footnote [^190] at the global tail cross-referencing Sections V/VI/VII/IX. footnotes_total 189 -> 190; main-text body word_count 14032 -> 14094 (+62 from +23 \u00a79 + +5 XIII.C + +34 XIV.C body deltas). Post-edit Python footnote-integrity audit (L-063, four checks): 190 contiguous defs [^1]-[^190], zero gap, zero duplicate, zero orphan; every inline body marker resolves to a def; every def is referenced inline. Recurring sentence preserved at exactly three canonical placements (line 93 I.B Introduction, line 291 VII.E seam, line 460 XIV.C Conclusion). 14094 > 14000 policy ceiling re-opens the word-budget overage; routing to next Polish tick on \u00a79.B/C/D body (PI-ER-IXTABLE-OVERAGE protected-content rule reserves \u00a79.A unfalsifiability opener and \u00a79.E master-table interpretive prose).",
+    "last_polish_propagation_run": 341,
     "last_stitch_tick_kind_run284": "frontmatter-reconciliation-and-consistency-audit",
     "last_stitch_tick_kind_run289": "frontmatter-reconciliation",
     "last_stitch_tick_kind_run294": "interim-frontmatter-reconciliation-with-expanded-deferral-spec",
@@ -122,9 +122,9 @@
     "last_stitch_tick_kind_run310": "dedicated-propagation",
     "last_stitch_tick_kind_run320": "dedicated-propagation-section-12-pi-248-249-250-252-no-renumber",
     "last_stitch_tick_kind_run328": "dedicated-propagation-section-02-pi-er-trim91-no-renumber",
-    "last_stitched_at": "2026-05-31T17:00:00Z",
+    "last_stitched_at": "2026-06-01T02:00:00Z",
     "last_stitched_at_pre328": "2026-05-30T08:00:00Z",
-    "last_stitched_run": 338,
+    "last_stitched_run": 341,
     "last_stitched_run_pre328": 320,
     "partial_assembly": true,
     "sections_assembled": 14,
@@ -149,7 +149,7 @@
     "stitch_note_run320": "Run-320 Stitch DEDICATED PROPAGATION TICK per FINAL-PUSH MODE bullet 3 and the run-319 Polish handoff. Propagated four polished-layer landings from polished/section-12 into manuscript/full-draft.md without opening any new global footnote slot (footnotes_total holds at 188; no renumber). (1) PI-248 / PI-251: [^168] body replaced with the run-319 Polish form carrying the *See* Am. Bar Ass'n Standard 207 (2025) legal-education-accessibility canon anchor (URL last-visited May 30, 2026) plus the L-059 50-word-cap strip that removed the now-redundant WCAG/alt-text replication-can-address sentence; new [^168] is 65 words, exactly at the L-064 canon-anchor cap. (2) PI-249 third-pole sentences propagated to XII.B paragraph 1: added two sentences after the four-axes-accountability sentence naming the case method conducted through live Socratic exchange as the canonical legal-education baseline and framing the reviewed static website and the chatbot-tutor architecture as interventions adjacent to that baseline rather than substitutes for it; cross-reference-grounded under L-053 (no new footnote opened, baseline already cross-referenced via Mertz Section II [^4]/global [^16] and via the Carnegie/Best Practices/Sturm-Guinier canon anchors). (3) PI-250 Bond typology cross-reference sentence propagated to XII.B paragraph 1: inserted after the Sajja chatbot-tutor sentence as a separate sentence leveraging existing global [^169] Bond pin cite (no new footnote opened; the [^10]/[^169] symmetric load-bearing across XII.B and XII.E now reflected at the assembled-draft level). (4) PI-252 umbrella-term selective substitution: four 'case study' -> 'course knowledge system' / 'the system' substitutions at load-bearing sites (XII.A 'makes no claim that the generative models'; XII.B 'risk profile differs' + 'not because the system is risk-free' in the same sentence; XII.B 'instead publishes'; XII.D 'used only course-issued materials') with the three bounded-artifact preserves at XII.C grounding-scope, XII.E single-case-study-answers-Bond, and XII.E single-author collaboration frame all left intact per the PI-252 fix specification. XII body now sits at 5 'course knowledge system' and 3 'case study' uses, matching polished/section-12 and broadly in line with XI (4), XIII (7), XIV (3). Post-edit footnote audit per L-063: 188 def lines, 188 unique def numbers, 1-188 contiguous, zero gap/dup/orphan, all 188 inline marker numbers resolve to a def, all 188 defs referenced inline. Cross-section consistency checks: recurring sentence stem appears exactly three times (intro / VII-VIII seam / conclusion) per L-002; zero em dashes in main-text body and zero straight ASCII quotes in body per PROJECT_PRIMER prose discipline (one em dash in the Footnotes block is the L-039 verbatim-Grier *Prize Cases* exemption). Main-text body word count 14084 within the 10,000-14,000 range (Section XI/XII earmark per PROJECT_PRIMER), up from prior 14091 stitched total adjusted by the XII body deltas. PI-248, PI-249, PI-250, PI-252 each advance the third site (full-draft) and are now propagated across all three of drafts/polished/full-draft per L-035 three-site discipline. PI-251 (provenance-side twin of PI-248, logged as the polished frontmatter unsupported_claims entry) was already resolved at the run-319 Polish tick when the polished frontmatter entry cleared; it stays archived. The next Verify tick should re-audit Section 12 for provenance to land the run-316 projected 4.2 -> 4.6 lift (criterion 1 claim_coverage 4 -> 5, criterion 2 primary_source_ratio 3 -> 4 with the Standard 207 primary-law addition lifting external-cite count to 3 of 10 = 30%, criterion 3 attribution_discipline 4 -> 5) so PI-248 can advance to verify-confirmed-and-archived. Submission-readiness gate (RUNBOOK Stitch exit conditions) NOT set this tick: Section 12 provenance_score is 4.2, below the 4.5 per-section gate, and the gate will not flip until the Verify re-audit lands the projected lift. The other five gate conditions hold: (1) total_words 14084 in range, (2) all 14 polish_status:stitched, (3) all 6 appendices drafted/polished status, (4) most-recent Verify P0=0 P1=0 subject to confirmation on the next re-read, (6) all 6 appendices carry provenance_note or in-repo-source-files exemption. Pushed directly to master per L-056. Per FINAL-PUSH MODE rotation rule (skip harvest/outline; verify NOT throttled), phase advanced stitch -> verify (current_phase stitch -> verify, phase_index 3 -> 4, last_completed_phase polish -> stitch, run_count 319 -> 320).",
     "stitch_note_run328": "Run-328 Stitch DEDICATED PROPAGATION TICK under EDITORIAL-REVIEW PASS, closing the run-327 Polish handoff for PI-ER-TRIM91 (II.B inventory sentence + four-no-X consolidation + May-2026 snapshot split + Canvas-broadband compression at the routed II.B site; II.D-2 wiki-link semicolon-list recast at the routed II.D-second-paragraph site; II.E/II.F/X.A/XI.A PROTECTED and untouched). Net assembled body delta -60 words; total_words 14084 -> 14024, now 24 words above the 10,000 floor and 24 words below the 14,000 ceiling -- the ceiling overage PI-PROPAG-300-OVERAGE (+91 at run 310, +58 at run 305, +91 at run 315) is now CLEARED. No footnote renumber: footnotes_total holds at 188 contiguous defs, the trim is body-prose-only; [^11]/[^12]/[^16] inline markers at the trimmed paragraphs unchanged. Post-edit footnote-integrity audit (L-063): 188 contiguous footnote defs [^1]-[^188], zero gap, zero duplicate, zero orphan; every inline body marker resolves to a def; every def is referenced inline. Recurring sentence preserved at exactly three canonical placements (I.B Introduction, VII/VIII seam VII.E, XIV.C Conclusion); terminology umbrella 'course knowledge system' stable; 'AI tutor' confined to legitimate comparison contexts; em-dash count zero across main prose (one verbatim em dash retained inside Grier Prize Cases quotation per L-039 source-fidelity exemption); ASCII straight-quote count zero across published body sections I-XIV. PI-ER-TRIM91 advances site 3 of 3 (drafts/polished/full-draft) and is now RESOLVED at all three sites; archived. Section 02 polish_status ready_for_stitch -> stitched; sections at polish_status:stitched: 02 + 12 = 2 of 14. Submission gate stays FALSE: twelve sections still at polish_status:needs_polish on standing Verify provenance routings (PIs 161-172 family from runs 138-140, PIs 220-242 family from runs 270-321); per-section provenance_score < 4.5 across all but the two stitched sections; abstract.status needs_work; the open PI-ER-* items pending (PI-ER-APPENDIX, PI-ER-INTERNALCITE, PI-ER-IXTABLE, PI-ER-FN159 within Stitch scope, plus the smaller-priority items).",
     "stitch_run": 328,
-    "total_words": 14032,
+    "total_words": 14094,
     "total_words_pre_run328": 14084,
     "sections_confirmed_stitch_ready": 2,
     "last_stitched_run_pre338": 333,
@@ -158,7 +158,8 @@
     "stitch_note_run338": "Run-338 Stitch propagated the run-336 Cite + run-337 Polish PI-ER-OVERRELIANCE landing from polished/section-12 [^11] (Vasconcelos et al. CSCW 2023 art. 129 + Bastani et al. PNAS 2025 e2422633122 compound *See* cite at XII.B paragraph 3 displacement-risk clause) to manuscript/full-draft.md as new global [^189]; inline marker appended after 'briefing the primary cases.' and the def block appended after [^188] verbatim from polished. No renumber operation this tick (append-at-tail). Post-edit Python integrity audit (L-063, four checks) green: 189 contiguous defs [^1]-[^189], zero gap/dup/orphan; every inline marker resolves; every def used (201 inline occurrences). Mechanical hygiene re-check on the new def: zero em dashes, zero ASCII doubles, zero ASCII apostrophes. polish_status ready_for_stitch -> stitched.",
     "title_pi_status_run339": "PI-268 NEW (Persona 1 Skeptical JLE Editor) escalates standing PI-ER-TITLE: the trailing ', and the Future of Legal Pedagogy' subtitle persists at full-draft.md line 70 (body H1) and line 71 (YAML title field) after three Stitch ticks since run-315. Routes the next Polish+Stitch joint tick to trim both surfaces.",
     "title_pi_status_run340": "PI-ER-TITLE Polish leg closed (PROJECT_PRIMER trimmed); Stitch leg owed for full-draft.md propagation.",
-    "polish_propagation_owed_run340": "Three Polish-tick edits at polished layer owed to next Stitch tick for full-draft.md propagation: (1) \u00a79 IXTABLE delivery from run 330 + IXTABLE-OVERAGE trim from run 340 (closes run-334 PI-267 gap); (2) XIV.C +34-word commit sentence + new [^9] (PI-ER-XIVC-COMMIT); (3) XIII.C Boyer typology +5-word half-clause (PI-ER-BOYER, closed). Plus title YAML+H1 trim per PI-ER-TITLE Stitch leg."
+    "polish_propagation_owed_run340": "Three Polish-tick edits at polished layer owed to next Stitch tick for full-draft.md propagation: (1) \u00a79 IXTABLE delivery from run 330 + IXTABLE-OVERAGE trim from run 340 (closes run-334 PI-267 gap); (2) XIV.C +34-word commit sentence + new [^9] (PI-ER-XIVC-COMMIT); (3) XIII.C Boyer typology +5-word half-clause (PI-ER-BOYER, closed). Plus title YAML+H1 trim per PI-ER-TITLE Stitch leg.",
+    "total_words_prior_run_341": 14032
   },
   "pending_issues": [
     {
@@ -1773,20 +1774,6 @@
       "resolution_note": "Run-331 Cite tick resolved PI-ER-INTERNALCITE: the 'underlying record lives in this article's internal pending-issue tracker' clause was stripped from section 12 footnotes [^4], [^6], [^8] (assembled-global [^163], [^165], [^167]). Drop-option per PI-routing parallel to PI-192 resolution at run-272: the body-prose hedge stands alone. Rubric/cite.md criterion 5 (zero internal-source citations in published prose) is now satisfied at the polished source-of-truth. Full-draft.md propagation owed to next Stitch tick per L-035."
     },
     {
-      "claim": "Trim title: drop 'and the Future of Legal Pedagogy' for a phrase matching the bounded claim.",
-      "id": "PI-ER-TITLE",
-      "opened_at": "2026-05-30T16:36:03Z",
-      "owner_phase": "polish+stitch",
-      "persona": "Editorial Review Skill (run-315)",
-      "section": "00",
-      "severity": "P2",
-      "status": "open",
-      "type": "editorial-review",
-      "polish_leg_closed_at": "2026-06-01T00:00:00Z",
-      "polish_leg_closed_at_run": 340,
-      "polish_leg_note": "Polish leg landed at run 340: updated PROJECT_PRIMER.md Title field from \"From Casebook to Course Knowledge System: AI-Assisted Synthesis, Obsidian, and the Future of Legal Pedagogy\" to \"From Casebook to Course Knowledge System: AI-Assisted Synthesis and Obsidian\". Stitch leg owed: propagate the trimmed title to manuscript/full-draft.md YAML title field (line 2) and body H1 (line 70). Handoff/SUBMISSION artifacts to be regenerated at re-consolidation per PI-ER-FRONTMATTER routing."
-    },
-    {
       "claim": "[^159] defined out of ascending order (after [^151], before [^152]). Renumber to contiguous ascending slot at Stitch OR add a one-line insertion-order note.",
       "id": "PI-ER-FN159",
       "opened_at": "2026-05-30T16:36:03Z",
@@ -1796,37 +1783,6 @@
       "severity": "P2",
       "status": "open",
       "type": "editorial-review"
-    },
-    {
-      "claim": "Add one sentence at XIV.C committing what the author would hand a colleague attempting a second instance (schemas, rubrics, prompt library, cost-log) to land the X.E invitation as a real offer.",
-      "id": "PI-ER-XIVC-COMMIT",
-      "opened_at": "2026-05-30T16:36:03Z",
-      "owner_phase": "draft+polish",
-      "persona": "Editorial Review Skill (run-315)",
-      "section": "14",
-      "severity": "P2",
-      "status": "open",
-      "type": "editorial-review",
-      "draft_leg_closed_at": "2026-05-31T11:00:00Z",
-      "draft_leg_closed_at_run": 335,
-      "draft_leg_progress": "Run-335 Draft inserted the 34-word XIV.C concrete-commit sentence naming typed note schemas, per-phase rubrics, prompt library, and cost log, plus [^9] cross-reference to V/VI/VII/IX. drafts/section-14-conclusion.md updated; polished/section-14-conclusion.md and manuscript/full-draft.md still close XIV.C without the new sentence and [^9] pending the next Polish tick on Section 14 (L-035 three-site propagation). | Polish leg closed run 340: 34-word XIV.C commit sentence + [^9] propagated from drafts to polished/section-14. Stitch leg owed for manuscript/full-draft.md propagation with global footnote renumber.",
-      "last_progress_run": 335,
-      "polish_leg_closed_at": "2026-06-01T00:00:00Z",
-      "polish_leg_closed_at_run": 340
-    },
-    {
-      "claim": "Add a half-sentence unpacking Boyer's scholarship-of-teaching typology at XIII.C for readers unfamiliar with it.",
-      "id": "PI-ER-BOYER",
-      "opened_at": "2026-05-30T16:36:03Z",
-      "owner_phase": "polish",
-      "persona": "Editorial Review Skill (run-315)",
-      "section": "13",
-      "severity": "P2",
-      "status": "resolved",
-      "type": "editorial-review",
-      "resolved_at": "2026-06-01T00:00:00Z",
-      "resolved_in_run": 340,
-      "resolution_note": "Polish leg landed at run 340 in polished/section-13 XIII.C: added the half-clause naming Boyer's four-scholarship typology (discovery, integration, application, teaching) so readers unfamiliar with Boyer 1990 do not have to follow [^10] to see the framework the contestation sentence pivots on. +5 net body words; mechanical hygiene clean."
     },
     {
       "claim": "Split the ~80-word IV.A topic-list sentence and the three-clause-nested V.B YAML opener.",
@@ -1944,20 +1900,6 @@
       "type": "unfalsifiable-test-specification"
     },
     {
-      "claim": "Section IX word_count 768 -> 827 (+18.1% over 700 target, 863 with table cells = +23.3%) after PI-ER-IXTABLE Draft delivery of Table 9.1 exceeds the polish_status:ready_for_stitch +/-10% rubric band (target band 630-770). The table itself is load-bearing and structurally required; trim must come from \u00a79.1-\u00a79.4 prose, NOT from the Table 9.1 site in \u00a79.5. Suggested trim routing: \u00a79.4 'cross-rubric-reading prohibition' sentence (saves ~15 words by collapsing 'because cross-rubric loading would create conflicting incentives at the rubric level and conflicting token-spend ceilings at the cost level' to 'because cross-rubric loading creates conflicting incentives'); \u00a79.4 closer (saves ~15 words by trimming the 'cadence-times-per-tick-spend back-computation the master cost-table row depends on' framing now that the master table is delivered with ticks+words not tokens); \u00a79.3 cadence-figure intro sentence (~10 words removable). The token-back-computation framing in \u00a79.4 is also semantically out of sync with the new IX.A column-set re-anchoring (master table now reports ticks+words, not tokens), so the Polish trim doubles as a consistency fix. Also propagates to full-draft.md at the next Stitch tick (current full-draft.md total 14,024 + ~90 net body+table additions would push to ~14,114, 114 over the 14,000 ceiling, so the trim is doubly-load-bearing).",
-      "id": "PI-ER-IXTABLE-OVERAGE",
-      "opened_at": "2026-05-31T01:30:00Z",
-      "opened_in_run": 330,
-      "owner_phase": "polish+stitch",
-      "section": "09",
-      "severity": "P2",
-      "status": "open",
-      "type": "editorial-review-followup",
-      "polish_leg_closed_at": "2026-06-01T00:00:00Z",
-      "polish_leg_closed_at_run": 340,
-      "polish_leg_note": "Polish leg landed at run 340: trimmed \u00a79.C intro (-6), \u00a79.D cross-rubric-prohibition (-12), and \u00a79.D closer (-7) for body 827 -> 791 (-36). Table 9.1 cells unchanged. Stitch leg owed: propagate the \u00a79 changes (both run-330 Draft IXTABLE delivery and this run-340 Polish trim) to manuscript/full-draft.md and close the run-334 PI-267 polished->full-draft propagation gap."
-    },
-    {
       "id": "PI-263",
       "opened_at": "2026-05-31T09:00:00Z",
       "opened_in_run": 334,
@@ -2006,22 +1948,6 @@
       "suggested_fix": "Cite at \u00a79.5 line 51 caption and [^15] line 96 body: replace '(source: `manuscript/cost-log.jsonl`)' with '(source: the article's per-tick cost log; see infra App. E \u00a7 E.5)' and replace 'Per-tick token counts are not recorded in `manuscript/cost-log.jsonl`' with 'Per-tick token counts are not recorded by the article's cost log' (+5 net words at caption, +0 net at footnote). MUST close BEFORE PI-267 Stitch propagation so the assembled draft does not inherit the leak. Closure path lifts provenance_score 4.4 \u2192 4.8 (above the 4.5 gate) at one Cite tick.",
       "paired_with": [
         "PI-267"
-      ]
-    },
-    {
-      "id": "PI-267",
-      "opened_at": "2026-05-31T09:00:00Z",
-      "opened_in_run": 334,
-      "phase_routed": "stitch",
-      "severity": "P1",
-      "section": "09",
-      "persona": "Persona 6 Structural / Developmental Editor (SUPPLEMENTAL, run_count-mod-3 = 1)",
-      "status": "open",
-      "summary": "Polished\u2192full-draft propagation gap at Section IX: polished/section-09 carries the IX.A 3-column re-anchor, Table 9.1 in \u00a79.5 with seven per-phase rows + total row, and the \u00a79.5 structural-scope closer; assembled full-draft.md lines 305-325 still carry the pre-run-330 five-column promise and the 'remains owed' framing, and footnotes [^121]/[^124]/[^129]/[^132] reference FOUR orphan tbl. 9.X tables (tbl. 9.1 / 9.2 / 9.3 / 9.4) that neither App. E nor the in-section delivery provides. Persona 6 mandate engaged: 'Orphans: figures referenced but not placed.' At submission time the orphan references would be a desk-reject signal.",
-      "suggested_fix": "Next Stitch tick: propagate polished/section-09 IX.A + IX.E body and footnote [^1]-[^16] into the assembled draft, mapping polished section-local footnote numbers to assembled global [^118]-[^133] per the existing crosswalk. Strip the four 'tbl. 9.X' forward references and re-anchor the four affected footnotes to App. E \u00a7 E.5 + See Table 9.1 supra. Net assembled-draft delta approximately +80 words body. Footnote-integrity Python audit (L-063, four checks) required green. PI-266 must close BEFORE this propagation so the L-058 literal-filename leak does not propagate to the assembled draft.",
-      "paired_with": [
-        "PI-266",
-        "PI-ER-IXTABLE-OVERAGE"
       ]
     },
     {
@@ -2107,7 +2033,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 340,
+  "run_count": 341,
   "schema_version": 1,
   "sections": {
     "01": {
