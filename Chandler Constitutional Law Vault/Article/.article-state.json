@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-31T09:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-31T11:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:00:00Z",
@@ -1806,7 +1806,11 @@
       "section": "14",
       "severity": "P2",
       "status": "open",
-      "type": "editorial-review"
+      "type": "editorial-review",
+      "draft_leg_closed_at": "2026-05-31T11:00:00Z",
+      "draft_leg_closed_at_run": 335,
+      "draft_leg_progress": "Run-335 Draft inserted the 34-word XIV.C concrete-commit sentence naming typed note schemas, per-phase rubrics, prompt library, and cost log, plus [^9] cross-reference to V/VI/VII/IX. drafts/section-14-conclusion.md updated; polished/section-14-conclusion.md and manuscript/full-draft.md still close XIV.C without the new sentence and [^9] pending the next Polish tick on Section 14 (L-035 three-site propagation).",
+      "last_progress_run": 335
     },
     {
       "claim": "Add a half-sentence unpacking Boyer's scholarship-of-teaching typology at XIII.C for readers unfamiliar with it.",
@@ -2013,7 +2017,7 @@
       ]
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -2035,7 +2039,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 334,
+  "run_count": 335,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2670,17 +2674,17 @@
       "cite_status_changed_reason": "Run-252 Cite closed PI-172 by replacing the bare See supra Section VII in [^3]/[^173] with pinned cross-references to VII.B (six-phase rotation), VII.C (forced-finding Verify pass), and VII.D (loop memory). Propagated to three sites (polished, drafts, full-draft) per L-035.",
       "claims_mapped": 9,
       "claims_total": 9,
-      "current_words": 419,
+      "current_words": 446,
       "draft_note_run_312": "PI-247 Section XIV.B leg paired echo landed at Draft level: inserted one 8-word echo at end of XIV.B ('The article describes the schema; the test awaits.') mirroring the Section X.E disclaimer landed this same tick. +8 body words; drafts word_count 411 -> 419 (+4.75% of target 400, within Polish +/-10% band). No new footnote; meta-statement keyed to X.E argument-spine framing. polish_status reverts ready_for_stitch -> needs_polish for polished/full-draft propagation owed to next Polish tick on Section 14 under L-035 three-site discipline.",
       "draft_status": "needs_polish",
       "evidence_completed_at": "2026-05-26T05:00:00Z",
       "evidence_status": "populated",
-      "footnotes_count": 8,
+      "footnotes_count": 9,
       "last_cite_propagation_at": "2026-05-29T13:00:00Z",
       "last_cite_propagation_note": "Run-252: PI-172 closed; [^3]/[^173] now pin to VII.B (six-phase enumeration), VII.C (forced-finding Verify), VII.D (loop memory). Word-neutral at 47 words (under L-059 50-word cap). Three-site propagation per L-035. provenance_audited reset for next Verify re-audit.",
       "last_cite_propagation_run": 252,
       "last_cite_run": 252,
-      "last_draft_touch_run": 312,
+      "last_draft_touch_run": 335,
       "last_phase": "draft",
       "last_polish_at": "2026-05-30T03:00:00Z",
       "outline_status": "ready_for_draft",
@@ -2692,13 +2696,13 @@
       "provenance_audit_run": 290,
       "provenance_audit_run_prior": 140,
       "provenance_audit_run_run285": 285,
-      "provenance_audited": true,
+      "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T17:10:00Z",
       "provenance_note_run285": "Run-285 Verify-provenance re-audit, first re-audit of Section 14 since the run-140 baseline (4.0 across 5/3/4/4/4). Re-read polished/section-14-conclusion.md post run-252 Cite (PI-172 [^3] bare *See supra* Section VII replaced with pinned three-target cross-reference to VII.B six-phase enumeration + VII.C forced-finding Verify pass + VII.D loop memory; word-neutral at 47 of L-059 50-word cap) and run-254 Polish (PI-169 XIV.B meta-rhetoric removal, PI-170 XIV.C live-teaching-distinguishing sentence insertion, PI-171 XIV.B chatbot-architecture-tradeoff clause appended). claims_total hold at 9; claims_mapped hold at 9; unsupported_claims stay empty. Criterion scores 5/3/5/5/4 = 4.4 (+0.4 from baseline): criterion 1 claim_coverage 5 (9/9 mapped), criterion 2 primary_source_ratio 3 (0 of 8 footnotes external; structural 3-band ceiling for synthesis-conclusion form that does not admit external anchors, same pattern as Sections 03/04/05/09/10/11/13), criterion 3 attribution_discipline 5 (lift 4 -> 5 on run-252 PI-172 closure), criterion 4 numerical_precision 5 (lift 4 -> 5 on the same closure pinning six-phase rotation to VII.B enumeration), criterion 5 gap_honesty 4 (hold; the prose does not flag the conclusion's all-internal-cross-reference structure; PI-228 opens this tick targeting the one-sentence disclosure path to 4.6). 4.4 < 4.5 gate; polish_status reverts ready_for_stitch -> needs_polish. Five P1s route here: PI-226 NEW (Persona 1 XIV.A/XIV.C negate-then-reframe pattern density 3 occurrences in 400 words), PI-099 re-confirm narrowed (Persona 2 live-teaching named at XIV.C but loop framing elides classroom-judgment locus), PI-227 NEW (Persona 3 XIV.C second-instance future-work framing omits Bond meta-review collaboration prong), PI-228 NEW (Persona 4 synthesis-section internal-cross-reference disclosure gap_honesty 4-band path to 4.6), PI-229 NEW (Persona 5 supplemental XIV.C [^181] adopter first-step routing gap forwards to Section XIII institutional implications rather than to spec sections V/VI/VII). Path to 4.6: PI-228 closure adds one sentence to XIV.A or XIV.B flagging the conclusion's intentional all-internal-cross-reference structure, lifting gap_honesty 4 -> 5.",
       "provenance_score": 4.4,
       "provenance_score_prior": 4.0,
       "provenance_score_run285": 4.4,
-      "provenance_stale_reason": "Run-288 Polish materially changed XIV.A and XIV.C claim phrasing (PI-226 negate-reframe dilution dropped the opener-was-not-automation claim and reframed live-teaching-rather-than-constituting as the-teaching-remains-the-professor's); supersedes run-285 4.4 audit; next Verify-provenance re-audit on Section 14 rescores.",
+      "provenance_stale_reason": "Run-335 Draft inserted one 34-word concrete-commit sentence at XIV.C between the [^8] second-instance sentence and the closing 'modest, replicable infrastructure choice' sentence, plus a new [^9] cross-reference footnote to V/VI/VII/IX. The new sentence adds a new factual claim ('the article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced') and a consequence clause ('so the second instance starts from artifacts rather than reconstructs them') that the run-290 4.4 audit baseline did not see. claims_total expected 9 \u2192 11 on next re-audit (one new substantive claim + one new consequence claim). Frontmatter word_count baseline correction 419 \u2192 446 (+27 = +34 substantive addition - 7 prior baseline drift) also tracked here.",
       "status": "needs_polish",
       "target_words": 400,
       "title": "Conclusion",
@@ -2706,7 +2710,8 @@
       "verify_note_run290": "Run-290 Verify on Section 14 post-run-288 Polish: 4-core + Persona 7 supplemental. Five P1 findings route Section 14 polish_status: ready_for_stitch -> needs_polish. Provenance re-audit second since run-140 baseline: 5/3/5/5/4 = 4.4 hold unchanged from run 285 (claim_coverage 5 / primary_source_ratio 3 / attribution_discipline 5 / numerical_precision 5 / gap_honesty 4); claims_total/mapped/unsupported all hold at 9/9/empty; criterion-5 gap_honesty 4-band hold reaffirms PI-228 as the path-to-4.6 single-criterion lever per the run-288 polish_note_run288 explicit deferral. New P1s: PI-230 (Persona 1, XIV.B workshop-jargon 'forced-finding verification pass' in conclusion governance enumeration), PI-231 (Persona 7 supplemental, XIV.C n=1->n=2 evidentiary-threshold elision in future-work framing). Re-confirms: PI-099 narrowed (Persona 2, loop-framing-elides-classroom-judgment leg only after run-288 closed disavowal and substitution-silence legs), PI-227 unchanged (Persona 3, Bond-collaboration-prong elision third Verify cycle without closure), PI-228 unchanged (Persona 4, synthesis-section disclosure 4-band second Verify cycle).",
       "verify_routed_at": "2026-05-30T05:00:00Z",
       "verify_routing_reason": "Run 140 Verify/provenance (score 4.0 < 4.5): polish_status needs_polish for PI-169 (XIV.B meta-rhetoric), PI-170 (XIV.C editor-vs-teacher conflation), PI-171 (XIV.B chatbot-architecture tradeoff); cite_status needs_cite for PI-172 ([^3] bare See supra without pin for the six-phase governance enumeration; CLOSED at run-252 Cite). All four distinct from open PI-098/099/100. unsupported_claims 0 (conclusion fully footnoted).",
-      "word_count": 419
+      "word_count": 446,
+      "draft_note_run_335": "Draft run 335 closed PI-ER-XIVC-COMMIT's Draft leg at XIV.C (owner_phase draft+polish; P2 Editorial Review Skill run-315): inserted one 34-word concrete-commit sentence naming the four artifacts a colleague taking up the X.E invitation would receive (typed note schemas, per-phase rubrics, prompt library, cost log), grounding the prior sentence-4 abstract method-elements list (typed schema / verified-source discipline / professorial gating / iterative loop) in concrete deliverables. New footnote [^9] cross-references V / VI / VII / IX as the owning sections. drafts-only per L-035 three-site discipline; Polish-layer propagation to polished/section-14-conclusion.md and manuscript/full-draft.md routed to next Polish tick on Section 14. word_count 419 \u2192 446 (+27 frontmatter delta = +34 substantive content - 7 prior baseline drift correction); +11.5% of target 400, within Draft 15% cap and 6 words over Polish +/-10% band. footnotes_count 8 \u2192 9. cite_status holds at needs_polish (no new external anchor; [^9] is *See supra* internal); draft_status holds at needs_polish; polish_status holds at needs_polish; provenance_audited true \u2192 false (new claim at XIV.C; re-audit owed). PI-ER-XIVC-COMMIT status open; Draft leg closed; Polish leg open pending propagation."
     }
   },
   "target_venue": "Journal of Legal Education",
