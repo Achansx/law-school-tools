@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -1756,7 +1756,7 @@
       }
     }
   ],
-  "phase_index": 2,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
