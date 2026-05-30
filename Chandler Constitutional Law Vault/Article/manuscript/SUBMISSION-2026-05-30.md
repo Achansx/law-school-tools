@@ -4,11 +4,8 @@ author: "[Author name and affiliation — to be supplied before submission]"
 target_venue: "Journal of Legal Education"
 citation_form: "Bluebook (21st ed.)"
 prepared: "2026-05-30"
-note: "Submission-ready copy. Working build metadata has been stripped from this file; the full provenance frontmatter lives in manuscript/HANDOFF-2026-05-30.md and .article-state.json. Confirm the author block and any Scholastica-required fields, and resolve the [confirm-at-proof] markers, before submitting."
+note: "Submission-ready copy. Working build metadata stripped; full provenance lives in manuscript/HANDOFF-2026-05-30.md. Confirm the author block and resolve [confirm-at-proof] markers before submitting."
 ---
-
-
-*Interim assembly: all 14 sections present; 0 of 14 at polish_status ready_for_stitch per live state after the run-301 Verify Provenance Auditor reset Section 02 to needs_polish on the 4.2 < 4.5 gate. Fourteen sections at needs_polish. Run 305 Stitch is a dedicated Section 10 X.A propagation tick following the FINAL-PUSH MODE bullet 3 "propagate later smaller backlogs on the very next Stitch rather than batching" directive: the run-302 Draft + run-303 Cite + run-304 Polish X.A new sentence ("The legal-education reform canon treats teaching method, not any single course's finished materials, as the unit of pedagogical contribution capable of traveling across doctrinal courses.") and its local [^17] = Carnegie/Best Practices/Building on Best Practices string-cite footnote landed in the assembled draft as new global [^150], with existing globals [^150]-[^186] renumbered +1 to [^151]-[^187] across body markers, footnote defs, and "note N" cross-references. Footnote layout 187 contiguous defs zero gap/dup/orphan; every inline marker resolves to a def and every def is used. Section X body word delta +25; main-text total 14033 -> 14058 = 58 words above the 14000 policy ceiling, expanding the run-300 PI-PROPAG-300-OVERAGE flag and routed to the next Polish tick to trim Section II.B "flat folder of more than two hundred sixty files" inventory sentence and Section II.D synthesis-affordance second paragraph per the standing run-278/run-292/run-298 FLAGGED FOR STITCH TRIM directive (II.E, II.F, and the new X.A insert PROTECTED-content). PI-JLE-LEGAL-ED-LIT Section X leg now closed at all three sites (drafts, polished, full-draft); Section XI leg remains the only open leg. Not submission-ready.*
 
 # From Casebook to Course Knowledge System: AI-Assisted Synthesis and Obsidian
 
