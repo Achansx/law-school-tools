@@ -4,13 +4,14 @@
     "consecutive_ready_runs": 0,
     "last_run_at": "2026-06-02T07:00:00Z",
     "last_score": 4.8,
-    "last_verify_run": 339,
+    "last_verify_run": 342,
     "status": "needs_work",
     "target_words": 250,
     "verify_note_run295": "PI-230 expanded-scope new-site routing: workshop-jargon 'forced-finding verification pass' in abstract paragraph 1 (full-draft.md line 46) routes abstract.status ready_for_review -> needs_work. The same PI-230 site density also surfaces at XIV.B (the original PI-230 site, run 290), IX.D body, and three footnotes [^93]/[^126]/[^177]; the VII.B/VII.C cluster is the term's endogenous definition site and is not part of the PI-230 scope. Closure path is a paired Polish tick on abstract.md and Section 14 XIV.B using suggested fix (a): 'an adversarial verification pass that required each reviewer persona to surface at least one finding per cycle' (+6 words at abstract; matched at XIV.B).",
     "verify_route_note_run301": "PI-240 Persona 6 Structural/Developmental Editor abstract-vs-body Karpathy-attribution altitude mismatch P1: abstract names 'iterative loops now common in software' generically while Section VII.A line 238 names 'Andrej Karpathy released autoresearch' with date and primary URL; routed to Outline-abstract sub-task (or paired Section 07 Polish).",
     "words": 244,
-    "verify_note_run339": "Run-339 Verify Persona 3 P1 PI-270 supersedes PI-240 as the current instance label for the abstract-vs-body Karpathy-attribution altitude mismatch (six Verify ticks of non-resolution since run 301). The +9-word Karpathy-anchored substitution at abstract paragraph 1 sentence 4 lands at the next Outline-abstract tick. status holds at needs_work."
+    "verify_note_run339": "Run-339 Verify Persona 3 P1 PI-270 supersedes PI-240 as the current instance label for the abstract-vs-body Karpathy-attribution altitude mismatch (six Verify ticks of non-resolution since run 301). The +9-word Karpathy-anchored substitution at abstract paragraph 1 sentence 4 lands at the next Outline-abstract tick. status holds at needs_work.",
+    "verify_note_run342": "Run-342 Verify Persona 3 P1 PI-270 re-confirm at unchanged scope (seventh Verify cycle of non-resolution since the original PI-240 logged at run 301: 301->306->311->316->321->329->334->339->342). The abstract continues to read the Karpathy-loop generically ('the iterative loops now common in software') while Section VII.A names 'Andrej Karpathy released autoresearch' with date and primary repository URL. The run-341 PI-ER-XIVC-COMMIT closure (which expanded XIV.C with the four-artifact commit and Karpathy-loop-anchored [^190]) makes the abstract-versus-body Karpathy-attribution asymmetry more visible at the conclusion altitude. Preferred fix (+9 words; abstract.words 244 + 9 = 253 within [225,275] band) lands the Karpathy-anchored substitution at the next Outline-abstract tick. status holds at needs_work."
   },
   "appendices": {
     "A": {
@@ -89,7 +90,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -102,8 +103,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-06-01T02:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-06-01T04:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-31T17:00:00Z",
@@ -2009,9 +2010,66 @@
       "status": "open",
       "summary": "Section X.E line 354 ('The corpus, the schema, and the rotation are described in enough detail that a colleague teaching a different doctrinal course could attempt the same build and report where it held and where it broke.') and Section XIV.C line 442 ('The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^188]') \u2014 Practitioner-Adopter 'what would I actually receive' gap at the article's two main adoption-invitation sites. Neither passage enumerates the specific artifacts an adopter receives (typed-schema templates, per-phase prompt library, per-phase rubrics, per-tick cost log, deploy pipeline). PI-ER-XIVC-COMMIT addressed the XIV.C site in the run-335 Draft tick (added a 34-word concrete-commit sentence + [^9]) but Polish + Stitch propagation legs are still open; X.E carries the same defect without any standing PI. Mandate's 'Hidden labor or skill prerequisites' and 'earnest adopter would get stuck' failure modes fire here.",
       "suggested_fix": "Paired Polish tick on Sections 10 and 14: at X.E line 354 expand to 'The corpus, the typed-schema templates, the per-phase prompt library, the per-phase rubrics, and the per-tick cost log are described in enough detail and captured in the online supplements that a colleague teaching a different doctrinal course could attempt the same build and report where it held and where it broke.' (+19 words; Section 10 target_max band OK). At XIV.C line 442 propagate the run-335 Draft commit sentence + [^9] cross-reference from drafts/section-14-conclusion.md to polished and full-draft per L-035 three-site discipline, closing PI-ER-XIVC-COMMIT's Polish + Stitch legs in the same tick. Routes Sections 10 and 14 polish_status:needs_polish (already there for both)."
+    },
+    {
+      "id": "PI-273",
+      "status": "open",
+      "opened_in_run": 342,
+      "opened_at": "2026-06-01T04:00:00Z",
+      "personas": [
+        "1 Skeptical JLE Editor",
+        "4 Provenance Auditor (audit-side mirror entry)"
+      ],
+      "section": "14",
+      "location": "XIV.C paragraph 3 line 460 (manuscript/full-draft.md global [^190]; polished/section-14-conclusion.md local [^9])",
+      "severity": "P1",
+      "summary": "Section XIV.C [^190] cross-reference altitude mismatch \u2014 body claim is artifact-delivery ('hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log') but [^190] points only to descriptive body Sections V/VI/VII/IX rather than to deliverable Appendices C (Templates) / B (AI Tooling) / D (Per-Phase Rubric) / E (Cost and Time Log). Two-finding-one-PI pattern: Persona 1 logs the body+footnote layer, Persona 4 logs the audit-side layer with paired unsupported_claims entry.",
+      "suggested_fix": "Next Cite tick on Section 14: expand [^190] / polished [^9] to a compound cross-reference naming each appendix as the actual deliverable alongside the section that describes it. Preferred form preserves the polished [^9]'s body-section cross-reference scaffolding while adding the appendix-as-deliverable anchor that makes the body claim auditable for an adopter. Closes PI-273 in one Cite + Stitch propagation cycle; lifts Section 14 attribution_discipline 4 -> 5 and provenance_score 4.2 -> 4.4 at the next Verify-provenance re-audit. Three-site L-035 propagation: drafts/polished/full-draft.",
+      "routes": [
+        "sections.14.cite_status: holds at needs_polish (Cite-tier compound-cite expansion)",
+        "sections.14.polish_status: holds at needs_polish (already there)"
+      ],
+      "paired_with": "PI-272 (X.E sister-finding, four-artifact enumeration gap; both findings sit on the delivery-versus-description axis at the two adoption-invitation sites)",
+      "defect_class": "L-024 transfer-of-inference / altitude-discipline family (second instance in the past four Verify ticks: PI-271 Section 12 at run-339 was the first recurrence since run-94 origin; PI-273 Section 14 this run is the second)"
+    },
+    {
+      "id": "PI-274",
+      "status": "open",
+      "opened_in_run": 342,
+      "opened_at": "2026-06-01T04:00:00Z",
+      "personas": [
+        "2 Legal Pedagogy Traditionalist"
+      ],
+      "section": "14",
+      "location": "XIV.B paragraph 2 (manuscript/full-draft.md line 456; polished/section-14-conclusion.md line 40)",
+      "severity": "P1",
+      "summary": "Section XIV.B 'It does not claim universal transfer, treating constitutional law as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^185]' names the conclusion-altitude transfer-disclaim without naming the source-course properties that make constitutional law well-suited. A Civil Procedure traditionalist reads 'well-suited' and asks well-suited to what; the natural answer the article leaves implicit is (a) stable canon of named cases mapping to typed Case notes, (b) doctrinal Topic-headings mapping cleanly to the four-bucket doctrine_family enum, (c) tractable per-semester corpus size \u2014 three properties Civ Pro shares only partially and Trusts and Estates not at all. Section X.D names some limits but XIV.B's conclusion-altitude restatement drops the unpacking and leaves 'well-suited' doing all the work.",
+      "suggested_fix": "Next Polish tick on Section 14: expand XIV.B's 'one well-suited base case' clause to name the two or three properties that make constitutional law well-suited, with a forward pointer to Section X for the full unpacking. Preferred form (+14 body words): 'It does not claim universal transfer, treating constitutional law's stable canon, four-family doctrinal map, and tractable per-semester corpus as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^185]'. Alternative tighter form (+8 words): 'It does not claim universal transfer, treating constitutional law's stable canon and tractable per-semester corpus as one well-suited base case rather than proof that every doctrinal course transfers cleanly.[^185]'. Either form names the source-course properties without claiming the method does not work elsewhere (preserving the article's bounded-claim posture).",
+      "routes": [
+        "sections.14.polish_status: holds at needs_polish (already there)"
+      ],
+      "section_word_band_note": "Section 14 current_words 434 at +8.5% over 400 target; +14 expansion lands at 448 (+12%, above the +/-10% band 360-440); pair with PI-275 if both addressed in one Polish tick, or with a \u00a79 trim continuation to keep Section 14 within band. Alternative +8 form lands at 442 (+10.5%) still slightly above band."
+    },
+    {
+      "id": "PI-275",
+      "status": "open",
+      "opened_in_run": 342,
+      "opened_at": "2026-06-01T04:00:00Z",
+      "personas": [
+        "7 Adversarial Reviewer (Reviewer 2) SUPPLEMENTAL"
+      ],
+      "section": "14",
+      "location": "XIV.C paragraph 3 (manuscript/full-draft.md line 460; polished/section-14-conclusion.md line 44)",
+      "severity": "P1",
+      "summary": "Section XIV.C second-instance invitation present-tense overclaim. The run-341 PI-ER-XIVC-COMMIT closure landed a 33-word concrete-commit sentence speaking in the present tense ('hands a colleague,' 'starts from artifacts') about a transfer that has not happened: the article presents zero evidence that any of the four named artifacts has been picked up, adapted, or tested by anyone other than the author. Combined with the XIII.C Boyer four-scholarship typology claim landed at run-340 (PI-ER-BOYER closure), this elevates the artifact-delivery property to a scholarship-of-teaching contribution and then announces rather than demonstrates the reuse property. Reviewer 2 rejection sentence: 'The article asserts that the method is reusable and that the artifacts are deliverable, but it presents no evidence of any actual second instance, no pilot with another faculty member, no even-informal walkthrough showing that the appendices function as a starter kit for someone other than the author. A scholarship-of-teaching contribution is demonstrated, not announced; this article announces.'",
+      "suggested_fix": "Next Polish tick on Section 14: qualify XIV.C's commit sentence with a one-clause acknowledgement that the second instance has not yet been run, framing the artifacts as offered-but-untested rather than as proven deliverables. Preferred form (+11 body words; lands Section 14 at 445, above +/-10% band \u2014 pair with PI-274 trim or \u00a79 trim continuation): 'The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced, so the second instance, when undertaken, would start from artifacts rather than reconstruct them.[^190]'. Alternative tighter form (+0 net words): 'The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced (and not yet adapted by a second course), so the second instance would start from artifacts rather than reconstruct them.[^190]'. Either form closes the Reviewer 2 overclaim by flagging the forward-looking posture in the commit sentence itself.",
+      "routes": [
+        "sections.14.polish_status: holds at needs_polish (already there)"
+      ],
+      "defect_class": "First explicit Reviewer 2-mode finding on the article's deliverable claim; prior Persona 7 findings (PI-231 run-290, PI-256-class run-321) targeted the n=1 / where-is-the-theory / unfalsifiability axes rather than the present-tense-overclaim axis the new run-341 commit sentence opens."
     }
   ],
-  "phase_index": 3,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -2033,7 +2091,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 341,
+  "run_count": 342,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2702,8 +2760,8 @@
       "cite_status": "needs_polish",
       "cite_status_changed_at": "2026-05-29T13:00:00Z",
       "cite_status_changed_reason": "Run-252 Cite closed PI-172 by replacing the bare See supra Section VII in [^3]/[^173] with pinned cross-references to VII.B (six-phase rotation), VII.C (forced-finding Verify pass), and VII.D (loop memory). Propagated to three sites (polished, drafts, full-draft) per L-035.",
-      "claims_mapped": 9,
-      "claims_total": 9,
+      "claims_mapped": 10,
+      "claims_total": 10,
       "current_words": 446,
       "draft_note_run_312": "PI-247 Section XIV.B leg paired echo landed at Draft level: inserted one 8-word echo at end of XIV.B ('The article describes the schema; the test awaits.') mirroring the Section X.E disclaimer landed this same tick. +8 body words; drafts word_count 411 -> 419 (+4.75% of target 400, within Polish +/-10% band). No new footnote; meta-statement keyed to X.E argument-spine framing. polish_status reverts ready_for_stitch -> needs_polish for polished/full-draft propagation owed to next Polish tick on Section 14 under L-035 three-site discipline.",
       "draft_status": "needs_polish",
@@ -2723,31 +2781,34 @@
       "polish_status": "needs_polish",
       "polish_status_changed_at": "2026-05-30T03:00:00Z",
       "polish_status_changed_reason": "Run-288 Polish landed PI-226 (XIV.A/XIV.C negate-reframe pivot dilution); ready_for_stitch",
-      "provenance_audit_run": 290,
+      "provenance_audit_run": 342,
       "provenance_audit_run_prior": 140,
       "provenance_audit_run_run285": 285,
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-29T17:10:00Z",
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-06-01T04:00:00Z",
       "provenance_note_run285": "Run-285 Verify-provenance re-audit, first re-audit of Section 14 since the run-140 baseline (4.0 across 5/3/4/4/4). Re-read polished/section-14-conclusion.md post run-252 Cite (PI-172 [^3] bare *See supra* Section VII replaced with pinned three-target cross-reference to VII.B six-phase enumeration + VII.C forced-finding Verify pass + VII.D loop memory; word-neutral at 47 of L-059 50-word cap) and run-254 Polish (PI-169 XIV.B meta-rhetoric removal, PI-170 XIV.C live-teaching-distinguishing sentence insertion, PI-171 XIV.B chatbot-architecture-tradeoff clause appended). claims_total hold at 9; claims_mapped hold at 9; unsupported_claims stay empty. Criterion scores 5/3/5/5/4 = 4.4 (+0.4 from baseline): criterion 1 claim_coverage 5 (9/9 mapped), criterion 2 primary_source_ratio 3 (0 of 8 footnotes external; structural 3-band ceiling for synthesis-conclusion form that does not admit external anchors, same pattern as Sections 03/04/05/09/10/11/13), criterion 3 attribution_discipline 5 (lift 4 -> 5 on run-252 PI-172 closure), criterion 4 numerical_precision 5 (lift 4 -> 5 on the same closure pinning six-phase rotation to VII.B enumeration), criterion 5 gap_honesty 4 (hold; the prose does not flag the conclusion's all-internal-cross-reference structure; PI-228 opens this tick targeting the one-sentence disclosure path to 4.6). 4.4 < 4.5 gate; polish_status reverts ready_for_stitch -> needs_polish. Five P1s route here: PI-226 NEW (Persona 1 XIV.A/XIV.C negate-then-reframe pattern density 3 occurrences in 400 words), PI-099 re-confirm narrowed (Persona 2 live-teaching named at XIV.C but loop framing elides classroom-judgment locus), PI-227 NEW (Persona 3 XIV.C second-instance future-work framing omits Bond meta-review collaboration prong), PI-228 NEW (Persona 4 synthesis-section internal-cross-reference disclosure gap_honesty 4-band path to 4.6), PI-229 NEW (Persona 5 supplemental XIV.C [^181] adopter first-step routing gap forwards to Section XIII institutional implications rather than to spec sections V/VI/VII). Path to 4.6: PI-228 closure adds one sentence to XIV.A or XIV.B flagging the conclusion's intentional all-internal-cross-reference structure, lifting gap_honesty 4 -> 5.",
-      "provenance_score": 4.4,
+      "provenance_score": 4.2,
       "provenance_score_prior": 4.0,
       "provenance_score_run285": 4.4,
       "provenance_stale_reason": "Run-335 Draft inserted one 34-word concrete-commit sentence at XIV.C between the [^8] second-instance sentence and the closing 'modest, replicable infrastructure choice' sentence, plus a new [^9] cross-reference footnote to V/VI/VII/IX. The new sentence adds a new factual claim ('the article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced') and a consequence clause ('so the second instance starts from artifacts rather than reconstructs them') that the run-290 4.4 audit baseline did not see. claims_total expected 9 \u2192 11 on next re-audit (one new substantive claim + one new consequence claim). Frontmatter word_count baseline correction 419 \u2192 446 (+27 = +34 substantive addition - 7 prior baseline drift) also tracked here.",
       "status": "needs_polish",
       "target_words": 400,
       "title": "Conclusion",
-      "unsupported_claims_count": 0,
+      "unsupported_claims_count": 1,
       "verify_note_run290": "Run-290 Verify on Section 14 post-run-288 Polish: 4-core + Persona 7 supplemental. Five P1 findings route Section 14 polish_status: ready_for_stitch -> needs_polish. Provenance re-audit second since run-140 baseline: 5/3/5/5/4 = 4.4 hold unchanged from run 285 (claim_coverage 5 / primary_source_ratio 3 / attribution_discipline 5 / numerical_precision 5 / gap_honesty 4); claims_total/mapped/unsupported all hold at 9/9/empty; criterion-5 gap_honesty 4-band hold reaffirms PI-228 as the path-to-4.6 single-criterion lever per the run-288 polish_note_run288 explicit deferral. New P1s: PI-230 (Persona 1, XIV.B workshop-jargon 'forced-finding verification pass' in conclusion governance enumeration), PI-231 (Persona 7 supplemental, XIV.C n=1->n=2 evidentiary-threshold elision in future-work framing). Re-confirms: PI-099 narrowed (Persona 2, loop-framing-elides-classroom-judgment leg only after run-288 closed disavowal and substitution-silence legs), PI-227 unchanged (Persona 3, Bond-collaboration-prong elision third Verify cycle without closure), PI-228 unchanged (Persona 4, synthesis-section disclosure 4-band second Verify cycle).",
       "verify_routed_at": "2026-05-30T05:00:00Z",
       "verify_routing_reason": "Run 140 Verify/provenance (score 4.0 < 4.5): polish_status needs_polish for PI-169 (XIV.B meta-rhetoric), PI-170 (XIV.C editor-vs-teacher conflation), PI-171 (XIV.B chatbot-architecture tradeoff); cite_status needs_cite for PI-172 ([^3] bare See supra without pin for the six-phase governance enumeration; CLOSED at run-252 Cite). All four distinct from open PI-098/099/100. unsupported_claims 0 (conclusion fully footnoted).",
       "word_count": 446,
       "draft_note_run_335": "Draft run 335 closed PI-ER-XIVC-COMMIT's Draft leg at XIV.C (owner_phase draft+polish; P2 Editorial Review Skill run-315): inserted one 34-word concrete-commit sentence naming the four artifacts a colleague taking up the X.E invitation would receive (typed note schemas, per-phase rubrics, prompt library, cost log), grounding the prior sentence-4 abstract method-elements list (typed schema / verified-source discipline / professorial gating / iterative loop) in concrete deliverables. New footnote [^9] cross-references V / VI / VII / IX as the owning sections. drafts-only per L-035 three-site discipline; Polish-layer propagation to polished/section-14-conclusion.md and manuscript/full-draft.md routed to next Polish tick on Section 14. word_count 419 \u2192 446 (+27 frontmatter delta = +34 substantive content - 7 prior baseline drift correction); +11.5% of target 400, within Draft 15% cap and 6 words over Polish +/-10% band. footnotes_count 8 \u2192 9. cite_status holds at needs_polish (no new external anchor; [^9] is *See supra* internal); draft_status holds at needs_polish; polish_status holds at needs_polish; provenance_audited true \u2192 false (new claim at XIV.C; re-audit owed). PI-ER-XIVC-COMMIT status open; Draft leg closed; Polish leg open pending propagation.",
-      "last_verify_run": 339,
+      "last_verify_run": 342,
       "verify_note_run339": "Run-339 Verify Persona 5 P1 PI-272 (paired with Section 10): XIV.C line 442 still lacks the run-335 Draft commit sentence + [^9] PI-ER-XIVC-COMMIT Polish + Stitch propagation legs. Paired Polish on Sections 10 + 14 lands both. polish_status holds at needs_polish.",
       "last_polish_run": 340,
       "polish_note_run340": "Run-340 Polish propagated run-335 Draft +34-word XIV.C commit sentence + [^9] from drafts to polished per PI-ER-XIVC-COMMIT Polish leg. Body 400 -> 434 (+34). Footnotes 8 -> 9. PI-ER-XIVC-COMMIT Polish leg closed; Stitch leg owed.",
       "xivc_commit_polish_leg_closed_at": "2026-06-01T00:00:00Z",
-      "xivc_commit_polish_leg_closed_at_run": 340
+      "xivc_commit_polish_leg_closed_at_run": 340,
+      "provenance_audit_run_run290": 290,
+      "provenance_score_prior_run_290": 4.4,
+      "verify_note_run342": "Run-342 Verify-provenance third re-audit since the run-140 baseline, first audit on post-run-341 Stitch propagation prose carrying the new XIV.C concrete-commit sentence + new global [^190] (polished local [^9]) per PI-ER-XIVC-COMMIT closure. claims_total 9 -> 10 (new article-as-deliverable-package claim); claims_mapped 9 -> 10 (mapped via [^190] to body Sections V/VI/VII/IX). Score 4.4 -> 4.2 (-0.2 drop): claim_coverage 5 hold (10/10 = 100%); primary_source_ratio 3 hold (0 of 9 footnotes external); attribution_discipline 5 -> 4 on PI-273 [^190] L-024-family altitude mismatch (body claim is artifact-delivery, [^190] points only to descriptive body Sections V/VI/VII/IX rather than to deliverable Appendices C/B/D/E); numerical_precision 5 hold; gap_honesty 4 hold (PI-228 still open). 4.2 < 4.5 gate; polish_status holds at needs_polish. Path to >=4.5: close PI-273 via Cite-tier compound-cite expansion in [^190] (lifts 4 -> 5, brings 4.2 -> 4.4); then close PI-228 via XIV.A or XIV.B disclosure (lifts 4 -> 5, brings 4.4 -> 4.6). Four P1 findings: PI-273 NEW (Personas 1 + 4, two-finding-one-PI cross-reference altitude mismatch); PI-274 NEW Persona 2 (XIV.B 'well-suited base case' source-course-properties unpacking gap); PI-270 re-confirm Persona 3 (abstract Karpathy-attribution seventh Verify cycle); PI-275 NEW Persona 7 SUPPLEMENTAL (XIV.C second-instance present-tense overclaim, Reviewer 2 rejection-vector). polish_status holds at needs_polish (already there); cite_status holds at needs_polish (PI-273 routes a Cite-tier compound-cite expansion). unsupported_claims_count 0 -> 1."
     }
   },
   "target_venue": "Journal of Legal Education",
@@ -2756,15 +2817,15 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "12",
+    "last_audit_section": "14",
     "last_cite_run": 325,
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "12",
-    "last_run": 339,
-    "last_run_at": "2026-05-31T19:00:00Z",
-    "new_findings_count": 5,
+    "last_reaudit_section": "14",
+    "last_run": 342,
+    "last_run_at": "2026-06-01T04:00:00Z",
+    "new_findings_count": 4,
     "p0_open": 0,
-    "p1_open": 159,
+    "p1_open": 162,
     "p2_open": 43,
     "personas_read": 5
   },
