@@ -90,7 +90,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -103,8 +103,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-30T23:45:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-30T23:59:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:45:00Z",
@@ -1979,9 +1979,92 @@
       "status": "open",
       "suggested_fix": "Next Polish tick on Section 14: qualify XIV.C's commit sentence with a one-clause acknowledgement that the second instance has not yet been run, framing the artifacts as offered-but-untested rather than as proven deliverables. Preferred form (+11 body words; lands Section 14 at 445, above +/-10% band \u2014 pair with PI-274 trim or \u00a79 trim continuation): 'The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced, so the second instance, when undertaken, would start from artifacts rather than reconstruct them.[^190]'. Alternative tighter form (+0 net words): 'The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced (and not yet adapted by a second course), so the second instance would start from artifacts rather than reconstruct them.[^190]'. Either form closes the Reviewer 2 overclaim by flagging the forward-looking posture in the commit sentence itself.",
       "summary": "Section XIV.C second-instance invitation present-tense overclaim. The run-341 PI-ER-XIVC-COMMIT closure landed a 33-word concrete-commit sentence speaking in the present tense ('hands a colleague,' 'starts from artifacts') about a transfer that has not happened: the article presents zero evidence that any of the four named artifacts has been picked up, adapted, or tested by anyone other than the author. Combined with the XIII.C Boyer four-scholarship typology claim landed at run-340 (PI-ER-BOYER closure), this elevates the artifact-delivery property to a scholarship-of-teaching contribution and then announces rather than demonstrates the reuse property. Reviewer 2 rejection sentence: 'The article asserts that the method is reusable and that the artifacts are deliverable, but it presents no evidence of any actual second instance, no pilot with another faculty member, no even-informal walkthrough showing that the appendices function as a starter kit for someone other than the author. A scholarship-of-teaching contribution is demonstrated, not announced; this article announces.'"
+    },
+    {
+      "id": "PI-276",
+      "type": "verify-finding-p1",
+      "persona": "1 Skeptical JLE Editor",
+      "section": "11",
+      "location": "manuscript/full-draft.md line 777 [^159] def trailing insertion-order disclosure; polished/section-11 mirror",
+      "summary": "Footnote [^159] insertion-order disclosure as process-metadata-in-published-footnote \u2014 the run-345 PI-ER-FN159 closure appended a one-line note explaining its own non-contiguous numbering, which a JLE desk-screener reads as authorial editorial commentary mistakenly left in the published footnote prose, the same hygiene defect L-058 and L-042 target at the body altitude lifted to the footnote-def altitude.",
+      "suggested_fix": "Cite or Polish tick on Section 11: strip the trailing 51-word insertion-order disclosure clause from the [^159] def and leave the substantive citation string standing alone. Alternative heavier form: re-open PI-ER-FN159 and execute the global renumber.",
+      "routes_to": "section 11 cite_status:needs_polish hold; polished/section-11 + full-draft.md text edit under L-064 polish-only-changes-don't-renumber",
+      "status": "open",
+      "opened_at_run": 346,
+      "opened_at": "2026-05-30T23:59:00Z",
+      "defect_class": "published-prose-hygiene-L-058-footnote-altitude",
+      "pair_class": [
+        "PI-271",
+        "PI-273"
+      ]
+    },
+    {
+      "id": "PI-277",
+      "type": "verify-finding-p1",
+      "persona": "2 Legal Pedagogy Traditionalist",
+      "section": "04",
+      "location": "manuscript/full-draft.md line 167 IV.A body, head of the 39-word doctrinal enumeration ('It covers...')",
+      "summary": "IV.A 'It covers' verb at the head of the 39-word doctrinal enumeration (13 substantial topics) inherits the casebook tradition's depth-of-coverage meaning; a Civ Pro traditionalist reads the enumeration as a coverage-without-depth promise. The article's argument is a method argument, not a coverage argument, so the verb 'covers' overclaims relative to what the article actually earns.",
+      "suggested_fix": "Polish tick on Section 04: replace 'It covers' with 'Its topic list names' (+1 word) or 'It treats' (+0 net) \u2014 verbs that name the breadth-only commitment without inheriting casebook-tradition depth. Either form preserves the deliberate-enumeration exemption while softening the depth implication.",
+      "routes_to": "section 04 polish_status:ready_for_stitch -> needs_polish (already moved by the Persona 4 provenance gate this same tick)",
+      "status": "open",
+      "opened_at_run": 346,
+      "opened_at": "2026-05-30T23:59:00Z",
+      "defect_class": "voice-traditionalist-depth-overclaim",
+      "pair_class": [
+        "PI-279"
+      ]
+    },
+    {
+      "id": "PI-278",
+      "type": "verify-finding-p1",
+      "persona": "3 AI-in-Education Researcher",
+      "section": "07",
+      "location": "manuscript/full-draft.md lines 283/285/287 \u2014 VII.D opening + body paragraphs naming 'running memory,' tiered 'loading,' and 'audit trail'",
+      "summary": "VII.D loop-memory-architecture descriptive vocabulary ('running memory,' 'loading,' 'audit trail') lands post-run-344 softening without engaging the AI-in-Ed memory-architecture literature, the reflective-practice / metacognition literature, or the Bond meta-review's chatbot-tutor memory-architecture findings \u2014 violating the L-067 Bond-typology breadth-cross-reference principle the editorial-review pass introduced.",
+      "suggested_fix": "Cite tick on Section 07: add a brief footnote-tier cross-reference at VII.D opening sentence anchoring to Magesh + Bond (chatbot-tutor and adaptive-system memory architectures) and naming the case study's appended-record running memory as a positioned choice against the chatbot-tutor default. Preferred form +35 footnote words, no body delta.",
+      "routes_to": "section 07 cite_status hold at needs_polish; polished/section-07 picks up new local footnote slot; full-draft mirror at next Stitch",
+      "status": "open",
+      "opened_at_run": 346,
+      "opened_at": "2026-05-30T23:59:00Z",
+      "defect_class": "ai-in-ed-literature-engagement-gap-L-067",
+      "pair_class": [
+        "PI-067"
+      ]
+    },
+    {
+      "id": "PI-279",
+      "type": "verify-finding-p1",
+      "persona": "4 Provenance Auditor",
+      "section": "04",
+      "location": "polished/section-04 line 27 body / [^2] line 55; full-draft.md line 167 body / [^41] line 549",
+      "summary": "IV.A body 13-topic doctrinal enumeration vs [^2] 'fourteen-topic enumeration' \u2014 body-13 / footnote-14 inconsistency at the section's load-bearing scope-naming surface. Defect predates the run-344 Polish split (pre-split enumeration carried same 13 items) but became auditable for the first time when the split exposed the count for a clean tally.",
+      "suggested_fix": "Polish tick on Section 04: option C recount-to-correct-number \u2014 verify against workplan Section IV bibliography commentary and App. A Input Inventory's Vault Output Snapshot; correct body and footnote to the verified count (may be 13 or 14 depending on whether substantive and procedural due process count as one item or two). Alternative option A: add one missing doctrinal-area name to body. Alternative option B: edit [^2] to read 'thirteen-topic enumeration'.",
+      "routes_to": "section 04 polish_status:ready_for_stitch -> needs_polish (provenance gate 4.0 < 4.5); pairs with PI-277 in the same Polish tick batch",
+      "status": "open",
+      "opened_at_run": 346,
+      "opened_at": "2026-05-30T23:59:00Z",
+      "provenance_score_impact": "criterion 4 numerical_precision 5 -> 3 and criterion 1 claim_coverage 5 -> 4 (4.4 -> 4.0)",
+      "defect_class": "numerical-precision-body-footnote-drift",
+      "lessons_candidate": "L-070 polish-sentence-split runs that decompose enumerative lists must trigger a body/footnote numerical-claim re-count"
+    },
+    {
+      "id": "PI-280",
+      "type": "verify-finding-p1",
+      "persona": "6 Structural/Developmental Editor SUPPLEMENTAL",
+      "section": "07",
+      "location": "manuscript/full-draft.md lines 283/285/287 VII.D body softenings + App. B / App. F appendix files retaining literal vault-doc filenames",
+      "summary": "VII.D body-vs-appendix terminological-consistency seam introduced by the L-058 softening pass: body says 'lessons file' / 'single-file rubric' / 'scorecard' / 'build narrative' while App. B and App. F retain literal filenames (LESSONS.md, RUBRIC.md, .run-scores.jsonl, BUILD_NARRATIVE_YYYY-MM.md). A reader following the cross-reference must silently translate descriptive nouns back into literal filenames.",
+      "suggested_fix": "Polish tick on Section 07: add a one-clause bridge at VII.D [^6] def naming the appendix-literal filename for the descriptive noun. Preferred form +12 footnote words; alternative scoped form distributes 8 words across [^6]/[^7]/[^8]; alternative glossary form adds App. F prologue paragraph.",
+      "routes_to": "section 07 polish_status:ready_for_stitch -> needs_polish (already moved by PI-278); polished/section-07 picks up bridge; full-draft mirror at next Stitch",
+      "status": "open",
+      "opened_at_run": 346,
+      "opened_at": "2026-05-30T23:59:00Z",
+      "defect_class": "body-vs-appendix-terminological-consistency-L-058-corollary",
+      "lessons_candidate": "L-071 body-prose softening passes translating vault-jargon to descriptive nouns should pair with appendix-side glossary or footnote-tier bridge"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -2003,7 +2086,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 345,
+  "run_count": 346,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2144,7 +2227,7 @@
       "cite_note": "Run-272 Cite surgical fix per PI-192: deleted the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause from polished [^14], [^15], [^20] (and the full-draft manuscript-global [^49], [^50], [^55] mirrors). Body hedge suffices per the PI-routing drop-option; the open-question body prose was already clean. Footnote count unchanged at 20; claims_total stays at 20; claims_mapped advances 17 -> 20; unsupported_claims cleared. PI-192 closed and archived. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual flagged in the run-182 provenance note (note 17's 'progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; remains for the next Polish tick. Section's prior cite_status was needs_polish (PI-192 was a footnote-form provenance routing, not a draft-status routing) and remains needs_polish; polish_status stays needs_polish pending the verify-provenance re-audit.",
       "cite_redone_at": "2026-05-31T02:00:00Z",
       "cite_status": "needs_polish",
-      "claims_mapped": 20,
+      "claims_mapped": 19,
       "claims_total": 20,
       "current_words": 1034,
       "draft_completed_at": "2026-05-16T03:13:24Z",
@@ -2160,11 +2243,11 @@
       "polish_completed_at": "2026-05-16T09:30:00Z",
       "polish_note": "Run-180 Polish: propagated the run-172 PI-131/PI-136 arithmetic reconciliation into the polished artifact (closing the recurring Verify-Editor RESIDUAL: the assembled IV.A had read 61+66+3=130 among 127 top-level), and cleared all six P1s the 2026-05-29 Verify routed to 'the next Polish tick on Section 04' (PI-059 cost-table forward-point, PI-060 de-meta-rhetoric, PI-061 curation-actor, PI-062 IV.E-to-V.A seam bridge, PI-063 casebook architectural-implication, PI-064 access-assumption). Mechanical sweep clean. Landed 1034 words (+14.9%); flagged PI-191 for Stitch trim; footnote defs hold at 20, no global renumber.",
       "polish_redone_at": "2026-06-03T03:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "provenance_audit_note": "Run-182 Verify Provenance Auditor re-audit of the run-180/181 reconciled prose. The prior 3.6 driver (the 61+66+3=130-among-127 arithmetic impossibility) is resolved: IV.A now reads 388 total / 61 PowerPoint + 66 PDF = 127 slide-and-reading subset / +3 DOCX, consistent with App. A and with Section II/VIII. New score 4.4 (coverage 5, primary-source-ratio 4, attribution 5, numerical-precision 4, gap-honesty 4). Two residual defects: (1) footnotes [^14]/[^15]/[^20] route to the internal pending-issue tracker, an internal-log citation in published prose barred by the PROJECT_PRIMER citation policy and provenance-rubric criterion 2 (logged PI-192, the three unsupported_claims above with reason requires-primary-source); (2) the 198-page count's snapshot is 'the progress-report date' without an explicit calendar date (numerical-precision 4). 4.4 < 4.5 so polish_status -> needs_polish; next Cite/Polish tick re-points the three footnotes to App. D or drops them.",
       "provenance_audited": false,
-      "provenance_audited_at": "2026-06-03T07:00:00Z",
-      "provenance_score": 4.4,
+      "provenance_audited_at": "2026-05-30T23:59:00Z",
+      "provenance_score": 4.0,
       "provenance_stale_reason": "Run-180 Polish materially rewrote IV.A (propagated the run-172 PI-131 arithmetic reconciliation: 388 total; 61 PowerPoint + 66 PDF = the 127 slide-and-reading subset the flat structure exposes first; plus 3 DOCX), IV.D (dropped the false 'one-hundred-twenty-seven-file top-level folder' total), and IV.E, closing the six routed P1s (PI-059..064). provenance_audited reset to false so the next Verify Provenance Auditor re-audits the new prose rather than the stale 2026-05-29 3.6 read; score 3.6 retained as last-known.",
       "re_stitched_at": "2026-06-03T05:00:00Z",
       "stitch_note": "Run-181 interim Stitch: propagated the run-180 polished Section 04 into manuscript/full-draft.md, closing the recurring Verify-Editor RESIDUAL (IV.A reconciled to 388 total / 61+66=127 slide-and-reading subset / +3 DOCX; IV.D dropped the false 127-file top-level total; IV.B trailing meta-clause cut; IV.E reworded with the access disclosure and the V-bridge). Footnote-count-neutral (20 defs, global [^36]-[^55], offset +35; [^48] cross-ref kept resolved to global Section VIII note 96). polish_status ready_for_stitch -> stitched. provenance_audited stays false; Verify will re-audit the materially-changed prose and may reset on provenance_score < 4.5.",
@@ -2172,7 +2255,7 @@
       "target_words": 900,
       "title": "The Input Corpus",
       "unsupported_claims": [],
-      "unsupported_claims_count": 0,
+      "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T09:00:00Z",
       "verify_routing_reason": "Eighth-rotation Verify tick on the re-polished Section 04 second-pass prose (971 words; the 2026-05-22T07:00 Polish tick closed PI-006 through PI-010 and added the PI-053 Route A IV.E forward-reference to Section IX's master cost table). Six new P1s opened against Section 04, routing polish_status from stitched back to needs_polish: Persona 1 PI-059 (IV.E third sentence 'lives at the master cost table in Section IX' asserts present existence of an artifact deferred under PI-049 / PI-050 / PI-051, mirroring the PI-057 cost-table-as-promise pattern now at the upstream forward-reference site; the trailing 'once it lands' clause modifies the closing action not the table's existence) routes to next Polish tick on Section 04 (rewrite IV.E third sentence so the master-table reference is forward-pointed rather than present-asserted). Persona 1 PI-060 (IV.E fifth sentence 'is the kind of self-consistency the thesis requires' self-flagging meta-rhetoric, fourth recurrence of the PI-022 / PI-028 / PI-036 pattern L-036 named at three prior sites; the Polish 2026-05-22T07:00 tick ran with L-036 in scope per the Polish narrative's explicit lesson-application list and the construction still landed in published prose, meaning the L-036 sweep is not catching the category at Polish time across multiple ticks) routes to next Polish tick on Section 04 plus a candidate L-036 refinement expanding the sweep target from 'section openings and closes' to 'section openings, closes, and any sentence that frames its own structural significance rather than executing it.' Persona 2 PI-061 (IV.A erases the professorial-curation moment between assigned casebook and course-issued PDFs; the PI-007 Polish fix closed the casebook-silence surface gap but the corpus description still names nothing about who selected which materials to upload, who decided which opinions to merge into reading packets, who chose to issue modernized PDFs for some cases but not others; sixth recurrence of the PI-015 / PI-031 / PI-039 / PI-046 / PI-054 actor-erasure pattern now extending the actor-erasure line to the article's most upstream section) routes to next Polish tick on Section 04 (add one sentence to IV.A naming the curation-choice actor and the curation moment, preserving the corpus description while making the upstream curation actor visible). Persona 2 PI-062 (IV.E-to-V.A seam reads as procedural-and-architectural pair without substantive bridge; IV.E closes on snapshot-date awaiting professorial review and V.A opens on three-folder declaration, with no substantive bridge across the seam) routes Section 04 polish_status (already flipped this run) under the lighter-touch IV.E close option (add one new closing sentence such as 'The structured note layer Section V describes is what translates that snapshot into a navigable form, and the next section takes up the schema that does the translating'), or Section 05 polish_status (already needs_polish from prior Verify rotation) under the V.A transition-first option; the V.A version is preferred because Section 05's Polish queue already carries six open P1s and a seam-bridge insertion folds into the existing routing. Persona 3 PI-063 (IV.A casebook-acknowledgment-without-engagement hedge defers the curriculum-grounding architectural-consequence question; the PI-007 Polish fix added the hedge clause but does not engage with what the open question means for the curriculum-grounding transfer-of-inference claim Section IV.A footnote [^23] and Section XII develop) routes to next Polish tick on Section 04 (add one sentence to IV.A naming the architectural consequence of the casebook gap with a Section XII forward-reference) and grounds the new lesson L-044 on the hedge-acknowledgment-without-engagement pattern. Persona 3 PI-064 (Section IV silent on equity, accessibility, device assumptions, and the digital divide; the corpus is described as course-issued materials uploaded to Canvas, but nothing in IV names that Canvas access presupposes broadband, a device capable of rendering modernized PDFs at 300 dpi, and the institutional enrollment that gates the LMS itself; third recurrence of the PI-026 / PI-033 pattern across the article's three flagship walkthrough sections) routes to next Polish tick on Section 04 (add one sentence to IV.A or to the IV.E disclosure paragraph acknowledging the access assumptions with a Section XII forward-reference). Section 04's two prior P2 findings (the IV.A 65-word doctrinal-scope enumeration already honestly Polish-scored at 4; the IV [^5] directional-particle source-file divergence Stitch-flagged candidate) plus the IV.C 'presumably read' informal-hedge P2 are logged without routing per rubric, available to the next Polish tick on Section 04 as mechanical cleanups when convenient. New lesson L-044 added on the Polish closure of hedge-naming P1s requiring an architectural-implication sentence not only a hedge clause, distinct from L-024 (Cite-time transfer-of-inference clause) and from L-040 (live-pedagogy-versus-static-artifact slip check) because L-044 names a silent-omission pattern at the architectural-implication level rather than a slip-into-substitution pattern at the prose-verb level.",
       "last_polish_run": 344,
@@ -2180,7 +2263,12 @@
       "polish_note_run344": "Run-344 Polish batched PI-ER-SENTENCES (sections 04,05) + PI-ER-APPA-ROUTING Polish leg (section 07).",
       "word_count": 1035,
       "stitch_propagated_run_345": true,
-      "last_stitch_propagation_at": "2026-05-30T23:45:00Z"
+      "last_stitch_propagation_at": "2026-05-30T23:45:00Z",
+      "provenance_score_prior_run_182": 4.4,
+      "provenance_audit_run": 346,
+      "polish_status_prior_run_344": "ready_for_stitch",
+      "claims_mapped_prior_run_182": 20,
+      "verify_note_run346": "Run-346 Verify Provenance Auditor re-audit (first since run-182 baseline) scored 4/4/5/3/4 = 4.0 on the PI-279 IV.A 13-vs-14 body-footnote count drift the run-344 split exposed (claim_coverage 5 -> 4 on 1-claim drop; numerical_precision 5 -> 3 on the body-footnote inconsistency). 4.0 < 4.5 gate; polish_status:ready_for_stitch -> needs_polish. PI-277 (Persona 2, Section IV.A \"It covers\" verb depth-overclaim) routes the same Polish tick. PI-279 closure path: option C recount-to-correct-number against workplan + App. A; closure lifts criterion 4 and criterion 1 bringing 4.0 -> 4.4, then gap_honesty -> 5 on subsequent re-audit brings 4.4 -> 4.6 above gate."
     },
     "05": {
       "cite_completed_at": "2026-05-16T21:50:00Z",
@@ -2291,7 +2379,7 @@
       "polish_completed_at": "2026-05-28T23:00:00Z",
       "polish_last_run": 229,
       "polish_routing_reason": "Run-229 Polish closed PI-208 (Persona 1 Skeptical JLE Editor P1 from Verify run 224): split the run-222 VII.C closing sentence at the semicolon into two sentences and softened the load-bearing verb 'instantiates' to 'responds to' per PI-208's suggested fix, addressing both the 41-token tightness slip past the Polish rubric's 35-word band and the over-claim register the JLE editor flagged as Silicon Valley product-announcement. Edit landed at three sites per L-035 cross-file discipline: polished/section-07 line 53, drafts/section-07 line 38, and full-draft.md line 223 (the assembly uses global [^93]). word_count 1230 -> 1231 (+1 token by hyphen-aware tokenization). full-draft total_words 13389 -> 13390, within the 10,000-14,000 policy window with 610 words of ceiling headroom. provenance_audited reset to false because VII.C materially changed; the run-224 4.6 audit's gap_honesty 5 and primary_source_ratio 4 should hold at the next re-audit (PI-208 fix is about voice-and-tightness, not provenance). polish_status holds at needs_polish on the L-007 axis alone (the sole remaining unsupported_claim with reason: requires-primary-source); closing L-007 is the remaining single Polish edit between Section 07 and a full 5.0 across all five provenance criteria and rubric exit. The three other Polish-routed open Section 07 P1s (PI-045, PI-046, PI-047) and the L-007 entry are unchanged this tick.",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "provenance_audit_run": 231,
       "provenance_audited": false,
       "provenance_audited_at": "2026-05-29T03:00:00Z",
@@ -2313,7 +2401,9 @@
       "polish_note_run344": "Run-344 Polish batched PI-ER-SENTENCES (sections 04,05) + PI-ER-APPA-ROUTING Polish leg (section 07).",
       "word_count": 1240,
       "stitch_propagated_run_345": true,
-      "last_stitch_propagation_at": "2026-05-30T23:45:00Z"
+      "last_stitch_propagation_at": "2026-05-30T23:45:00Z",
+      "polish_status_prior_run_344": "ready_for_stitch",
+      "verify_note_run346": "Run-346 Verify Persona 3 (AI-in-Ed Researcher, PI-278 VII.D loop-memory-architecture without AI-in-Ed-literature anchoring; Cite-tier footnote addition at VII.D opening) and Persona 6 Structural/Developmental Editor SUPPLEMENTAL (PI-280 VII.D body-vs-appendix terminological-consistency seam introduced by L-058 softening pass; Polish-tier [^6]/[^7]/[^8] footnote bridge) both route polish_status:ready_for_stitch -> needs_polish. The next Cite tick lands PI-278; the next Polish tick lands PI-280 bridge alongside any open Polish-tier items."
     },
     "08": {
       "cite_completed_at": "2026-05-30T22:00:00Z",
@@ -2748,15 +2838,15 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "14",
+    "last_audit_section": "04",
     "last_cite_run": 325,
     "last_polish_resolution_run": 145,
-    "last_reaudit_section": "14",
-    "last_run": 342,
-    "last_run_at": "2026-06-01T04:00:00Z",
-    "new_findings_count": 4,
+    "last_reaudit_section": "04",
+    "last_run": 346,
+    "last_run_at": "2026-05-30T23:59:00Z",
+    "new_findings_count": 5,
     "p0_open": 0,
-    "p1_open": 162,
+    "p1_open": 167,
     "p2_open": 43,
     "personas_read": 5
   },
