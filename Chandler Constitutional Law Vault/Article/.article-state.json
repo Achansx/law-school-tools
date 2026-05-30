@@ -89,7 +89,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "polish",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -2072,7 +2072,7 @@
       "suggested_fix": "Paired Polish tick on Sections 10 and 14: at X.E line 354 expand to 'The corpus, the typed-schema templates, the per-phase prompt library, the per-phase rubrics, and the per-tick cost log are described in enough detail and captured in the online supplements that a colleague teaching a different doctrinal course could attempt the same build and report where it held and where it broke.' (+19 words; Section 10 target_max band OK). At XIV.C line 442 propagate the run-335 Draft commit sentence + [^9] cross-reference from drafts/section-14-conclusion.md to polished and full-draft per L-035 three-site discipline, closing PI-ER-XIVC-COMMIT's Polish + Stitch legs in the same tick. Routes Sections 10 and 14 polish_status:needs_polish (already there for both)."
     }
   ],
-  "phase_index": 0,
+  "phase_index": 2,
   "phases": [
     "draft",
     "cite",
