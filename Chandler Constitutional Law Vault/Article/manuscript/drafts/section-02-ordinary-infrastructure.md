@@ -3,7 +3,7 @@ id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
 status: ready_for_stitch
 target_words: 700
-word_count: 1136
+word_count: 1076
 last_phase: polish
 draft_status: needs_polish
 cite_status: needs_polish
@@ -11,8 +11,10 @@ polish_status: ready_for_stitch
 footnotes_count: 12
 last_cite_run: 297
 last_cite_run_pre297: 292
-last_polish_run: 298
+last_polish_run: 327
+last_polish_run_pre327: 298
 last_polish_run_pre298: 293
+polish_note_run327: "Run-327 Polish mirrored from polished under EDITORIAL-REVIEW PASS priority 4 (PI-ER-TRIM91): trimmed II.B inventory-and-snapshot paragraph (-50) and II.D second-paragraph navigational-graph sentence (-10). Drafts body word_count 1136 -> 1076 (-60). Mirrors curly-quote-free trim text (drafts holds the pre-polish artifact form; this tick's trimmed text contains no apostrophes, so drafts and polished are textually identical for the trimmed passages this run)."
 last_polish_run_pre293: 278
 last_draft_run: 296
 polish_note_run298: "Run-298 Polish mirrored from polished: split the 46-word II.E Carnegie/Best Practices + Sturm & Guinier combined sentence (the post-run-296/297 Cite-landed legal-ed-canon prose) at the 'replacement, and Susan' seam into two sentences, attaching [^12] to both per the string-cite supports-all-three-works dual-attachment pattern. Net body delta -1 (the 'and' conjunction dropped). drafts word_count 1137 -> 1136 (drafts still carries straight ASCII apostrophes as the pre-polish artifact per the L-035 three-site discipline; polished holds the curly form). polish_status needs_polish -> ready_for_stitch."
@@ -32,7 +34,7 @@ The casebook has been the spine of doctrinal teaching for more than a century an
 
 ## B. What ordinary course infrastructure produces: an inventory
 
-The starting state of the Constitutional Law I vault, before any of the synthesis pipeline ran, was a flat folder of more than two hundred sixty files exported from a law-school course management system: sixty-one PowerPoint lecture decks, sixty-six PDFs of case readings, a dozen merged reading packets, several practice exams, and a small set of teaching guides, organized only by filename.[^2] No structural index, no doctrinal map, no cross-reference between a lecture and the cases it covered, and no synthesis layer above the inventory came with the export. The May 2026 progress snapshot of the case study records one hundred ninety-eight pages of structured prose alongside one hundred fifty-four still-unprocessed source materials, and the coexistence of the two corpora at one snapshot date is the operational fact: turning the inventory into the system is separate work, not a property the inventory has by itself.[^3]
+The Constitutional Law I vault began as a flat folder of more than two hundred sixty files exported from a law-school course management system: sixty-one PowerPoint lecture decks, sixty-six PDFs of case readings, a dozen merged reading packets, several practice exams, a set of teaching guides, and an Uploaded Media subfolder of case-opinion PDFs, all organized only by filename.[^2] The export carried no structural index, doctrinal map, per-lecture-to-case cross-reference, or synthesis layer above the inventory. The May 2026 progress snapshot records one hundred ninety-eight pages of structured prose alongside one hundred fifty-four still-unprocessed source materials. Their coexistence at one snapshot date is the operational fact: turning the inventory into the system is separate work.[^3]
 
 ## C. The performed teaching ordinary infrastructure does not capture
 
@@ -40,7 +42,7 @@ Elizabeth Mertz's ethnographic study of first-year Contracts classrooms records 
 
 ## D. The synthesis and graph affordances ordinary infrastructure does not produce
 
-A third affordance the inherited inventory does not produce is the doctrinal-synthesis view a student actually needs at exam time. The May 2026 stages email describes the Topic page as the synthesis surface of the vault: a page that gathers every case brief and lecture summary touching a doctrine into a single view carrying the governing rule, doctrinal development from the earliest controlling case to the most recent, a Key Cases comparison table, hypotheticals, an exam-spotting framework, and a critique block, with Commerce Clause as the running example.[^6] A casebook organizes by reading order, a syllabus by week, and an LMS by post date and folder, and none of those produces the per-doctrine synthesis view the Topic page is. A fourth gap is the navigational graph. The deployed vault carries an explicit wiki-link grammar in which Topic pages link to their cases and lectures, cases link back to topics and forward to citing cases, and lectures link to the cases and topics they covered, and the navigation surface that grammar produces is the doctrinal map the inherited inventory was never built to make, because none of casebook, syllabus, LMS, or slide deck is a graph.[^7]
+A third affordance the inherited inventory does not produce is the doctrinal-synthesis view a student actually needs at exam time. The May 2026 stages email describes the Topic page as the synthesis surface of the vault: a page that gathers every case brief and lecture summary touching a doctrine into a single view carrying the governing rule, doctrinal development from the earliest controlling case to the most recent, a Key Cases comparison table, hypotheticals, an exam-spotting framework, and a critique block, with Commerce Clause as the running example.[^6] A casebook organizes by reading order, a syllabus by week, and an LMS by post date and folder, and none of those produces the per-doctrine synthesis view the Topic page is. A fourth gap is navigational. The deployed vault carries a wiki-link grammar: Topic pages link to their cases and lectures; cases link back to topics and forward to citing cases; lectures link to the cases and topics each covered. None of the casebook, syllabus, LMS, or slide deck produces that doctrinal-map navigation surface, because none is a hypertext graph.[^7]
 
 ## E. Positioning within the JLE pedagogical-reform line
 

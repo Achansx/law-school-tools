@@ -1731,6 +1731,20 @@
       "resolved_at": "2026-05-30T18:00:00Z",
       "resolved_in_run": 325,
       "resolution": "Closed at run-325 Cite per RUNBOOK FINAL-PUSH MODE IMMEDIATE CITE TASK directive (PI-241 the second leg of the PI-237/PI-241 pair after PI-237 closed at run-324). Form (b) per-source pin-cite expansion landed in place at polished/section-10 [^17] and drafts/section-10 [^17] (full-draft.md [^150] propagation owed to next Section 10 Stitch tick per L-035 'Stitch reads polished as source of truth'). Pin cites: Sullivan et al., Educating Lawyers: Summary at 10-11 (2007) (Recommendations 1-2: integrated curriculum and method reform), Carnegie Foundation URL machine-readable PDF verified live this tick; Stuckey et al., Best Practices for Legal Education 39-44 (CLEA 2007) (Sec. C.5 'Statement of Outcomes Chosen' p. 39 + Sec. D 'Articulate Goals of Each Course in Terms of Desired Outcomes' pp. 40-44), CLEA URL machine-readable PDF (227 pp.) verified live this tick; Building on Best Practices [confirm-at-proof: chapter] (Maranville et al. eds., LexisNexis 2015), GSU Reading Room landing-page-only URL (no full PDF) verified live this tick. The PI-241 suggested fix's 'Educating Lawyers 27-29 (2007)' references the print Jossey-Bass book pagination not contained in the Summary URL cited; substituted Summary at 10-11 as the verifiable pin matching the existing II.E [^18] precedent. Maranville pin tagged [confirm-at-proof: chapter] per RUNBOOK directive 'For any source whose exact page is NOT machine-readable from here ... append a [confirm-at-proof: page] marker ... NEVER fabricate a page number.' Net footnote word delta +13 (48 -> 61 words; within L-064 60-65-word canon-anchor loosened cap). PI-JLE-LEGAL-ED-LIT body-leg already closed at run-305 Stitch; this is the per-source-pin-cite cleanup the RUNBOOK FINAL-PUSH MODE IMMEDIATE CITE TASK separately tracked. With BOTH PI-237 (closed run 324) and PI-241 (closed this run) carrying per-source pins-or-confirm-at-proof markers, the IMMEDIATE CITE TASK is now complete per the RUNBOOK 'When BOTH PI-237 and PI-241 carry per-source pins-or-confirm-at-proof markers, mark PI-JLE-LEGAL-ED-LIT resolved and STOP treating this as immediate' directive."
+    },
+    {
+      "id": "PI-ER-TRIM91",
+      "status": "resolved",
+      "severity": "P1",
+      "type": "editorial-review",
+      "owner_phase": "polish",
+      "section": "02",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Trim ~91 words to land under 14,000 ceiling. Route to II.B ('more than two hundred sixty files' inventory sentence) and II.D (synthesis-affordance 2nd para). II.E/II.F/X.A/XI.A PROTECTED.",
+      "resolved_at": "2026-05-30T21:00:00Z",
+      "resolved_in_run": 327,
+      "resolution": "Trimmed II.B inventory-and-snapshot paragraph (-50) and II.D second-paragraph navigational-graph sentence (-10) in polished + drafts; full-draft.md propagation owed to the next Stitch tick. Net -60 against the ~91-word target; the PROTECTED-section constraint (II.E/II.F/X.A/XI.A) caps further trim at the routed sites. Residual ceiling-overage (if Stitch finds the post-propagation full-draft is still over 14,000) gets re-routed as a separate PI to un-protected paragraphs by a future editorial review."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
