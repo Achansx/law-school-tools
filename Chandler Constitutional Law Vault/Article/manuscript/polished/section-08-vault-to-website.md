@@ -4,11 +4,11 @@ title: "From Vault to Website"
 status: needs_polish
 target_words: 700
 word_count: 736
-last_phase: verify-provenance
+last_phase: cite
 draft_status: needs_polish
 cite_status: needs_polish
 polish_status: needs_polish
-provenance_audited: true
+provenance_audited: false
 provenance_score: 4.4
 claims_total: 23
 claims_mapped: 22
@@ -54,17 +54,17 @@ Section VIII’s most load-bearing claim is the architectural one: the case stud
 
 [^6]: *See infra* fig. 3.8 (deployed site’s ⌘K search palette open with a *Marbury* query active; captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026).
 
-[^7]: *See infra* App. F (Technical Setup) (Netlify CLI direct-upload deploy procedure in vault `DEPLOY.md`, authenticated by a local personal access token at `.site/.netlify-token` that is gitignored and never committed).
+[^7]: *See infra* App. F (Technical Setup) (Netlify CLI direct-upload deploy procedure documented in the vault deploy runbook, authenticated by a local personal access token held in a gitignored token file that is never committed).
 
-[^8]: *Id.* (`.site/dist/netlify.toml` disabling post-processing via `skip_processing = true` and registering a single `/*` to `/index.html` SPA-style redirect; three-tier fallback chain documented in `DEPLOY.md` with the Netlify CLI direct upload as the preferred path because it does not consume Netlify build minutes, the Netlify MCP as fallback when the local PAT is missing, and `.site/deploy.sh` as last-resort shell wrapper).
+[^8]: *Id.* (the deploy-artifact Netlify config disabling post-processing via `skip_processing = true` and registering a single `/*` to `/index.html` SPA-style redirect; three-tier fallback chain documented in the same deploy runbook, with the Netlify CLI direct upload as the preferred path because it does not consume Netlify build minutes, the Netlify MCP as fallback when the local PAT is missing, and a shell-wrapper deploy script as last-resort path).
 
-[^9]: *See infra* App. F (Technical Setup) (vault `RUNBOOK.md` Phase: Deploy section, treating Deploy as a first-class rotation phase with its own per-phase rubric file at `rubric/deploy.md`, its own pending-issue lifecycle with `applies_to_phase: deploy`, and a cardinal rule prohibiting publication of any vault that failed the preceding Verify run).
+[^9]: *See infra* App. F (Technical Setup) (the vault runbook’s Deploy-phase procedure, treating Deploy as a first-class rotation phase with its own dedicated Deploy rubric file, its own pending-issue lifecycle with `applies_to_phase: deploy`, and a cardinal rule prohibiting publication of any vault that failed the preceding Verify run).
 
-[^10]: *See infra* App. F (Technical Setup) (vault `DEPLOY.md` Step 3.5 post-deploy verification protocol: manifest-count comparison against the production CDN at `https://constitutionallaw.netlify.app/manifest.json`; deterministically sampled five-case-brief-plus-three-topic GET sample with title-presence check; live `search.json` sanity probe confirming a *Marbury*-titled entry whose text contains “judicial review”; five-page Source Materials HEAD sample with Content-Type check; each failure mode opening a typed pending issue (`deploy-count-mismatch`, `deploy-page-sample-failed`, `deploy-search-sanity-failed`, `deploy-source-sample-failed`) and blocking state advance).
+[^10]: *See infra* App. F (Technical Setup) (the vault deploy runbook’s Step 3.5 post-deploy verification protocol: manifest-count comparison against the production CDN at `https://constitutionallaw.netlify.app/manifest.json`; deterministically sampled five-case-brief-plus-three-topic GET sample with title-presence check; live `search.json` sanity probe confirming a *Marbury*-titled entry whose text contains “judicial review”; five-page Source Materials HEAD sample with Content-Type check; each failure mode opening a typed pending issue (`deploy-count-mismatch`, `deploy-page-sample-failed`, `deploy-search-sanity-failed`, `deploy-source-sample-failed`) and blocking state advance).
 
 [^11]: *See infra* App. F (Technical Setup) (`.site/build.py` wiki-link rendering for any target prefixed `Source Materials/`, emitting `<a class="source-download" href="source/<url-encoded-filename>" download>` and copying the `Source Materials/` tree into `.site/dist/source/`; `.site/dist/_headers` rule applying long-lived `max-age=604800` caching to the `/source/*` path while keeping the generated JSON artifacts on short TTLs).
 
-[^12]: *See infra* App. F (Technical Setup) (vault `RUNBOOK.md` Step 0 feedback-intake protocol pulling submissions from the Netlify `page-feedback` form via the `manage-form-submissions` MCP, triaging each submission to the maintenance phase that can fix it, logging typed pending issues carrying `metadata.page_id`, `metadata.page_title`, `metadata.submitter_name`, `metadata.submitter_email`, `metadata.comment`, and `metadata.netlify_submission_id`, deleting each submission after triage, and requiring each subsequent phase’s scope-selection step to prefer pages with open professor-feedback issues routed to that phase).
+[^12]: *See infra* App. F (Technical Setup) (the vault runbook’s Step 0 feedback-intake protocol pulling submissions from the Netlify `page-feedback` form via the `manage-form-submissions` MCP, triaging each submission to the maintenance phase that can fix it, logging typed pending issues carrying `metadata.page_id`, `metadata.page_title`, `metadata.submitter_name`, `metadata.submitter_email`, `metadata.comment`, and `metadata.netlify_submission_id`, deleting each submission after triage, and requiring each subsequent phase’s scope-selection step to prefer pages with open professor-feedback issues routed to that phase).
 
 [^13]: *See infra* fig. 3.10 (deployed site’s `page-feedback` form in its open state on a case page; captured from the deployed site at https://constitutionallaw.netlify.app, May 26, 2026).
 
