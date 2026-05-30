@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "stitch",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "cite",
-  "last_run_at": "2026-05-31T03:30:00Z",
+  "last_completed_phase": "polish",
+  "last_run_at": "2026-05-31T05:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:00:00Z",
@@ -1843,17 +1843,6 @@
       "type": "editorial-review"
     },
     {
-      "claim": "Strengthen II.F closing sentence by naming the three commitments (accuracy, single-professor judgment, personal teaching archive).",
-      "id": "PI-ER-IIF-CLOSE",
-      "opened_at": "2026-05-30T16:36:03Z",
-      "owner_phase": "polish",
-      "persona": "Editorial Review Skill (run-315)",
-      "section": "02",
-      "severity": "P3",
-      "status": "open",
-      "type": "editorial-review"
-    },
-    {
       "claim": "Continue softening literal vault filenames in footnote parentheticals (e.g. [^123],[^125],[^126]) to descriptive nouns.",
       "id": "PI-ER-APPA-ROUTING",
       "opened_at": "2026-05-30T16:36:03Z",
@@ -1969,7 +1958,7 @@
       "type": "editorial-review-followup"
     }
   ],
-  "phase_index": 1,
+  "phase_index": 2,
   "phases": [
     "draft",
     "cite",
@@ -1991,7 +1980,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 331,
+  "run_count": 332,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2049,7 +2038,7 @@
       "last_cite_run_pre324": 297,
       "last_draft_run": 296,
       "last_phase": "verify-provenance",
-      "last_polish_run": 327,
+      "last_polish_run": 332,
       "last_polish_run_pre327": 298,
       "manuscript_global_footnote_range": "[^1]-[^11]",
       "outline_ready_at": "2026-05-21T03:00:00Z",
@@ -2063,7 +2052,7 @@
       "polish_note_run327": "Run-327 Polish on Section 02 under EDITORIAL-REVIEW PASS priority 4 (PI-ER-TRIM91). Trimmed II.B (inventory + snapshot paragraph) and II.D second paragraph (navigational-graph wiki-link sentence) per the routed PI scope (II.E/II.F/X.A/XI.A PROTECTED). II.B: tightened the 'flat folder of more than two hundred sixty files' inventory sentence preserving substance (260+ files, all seven listed file-type buckets including Uploaded Media subfolder, filename-only organization, [^2] intact); consolidated the four no-X clauses into one tighter sentence; split the May 2026 progress-snapshot sentence at the operational-fact seam (criterion 3 sentence-tightness); compressed the Canvas-broadband closing. II.D second paragraph: tightened the wiki-link sentence (dropped 'explicit'; semicolon-list form for the three link-direction clauses; collapsed the closing affordance clause). Body delta -60 (1156 -> 1096), narrowing the +65% overage to ~+57% (1096/700 = 1.57); PI-ER-TRIM91 scope exhausted at the routed II.B/II.D-2 sites since II.E/II.F/X.A/XI.A are PROTECTED and further trim must come from un-protected paragraphs in other sections. Mechanical hygiene re-confirmed: zero em dashes, zero ASCII straight quotes in body. Voice practitioner-scholarly; first-person absent; section-coherence holds. Three-site L-035 propagation: polished and drafts edited; full-draft.md propagation deferred to the next Stitch tick per the existing II Bond + II.F NEXT-Stitch-OWED queue. polish_status needs_polish -> ready_for_stitch. provenance_audited holds true at run-301 score 4.2 (no new external claims; trim is internal-prose-tightening; the run-301 audit timestamp and score remain authoritative until the next Verify-provenance Section 02 pick).",
       "polish_redone_at": "2026-05-30T03:00:00Z",
       "polish_run278_word_budget_flag": true,
-      "polish_status": "stitched",
+      "polish_status": "ready_for_stitch",
       "provenance_audit_run": 301,
       "provenance_audited": true,
       "provenance_audited_at": "2026-05-30T20:00:00Z",
@@ -2078,7 +2067,10 @@
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T05:00:00Z",
       "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule).",
-      "last_cite_run_at": "2026-05-31T03:30:00Z"
+      "last_cite_run_at": "2026-05-31T03:30:00Z",
+      "last_polish_run_pre332": 327,
+      "word_count": 1104,
+      "polish_note_run332": "Run-332 Polish tick on Section 02 II.F closing sentence under EDITORIAL-REVIEW PASS priority 5 (PI-ER-IIF-CLOSE, P3, polish-owned). Rewrote 'Section III walks the deployed instance where those three commitments take physical form.' to 'Section III walks the deployed instance where those three commitments (accuracy, single-professor judgment, and the personal teaching archive) take physical form.' The named-three mirror the immediately-preceding sentence subjects in II.F's penultimate sentence (Accuracy / the judgment preserved / the navigational graph). Net body delta +8 (polished 1096->1104; drafts 1076->1084; full-draft.md +8). Three-site L-035 propagation completed in-tick. polish_status stitched -> ready_for_stitch; the next Stitch tick confirms integrity and re-sets to stitched. provenance_audited holds true (no new external claims). Mechanical hygiene clean (parens not em-dashes; no straight ASCII quotes). The +8 stacks atop the standing PI-ER-IXTABLE-OVERAGE Section IX +18.1% prose overage pending Stitch absorption; assembled full-draft body now ~14,032 against the 14,000 ceiling, +32 over."
     },
     "03": {
       "cite_at": "2026-06-05T15:00:00Z",

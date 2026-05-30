@@ -3,7 +3,7 @@ id: "02"
 title: "Why Ordinary Course Infrastructure Is Not Enough"
 status: ready_for_stitch
 target_words: 700
-word_count: 1076
+word_count: 1084
 last_phase: polish
 draft_status: needs_polish
 cite_status: needs_polish
@@ -11,9 +11,11 @@ polish_status: ready_for_stitch
 footnotes_count: 12
 last_cite_run: 297
 last_cite_run_pre297: 292
-last_polish_run: 327
+last_polish_run: 332
+last_polish_run_pre332: 327
 last_polish_run_pre327: 298
 last_polish_run_pre298: 293
+polish_note_run332: "Run-332 Polish mirrored from polished under EDITORIAL-REVIEW PASS priority 5 (PI-ER-IIF-CLOSE): rewrote the II.F closing handoff sentence to name the three commitments (accuracy, single-professor judgment, and the personal teaching archive). Drafts body word_count 1076 -> 1084 (+8); the +8 parenthetical contains no apostrophes so drafts and polished are textually identical for the rewritten passage. polish_status holds at ready_for_stitch."
 polish_note_run327: "Run-327 Polish mirrored from polished under EDITORIAL-REVIEW PASS priority 4 (PI-ER-TRIM91): trimmed II.B inventory-and-snapshot paragraph (-50) and II.D second-paragraph navigational-graph sentence (-10). Drafts body word_count 1136 -> 1076 (-60). Mirrors curly-quote-free trim text (drafts holds the pre-polish artifact form; this tick's trimmed text contains no apostrophes, so drafts and polished are textually identical for the trimmed passages this run)."
 last_polish_run_pre293: 278
 last_draft_run: 296
@@ -50,7 +52,7 @@ The course knowledge system extends the casebook, the syllabus, and the live cla
 
 ## F. Adjacent tools, and what the method adds
 
-Three families of existing tools sit near this proposal, and none occupies its position. The first is the commercial study aid: Quimbee, CrunchTime, and Oyez supply case summaries, outlines, and audio across the standard curriculum, and Studicata pairs editorial review with drafting assistance to produce its briefs.[^10] Studicata's draft-then-review approach is the closest methodological analogue. Each of those products scales one editorial voice across many courses for a paying student. By contrast, the course knowledge system preserves a single professor's judgment over that professor's own course, with every quotation traced to the controlling opinion. The second family is the published personal knowledge base, the linked, evergreen "digital garden" that writers such as Sönke Ahrens and Andy Matuschak have developed and that the Obsidian community now publishes routinely.[^11] The form is a real precedent; what is new is applying it to a doctrinal course under source verification and professorial review rather than to a writer's private notes. The third family comprises the alternatives the article distinguishes elsewhere: the runtime AI tutor (Section X), the open casebook (Section XIII), and the autonomous build loop (Section VII). Across all three the distinguishing commitments hold constant. Accuracy is a property of a reviewed static artifact rather than of a model answering at the moment of the query; the judgment preserved is one identified professor's rather than a commercial or crowd aggregate; and the navigational graph grows from a personal teaching archive rather than from a casebook's linear sequence or a machine-reasoning legal ontology. Section III walks the deployed instance where those three commitments take physical form.
+Three families of existing tools sit near this proposal, and none occupies its position. The first is the commercial study aid: Quimbee, CrunchTime, and Oyez supply case summaries, outlines, and audio across the standard curriculum, and Studicata pairs editorial review with drafting assistance to produce its briefs.[^10] Studicata's draft-then-review approach is the closest methodological analogue. Each of those products scales one editorial voice across many courses for a paying student. By contrast, the course knowledge system preserves a single professor's judgment over that professor's own course, with every quotation traced to the controlling opinion. The second family is the published personal knowledge base, the linked, evergreen "digital garden" that writers such as Sönke Ahrens and Andy Matuschak have developed and that the Obsidian community now publishes routinely.[^11] The form is a real precedent; what is new is applying it to a doctrinal course under source verification and professorial review rather than to a writer's private notes. The third family comprises the alternatives the article distinguishes elsewhere: the runtime AI tutor (Section X), the open casebook (Section XIII), and the autonomous build loop (Section VII). Across all three the distinguishing commitments hold constant. Accuracy is a property of a reviewed static artifact rather than of a model answering at the moment of the query; the judgment preserved is one identified professor's rather than a commercial or crowd aggregate; and the navigational graph grows from a personal teaching archive rather than from a casebook's linear sequence or a machine-reasoning legal ontology. Section III walks the deployed instance where those three commitments (accuracy, single-professor judgment, and the personal teaching archive) take physical form.
 
 ## Footnotes
 

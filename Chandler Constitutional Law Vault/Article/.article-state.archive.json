@@ -1760,6 +1760,21 @@
       "severity": "P1",
       "status": "resolved",
       "type": "editorial-review"
+    },
+    {
+      "claim": "Strengthen II.F closing sentence by naming the three commitments (accuracy, single-professor judgment, personal teaching archive).",
+      "id": "PI-ER-IIF-CLOSE",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "owner_phase": "polish",
+      "persona": "Editorial Review Skill (run-315)",
+      "section": "02",
+      "severity": "P3",
+      "status": "resolved",
+      "type": "editorial-review",
+      "resolved_at": "2026-05-31T05:00:00Z",
+      "resolved_in_run": 332,
+      "resolved_in_phase": "polish",
+      "resolution_note": "Polish tick rewrote II.F closing handoff sentence at all three L-035 sites (polished, drafts, full-draft.md) to name the three commitments explicitly: 'Section III walks the deployed instance where those three commitments (accuracy, single-professor judgment, and the personal teaching archive) take physical form.' The three named commitments mirror the immediately-preceding II.F penultimate-sentence subject anchors (Accuracy / the judgment preserved / the navigational graph). Net body delta +8 words at all three sites; mechanical hygiene clean (parens used not em-dashes per L-005; no straight ASCII quotes introduced); section-coherence sharpened. Three-site propagation completed in-tick (the standing run-298/run-293 II Bond + II.F NEXT-Stitch-OWED queue is unrelated to this close-sentence edit). The +8 widens the assembled full-draft body count from 14,024 (post run-328 trim) to 14,032, 32 words over the 14,000 ceiling; the overage stacks with the PI-ER-IXTABLE-OVERAGE Section IX +18.1% pending trim and is tracked there. The five P2/P3 PI-ER-* Polish items now open: PI-ER-TITLE, PI-ER-BOYER, PI-ER-XIVC-COMMIT, PI-ER-SENTENCES, PI-ER-APPA-ROUTING (PI-ER-OVERRELIANCE is Cite-routed, PI-ER-FN159 is Stitch-routed, PI-ER-IXTABLE-OVERAGE is polish+stitch)."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",
