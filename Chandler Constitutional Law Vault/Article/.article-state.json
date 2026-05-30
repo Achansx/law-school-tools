@@ -88,17 +88,17 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "polish",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
       "cleared_at": null
     },
     "handoff_freeze": {
-      "awaiting_human": true,
+      "awaiting_human": false,
       "set_at": "2026-05-30T01:48:43Z",
-      "cleared_at": null,
-      "reason": "RE-FROZEN at consolidation: PI-JLE-LEGAL-ED-LIT resolved (all section legs + both per-source-pin-cite legs PI-237 §II and PI-241 §X closed; legal-education-canon anchoring complete and propagated across all three L-035 sites). Fresh dated snapshot at Article/manuscript/HANDOFF-2026-05-29-FINAL.md; cover memo Article/PROFESSOR_CHANDLER_HANDOFF.md updated. The maintenance loop is HALTED at this gate and the maintainer has stopped firing the trigger. The system did NOT submit to JLE and did NOT email the professor -- those remain human actions reserved for the professor and the author. Clear this gate only to resume optional polish (word-ceiling trim, page-proof pin confirmations, figure format conversion)."
+      "cleared_at": "2026-05-30T16:36:03Z",
+      "reason": "REOPENED 2026-05-30 for the EDITORIAL-REVIEW PASS against research/editorial-review-run315-2026-05-30.md (run-315 review of HANDOFF-2026-05-29-FINAL.md). Loop drives the PI-ER-* items per RUNBOOK EDITORIAL-REVIEW PASS priority order. Re-freeze and re-set this gate when all PI-ER-* loop-addressable items resolve. System still does not submit and does not email the professor."
     }
   },
   "last_completed_phase": "cite",
@@ -1743,9 +1743,163 @@
         "polished": "not-started",
         "full-draft": "not-started"
       }
+    },
+    {
+      "id": "PI-ER-APPENDIX",
+      "status": "open",
+      "severity": "P1",
+      "type": "editorial-review",
+      "owner_phase": "cite+stitch",
+      "section": "multi",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Appendix cross-refs are out of sync with files (A=Input Inventory, B=AI Tooling, C=Obsidian Templates, D=Karpathy-Loop Rubric, E=Cost and Time Log, F=Technical Setup). STRIP the ~9 App. D Correspondence/Iteration/Build-System refs (notes 5,24,56,95,96,99,102,103,119) and rewrite supported clauses to stand without them (L-057/L-058 — do not build a correspondence appendix). Re-letter 'App. C (Cost Log)'->App. E. Resolve ~57 'App. A (Vault Architecture and File Layout)' refs (re-point/condense/soften). Audit ALL App. X (...) strings."
+    },
+    {
+      "id": "PI-ER-INTERNALCITE",
+      "status": "open",
+      "severity": "P1",
+      "type": "editorial-review",
+      "owner_phase": "cite",
+      "section": "multi",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Remove 3 internal-pending-issue-tracker cites at [^163],[^165],[^167] ('the underlying record lives in this article's internal pending-issue tracker'). Re-support from public source, move to appendix, or cut the sentence. rubric/cite.md crit 5."
+    },
+    {
+      "id": "PI-ER-IXTABLE",
+      "status": "open",
+      "severity": "P1",
+      "type": "editorial-review",
+      "owner_phase": "cite+draft",
+      "section": "09",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Synthesize the Section IX master cost-and-labor table (IX.A says essential to falsifiability; IX.E+[^132] say owed). Source from cost-log.jsonl + App. E raw log. External pricing WebFetch-verified live (never invent). Person-hours as honest ranges or [confirm-at-proof]. Then update IX.E/[^132] to stop saying 'owed' and point to correct appendix letter."
+    },
+    {
+      "id": "PI-ER-TRIM91",
+      "status": "open",
+      "severity": "P1",
+      "type": "editorial-review",
+      "owner_phase": "polish",
+      "section": "02",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Trim ~91 words to land under 14,000 ceiling. Route to II.B ('more than two hundred sixty files' inventory sentence) and II.D (synthesis-affordance 2nd para). II.E/II.F/X.A/XI.A PROTECTED."
+    },
+    {
+      "id": "PI-ER-TITLE",
+      "status": "open",
+      "severity": "P2",
+      "type": "editorial-review",
+      "owner_phase": "polish+stitch",
+      "section": "00",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Trim title: drop 'and the Future of Legal Pedagogy' for a phrase matching the bounded claim."
+    },
+    {
+      "id": "PI-ER-FN159",
+      "status": "open",
+      "severity": "P2",
+      "type": "editorial-review",
+      "owner_phase": "stitch",
+      "section": "11",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "[^159] defined out of ascending order (after [^151], before [^152]). Renumber to contiguous ascending slot at Stitch OR add a one-line insertion-order note."
+    },
+    {
+      "id": "PI-ER-OVERRELIANCE",
+      "status": "open",
+      "severity": "P2",
+      "type": "editorial-review",
+      "owner_phase": "cite",
+      "section": "12",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Add 1-2 student-overreliance learning-sciences cites at XII.B (e.g. Westhoff, Vasconcelos) — verify live, no fabrication. Bond is field-level only."
+    },
+    {
+      "id": "PI-ER-XIVC-COMMIT",
+      "status": "open",
+      "severity": "P2",
+      "type": "editorial-review",
+      "owner_phase": "draft+polish",
+      "section": "14",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Add one sentence at XIV.C committing what the author would hand a colleague attempting a second instance (schemas, rubrics, prompt library, cost-log) to land the X.E invitation as a real offer."
+    },
+    {
+      "id": "PI-ER-BOYER",
+      "status": "open",
+      "severity": "P2",
+      "type": "editorial-review",
+      "owner_phase": "polish",
+      "section": "13",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Add a half-sentence unpacking Boyer's scholarship-of-teaching typology at XIII.C for readers unfamiliar with it."
+    },
+    {
+      "id": "PI-ER-SENTENCES",
+      "status": "open",
+      "severity": "P3",
+      "type": "editorial-review",
+      "owner_phase": "polish",
+      "section": "multi",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Split the ~80-word IV.A topic-list sentence and the three-clause-nested V.B YAML opener."
+    },
+    {
+      "id": "PI-ER-IIF-CLOSE",
+      "status": "open",
+      "severity": "P3",
+      "type": "editorial-review",
+      "owner_phase": "polish",
+      "section": "02",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Strengthen II.F closing sentence by naming the three commitments (accuracy, single-professor judgment, personal teaching archive)."
+    },
+    {
+      "id": "PI-ER-APPA-ROUTING",
+      "status": "open",
+      "severity": "P3",
+      "type": "editorial-review",
+      "owner_phase": "cite+polish",
+      "section": "multi",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "Continue softening literal vault filenames in footnote parentheticals (e.g. [^123],[^125],[^126]) to descriptive nouns."
+    },
+    {
+      "id": "PI-ER-FRONTMATTER",
+      "status": "open",
+      "severity": "P1",
+      "type": "editorial-review",
+      "owner_phase": "handoff",
+      "section": "00",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "At re-consolidation, generate a SEPARATE clean submission copy (manuscript/SUBMISSION-2026-05-30.md) with venue-only frontmatter. Do NOT strip full-draft.md frontmatter in place (loop needs it)."
+    },
+    {
+      "id": "PI-ER-PROF",
+      "status": "open",
+      "severity": "P2",
+      "type": "editorial-review",
+      "owner_phase": "needs-human",
+      "section": "multi",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "persona": "Editorial Review Skill (run-315)",
+      "claim": "PROFESSOR-ONLY: casebook-ingestion (PI-001), student-work-ingestion (PI-002), 'all 198 snapshot pages professor-reviewed' provenance, X.E candidate course. Loop drafts conditional language + flags only; must NOT assert an answer."
     }
   ],
-  "phase_index": 2,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
