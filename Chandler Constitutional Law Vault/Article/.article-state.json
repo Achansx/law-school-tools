@@ -88,7 +88,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "submission_ready": {
       "awaiting_human": false,
@@ -101,8 +101,8 @@
       "reason": "REOPENED to close the PI-JLE-LEGAL-ED-LIT Section X and XI legs (legal-education-canon re-anchoring in Generalization and Evaluation). Loop resumed under FINAL-PUSH MODE priority 2. Re-freeze manuscript/HANDOFF-<date>.md and re-set this gate (awaiting_human:true) once PI-JLE-LEGAL-ED-LIT is resolved. The system still does not submit to JLE and does not email the professor."
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-30T09:00:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-30T10:00:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T18:00:00Z",
@@ -1180,7 +1180,10 @@
       "suggested_fix": "Either narrow X.E's 'a comparable doctrinal course' to 'a comparable case-method doctrinal course' (making the case-method scope explicit and acknowledging X.D's rules-and-procedure / statutory extension as a SEPARATE n=2 question), or broaden X.E to specify two falsification tracks -- easier track ('a comparable case-method doctrinal course such as Torts or Contracts') and harder track ('a rules-and-procedure or statutory course, where X.D acknowledges the three-folder taxonomy would need re-typing before it could carry the work'). Optionally add a footnote to X.E cross-referencing X.D so a reader sees the two-track structure without holding X.D and X.E in mind simultaneously.",
       "type": "two-track-n2-framing-gap",
       "last_reconfirmed_run": 306,
-      "reconfirm_count": 1
+      "reconfirm_count": 1,
+      "last_progress_at": "2026-05-30T10:00:00Z",
+      "last_progress_run": 322,
+      "draft_advanced_at_run_322": "Narrow-option fix landed at drafts/section-10-generalization.md line 45 X.E PI-219 leg b sentence: 'a comparable doctrinal course' -> 'a comparable case-method doctrinal course' (+1 word; drafts word_count 1068 -> 1069). PI-220 X.E leg now closed at Draft level; remaining work is L-035 three-site propagation to polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 on the next Polish + Stitch tick on Section 10. Broaden-option (two falsification tracks) declined because Section 10 is at +18.8% over the 900-word target and cannot afford a +60-80 word addition under the +/-10% Polish band. The narrow scope ('case-method doctrinal course') is L-053-compliant (no new sources; relies on existing X.B [^5] Mertz and X.D [^14] Usman case-method anchors) and aligns the leg-b earlier sentence with the leg-d run-312 later sentence three sentences down that already reads 'a comparable case-method doctrinal course'. Substantive effect: minimum-viable-second-instance specification load-bearing only over case-method doctrinal courses (Torts, Contracts, Property); X.D's rules-and-procedure / statutory extension (Civil Procedure, Tax) is now an acknowledged SEPARATE n=2 question the article does not undertake. PI-220 status holds at open pending Polish + Stitch propagation."
     },
     {
       "claim": "Section X.E's run-268-inserted PI-219 leg b sentence 'The bounded answer specifies a minimum viable second instance: a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' in manuscript/polished/section-10-generalization.md line 44 and manuscript/full-draft.md line 312 specifies 'the same checkpoints' without naming what the checkpoints are, where they live, or how an adopter would operationalize 'the same' against a different course. Section VII defines the per-phase professorial gating, the forced-finding adversarial review pass, and the LESSONS-file memory between runs, but X.E does not cross-reference Section VII; a mid-career professor reading X.E in isolation as the n=2 invitation has no way to know which structural feature is checkpoint-load-bearing without re-reading Section VII end-to-end.",
@@ -1766,7 +1769,7 @@
       }
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -1788,7 +1791,7 @@
       "11"
     ]
   },
-  "run_count": 321,
+  "run_count": 322,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2130,7 +2133,7 @@
       "cite_status": "needs_cite",
       "claims_mapped": 20,
       "claims_total": 21,
-      "current_words": 1068,
+      "current_words": 1069,
       "draft_at": "2026-05-30T21:00:00Z",
       "draft_status": "needs_polish",
       "evidence_cards": 7,
@@ -2175,7 +2178,7 @@
       "verify_routing_reason_run136": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
       "verify_routing_reason_run263": "Run 263 Verify/provenance (4.0 < 4.5): provenance re-audit lifted Section 10 from the run-136 3.8 baseline to 4.0 (criterion 5 gap_honesty 4 -> 5 on the run-261 X.D second-instance-conjecture recast and the X.A accessibility handoff); still under the 4.5 submission gate. Two new PIs opened: PI-218 (Persona 2 Cite-to-polished propagation gap on the run-260 Mertz/Sajja drafts-only anchors; routes cite_status: needs_polish -> needs_cite for the Cite-tier three-site insertion per L-035) and PI-219 (Persona 7 Adversarial Reviewer X.E n=1 anticipate-and-rebut gap; routes polish_status: needs_polish, no status delta). polish_status holds at needs_polish on PI-088 (X.A-X.B literature-gap, Cite-routed per L-024), PI-154 (X.C editor-vs-teacher gating-role conflation), PI-218 (propagation), and PI-219 (reviewer2-anticipation). The X.B unsupported_claim entry persists in frontmatter at requires-primary-source until the PI-218 Mertz/Sajja propagation lands at the polished/full-draft surface.",
       "verify_routing_reason_run_270": "Run-270 Verify-provenance re-audit scored 5/3/4/4/5 = 4.2 against the post-run-267 Cite and post-run-268 Polish prose (+0.2 from the run-263 4.0 baseline on criterion 1 lift). 4.2 < 4.5 reverts polish_status ready_for_stitch -> needs_polish per rubric/provenance-audit.md exit condition. PI-220 (Persona 2 X.D/X.E two-track-n=2-framing tension) and PI-221 (Persona 5 supplemental X.E same-checkpoints Section VII cross-reference gap) opened.",
-      "word_count": 1068,
+      "word_count": 1069,
       "verify_route_note_run301": "PI-238 Persona 3 X.A 'admired or copied' Silicon-Valley reproducibility-rhetoric P1 routed to Section 10 Polish; polish_status already needs_polish (re-confirms routing).",
       "draft_note_run_302": "Draft run 302 inserted one 25-word legal-ed-canon-anchor sentence at end of X.A (after 'admired or copied') with one [CITE:] placeholder string-citing Carnegie Report (Sullivan et al. 2007), Best Practices for Legal Education (Stuckey et al., CLEA 2007), and Building on Best Practices (Maranville et al., LexisNexis 2015) per the X-leg sources mapped in research/legal-ed-scholarship.md. Per the Section II.E precedent (run-296), Bluebook URL liveness verification and footnote conversion deferred to the next Cite tick (L-022/L-043). Body word delta +25 (1008 -> 1033, +14.8% of target 900, within Draft 15% cap). Closes PI-JLE-LEGAL-ED-LIT Section X leg at Draft level; partially addresses PI-088 (Cite-routed X.A external anchor for cross-course transfer claim). draft_status, cite_status revert to needs_cite; polish_status unchanged on open PI-238 / PI-220 / PI-221 routings. Sturm & Guinier intentionally NOT included (institutional-culture diagnosis, not method-as-contribution warrant); Maranville et al. 2015 substitutes as X-appropriate third anchor per research file Section 3 mapping.",
       "provenance_reset_at_run_304": "2026-05-31T18:00:00Z",
@@ -2187,7 +2190,8 @@
       "last_verify_touch_run": 306,
       "last_verify_touch_note": "Run-306 Verify Provenance Auditor re-audit on Section 10 (lowest-numbered polished section at provenance_audited:false after run-304 Polish reset). Score 4.0 (-0.2 from run-270 4.2 baseline) on criterion 1 claim_coverage 5 -> 4 from one new unsupported_claim at X.A reform-canon-anchor site (the run-304 Polish-inserted sentence with [^17]/[^150] compound string-cite to Sullivan 2007 / Stuckey 2007 / Maranville 2015 without per-source pin-cites). Two new PIs opened: PI-241 (Persona 1 Skeptical JLE Editor; routed to Section 10 Cite; Form (b) per-source pin-cite expansion in place lifts criterion 1 + 3 simultaneously for 4.0 -> 4.6 above the 4.5 gate); PI-242 (Persona 5 Practitioner-Adopter supplemental; X.A adopter-onboarding-corpus-and-labor-threshold gap; routed to Section 10 Polish; tighter form is +5-word X.A sentence cross-referencing Section IV corpus and Section IX labor). PI-220 (Persona 2) re-confirmed third-consecutive at unchanged X.D/X.E body. PI-238 (Persona 3 X.A 'admired or copied' Silicon-Valley reproducibility-rhetoric) re-confirmed second-consecutive at unchanged X.A body. cite_status needs_polish -> needs_cite on the PI-241 Cite-tier routing; polish_status holds at needs_polish.",
       "draft_note_run_312": "PI-247 Section X.E leg landed at Draft level: inserted one 35-word meta-disclaimer at end of X.E ('The article describes the schema; the test is a second instance, a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints, that this piece explicitly routes to future work.'). +35 body words; drafts word_count 1033 -> 1068 (+18.7% of target 900). No new footnote slot (meta-disclaimer about the article's own claim altitude, no factual claim requiring Bluebook anchor). Polish/Stitch own propagation to polished/section-10 and full-draft.md. PI-247 status: open; X.E leg at Draft level closed pending Polish propagation; paired XIV.B 8-word echo landed simultaneously this tick at drafts/section-14-conclusion.md.",
-      "last_draft_touch_run": 312
+      "draft_note_run_322": "PI-220 (Persona 2 Pedagogy Traditionalist; X.D/X.E two-track-n=2-framing tension on 'comparable doctrinal course' definition; opened run 270) closed at Draft layer via PI-220's narrow-option fix: inserted 'case-method' before 'doctrinal course' in the X.E PI-219 leg b sentence (line 45) so 'a comparable doctrinal course built and reviewed by a different faculty member under the same checkpoints' becomes 'a comparable case-method doctrinal course built and reviewed by a different faculty member under the same checkpoints', harmonizing the leg-b scope with the leg-d run-312 sentence three sentences later that already reads 'a comparable case-method doctrinal course' and acknowledging X.D's 'A rules-and-procedure course such as Civil Procedure, or a heavily statutory course such as Tax, fits that assumption less cleanly' concession. Body word delta +1; word_count 1068 -> 1069 (+18.8% of target 900, holds within the PI-247 accepted-overage; the Draft 15% cap is exceeded on the run-312 PI-247 baseline this tick inherits, not a fresh breach; flag_for_stitch_trim_run_304 remains the operative trim flag). No new footnote slot; the narrow option preserves L-053 (no new sources) by leaning on existing case-method evidence at X.B [^5] Mertz and X.D [^14] Usman. PI-220's broaden-option (two falsification tracks) intentionally declined to avoid the +60-80 word addition Section 10 cannot afford under the +/-10% Polish band. draft_status holds at needs_polish; cite_status unchanged (no new external anchor); polish_status holds at needs_polish on the open PI-238 / PI-221 / PI-242 / PI-247 axes and on the load-bearing PI-220 propagation to polished/section-10-generalization.md and manuscript/full-draft.md (next Polish tick on Section 10 owns under L-035 three-site discipline; the polished file line 44 and full-draft.md line 312 still carry the bare 'comparable doctrinal course' phrasing). Substantive effect: the article's minimum-viable-second-instance specification is now load-bearing only over case-method doctrinal courses, leaving X.D's rules-and-procedure / statutory extension question as a SEPARATE second-instance test the article does not undertake.",
+      "last_draft_touch_run": 322
     },
     "11": {
       "cite_completed_at": "2026-05-30T02:00:00Z",
