@@ -1898,6 +1898,36 @@
       "resolved_in_run": 341,
       "resolved_in_phase": "stitch",
       "resolution_note": "Stitch leg landed at manuscript/full-draft.md per the L-035 three-site discipline; the run-340 Polish handoff is now propagated at all three sites."
+    },
+    {
+      "claim": "Split the ~80-word IV.A topic-list sentence and the three-clause-nested V.B YAML opener.",
+      "id": "PI-ER-SENTENCES",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "owner_phase": "polish",
+      "persona": "Editorial Review Skill (run-315)",
+      "section": "multi",
+      "severity": "P3",
+      "status": "resolved",
+      "type": "editorial-review",
+      "resolved_at": "2026-05-30T23:30:00Z",
+      "resolved_in_run": 344,
+      "resolution_note": "Run-344 Polish closed PI-ER-SENTENCES: split the IV.A topic-list ~75-word semicolon-trailing sentence into three sentences (21+39+15) at polished/section-04 line 25, and split the V.B three-clause-nested YAML-opener sentence into two sentences (16+24) at polished/section-05 line 34. Body deltas +1 (Section 04) and +3 (Section 05). Mechanical hygiene clean. Stitch leg owed: propagate both splits to manuscript/full-draft.md per L-035."
+    },
+    {
+      "cite_note_run343": "Run-343 Cite tick batch-softened literal vault-doc filenames in footnote parentheticals across polished sections 06 (footnotes [^5],[^6],[^7],[^8],[^9],[^11],[^12]), 07 ([^2],[^3],[^7],[^8],[^9]), and 08 ([^7],[^8],[^9],[^10],[^12]). Replaced RUNBOOK.md, rubric/<phase>.md, PERSONAS.md, DEPLOY.md, .run-scores.jsonl, BUILD_NARRATIVE_YYYY-MM.md, RUBRIC.md, Templates/Topic Page.md, and Article/.article-scores.jsonl / Article/BUILD_NARRATIVE_YYYY-MM.md with descriptive nouns (\"the vault runbook's X-phase procedure\", \"the vault X rubric\", \"the vault personas record\", \"the vault deploy runbook\", \"the vault scorecard\", \"the rolling vault build narrative\", \"the original single-file rubric\", \"the vault Topic-page template\", \"this article's own scorecard\" / \"this article's own rolling build narrative\"). Resolves L-058 violations in those footnote parentheticals. Body-prose mentions in Section 07 lines 57/59/61 remain (`LESSONS.md`, `RUBRIC.md`, `.run-scores.jsonl`, `BUILD_NARRATIVE_YYYY-MM.md`); those are Polish-owned per RUNBOOK's phase ownership split and stay open for the next Polish tick to close. Build-pipeline file paths in Section 08 footnotes [^3]/[^4]/[^5]/[^11] (`.site/build.py`, .site/dist/*) preserved because they carry the architectural file-inventory claim the section argues from rather than name-dropping vault docs. Polished frontmatter for 06/07/08 updated: last_phase: cite; provenance_audited reset to false so the next Verify provenance pass re-audits the softened footnote prose against the criteria. PI-ER-APPA-ROUTING stays OPEN to cover the remaining Section 07 body-prose Polish-owned scope; route remains cite+polish.",
+      "claim": "Continue softening literal vault filenames in footnote parentheticals (e.g. [^123],[^125],[^126]) to descriptive nouns.",
+      "id": "PI-ER-APPA-ROUTING",
+      "opened_at": "2026-05-30T16:36:03Z",
+      "owner_phase": "cite+polish",
+      "persona": "Editorial Review Skill (run-315)",
+      "section": "multi",
+      "severity": "P3",
+      "status": "resolved",
+      "type": "editorial-review",
+      "updated_at": "2026-05-30T22:00:00Z",
+      "resolved_at": "2026-05-30T23:30:00Z",
+      "resolved_in_run": 344,
+      "resolution_note": "Run-344 Polish closed the PI-ER-APPA-ROUTING Polish leg (the remaining scope after the run-343 Cite batch on Sections 06/07/08 footnote-parenthetical softenings): five softenings at three body sites in Section 07 VII.D (lines 57/59/61), replacing the four literal vault-doc filename code-spans (LESSONS.md, RUBRIC.md, .run-scores.jsonl, BUILD_NARRATIVE_YYYY-MM.md) with descriptive nouns (\"the lessons file\", \"a single-file rubric\", \"the run-by-run scorecard\", \"the rolling build narrative\"). Section 08 build-pipeline .site/* paths remain deliberately preserved per the run-343 routing rationale (architectural file-inventory claim the section argues from, not vault-doc name-dropping). All Polish+Cite legs of PI-ER-APPA-ROUTING are now closed. Stitch leg owed: propagate the softenings to manuscript/full-draft.md per L-035."
     }
   ],
   "split_at": "2026-05-23T22:30:00Z",

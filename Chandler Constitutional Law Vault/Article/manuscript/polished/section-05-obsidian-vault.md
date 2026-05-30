@@ -3,16 +3,18 @@ id: "05"
 title: "Building the Obsidian Vault"
 status: ready_for_stitch
 target_words: 1100
-word_count: 1209
+word_count: 1212
 last_phase: polish
 draft_status: needs_cite
 cite_status: needs_polish
-polish_status: needs_polish
+polish_status: ready_for_stitch
+last_polish_run: 344
+polish_note_run344: "Run-344 Polish closed PI-ER-SENTENCES (Polish leg): split the V.B three-clause-nested YAML-opener second sentence ('The fields cover doctrinal labels, citation metadata, authority lineage, Midpage verification anchors, and a structured holding-bar block (issue, holding, reasoning, doctrine_family) that the deployed site promotes into a banner above the prose.' — list-coordinator-parenthetical-relative-clause structure) into two sentences. Sentence 1 (16 words) carries the four YAML-field categories; sentence 2 (24 words) carries the structured holding-bar block and its deployed-site promotion. Body word_count 1209 -> 1212 (+3 from the 'They also include' connector). Mechanical hygiene clean: zero em dashes added, zero straight ASCII quotes added; curly apostrophes preserved at 'Section VII's' and the new sentence carries no new apostrophe. The split adds no new factual claim, so claims_total holds at 26; provenance_audited reset to false so the next Verify provenance re-audits the post-split V.B prose without disturbing the run-196 4.6 baseline. PI-199 source-assembly divergence (the standing reason this section was already at needs_polish) is unchanged by this tick; the split lands at one site in this source-of-truth and Stitch propagates to full-draft in the natural batch."
 polish_note: "Run 194 (Polish) resolved PI-197 (V.D Dong uninterpretable raw means) via the issue's own prescribed fallback: the assessment scale is not verifiable from the source (the Dong arXiv paper is not in-repo and WebFetch is provenance-blocked; the evidence card and workplan carry only the raw means), so the scale-less means 6.37 vs 4.71 were trimmed from prose and the sentence now leads with the construct-named, scale-free statistics ('a large, statistically significant advantage in assessment scores ... (Cohen's d of 0.86, p less than 0.001)'). Footnote [^14] retains the full reported figures (6.37 vs 4.71, p<0.001, d=0.86) for disclosure. Body word_count word-neutral at 1209 (33->33 words on the edited fragment), still within the +/-10% band (ceiling 1210). provenance_audited set false per the verify_routing_reason instruction so the next Verify runs a fresh re-audit over post-PI-197 prose."
 stitched_at: 2026-05-17T01:30:00Z
 re_stitched_at: 2026-06-03T21:00:00Z
 verify_routing_reason: "Verify run 196 (Persona 4, Provenance Auditor) P1 PI-199 (source-assembly divergence): this polished source is the per-section source of truth, but the assembled full-draft.md Section V carries seam content this source lacks - the IV->V '388-file' bridge in V.A, the inline six-case applied_in list in V.B, and refined V.A/V.B/V.C phrasing - a divergence the Stitch phase has deliberately preserved since run 188 (run-188 stitch note: the run-181 seam work was 'preserved rather than overwritten by the more generic polished-file seam'). The fresh re-audit of THIS source (below) is clean (26/26 mapped, 0 unsupported, 4.6, PASSES the 4.5 gate), but the source != assembly mismatch undermines the article's own verifiability standard, so polish_status moves stitched -> needs_polish for reconciliation. Direction is a human/Polish call: back-port the richer full-draft seam into this source, OR (given PI-188 removed the unverifiable 388 count from this source) trim the 388 bridge from the assembly so both converge on the clean source. Until reconciled, do NOT re-confirm Section 05 stitch-ready."
-provenance_audited: true
+provenance_audited: false
 provenance_audited_at: 2026-06-04T13:00:00Z
 provenance_score: 4.6
 claims_total: 26
@@ -31,7 +33,7 @@ The smallest structural commitment is a three-way invariant. Within Cases, the f
 
 ## B. The Case Brief as the canonical page type
 
-Every page in Cases opens with a roughly thirty-field YAML frontmatter block before the H1 (Figure 5.1).[^3][^18] The fields cover doctrinal labels, citation metadata, authority lineage, Midpage verification anchors, and a structured holding-bar block (issue, holding, reasoning, doctrine_family) that the deployed site promotes into a banner above the prose. The frontmatter is the load-bearing surface for Section VII’s iteration loop, which operates on typed fields rather than re-parsing prose.
+Every page in Cases opens with a roughly thirty-field YAML frontmatter block before the H1 (Figure 5.1).[^3][^18] The fields cover doctrinal labels, citation metadata, authority lineage, and Midpage verification anchors. They also include a structured holding-bar block (issue, holding, reasoning, doctrine_family) that the deployed site promotes into a banner above the prose. The frontmatter is the load-bearing surface for Section VII’s iteration loop, which operates on typed fields rather than re-parsing prose.
 
 Every Cases page also follows a fixed H2 sequence inherited from the Case Brief template: Memory Jogger, Facts, Procedural History, Judicial Votes, Holding, Analysis (with a required Majority subsection and optional Concurrence and Dissent subsections), Hypothetical Applications (split into Same-Side, Opposite-Side, and Fence-Sitter buckets totaling five hypotheticals), Critique, Key Quotations, Key Points, Connections, and Sources.[^4] The Hypothetical Applications block is the pedagogically distinctive piece. Section VI’s prompting design uses the block to draft exam-style hypotheticals on a known structural shape rather than free-form text, and the professor reviews each draft before it reaches a page. The Critique block’s requirement of both progressive and originalist or textualist perspectives keeps Section VI from looking like content generation alone.
 
