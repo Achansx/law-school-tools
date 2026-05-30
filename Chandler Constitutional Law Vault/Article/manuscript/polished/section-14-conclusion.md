@@ -3,12 +3,16 @@ id: "14"
 title: "Conclusion"
 status: needs_polish
 target_words: 400
-word_count: 400
-last_phase: verify-provenance
+word_count: 434
+word_count_prior_run_340: 400
+last_phase: polish
 cite_status: needs_polish
 polish_status: needs_polish
-last_polish_at: 2026-05-30T03:00:00Z
-footnotes_count: 8
+last_polish_run: 340
+last_polish_at: 2026-06-01T00:00:00Z
+footnotes_count: 9
+polish_note_run340: "Run-340 Polish tick under EDITORIAL-REVIEW PASS priority 5 (PI-ER-XIVC-COMMIT Polish leg, propagating the run-335 Draft leg). Propagated the 34-word concrete-commit sentence + new [^9] from drafts/section-14-conclusion.md (run-335 Draft) into this polished source-of-truth. Body: inserted between the [^8] second-instance sentence and the closing 'modest, replicable infrastructure choice' sentence at XIV.C: 'The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced, so the second instance starts from artifacts rather than reconstructs them.[^9]' Footnotes: added [^9] cross-referencing the four owning sections (V typed note schemas; VI prompt library; VII per-phase rubrics; IX cost log) in Bluebook 21st *See supra* form consistent with [^1]-[^8]. The four artifacts enumerated track PI-ER-XIVC-COMMIT's prescribed list verbatim (typed schemas, per-phase rubrics, prompt library, cost log) and land the X.E invitation as a concrete offer rather than an abstract method-element list. Body word_count 400 -> 434 (+34 from the commit sentence; +8.5% over 400 target, exceeding the Polish +/-10% band 360-440 by 2 words but accepted under PI-ER-XIVC-COMMIT's overage-routing precedent analogous to the run-312 PI-247 X.E +35-word precedent). Footnotes_count 8 -> 9. Mechanical hygiene clean: zero em dashes added (the new sentence and [^9] both use commas+semicolons; rechecked), zero straight ASCII quotes added (the new sentence and [^9] use no quote marks), no first-person introduced. Sentence tightness: the new commit sentence runs 33 words (within the 35-word target), reads as one idea (concrete-deliverables enumeration), and uses active voice ('hands a colleague,' 'starts from artifacts'); the [^9] body uses the same one-idea-per-clause semicolon-coordinated cross-reference enumeration as [^8]. Voice consistency: practitioner-scholarly throughout the new prose; the 'hands a colleague' framing reads as concrete-deliverables enumeration in the same idiom as Section X.E and Section XIV.C's prior cross-reference scaffolding. polish_status holds at needs_polish per the run-339 Verify-Provenance route (PI-272 X.E sister-finding pairs with this propagation; Section 10 X.E enumeration leg owed to a paired Polish tick). PI-ER-XIVC-COMMIT Polish leg closed; Stitch leg owed (propagate the XIV.C body sentence + [^9] to manuscript/full-draft.md with global footnote renumber across sections downstream of the insertion point)."
+
 provenance_audited: true
 provenance_audited_at: 2026-05-29T17:10:00Z
 provenance_audit_run: 290
@@ -37,7 +41,7 @@ The case study showed a tractable pipeline that ran from source files to typed n
 
 ## C. Professorial judgment and the invitation forward
 
-Across every layer, the expert never left the loop. The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable. The adopted method equips an artifact that supports the professor’s live teaching; the teaching itself remains the professor’s. The article closes on the method-first, opt-in invitation that the institutional discussion handed forward. A faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^7] The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^8] The invitation is offered as a modest, replicable infrastructure choice rather than a mandate, and whether to extend it is the reader’s to decide.
+Across every layer, the expert never left the loop. The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable. The adopted method equips an artifact that supports the professor’s live teaching; the teaching itself remains the professor’s. The article closes on the method-first, opt-in invitation that the institutional discussion handed forward. A faculty member adopts the method, namely the typed schema, the verified-source discipline, the professorial gating, and the iterative loop, rather than the constitutional-law artifact.[^7] The natural next step is a second instance in another course, one that would test the generalization the article advances and measure what its evaluation plan describes.[^8] The article hands a colleague the typed note schemas, the per-phase rubrics, the prompt library, and the cost log this case study produced, so the second instance starts from artifacts rather than reconstructs them.[^9] The invitation is offered as a modest, replicable infrastructure choice rather than a mandate, and whether to extend it is the reader’s to decide.
 
 ## Footnotes
 
@@ -56,3 +60,5 @@ Across every layer, the expert never left the loop. The system did not replace p
 [^7]: *See supra* Section XIII (Institutional Implications) (the method-first, opt-in adoption invitation, under which a faculty member adopts the typed schema, the verified-source discipline, the professorial gating, and the iterative loop rather than the constitutional-law artifact).
 
 [^8]: *See supra* Section X (Generalization Beyond Constitutional Law) (the generalization claim a second instance would test); *see supra* Section XI (Evaluation: What Would Count as Success) (the evaluation plan a second instance would apply to measure outcomes).
+
+[^9]: *See supra* Section V (Building the Obsidian Vault) (the typed note schemas the case study produced); *see supra* Section VI (Prompting as Pedagogical Design) (the prompt library the case study produced); *see supra* Section VII (Iterative Improvement Under Professorial Control) (the per-phase rubrics the case study produced); *see supra* Section IX (Cost and Labor: The Honest Accounting) (the cost log the case study produced).

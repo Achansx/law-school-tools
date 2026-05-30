@@ -25,7 +25,7 @@ For bash, replace the file-tool vault root with the mount path returned by `find
 
 ## Article
 
-**Title:** From Casebook to Course Knowledge System: AI-Assisted Synthesis, Obsidian, and the Future of Legal Pedagogy
+**Title:** From Casebook to Course Knowledge System: AI-Assisted Synthesis and Obsidian
 
 **Target venue:** Journal of Legal Education (jle.aals.org). Bluebook 21st. Scholastica submission. No published word cap. Target raised from 10,000-12,000 to **10,000 to 14,000** on 2026-05-25 after the provenance audit surfaced under-budgeting in Sections XI (Evaluation) and XII (Risks and Limits): both sections need room to engage substantively with the literature their reviewers will hold the article against (Magesh, Bond meta-review, Mata, chatbot architecture, methodology framing). The extra 2,000 words are earmarked for those two sections; other section budgets unchanged. Plus online appendices.
 
