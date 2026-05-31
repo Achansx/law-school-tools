@@ -50,7 +50,7 @@ The argument proceeds in the order a reader needs it. It begins with why ordinar
 
 [^2]: *See infra* Section VII (Iterative Improvement Under Professorial Control) (describing the professorial-review checkpoints built into each phase of the maintenance rotation, under which the professor inspects the drafted work, corrects what is wrong, and gates whether the work advances or returns for another pass).
 
-[^3]: *See infra* Section XII (Risks and Limits) (developing the architectural contrast between the reviewed static-website case study and chatbot architectures, and locating the case study’s risk surface at build-time professorial review rather than at runtime generation).
+[^3]: *See infra* Section XII (Risks and Limits) (developing the architectural contrast between the review-ready static-website case study and chatbot architectures, and locating the case study’s risk surface at build-time professorial review rather than at runtime generation).
 
 [^4]: *See infra* Section XI (Evaluation: What Would Count as Success) (stating that the article advances a method claim rather than a learning-outcomes claim, and describing the method-plus-light-data evaluation posture adopted in lieu of a controlled trial the single course cannot run).
 

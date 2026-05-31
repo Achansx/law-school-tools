@@ -6,7 +6,7 @@ target_words: 1100
 word_count: 1452
 last_phase: draft
 footnotes_count: 11
-draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: 7.3 'reviewed static publications' -> 'review-ready static publications' to align the meta-review-transfer-of-inference clause with the controlling Section VIII reframe. Single one-word swap; body word_count unchanged. No other §VII edits this tick: the page-feedback intake at 7.5 and the staging triplet describe the workflow's design (professorial review stays possible and inspectable at every phase, which IS the design claim), not a snapshot completed-review assertion, and remain accurate as written."
+draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: 7.3 'review-ready static publications' -> 'review-ready static publications' to align the meta-review-transfer-of-inference clause with the controlling Section VIII reframe. Single one-word swap; body word_count unchanged. No other §VII edits this tick: the page-feedback intake at 7.5 and the staging triplet describe the workflow's design (professorial review stays possible and inspectable at every phase, which IS the design claim), not a snapshot completed-review assertion, and remain accurate as written."
 evidence_cards:
   - evidence-07-karpathy-autoresearch-concept
   - evidence-07-six-phase-rotation

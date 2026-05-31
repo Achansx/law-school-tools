@@ -5,7 +5,7 @@ status: needs_polish
 target_words: 1200
 word_count: 1197
 last_phase: draft
-draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: six body and two footnote references to 'reviewed static [artifact|website|object]' replaced with 'review-ready static [artifact|website|object]' to align Section XI's evaluation framing with the controlling Section VIII reframe. The evaluation-vocabulary-matching argument (use-pattern measures match a review-ready static object; response-quality measures match a chatbot-tutor object) is preserved intact, and the 'no runtime generation surface' load-bearing claim still holds because a review-ready static site is still a static site. Body word_count unchanged at 1197 (the swaps are word-level)."
+draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: six body and two footnote references to 'review-ready static [artifact|website|object]' replaced with 'review-ready static [artifact|website|object]' to align Section XI's evaluation framing with the controlling Section VIII reframe. The evaluation-vocabulary-matching argument (use-pattern measures match a review-ready static object; response-quality measures match a chatbot-tutor object) is preserved intact, and the 'no runtime generation surface' load-bearing claim still holds because a review-ready static site is still a static site. Body word_count unchanged at 1197 (the swaps are word-level)."
 draft_status: needs_polish
 cite_status: needs_polish
 draft_redone_at: 2026-05-29T00:00:00Z

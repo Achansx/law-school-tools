@@ -8,7 +8,7 @@ last_phase: draft
 draft_status: needs_polish
 cite_status: needs_polish
 polish_status: needs_polish
-draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: §II.E 'reviewed static publication' -> 'review-ready static publication'; §II.F 'reviewed static artifact' rewritten as 'review-ready static artifact whose pages are inspectable at a build-time checkpoint' to keep the architectural commitment intact without claiming completed review of the snapshot. Body delta minimal. polish_status reverts ready_for_stitch -> needs_polish for the L-035 three-site propagation owed to the next Polish tick under the PROVENANCE-CORRECTION rotation."
+draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: §II.E 'review-ready static publication' -> 'review-ready static publication'; §II.F 'review-ready static artifact' rewritten as 'review-ready static artifact whose pages are inspectable at a build-time checkpoint' to keep the architectural commitment intact without claiming completed review of the snapshot. Body delta minimal. polish_status reverts ready_for_stitch -> needs_polish for the L-035 three-site propagation owed to the next Polish tick under the PROVENANCE-CORRECTION rotation."
 footnotes_count: 12
 last_cite_run: 297
 last_cite_run_pre297: 292
