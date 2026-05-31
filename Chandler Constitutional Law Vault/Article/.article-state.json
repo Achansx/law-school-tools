@@ -5,13 +5,14 @@
     "last_run_at": "2026-06-02T07:00:00Z",
     "last_score": 4.8,
     "last_verify_run": 342,
-    "status": "needs_work",
+    "status": "needs_polish",
     "target_words": 250,
     "verify_note_run295": "PI-230 expanded-scope new-site routing: workshop-jargon 'forced-finding verification pass' in abstract paragraph 1 (full-draft.md line 46) routes abstract.status ready_for_review -> needs_work. The same PI-230 site density also surfaces at XIV.B (the original PI-230 site, run 290), IX.D body, and three footnotes [^93]/[^126]/[^177]; the VII.B/VII.C cluster is the term's endogenous definition site and is not part of the PI-230 scope. Closure path is a paired Polish tick on abstract.md and Section 14 XIV.B using suggested fix (a): 'an adversarial verification pass that required each reviewer persona to surface at least one finding per cycle' (+6 words at abstract; matched at XIV.B).",
     "verify_note_run339": "Run-339 Verify Persona 3 P1 PI-270 supersedes PI-240 as the current instance label for the abstract-vs-body Karpathy-attribution altitude mismatch (six Verify ticks of non-resolution since run 301). The +9-word Karpathy-anchored substitution at abstract paragraph 1 sentence 4 lands at the next Outline-abstract tick. status holds at needs_work.",
     "verify_note_run342": "Run-342 Verify Persona 3 P1 PI-270 re-confirm at unchanged scope (seventh Verify cycle of non-resolution since the original PI-240 logged at run 301: 301->306->311->316->321->329->334->339->342). The abstract continues to read the Karpathy-loop generically ('the iterative loops now common in software') while Section VII.A names 'Andrej Karpathy released autoresearch' with date and primary repository URL. The run-341 PI-ER-XIVC-COMMIT closure (which expanded XIV.C with the four-artifact commit and Karpathy-loop-anchored [^190]) makes the abstract-versus-body Karpathy-attribution asymmetry more visible at the conclusion altitude. Preferred fix (+9 words; abstract.words 244 + 9 = 253 within [225,275] band) lands the Karpathy-anchored substitution at the next Outline-abstract tick. status holds at needs_work.",
     "verify_route_note_run301": "PI-240 Persona 6 Structural/Developmental Editor abstract-vs-body Karpathy-attribution altitude mismatch P1: abstract names 'iterative loops now common in software' generically while Section VII.A line 238 names 'Andrej Karpathy released autoresearch' with date and primary URL; routed to Outline-abstract sub-task (or paired Section 07 Polish).",
-    "words": 244
+    "words": 270,
+    "last_phase": "draft"
   },
   "appendices": {
     "A": {
@@ -90,7 +91,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "draft",
+  "current_phase": "cite",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -103,8 +104,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "verify",
-  "last_run_at": "2026-05-30T23:59:00Z",
+  "last_completed_phase": "draft",
+  "last_run_at": "2026-05-31T01:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-30T23:45:00Z",
@@ -2079,36 +2080,42 @@
     },
     {
       "id": "PI-ER2-REVIEWCLAIM",
-      "status": "open",
+      "status": "drafts_advanced",
       "severity": "P0",
       "type": "provenance-correction",
       "owner_phase": "draft+cite+polish",
       "section": "08/12/13/abstract",
       "opened_at": "2026-05-31T01:19:15Z",
       "persona": "author-answer (provenance)",
-      "claim": "Author: snapshot pages were NOT professor-reviewed before going live (workflow allows it). Reframe 'reviewed static site' -> 'review-ready'; rewrite [^174] and §VIII.A load-bearing claim + abstract/§I.B echo to describe the gatekeeping ROLE/capability not completed review; ADD honest disclosure (snapshot shipped review-ready, not individually professor-approved) at §VIII.A + reflect §XII/§XIII. KEEP static-vs-chatbot architecture argument. NEVER claim review that didn't happen. Persona-4 verifies."
+      "claim": "Author: snapshot pages were NOT professor-reviewed before going live (workflow allows it). Reframe 'reviewed static site' -> 'review-ready'; rewrite [^174] and §VIII.A load-bearing claim + abstract/§I.B echo to describe the gatekeeping ROLE/capability not completed review; ADD honest disclosure (snapshot shipped review-ready, not individually professor-approved) at §VIII.A + reflect §XII/§XIII. KEEP static-vs-chatbot architecture argument. NEVER claim review that didn't happen. Persona-4 verifies.",
+      "drafts_advanced_at_run": 347,
+      "drafts_advanced_at": "2026-05-31T01:30:00Z"
     },
     {
       "id": "PI-ER2-CASEBOOK",
-      "status": "open",
+      "status": "drafts_advanced",
       "severity": "P1",
       "type": "provenance-correction",
       "owner_phase": "draft+cite",
       "section": "04/12",
       "opened_at": "2026-05-31T01:19:15Z",
       "persona": "author-answer (provenance)",
-      "claim": "Author: course files authored by Prof. Chandler, no casebook excerpts ingested (as far as author aware). Close the §IV [^53] + §XII.C OPEN question -> corpus is professor's own materials (author's understanding, subject to Chandler confirmation); make §XII.C copyrighted-casebook analysis a contingent fallback, not the active state."
+      "claim": "Author: course files authored by Prof. Chandler, no casebook excerpts ingested (as far as author aware). Close the §IV [^53] + §XII.C OPEN question -> corpus is professor's own materials (author's understanding, subject to Chandler confirmation); make §XII.C copyrighted-casebook analysis a contingent fallback, not the active state.",
+      "drafts_advanced_at_run": 347,
+      "drafts_advanced_at": "2026-05-31T01:30:00Z"
     },
     {
       "id": "PI-ER2-STUDENTWORK",
-      "status": "open",
+      "status": "drafts_advanced",
       "severity": "P1",
       "type": "provenance-correction",
       "owner_phase": "draft+cite",
       "section": "12",
       "opened_at": "2026-05-31T01:19:15Z",
       "persona": "author-answer (provenance)",
-      "claim": "Author: no student assessment/submitted work ingested; only TA-prepared review-session materials. Reframe §XII.D [^54]/[^165] -> disclose TA review sessions as TA-authored teaching aids (authorship/attribution note, not student-data/FERPA); resolve the privacy open question to the narrowed accurate position (subject to confirmation)."
+      "claim": "Author: no student assessment/submitted work ingested; only TA-prepared review-session materials. Reframe §XII.D [^54]/[^165] -> disclose TA review sessions as TA-authored teaching aids (authorship/attribution note, not student-data/FERPA); resolve the privacy open question to the narrowed accurate position (subject to confirmation).",
+      "drafts_advanced_at_run": 347,
+      "drafts_advanced_at": "2026-05-31T01:30:00Z"
     },
     {
       "id": "PI-ER2-VAULTCOST",
@@ -2122,7 +2129,7 @@
       "claim": "§IX must report VAULT-construction cost (from Chandler Constitutional Law Vault/.run-scores.jsonl: 255 runs, Apr16-May8 2026, 22d; ingest35/enrich24/expand29/synthesize30/lint34/verify34/consolidate10/deploy59; 198pp deliverable, 92% coverage; NO wall-clock/$ - claim none) and DROP the article-writing cost (Table 9.1 + App E.2). Substantial standalone §IX+App E rewrite. Article-loop numbers now live in packet companion 04-How-This-Article-Was-Written.docx. Never fabricate cost numbers."
     }
   ],
-  "phase_index": 0,
+  "phase_index": 1,
   "phases": [
     "draft",
     "cite",
@@ -2144,7 +2151,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 346,
+  "run_count": 347,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2176,7 +2183,8 @@
       "title": "Introduction: The Hidden Archive of the Law Professor",
       "unsupported_claims_count": 0,
       "verify_routed_at": "2026-06-02T03:00:00Z",
-      "verify_routing_reason": "Run-168 Verify: provenance re-audit of the run-166-reset section (provenance_score 4.4, criteria 5/4/5/4/4); 4.4 < 4.5 -> polish_status ready_for_stitch -> needs_polish. claims_total/claims_mapped 9/9 -> 11/11 (two accurate forward-reference claims added by the run-166 I.A/I.D edits, mapping to XII.B and XII.E); unsupported_claims stays 0. The two sub-4.5 criteria (primary_source_ratio, numerical_precision) turn on PI-082 (198-count primary-source provenance + calendar snapshot date), an unclosed repo/human action. PI-082 re-confirmed as the Provenance Auditor's forced finding; no new Section 01 P1 opened this run."
+      "verify_routing_reason": "Run-168 Verify: provenance re-audit of the run-166-reset section (provenance_score 4.4, criteria 5/4/5/4/4); 4.4 < 4.5 -> polish_status ready_for_stitch -> needs_polish. claims_total/claims_mapped 9/9 -> 11/11 (two accurate forward-reference claims added by the run-166 I.A/I.D edits, mapping to XII.B and XII.E); unsupported_claims stays 0. The two sub-4.5 criteria (primary_source_ratio, numerical_precision) turn on PI-082 (198-count primary-source provenance + calendar snapshot date), an unclosed repo/human action. PI-082 re-confirmed as the Provenance Auditor's forced finding; no new Section 01 P1 opened this run.",
+      "word_count": 1003
     },
     "02": {
       "cite_completed_at": "2026-05-22T05:00:00Z",
@@ -2220,7 +2228,7 @@
       "polish_note_run332": "Run-332 Polish tick on Section 02 II.F closing sentence under EDITORIAL-REVIEW PASS priority 5 (PI-ER-IIF-CLOSE, P3, polish-owned). Rewrote 'Section III walks the deployed instance where those three commitments take physical form.' to 'Section III walks the deployed instance where those three commitments (accuracy, single-professor judgment, and the personal teaching archive) take physical form.' The named-three mirror the immediately-preceding sentence subjects in II.F's penultimate sentence (Accuracy / the judgment preserved / the navigational graph). Net body delta +8 (polished 1096->1104; drafts 1076->1084; full-draft.md +8). Three-site L-035 propagation completed in-tick. polish_status stitched -> ready_for_stitch; the next Stitch tick confirms integrity and re-sets to stitched. provenance_audited holds true (no new external claims). Mechanical hygiene clean (parens not em-dashes; no straight ASCII quotes). The +8 stacks atop the standing PI-ER-IXTABLE-OVERAGE Section IX +18.1% prose overage pending Stitch absorption; assembled full-draft body now ~14,032 against the 14,000 ceiling, +32 over.",
       "polish_redone_at": "2026-05-30T03:00:00Z",
       "polish_run278_word_budget_flag": true,
-      "polish_status": "stitched",
+      "polish_status": "needs_polish",
       "provenance_audit_run": 301,
       "provenance_audited": true,
       "provenance_audited_at": "2026-05-30T20:00:00Z",
@@ -2237,7 +2245,7 @@
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T05:00:00Z",
       "verify_routing_reason": "run 128 Verify: provenance_score 4.0 < 4.5 plus four P1s (PI-119 footnote process-language, PI-120 casebook-synthesis overclaim, PI-121 rigour-conflation, PI-122 broken App. D cross-reference); cite_status->needs_cite (PI-119/PI-122 Cite-owned), polish_status->needs_polish (PI-120/PI-121 + provenance exit rule).",
-      "word_count": 1104
+      "word_count": 1090
     },
     "03": {
       "cite_at": "2026-06-05T15:00:00Z",
@@ -2284,12 +2292,12 @@
       "cite_completed_at": "2026-05-16T07:14:54Z",
       "cite_note": "Run-272 Cite surgical fix per PI-192: deleted the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause from polished [^14], [^15], [^20] (and the full-draft manuscript-global [^49], [^50], [^55] mirrors). Body hedge suffices per the PI-routing drop-option; the open-question body prose was already clean. Footnote count unchanged at 20; claims_total stays at 20; claims_mapped advances 17 -> 20; unsupported_claims cleared. PI-192 closed and archived. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual flagged in the run-182 provenance note (note 17's 'progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; remains for the next Polish tick. Section's prior cite_status was needs_polish (PI-192 was a footnote-form provenance routing, not a draft-status routing) and remains needs_polish; polish_status stays needs_polish pending the verify-provenance re-audit.",
       "cite_redone_at": "2026-05-31T02:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "claims_mapped": 19,
       "claims_total": 20,
       "current_words": 1034,
       "draft_completed_at": "2026-05-16T03:13:24Z",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_cite",
       "evidence_cards": 8,
       "evidence_populated_at": "2026-05-15T20:05:00Z",
       "evidence_status": "populated",
@@ -2319,7 +2327,7 @@
       "last_polish_run": 344,
       "last_polish_at": "2026-05-30T23:30:00Z",
       "polish_note_run344": "Run-344 Polish batched PI-ER-SENTENCES (sections 04,05) + PI-ER-APPA-ROUTING Polish leg (section 07).",
-      "word_count": 1035,
+      "word_count": 980,
       "stitch_propagated_run_345": true,
       "last_stitch_propagation_at": "2026-05-30T23:45:00Z",
       "provenance_score_prior_run_182": 4.4,
@@ -2465,12 +2473,12 @@
     },
     "08": {
       "cite_completed_at": "2026-05-30T22:00:00Z",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "claims_mapped": 22,
       "claims_total": 23,
       "current_words": 736,
       "draft_completed_at": "2026-05-17T09:00:00Z",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_cite",
       "evidence_cards": 9,
       "evidence_populated_at": "2026-05-17T05:00:00Z",
       "evidence_status": "populated",
@@ -2497,7 +2505,8 @@
       ],
       "unsupported_claims_count": 1,
       "verify_routed_at": "2026-05-29T17:00:00Z",
-      "verify_routing_reason": "Run-134 eighth Verify tick of the provenance-audit burst audited Section 08 (lowest-numbered polished section with provenance_audited:false; sections_audited was 7). All four personas read independently and each returned one new P1, all on Section 08 and all checked against the eight open Section 08 PIs (PI-018, PI-019, PI-021 through PI-026) to avoid duplication. PI-145 (Persona 1: VIII.A self-flagging 'Section VIII opens by naming the URL and the snapshot ... so the IV-V-VIII trio triangulates on a single fact' meta-rhetoric, fifth recurrence of the PI-022/PI-028/PI-036/PI-141 family at a distinct VIII.A site) and PI-146 (Persona 2: VIII.E 'reviewed static site' / 'written and verified by the rotation phases' lets the automated Verify rotation perform 'reviewed', which a traditionalist reads as professorial per-page sign-off the section never establishes; editor-versus-teacher conflation distinct from PI-023/PI-024) and PI-147 (Persona 3: VIII.E presents the static-versus-chatbot choice as a one-sided risk win without naming the runtime-question-answering affordance the static architecture forgoes; distinct from PI-025 citation-density and PI-026 accessibility) are Polish-owned and route polish_status -> needs_polish (already set). PI-148 (Persona 4 / Provenance Auditor: VIII.A's 198-page snapshot lacks an explicit as-of date in prose and footnote [^1]; number sourced but missing a snapshot date) is Section 08's one unsupported_claim, reason evidence-gap, coupled to PI-004 and not resolvable until PI-004 fixes the snapshot date. Provenance audit score 4.4 < 4.5 (criteria 5/4/5/4/4) independently holds Section 08 at polish_status: needs_polish. claims_total 23, claims_mapped 22, unsupported 1. Twenty-three claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch, cite_status: needs_polish) reconciled to the state file."
+      "verify_routing_reason": "Run-134 eighth Verify tick of the provenance-audit burst audited Section 08 (lowest-numbered polished section with provenance_audited:false; sections_audited was 7). All four personas read independently and each returned one new P1, all on Section 08 and all checked against the eight open Section 08 PIs (PI-018, PI-019, PI-021 through PI-026) to avoid duplication. PI-145 (Persona 1: VIII.A self-flagging 'Section VIII opens by naming the URL and the snapshot ... so the IV-V-VIII trio triangulates on a single fact' meta-rhetoric, fifth recurrence of the PI-022/PI-028/PI-036/PI-141 family at a distinct VIII.A site) and PI-146 (Persona 2: VIII.E 'reviewed static site' / 'written and verified by the rotation phases' lets the automated Verify rotation perform 'reviewed', which a traditionalist reads as professorial per-page sign-off the section never establishes; editor-versus-teacher conflation distinct from PI-023/PI-024) and PI-147 (Persona 3: VIII.E presents the static-versus-chatbot choice as a one-sided risk win without naming the runtime-question-answering affordance the static architecture forgoes; distinct from PI-025 citation-density and PI-026 accessibility) are Polish-owned and route polish_status -> needs_polish (already set). PI-148 (Persona 4 / Provenance Auditor: VIII.A's 198-page snapshot lacks an explicit as-of date in prose and footnote [^1]; number sourced but missing a snapshot date) is Section 08's one unsupported_claim, reason evidence-gap, coupled to PI-004 and not resolvable until PI-004 fixes the snapshot date. Provenance audit score 4.4 < 4.5 (criteria 5/4/5/4/4) independently holds Section 08 at polish_status: needs_polish. claims_total 23, claims_mapped 22, unsupported 1. Twenty-three claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch, cite_status: needs_polish) reconciled to the state file.",
+      "word_count": 894
     },
     "09": {
       "cite_completed_at": "2026-05-19T21:00:00Z",
@@ -2625,7 +2634,7 @@
       "verify_routing_reason_run136": "Run 136 Verify/provenance (3.8 < 4.5): four substantive P1s on Section X. Cite-owned -> cite_status needs_cite for PI-155 (X.C chatbot-tutor / intelligent-tutoring-system alternative-architecture literature anchor, per L-024) and PI-156 (X.B external standard-case-brief-form source for the 'recur in nearly every doctrinal course' / torts-contracts reach; Section 10's one unsupported_claim, reason requires-primary-source). Polish-owned -> polish_status needs_polish for PI-153 (X.A self-narrating meta-rhetoric) and PI-154 (X.C editor-vs-teacher 'gating actor' role reduction). provenance_score 3.8 independently holds polish_status needs_polish. Checked against open Section 10 PIs (PI-085, PI-086, PI-088, PI-090); findings sited away from those.",
       "verify_routing_reason_run263": "Run 263 Verify/provenance (4.0 < 4.5): provenance re-audit lifted Section 10 from the run-136 3.8 baseline to 4.0 (criterion 5 gap_honesty 4 -> 5 on the run-261 X.D second-instance-conjecture recast and the X.A accessibility handoff); still under the 4.5 submission gate. Two new PIs opened: PI-218 (Persona 2 Cite-to-polished propagation gap on the run-260 Mertz/Sajja drafts-only anchors; routes cite_status: needs_polish -> needs_cite for the Cite-tier three-site insertion per L-035) and PI-219 (Persona 7 Adversarial Reviewer X.E n=1 anticipate-and-rebut gap; routes polish_status: needs_polish, no status delta). polish_status holds at needs_polish on PI-088 (X.A-X.B literature-gap, Cite-routed per L-024), PI-154 (X.C editor-vs-teacher gating-role conflation), PI-218 (propagation), and PI-219 (reviewer2-anticipation). The X.B unsupported_claim entry persists in frontmatter at requires-primary-source until the PI-218 Mertz/Sajja propagation lands at the polished/full-draft surface.",
       "verify_routing_reason_run_270": "Run-270 Verify-provenance re-audit scored 5/3/4/4/5 = 4.2 against the post-run-267 Cite and post-run-268 Polish prose (+0.2 from the run-263 4.0 baseline on criterion 1 lift). 4.2 < 4.5 reverts polish_status ready_for_stitch -> needs_polish per rubric/provenance-audit.md exit condition. PI-220 (Persona 2 X.D/X.E two-track-n=2-framing tension) and PI-221 (Persona 5 supplemental X.E same-checkpoints Section VII cross-reference gap) opened.",
-      "word_count": 1069
+      "word_count": 1090
     },
     "11": {
       "cite_completed_at": "2026-05-30T02:00:00Z",
@@ -2702,14 +2711,14 @@
       "cite_note_run228": "Run-228 Cite: propagated the Zawacki-Richter typology pin cite from Section 11's [^8]/[^151] (added at run 221 to close PI-160) to Section 12's symmetric [^10]/[^167], the cross-section consistency follow-up the run-221 narrative explicitly flagged ('a subsequent Section 12 Cite tick should propagate the matching pin-cite sentence to [^10] for cross-section consistency'). New clause anchors the corpus-composition characterization to Bond's coding framework: 'Bond codes the corpus through Zawacki-Richter et al.'s (2019) typology of Profiling and Prediction, Assessment and Evaluation, Adaptive Systems and Personalisation, and Intelligent Tutoring Systems, with Adaptive Systems and Personalisation the predominant single application area across the corpus.' Replaces the inline 'whose interventions are chiefly adaptive systems and personalization, with profiling and prediction, assessment and evaluation, intelligent tutoring systems, and chatbots among the application areas its constituent reviews cover' descriptive listing with the typology-attributed version, removing redundancy with the new clause. The 'corpus-composition characterization above was confirmed' tail clause updated to 'typology-anchored application-area distribution above was confirmed' to track the new anchor. Edit propagated to three sites per L-035 cross-file discipline: polished/section-12-risks-and-limits.md [^10] (curly throughout), drafts/section-12-risks-and-limits.md [^10] (matched the shorter drafts register, adding the same Zawacki-Richter clause with curly apostrophe to match surrounding drafts convention), and manuscript/full-draft.md global [^167] line 727 (curly throughout). Same Zawacki-Richter typology and Adaptive-Systems-and-Personalisation predominance verified independently this run via WebSearch with allowed_domains scoped to link.springer.com per L-022 (the Springer cookie-auth still 303-redirects WebFetch on both the article landing page and the PDF, so WebSearch is the canonical verification path), returning the verbatim Bond title and URL plus the Zawacki-Richter-2019 typology-citation co-occurrence with Adaptive Systems and Personalisation as the predominant single application area, matching the run-221 verification on the Section 11 [^8] addition. No new numerical anchor introduced per L-027 (Bond's 47% / n=31 general-applications figure and the n=45/n=46/n=26 role counts deliberately omitted; Magesh 17%-33% remains the article's sole quantitative AI-in-higher-education anchor). No URL change (cross-reference to Section XI note 151 unchanged; URL liveness owned by Section XI per the article's cross-section-reuse convention; Bond URL last re-verified live at run 221). Mechanical sweep at the edit point: zero em dashes introduced, curly apostrophes preserved in polished and full-draft, drafts apostrophe matched to surrounding drafts register. The footnote stays over L-059's 50-word cap (the existing structure has carried the transfer-of-inference clause since run 165); the L-059 fix is Polish-owned and the existing run-165 polish_note records it as policy-acknowledged. provenance_audited reset to false because the footnote materially changed; the next Verify provenance re-audit reads the post-Cite text. polished/section-12 footnote_count holds at 10 (no insert/delete); manuscript total_words grows by approximately 22 words (the typology-attributed sentence replaces the descriptive listing across two sites, polished and full-draft; drafts adds the typology clause; net body footnote-text additions). Cross-section consistency check: Section 11 [^8]/[^151] (Zawacki-Richter pin cite + 'Adaptive Systems and Personalisation the predominant single application area across the corpus') and Section 12 [^10]/[^167] (now mirroring the same typology anchor under the section's distinct transfer-of-inference clause) are now structurally parallel on the Bond corpus-composition characterization. PI-159 (full validity/reliability/sampling/analysis methods treatment for the four Section XI instruments) remains Cite-open on Section 11 per L-053 (workplan does not name a methods source); this is the next Cite-actionable item on the Bond-cluster, not in this Section 12 tick's scope. cite_status holds at needs_polish (already set at run 165); last_cite_run -> 228; last_cite_propagation fields added.",
       "cite_note_run318": "Run-318 Cite: confirmed run-317 XII.B third-pole sentences introduce no orphan claim (cross-reference-grounded under L-053; no See supra particle added because the case-method-Socratic frame reads as common-knowledge legal-education baseline at the level of the surrounding un-footnoted four-axes inventory). Landed PI-248 (paired PI-251) at drafts: [^9] expanded with Am. Bar Ass'n Standard 207 (2025) primary-law anchor (Reasonable Accommodation for Qualified Individuals with Disabilities); URL https://www.americanbar.org/groups/legal_education/accreditation/standards/standards-rules/ verified live via WebSearch per L-022 (WebFetch 403, allowed_domains americanbar.org returned the 2025-2026 edition page plus a May 8 2026 Standards Committee notice-and-comment memo on Standards 205/207, both confirming 207 as the operative disability-accommodation standard). CRITICAL L-053 substitution: PI-248 routing note named 'ABA Standard 208' but Standard 208 is 'Involvement of Alumni, Students and Others' (participatory/advisory roles), NOT disability accommodation; the correct standard is 207 (formerly 213 pre-2014). Standard 305(d) alternative not pursued (Standard 305 addresses non-classroom academic study, not accommodation). Dinerstein/Lamparello secondary-scholarship slot DECLINED per L-053: grep on Article-Workplan.md and research/legal-ed-scholarship.md returned zero hits for any candidate legal-education-accessibility secondary source; an unbacked secondary cite is the exact fabrication risk L-053 prohibits. Section 12 closes its PI-JLE-LEGAL-ED-LIT canon-anchor leg with a primary-law-only anchor; the absent secondary slot is documented rather than fabricated. Footnote form mirrors Section 11 [^9] house style; pre-edit 47 words, post-edit 65 words, inside L-064 60-65-word canon-anchor cap. No new footnote slot (expansion in place; footnotes_count holds at 10). Body unchanged; current_words holds at 1467. drafts/section-12 carries expanded [^9]; polished and full-draft propagation owed to next Polish/Stitch under L-035 three-site discipline. PI-248/PI-251 stay open with drafts_advanced_at_run_318 marker; unsupported_claims entry on Section 12 frontmatter cleared at drafts layer. New L-065 codified on ABA-Standard-number routing-note verification protocol (specialization of L-053).",
       "cite_note_run336": "Run-336 Cite tick closed PI-ER-OVERRELIANCE (EDITORIAL-REVIEW PASS priority-5 cite-owned, first in that priority group after priorities 1-4 closed) by adding compound footnote [^11] at XII.B's displacement-risk clause. Two primary academic sources, both URL-liveness-verified live this run via archive-equivalent mirrors after the direct DOI returned HTTP 403 to WebFetch: (1) Helena Vasconcelos et al., Explanations Can Reduce Overreliance on AI Systems During Decision-Making, 7 Proc. ACM Hum.-Comput. Interact. art. 129 (CSCW1 2023), DOI 10.1145/3579605 (verified via arxiv.org/abs/2212.06823, confirming exact title, six-author list, and CSCW 2023 venue per L-022/L-043); (2) Hamsa Bastani et al., Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics, 122 Proc. Nat'l Acad. Sci. U.S.A. e2422633122 (2025), DOI 10.1073/pnas.2422633122 (verified via pmc.ncbi.nlm.nih.gov/articles/PMC12232635/, confirming exact title, six-author list, volume 122, issue 26, July 1 2025 publication, and the verbatim 'crutch' framing plus the 17% unaided-exam decline finding). L-053 substitution: the PI routing note's 'Westhoff' candidate could not be verified across multiple WebSearch query forms; per L-053 the Westhoff slot was declined and Bastani et al. PNAS 2025 substituted as the empirical AI-in-education anchor (the Wharton/Penn high-school-math randomized trial is the touchstone paper in the 'AI study tools' category the run-315 reviewer evidently intended). The Vasconcelos slot was kept verbatim. Body micro-restructure: the displacement-risk clause and the untested-question clause were one sentence; split into two at the comma to give the [^11] marker a natural end-of-clause attachment site, matching the polished-section-12 sentence-split the run-145 Polish tick already adopted. Body word count unchanged at 1467; the split removes 'and' and adds period+capitalization with net delta zero. footnotes_count 10 -> 11. drafts/section-12 carries the [^11] addition; polished/section-12 and manuscript/full-draft.md [^11]/[^170] propagation owed to the next Polish and Stitch ticks on Section 12 under L-035 three-site discipline. PI-ER-OVERRELIANCE status open -> resolved; entry migrated to .article-state.archive.json archived_pending_issues per the RUNBOOK pending-issue-archival rule. Transfer-of-inference closing per Section XII [^1]/[^10] precedent: overreliance phenomenon reaches any AI-tool deployment in legal education and bears on the displacement-risk claim; the Bastani magnitude does not transfer to a reviewed static website which exposes no runtime generation surface. Mechanical hygiene: zero em dashes, curly apostrophes throughout, both new prose sentences after split are 18 and 23 words (under L-005 35-word ceiling). No new orphan factual claim. No new internal-pending-issue-tracker reference per L-058 / rubric/cite.md criterion 5.",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "claims_mapped": 19,
       "claims_total": 19,
       "current_words": 1467,
       "draft_at": "2026-05-30T05:00:00Z",
       "draft_note_run164": "Run-164 Draft: landed the sole still-unaddressed ask of PI-XII-ENGAGE (b) by adding explicit staleness (content fixed at a snapshot, can fall behind a shifting doctrine where a continuously re-grounded system would not) and scope-creep/single-point-of-failure-on-review (the reviewer's capacity, not the model's, becomes the binding constraint as the corpus grows) to the XII.B static-architecture own-failure-modes catalogue. Asks (a)/(d)/(e) were already landed by run-143; ask (c) Mata-to-one-sentence deliberately NOT regressed (run-143 deepened Mata per a run-138 Verify finding; L-010 no longer in LESSONS, so the more recent deepening governs). No new number (L-027), no new [CITE:] (architectural/analytical claims), recurring sentence absent per L-002, static-vs-chatbot verb discipline held per L-003/L-031. current_words 1359->1396. draft_status->needs_cite. PI-XII-ENGAGE resolved+archived.",
       "draft_note_run317": "Run-317 Draft tick. Section 12 selected per FINAL-PUSH MODE priority fallback (priorities 1-3 closed; priority 4 Polish/Stitch territory) and Verify run-316 PI-249 routing (P1, Persona 2 Legal Pedagogy Traditionalist; nominally routed to Polish but addressed at Draft per the run-312 precedent for substantive sentence-level prose adds). Landed PI-249's 44-word form as a 48-word two-sentence insertion at the end of XII.B paragraph 1 immediately after the four-axes sentence, naming the case method conducted through live Socratic exchange as the canonical legal-education baseline against which the reviewed static website and the chatbot-tutor architecture are interventions adjacent rather than substitutes. The four-axes inventory now reads as a two-architecture contrast within an explicit three-pole comparison; the third pole is made visible at the head of XII.B rather than appearing only as the paragraph-3 Socratic-displacement-risk concession the JLE traditionalist persona complained about. No new external citation (L-053-compliant; the canonical legal-education frame is already in the article via Mertz at Section II [^4] and X [^5] and via Carnegie/Best Practices/Sturm-Guinier at Section II [^12], X [^17], XI [^9]). No em dashes; no straight quotes. Recurring sentence absent from XII per L-002. Sentence 1 = 29 words; sentence 2 = 19 words; both under the 35-word polish ceiling. current_words 1419 -> 1467 (+48; +4 over PI-249's suggested +44 form, well within the section's +/-10% band at 1467/1400 = 1.048). draft_status holds at needs_cite for the next Cite tick to confirm no orphan claim was introduced and to consider a Bluebook *See supra* cross-reference particle to Section II [^4] / Section II [^12] at the new third-pole site. PI-249 advanced one site (drafts); polished and full-draft propagation owed to next Polish/Stitch under L-035 three-site discipline; PI-249 remains open with a draft_advanced_at_run_317 marker. PI-250 / PI-252 (Polish-route) and PI-248 / PI-251 (Cite-route) NOT addressed this tick; the next Polish or Cite tick on Section 12 takes them.",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_cite",
       "evidence_cards": 11,
       "evidence_populated_at": "2026-05-23T03:00:00Z",
       "evidence_status": "populated",
@@ -2773,19 +2782,20 @@
       "unsupported_claims_count": 0,
       "verify_note_run339": "Run-339 Verify provenance re-audit on Section 12 (first post-run-337 prose audit). Score 4.2 → 4.4; claims_total 18 → 19; claims_mapped 18 → 19; unsupported_claims [] → 1 entry (PI-271 XII.B paragraph 3 line 388 L-024 transfer-clause-in-body gap at the new [^189] Vasconcelos + Bastani anchor). polish_status routes stitched → needs_polish on PI-271's Polish-tier body-prose insertion (the +22-word transfer clause naming what generalizes from the chatbot-runtime / K-12 settings and what does not). Path to 4.6 above the 4.5 gate is one Polish tick away.",
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix."
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
+      "word_count": 1626
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
       "cite_completed_at": "2026-05-29T15:41:00Z",
       "cite_note": "Seven [CITE:] placeholders resolved to footnotes [^1]-[^7]. [^1] external OER sources (opencasebook.org via WebSearch after 403 per L-022; cali.org eLangdell via WebFetch; MIT News series via WebSearch); [^2]-[^7] sibling supra/infra cross-references. Dedicated evidence-13-* cards still owed under PI-091.",
-      "cite_status": "needs_polish",
+      "cite_status": "needs_cite",
       "cite_status_at": "2026-05-29T15:41:00Z",
       "claims_mapped": 15,
       "claims_total": 16,
       "current_words": 573,
       "draft_at": "2026-05-24T19:00:00Z",
-      "draft_status": "needs_polish",
+      "draft_status": "needs_cite",
       "evidence_cards": 6,
       "evidence_populated_at": "2026-05-25T05:00:00Z",
       "evidence_status": "populated",
@@ -2830,7 +2840,8 @@
       "unsupported_claims_count": 1,
       "verify_note_run339": "Run-339 Verify Persona 2 P1 PI-269: XIII.B closing sentence L-040 live-pedagogy-vs-static-artifact slip (artifact framed as scholarship-of-teaching). FOURTH instance of L-040 family. polish_status holds at needs_polish.",
       "verify_routed_at": "2026-05-27T21:00:00Z",
-      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish."
+      "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish.",
+      "word_count": 612
     },
     "14": {
       "cite_completed_at": "2026-05-25T11:00:00Z",
@@ -2885,7 +2896,7 @@
       "verify_note_run342": "Run-342 Verify-provenance third re-audit since the run-140 baseline, first audit on post-run-341 Stitch propagation prose carrying the new XIV.C concrete-commit sentence + new global [^190] (polished local [^9]) per PI-ER-XIVC-COMMIT closure. claims_total 9 -> 10 (new article-as-deliverable-package claim); claims_mapped 9 -> 10 (mapped via [^190] to body Sections V/VI/VII/IX). Score 4.4 -> 4.2 (-0.2 drop): claim_coverage 5 hold (10/10 = 100%); primary_source_ratio 3 hold (0 of 9 footnotes external); attribution_discipline 5 -> 4 on PI-273 [^190] L-024-family altitude mismatch (body claim is artifact-delivery, [^190] points only to descriptive body Sections V/VI/VII/IX rather than to deliverable Appendices C/B/D/E); numerical_precision 5 hold; gap_honesty 4 hold (PI-228 still open). 4.2 < 4.5 gate; polish_status holds at needs_polish. Path to >=4.5: close PI-273 via Cite-tier compound-cite expansion in [^190] (lifts 4 -> 5, brings 4.2 -> 4.4); then close PI-228 via XIV.A or XIV.B disclosure (lifts 4 -> 5, brings 4.4 -> 4.6). Four P1 findings: PI-273 NEW (Personas 1 + 4, two-finding-one-PI cross-reference altitude mismatch); PI-274 NEW Persona 2 (XIV.B 'well-suited base case' source-course-properties unpacking gap); PI-270 re-confirm Persona 3 (abstract Karpathy-attribution seventh Verify cycle); PI-275 NEW Persona 7 SUPPLEMENTAL (XIV.C second-instance present-tense overclaim, Reviewer 2 rejection-vector). polish_status holds at needs_polish (already there); cite_status holds at needs_polish (PI-273 routes a Cite-tier compound-cite expansion). unsupported_claims_count 0 -> 1.",
       "verify_routed_at": "2026-05-30T05:00:00Z",
       "verify_routing_reason": "Run 140 Verify/provenance (score 4.0 < 4.5): polish_status needs_polish for PI-169 (XIV.B meta-rhetoric), PI-170 (XIV.C editor-vs-teacher conflation), PI-171 (XIV.B chatbot-architecture tradeoff); cite_status needs_cite for PI-172 ([^3] bare See supra without pin for the six-phase governance enumeration; CLOSED at run-252 Cite). All four distinct from open PI-098/099/100. unsupported_claims 0 (conclusion fully footnoted).",
-      "word_count": 446,
+      "word_count": 455,
       "xivc_commit_polish_leg_closed_at": "2026-06-01T00:00:00Z",
       "xivc_commit_polish_leg_closed_at_run": 340
     }

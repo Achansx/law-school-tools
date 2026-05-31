@@ -3,9 +3,10 @@ id: "01"
 title: "Introduction: The Hidden Archive of the Law Professor"
 status: needs_polish
 target_words: 900
-word_count: 987
-last_phase: cite
+word_count: 1003
+last_phase: draft
 draft_status: needs_cite
+draft_note_run347: "Draft run 347 PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM (P0) batched leg: reframed I.B's 'reviewed static website' to 'review-ready static website' and expanded [^3] with the one-clause snapshot disclosure tying I.B's architectural-choice claim back to Section VIII's load-bearing disclosure and Section XII's risk discussion (the snapshot pages were published as review-ready rather than as individually professor-approved, the author's understanding subject to Professor Chandler's confirmation). No new external cite required (the cross-reference is internal to Sections VIII/XII whose own ticks land the deeper disclosure). Body delta small; word_count 987 -> 1003 within Draft +/-15% band. draft_status holds at needs_cite for the next Cite tick under the rotation to verify no orphan claim was introduced and to consider whether a *See infra* particle to the new Section VIII note 16 belongs in the body sentence at I.B."
 cite_status: needs_polish
 polish_status: needs_polish
 footnotes_count: 9
@@ -24,7 +25,7 @@ Every experienced doctrinal teacher carries a course in two places: inside their
 
 This article describes a method for opening that archive. Generative AI, working on structured source materials, Obsidian-style markdown notes, retrieval from verified legal sources, and iterative expert review, can convert a professor’s scattered course materials into a navigable, cross-linked, student-facing course knowledge system. The constitutional-law case study below is the demonstration; the transferable contribution is the method, which other doctrinal courses with similar archives can follow, a claim Section X develops and bounds rather than one the introduction presumes. The essential feature is not automation. The essential feature is iteration under the control of a human expert, who reviews, corrects, and signs off on every layer the system produces. Review here is not a gloss applied at the end. It is built into the process at defined checkpoints, where the professor inspects what the system has drafted, corrects what is wrong, and decides whether the work advances or returns for another pass.[^2]
 
-It is worth saying plainly what the article is not. It is not the announcement of an AI teaching assistant, and it is not a chatbot placed in front of students. The case study is a reviewed static website, not a conversational agent, and that architectural choice carries the article’s later argument about risk.[^3] The article also makes no claim that students learned more, because it has not run the study that would license such a claim.[^4] The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable.
+It is worth saying plainly what the article is not. It is not the announcement of an AI teaching assistant, and it is not a chatbot placed in front of students. The case study is a review-ready static website, not a conversational agent, and that architectural choice carries the article’s later argument about risk.[^3] The article also makes no claim that students learned more, because it has not run the study that would license such a claim.[^4] The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable.
 
 ## C. The case study, in one breath
 
@@ -44,7 +45,7 @@ The argument proceeds in the order a reader needs it. It begins with why ordinar
 
 [^2]: *See infra* Section VII (Iterative Improvement Under Professorial Control) (describing the professorial-review checkpoints built into each phase of the maintenance rotation, under which the professor inspects the drafted work, corrects what is wrong, and gates whether the work advances or returns for another pass).
 
-[^3]: *See infra* Section XII (Risks and Limits) (developing the architectural contrast between the reviewed static-website case study and chatbot architectures, and locating the case study's risk surface at build-time professorial review rather than at runtime generation).
+[^3]: *See infra* Section XII (Risks and Limits) (developing the architectural contrast between the review-ready static-website case study and chatbot architectures, and locating the case study's risk surface at a build-time professorial-review checkpoint the architecture enables rather than at runtime generation; the May 2026 snapshot pages were published as review-ready rather than as individually professor-approved, subject to Professor Chandler's confirmation).
 
 [^4]: *See infra* Section XI (Evaluation: What Would Count as Success) (stating that the article advances a method claim rather than a learning-outcomes claim, and describing the method-plus-light-data evaluation posture adopted in lieu of a controlled trial the single course cannot run).
 
