@@ -38,8 +38,8 @@ Modernized opinions. Thirty-seven files carry a `modernized` tag (for example, `
 
 ## A.2 Categories Intentionally Excluded
 
-- Copyrighted casebook excerpts (per the professor’s IP review).
-- Student work product (privacy).
+- Copyrighted casebook excerpts. The corpus is drawn from Professor Chandler’s own course materials; casebook text was not a source (the author’s understanding, pending the professor’s confirmation). Ten assigned opinions accordingly have vault briefs but no source PDF on disk (see below).
+- Student work product — graded submissions and exam answers (privacy/IRB). One boundary case: review-session materials prepared by teaching assistants *are* part of the ingested corpus, but they are TA-authored teaching aids, not student submissions, so they raise an authorship-attribution note rather than a student-privacy concern.
 - Office-hours notes (privacy).
 - Anything that would require a separate IRB review.
 
