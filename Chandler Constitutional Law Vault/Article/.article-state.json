@@ -2133,6 +2133,16 @@
       "opened_at": "2026-05-31T01:33:58Z",
       "persona": "author-decision (vault-only cost)",
       "claim": "\u00a7IX must report VAULT-construction cost (from Chandler Constitutional Law Vault/.run-scores.jsonl: 255 runs, Apr16-May8 2026, 22d; ingest35/enrich24/expand29/synthesize30/lint34/verify34/consolidate10/deploy59; 198pp deliverable, 92% coverage; NO wall-clock/$ - claim none) and DROP the article-writing cost (Table 9.1 + App E.2). Substantial standalone \u00a7IX+App E rewrite. Article-loop numbers now live in packet companion 04-How-This-Article-Was-Written.docx. Never fabricate cost numbers."
+    },
+    {
+      "id": "PI-RACE-RUN347",
+      "type": "push-race-conflict",
+      "severity": "P3",
+      "section": "meta",
+      "status": "open",
+      "created_at": "2026-05-31T02:15:00Z",
+      "created_at_run": null,
+      "description": "Parallel ephemeral-session race on run 347: this session's PROVENANCE-CORRECTION PASS draft tick (committed locally as 6928bac, discarded by the L-056 race-abort protocol after rebase onto origin/master produced 10-file content conflicts) was overtaken by a maintainer/peer session that landed the canonical run 347 (a46984a) and run 348 cite (ce6bb02) first. Both attempts addressed the same three PI-ER2-* items (REVIEWCLAIM P0, CASEBOOK P1, STUDENTWORK P1) with materially compatible accuracy resolutions per the PASS rubric, so no PI-ER2-* item is lost; the prose-level details differ (e.g., this session phrased \u00a7VIII.A's disclosure as a 75-word standalone sentence; the canonical landing used a tighter inline form). No human intervention required to keep the rotation advancing \u2014 Polish is the next phase per origin/master's `current_phase: polish` and the standing PASS rotation. The race itself is a recurring infrastructure observation for the human maintainer: ephemeral cowork sessions on the same article are landing same-numbered runs in parallel, and the L-056 push-protocol's rebase-conflict-then-abort branch is the correct safety rail."
     }
   ],
   "phase_index": 1,
