@@ -20,7 +20,12 @@ draft_status: needs_cite
 cite_status: needs_cite
 cite_status_prior_run_330: needs_polish
 polish_status: needs_polish
-footnotes_count: 16
+footnotes_count: 14
+footnotes_count_prior_run_353: 16
+stitch_propagated_run_357: true
+last_stitch_propagation_at: 2026-05-31T14:00:00Z
+last_stitch_propagation_note_run_357: "PI-ER2-VAULTCOST stitch leg: full-draft §IX replaced with this polished vault-construction version. Local [^1]-[^14] remapped to global [^118]-[^131]. All subsequent global footnotes from [^134] downward renumbered by minus two (now [^132]-[^189]); cross-ref in [^159]'s body ([^151]/[^152] -> [^149]/[^150]) updated; YAML-narrative orphan refs [^190]/[^191] descriptively rewritten. Post-edit Python footnote-integrity audit: 189 contiguous defs [^1]-[^189], zero gap, zero duplicate, zero orphan. ACCEPTANCE: full-draft §IX shows 255 vault runs, April 16 to May 8, vault-construction ticks; zero residue of 'runs 66 to 329', '251,067', '264 ticks', or article-loop cost framing in §IX body or footnotes."
+manuscript_global_footnote_range_run_357: "[^118]-[^131]"
 provenance_audited: false
 provenance_audited_at_prior_run_334: 2026-05-31T09:00:00Z
 provenance_audit_run_prior_run_334: 334
