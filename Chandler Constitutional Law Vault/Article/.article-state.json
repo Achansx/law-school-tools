@@ -2,7 +2,7 @@
   "_archive_pointer": ".article-state.archive.json holds resolved and outline-addressed pending_issues; do not load every run.",
   "abstract": {
     "consecutive_ready_runs": 0,
-    "last_run_at": "2026-05-31T02:30:00Z",
+    "last_run_at": "2026-05-31T03:30:00Z",
     "last_score": 4.8,
     "last_verify_run": 342,
     "status": "ready_for_review",
@@ -12,8 +12,9 @@
     "verify_note_run342": "Run-342 Verify Persona 3 P1 PI-270 re-confirm at unchanged scope (seventh Verify cycle of non-resolution since the original PI-240 logged at run 301: 301->306->311->316->321->329->334->339->342). The abstract continues to read the Karpathy-loop generically ('the iterative loops now common in software') while Section VII.A names 'Andrej Karpathy released autoresearch' with date and primary repository URL. The run-341 PI-ER-XIVC-COMMIT closure (which expanded XIV.C with the four-artifact commit and Karpathy-loop-anchored [^190]) makes the abstract-versus-body Karpathy-attribution asymmetry more visible at the conclusion altitude. Preferred fix (+9 words; abstract.words 244 + 9 = 253 within [225,275] band) lands the Karpathy-anchored substitution at the next Outline-abstract tick. status holds at needs_work.",
     "verify_route_note_run301": "PI-240 Persona 6 Structural/Developmental Editor abstract-vs-body Karpathy-attribution altitude mismatch P1: abstract names 'iterative loops now common in software' generically while Section VII.A line 238 names 'Andrej Karpathy released autoresearch' with date and primary URL; routed to Outline-abstract sub-task (or paired Section 07 Polish).",
     "words": 270,
-    "last_phase": "draft",
-    "polish_note_run349": "Polish run 349 abstract leg under PI-ER2-REVIEWCLAIM: confirmed the run-347 draft's three reframes landed cleanly (review-ready static website twice + architecture-is-the-gatekeeper-architecture sentence + one-clause review-ready-rather-than-professor-approved disclosure). Mechanical sweep clean: zero em dashes, zero straight ASCII quotes, curly throughout. word_count holds at 270 within the [225, 275] gate. status needs_polish -> ready_for_review."
+    "last_phase": "stitch",
+    "polish_note_run349": "Polish run 349 abstract leg under PI-ER2-REVIEWCLAIM: confirmed the run-347 draft's three reframes landed cleanly (review-ready static website twice + architecture-is-the-gatekeeper-architecture sentence + one-clause review-ready-rather-than-professor-approved disclosure). Mechanical sweep clean: zero em dashes, zero straight ASCII quotes, curly throughout. word_count holds at 270 within the [225, 275] gate. status needs_polish -> ready_for_review.",
+    "stitch_propagation_run_350": true
   },
   "appendices": {
     "A": {
@@ -92,7 +93,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -105,17 +106,17 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-05-31T02:30:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-05-31T03:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
-    "confirmed_stitched_changed_at": "2026-05-30T23:45:00Z",
-    "confirmed_stitched_count": 5,
-    "footnotes_total": 190,
+    "confirmed_stitched_changed_at": "2026-05-31T03:30:00Z",
+    "confirmed_stitched_count": 9,
+    "footnotes_total": 191,
     "full_draft_exists": true,
-    "last_polish_propagation_at": "2026-05-30T23:45:00Z",
-    "last_polish_propagation_note": "Run-345 Stitch BATCH PROPAGATION TICK closed run-344 Polish handoff for two PI-ER-* Polish-owned items (PI-ER-SENTENCES; PI-ER-APPA-ROUTING Polish leg on Section 07 VII.D body prose) plus the standing PI-ER-FN159 stitch-owned item in one tick per RUNBOOK editorial-review batching for independent stitch-owned edits. Landings: (1) IV.A topic-list split from polished/section-04 line 27 -> full-draft line 167, replacing ', covering' with '. It covers' and '; Section X takes up' with '. Section X takes up' (+1 body word; [^41] inline slot unchanged); (2) V.B YAML-opener split from polished/section-05 line 36 -> full-draft line 201, replacing ', Midpage verification anchors, and a structured' with ' and Midpage verification anchors. They also include a structured' (+3 body words; [^62]/[^63] inline slots unchanged); (3) VII.D body-prose softenings from polished/section-07 lines 59/61/63 -> full-draft lines 283/285/287, replacing four backtick-wrapped literal filenames (LESSONS.md, RUBRIC.md, .run-scores.jsonl, BUILD_NARRATIVE_YYYY-MM.md) at six edit sites with descriptive nouns ('lessons file', 'single-file rubric', 'the lessons file', 'the build narrative', 'the vault's run-by-run scorecard', 'its rolling build narrative') per L-058 published-prose internal-artifact-hygiene discipline lifted from footnote-parentheticals (run-343 Cite leg) to body-prose (+6 body words; [^98]/[^99]/[^100] inline slots unchanged); (4) PI-ER-FN159 closed by appending a one-line insertion-order note to footnote def [^159] line 774 explaining the late-drafting non-contiguous slot, the lighter-touch alternative to renumber per the run-315 editorial-review prescription. Footnotes total holds at 190 (contiguous defs [^1]-[^190], zero gap/dup/orphan; every inline marker resolves; every def used). Main-text body word_count 14094 -> 14104 (+10 from +1 IV.A + +3 V.B + +6 VII.D body deltas; the [^159] footnote def expansion does not contribute to body word count). The +104 over the 14000 ceiling carries forward the run-341 PI-PROPAG-300-OVERAGE / PI-ER-TRIM91 overage routed to a future Polish tick on Section II.B/II.D (II.E, II.F, X.A, XI.A protected); this Stitch tick does not own the trim. sections_confirmed_stitch_ready 2 -> 5 reflects Section 02 (historic stitched) + Section 04 + Section 05 + Section 07 (this tick's propagations at ready_for_stitch) + Section 12 (historic stitched even with run-339 PI-271 polish_status reset). All loop-addressable PI-ER-* items now resolved at all three sites.",
-    "last_polish_propagation_run": 341,
+    "last_polish_propagation_at": "2026-05-31T03:30:00Z",
+    "last_polish_propagation_note": "Run-350 Stitch PROVENANCE-CORRECTION PASS batch propagation tick closed the run-347 Draft + run-348 Cite + run-349 Polish PI-ER2-* chain across \u00a7IV / \u00a7VIII / \u00a7XII / \u00a7XIII / abstract. Body propagations land the architecture-gatekeeping reframe (REVIEWCLAIM P0), the casebook open-question closure (CASEBOOK P1), the student-work TA-disclosure (STUDENTWORK P1), and the controlling honest-disclosure paragraph at \u00a7VIII.A. New global [^191] appended at the global tail carrying the snapshot disclosure (no renumber operation, consistent with the run-338 [^189] and run-341 [^190] tail-append precedent). 191 contiguous footnote defs zero gap/dup/orphan. Main-text body word_count 14104 -> 14537 (+433 from polished-frontmatter aggregate delta; the [^191] footnote def expansion does not contribute to body word count). abstract.words 244 -> 270 (+26). +537 over the 14000 ceiling accepted as PROVENANCE-CORRECTION accuracy-fix overage per the PI directive's no-fabrication priority; trim back into band owed to a future Polish pass. PI-ER2-REVIEWCLAIM / PI-ER2-CASEBOOK / PI-ER2-STUDENTWORK now resolved at all three sites (drafts run-347, cite-layer run-348, polished run-349, full-draft this run-350). PI-ER2-VAULTCOST remains the standing standalone \u00a7IX cycle.",
+    "last_polish_propagation_run": 350,
     "last_stitch_tick_kind_run284": "frontmatter-reconciliation-and-consistency-audit",
     "last_stitch_tick_kind_run289": "frontmatter-reconciliation",
     "last_stitch_tick_kind_run294": "interim-frontmatter-reconciliation-with-expanded-deferral-spec",
@@ -126,10 +127,10 @@
     "last_stitch_tick_kind_run320": "dedicated-propagation-section-12-pi-248-249-250-252-no-renumber",
     "last_stitch_tick_kind_run328": "dedicated-propagation-section-02-pi-er-trim91-no-renumber",
     "last_stitch_tick_kind_run338": "dedicated-propagation-section-12-pi-er-overreliance-append-189-no-renumber",
-    "last_stitched_at": "2026-05-30T23:45:00Z",
+    "last_stitched_at": "2026-05-31T03:30:00Z",
     "last_stitched_at_pre328": "2026-05-30T08:00:00Z",
     "last_stitched_at_pre338": "2026-05-31T07:00:00Z",
-    "last_stitched_run": 345,
+    "last_stitched_run": 350,
     "last_stitched_run_pre328": 320,
     "last_stitched_run_pre338": 333,
     "partial_assembly": true,
@@ -162,7 +163,9 @@
     "title_pi_status_run340": "PI-ER-TITLE Polish leg closed (PROJECT_PRIMER trimmed); Stitch leg owed for full-draft.md propagation.",
     "total_words": 14104,
     "total_words_pre_run328": 14084,
-    "total_words_prior_run_341": 14032
+    "total_words_prior_run_341": 14032,
+    "last_stitched_at_pre350": "2026-05-31T07:00:00Z",
+    "last_stitch_tick_kind_run350": "provenance-correction-pass-er2-batch-propagation-sections-04-08-12-13-plus-abstract-plus-append-191-no-renumber"
   },
   "pending_issues": [
     {
@@ -2163,7 +2166,7 @@
       "next_action": "Next Polish tick on master should re-propagate the PI-ER2-REVIEWCLAIM/CASEBOOK/STUDENTWORK fixes from drafts (run 347) and cite (run 348) into polished/section-04/08/12/13 under L-035 three-site discipline. PI-RACE-RUN349 closes when polish_advanced is logged on master for the three PIs."
     }
   ],
-  "phase_index": 1,
+  "phase_index": 4,
   "phases": [
     "draft",
     "cite",
@@ -2185,7 +2188,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 349,
+  "run_count": 350,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2363,13 +2366,14 @@
       "polish_note_run344": "Run-344 Polish batched PI-ER-SENTENCES (sections 04,05) + PI-ER-APPA-ROUTING Polish leg (section 07).",
       "word_count": 980,
       "stitch_propagated_run_345": true,
-      "last_stitch_propagation_at": "2026-05-30T23:45:00Z",
+      "last_stitch_propagation_at": "2026-05-31T03:30:00Z",
       "provenance_score_prior_run_182": 4.4,
       "provenance_audit_run": 346,
       "polish_status_prior_run_344": "ready_for_stitch",
       "claims_mapped_prior_run_182": 20,
       "verify_note_run346": "Run-346 Verify Provenance Auditor re-audit (first since run-182 baseline) scored 4/4/5/3/4 = 4.0 on the PI-279 IV.A 13-vs-14 body-footnote count drift the run-344 split exposed (claim_coverage 5 -> 4 on 1-claim drop; numerical_precision 5 -> 3 on the body-footnote inconsistency). 4.0 < 4.5 gate; polish_status:ready_for_stitch -> needs_polish. PI-277 (Persona 2, Section IV.A \"It covers\" verb depth-overclaim) routes the same Polish tick. PI-279 closure path: option C recount-to-correct-number against workplan + App. A; closure lifts criterion 4 and criterion 1 bringing 4.0 -> 4.4, then gap_honesty -> 5 on subsequent re-audit brings 4.4 -> 4.6 above gate.",
-      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 04 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed."
+      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 04 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed.",
+      "stitch_propagated_run_350": true
     },
     "05": {
       "cite_completed_at": "2026-05-16T21:50:00Z",
@@ -2544,7 +2548,9 @@
       "word_count": 894,
       "last_polish_run": 349,
       "last_polish_at": "2026-05-31T02:30:00Z",
-      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 08 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed."
+      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 08 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed.",
+      "stitch_propagated_run_350": true,
+      "last_stitch_propagation_at": "2026-05-31T03:30:00Z"
     },
     "09": {
       "cite_completed_at": "2026-05-19T21:00:00Z",
@@ -2771,7 +2777,7 @@
       "last_polish_propagation_at": "2026-06-07T07:00:00Z",
       "last_polish_propagation_run": 215,
       "last_polish_run": 349,
-      "last_stitch_propagation_at": "2026-05-31T17:00:00Z",
+      "last_stitch_propagation_at": "2026-05-31T03:30:00Z",
       "last_stitch_propagation_note": "Run-320 Stitch propagated four Section 12 polished-layer landings from polished/section-12 to manuscript/full-draft.md: PI-248/[^9]->[^168] Standard 207 canon-anchor expansion + L-059 strip; PI-249 third-pole sentences at XII.B paragraph 1 close; PI-250 Bond typology cross-reference sentence at XII.B paragraph 1; PI-252 four umbrella-term substitutions at XII.A, XII.B (two), and XII.D with the three bounded-artifact preserves at XII.C and XII.E intact. No new global footnote slot opened (footnotes_total holds at 188; the [^168] expansion is in place and [^169] is the cross-referenced Bond anchor already present). Post-edit audit: 188 contiguous footnote defs, zero gap/dup/orphan. XII body words 1385->1417 (matches polished file 1385 plus four umbrella deltas net +32 in assembled body). PI-248, PI-249, PI-250, PI-252 advance third site (full-draft); PI-251 already resolved at run-319 Polish (polished frontmatter unsupported_claims cleared); all four substantive PIs now propagated across all three sites per L-035 three-site discipline and held open pending next Verify provenance re-audit on Section 12.",
       "last_stitch_propagation_run": 338,
       "last_stitch_run": 338,
@@ -2822,7 +2828,8 @@
       "verify_routed_at": "2026-05-27T21:00:00Z",
       "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-101 (Magesh search-derived pagination cite-form confirmation) -> cite_status needs_cite. Polish-owned: PI-106 (open-decision numbering) and new PI-113 (habituates-verification unsupported learning claim) -> polish_status needs_polish. PI-073 (casebook backward audit) remains awaiting professorial review, not a phase fix.",
       "word_count": 1626,
-      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 12 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed."
+      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 12 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed.",
+      "stitch_propagated_run_350": true
     },
     "13": {
       "cite_at": "2026-05-24T21:00:00Z",
@@ -2882,7 +2889,9 @@
       "verify_routing_reason": "Deferral lifted (run 112 Verify). Cite-owned: PI-092 (article-wide footnote internal-artifact-leak, anchored at XIII) and PI-096 (SoTL/OER-adoption literature-gap) -> cite_status needs_cite. Polish-owned: PI-093 (chatbot-architecture-overclaim), PI-094 (recognition-overclaim), PI-095 (equity-and-accessibility) -> polish_status needs_polish.",
       "word_count": 612,
       "last_phase": "cite",
-      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 13 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed."
+      "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 13 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed.",
+      "stitch_propagated_run_350": true,
+      "last_stitch_propagation_at": "2026-05-31T03:30:00Z"
     },
     "14": {
       "cite_completed_at": "2026-05-25T11:00:00Z",
