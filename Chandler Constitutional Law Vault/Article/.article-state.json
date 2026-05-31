@@ -2109,6 +2109,17 @@
       "opened_at": "2026-05-31T01:19:15Z",
       "persona": "author-answer (provenance)",
       "claim": "Author: no student assessment/submitted work ingested; only TA-prepared review-session materials. Reframe §XII.D [^54]/[^165] -> disclose TA review sessions as TA-authored teaching aids (authorship/attribution note, not student-data/FERPA); resolve the privacy open question to the narrowed accurate position (subject to confirmation)."
+    },
+    {
+      "id": "PI-ER2-VAULTCOST",
+      "status": "open",
+      "severity": "P1",
+      "type": "provenance-correction",
+      "owner_phase": "draft+cite",
+      "section": "09",
+      "opened_at": "2026-05-31T01:33:58Z",
+      "persona": "author-decision (vault-only cost)",
+      "claim": "§IX must report VAULT-construction cost (from Chandler Constitutional Law Vault/.run-scores.jsonl: 255 runs, Apr16-May8 2026, 22d; ingest35/enrich24/expand29/synthesize30/lint34/verify34/consolidate10/deploy59; 198pp deliverable, 92% coverage; NO wall-clock/$ - claim none) and DROP the article-writing cost (Table 9.1 + App E.2). Substantial standalone §IX+App E rewrite. Article-loop numbers now live in packet companion 04-How-This-Article-Was-Written.docx. Never fabricate cost numbers."
     }
   ],
   "phase_index": 0,
