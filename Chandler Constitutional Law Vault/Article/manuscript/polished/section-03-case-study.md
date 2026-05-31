@@ -8,6 +8,8 @@ word_count_prior_run_321: 1283
 last_phase: polish
 last_polish_run: 355
 last_polish_at: 2026-05-31T10:30:00Z
+stitch_propagated_run_356: true
+last_stitch_propagation_at: 2026-05-31T12:30:00Z
 draft_status: needs_polish
 cite_status: needs_polish
 polish_status: ready_for_stitch

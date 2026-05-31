@@ -93,7 +93,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "verify",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -106,16 +106,16 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "polish",
-  "last_run_at": "2026-05-31T10:30:00Z",
+  "last_completed_phase": "stitch",
+  "last_run_at": "2026-05-31T12:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
-    "confirmed_stitched_changed_at": "2026-05-31T03:30:00Z",
-    "confirmed_stitched_count": 9,
+    "confirmed_stitched_changed_at": "2026-05-31T12:30:00Z",
+    "confirmed_stitched_count": 11,
     "footnotes_total": 191,
     "full_draft_exists": true,
-    "last_polish_propagation_at": "2026-05-31T03:30:00Z",
-    "last_polish_propagation_note": "Run-350 Stitch PROVENANCE-CORRECTION PASS batch propagation tick closed the run-347 Draft + run-348 Cite + run-349 Polish PI-ER2-* chain across \u00a7IV / \u00a7VIII / \u00a7XII / \u00a7XIII / abstract. Body propagations land the architecture-gatekeeping reframe (REVIEWCLAIM P0), the casebook open-question closure (CASEBOOK P1), the student-work TA-disclosure (STUDENTWORK P1), and the controlling honest-disclosure paragraph at \u00a7VIII.A. New global [^191] appended at the global tail carrying the snapshot disclosure (no renumber operation, consistent with the run-338 [^189] and run-341 [^190] tail-append precedent). 191 contiguous footnote defs zero gap/dup/orphan. Main-text body word_count 14104 -> 14537 (+433 from polished-frontmatter aggregate delta; the [^191] footnote def expansion does not contribute to body word count). abstract.words 244 -> 270 (+26). +537 over the 14000 ceiling accepted as PROVENANCE-CORRECTION accuracy-fix overage per the PI directive's no-fabrication priority; trim back into band owed to a future Polish pass. PI-ER2-REVIEWCLAIM / PI-ER2-CASEBOOK / PI-ER2-STUDENTWORK now resolved at all three sites (drafts run-347, cite-layer run-348, polished run-349, full-draft this run-350). PI-ER2-VAULTCOST remains the standing standalone \u00a7IX cycle.",
+    "last_polish_propagation_at": "2026-05-31T12:30:00Z",
+    "last_polish_propagation_note": "Run-356 Stitch PROVENANCE-CORRECTION PASS batch propagation tick closed the run-355 Polish \u00a703 chain (PI-254 III.E displacement softening, PI-255/PI-257 III.E Bond typology cross-reference via *see supra* Section XI note 153, PI-256 III.B MVP-vs-extension closer) into manuscript/full-draft.md AND closed the long-owed run-352 Polish \u00a7X.C and \u00a7XIV.A PI-281 body-leg propagation into full-draft. Footnote integrity green: 191 contiguous defs [^1]-[^191], zero gap/dup/orphan, every body marker resolves to a def, every def referenced inline. Main-text body words 14537 -> 14606 (+69). PI-281 residual descriptor sweep confirmed clean: zero 'reviewed static', 'professorially-reviewed', 'reviewed each layer', or 'reviewing and approving each layer' across the full draft.",
     "last_polish_propagation_run": 350,
     "last_stitch_tick_kind_run284": "frontmatter-reconciliation-and-consistency-audit",
     "last_stitch_tick_kind_run289": "frontmatter-reconciliation",
@@ -127,10 +127,10 @@
     "last_stitch_tick_kind_run320": "dedicated-propagation-section-12-pi-248-249-250-252-no-renumber",
     "last_stitch_tick_kind_run328": "dedicated-propagation-section-02-pi-er-trim91-no-renumber",
     "last_stitch_tick_kind_run338": "dedicated-propagation-section-12-pi-er-overreliance-append-189-no-renumber",
-    "last_stitched_at": "2026-05-31T03:30:00Z",
+    "last_stitched_at": "2026-05-31T12:30:00Z",
     "last_stitched_at_pre328": "2026-05-30T08:00:00Z",
     "last_stitched_at_pre338": "2026-05-31T07:00:00Z",
-    "last_stitched_run": 350,
+    "last_stitched_run": 356,
     "last_stitched_run_pre328": 320,
     "last_stitched_run_pre338": 333,
     "partial_assembly": true,
@@ -161,7 +161,7 @@
     "stitch_run": 328,
     "title_pi_status_run339": "PI-268 NEW (Persona 1 Skeptical JLE Editor) escalates standing PI-ER-TITLE: the trailing ', and the Future of Legal Pedagogy' subtitle persists at full-draft.md line 70 (body H1) and line 71 (YAML title field) after three Stitch ticks since run-315. Routes the next Polish+Stitch joint tick to trim both surfaces.",
     "title_pi_status_run340": "PI-ER-TITLE Polish leg closed (PROJECT_PRIMER trimmed); Stitch leg owed for full-draft.md propagation.",
-    "total_words": 14104,
+    "total_words": 14606,
     "total_words_pre_run328": 14084,
     "total_words_prior_run_341": 14032,
     "last_stitched_at_pre350": "2026-05-31T07:00:00Z",
@@ -2277,7 +2277,7 @@
       "pairs_with": "PI-282 \u00a7X.C grounding fix in the same Section 10 Polish tick"
     }
   ],
-  "phase_index": 1,
+  "phase_index": 4,
   "phases": [
     "draft",
     "cite",
@@ -2299,7 +2299,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 355,
+  "run_count": 356,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2447,7 +2447,9 @@
       "last_polish_at": "2026-05-31T10:30:00Z",
       "provenance_audited_prior_run_355": true,
       "provenance_reset_at_run_355": "2026-05-31T10:30:00Z",
-      "provenance_reset_reason_run_355": "Run-355 Polish batched PI-254/PI-255/PI-256/PI-257: III.B end gained the MVP-vs-extension priority sentence; III.E paragraph 1 gained the displacement-of-derivation softening and the Bond typology cross-reference (*see supra* Section XI note 3). Three new claim sites materially change the section's factual surface; next Verify-provenance re-audit re-counts claims_total/claims_mapped and registers the score path 3.6 -> 4.2 (+0.2 PI-255/PI-257 claim_coverage 4 -> 5) pending PI-253 Cite strip (+0.2 attribution_discipline 3 -> 4) and PI-126 Cite link-count (+0.2 numerical_precision 4 -> 5) for the full 3.6 -> 4.6 above-gate path."
+      "provenance_reset_reason_run_355": "Run-355 Polish batched PI-254/PI-255/PI-256/PI-257: III.B end gained the MVP-vs-extension priority sentence; III.E paragraph 1 gained the displacement-of-derivation softening and the Bond typology cross-reference (*see supra* Section XI note 3). Three new claim sites materially change the section's factual surface; next Verify-provenance re-audit re-counts claims_total/claims_mapped and registers the score path 3.6 -> 4.2 (+0.2 PI-255/PI-257 claim_coverage 4 -> 5) pending PI-253 Cite strip (+0.2 attribution_discipline 3 -> 4) and PI-126 Cite link-count (+0.2 numerical_precision 4 -> 5) for the full 3.6 -> 4.6 above-gate path.",
+      "stitch_propagated_run_356": true,
+      "last_stitch_propagation_at": "2026-05-31T12:30:00Z"
     },
     "04": {
       "cite_completed_at": "2026-05-16T07:14:54Z",
@@ -2827,7 +2829,9 @@
       "polish_note_run352": "PI-281 body-leg-\u00a710 closure under PROVENANCE-CORRECTION PASS; descriptor sweep + (where directed by fix_form_preferred) \u00a7VIII.A-style honest-disclosure hedge; provenance_audited reset to false; full-draft propagation owed to next Stitch tick (run 353).",
       "provenance_audited_prior_run_352": true,
       "cite_status_prior_run_329": "needs_polish",
-      "cite_status_advanced_at_run_354": "2026-05-31T10:00:00Z"
+      "cite_status_advanced_at_run_354": "2026-05-31T10:00:00Z",
+      "stitch_propagated_run_356": true,
+      "last_stitch_propagation_at": "2026-05-31T12:30:00Z"
     },
     "11": {
       "cite_completed_at": "2026-05-30T02:00:00Z",
@@ -3103,7 +3107,9 @@
       "xivc_commit_polish_leg_closed_at_run": 340,
       "polish_note_run352": "PI-281 body-leg-\u00a714 closure under PROVENANCE-CORRECTION PASS; descriptor sweep + (where directed by fix_form_preferred) \u00a7VIII.A-style honest-disclosure hedge; provenance_audited reset to false; full-draft propagation owed to next Stitch tick (run 353).",
       "provenance_audited_prior_run_352": true,
-      "cite_touched_at_run_354": "2026-05-31T10:00:00Z"
+      "cite_touched_at_run_354": "2026-05-31T10:00:00Z",
+      "stitch_propagated_run_356": true,
+      "last_stitch_propagation_at": "2026-05-31T12:30:00Z"
     }
   },
   "target_venue": "Journal of Legal Education",
