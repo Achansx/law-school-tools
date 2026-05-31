@@ -93,7 +93,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "stitch",
+  "current_phase": "draft",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -2270,7 +2270,7 @@
       "split_off_from": "PI-281 (body-leg closed run-352)"
     }
   ],
-  "phase_index": 5,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
