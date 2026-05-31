@@ -93,9 +93,9 @@
   "current_phase": "draft",
   "gates": {
     "handoff_freeze": {
-      "awaiting_human": true,
-      "cleared_at": null,
-      "reason": "RE-FROZEN after the EDITORIAL-REVIEW PASS (run-315 review). All PI-ER-* loop-addressable items resolved: appendix cross-refs reconciled, §IX Table 9.1 assembled, internal-tracker cites removed, title trimmed, overreliance cite added, §XIV.C commit sentence, Boyer unpack, sentence splits, [^159] insertion-order note. Body verified clean (0 App.D internal refs, 0 internal-tracker phrasings, 190 contiguous footnotes). Fresh snapshot manuscript/HANDOFF-2026-05-30.md + clean manuscript/SUBMISSION-2026-05-30.md; memo updated. Loop HALTED; maintainer stopped firing. Professor-only decisions and confirm-at-proof items (incl. PI-CONFIRM-BASTANI) remain for the human. System did NOT submit and did NOT email the professor.",
+      "awaiting_human": false,
+      "cleared_at": "2026-05-31T01:19:15Z",
+      "reason": "REOPENED 2026-05-30 for the PROVENANCE-CORRECTION PASS: author answered the four professor-only questions; three need prose corrections (PI-ER2-REVIEWCLAIM accuracy reframe of the 'reviewed static site' claim; PI-ER2-CASEBOOK close casebook-ingestion open question; PI-ER2-STUDENTWORK narrow student-work to TA review sessions). Re-freeze when all three resolved + propagated. System still does not submit and does not email the professor.",
       "set_at": "2026-05-30T22:05:26Z"
     },
     "submission_ready": {
@@ -2076,6 +2076,39 @@
       "opened_at": "2026-05-30T22:05:26Z",
       "persona": "maintainer-spotcheck",
       "claim": "XII.B [^189] Bastani et al. PNAS 2025 overreliance cite: source + qualitative finding VERIFIED real/live (DOI 10.1073/pnas.2422633122). Two page-proof confirms: (1) the 'about seventeen percent' exam-drop figure against the published text; (2) PNAS issued a CORRECTION (DOI 10.1073/pnas.2518204122) — confirm cited numbers reflect the corrected version. Not fabrication; precision check only."
+    },
+    {
+      "id": "PI-ER2-REVIEWCLAIM",
+      "status": "open",
+      "severity": "P0",
+      "type": "provenance-correction",
+      "owner_phase": "draft+cite+polish",
+      "section": "08/12/13/abstract",
+      "opened_at": "2026-05-31T01:19:15Z",
+      "persona": "author-answer (provenance)",
+      "claim": "Author: snapshot pages were NOT professor-reviewed before going live (workflow allows it). Reframe 'reviewed static site' -> 'review-ready'; rewrite [^174] and §VIII.A load-bearing claim + abstract/§I.B echo to describe the gatekeeping ROLE/capability not completed review; ADD honest disclosure (snapshot shipped review-ready, not individually professor-approved) at §VIII.A + reflect §XII/§XIII. KEEP static-vs-chatbot architecture argument. NEVER claim review that didn't happen. Persona-4 verifies."
+    },
+    {
+      "id": "PI-ER2-CASEBOOK",
+      "status": "open",
+      "severity": "P1",
+      "type": "provenance-correction",
+      "owner_phase": "draft+cite",
+      "section": "04/12",
+      "opened_at": "2026-05-31T01:19:15Z",
+      "persona": "author-answer (provenance)",
+      "claim": "Author: course files authored by Prof. Chandler, no casebook excerpts ingested (as far as author aware). Close the §IV [^53] + §XII.C OPEN question -> corpus is professor's own materials (author's understanding, subject to Chandler confirmation); make §XII.C copyrighted-casebook analysis a contingent fallback, not the active state."
+    },
+    {
+      "id": "PI-ER2-STUDENTWORK",
+      "status": "open",
+      "severity": "P1",
+      "type": "provenance-correction",
+      "owner_phase": "draft+cite",
+      "section": "12",
+      "opened_at": "2026-05-31T01:19:15Z",
+      "persona": "author-answer (provenance)",
+      "claim": "Author: no student assessment/submitted work ingested; only TA-prepared review-session materials. Reframe §XII.D [^54]/[^165] -> disclose TA review sessions as TA-authored teaching aids (authorship/attribution note, not student-data/FERPA); resolve the privacy open question to the narrowed accurate position (subject to confirmation)."
     }
   ],
   "phase_index": 0,

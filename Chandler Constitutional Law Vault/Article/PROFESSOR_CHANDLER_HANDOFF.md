@@ -45,7 +45,3 @@ A complete working draft of a method article for the *Journal of Legal Education
 - **Bluebook 21st** citation form (already followed in the draft).
 - Figures as separate ≥300 dpi files per §4.3.
 - Empirical/evaluation material (§XI) may draw outside peer review; it is written to be peer-review-defensible (design-based-research framing).
-
-## 6. Important
-
-**The system did not submit this article and did not email you.** Submitting to JLE and contacting you are human actions reserved for you and the author. This memo and the frozen draft are provided for your review only. The maintenance loop has been halted (a `handoff_freeze` gate is set in the project state); it will not run again until that gate is cleared.
