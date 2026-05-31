@@ -3,14 +3,15 @@ id: "01"
 title: "Introduction: The Hidden Archive of the Law Professor"
 status: needs_polish
 target_words: 900
-word_count: 987
-last_phase: cite
+word_count: 1013
+last_phase: polish
 draft_status: needs_cite
 cite_status: needs_polish
-polish_status: needs_polish
+polish_status: ready_for_stitch
 footnotes_count: 9
-provenance_audited: true
+provenance_audited: false
 provenance_score: 4.4
+polish_note_run352: "Run-352 Polish tick under PROVENANCE-CORRECTION PASS PI-281 body-leg closure. PI-281 (P0; Persona 1 + Persona 4 cross-confirmed; opened run-351 Verify) flagged the run-349 Polish + run-350 Stitch sweep as incomplete: descriptors and completed-review assertions survived at §I.B, §II.E/F, §VII.C, §X.C, §XI.B/C/D, §XIV.A in polished and full-draft despite the run-347 Draft having landed the swap in drafts. This Polish tick mirrors the run-347 Draft body changes into polished §I.B and adds the §VIII.A-style honest-disclosure hedge sentence per fix_form_preferred (+27 body words). Body line 32 now reads 'review-ready static website' and follows with 'The May 2026 snapshot pages were published as review-ready drafts rather than as individually professor-approved pages, the controlling disclosure Section VIII names at the architectural level for the snapshot.' word_count 987 -> 1013 (+26; 12.6% over the 900 Section-I target; PROVENANCE-CORRECTION accuracy-fix overage accepted under the PI directive's no-fabrication priority). Mechanical hygiene clean: zero em dashes introduced, zero straight ASCII quotes (curly throughout the new sentence). Voice practitioner-scholarly. Tightness: hedge sentence 25 words, under the 35-word band. First-person absent. Section coherence: I.B's controlling architecture-choice claim is now honestly hedged at the introduction altitude, matching the §VIII.A controlling site. polish_status needs_polish -> ready_for_stitch. provenance_audited reset true -> false because the I.B claim text materially changed (next Verify-provenance Section 01 pick re-audits). PI-281 body-leg-§I.B closed this tick; footnote-def [^3] swap owed to the next Cite tick under routes_status. L-035 three-site discipline: drafts already landed at run-347; polished landed this tick; full-draft propagation owed to the next Stitch tick (run 353)."
 claims_total: 11
 claims_mapped: 11
 unsupported_claims: []
@@ -29,7 +30,7 @@ Every experienced doctrinal teacher carries a course in two places: inside their
 
 This article describes a method for opening that archive. Generative AI, working on structured source materials, Obsidian-style markdown notes, build-time linking to verified legal sources, and iterative expert review, can convert a professor’s scattered course materials into a navigable, cross-linked, student-facing course knowledge system. The constitutional-law case study below is the demonstration; the transferable contribution is the method, which other doctrinal courses with similar archives can follow, a claim Section X develops and bounds rather than one the introduction presumes. The essential feature is not automation. The essential feature is iteration under the control of a human expert, whose pedagogical judgment shapes what the system is asked to produce, a design task Section VI develops. Review here is not a gloss applied at the end. It is built into the process at defined checkpoints, where the professor inspects what the system has drafted, corrects what is wrong, and decides whether the work advances or returns for another pass.[^2]
 
-The article is not the announcement of an AI teaching assistant, and it is not a chatbot placed in front of students. The case study is a reviewed static website, not a conversational agent, and that architectural choice carries the article’s later argument about risk.[^3] The article also makes no claim that students learned more, because it has not run the study that would license such a claim.[^4] The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable.
+The article is not the announcement of an AI teaching assistant, and it is not a chatbot placed in front of students. The case study is a review-ready static website, not a conversational agent, and that architectural choice carries the article’s later argument about risk.[^3] The May 2026 snapshot pages were published as review-ready drafts rather than as individually professor-approved pages, the controlling disclosure Section VIII names at the architectural level for the snapshot. The article also makes no claim that students learned more, because it has not run the study that would license such a claim.[^4] The system did not replace professorial judgment; it made that judgment reusable, inspectable, and publishable.
 
 ## C. The case study, in one breath
 
