@@ -28,3 +28,9 @@ npm-debug.log
 # Temporary files
 *.tmp
 *.log
+
+# --- Chandler vault: keep raw/sensitive inputs OUT of this public repo ---
+# Source Materials = exams, grading rubric, copyrighted readings, slide decks (453MB). Notes are published; raw inputs are not.
+Chandler Constitutional Law Vault/Source Materials/
+Chandler Constitutional Law Vault/.site/.netlify-token
+.fuse_hidden*
