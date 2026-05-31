@@ -755,11 +755,11 @@ Across every layer, the expert never left the loop. The system did not replace p
 
 [^143]: *See supra* Section III (Case Study: A Constitutional-Law Knowledge System) (describing the discipline under which every key quotation links to the cited line of the indexed judicial opinion, so a reader can trace each pull-quote to the source that controls it).
 
-[^144]: *See supra* Section VII (Iterative Improvement Under Professorial Control) (describing the page-feedback intake and the per-phase checkpoints under which the professor remains the gating actor, reviewing and approving each layer before it reaches a student and able to return any page for another pass).
+[^144]: *See supra* Section VII (Iterative Improvement Under Professorial Control) (describing the page-feedback intake and the per-phase checkpoints under which the professor is the designed gating actor, positioned to review and approve each layer before it reaches a student and able to return any page for another pass); *see also supra* Section VIII (From Vault to Website) (May 2026 snapshot pages published as review-ready rather than as individually professor-approved, the author’s understanding subject to Professor Chandler’s confirmation).
 
 [^145]: Ramteja Sajja, Yusuf Sermet, David M. Cwiertny & Ibrahim Demir, *Platform-Independent and Curriculum-Oriented Intelligent Assistant for Higher Education*, 20 Int’l J. Educ. Tech. Higher Educ., Art. 42 (2023), https://link.springer.com/article/10.1186/s41239-023-00412-7 (last visited May 29, 2026) (presenting a large-language-model-backed curriculum-oriented virtual teaching assistant deployable to any course as a conversational helper; cited here at X.C as the chatbot-tutor architectural alternative the static-website choice forgoes). Per L-024, the X.C body prose carries the transfer-of-inference clause naming what generalizes from this intervention setting (the curriculum-grounding insight) and what does not (the conversational runtime surface); the same source supports the user-experience contrast at *supra* Section III note 39 and the build-time-versus-runtime architectural contrast at *supra* Section VIII note 117 in this assembly.
 
-[^146]: *See infra* Section XII (Risks and Limits) (developing the architectural contrast between the review-ready static website, whose content is professorially inspected before publication, and a system that generates responses at runtime without prior review, and locating each architecture’s risk surface accordingly).
+[^146]: *See infra* Section XII (Risks and Limits) (developing the architectural contrast between the review-ready static website, whose pages are fixed at build time and inspectable at the build-time professorial-review checkpoint the architecture enables, and a system that generates responses at runtime without prior review, and locating each architecture’s risk surface accordingly).
 
 [^147]: Saadiq F. Usman, *Making Legal Education Stick: Using Cognitive Science to Help Law Students Learn*, Legal Writing Inst. (2018), https://www.lwionline.org/sites/default/files/2018-06/Usman%20Making%20Legal%20Education%20Stick.pdf (last visited May 24, 2026) (URL verified live this run via WebFetch, which returned the published PDF; applying cognitive-load theory, worked examples, and spaced retrieval to law-school teaching, and supporting the claim that doctrinal courses share a learnable rule, exception, and application structure that maps onto a small set of note types).
 
@@ -830,7 +830,7 @@ Across every layer, the expert never left the loop. The system did not replace p
 
 [^185]: *See supra* Section X (Generalization Beyond Constitutional Law) (treating constitutional law as one well-suited base case rather than as proof that every doctrinal course transfers cleanly).
 
-[^186]: *See supra* Section XII (Risks and Limits) (the case study is a review-ready static website whose risk surface sits at build-time professorial review rather than at runtime generation, not a chatbot).
+[^186]: *See supra* Section XII (Risks and Limits) (the case study is a review-ready static website whose risk surface sits at a build-time professorial-review checkpoint the architecture enables rather than at runtime generation, not a chatbot).
 
 [^187]: *See supra* Section XIII (Institutional Implications) (the method-first, opt-in adoption invitation, under which a faculty member adopts the typed schema, the verified-source discipline, the professorial gating, and the iterative loop rather than the constitutional-law artifact).
 

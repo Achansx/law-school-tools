@@ -68,7 +68,7 @@ Across every layer, the expert never left the loop. The system did not replace p
 
 [^5]: *See supra* Section X (Generalization Beyond Constitutional Law) (treating constitutional law as one well-suited base case rather than as proof that every doctrinal course transfers cleanly).
 
-[^6]: *See supra* Section XII (Risks and Limits) (the case study is a review-ready static website whose risk surface sits at build-time professorial review rather than at runtime generation, not a chatbot).
+[^6]: *See supra* Section XII (Risks and Limits) (the case study is a review-ready static website whose risk surface sits at a build-time professorial-review checkpoint the architecture enables rather than at runtime generation, not a chatbot).
 
 [^7]: *See supra* Section XIII (Institutional Implications) (the method-first, opt-in adoption invitation, under which a faculty member adopts the typed schema, the verified-source discipline, the professorial gating, and the iterative loop rather than the constitutional-law artifact).
 
