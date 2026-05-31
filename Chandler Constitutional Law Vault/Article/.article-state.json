@@ -93,7 +93,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -106,8 +106,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-31T14:00:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-31T15:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-31T12:30:00Z",
@@ -2282,9 +2282,79 @@
       ],
       "routes_status": "polish_status:needs_polish (already there); App. C status:needs_work if the Harvest-appendix tick reaches it first",
       "pairs_with": "PI-282 \u00a7X.C grounding fix in the same Section 10 Polish tick"
+    },
+    {
+      "id": "PI-285",
+      "status": "open",
+      "severity": "P1",
+      "type": "todo-leak-in-published-prose",
+      "section": "09",
+      "opened_at": "2026-05-31T15:30:00Z",
+      "opened_at_run": 358,
+      "persona": "1-skeptical-jle-editor",
+      "summary": "Section IX.E closing sentence ('External pricing lookups for Netlify and metered MCP services remain deferred to a later Cite pass.') is a TODO leak in published prose. A JLE editor reads it as the article publicly admitting it is not done with its own citations. Polish-owned: rewrite to absorb into the IX.E scope-not-items-owed enumeration (+14 body words) or drop (-23 body words). Section 09 next Polish tick.",
+      "routes": [
+        "Section 09 polish_status:needs_polish"
+      ]
+    },
+    {
+      "id": "PI-286",
+      "status": "open",
+      "severity": "P1",
+      "type": "missing-adopter-acknowledgment",
+      "section": "09",
+      "opened_at": "2026-05-31T15:30:00Z",
+      "opened_at_run": 358,
+      "persona": "2-legal-pedagogy-traditionalist",
+      "summary": "Section IX.E person-hours sentence ('a person-hours backfill across the four labor categories is not loggable by a system that records only its own runs') correctly names the omission but does not acknowledge that the omitted cost (person-hours) is the cost a faculty adopter most needs to estimate before committing to the build. Polish-owned: +22 body words to append adopter-side acknowledgment in \u00a7IX.E's closing scope-paragraph, or +9 body words separate sentence form. Section 09 next Polish tick.",
+      "routes": [
+        "Section 09 polish_status:needs_polish"
+      ]
+    },
+    {
+      "id": "PI-287",
+      "status": "open",
+      "severity": "P1",
+      "type": "missing-external-comparator",
+      "section": "09",
+      "opened_at": "2026-05-31T15:30:00Z",
+      "opened_at_run": 358,
+      "persona": "3-ai-in-education-researcher",
+      "summary": "Section IX.C 198pp/22-day productivity datum is reported without an external comparator; no Bond meta-review or AI-in-higher-ed productivity-baseline anchor. Polish-owned (or Cite-owned if new [^288] Bond comparator footnote chosen): +24 body words at IX.C closing with new [^288] Bond footnote, or +11 body words at IX.E scope-paragraph without new footnote. Section 09 next Polish/Cite tick.",
+      "routes": [
+        "Section 09 polish_status:needs_polish"
+      ]
+    },
+    {
+      "id": "PI-288",
+      "status": "open",
+      "severity": "P1",
+      "type": "footnote-numerical-inconsistency",
+      "section": "09",
+      "opened_at": "2026-05-31T15:30:00Z",
+      "opened_at_run": 358,
+      "persona": "4-provenance-auditor",
+      "summary": "Footnote [^122] records '281-page corpus build of 131 cases, 53 topics, and 97 lectures' at the May 7, 2026 credit-block events while [^124] records the '198-page snapshot' at May 8, 2026 end-of-window. The 281 vs 198 inter-footnote inconsistency (one calendar day apart) lacks an inline local-build-vs-deployed-site clarification. Cite-owned: +22 footnote words at [^122] closing, or +11 footnote words tighter form. Pairs naturally with PI-ER2-VAULTCOST standalone Cite cycle. Section 09 next Cite tick.",
+      "routes": [
+        "Section 09 cite_status:needs_cite"
+      ]
+    },
+    {
+      "id": "PI-289",
+      "status": "open",
+      "severity": "P1",
+      "type": "self-reflexivity-deflection",
+      "section": "09",
+      "opened_at": "2026-05-31T15:30:00Z",
+      "opened_at_run": 358,
+      "persona": "7-adversarial-reviewer",
+      "summary": "Section IX.A self-comparison sentence ('the article-writing loop that produced this paper was a comparable scheduled-task system whose log lives in a companion note.[^118] [^119]') deflects the load-bearing self-comparator off-page to a 'companion note' undefined to the reader. Polish-owned: +18 body words to name the companion as a JLE online supplement available to readers, or +8 body words tighter form naming the supplement filename. Section 09 next Polish tick. Two-marker adjacency [^118] [^119] could also be combined in a future Cite tick (form, not substance).",
+      "routes": [
+        "Section 09 polish_status:needs_polish"
+      ]
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -2306,7 +2376,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 357,
+  "run_count": 358,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2696,8 +2766,8 @@
       "cite_completed_at": "2026-05-19T21:00:00Z",
       "cite_status": "needs_cite",
       "cite_status_prior_run_330": "needs_cite",
-      "claims_mapped": 21,
-      "claims_total": 22,
+      "claims_mapped": 24,
+      "claims_total": 26,
       "current_words": 768,
       "current_words_prior_run_330": 768,
       "current_words_prior_run_340": 827,
@@ -2723,22 +2793,22 @@
       "polish_completed_at": "2026-05-31T04:00:00Z",
       "polish_note_run340": "Run-340 Polish trimmed \u00a79.C intro (-6), \u00a79.D cross-rubric-prohibition sentence (-12), and \u00a79.D closer (-7) per PI-ER-IXTABLE-OVERAGE routing. Body 827 -> 791 (-36). Table 9.1 cells untouched per protected-content routing. \u00a79.D closer rewrite also closes the post-run-330 semantic drift between the OLD 'token back-computation' framing and the NEW Table 9.1 ticks+words columns. PI-ER-IXTABLE-OVERAGE Polish leg closed; Stitch leg owed (propagate \u00a79 changes to full-draft + close run-334 PI-267 propagation gap).",
       "polish_status": "needs_polish",
-      "provenance_audit_run": 334,
+      "provenance_audit_run": 358,
       "provenance_audit_run_prior": 135,
       "provenance_audit_run_prior_run_275": 275,
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-31T09:00:00Z",
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-31T15:30:00Z",
       "provenance_audited_at_prior_run_275": "2026-05-31T08:00:00Z",
       "provenance_reset_at_run_330": "2026-05-31T01:30:00Z",
       "provenance_reset_reason_run_330": "PI-ER-IXTABLE Draft-tier delivery materially changed IX.A column-set sentence and \u00a79.5 closer, inserted Table 9.1 (article-loop master cost-and-labor table), and re-anchored footnotes [^3]/[^4]/[^15]/[^16]; column-set framing shifted from 'we promised 5 columns; 2 remain owed' to 'we deliver the 3 columns the per-tick cost log instruments and name the 2 non-delivered columns as structural scope'; next Verify provenance re-audit reads the post-Draft prose.",
-      "provenance_score": 4.4,
+      "provenance_score": 4.0,
       "provenance_score_prior": 4.2,
       "provenance_score_prior_run_275": 4.2,
       "stitched_at": "2026-05-20T01:00:00Z",
       "target_words": 700,
       "title": "Cost and Labor: The Honest Accounting",
       "unsupported_claims": [],
-      "unsupported_claims_count": 1,
+      "unsupported_claims_count": 2,
       "verify_routed_at": "2026-05-29T19:00:00Z",
       "verify_routing_reason": "Run-135 ninth Verify tick of the provenance-audit burst audited Section 09 (lowest-numbered polished section with provenance_audited:false; sections_audited was 8). All four personas read independently and each returned one new P1, all on Section 09 and all checked against the eight open Section 09 PIs (PI-052..057, PI-087, PI-111) to avoid duplication. PI-149 (Persona 1: IX.B selective-concreteness, the zero-marginal-hosting figure as the section's one committed and cheapest number while material costs defer to the PI-049 table), PI-150 (Persona 2: IX.E software-engineering labor vocabulary 'debugging'/'prompt tuning' mischaracterizing teaching labor, distinct from PI-055's omission complaint), and PI-151 (Persona 3: IX.D per-tick token back-computation asserted with no token-measurement instrument, cost-log records words_generated not tokens, distinct from PI-056) are Polish-owned and route polish_status -> needs_polish (already set from PI-111). PI-152 (Persona 4 / Provenance Auditor: IX.E footnotes [^14]/[^15]/[^16] pin PI-042/049/050/051 to the live pending_issues registry, but all four are archived to .article-state.archive.json as outline-addressed, and PI-050 has no footnote) is the source of Section 09's three unsupported_claims (PI-049/050/051, reason evidence-gap) and adds a Cite touch on the three footnotes. Provenance audit score 4.2 < 4.5 (criteria 3/4/5/5/4) independently holds Section 09 at polish_status: needs_polish. claims_total 27, claims_mapped 24, unsupported 3. Twenty-seven claim-manifest lines appended. Stale polished-file frontmatter (status/polish_status: ready_for_stitch) reconciled to the state file.",
       "current_words_prior_run_353": 791,
@@ -2758,7 +2828,11 @@
       "footnotes_count_prior_run_357": 16,
       "manuscript_global_footnote_range_prior_run_357": "[^89]-[^104]",
       "stitch_propagated_run_357": true,
-      "last_stitch_propagation_at": "2026-05-31T14:00:00Z"
+      "last_stitch_propagation_at": "2026-05-31T14:00:00Z",
+      "provenance_audited_at_prior_run_334": "2026-05-31T09:00:00Z",
+      "provenance_audit_run_prior_run_334": 334,
+      "provenance_score_prior_run_334": 4.4,
+      "provenance_note_run358": "Run-358 Verify-provenance third audit on Section 09, first audit on the post-run-353 Draft + run-354 Cite + run-357 Stitch PI-ER2-VAULTCOST vault-construction factual surface. Criterion scores 4/4/4/3/5 = 4.0 (regression from 4.4 baseline). PI-285 P1 NEW (Persona 1 TODO leak at \u00a7IX.E closing 'External pricing lookups...remain deferred to a later Cite pass'); PI-286 P1 NEW (Persona 2 missing adopter-side acknowledgment that person-hours is the cost most consequential to adoption); PI-287 P1 NEW (Persona 3 missing external comparator for 198pp/22-day productivity datum); PI-288 P1 NEW (Persona 4 [^122] 281-page-vs-[^124] 198-page numerical inconsistency without inline local-build-vs-deployed-site clarification); PI-289 P1 NEW (Persona 7 SUPPLEMENTAL \u00a7IX.A self-reflexivity-deflection at 'companion note' framing). Path to >=4.5: close PI-285 + PI-288 (lifts 4.0 -> 4.6 above gate). polish_status holds at needs_polish; cite_status holds at needs_cite (PI-288 + PI-ER2-VAULTCOST standalone Cite cycle pair on next Cite tick)."
     },
     "10": {
       "cite_completed_at": "2026-05-31T22:30:00Z",
@@ -3131,18 +3205,18 @@
   "verify": {
     "deferred_p1_count": 0,
     "forced_findings_satisfied": true,
-    "last_audit_section": "04",
+    "last_audit_section": "09",
     "last_cite_run": 325,
     "last_polish_resolution_run": 352,
-    "last_reaudit_section": "04",
-    "last_run": 351,
-    "last_run_at": "2026-05-31T05:30:00Z",
+    "last_reaudit_section": "09",
+    "last_run": 358,
+    "last_run_at": "2026-05-31T15:30:00Z",
     "new_findings_count": 5,
-    "p0_open": 1,
-    "p1_open": 171,
+    "p0_open": 0,
+    "p1_open": 176,
     "p2_open": 43,
     "personas_read": 5,
-    "next_run_expected_focus": "PI-281 closure confirmation + PI-ER2-VAULTCOST stitch leg confirmation + Section 09 provenance re-audit on new vault-construction factual surface"
+    "next_run_expected_focus": "Next post-Verify Draft tick: PROVENANCE-CORRECTION PASS rotation routes Draft. Standing items: PI-ER2-VAULTCOST standalone Cite cycle (External pricing lookups + Appendix E.2 stale block removal + PI-288 [^122] local-vs-deployed-build clarification) is the natural Cite tick to land after this Draft tick; PI-285 + PI-286 + PI-287 + PI-289 route Section 09 Polish; PI-279 / PI-277 Section 04 + Section 14 family (PI-272/273/274/275) + Section 10 (PI-282/PI-284) + Section 11 (PI-283) all standing for routing after the \u00a7IX cycle closes."
   },
   "verify_deferred_note": "verify run 306 re-audited Section 10 against the post-run-304 Polish + run-305 Stitch X.A propagation that landed [^17] / global [^150] (Sullivan et al. 2007 + Stuckey et al. 2007 + Maranville et al. 2015 compound string-cite) plus the new X.A +25-word reform-canon-anchor sentence. provenance_score 4.2 (run 270 baseline) -> 4.0 (-0.2 on criterion 1 claim_coverage 5 -> 4 driven by one new unsupported_claim at the X.A reform-canon-anchor site; the compound cite lacks per-source pin-cites required for a load-bearing 'the canon treats X as Y' proposition). 4.0 < 4.5 gate so polish_status holds at needs_polish; cite_status needs_polish -> needs_cite on the PI-241 Cite-tier routing. Two new P1s open: PI-241 (Persona 1 Skeptical JLE Editor; X.A [^17]/[^150] compound-cite-no-pin-cite; routed to Section 10 Cite); PI-242 (Persona 5 Practitioner-Adopter supplemental; X.A adopter-onboarding-corpus-and-labor-threshold gap; routed to Section 10 Polish). Two re-confirms: PI-220 (Persona 2 X.D/X.E two-track-n=2-framing tension) third-consecutive; PI-238 (Persona 3 X.A 'admired or copied' Silicon-Valley reproducibility-rhetoric) second-consecutive -- the run-304 Polish inserted the new reform-canon sentence AFTER 'admired or copied' but did not retire PI-238's binary. Manifest: 3 lines appended (1 new unmapped + 2 newly-audited mapped at X.A). Personas 5; forced_findings_satisfied true; deferred_p1_count 0 (lifted). Submission gate stays FALSE on PI-PROPAG-300-OVERAGE (full-draft 14058 vs. 14000 ceiling, +58), eight sections at provenance_score < 4.5, and the open routed PIs against the assembled draft.",
   "word_count_policy": {

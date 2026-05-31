@@ -26,25 +26,37 @@ stitch_propagated_run_357: true
 last_stitch_propagation_at: 2026-05-31T14:00:00Z
 last_stitch_propagation_note_run_357: "PI-ER2-VAULTCOST stitch leg: full-draft §IX replaced with this polished vault-construction version. Local [^1]-[^14] remapped to global [^118]-[^131]. All subsequent global footnotes from [^134] downward renumbered by minus two (now [^132]-[^189]); cross-ref in [^159]'s body ([^151]/[^152] -> [^149]/[^150]) updated; YAML-narrative orphan refs [^190]/[^191] descriptively rewritten. Post-edit Python footnote-integrity audit: 189 contiguous defs [^1]-[^189], zero gap, zero duplicate, zero orphan. ACCEPTANCE: full-draft §IX shows 255 vault runs, April 16 to May 8, vault-construction ticks; zero residue of 'runs 66 to 329', '251,067', '264 ticks', or article-loop cost framing in §IX body or footnotes."
 manuscript_global_footnote_range_run_357: "[^118]-[^131]"
-provenance_audited: false
+provenance_audited: true
+provenance_audited_at: 2026-05-31T15:30:00Z
+provenance_audit_run: 358
 provenance_audited_at_prior_run_334: 2026-05-31T09:00:00Z
 provenance_audit_run_prior_run_334: 334
 provenance_reset_at_run_353: 2026-05-31T09:00:00Z
 provenance_reset_reason_run_353: "PI-ER2-VAULTCOST Draft tick materially rewrote IX.A unfalsifiability-thesis opener (now pointing at vault cost rather than article-loop cost), IX.B subsection retitled deploy cost, IX.C wholly new subsection naming the 255-run vault snapshot, IX.D dropped the article-writing-parallel sentence, IX.E reframed mapping to the vault's eight-phase rotation and Table 9.1 replaced with the vault-construction phase distribution (255 ticks across ingest 35 / enrich 24 / expand 29 / synthesize 30 / lint 34 / verify 34 / consolidate 10 / deploy 59); footnotes [^1]-[^14] all substantively changed or renumbered relative to the run-340 polished frontmatter. The run-334 provenance_score 4.4 and the run-334 unsupported_claims entry (the PI-266 cost-log.jsonl literal-filename leak) are now stale: PI-266 IS closed by the new prose (the Table 9.1 caption no longer names the literal filename and [^15] is gone), but the entire factual surface is new and requires a fresh provenance audit at the next Verify-provenance pick."
 provenance_audited_at_prior_run_275: 2026-05-31T08:00:00Z
 provenance_audit_run_prior_run_275: 275
-provenance_score: 4.4
+provenance_score: 4.0
+provenance_score_prior_run_334: 4.4
 provenance_score_prior_run_275: 4.2
 provenance_score_prior: 4.2
 provenance_audit_run_prior: 135
+claims_total: 26
+claims_mapped: 24
 claims_total_prior_run_334: 22
 claims_mapped_prior_run_334: 21
 claims_total_prior_run_275: 25
 claims_mapped_prior_run_275: 25
-claims_total: null  # stale at run 353 reset; next Verify-provenance recomputes against new prose
-claims_mapped: null  # stale at run 353 reset
-unsupported_claims: []  # PI-266 closure via prose: literal `manuscript/cost-log.jsonl` filename no longer appears in caption or [^15] body (the entire [^15] is gone); next Verify-provenance audit catalogs against the new vault-cost factual surface
-unsupported_claims_count: 0
+unsupported_claims:
+  - claim_text: "External pricing lookups for Netlify and metered MCP services remain deferred to a later Cite pass."
+    paragraph: "IX.E.4"
+    reason: todo-leak-references-future-Cite-phase-in-published-prose
+    paired_with: ["PI-285"]
+  - claim_text: "[^122] records a 281-page corpus build of 131 cases, 53 topics, and 97 lectures at the May 7, 2026 credit-block events while [^124] records the 198-page snapshot of 92 case briefs, 27 doctrinal topic pages, and 79 lecture summaries as the May 8, 2026 end-of-window deliverable; the inter-footnote numerical inconsistency (281 vs 198, one calendar day apart) lacks an inline local-build-vs-deployed-site clarification."
+    paragraph: "IX.B + IX.C (footnote adjacency [^122] / [^124])"
+    reason: body-or-footnote-numerical-inconsistency-without-inline-clarification
+    paired_with: ["PI-288"]
+unsupported_claims_count: 2
+provenance_note_run358: "Run-358 Verify-provenance third audit on Section 09, first audit on the post-run-353 Draft + run-354 Cite + run-357 Stitch PI-ER2-VAULTCOST vault-construction factual surface. Criterion scores 4/4/4/3/5 = 4.0 (regression from run-334 4.4 baseline because the new factual surface opens PI-285 TODO leak + PI-287 missing comparator + PI-288 281-vs-198 numerical inconsistency that the run-353 Draft tick did not close even as it correctly delivered the directed vault-construction rewrite). claim_coverage 4 (24/26 mapped; PI-285 + PI-288 the two unmapped, both explicitly listed in unsupported_claims with reason fields); primary_source_ratio 4 (vault's run log is the legitimate primary source for vault-cost claims and is correctly routed through App. E § E.3 / § E.5 *infra* references per L-058 internal-artifact hygiene routing-to-appendix discipline; the missing external comparator at PI-287 keeps this criterion off 5); attribution_discipline 4 (the [^128] 'this article's own contribution' four-labor-category mapping disclosure is exemplary attribution-discipline form for original contribution; no other attribution claims in §IX to score); numerical_precision 3 (PI-288 281-vs-198 inter-footnote inconsistency unresolved; body figures themselves verified at the cell level by the run-353 Draft tick); gap_honesty 5 (the §IX.C 'Section IX therefore reports no compute-hours and no dollar figure, and frames the absence as a structural property of the logging system rather than a defect to be repaired' is the article's strongest inline gap-honesty form; the §IX.E 'Per-tick token-level model spend is not recorded' / 'a person-hours backfill across the four labor categories is not loggable' pair is the parallel form at the master-table closer). 4.0 < 4.5 gate so polish_status holds at needs_polish (already there from PI-285 + PI-286 + PI-287 + PI-289 P1 routings). Path to ≥4.5: close PI-285 via the §IX.E closing-sentence rewrite (lifts claim_coverage 4 → 5 by removing the unmapped TODO-leak claim); close PI-288 via the [^122] local-vs-deployed-build clarification (lifts numerical_precision 3 → 5); together those two lifts bring 4.0 → 4.6 above gate. PI-287 missing-comparator is the third closure but does not by itself block gate (it lifts primary_source_ratio 4 → 5 via the new [^288] Bond comparator, form-improvement rather than gate-mandatory). PI-281 confirmed already-closed at the §IX swap zone (the §IX swap at run-357 did not touch any of PI-281's anchor sites; the run-352 / run-354 / run-356 closure chain on PI-281 holds clean per the run-357 BUILD_NARRATIVE)."
 unsupported_claims_prior_run_334:
   - claim_text: "Table 9.1 §9.5 caption line 51 reads '(source: `manuscript/cost-log.jsonl`)' and footnote [^15] body line 96 reads 'Per-tick token counts are not recorded in `manuscript/cost-log.jsonl`'; both name a literal repo file path in published prose, the L-058 publication-boundary discipline forbids."
     paragraph: 5
