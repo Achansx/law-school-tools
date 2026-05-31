@@ -93,7 +93,7 @@
     "stitch": 0,
     "verify": 0
   },
-  "current_phase": "verify",
+  "current_phase": "draft",
   "gates": {
     "handoff_freeze": {
       "awaiting_human": false,
@@ -106,8 +106,8 @@
       "cleared_at": null
     }
   },
-  "last_completed_phase": "stitch",
-  "last_run_at": "2026-05-31T03:30:00Z",
+  "last_completed_phase": "verify",
+  "last_run_at": "2026-05-31T05:30:00Z",
   "manuscript": {
     "abstract_assembled": true,
     "confirmed_stitched_changed_at": "2026-05-31T03:30:00Z",
@@ -2055,7 +2055,10 @@
       "opened_at": "2026-05-30T23:59:00Z",
       "provenance_score_impact": "criterion 4 numerical_precision 5 -> 3 and criterion 1 claim_coverage 5 -> 4 (4.4 -> 4.0)",
       "defect_class": "numerical-precision-body-footnote-drift",
-      "lessons_candidate": "L-070 polish-sentence-split runs that decompose enumerative lists must trigger a body/footnote numerical-claim re-count"
+      "lessons_candidate": "L-070 polish-sentence-split runs that decompose enumerative lists must trigger a body/footnote numerical-claim re-count",
+      "re_confirmed_in_run_351": true,
+      "re_confirmed_at": "2026-05-31T05:30:00Z",
+      "re_confirm_note_run_351": "Held open: the run-349 PROVENANCE-CORRECTION Polish was scoped to PI-ER2-* items and did not touch PI-279. Body 13-topic enumeration at IV.A vs footnote [^2]/[^41] 'fourteen-topic' count drift remains the section's load-bearing provenance defect. Closure path unchanged: option C recount-to-correct-number against workplan + App. A Input Inventory."
     },
     {
       "id": "PI-280",
@@ -2164,9 +2167,88 @@
       "claim": "Run 349 Polish tick attempted PROVENANCE-CORRECTION PASS polished-layer propagation of PI-ER2-REVIEWCLAIM/CASEBOOK/STUDENTWORK across sections 04/08/12/13. Local commit pushed; rejected because peer session had already landed run 6648379 (push-race-conflict log for run 347). Rebase produced BUILD_NARRATIVE_2026-05.md content conflict at the run-347-race vs run-349-Polish append point. Per RUNBOOK push-protocol the rebase was aborted and this session's run-349 commit was discarded by git reset --hard origin/master.",
       "what_was_lost": "Polished-layer prose propagation of PI-ER2-* fixes to polished/section-04-input-corpus.md (\u00a7IV.A static\u2192review-ready descriptor, \u00a7IV.C two-paragraph open-question pair collapsed to single author's-understanding closure, \u00a7IV.E added snapshot disclosure sentence, [^4]/[^14]/[^15] reframed); polished/section-08-vault-to-website.md (\u00a7VIII.A load-bearing snapshot disclosure paragraph + new [^16], \u00a7VIII.D 'reviewed static page' descriptor lift, \u00a7VIII.E heading + body rewrite to review-ready static site + architecture-relocates-risk framing, [^14]/[^15] descriptor lifts); polished/section-12-risks-and-limits.md (\u00a7XII.A/B descriptor lifts, \u00a7XII.B paragraph 2 load-bearing rewrite, \u00a7XII.C rewritten to author's-understanding closure with contingent fallback, \u00a7XII.D rewritten/retitled to narrowed accurate position, [^4]/[^6]/[^10]/[^11] descriptor lifts); polished/section-13-institutional-implications.md (\u00a7XIII.A 'reviewed' \u2192 'review-ready' descriptor, \u00a7XIII.C governance rewrite, [^2]/[^5]/[^6] reframes). The next canonical Polish tick on master can redo this propagation against the same drafts/cite-layer source; the three PI-ER2-* items remain at cite_advanced on master and route Polish naturally.",
       "next_action": "Next Polish tick on master should re-propagate the PI-ER2-REVIEWCLAIM/CASEBOOK/STUDENTWORK fixes from drafts (run 347) and cite (run 348) into polished/section-04/08/12/13 under L-035 three-site discipline. PI-RACE-RUN349 closes when polish_advanced is logged on master for the three PIs."
+    },
+    {
+      "id": "PI-281",
+      "severity": "P0",
+      "status": "open",
+      "opened_in_run": 351,
+      "opened_at": "2026-05-31T05:30:00Z",
+      "persona": "1-Skeptical-JLE-Editor",
+      "persona_4_cross_confirmation": true,
+      "section": "01,02,07,10,11,14",
+      "anchor": "manuscript/full-draft.md lines 99, 133, 137, 285, 370, 388, 394, 398, 400, 462; footnote defs [^3]/[^146]/[^152]/[^153]/[^154]/[^155]/[^158]/[^186]",
+      "description": "PROVENANCE-CORRECTION PASS PI-ER2-REVIEWCLAIM closure-completion defect: the run-349 Polish + run-350 Stitch swept the 'reviewed static' descriptor at \u00a7IV / \u00a7VIII / \u00a7XII / \u00a7XIII / abstract but missed \u00a7I.B (controlling Introduction descriptor), \u00a7II.E/F, \u00a7VII.C, \u00a7X.C (Generalization architectural-commitment paragraph), \u00a7XI.B/C/D (Evaluation artifact-dependent-evaluation framing), \u00a7XIV.A (Conclusion's recap), and footnote defs [^3]/[^146]/[^152]/[^153]/[^154]/[^155]/[^158]/[^186]. Eighteen residual occurrences across ten body sites and eight footnote-def sites survive in manuscript/full-draft.md. A JLE desk-screener reading \u00a7I.B + \u00a7VIII.A together sees the article internally contradict itself at the load-bearing accuracy correction the PROVENANCE-CORRECTION PASS was set up to make.",
+      "fix_form_preferred": "next Polish + Cite tick: batch descriptor sweep 'reviewed static' -> 'review-ready static' across all eighteen residual sites (net +18 body words; mirror to manuscript/polished/section-{01,02,07,10,11,14}-*.md per L-035 three-site discipline); \u00a7I.B line 99 and \u00a7XIV.A line 462 also receive the \u00a7VIII.A-style honest-disclosure hedge (+27 and +21 body words respectively) to land introduction and conclusion altitudes with the controlling form.",
+      "fix_form_alternative": "batch-tier only (no \u00a7I.B/\u00a7XIV.A hedge expansion): net +18 body words; the hedge is then carried only at \u00a7VIII.A controlling site (acceptable but reads as less complete than the preferred form).",
+      "routes_sections": [
+        "01",
+        "02",
+        "07",
+        "10",
+        "11",
+        "14"
+      ],
+      "routes_status": "polish_status:needs_polish (already there); cite_status:needs_polish for footnote-def swaps",
+      "pi_class": "PROVENANCE-CORRECTION-PASS closure-completion",
+      "blocks_re_consolidation_exit": true
+    },
+    {
+      "id": "PI-282",
+      "severity": "P1",
+      "status": "open",
+      "opened_in_run": 351,
+      "opened_at": "2026-05-31T05:30:00Z",
+      "persona": "2-Legal-Pedagogy-Traditionalist",
+      "section": "10",
+      "anchor": "manuscript/full-draft.md line 370",
+      "description": "Section X.C generalization-claim grounding on the retracted 'reviewed static website' descriptor: the architectural commitment carrying over to a different course is 'a reviewed static website... whose pages are browsable, professorially-reviewed,' but \u00a7VIII.A's new disclosure declines to claim individual professor approval on the May 2026 snapshot. A traditionalist evaluating method transfer to Civ Pro reads \u00a7X.C as asking adopters to build a 'professorially-reviewed' wiki that the case study did not in fact demonstrate on its own snapshot.",
+      "fix_form_preferred": "next Polish tick on Section 10: rewrite \u00a7X.C line 370 sentence pair to describe the architecture's gating capability rather than asserting completed review (+11 body words; descriptor swap to 'review-ready static website' + the 'browsable pages whose contents are fixed at build time and whose architecture positions the professor as the designed reviewer at the gating checkpoint' rewrite).",
+      "fix_form_alternative": "tighter +5 body words: 'replaces with browsable, build-time-reviewable pages whose architecture positions the professor as the designed reviewer (subject to the \u00a7VIII.A snapshot-disclosure on completed review).'",
+      "routes_sections": [
+        "10"
+      ],
+      "routes_status": "polish_status:needs_polish (already there)",
+      "pairs_with": "PI-281 batch sweep"
+    },
+    {
+      "id": "PI-283",
+      "severity": "P1",
+      "status": "open",
+      "opened_in_run": 351,
+      "opened_at": "2026-05-31T05:30:00Z",
+      "persona": "3-AI-in-Education-Researcher",
+      "section": "11",
+      "anchor": "manuscript/full-draft.md lines 388, 394, 398, 400 (body); footnote defs [^152]/[^153]/[^154]/[^155]/[^158]",
+      "description": "Section XI.B/C/D artifact-dependent-evaluation framing grounded on the retracted 'reviewed static' descriptor: the load-bearing evaluation-architecture argument ('success measures are artifact-dependent: a reviewed static artifact requires navigation/use-pattern/verification measures') rests on a descriptor the \u00a7VIII.A disclosure has retracted, leaving the measures-match-the-object argument without a stable artifact-descriptor at its base. Five \u00a7XI footnote defs ([^152]/[^153]/[^154]/[^155]/[^158]) propagate the same defect at the footnote tier.",
+      "fix_form_preferred": "next Polish tick on Section 11: swap 'reviewed static' -> 'review-ready static' at the four \u00a7XI body sites (lines 388 x2, 394, 398, 400; net +5 body words) and at the five \u00a7XI footnote defs (net +5 footnote words). The artifact-dependent-evaluation argument continues to hold under the corrected descriptor because the architectural distinction is between runtime-generation (chatbot) and build-time-fixed (review-ready static) surfaces.",
+      "fix_form_alternative": "+9 body words: add a one-clause structural hedge at \u00a7XI.B paragraph 2 anchoring the artifact descriptor in the \u00a7VIII.A controlling disclosure rather than asserting it standalone.",
+      "routes_sections": [
+        "11"
+      ],
+      "routes_status": "polish_status:needs_polish (already there); cite_status:needs_polish for footnote-def swaps",
+      "pairs_with": "PI-281 batch sweep + PI-282 \u00a7X.C grounding fix"
+    },
+    {
+      "id": "PI-284",
+      "severity": "P1",
+      "status": "open",
+      "opened_in_run": 351,
+      "opened_at": "2026-05-31T05:30:00Z",
+      "persona": "5-Practitioner-Adopter-SUPPLEMENTAL",
+      "section": "10",
+      "anchor": "manuscript/full-draft.md line 187 (\u00a7IV.C closure) + the absence of an adopter-side bridge at \u00a7X / App. C",
+      "description": "Adopter-replicability gap at the \u00a7IV.C input-decision boundary: the new run-349 PROVENANCE-CORRECTION author's-understanding closure (no casebook excerpts; no student work; TA-prepared materials the only third-party content) describes THIS case study's corpus boundary but does not generalize to adopter guidance. An adopter reading \u00a7IV.C does not know whether the no-casebook-no-student-work boundary is a normative requirement of the method or a feature of this case study; the \u00a7XII.C contingent-fallback addresses the law-copyright question but not the method-replicability question.",
+      "fix_form_preferred": "next Polish tick on Section 10 OR Harvest-appendix tick on App. C: add one-paragraph adopter-side guidance bridge naming the casebook-and-student-work-ingest decision as a per-adopter judgment call the method does not normatively constrain (+72 words at \u00a7X.B or at a new App. C subsection 'Input-corpus decisions an adopter must make').",
+      "fix_form_alternative": "tighter +24 words single sentence at \u00a7X.B: 'The case study's no-casebook-no-student-work corpus boundary is a per-adopter judgment call the method does not normatively constrain; an adopter's input-corpus decisions are described at \u00a7IV.C and addressed at \u00a7XII.C / \u00a7XII.D.'",
+      "routes_sections": [
+        "10"
+      ],
+      "routes_status": "polish_status:needs_polish (already there); App. C status:needs_work if the Harvest-appendix tick reaches it first",
+      "pairs_with": "PI-282 \u00a7X.C grounding fix in the same Section 10 Polish tick"
     }
   ],
-  "phase_index": 4,
+  "phase_index": 0,
   "phases": [
     "draft",
     "cite",
@@ -2188,7 +2270,7 @@
     "sections_audited": 14,
     "sections_total": 14
   },
-  "run_count": 350,
+  "run_count": 351,
   "schema_version": 1,
   "sections": {
     "01": {
@@ -2330,8 +2412,8 @@
       "cite_note": "Run-272 Cite surgical fix per PI-192: deleted the trailing 'and the underlying record lives in this article's internal pending-issue tracker' clause from polished [^14], [^15], [^20] (and the full-draft manuscript-global [^49], [^50], [^55] mirrors). Body hedge suffices per the PI-routing drop-option; the open-question body prose was already clean. Footnote count unchanged at 20; claims_total stays at 20; claims_mapped advances 17 -> 20; unsupported_claims cleared. PI-192 closed and archived. Provenance_score lift to >=4.5 awaits the next verify-provenance re-audit per L-028 (Cite owns the surgical fix; Verify-Provenance owns the score-lift confirmation). The 198-page-snapshot-date residual flagged in the run-182 provenance note (note 17's 'progress-report date' without explicit calendar date) is a separate defect that this Cite tick does not touch; remains for the next Polish tick. Section's prior cite_status was needs_polish (PI-192 was a footnote-form provenance routing, not a draft-status routing) and remains needs_polish; polish_status stays needs_polish pending the verify-provenance re-audit.",
       "cite_redone_at": "2026-05-31T02:00:00Z",
       "cite_status": "needs_polish",
-      "claims_mapped": 19,
-      "claims_total": 20,
+      "claims_mapped": 22,
+      "claims_total": 23,
       "current_words": 1034,
       "draft_completed_at": "2026-05-16T03:13:24Z",
       "draft_status": "needs_polish",
@@ -2339,18 +2421,18 @@
       "evidence_populated_at": "2026-05-15T20:05:00Z",
       "evidence_status": "populated",
       "footnotes_count": 20,
-      "last_phase": "cite",
+      "last_phase": "verify-provenance",
       "outline_ready_at": "2026-05-16T01:11:52Z",
       "outline_status": "ready_for_draft",
       "pi131_resolved_at": "2026-06-02T11:00:00Z",
       "polish_completed_at": "2026-05-16T09:30:00Z",
       "polish_note": "Run-180 Polish: propagated the run-172 PI-131/PI-136 arithmetic reconciliation into the polished artifact (closing the recurring Verify-Editor RESIDUAL: the assembled IV.A had read 61+66+3=130 among 127 top-level), and cleared all six P1s the 2026-05-29 Verify routed to 'the next Polish tick on Section 04' (PI-059 cost-table forward-point, PI-060 de-meta-rhetoric, PI-061 curation-actor, PI-062 IV.E-to-V.A seam bridge, PI-063 casebook architectural-implication, PI-064 access-assumption). Mechanical sweep clean. Landed 1034 words (+14.9%); flagged PI-191 for Stitch trim; footnote defs hold at 20, no global renumber.",
       "polish_redone_at": "2026-06-03T03:00:00Z",
-      "polish_status": "ready_for_stitch",
+      "polish_status": "needs_polish",
       "provenance_audit_note": "Run-182 Verify Provenance Auditor re-audit of the run-180/181 reconciled prose. The prior 3.6 driver (the 61+66+3=130-among-127 arithmetic impossibility) is resolved: IV.A now reads 388 total / 61 PowerPoint + 66 PDF = 127 slide-and-reading subset / +3 DOCX, consistent with App. A and with Section II/VIII. New score 4.4 (coverage 5, primary-source-ratio 4, attribution 5, numerical-precision 4, gap-honesty 4). Two residual defects: (1) footnotes [^14]/[^15]/[^20] route to the internal pending-issue tracker, an internal-log citation in published prose barred by the PROJECT_PRIMER citation policy and provenance-rubric criterion 2 (logged PI-192, the three unsupported_claims above with reason requires-primary-source); (2) the 198-page count's snapshot is 'the progress-report date' without an explicit calendar date (numerical-precision 4). 4.4 < 4.5 so polish_status -> needs_polish; next Cite/Polish tick re-points the three footnotes to App. D or drops them.",
-      "provenance_audited": false,
-      "provenance_audited_at": "2026-05-30T23:59:00Z",
-      "provenance_score": 4.0,
+      "provenance_audited": true,
+      "provenance_audited_at": "2026-05-31T05:30:00Z",
+      "provenance_score": 4.2,
       "provenance_stale_reason": "Run-180 Polish materially rewrote IV.A (propagated the run-172 PI-131 arithmetic reconciliation: 388 total; 61 PowerPoint + 66 PDF = the 127 slide-and-reading subset the flat structure exposes first; plus 3 DOCX), IV.D (dropped the false 'one-hundred-twenty-seven-file top-level folder' total), and IV.E, closing the six routed P1s (PI-059..064). provenance_audited reset to false so the next Verify Provenance Auditor re-audits the new prose rather than the stale 2026-05-29 3.6 read; score 3.6 retained as last-known.",
       "re_stitched_at": "2026-06-03T05:00:00Z",
       "stitch_note": "Run-181 interim Stitch: propagated the run-180 polished Section 04 into manuscript/full-draft.md, closing the recurring Verify-Editor RESIDUAL (IV.A reconciled to 388 total / 61+66=127 slide-and-reading subset / +3 DOCX; IV.D dropped the false 127-file top-level total; IV.B trailing meta-clause cut; IV.E reworded with the access disclosure and the V-bridge). Footnote-count-neutral (20 defs, global [^36]-[^55], offset +35; [^48] cross-ref kept resolved to global Section VIII note 96). polish_status ready_for_stitch -> stitched. provenance_audited stays false; Verify will re-audit the materially-changed prose and may reset on provenance_score < 4.5.",
@@ -2368,12 +2450,18 @@
       "stitch_propagated_run_345": true,
       "last_stitch_propagation_at": "2026-05-31T03:30:00Z",
       "provenance_score_prior_run_182": 4.4,
-      "provenance_audit_run": 346,
+      "provenance_audit_run": 351,
       "polish_status_prior_run_344": "ready_for_stitch",
       "claims_mapped_prior_run_182": 20,
       "verify_note_run346": "Run-346 Verify Provenance Auditor re-audit (first since run-182 baseline) scored 4/4/5/3/4 = 4.0 on the PI-279 IV.A 13-vs-14 body-footnote count drift the run-344 split exposed (claim_coverage 5 -> 4 on 1-claim drop; numerical_precision 5 -> 3 on the body-footnote inconsistency). 4.0 < 4.5 gate; polish_status:ready_for_stitch -> needs_polish. PI-277 (Persona 2, Section IV.A \"It covers\" verb depth-overclaim) routes the same Polish tick. PI-279 closure path: option C recount-to-correct-number against workplan + App. A; closure lifts criterion 4 and criterion 1 bringing 4.0 -> 4.4, then gap_honesty -> 5 on subsequent re-audit brings 4.4 -> 4.6 above gate.",
       "polish_note_run349": "Polish run 349 PROVENANCE-CORRECTION PASS Section 04 leg: propagated the run-347 draft + run-348 cite PI-ER2 reframes into polished. polish_status -> ready_for_stitch; provenance_audited reset to false because polished prose materially changed.",
-      "stitch_propagated_run_350": true
+      "stitch_propagated_run_350": true,
+      "provenance_audit_run_prior_346": 346,
+      "provenance_score_prior_run_346": 4.0,
+      "claims_total_prior_run_346": 20,
+      "claims_mapped_prior_run_346": 19,
+      "polish_status_prior_run_351": "ready_for_stitch",
+      "verify_note_run351": "Run-351 Verify Provenance Auditor third audit on Section 04 lifted provenance_score 4.0 -> 4.2 on gap_honesty 4 -> 5 from the new IV.C author's-understanding closure's explicit subject-to-Chandler hedge at the controlling sentence; claims_total 20 -> 23 (three new IV.C closure claims all mapped via [^14]/[^15] author's-understanding footnotes); claims_mapped 19 -> 22; unsupported_claims 1 entry held (PI-279 13-vs-14 body-footnote count drift open, the run-349 Polish was PROVENANCE-CORRECTION-scoped and did not touch PI-279). 4.2 < 4.5 gate so polish_status:ready_for_stitch -> needs_polish; PI-279 closure via option C recount-to-correct-number is the path to >=4.5."
     },
     "05": {
       "cite_completed_at": "2026-05-16T21:50:00Z",
@@ -2961,11 +3049,11 @@
     "last_cite_run": 325,
     "last_polish_resolution_run": 145,
     "last_reaudit_section": "04",
-    "last_run": 346,
-    "last_run_at": "2026-05-30T23:59:00Z",
+    "last_run": 351,
+    "last_run_at": "2026-05-31T05:30:00Z",
     "new_findings_count": 5,
-    "p0_open": 0,
-    "p1_open": 167,
+    "p0_open": 1,
+    "p1_open": 171,
     "p2_open": 43,
     "personas_read": 5
   },
